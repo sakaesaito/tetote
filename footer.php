@@ -1,4 +1,4 @@
-<?php if(is_page('privacy') || is_404() || is_page('contact') || is_single()): ?>
+<?php if (is_page('privacy') || is_404() || is_page('contact') || is_single()): ?>
   <footer class="footer-b">
     <div class="inner">
       <ul class="footer-nav">
@@ -30,17 +30,17 @@
   </footer>
 <?php endif; ?>
 
-  <?php wp_footer(); ?>
-  <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
-  <?php if(is_single()): ?>
+<?php wp_footer(); ?>
+<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+<?php if (is_single()): ?>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/js/lightbox.min.js"></script>
   <script src="<?php echo get_stylesheet_directory_uri(); ?>/js/custom-lightbox.js"></script>
-  <?php elseif(is_front_page()): ?>
+<?php elseif (is_front_page()): ?>
   <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
   <script src="<?php echo get_stylesheet_directory_uri(); ?>/js/slider.js"></script>
-  <?php endif; ?>
-  <?php if(is_page('company') || is_front_page()): ?>
+<?php endif; ?>
+<?php if (is_page('company') || is_front_page()): ?>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/protonet-jquery.inview/1.1.2/jquery.inview.min.js"></script>
-  <?php endif; ?> 
-  <script src="<?php echo get_stylesheet_directory_uri(); ?>/js/script.js"></script>
+<?php endif; ?>
+<script src="<?php echo get_stylesheet_directory_uri(); ?>/js/script.js"></script>
 </body>
