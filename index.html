@@ -1,72 +1,315 @@
 <!DOCTYPE html>
 <html lang="ja">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>採用特設サイト | 株式会社TETOTE</title>
     <meta name="robots" content="noindex">
-    <meta name="description"
-        content="テクノロジーで社会課題を解決する。AIやビッグデータ分析などの技術を活用した社会課題解決サービスを提供するTETOTEの採用サイト。">
+    <meta name="description" content="テクノロジーで社会課題を解決する。AIやビッグデータ分析などの技術を活用した社会課題解決サービスを提供するTETOTEの採用サイト。">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Viga&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Viga&display=swap"
+        rel="stylesheet">
     <link rel="icon" href="img/tetote-favicon.png">
+    <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
     <header class="header">
         <div class="header__inner">
-        <h1 class="header__logo">
-            <a href="#">
-            <img src="/img/tetote-logo-white 1.png" alt="">
-            </a>
-        </h1>
-        <button class="header__recrutment-title">募集要項</button>
-        <button class="header__entry">ENTRY</button>  
-        <button class="header__hamburger js-hamburger">
-            <span></span>
-            <span></span>
-            <span></span>
-            <p>menu</p>
-        </button>
-        <div class="header__drawer js-drawer">
-            <nav class="header__drawer-nav">
-                <a href="#">top</a>
-                <ul class="header__drawer-list">
-                    <li class="header__drawer-item"><a href="#">ABOUT US</a></li>
-                    <li><p class="header__drawer-parts">TETOTEについて</p></li>
-                </ul>
-            </nav>
-        </div>
+            <h1 class="header__logo">
+                <a href="#"><img src="/img/tetote-logo-white 1.png" alt=""></a>
+            </h1>
+            <div class="button__recrut"><a href="/details/details.html">募集要項</a></div>
+            <div class="button__entry"><a href="/entry/entry.html">ENTRY</a></div>
+            <button class="header__hamburger js-hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+                <p>menu</p>
+            </button>
+            <!-- <div class="header__drawer js-drawer">
+                <nav class="header__drawer-nav">
+                    <a href="#">top</a>
+                    <ul class="header__drawer-list">
+                        <li class="header__drawer-item"><a href="#">ABOUT US</a></li>
+                        <li><p class="header__drawer-parts">TETOTEについて</p></li>
+                    </ul>
+                </nav>
+            </div> -->
         </div>
     </header>
     <main>
-        <div class="fv">
-            <div class="fv__inner">
-                <div class="fv__bg">
-                    <div class="fv__img">
-                        <picture class="fv__image">
+        <div class="mv">
+            <div class="mv__inner">
+                <div class="mv__bg">
+                    <div class="mv__img">
+                        <picture class="mv__image">
                             <img src="img/fv01.jpg" alt="ファーストビュー画像">
                         </picture>
-                        <h2 class="fv-message">
-                            <span class="fv__message-main">BECOME A CHALLENGER</span>
-                            <span class="fv__message-sub">君の挑戦が、意思が、未来を変える</span>
+                        <h2 class="mv__message">
+                            <span class="mv__message-main">BECOME A CHALLENGER</span>
+                            <span class="mv__message-sub">君の挑戦が、意思が、未来を変える</span>
                         </h2>
-                        <div class="fv__news-box">
-                            <h3 class="fv__news-title">news</h3>
-                            <p class="fv__news-item">新入社員に向けに、入社名研修を行いました。</p>
+                        <div class="mv__news-box">
+                            <h3 class="mv__news-title">news</h3>
+                            <p class="mv__news-item">新入社員に向けに、入社名研修を行いました。</p>
                         </div>
                     </div>
+                </div>
+                <div class="mv__heading">
+                    <span>後悔しないキャリアを作る、</span>
+                    <span>それこそが、我々の使命だ</span>
+                </div>
+                <div class="img-box js-slider">
+                    <div class="img-box-item">
+                        <picture>
+                            <source srcset="img/top-slide01.jpg" media="(max-width: 271px)">
+                            <img src="img/top-slide01.jpg" alt="">
+                        </picture>
+                    </div>
+                    <div class="img-box-item">
+                        <picture>
+                            <source srcset="img/top-slide02.jpg" media="(max-width: 271px)">
+                            <img src="img/top-slide02.jpg" alt="">
+                        </picture>
+                    </div>
+                    <div class="img-box-item">
+                        <picture>
+                            <source srcset="img/top-slide03.jpg" media="(max-width: 271px)">
+                            <img src="img/top-slide03.jpg" alt="">
+                        </picture>
+                    </div>
+                </div>
+                <div class="mv__lead">
+                    <p>「人手不足」<br>今の日本が抱えるこの社会課題に挑み、<br>企業と個人の可能性を最大限に引き出す。<br>それが私達の役目。</p>
+                </div>
+                <div class="mv__lead">
+                    <p>単につなぐだけじゃない。<br>「手と手」を取り合っていけるような、<br>持続可能な社会を、一緒に作りませんか？</p>
+                </div>
+                <div class="button__viewmore"><a href="">VIEW MORE</a>
                 </div>
             </div>
         </div>
     </main>
+    <section id="staff" class="staff">
+        <div class="inner">
+            <div class="content-wrapper">
+                <div class="text-wrapper">
+                    <p class="section-title">MEMBER</p>
+                    <h2 class="content-title"><span>人</span>を知る</h2>
+                    <p>TETOTEの社員がどういった信念を持って働いているのか、<br>
+                        一日のスケジュールや仕事内容などを紹介します。</p>
+                </div>
+                <div class="staff-sec">
+                    <div class="staff-box js-fadeinup-trigger">
+                        <div class="staff-box-wrapper">
+                            <div class="staff--box-img"><img src="img/syain01.jpg" alt=""></div>
+                            <h3 class="staff-box-message">「あなたが担当で良かった」</h3>
+                            <h3 class="staff-box-message">この一言が、最高のやりがい</h3>
+                            <div class="staff-box-past"></div>
+                            <p class="staff-box-position">コンサルタント</p>
+                            <p class="staff-box-year">2011年入社</p>
+                        </div>
+                        <p class="staff-box-name">西村 優</p>
+                    </div>
+                </div>
+                <div class="staff-box js-fadeinup-trigger">
+                    <div class="staff-box-wrapper">
+                        <div class="staff-box-img"><img src="img/syain02.jpg" alt=""></div>
+                        <h3 class="staff-box-message">全力で考えぬける環境</h3>
+                        <h3 class="staff-box-message">試練の数だけ強くなれました</h3>
+                        <div class="staff-box-past"></div>
+                        <p class="staff-box-position">コンサルタント</p>
+                        <p class="staff-box-year">2015年入社</p>
+                    </div>
+                    <p class="staff-box-name">橋本 拓也</p>
+                </div>
+            </div>
+            <div class="staff-box js-fadeinup-trigger">
+                <div class="staff-box-wrapper">
+                    <div class="staff--box-img"><img src="img/syain03.jpg" alt=""></div>
+                    <h3 class="staff-box-message">お客様も知らない課題を</h3>
+                    <h3 class="staff-box-message">一緒に探し出す醍醐味</h3>
+                    <div class="staff-box-past"></div>
+                    <p class="staff-box-position">ソリューション営業</p>
+                    <p class="staff-box-year">2017年入社</p>
+                </div>
+                <p class="staff-box-name">青木 美月</p>
+            </div>
+        </div>
+        <div class="staff-box js-fadeinup-trigger">
+            <div class="staff-box-wrapper">
+                <div class="staff--box-img"><img src="img/syain04.jpg" alt=""></div>
+                <h3 class="staff-box-message">「あなたが担当で良かった」</h3>
+                <h3 class="staff-box-message">この一言が、最高のやりがい</h3>
+                <div class="staff-box-past"></div>
+                <p class="staff-box-position">コンサルタント</p>
+                <p class="staff-box-year">2004年入社</p>
+            </div>
+            <p class="staff-box-name">佐々木 健</p>
+        </div>
+        <div class="button__viewmore"><a href="">VIEW MORE</a>
+        </div>
+        </div>
+        </div>
+        </div>
+    </section>
+    <section id="fv-benefits" class="fv-benefits">
+        <div class="inner">
+            <div class="content-wrapper">
+                <div class="text-wrapper2">
+                    <p class="section-title">BENEFITS</p>
+                    <h2 data-title="" class="content-title"><span>制度・環境</span>を知る</h2>
+                    <p>TETOTEの社員がどういった信念を持って働いているのか、<br>
+                        一日のスケジュールや仕事内容などを紹介します。</p>
+                </div>
+                <div class="img-wrapper">
+                    <div class="img-box">
+                        <img src="img/career1.svg" alt="">
+                        <p class="img-message">Traning And Career</p>
+                    </div>
+                </div>
+                <div class="img-wrapper">
+                    <div class="img-box">
+                        <img src="img/top-welfare.svg" alt="">
+                        <p class="img-message">Employee Benefits</p>
+                    </div>
+                    <a href="/blog-detail/"><img src="img/page-black.png"></a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="fvblog" class="fvblog">
+        <div class="inner">
+            <div class="fvblog__sec">
+                <div class="content-wrapper">
+                    <div class="fvblog__top">
+                        <div class="text-wrapper">
+                            <p class="section-title">BLOG</p>
+                            <h2 class="content-title">採用ブログ</h2>
+                            <p>採用情報やイベント情報、社員の紹介など、<br> 日々の現場の様子をご紹介します。</p>
+                        </div>
+                    </div>
+                    <div class="fvblog__wrapper">
+                        <ul class="fvblog__list">
+                            <li>
+                                <a href="./blog/blog.html">
+                                    <div class="thumbnail"><img src="img/blog01.jpg" alt=""></div>
+                                    <div class="fvblog__box">
+                                        <ul class="cat-list">
+                                            <li>社内研修</li>
+                                        </ul>
+                                        <p class="topics">新入社員向けに、入社前研修を行いました。</p>
+                                        <time datetime="2055-02-11" class="date">2055.02.11</time>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="./blog/blog.html">
+                                    <div class="thumbnail"><img src="img/blog02.jpg" alt=""></div>
+                                    <div class="fvblog__box">
+                                        <ul class="cat-list">
+                                            <li>社内研修</li>
+                                        </ul>
+                                        <p class="topics">内定者向け研修を行いました。</p>
+                                        <time datetime="2024.08.25" class="date">2024.08.25</time>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="./blog/blog.html">
+                                    <div class="thumbnail"><img src="img/blog03.jpg" alt=""></div>
+                                    <div class="fvblog__box">
+                                        <ul class="cat-list">
+                                            <li>社内イベント</li>
+                                        </ul>
+                                        <p class="topics">【社員旅行2023】沖縄でリフレッシュ！チームワークも深まった！</p>
+                                        <time datetime="2024.03.25" class="date">2024.03.25</time>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="./blog/blog.html">
+                                    <div class="thumbnail"><img src="img/blog04.jpg" alt=""></div>
+                                    <div class="fvblog__box">
+                                        <ul class="cat-list">
+                                            <li>お知らせ</li>
+                                        </ul>
+                                        <p class="topics">【新卒採用2024】エントリー受付中！</p>
+                                        <time datetime="2024.03.01" class="date">2024.03.01</time>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div><img src="img/page-white.png" alt=""> VIEW MORE</div>
+            </div>
+        </div>
+    </section>
+    <section id="fv-career" class="fv-career">
+        <div class="inner">
+            <div class="content-wrapper">
+                <div class="text-wrapper2">
+                    <p class="section-title">RECRUITMENT</p>
+                    <h2 data-title="" class="content-title"><span>採用情報</h2>
+                    <p>募集要項（職種、業務内容、応募条件、選考フロー）とよくある質問・会社概要などをまとめています。</p>
+                </div>
+                <div class="fvcareer-wrapper">
+                    <div class="link-box">
+                        <div class="link-box-button"><a href="">募集要項</a></div>
+                        <div class="link-box-button"><a href="">よくある質問</a></div>
+                    </div>
+                    <div class="link-box-button2"><a href="">会社概要</a></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <footer>
+        <div class="inner">
+            <div class="contact-box">
+                <p class="content-title">わたしたちと一緒に働く仲間を募集中です。 少数精鋭のチームで、あなたも会社も一緒に成長していきましょう。</p>
+                <div class="button__viewmore-entry"><a href="/entry/entry.html">ENTRY</a></div>
+            </div>
+            <div class="content-wrapper"> 
+                <div class="footer-links">
+                    <div class="footer-logo"><a href="#"><img src="/img/tetote-logo-white 1.png" alt="会社ロゴ"></a></div>
+                    <div class="footer-list">
+                        <div class="footer-list1">
+                            <a href="">ホーム</a>
+                            <a href="">TETOTEについて</a>
+                            <a href="">人を知る</a>
+                            <a href="">研修制度とキャリアパス</a>
+                            <a href="">福利厚生</a>
+                        </div>
+                        <div class="footer-list2">
+                            <a href="">採用ブログ</a>
+                            <a href="">募集要項</a>
+                            <a href="">よくある質問</a>
+                            <a href="">会社概要</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <ul class="footer-nav">
+                <li><a href=""><img src="img/facebook-icon.png"></a></li>
+                <li><a href=""><img src="img/twitter-icon.png" alt=""></a></li>
+                <li><a href=""><img src="img/movie-icon.png" alt=""></a></li>
+            </ul>
+            <small class="copyright">&copy;© 2024 TETOTE All Right Reserved.</small>
+        </div>
     </footer>
-    
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
     <script src="./js/script.js"></script>
-    
+
 </body>
+
 </html>
