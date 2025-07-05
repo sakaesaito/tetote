@@ -1,18 +1,28 @@
 .header {
-    background-color: #ffffff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    width: 100%;
+    height: 118px;
 }
-
+.header-inner {
+    padding-right: 20px;
+}
 .header-logo {
     width: 100%;
     max-width: 14rem;
-    padding:1.625rem 1.75rem;
+    padding: 1.625rem 1.75rem;
+
     @media screen and (max-width: 768px) {
         // min-width: 7.14rem;
         // margin: 1rem;
     }
 }
-
-
+.header-link {
+    display: flex;
+    align-items: center;
+}
 .header--sticky {
     position: fixed;
     top: 0;
@@ -46,22 +56,56 @@
     cursor: pointer;
     transition: all 0.3s ease 0s;
     position: relative;
-    margin-top: 2.375rem;
-    
+    margin-right:1.25rem;
+
+
     a {
         display: block;
         padding: 0.875rem 3.5rem;
     }
-    &-recruit{
+
+    &-recruit {
         background-color: #222222;
         color: #fff;
     }
+
     &-entry {
         background-color: #AFA86F;
     }
+
     @media screen and (max-width: 768px) {
         display: none;
     }
-    
+
+}
+.header-hamburger {
+    margin-left:1.25rem;
+    @media screen and (max-width: 768px) {
+        margin-top: 0.5rem;
+    }
+}
+.header-hamburger-icon span {
+    display: block;
+    transition: all .3s;
+    top: 12px;
+    left: 25%;
+    width: 52px;
+    height: 1px;
+    background-color: #fff;
+    margin: 0 auto;
 }
 
+.header-hamburger-icon span:nth-of-type(2) {
+    margin-top: 9px;
+}
+
+.header-hamburger-icon span:nth-of-type(3) {
+    margin-top: 9px;
+}
+
+.header-hamburger-item {
+    text-align: center;
+    margin: 0;
+    font-size: 0.75rem;
+    color:#fff;
+}
