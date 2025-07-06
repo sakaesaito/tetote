@@ -7,16 +7,24 @@
     height: 118px;
 }
 .header-inner {
-    padding-right: 20px;
+    padding-inline: 1.625rem;
+    height: inherit;
+
+    // @media screen and (max-width: 768px) {
+    //     padding-inline: 0.75rem;
+    // }
+
 }
 .header-logo {
     width: 100%;
     max-width: 14rem;
-    padding: 1.625rem 1.75rem;
+
+    &__link{
+        padding:3.7rem 0 1.75rem 0;
+    }
 
     @media screen and (max-width: 768px) {
-        // min-width: 7.14rem;
-        // margin: 1rem;
+        padding: 0.75rem 0 0 0.75rem;
     }
 }
 .header-link {
@@ -36,6 +44,8 @@
 .header-nav {
     display: flex;
     justify-content: space-between;
+    height: inherit;
+    align-items: center;
 }
 
 @keyframes slideDown {

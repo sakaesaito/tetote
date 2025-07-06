@@ -8,3 +8,40 @@ button {
     margin: 0;      
     cursor: pointer;
 }
+
+.viewmore-button {
+    max-width: 355px;
+    width: 100%;
+    margin: 0 auto;
+
+    a {
+        position: relative;
+        display:inline-block;
+        padding: 1.875rem 7.75rem ;
+        text-align: center;
+        border: 1px #222 solid;
+        transition: all .5s;
+    }
+    a::before {
+        border-right: 3px solid #222222;
+        border-top: 3px solid #222222;
+        bottom: 0;
+        content: "";
+        height: 10px;
+        margin: auto;
+        position: absolute;
+        right: 40px;
+        top: 0;
+        transform: rotate(45deg);
+        transition: all .5s; 
+        width: 10px;
+    }
+    a:hover {
+        background-color: #fff;
+        color: #222222;
+    }
+    a:hover::before {
+        border-right: 3px solid #222222;
+        border-top: 3px solid #222222;
+    }
+}

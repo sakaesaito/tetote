@@ -15,8 +15,10 @@
         rel="stylesheet">
     <link rel="icon" href="img/tetote-favicon.png">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -24,7 +26,7 @@
         <div class="header-inner">
             <div class="header-nav">
                 <h1 class="header-logo">
-                    <a href="#"><img src="/img/tetote-logo-white 1.png" alt=""></a>
+                    <a class="header-logo__link" href="#"><img src="/img/tetote-logo-white 1.png" alt=""></a>
                 </h1>
                 <div class="header-link">
                     <div class="header-button header-button-recruit"><a href="/details/details.html">募集要項</a></div>
@@ -50,8 +52,7 @@
             </div>
         </div>
     </header>
-    <main>
-        <div class="mv">
+        <section class="mv">
             <div class="mv-inner">
                 <div class="mv-bg">
                     <div class="mv-img">
@@ -67,40 +68,45 @@
                         </div>
                     </div>
                 </div>
-                <div class="mv-heading">
-                    <span>後悔しないキャリアを作る、</span><br>
-                    <span>それこそが、我々の使命だ</span>
+            </div>
+        </section>
+        <section class="slider">
+            <div class="img-box swiper-wrapper">
+                <div class="swiper-slide"><source srcset="img/top-slide01.jpg" media="(max-width: 271px)">
+                    <img src="img/top-slide01.jpg" alt="">
                 </div>
-                <div class="img-box js-slider">
-                    <div class="img-box-item">
-                        <picture>
-                            <source srcset="img/top-slide01.jpg" media="(max-width: 271px)">
-                            <img src="img/top-slide01.jpg" alt="">
-                        </picture>
-                    </div>
-                    <div class="img-box-item">
-                        <picture>
-                            <source srcset="img/top-slide02.jpg" media="(max-width: 271px)">
-                            <img src="img/top-slide02.jpg" alt="">
-                        </picture>
-                    </div>
-                    <div class="img-box-item">
-                        <picture>
-                            <source srcset="img/top-slide03.jpg" media="(max-width: 271px)">
-                            <img src="img/top-slide03.jpg" alt="">
-                        </picture>
-                    </div>
+                <div class="swiper-slide"><source srcset="img/top-slide01.jpg" media="(max-width: 271px)">
+                    <img src="img/top-slide02.jpg" alt="">
                 </div>
-                <div class="mv-lead">
-                    <p>「人手不足」<br>今の日本が抱えるこの社会課題に挑み、<br>企業と個人の可能性を最大限に引き出す。<br>それが私達の役目。</p>
+                <div class="swiper-slide"><source srcset="img/top-slide01.jpg" media="(max-width: 271px)">
+                    <img src="img/top-slide03.jpg" alt="">
                 </div>
-                <div class="mv-lead">
-                    <p>単につなぐだけじゃない。<br>「手と手」を取り合っていけるような、<br>持続可能な社会を、一緒に作りませんか？</p>
+                <div class="swiper-slide"><source srcset="img/top-slide01.jpg" media="(max-width: 271px)">
+                    <img src="img/top-slide01.jpg" alt="">
                 </div>
-                <div class="button-viewmore"><a href="">VIEW MORE</a>
+                <div class="swiper-slide"><source srcset="img/top-slide01.jpg" media="(max-width: 271px)">
+                    <img src="img/top-slide02.jpg" alt="">
+                </div>
+                <div class="swiper-slide"><source srcset="img/top-slide01.jpg" media="(max-width: 271px)">
+                    <img src="img/top-slide03.jpg" alt="">
                 </div>
             </div>
-        </div>
+            <div class="slider-heading">
+                <p class="slider-heading-ms">後悔しないキャリアを作る、</p><br>
+                <p class="slider-heading-ms">それこそが、我々の使命だ</p>
+            </div>
+        </section>
+        <section class="about">
+            <div class="inner">
+                <div class="about-viw">
+                    <div class="about-lead">
+                        <p class="about-lead-ms">「人手不足」<br>今の日本が抱えるこの社会課題に挑み、<br>企業と個人の可能性を最大限に引き出す。<br>それが私達の役目。</p>
+                        <p class="about-lead-ms about-lead-ms2">単につなぐだけじゃない。<br>「手と手」を取り合っていけるような、<br>持続可能な社会を、一緒に作りませんか？</p>
+                    </div>
+                </div>
+                <div class="viewmore-button"><a href="/about/about-us.html">VIEW MORE</a></div>
+            </div>
+        </section>
         <section id="staff" class="staff">
             <div class="inner">
                 <div class="content-wrapper">
@@ -110,73 +116,80 @@
                         <p>TETOTEの社員がどういった信念を持って働いているのか、<br>
                             一日のスケジュールや仕事内容などを紹介します。</p>
                     </div>
-                    <div class="staff-sec">
-                        <div class="staff-box js-fadeinup-trigger">
+                </div>
+                <div class="staff-sec">
+                    <div class="staff-sec-inner">
+                        <div class="staff-box ">
                             <div class="staff-box-wrapper">
                                 <div class="staff-box-img"><img src="img/syain01.jpg" alt=""></div>
                                 <h3 class="staff-box-message">「あなたが担当で良かった」</h3>
                                 <h3 class="staff-box-message">この一言が、最高のやりがい</h3>
-                                <div class="staff-box-past"></div>
-                                <p class="staff-box-position">コンサルタント</p>
-                                <p class="staff-box-year">2011年入社</p>
+                                <div class="staff-box-past">
+                                    <p class="staff-box-position">コンサルタント</p>
+                                    <p class="staff-box-year">2011年入社</p>
+                                </div>
+                                <p class="staff-box-name">西村 優</p>
                             </div>
-                            <p class="staff-box-name">西村 優</p>
                         </div>
-                    </div>
-                    <div class="staff-box js-fadeinup-trigger">
-                        <div class="staff-box-wrapper">
-                            <div class="staff-box-img"><img src="img/syain02.jpg" alt=""></div>
-                            <h3 class="staff-box-message">全力で考えぬける環境</h3>
-                            <h3 class="staff-box-message">試練の数だけ強くなれました</h3>
-                            <div class="staff-box-past"></div>
-                            <p class="staff-box-position">コンサルタント</p>
-                            <p class="staff-box-year">2015年入社</p>
+                        <div class="staff-box ">
+                            <div class="staff-box-wrapper">
+                                <div class="staff-box-img"><img src="img/syain02.jpg" alt=""></div>
+                                <h3 class="staff-box-message">全力で考えぬける環境</h3>
+                                <h3 class="staff-box-message">試練の数だけ強くなれました</h3>
+                                <div class="staff-box-past">
+                                    <p class="staff-box-position">コンサルタント</p>
+                                    <p class="staff-box-year">2015年入社</p>
+                                </div>
+                                <p class="staff-box-name">橋本 拓也</p>
+                            </div>
                         </div>
-                        <p class="staff-box-name">橋本 拓也</p>
+                        <div class="staff-box ">
+                            <div class="staff-box-wrapper">
+                                <div class="staff-box-img"><img src="img/syain03.jpg" alt=""></div>
+                                <h3 class="staff-box-message">お客様も知らない課題を</h3>
+                                <h3 class="staff-box-message">一緒に探し出す醍醐味</h3>
+                                <div class="staff-box-past">
+                                    <p class="staff-box-position">ソリューション営業</p>
+                                    <p class="staff-box-year">2017年入社</p>
+                                </div>
+                                <p class="staff-box-name">青木 美月</p>
+                            </div>   
+                        </div>
+                        <div class="staff-box" >
+                            <div class="staff-box-wrapper">
+                                <div class="staff-box-img"><img src="img/syain04.jpg" alt=""></div>
+                                <h3 class="staff-box-message">「あなたが担当で良かった」</h3>
+                                <h3 class="staff-box-message">この一言が、最高のやりがい</h3>
+                                <div class="staff-box-past">
+                                    <p class="staff-box-position">コンサルタント</p>
+                                    <p class="staff-box-year">2004年入社</p>
+                                </div>
+                                <p class="staff-box-name">佐々木 健</p>
+                            </div>
+                        </div>
+                        <div class="viewmore-button"><a href="">VIEW MORE</a></div>
                     </div>
-                </div>
-                <div class="staff-box js-fadeinup-trigger">
-                    <div class="staff-box-wrapper">
-                        <div class="staff-box-img"><img src="img/syain03.jpg" alt=""></div>
-                        <h3 class="staff-box-message">お客様も知らない課題を</h3>
-                        <h3 class="staff-box-message">一緒に探し出す醍醐味</h3>
-                        <div class="staff-box-past"></div>
-                        <p class="staff-box-position">ソリューション営業</p>
-                        <p class="staff-box-year">2017年入社</p>
-                    </div>
-                    <p class="staff-box-name">青木 美月</p>
-                </div>
-            </div>
-            <div class="staff-box js-fadeinup-trigger">
-                <div class="staff-box-wrapper">
-                    <div class="staff-box-img"><img src="img/syain04.jpg" alt=""></div>
-                    <h3 class="staff-box-message">「あなたが担当で良かった」</h3>
-                    <h3 class="staff-box-message">この一言が、最高のやりがい</h3>
-                    <div class="staff-box-past"></div>
-                    <p class="staff-box-position">コンサルタント</p>
-                    <p class="staff-box-year">2004年入社</p>
-                </div>
-                <p class="staff-box-name">佐々木 健</p>
-            </div>
-            <div class="button-viewmore"><a href="">VIEW MORE</a>
-            </div>
-            </div>
-            </div>
+                </div>  
             </div>
         </section>
-        <section id="fv-benefits" class="fv-benefits">
+        <section id="benefits" class="benefits">
             <div class="inner">
                 <div class="content-wrapper">
                     <div class="text-wrapper2">
                         <p class="section-title">BENEFITS</p>
                         <h2 data-title="" class="content-title"><span>制度・環境</span>を知る</h2>
-                        <p>TETOTEの社員がどういった信念を持って働いているのか、<br>
+                        <p>TETOTEの社員がどういった信念を持って働いているのか、
                             一日のスケジュールや仕事内容などを紹介します。</p>
                     </div>
                     <div class="img-wrapper">
                         <div class="img-box">
                             <img src="img/career1.svg" alt="">
                             <p class="img-message">Traning And Career</p>
+                        </div>
+                        <a href="/blog-detail/"><img src="img/page-black.png"></a>
+                        <div>
+                            <h3>研修制度とキャリアパス</h3>
+                            <p></p>
                         </div>
                     </div>
                     <div class="img-wrapper">
@@ -185,27 +198,31 @@
                             <p class="img-message">Employee Benefits</p>
                         </div>
                         <a href="/blog-detail/"><img src="img/page-black.png"></a>
+                        <div>
+                            <h3>研修制度とキャリアパス</h3>
+                            <p></p>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
-        <section id="fvblog" class="fvblog">
+        <section id="blog" class="blog">
             <div class="inner">
-                <div class="fvblog-sec">
+                <div class="blog-sec">
                     <div class="content-wrapper">
-                        <div class="fvblog-top">
+                        <div class="blog-top">
                             <div class="text-wrapper">
                                 <p class="section-title">BLOG</p>
                                 <h2 class="content-title">採用ブログ</h2>
                                 <p>採用情報やイベント情報、社員の紹介など、<br> 日々の現場の様子をご紹介します。</p>
                             </div>
                         </div>
-                        <div class="fvblog-wrapper">
-                            <ul class="fvblog-list">
+                        <div class="blog-wrapper">
+                            <ul class="blog-list">
                                 <li>
                                     <a href="./blog/blog.html">
                                         <div class="thumbnail"><img src="img/blog01.jpg" alt=""></div>
-                                        <div class="fvblog__box">
+                                        <div class="blog__box">
                                             <ul class="cat-list">
                                                 <li>社内研修</li>
                                             </ul>
@@ -217,7 +234,7 @@
                                 <li>
                                     <a href="./blog/blog.html">
                                         <div class="thumbnail"><img src="img/blog02.jpg" alt=""></div>
-                                        <div class="fvblog-box">
+                                        <div class="blog-box">
                                             <ul class="cat-list">
                                                 <li>社内研修</li>
                                             </ul>
@@ -229,7 +246,7 @@
                                 <li>
                                     <a href="./blog/blog.html">
                                         <div class="thumbnail"><img src="img/blog03.jpg" alt=""></div>
-                                        <div class="fvblog-box">
+                                        <div class="blog-box">
                                             <ul class="cat-list">
                                                 <li>社内イベント</li>
                                             </ul>
@@ -241,7 +258,7 @@
                                 <li>
                                     <a href="./blog/blog.html">
                                         <div class="thumbnail"><img src="img/blog04.jpg" alt=""></div>
-                                        <div class="fvblog-box">
+                                        <div class="blog-box">
                                             <ul class="cat-list">
                                                 <li>お知らせ</li>
                                             </ul>
@@ -257,7 +274,7 @@
                 </div>
             </div>
         </section>
-        <section id="fv-career" class="fv-career">
+        <section id="career" class="career">
             <div class="inner">
                 <div class="content-wrapper">
                     <div class="text-wrapper2">
@@ -265,7 +282,7 @@
                         <h2 data-title="" class="content-title"><span>採用情報</h2>
                         <p>募集要項（職種、業務内容、応募条件、選考フロー）とよくある質問・会社概要などをまとめています。</p>
                     </div>
-                    <div class="fvcareer-wrapper">
+                    <div class="career-wrapper">
                         <div class="link-box">
                             <div class="link-box-button"><a href="">募集要項</a></div>
                             <div class="link-box-button"><a href="">よくある質問</a></div>
@@ -312,7 +329,7 @@
         </div>
     </footer>
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script> -->
     <script src="./js/script.js"></script>
 
 </body>

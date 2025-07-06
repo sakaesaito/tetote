@@ -1,5 +1,40 @@
 'use script';
 
+/* 写真無限スライダー */
+
+const swiper = new Swiper('.swiper', {
+    speed: 5000,
+    loop: true, // プルーさせる
+    allowTouchMove: false,//スワイプ有効
+    centeredSlides: true,//中心を起点にする
+    autoplay: {
+        delay: 0, //途切れなくループ
+    },
+    breakpoints: {
+        0: {
+            slidesPerView: 1.8, // 一度に表示するスライドの数
+            spaceBetween: 15, // 要素間の余白
+        },
+
+        600: {
+            slidesPerView: 2,
+            spaceBetween: 35,
+        },
+
+        1200: {
+            slidesPerView: 3,
+            spaceBetween: 48,
+        },
+        1500: {
+            slidesPerView: 4,
+            spaceBetween: 48,
+
+        }
+    }
+});
+
+
+
 window.addEventListener('scroll', function () {
     const header = document.querySelector('.header');
     const headerHeight = header.offsetHeight; // ヘッダーの高さを取得
@@ -42,5 +77,3 @@ $(function () {
 })
 
 
-
-    
