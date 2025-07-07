@@ -438,36 +438,52 @@ button {
   max-width: 355px;
   width: 100%;
   margin: 0 auto;
-}
-.viewmore-button a {
   position: relative;
-  display: inline-block;
   padding: 1.875rem 7.75rem;
   text-align: center;
   border: 1px #222 solid;
   transition: all 0.5s;
+  color: #222;
 }
-.viewmore-button a::before {
+.viewmore-button::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 40px;
+  margin: auto;
+  width: 10px;
+  height: 10px;
   border-right: 3px solid #222222;
   border-top: 3px solid #222222;
-  bottom: 0;
-  content: "";
-  height: 10px;
-  margin: auto;
-  position: absolute;
-  right: 40px;
-  top: 0;
   transform: rotate(45deg);
   transition: all 0.5s;
-  width: 10px;
 }
-.viewmore-button a:hover {
-  background-color: #fff;
-  color: #222222;
+.viewmore-button:hover {
+  background-color: #222;
+  color: #fff;
 }
-.viewmore-button a:hover::before {
-  border-right: 3px solid #222222;
-  border-top: 3px solid #222222;
+.viewmore-button:hover::before {
+  border-right: 3px solid #ffffff;
+  border-top: 3px solid #ffffff;
+}
+
+.content-title {
+  font-size: 3.25rem;
+}
+@media screen and (max-width: 768px) {
+  .content-title {
+    font-size: 2rem;
+  }
+}
+.content-title span {
+  text-decoration: underline;
+}
+
+.content-item {
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
 }
 
 .header {
@@ -528,30 +544,44 @@ button {
   }
 }
 .header-button {
-  display: inline-block;
+  display: block;
+  margin-right: 1.25rem;
+  padding: 0.875rem 3.5rem;
+}
+
+.header-button-recruit {
+  background-color: #222222;
+  color: #fff;
   text-align: center;
   text-decoration: none;
   line-height: 1;
   cursor: pointer;
   transition: all 0.3s ease 0s;
-  position: relative;
-  margin-right: 1.25rem;
-}
-.header-button a {
-  display: block;
   padding: 0.875rem 3.5rem;
 }
-.header-button-recruit {
-  background-color: #222222;
-  color: #fff;
+.header-button-recruit:hover {
+  background-color: #fff;
+  color: #222;
 }
+
 .header-button-entry {
   background-color: #AFA86F;
+  color: #fff;
+  text-align: center;
+  text-decoration: none;
+  line-height: 1;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+  padding: 0.875rem 3.5rem;
 }
 @media screen and (max-width: 768px) {
-  .header-button {
+  .header-button-entry {
     display: none;
   }
+}
+.header-button-entry:hover {
+  background-color: #988C2C;
+  color: #222222;
 }
 
 .header-hamburger {
@@ -821,6 +851,14 @@ button {
   transition-timing-function: linear !important;
 }
 
+.section-title {
+  font-family: "poppins";
+  font-size: 8.5rem;
+  font-weight: 400;
+  line-height: 1;
+  color: rgba(151, 151, 151, 0.1019607843);
+}
+
 .about-viw {
   background-image: url(/img/top-map.jpg);
   background-size: contain;
@@ -838,4 +876,62 @@ button {
 
 .about-lead-ms2 {
   margin-top: 3.25rem;
+}
+
+.staff {
+  margin-top: 76px;
+}
+
+.staff-inner {
+  margin-right: 0;
+  margin-left: 20%;
+  max-width: 1323px;
+  width: 100%;
+}
+
+.staff-text-wrapper {
+  position: relative;
+}
+
+.staff-box-wrapper {
+  display: flex;
+}
+
+.staff-section-title {
+  position: absolute;
+  top: 0;
+  left: -14rem;
+}
+
+.staff-content-item {
+  margin-top: 52px;
+}
+
+.staff-sec {
+  margin-top: 52px;
+}
+
+.staff-box {
+  margin-right: 2.57%;
+  position: absolute;
+}
+
+.staff-box-message {
+  font-size: 1.25rem;
+  line-height: 1.2;
+  background-color: #AFA86F;
+  display: inline-block;
+}
+
+.staff-box-past {
+  display: flex;
+}
+
+.staff-box-position {
+  margin-right: 10px;
+}
+
+.staff-box-name {
+  font-weight: 700;
+  font-size: 1.5rem;
 }/*# sourceMappingURL=style.css.map */

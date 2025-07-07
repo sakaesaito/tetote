@@ -59,35 +59,50 @@
 }
 
 .header-button {
-    display: inline-block;
+    display: block;
+    margin-right:1.25rem;
+    padding: 0.875rem 3.5rem;
+}
+    
+.header-button-recruit {
+    background-color: #222222;
+    color: #fff;
     text-align: center;
     text-decoration: none;
     line-height: 1;
     cursor: pointer;
     transition: all 0.3s ease 0s;
-    position: relative;
-    margin-right:1.25rem;
+    padding: 0.875rem 3.5rem;
 
-
-    a {
-        display: block;
-        padding: 0.875rem 3.5rem;
+    &:hover {
+        background-color: #fff;
+        color: #222;
     }
+    
+}
 
-    &-recruit {
-        background-color: #222222;
-        color: #fff;
-    }
 
-    &-entry {
-        background-color: #AFA86F;
-    }
+.header-button-entry  {
+    background-color: #AFA86F;
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+    line-height: 1;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+    padding: 0.875rem 3.5rem;
 
     @media screen and (max-width: 768px) {
         display: none;
     }
 
+    &:hover {
+        background-color: #988C2C;
+        color: #222222;
+    }
 }
+
+
 .header-hamburger {
     margin-left:1.25rem;
     @media screen and (max-width: 768px) {
