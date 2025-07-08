@@ -1,5 +1,6 @@
 .staff {
     margin-top: 76px;
+    position: relative;
 }
 .staff-inner {
     margin-right: 0;
@@ -13,11 +14,7 @@
 .staff-box-wrapper {
     display: flex;
 }
-.staff-section-title {
-    position: absolute;
-    top: 0;
-    left: -14rem;
-}
+
 .staff-content-item {
     margin-top: 52px;
 }
@@ -26,14 +23,13 @@
 }
 .staff-box {
     margin-right: 2.57%;
-    position: absolute;
-    // &:nth-child(4) {
-    //     margin-right: 0;
-    //     margin-top: 30px;
-    // }
-    // &:nth-child(2) {
-    //     margin-top: 30px;
-    // }
+    &:nth-child(4) {
+        margin-right: 0;
+        margin-top: 30px;
+    }
+    &:nth-child(2) {
+        margin-top: 30px;
+    }
 }
 .staff-box-message {
     font-size: 1.25rem;
@@ -51,3 +47,14 @@
     font-weight: 700;
     font-size: 1.5rem;
 }
+
+.viewmore-button-staff{
+    margin-top: 72px;
+}
+
+.section-title-staff {
+    position: absolute;
+    top: -15px;
+    left: 126px;
+}
+

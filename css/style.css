@@ -482,8 +482,15 @@ button {
 
 .content-item {
   font-size: 1rem;
-  font-weight: 400;
   line-height: 1.5;
+}
+
+.section-title {
+  font-size: 8.5rem;
+  font-family: "Poppins";
+  font-weight: 400;
+  line-height: 1;
+  color: rgba(151, 151, 151, 0.1019607843);
 }
 
 .header {
@@ -851,14 +858,6 @@ button {
   transition-timing-function: linear !important;
 }
 
-.section-title {
-  font-family: "poppins";
-  font-size: 8.5rem;
-  font-weight: 400;
-  line-height: 1;
-  color: rgba(151, 151, 151, 0.1019607843);
-}
-
 .about-viw {
   background-image: url(/img/top-map.jpg);
   background-size: contain;
@@ -880,6 +879,7 @@ button {
 
 .staff {
   margin-top: 76px;
+  position: relative;
 }
 
 .staff-inner {
@@ -897,12 +897,6 @@ button {
   display: flex;
 }
 
-.staff-section-title {
-  position: absolute;
-  top: 0;
-  left: -14rem;
-}
-
 .staff-content-item {
   margin-top: 52px;
 }
@@ -913,7 +907,13 @@ button {
 
 .staff-box {
   margin-right: 2.57%;
-  position: absolute;
+}
+.staff-box:nth-child(4) {
+  margin-right: 0;
+  margin-top: 30px;
+}
+.staff-box:nth-child(2) {
+  margin-top: 30px;
 }
 
 .staff-box-message {
@@ -934,4 +934,29 @@ button {
 .staff-box-name {
   font-weight: 700;
   font-size: 1.5rem;
+}
+
+.viewmore-button-staff {
+  margin-top: 72px;
+}
+
+.section-title-staff {
+  position: absolute;
+  top: -15px;
+  left: 126px;
+}
+
+.benefits {
+  position: relative;
+  margin-top: 6.3125rem;
+}
+
+.section-title-benefits {
+  position: absolute;
+  top: -14px;
+  left: 30.5rem;
+}
+
+.content-title-benefits {
+  text-align: center;
 }/*# sourceMappingURL=style.css.map */
