@@ -7,9 +7,9 @@
 .content-title-benefits {
     text-align: center;
     position: relative;
-}
-.content-title-benefits::after {
-    content: "";
+
+    &::after {
+        content: "";
     position: absolute;
     left: 14.5rem;
     top: 0;
@@ -20,7 +20,9 @@
     background-image: url(/img/benefit-title.png);
     background-repeat: no-repeat;
     background-size: contain;
+    }
 }
+
 
 .benefits-main-box {
     display: flex;

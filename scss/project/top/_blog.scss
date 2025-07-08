@@ -1,0 +1,46 @@
+.blog-content-title {
+    position: relative;
+    margin-top: 107px;
+
+    &::after {
+        content: "";
+    position: absolute;
+    left: -2.875rem;
+    top: 0;
+    z-index: -1;
+    max-width: 564px;
+    width: 100%;
+    height: 100%;
+    background-image: url(/img/blog-title.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    }
+}
+.blog-content-item {
+    margin-top: 73px;
+}
+.blog-wrapper {
+    margin-top: 61px;
+}
+.blog-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    grid-template-rows: repeat(2, 1fr); 
+    grid-gap:  23px 52px;
+    
+    @media screen and (max-width: 768px) {
+    display: block;
+    }
+}
+
+
+.blog-box-main {
+    display: flex;
+}
+
+.thumbnail {
+    width: 156px;
+    height: 180px;
+   
+}
+
