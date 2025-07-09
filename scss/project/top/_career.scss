@@ -1,0 +1,36 @@
+.career {
+    padding-top: 87px;
+    padding-bottom: 139px;
+}
+.career-content-title {
+    text-align: center;
+    position: relative;
+
+    &::after {
+        content: "";
+    position: absolute;
+    left: 14.5rem;
+    top: 0;
+    z-index: -1;
+    max-width: 564px;
+    width: 100%;
+    height: 100%;
+    background-image: url(/img/recruitment-title.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    }
+}
+
+.career-content-wrapper {
+    text-align: center;
+}
+.career-content-item {
+    margin-top: 52px;
+}
+.career-wrapper {
+    margin-top: 64px;
+    text-align: center;
+}
+.career-wrapper {
+    display: flex;
+}
