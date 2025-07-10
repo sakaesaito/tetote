@@ -7,8 +7,13 @@ footer {
 .footer-view {
     background-image: url(/img/footer.jpg);
     background-size: cover;
-    height: 488.22px;
+    background-position: center;
     background-repeat: no-repeat;
+    height: 488.22px;
+
+    @media screen and (max-width: 768px) {
+        height: 250px;
+    }
 }
 
 .contact-box {
@@ -25,8 +30,13 @@ footer {
     padding-top: 50px;
 
     @media screen and (max-width: 1024px) {
-        width: 95%;
-        height: auto;
+        width: 91.5%;
+        height: 236px;
+        top: 40%;
+        padding-top: 24px;
+    }
+    @media screen and (max-width: 768px) {
+        top: 25%;
     }
 }
 .footer-inner {
@@ -34,12 +44,14 @@ footer {
     max-width: 1312px;
     height: auto;
     text-align: center;
-    padding-bottom: 50px;
+    padding-bottom: 64px;
     border-radius: 20px;
     margin-bottom: 40px;
 
     @media screen and (max-width: 1024px) {
         height: 100%;
+        margin-bottom: 0;
+        padding-bottom: 24px;
     }
     
 }
@@ -48,6 +60,7 @@ footer {
     width: 100%;
     margin:  31px auto 0 auto;
     position: relative;
+    line-height: 1;
 
     @media screen and (max-width: 1024px) {
         width: 53%;
@@ -59,6 +72,7 @@ footer {
     padding-top: 27px;
     padding-bottom: 27px;
     background-color: #AFA86F;
+    transition: .4s;
 
     &::before {
         content: "";
@@ -72,7 +86,7 @@ footer {
         border-right: 3px solid #222222;
         border-top: 3px solid #222222;
         transform: rotate(45deg);
-        transition: all 0.5s;
+        transition: all 0.4s;
     }
 
     &:hover {
@@ -109,11 +123,18 @@ footer {
 
     @media screen and (max-width: 1024px) {
         display: block;
+        margin-top: 200px;
     }
 }
 .footer-logo {
     max-width: 250px;
     width: 100%;
+    transition: .4s;
+
+    &:hover {
+        opacity: .7;
+    }
+
 
     @media screen and (max-width: 1024px) {
         margin: 100px auto 0 auto;
@@ -122,6 +143,11 @@ footer {
 .footer-list a{
     padding-left: 20px;
     line-height: 1;
+    transition: .3s;
+
+    &:hover {
+        opacity: .7;
+    }
 
     &:nth-child(1) {
     padding-left: 0;
@@ -129,7 +155,7 @@ footer {
     
     @media screen and (max-width: 1024px) {
         display: block;
-        margin-top: 24px;
+        margin-top: 20px;
         text-align: center;
         padding-left: 0;
 
@@ -138,27 +164,41 @@ footer {
 }
 .footer-list2 {
     margin-top: 32px;
+    @media screen and (max-width: 1024px) {
+        margin-top: 0;
+    }
 }
 .footer-nav {
     display: flex;
     gap: 10px;
-    position: absolute;
-    right: 17%;
-    bottom: 11%;
+    justify-content: end;
+    margin-right: 11%;
+    margin-top: 61px;
+
+    a{
+        transition: .3s;
+
+        &:hover {
+            opacity: .7;
+        }
+    }
+    
+
 
     @media screen and (max-width: 1024px) {
         margin: 0;
         justify-content: center;
-        bottom: 26%;
-        right: 45%;
+        position: absolute;
+        bottom: 15%;
+        right: 50%;
+        transform:translate(50%, 0);
     }
 }
 .copyright {
     text-align: left;
     display: block;
     margin-left: 180px;
-    margin-top: 100px;
-    margin-bottom: 67px;
+    line-height: 1;
 
     @media screen and (max-width: 1024px) {
         text-align: center;
