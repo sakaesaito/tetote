@@ -1,6 +1,7 @@
 .career {
     padding-top: 87px;
     padding-bottom: 139px;
+    background-color: #FAF7F1;
 }
 .career-content-title {
     text-align: center;
@@ -9,10 +10,8 @@
     &::after {
         content: "";
     position: absolute;
-    left: 14.5rem;
+    left: 6%;
     top: 0;
-    z-index: -1;
-    max-width: 564px;
     width: 100%;
     height: 100%;
     background-image: url(/img/recruitment-title.png);
@@ -20,17 +19,68 @@
     background-size: contain;
     }
 }
+.career-content-item  {
+    font-weight: 400;
+    margin-top: 52px;
+}
 
 .career-content-wrapper {
     text-align: center;
 }
-.career-content-item {
-    margin-top: 52px;
-}
+
 .career-wrapper {
     margin-top: 64px;
     text-align: center;
 }
-.career-wrapper {
+.link-box {
     display: flex;
+    gap: 1rem;
+    width: 100%;
+    max-width: 1024px;
+}
+.link-box-button {
+    font-size: 1.25rem;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-color: #fff;
+    transition: all 0.5s;
+    color: #222;
+    position: relative;
+
+    &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: 40px;
+        margin: auto;
+        width: 10px;
+        height: 10px;
+        border-right: 3px solid #222222;
+        border-top: 3px solid #222222;
+        transform: rotate(45deg);
+        transition: all 0.5s;
+    }
+
+    &:hover {
+        background-color: #222;
+        color: #fff;
+
+        &::before {
+            border-right: 3px solid #ffffff;
+            border-top: 3px solid #ffffff;
+        }    
+    }
+}
+.link-box-button1 a{
+    display: block;
+    padding-inline: 10.1em;
+}
+.link-box-button2 a{
+    display: block;
+    width: 100%;
+    margin-top: 21px;
+}
+.link-box-button2 {
+    margin-top: 21px;
 }

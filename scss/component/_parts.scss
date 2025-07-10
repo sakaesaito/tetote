@@ -13,7 +13,6 @@ button {
     width: 100%;
     margin: 0 auto;
     position: relative;
-    padding: 1.875rem 7.75rem;
     text-align: center;
     border: 1px #222 solid;
     transition: all 0.5s;
@@ -43,6 +42,10 @@ button {
             border-top: 3px solid #ffffff;
         }    
     }
+}
+.viewmore-button a {
+    display: block;
+    padding: 1.875rem 7.75rem;
 
 }
 .content-title {

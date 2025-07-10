@@ -439,7 +439,6 @@ button {
   width: 100%;
   margin: 0 auto;
   position: relative;
-  padding: 1.875rem 7.75rem;
   text-align: center;
   border: 1px #222 solid;
   transition: all 0.5s;
@@ -466,6 +465,11 @@ button {
 .viewmore-button:hover::before {
   border-right: 3px solid #ffffff;
   border-top: 3px solid #ffffff;
+}
+
+.viewmore-button a {
+  display: block;
+  padding: 1.875rem 7.75rem;
 }
 
 .content-title {
@@ -624,6 +628,195 @@ button {
   margin: 0;
   font-size: 0.75rem;
   color: #fff;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.footer-view {
+  background-image: url(/img/footer.jpg);
+  background-size: cover;
+  height: 488.22px;
+  background-repeat: no-repeat;
+}
+
+.contact-box {
+  max-width: 956px;
+  height: 273px;
+  width: 100%;
+  margin: 0 auto;
+  background-color: #fff;
+  border-radius: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding-top: 50px;
+}
+@media screen and (max-width: 1024px) {
+  .contact-box {
+    width: 95%;
+    height: auto;
+  }
+}
+
+.footer-inner {
+  background-color: #FAF7F1;
+  max-width: 1312px;
+  height: auto;
+  text-align: center;
+  padding-bottom: 50px;
+  border-radius: 20px;
+  margin-bottom: 40px;
+}
+@media screen and (max-width: 1024px) {
+  .footer-inner {
+    height: 100%;
+  }
+}
+
+.button-viewmore-entry {
+  max-width: 556px;
+  width: 100%;
+  margin: 31px auto 0 auto;
+  position: relative;
+}
+@media screen and (max-width: 1024px) {
+  .button-viewmore-entry {
+    width: 53%;
+  }
+}
+
+.button-viewmore-entry a {
+  display: block;
+  padding-top: 27px;
+  padding-bottom: 27px;
+  background-color: #AFA86F;
+}
+.button-viewmore-entry a::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 40px;
+  margin: auto;
+  width: 10px;
+  height: 10px;
+  border-right: 3px solid #222222;
+  border-top: 3px solid #222222;
+  transform: rotate(45deg);
+  transition: all 0.5s;
+}
+.button-viewmore-entry a:hover {
+  background-color: #222;
+  color: #fff;
+}
+.button-viewmore-entry a:hover::before {
+  border-right: 3px solid #ffffff;
+  border-top: 3px solid #ffffff;
+}
+@media screen and (max-width: 1024px) {
+  .button-viewmore-entry a {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: 0.875rem;
+  }
+}
+
+.footer-content-wrapper {
+  margin-top: 223.5px;
+  text-align: center;
+  max-width: 956px;
+  width: 100%;
+  margin-inline: auto;
+}
+@media screen and (max-width: 1024px) {
+  .footer-content-wrapper {
+    margin-top: 50px;
+  }
+}
+
+.footer-links {
+  display: flex;
+  gap: 11.4%;
+  text-align: left;
+  flex-direction: row-reverse;
+}
+@media screen and (max-width: 1024px) {
+  .footer-links {
+    display: block;
+  }
+}
+
+.footer-logo {
+  max-width: 250px;
+  width: 100%;
+}
+@media screen and (max-width: 1024px) {
+  .footer-logo {
+    margin: 100px auto 0 auto;
+  }
+}
+
+.footer-list a {
+  padding-left: 20px;
+  line-height: 1;
+}
+.footer-list a:nth-child(1) {
+  padding-left: 0;
+}
+@media screen and (max-width: 1024px) {
+  .footer-list a {
+    display: block;
+    margin-top: 24px;
+    text-align: center;
+    padding-left: 0;
+  }
+}
+
+.footer-list2 {
+  margin-top: 32px;
+}
+
+.footer-nav {
+  display: flex;
+  gap: 10px;
+  position: absolute;
+  right: 17%;
+  bottom: 11%;
+}
+@media screen and (max-width: 1024px) {
+  .footer-nav {
+    margin: 0;
+    justify-content: center;
+    bottom: 26%;
+    right: 45%;
+  }
+}
+
+.copyright {
+  text-align: left;
+  display: block;
+  margin-left: 180px;
+  margin-top: 100px;
+  margin-bottom: 67px;
+}
+@media screen and (max-width: 1024px) {
+  .copyright {
+    text-align: center;
+    margin-top: 49px;
+    margin-inline: auto;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .footer-contact-item {
+    font-size: 0.875rem;
+    line-height: 2.5;
+  }
 }
 
 .mv-inner {
@@ -887,9 +1080,6 @@ button {
 }
 
 .staff-inner {
-  margin-right: 0;
-  margin-left: 20%;
-  max-width: 1323px;
   width: 100%;
 }
 
@@ -970,6 +1160,7 @@ button {
 .career {
   padding-top: 87px;
   padding-bottom: 139px;
+  background-color: #FAF7F1;
 }
 
 .career-content-title {
@@ -979,10 +1170,8 @@ button {
 .career-content-title::after {
   content: "";
   position: absolute;
-  left: 14.5rem;
+  left: 6%;
   top: 0;
-  z-index: -1;
-  max-width: 564px;
   width: 100%;
   height: 100%;
   background-image: url(/img/recruitment-title.png);
@@ -990,12 +1179,13 @@ button {
   background-size: contain;
 }
 
-.career-content-wrapper {
-  text-align: center;
+.career-content-item {
+  font-weight: 400;
+  margin-top: 52px;
 }
 
-.career-content-item {
-  margin-top: 52px;
+.career-content-wrapper {
+  text-align: center;
 }
 
 .career-wrapper {
@@ -1003,8 +1193,58 @@ button {
   text-align: center;
 }
 
-.career-wrapper {
+.link-box {
   display: flex;
+  gap: 1rem;
+  width: 100%;
+  max-width: 1024px;
+}
+
+.link-box-button {
+  font-size: 1.25rem;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  background-color: #fff;
+  transition: all 0.5s;
+  color: #222;
+  position: relative;
+}
+.link-box-button::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 40px;
+  margin: auto;
+  width: 10px;
+  height: 10px;
+  border-right: 3px solid #222222;
+  border-top: 3px solid #222222;
+  transform: rotate(45deg);
+  transition: all 0.5s;
+}
+.link-box-button:hover {
+  background-color: #222;
+  color: #fff;
+}
+.link-box-button:hover::before {
+  border-right: 3px solid #ffffff;
+  border-top: 3px solid #ffffff;
+}
+
+.link-box-button1 a {
+  display: block;
+  padding-inline: 10.1em;
+}
+
+.link-box-button2 a {
+  display: block;
+  width: 100%;
+  margin-top: 21px;
+}
+
+.link-box-button2 {
+  margin-top: 21px;
 }
 
 .benefits {
@@ -1126,6 +1366,11 @@ button {
   padding-bottom: 80px;
 }
 
+.blog-box {
+  background-color: #fff;
+  border-radius: 0 10px 10px 0;
+}
+
 .blog-content-title {
   position: relative;
 }
@@ -1164,7 +1409,6 @@ button {
 
 .blog-box-main {
   display: flex;
-  border-radius: 10%;
 }
 
 .thumbnail {
@@ -1175,6 +1419,7 @@ button {
 .blog-box-main img {
   height: 100%;
   object-fit: cover;
+  border-radius: 10px 0 0 10px;
 }
 
 .blog-box-right {
