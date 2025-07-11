@@ -506,6 +506,12 @@ button {
   width: 100%;
   height: 118px;
 }
+.header.drawer-open {
+  background-color: #fff;
+}
+.header.drawer-open .header-logo__link img {
+  content: url("/img/tetote-logo-black.png");
+}
 
 .header-inner {
   padding-inline: 1.81%;
@@ -543,6 +549,16 @@ button {
   opacity: 1;
   visibility: visible;
   animation: slideDown 0.3s ease-in-out;
+  background-color: #fff;
+}
+.header--sticky .header-logo__link img {
+  content: url("/img/tetote-logo-black.png");
+}
+.header--sticky .header-hamburger-icon span {
+  background-color: #222222;
+}
+.header--sticky .header-hamburger-item {
+  color: #222222;
 }
 
 .header-nav {
@@ -879,6 +895,105 @@ footer {
   }
 }
 
+/* ドロワーメニュー */
+.drawer-nav {
+  display: none;
+}
+
+.drawer-nav.active {
+  display: block;
+  position: fixed;
+  top: 100px;
+  right: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: #fff;
+  transition: 0.5s;
+  transform: translateX(0%);
+  opacity: 1;
+  pointer-events: all;
+  color: #000;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+  padding-bottom: 10%;
+}
+
+.drawer-nav a {
+  transition: 0.4s;
+  display: block;
+  height: inherit;
+  align-items: center;
+}
+
+.drawer-list {
+  text-align: center;
+  text-decoration-skip-ink: none;
+  align-items: center;
+  padding-top: 32px;
+}
+
+.drawer-item {
+  list-style: none;
+  padding-top: 32px;
+}
+
+.slider-heading {
+  width: 100%;
+  margin: 0 auto;
+  display: block;
+  position: absolute;
+  bottom: 0.3rem;
+  z-index: 1;
+  text-align: center;
+}
+
+.slider-heading-ms {
+  background-color: #fff;
+  color: #222;
+  font-size: 2.5rem;
+  line-height: 1;
+  padding: 10px 0;
+  margin-top: -1.5rem;
+}
+
+.slider {
+  width: 100%;
+  margin-top: 101px;
+  background-color: #fff;
+  position: relative;
+}
+@media screen and (max-width: 768px) {
+  .slider {
+    padding-top: 2.5%;
+    padding-bottom: 15%;
+  }
+}
+
+.swiper-wrapper {
+  width: 100%;
+}
+
+.swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 506px;
+  height: auto;
+}
+.swiper-slide img {
+  width: 100%;
+  display: block;
+}
+.swiper-slide:nth-child(2), .swiper-slide:nth-child(5) {
+  margin-top: 30px;
+}
+
+.swiper-wrapper {
+  display: flex;
+  gap: 3%;
+  transition-timing-function: linear !important;
+}
+
 .mv-inner {
   width: 100%;
 }
@@ -1051,63 +1166,6 @@ footer {
   .mv-news-link {
     display: none;
   }
-}
-
-.slider-heading {
-  width: 100%;
-  margin: 0 auto;
-  display: block;
-  position: absolute;
-  bottom: 0.3rem;
-  z-index: 1;
-  text-align: center;
-}
-
-.slider-heading-ms {
-  background-color: #fff;
-  color: #222;
-  font-size: 2.5rem;
-  line-height: 1;
-  padding: 10px 0;
-  margin-top: -1.5rem;
-}
-
-.slider {
-  width: 100%;
-  margin-top: 101px;
-  background-color: #fff;
-  position: relative;
-}
-@media screen and (max-width: 768px) {
-  .slider {
-    padding-top: 2.5%;
-    padding-bottom: 15%;
-  }
-}
-
-.swiper-wrapper {
-  width: 100%;
-}
-
-.swiper-slide {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  max-width: 506px;
-  height: auto;
-}
-.swiper-slide img {
-  width: 100%;
-  display: block;
-}
-.swiper-slide:nth-child(2), .swiper-slide:nth-child(5) {
-  margin-top: 30px;
-}
-
-.swiper-wrapper {
-  display: flex;
-  gap: 3%;
-  transition-timing-function: linear !important;
 }
 
 .about {
