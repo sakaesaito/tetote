@@ -1,5 +1,15 @@
 'use script';
 
+/*ハンバーガーメニュー */
+$(function () {
+    $(".header-hamburger").click(function () {
+        $(this).toggleClass("active");
+        $(".header-drawer").toggleClass("active");
+    });
+});
+
+
+
 /* 写真無限スライダー */
 
 const swiper = new Swiper('.swiper', {

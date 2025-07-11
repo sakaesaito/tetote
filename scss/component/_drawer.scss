@@ -1,0 +1,90 @@
+/* ドロワーメニュー */
+.header-drawer {
+    display: none;
+}
+
+.header-drawer.active {
+    position: fixed;
+    top: 80px;
+    right: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: #fff;
+    transition: 0.3s;
+    transform: translateX(100%);
+    opacity: 0;
+    pointer-events: none;
+    color: #000;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+    padding-bottom: 10%;
+}
+
+.header-drawer.active {
+    transform: translateX(0%);
+    visibility: visible;
+    pointer-events: all;
+}
+
+.header-drawer-nav a {
+    transition: 0.4s;
+    display: block;
+    height: inherit;
+    align-items: center;
+}
+
+.header-drawer-list {
+    text-align: center;
+    text-decoration-skip-ink: none;
+    align-items: center;
+    padding-top: 32px;
+}
+
+.header-drawer-item {
+    list-style: none;
+    padding-top: 32px;   
+}
+
+
+.drawer-mail-icon {
+    position: relative;
+    display: flex;
+    padding-left: 30px;
+    transition: 0.3s;
+
+    &::before {
+        content: "";
+        display: block;
+        width: 20px;
+        height: 20px;
+        position: absolute;
+        background-image: url(../img/mail-icon.png);
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: contain;
+        left: -4px;
+        top: 15%;
+    }
+
+    &:hover {
+        opacity: .5;
+    }
+
+    @media screen and (max-width: 1024px) {
+        margin: 0 auto;
+        max-width: 150px;
+
+        &::before {
+            display: block;
+            width: 20px;
+            height: 20px;
+            position: absolute;
+            background-image: url(../img/mail-icon.png);
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-size: contain;
+            left: 0px;
+            top: -11%;
+        }
+    }
+}

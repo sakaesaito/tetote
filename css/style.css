@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*! destyle.css v4.0.1 | MIT License | https://github.com/nicolas-cusan/destyle.css */
 /* Reset box-model and set borders */
 /* ============================================ */
@@ -507,14 +508,15 @@ button {
 }
 
 .header-inner {
-  padding-inline: 1.625rem;
+  padding-inline: 1.81%;
   height: inherit;
 }
 
 .header-logo {
   width: 100%;
-  max-width: 14rem;
+  max-width: 250px;
   transition: 0.3s;
+  margin-left: 26px;
 }
 .header-logo__link {
   padding: 3.7rem 0 1.75rem 0;
@@ -562,49 +564,50 @@ button {
   display: block;
   margin-right: 1.25rem;
   padding: 0.875rem 3.5rem;
-}
-
-.header-button-recruit {
-  background-color: #222222;
-  color: #fff;
+  transition: all 0.3s ease 0s;
   text-align: center;
   text-decoration: none;
   line-height: 1;
   cursor: pointer;
-  transition: all 0.3s ease 0s;
-  padding: 0.875rem 3.5rem;
 }
-.header-button-recruit:hover {
-  background-color: #fff;
-  color: #222;
-}
-
 .header-button-entry {
   background-color: #AFA86F;
   color: #fff;
-  text-align: center;
-  text-decoration: none;
-  line-height: 1;
-  cursor: pointer;
-  transition: all 0.3s ease 0s;
-  padding: 0.875rem 3.5rem;
+}
+.header-button-entry:hover {
+  background-color: #fff;
+  color: #222;
 }
 @media screen and (max-width: 768px) {
   .header-button-entry {
     display: none;
   }
 }
-.header-button-entry:hover {
+.header-button-recruit {
+  background-color: #222222;
+  color: #fff;
+}
+@media screen and (max-width: 768px) {
+  .header-button-recruit {
+    display: none;
+  }
+}
+.header-button-recruit:hover {
   background-color: #988C2C;
   color: #222222;
 }
 
 .header-hamburger {
   margin-left: 1.25rem;
+  transition: all 0.3s ease 0s;
+}
+.header-hamburger:hover {
+  opacity: 0.7;
 }
 @media screen and (max-width: 768px) {
   .header-hamburger {
     margin-top: 0.5rem;
+    margin-left: 0;
   }
 }
 
@@ -614,24 +617,39 @@ button {
   top: 12px;
   left: 25%;
   width: 52px;
-  height: 1px;
+  height: 2px;
   background-color: #fff;
   margin: 0 auto;
 }
 
 .header-hamburger-icon span:nth-of-type(2) {
-  margin-top: 9px;
+  margin-top: 12px;
 }
 
 .header-hamburger-icon span:nth-of-type(3) {
-  margin-top: 9px;
+  margin-top: 12px;
 }
 
 .header-hamburger-item {
   text-align: center;
-  margin: 0;
+  margin: 9px 0 0 0;
   font-size: 0.75rem;
+  line-height: 1;
+  font-weight: 400;
   color: #fff;
+}
+
+/* .header-hamburgerクラスがactiveの時のコード*/
+.header-hamburger.active span:nth-child(1) {
+  transform: rotate(45deg) translate(8px, 12px);
+}
+
+.header-hamburger.active span:nth-child(2) {
+  opacity: 0;
+}
+
+.header-hamburger.active span:nth-child(3) {
+  transform: rotate(-45deg) translate(8px, -12px);
 }
 
 footer {
