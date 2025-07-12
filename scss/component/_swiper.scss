@@ -1,11 +1,12 @@
 .slider-heading {
+    max-width: 560px;
     width: 100%;
-    margin: 0 auto;
     display: block;
     position: absolute;
     bottom: 0.3rem;
     z-index: 1;
     text-align: center;
+    left: 30%;
 } 
 .slider-heading-ms {
     background-color: #fff;
@@ -28,10 +29,6 @@
     }
 }
 
-.swiper-wrapper {
-    width: 100%;
-}
-
 .swiper-slide {
     display: flex;
     justify-content: center;
@@ -44,9 +41,9 @@
         display: block;
     }
 
-    &:nth-child(2) ,&:nth-child(5) {
-        margin-top:30px;
-    }
+    // &:nth-child(2) ,&:nth-child(5) {
+    //     margin-top:30px;
+    // }
 
 }
 
@@ -54,5 +51,6 @@
     display: flex;
     gap: 3%;
     transition-timing-function: linear !important;
+    overflow: hidden;
 
 }

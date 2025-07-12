@@ -59,7 +59,6 @@ const swiper = new Swiper('.slider', {
 });
 
 
-
 window.addEventListener('scroll', function () {
     const header = document.querySelector('.header');
     const mv = document.querySelector('.mv');

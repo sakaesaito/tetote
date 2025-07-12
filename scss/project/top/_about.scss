@@ -14,8 +14,13 @@
     font-size: 2.25rem;
     line-height: 1.8;
     text-align: center; 
+
+    @media screen and (max-width: 1024px) {
+        font-size: 1.125rem;
+    }
 }
 
 .about-lead-ms2 {
     margin-top: 3.25rem;
+
 }
