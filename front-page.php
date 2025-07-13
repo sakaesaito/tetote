@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 
-<main class="home-main">
+<!-- <main class="home-main">
   <div class="mv">
     <div class="inner">
       <p class="mv-text"><span class="inner-text">環境問題に取り組み</span><span class="inner-text">持続可能な</span><span class="inner-text">社会実現を目指す</span></p>
@@ -119,7 +119,7 @@
       <?php else: ?>
         <p>記事はありません。</p>
       <?php endif; ?>
-      <?php wp_reset_postdata(); ?>
+      <?php wp_reset_postdata(); ?> -->
     </section>
   </div>
 </main>

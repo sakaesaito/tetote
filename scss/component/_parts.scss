@@ -11,7 +11,7 @@ button {
 .viewmore-button {
     max-width: 355px;
     width: 100%;
-    margin: 0 auto;
+    margin: 52px auto 0;
     position: relative;
     text-align: center;
     border: 1px #222 solid;
@@ -41,6 +41,10 @@ button {
             border-right: 3px solid #ffffff;
             border-top: 3px solid #ffffff;
         }    
+    }
+
+    @media screen and (max-width: 1024px) {
+        margin-top: 39px;
     }
 }
 .viewmore-button a {

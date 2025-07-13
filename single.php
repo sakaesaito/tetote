@@ -4,7 +4,7 @@
   <?php if (have_posts()): ?>
     <?php while (have_posts()): the_post(); ?>
 
-      <p data-title="News" class="page-title">お知らせ</p>
+      <!-- <p data-title="News" class="page-title">お知らせ</p>
 
       <div class="inner is-small">
         <ol class="c-breadcrumbs">
@@ -48,7 +48,7 @@
 
           <?php get_sidebar(); ?>
         </div>
-      </div>
+      </div> -->
 
     <?php endwhile; ?>
   <?php endif; ?>

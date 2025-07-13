@@ -1,46 +1,53 @@
-<?php if (is_page('privacy') || is_404() || is_page('contact') || is_single()): ?>
-  <footer class="footer-b">
-    <div class="inner">
-      <ul class="footer-nav">
-        <li><a href="<?php echo esc_url(home_url('/')); ?>privacy/">プライバシーポリシー</a></li>
-      </ul>
-      <small class="copyright">&copy; GOOD OCEAN.inc</small>
-    </div>
-  </footer>
-<?php else: ?>
-  <footer class="footer-a">
-    <div class="inner">
-      <div class="contact-box">
-        <h2 data-title="Contact" class="content-title">お問い合わせ</h2>
-        <div class="content-wrapper">
-          <div class="item-left">
-            <p><?php echo nl2br(SCF::get('footer-left-area', get_option('page_on_front'))); ?></p>
-          </div>
-          <div class="item-right">
-            <p class="text"><?php echo nl2br(SCF::get('footer-right-area', get_option('page_on_front'))); ?></p>
-            <a href="<?php echo esc_url(home_url('/')); ?>contact/" class="btn">お問い合わせフォーム</a>
-          </div>
-        </div>
-      </div>
-      <ul class="footer-nav">
-        <li><a href="<?php echo esc_url(home_url('/')); ?>privacy/">プライバシーポリシー</a></li>
-      </ul>
-      <small class="copyright">&copy; GOOD OCEAN.inc</small>
-    </div>
-  </footer>
-<?php endif; ?>
+<footer>
+        <div class="footer-view"></div>
+        <div class="inner footer-inner">
+            <div class="contact-box">
+                <p class="content-item footer-contact-item">
+                    わたしたちと一緒に働く仲間を募集中です。<br>
+                    少数精鋭のチームで、<br>
+                    あなたも会社も一緒に成長していきましょう。
+                </p>
+                <div class="button-viewmore-entry">
+                    <a href="<?php echo home_url('/entry/entry.html'); ?>">ENTRY</a>
+                </div>
+            </div>
+            <div class="content-wrapper footer-content-wrapper">
+                <div class="footer-links">
+                    <div class="footer-list">
+                        <div class="footer-list1">
+                            <a href="<?php echo home_url('/'); ?>">ホーム</a>
+                            <a href="#about">TETOTEについて</a>
+                            <a href="#staff">人を知る</a>
+                            <a href="#career">研修制度とキャリアパス</a>
+                            <a href="#benefits">福利厚生</a>
+                        </div>
+                        <div class="footer-list2">
+                            <a href="#blog">採用ブログ</a>
+                            <a href="<?php echo home_url('/details/details.html'); ?>">募集要項</a>
+                            <a href="#">よくある質問</a>
+                            <a href="#">会社概要</a>
+                        </div>
+                    </div>
+                    <div class="footer-logo">
+                        <a href="<?php echo home_url(); ?>">
+                            <img src="<?php echo get_template_directory_uri(); ?>/img/tetote-logo-black.png" alt="会社ロゴ">
+                        </a>
+                    </div>
+                </div>
+            </div>
 
-<?php wp_footer(); ?>
-<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
-<?php if (is_single()): ?>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/js/lightbox.min.js"></script>
-  <script src="<?php echo get_stylesheet_directory_uri(); ?>/js/custom-lightbox.js"></script>
-<?php elseif (is_front_page()): ?>
-  <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-  <script src="<?php echo get_stylesheet_directory_uri(); ?>/js/slider.js"></script>
-<?php endif; ?>
-<?php if (is_page('company') || is_front_page()): ?>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/protonet-jquery.inview/1.1.2/jquery.inview.min.js"></script>
-<?php endif; ?>
-<script src="<?php echo get_stylesheet_directory_uri(); ?>/js/script.js"></script>
+            <ul class="footer-nav">
+                <li><a href="#"><img src="<?php echo get_template_directory_uri(); ?>/img/facebook-icon.png" alt="Facebook"></a></li>
+                <li><a href="#"><img src="<?php echo get_template_directory_uri(); ?>/img/twitter-icon.png" alt="Twitter"></a></li>
+                <li><a href="#"><img src="<?php echo get_template_directory_uri(); ?>/img/movie-icon.png" alt="Movie"></a></li>
+            </ul>
+            <small class="copyright">&copy;<?php echo date("Y"); ?> TETOTE All Right Reserved.</small>
+        </div>
+    </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="<?php echo get_template_directory_uri(); ?>/js/main.js"></script>
+
+    <?php wp_footer(); ?>
 </body>
+</html>

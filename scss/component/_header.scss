@@ -13,15 +13,14 @@
             content: url('/img/tetote-logo-black.png'); 
         }
     }
+
+    @media screen and (max-width: 768px) {
+        height: 90px;
+    }
 }
 .header-inner {
     padding-inline: 1.81%;
     height: inherit;
-
-    // @media screen and (max-width: 768px) {
-    //     padding-inline: 0.75rem;
-    // }
-
 }
 .header-logo {
     width: 100%;
@@ -29,15 +28,20 @@
     transition: .3s;
     margin-left: 26px;
 
-    &__link{
+    &__link {
         padding:3.7rem 0 1.75rem 0;
+        @media screen and (max-width: 768px) {
+            padding: 0;
+        }
+        
     }
+
     &:hover {
         opacity: .7;
     }
 
     @media screen and (max-width: 768px) {
-        padding: 0.75rem 0 0 0.75rem;
+        margin-left: 0;
     }
 }
 .header-link {

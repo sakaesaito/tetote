@@ -438,7 +438,7 @@ button {
 .viewmore-button {
   max-width: 355px;
   width: 100%;
-  margin: 0 auto;
+  margin: 52px auto 0;
   position: relative;
   text-align: center;
   border: 1px #222 solid;
@@ -466,6 +466,11 @@ button {
 .viewmore-button:hover::before {
   border-right: 3px solid #ffffff;
   border-top: 3px solid #ffffff;
+}
+@media screen and (max-width: 1024px) {
+  .viewmore-button {
+    margin-top: 39px;
+  }
 }
 
 .viewmore-button a {
@@ -512,6 +517,11 @@ button {
 .header.drawer-open .header-logo__link img {
   content: url("/img/tetote-logo-black.png");
 }
+@media screen and (max-width: 768px) {
+  .header {
+    height: 90px;
+  }
+}
 
 .header-inner {
   padding-inline: 1.81%;
@@ -527,12 +537,17 @@ button {
 .header-logo__link {
   padding: 3.7rem 0 1.75rem 0;
 }
+@media screen and (max-width: 768px) {
+  .header-logo__link {
+    padding: 0;
+  }
+}
 .header-logo:hover {
   opacity: 0.7;
 }
 @media screen and (max-width: 768px) {
   .header-logo {
-    padding: 0.75rem 0 0 0.75rem;
+    margin-left: 0;
   }
 }
 
@@ -917,6 +932,11 @@ footer {
   -webkit-overflow-scrolling: touch;
   padding-bottom: 10%;
 }
+@media screen and (max-width: 768px) {
+  .drawer-nav.active {
+    top: 90px;
+  }
+}
 
 .drawer-inner {
   display: flex;
@@ -942,6 +962,11 @@ footer {
   .drawer-left {
     display: none;
   }
+}
+
+.drawer-logo-link {
+  padding: 95% 15%;
+  border-right: #AFA86F 1px solid;
 }
 
 .drawer-right {
@@ -996,6 +1021,10 @@ footer {
   font-weight: 400;
   width: 248px;
   display: block;
+  transition: 0.3s;
+}
+.drawer-item a:hover {
+  opacity: 0.5;
 }
 .drawer-item a span {
   font-size: 0.6875rem;
@@ -1057,7 +1086,11 @@ footer {
   transition: all 0.3s ease 0s;
   background-color: #AFA86F;
   color: #fff;
-  margin-top: 13px;
+}
+@media screen and (max-width: 1024px) {
+  .drawer-button-entry {
+    margin-top: 13px;
+  }
 }
 .drawer-button-entry:hover {
   background-color: #988C2C;
@@ -1070,18 +1103,25 @@ footer {
   display: block;
   position: absolute;
   bottom: 0.3rem;
-  z-index: 1;
+  z-index: 2;
   text-align: center;
-  left: 30%;
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .slider-heading-ms {
   background-color: #fff;
   color: #222;
   font-size: 2.5rem;
-  line-height: 1;
-  padding: 10px 0;
+  line-height: 2;
   margin-top: -1.5rem;
+}
+@media screen and (max-width: 768px) {
+  .slider-heading-ms {
+    font-size: 1.5rem;
+  }
 }
 
 .slider {
@@ -1103,17 +1143,20 @@ footer {
   align-items: center;
   max-width: 506px;
   height: auto;
+  transition: margin 0.3s ease;
 }
 .swiper-slide img {
   width: 100%;
   display: block;
 }
 
+.swiper-slide.alt {
+  margin-top: 36px;
+}
+
 .swiper-wrapper {
   display: flex;
-  gap: 3%;
   transition-timing-function: linear !important;
-  overflow: hidden;
 }
 
 .mv-inner {
@@ -1292,6 +1335,7 @@ footer {
 
 .about {
   padding-bottom: 76px;
+  padding-top: 100px;
 }
 
 .about-viw {
@@ -1299,8 +1343,12 @@ footer {
   background-size: contain;
   background-repeat: no-repeat;
   width: 100%;
-  height: 34.5625rem;
-  margin-top: 6.25rem;
+  height: auto;
+}
+@media screen and (max-width: 1024px) {
+  .about-viw {
+    margin-top: 55px;
+  }
 }
 
 .about-lead-ms {
@@ -1311,11 +1359,18 @@ footer {
 @media screen and (max-width: 1024px) {
   .about-lead-ms {
     font-size: 1.125rem;
+    line-height: 2.5;
   }
 }
 
 .about-lead-ms2 {
-  margin-top: 3.25rem;
+  margin-top: 52px;
+}
+@media screen and (max-width: 1024px) {
+  .about-lead-ms2 {
+    margin-top: 39px;
+    line-height: 2.5;
+  }
 }
 
 .staff {

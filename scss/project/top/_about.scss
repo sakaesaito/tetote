@@ -1,13 +1,18 @@
 .about {
     padding-bottom: 76px;
+    padding-top: 100px;
 }
 .about-viw {
     background-image: url(/img/top-map.jpg);
     background-size: contain;
     background-repeat: no-repeat;
     width: 100%;
-    height: 34.5625rem;
-    margin-top:  6.25rem;
+    height: auto;
+
+    @media screen and (max-width: 1024px) {
+        margin-top: 55px;
+    }
+
 }
 
 .about-lead-ms {
@@ -17,10 +22,16 @@
 
     @media screen and (max-width: 1024px) {
         font-size: 1.125rem;
+        line-height: 2.5;
+        
     }
 }
 
 .about-lead-ms2 {
-    margin-top: 3.25rem;
+    margin-top: 52px;
+    @media screen and (max-width: 1024px) {
+        margin-top: 39px;
+        line-height: 2.5;
+    }
 
 }
