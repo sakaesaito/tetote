@@ -1,14 +1,4 @@
 @charset "UTF-8";
-
-/*
-Theme Name: 株式会社TETOTE
-Description: 株式会社TETOTE様用のテンプレートです
-Version: 1.0
-Author: S.Saito
-*/
-
-
-
 /*! destyle.css v4.0.1 | MIT License | https://github.com/nicolas-cusan/destyle.css */
 /* Reset box-model and set borders */
 /* ============================================ */
@@ -536,6 +526,7 @@ button {
 .header-inner {
   padding-inline: 1.81%;
   height: inherit;
+  width: 100%;
 }
 
 .header-logo {
@@ -1112,10 +1103,25 @@ footer {
   width: 100%;
   display: block;
   position: absolute;
-  bottom: 0.3rem;
   z-index: 2;
   text-align: center;
-  left: 30%;
+  top: 80%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+@media screen and (max-width: 768px) {
+  .slider-heading {
+    max-width: 335px;
+    width: 100%;
+    display: block;
+    position: absolute;
+    bottom: 0.3rem;
+    z-index: 2;
+    text-align: center;
+    bottom: 14%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
 }
 
 .slider-heading-ms {
@@ -1125,17 +1131,24 @@ footer {
   line-height: 2;
   margin-top: -1.5rem;
 }
+@media screen and (max-width: 768px) {
+  .slider-heading-ms {
+    font-size: 1.5rem;
+    max-width: 335px;
+  }
+}
 
 .slider {
   width: 100%;
   margin-top: 101px;
+  margin-bottom: 80px;
   background-color: #fff;
   position: relative;
 }
 @media screen and (max-width: 768px) {
   .slider {
-    padding-top: 2.5%;
-    padding-bottom: 15%;
+    margin-top: 41px;
+    margin-bottom: 55px;
   }
 }
 
@@ -1345,7 +1358,6 @@ footer {
   background-repeat: no-repeat;
   width: 100%;
   height: auto;
-  margin-top: 100px;
 }
 @media screen and (max-width: 1024px) {
   .about-viw {
@@ -1383,6 +1395,17 @@ footer {
 
 .staff-inner {
   width: 100%;
+  padding-left: 16.8%;
+}
+@media screen and (max-width: 1024px) {
+  .staff-inner {
+    padding-left: 10%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .staff-inner {
+    padding-left: 5%;
+  }
 }
 
 .staff-text-wrapper {
@@ -1391,6 +1414,11 @@ footer {
 
 .staff-box-wrapper {
   display: flex;
+}
+@media screen and (max-width: 1024px) {
+  .staff-box-wrapper {
+    display: block;
+  }
 }
 
 .staff-content-title {
@@ -1420,6 +1448,11 @@ footer {
 
 .staff-box {
   margin-right: 2.57%;
+}
+@media screen and (max-width: 1024px) {
+  .staff-box {
+    margin-left: 0;
+  }
 }
 .staff-box:nth-child(4) {
   margin-right: 0;
