@@ -14,36 +14,38 @@
         href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Viga&display=swap"
         rel="stylesheet">
     <link rel="icon" href="img/tetote-favicon.png">
-    <link rel="stylesheet" href="style.css">
-    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"
-        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script> -->
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
 </head>
 
 <body>
-    <header class="header">
+    <header class="sub-header">
         <div class="header-inner">
             <div class="header-nav">
-                <h1 class="header-logo">
-                    <a class="header-logo__link" href="#"><img src="/img/tetote-logo-white 1.png" alt=""></a>
+                <h1 class="sub-header-logo">
+                    <a class="header-logo__link" href="#"><img src="/img/tetote-logo-black.png" alt=""></a>
                 </h1>
                 <div class="header-link">
                     <a class="header-button header-button-recruit" href="/details/details.html">募集要項</a>
                     <a class="header-button header-button-entry" href="/entry/entry.html">ENTRY</a>
-                    <button class="header-hamburger js-hamburger">
-                        <div class="header-hamburger-icon">
+                    <button class="sub-header-hamburger js-hamburger">
+                        <div class="sub-header-hamburger-icon">
                             <span></span>
                             <span></span>
                             <span></span>
-                            <div class="header-hamburger-item">menu</div>
+                            <div class="sub-header-hamburger-item">menu</div>
                         </div>
                     </button>
                 </div>
                 <nav class="drawer-nav js-drawer">
                     <div class="drawer-inner">
                         <div class="drawer-left">
-                            <a class="drawer-logo-link"   href="#"><img src="/img/tetote-logo-black.png"></a>
+                            <a class="drawer-logo-link" href="#">
+                                <img src="/img/tetote-logo-black.png" style="max-width:1440px; width:100%; height:auto; object-fit:cover; object-position: center;" alt="TETOTEロゴ">
+                            </a>
                         </div>
                         <div class="drawer-right">
                             <div class="drawer-list">
@@ -70,69 +72,80 @@
         </div>
     </header>
 
-    <section>
-        <div class="inner">
-            <div>
-                <h1>abouto us</h1>
-                <h2>TETOTEについて</h2>
-                <p>私たちの理念を紹介をします。</p>
+    <section id="about-us" class="sub-about-us">
+        <div class="sub-mv" style="background-image: url('/img/about-fv.jpg');">
+            <div class="sub-inner sub-inner-mv">
+                <div class="sub-mv-box">
+                    <h2 class="sub-mv-title">ABOUT US</h2>
+                    <h3 class="sub-mv-item">TETOTEについて</h3>
+                    <p class="sub-mv-part">私たちの理念を紹介をします。</p>
+                </div>
             </div>
         </div>
     </section>
-    <!-- パンクズを入れる -->
-    <section>
-        <div class="inner">
-            <h2>私達が大切にしていること</h2>
-            <div>
-                <ul class="sub-aboutus-list">
-                    <li class="sub-aboutus-title">飽くなき探求心で、革新を創り出す</li>
-                    <li class="sub-about-item">100年を超える歴史を誇りながらも、常に挑戦し続ける気概を忘れずに、未来を切り開くソリューションを提供し続けます。変化を恐れず、最新技術やトレンドを積極的に研究し、お客様のニーズを超える価値を生み出すことに情熱を燃やしています。</li>
-                </ul>
-            </div>
-            <div>
-                <ul class="sub-aboutus-list">
-                    <li class="sub-aboutus-title">デジタル技術の力で、未来を加速させる</li>
-                    <li class="sub-about-item">ITコンサルタント会社として、業務効率化やイノベーション創出に貢献するために、デジタル技術を活用した最適なソリューションを提案します。自動化、データ分析、AIなどの技術を駆使し、お客様のビジネスを革新し、未来への飛躍を力強くサポートします。</li>
-                </ul>
-            </div>
-            <div>
-                <ul class="sub-aboutus-list">
-                    <li class="sub-aboutus-title">人材こそが、未来への鍵</li>
-                    <li class="sub-about-item">従業員一人ひとりが、高い専門性と人間性を兼ね備えた人材であることが、お客様への最高のサービスにつながると確信しています。個々の能力やキャリア目標に合わせた育成プログラムや、多様な経験を積む機会を提供することで、成長を支援します。</li>
-                </ul>
-            </div>
-            <div>
-                <ul class="sub-aboutus-list">
-                    <li class="sub-aboutus-title">未経験者も歓迎！情熱と意欲があれば、誰でも活躍できる</li>
-                    <li class="sub-about-item">IT業界未経験の方でも、熱意と向上心があれば、当社で活躍できるチャンスがあります。研修やOJTを通じて、必要な知識やスキルを丁寧に習得し、即戦力となる人材へと育成します。先輩社員によるサポート体制も充実しているので、安心してスキルアップを目指せます。</li>
-                </ul>
-            </div>
-            <div>
-                <ul class="sub-aboutus-list">
-                    <li class="sub-aboutus-title">働きがいと充実感あふれる環境</li>
-                    <li class="sub-about-item">ワークライフバランスを重視し、従業員が働きがいと充実感を感じられる環境づくりに積極的に取り組んでいます。充実した福利厚生制度や、多様な働き方を可能にする制度を導入し、個々のライフスタイルに合わせた働き方を支援します。</li>
-                </ul>
-            </div>
+        <div class="sub-inner is-small">
+            <ol class="c-breadcrumbs">
+                <li><a href="./">top</a></li>
+                <li><span>ABOUT US</span></li>
+            </ol>
         </div>
-    </section>
     <section>
-        <div class="">
-            <h2>代表メッセージ</h2>
-            <div>
-                <img src="/img/ceo.jpg" alt="">
-                <h3>あなたがやりたいこと
-                    それを全力でサポートできる、
-                    それがTETOTEの強みです。</h3>
-                <p>TETOTEは、ITコンサルティングとコンサル導入企業への営業を専門とする会社です。設立以来、私たちは「お客様の課題解決に真摯に取り組み、共に成長する」という理念を掲げ、お客様とパートナーと共に歩んできました。</p>
-                <p>お客様のニーズを深く理解し、最適なソリューションを提供することで、数多くの課題解決を支援してきました。その結果、お客様との深い信頼関係を築き、共に成長することができています。</p>
-                <p>TETOTEは、個々の能力や個性を尊重し、多様な人材が活躍できる環境づくりに力を入れています。年齢、性別、国籍、経験などに関係なく、意欲と向上心のある人材を歓迎します。</p>
-                <p>私たちと共に、未来を創造していきましょう。</p>
-                <img src="/img/ceo-name.svg" alt="">
+        <div class="sub-inner">
+            <h2 class="sub-title sub-title-us">私達が大切にしていること</h2>
+            <div class="sub-aboutus-box">
+                <ul class="sub-aboutus-list">
+                    <li class="sub-aboutus-title title-1">飽くなき探求心で、革新を創り出す</li>
+                    <li class="sub-aboutus-item">100年を超える歴史を誇りながらも、常に挑戦し続ける気概を忘れずに、未来を切り開くソリューションを提供し続けます。変化を恐れず、最新技術やトレンドを積極的に研究し、お客様のニーズを超える価値を生み出すことに情熱を燃やしています。</li>
+                </ul>
+            </div>
+            <div class="sub-aboutus-box">
+                <ul class="sub-aboutus-list">
+                    <li class="sub-aboutus-title title-2">デジタル技術の力で、未来を加速させる</li>
+                    <li class="sub-aboutus-item">ITコンサルタント会社として、業務効率化やイノベーション創出に貢献するために、デジタル技術を活用した最適なソリューションを提案します。自動化、データ分析、AIなどの技術を駆使し、お客様のビジネスを革新し、未来への飛躍を力強くサポートします。</li>
+                </ul>
+            </div>
+            <div class="sub-aboutus-box">
+                <ul class="sub-aboutus-list">
+                    <li class="sub-aboutus-title title-3">人材こそが、未来への鍵</li>
+                    <li class="sub-aboutus-item">従業員一人ひとりが、高い専門性と人間性を兼ね備えた人材であることが、お客様への最高のサービスにつながると確信しています。個々の能力やキャリア目標に合わせた育成プログラムや、多様な経験を積む機会を提供することで、成長を支援します。</li>
+                </ul>
+            </div>
+            <div class="sub-aboutus-box">
+                <ul class="sub-aboutus-list">
+                    <li class="sub-aboutus-title title-4">未経験者も歓迎！情熱と意欲があれば、誰でも活躍できる</li>
+                    <li class="sub-aboutus-item">IT業界未経験の方でも、熱意と向上心があれば、当社で活躍できるチャンスがあります。研修やOJTを通じて、必要な知識やスキルを丁寧に習得し、即戦力となる人材へと育成します。先輩社員によるサポート体制も充実しているので、安心してスキルアップを目指せます。</li>
+                </ul>
+            </div>
+            <div class="sub-aboutus-box">
+                <ul class="sub-aboutus-list">
+                    <li class="sub-aboutus-title title-5">働きがいと充実感あふれる環境</li>
+                    <li class="sub-aboutus-item">ワークライフバランスを重視し、従業員が働きがいと充実感を感じられる環境づくりに積極的に取り組んでいます。充実した福利厚生制度や、多様な働き方を可能にする制度を導入し、個々のライフスタイルに合わせた働き方を支援します。</li>
+                </ul>
             </div>
         </div>
     </section>
     <section>
-        <h2>事業紹介</h2>
+        <div class="sub-inner">
+            <div class="">
+                <h2 class="sub-title sub-title-message">代表メッセージ</h2>
+                <div class="sub-aboutus-ceo">
+                    <div class="sub-about-ceo-pic"><img src="/img/ceo.jpg" alt=""></div>
+                    <div class="sub-aboutus-ceo-message">
+                        <h3 class="sub-aboutus-ceo-main">あなたがやりたいこと<br>
+                            それを全力でサポートできる、<br>
+                            それがTETOTEの強みです。</h3>
+                        <p class="sub-aboutus-ceo-item">TETOTEは、ITコンサルティングとコンサル導入企業への営業を専門とする会社です。設立以来、私たちは「お客様の課題解決に真摯に取り組み、共に成長する」という理念を掲げ、お客様とパートナーと共に歩んできました。</p>
+                        <p>お客様のニーズを深く理解し、最適なソリューションを提供することで、数多くの課題解決を支援してきました。その結果、お客様との深い信頼関係を築き、共に成長することができています。</p>
+                        <p>TETOTEは、個々の能力や個性を尊重し、多様な人材が活躍できる環境づくりに力を入れています。年齢、性別、国籍、経験などに関係なく、意欲と向上心のある人材を歓迎します。</p>
+                        <p>私たちと共に、未来を創造していきましょう。</p>
+                        <img src="/img/ceo-name.svg" alt="">
+                    </div>
+                </div>
+        </div>
+    </section>
+    <section>
+        <div class="sub-inner">
+        <h2 class="sub-title sub-title-consul" >事業紹介</h2>
         <p>TETOTEの主力事業である「コンサルティング」以外に、新規に取り組んでいる事業をいくつか
             紹介させていただきます。</p>
             <div class="sub-about-box">
@@ -161,40 +174,43 @@
                     <p>基本設計書に従って開発とテストを実施し、本番稼働をサポート。企画から運用までの全工程を通じて包括的なアプローチで、安定した運用と迅速な対応を保証します。</p>
                 </div>
             </div>
+        </div>
     </section>
     <section>
-        <h2>会社概要</h2>
-        <dl>
-            <dt>会社名</dt>
-            <dd>TETOTE株式会社</dd>
-        </dl>
-        <dl>
-            <dt>所在地</dt>
-            <dd>〒100-0001 東京都千代田区千代田 1-1-1</dd>
-        </dl>
-        <dl>
-            <dt>代表者名</dt>
-            <dd>田中 浩二郎 (代表取締役)</dd>
-        </dl>
-        <dl>
-            <dt>事業内容</dt>
-            <dd>ITコンサルティング</dd>
-            <dd>コンサル導入企業への営業</dd>    
-        </dl>
-        <dl>
-            <dt>電話番号</dt>
-            <dd>03-1234-5678</dd>
-        </dl>
-        <dl>
-            <dt>ウェブサイトURL</dt>
-            <dd>https://tetote.co.jp</dd>
-        </dl>
-        <dl>
-            <dt>メールアドレス</dt>
-            <dd>tetote@tetote.co.jp</dd>
-        </dl>
-        <dl>
-            <dt>設立年月</dt>
-            <dd>1923年4月1日</dd>
-        </dl>
+        <div class="sub-inner">
+            <h2 class="sub-title sub-title-company">会社概要</h2>
+            <dl>
+                <dt>会社名</dt>
+                <dd>TETOTE株式会社</dd>
+            </dl>
+            <dl>
+                <dt>所在地</dt>
+                <dd>〒100-0001 東京都千代田区千代田 1-1-1</dd>
+            </dl>
+            <dl>
+                <dt>代表者名</dt>
+                <dd>田中 浩二郎 (代表取締役)</dd>
+            </dl>
+            <dl>
+                <dt>事業内容</dt>
+                <dd>ITコンサルティング</dd>
+                <dd>コンサル導入企業への営業</dd>    
+            </dl>
+            <dl>
+                <dt>電話番号</dt>
+                <dd>03-1234-5678</dd>
+            </dl>
+            <dl>
+                <dt>ウェブサイトURL</dt>
+                <dd>https://tetote.co.jp</dd>
+            </dl>
+            <dl>
+                <dt>メールアドレス</dt>
+                <dd>tetote@tetote.co.jp</dd>
+            </dl>
+            <dl>
+                <dt>設立年月</dt>
+                <dd>1923年4月1日</dd>
+            </dl>
+        </div>
     </section>

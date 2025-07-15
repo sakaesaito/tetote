@@ -4,7 +4,7 @@
         <section class="mv">
             <div class="mv-inner">
                 <div class="mv-bg">
-                    <div class="mv-img">
+                <div class="mv-img" id="mvImg" style="background-image: url('<?php echo get_template_directory_uri(); ?>/img/fv01.jpg');">
                         <h2 class="mv-message-main">BECOME A<br> CHALLENGER.</h2>
                         <div class="mv-message-sub">君の挑戦が、意思が、未来を変える</div>
                         <div class="container">

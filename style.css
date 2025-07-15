@@ -1466,7 +1466,6 @@ footer {
   font-size: 1.25rem;
   line-height: 1.2;
   background-color: #AFA86F;
-  display: inline-block;
 }
 
 .staff-box-past {
@@ -1780,4 +1779,322 @@ footer {
 
 .date {
   font-size: 0.75rem;
+}
+
+.sub-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  width: 100%;
+  height: 118px;
+  background-color: #fff;
+}
+@media screen and (max-width: 768px) {
+  .sub-header {
+    height: 90px;
+  }
+}
+
+.sub-header-logo {
+  width: 100%;
+  max-width: 250px;
+  transition: 0.3s;
+  margin-left: 26px;
+}
+.sub-header-logo__link {
+  padding: 3.7rem 0 1.75rem 0;
+}
+@media screen and (max-width: 768px) {
+  .sub-header-logo__link {
+    padding: 0;
+  }
+}
+.sub-header-logo:hover {
+  opacity: 0.7;
+}
+@media screen and (max-width: 768px) {
+  .sub-header-logo {
+    margin-left: 0;
+  }
+}
+
+.header-link {
+  display: flex;
+  align-items: center;
+}
+
+.header--sticky {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  visibility: visible;
+  animation: slideDown 0.3s ease-in-out;
+  background-color: #fff;
+}
+.header--sticky .header-logo__link img {
+  content: url("/img/tetote-logo-black.png");
+}
+.header--sticky .header-hamburger-icon span {
+  background-color: #222222;
+}
+.header--sticky .header-hamburger-item {
+  color: #222222;
+}
+
+.header-nav {
+  display: flex;
+  justify-content: space-between;
+  height: inherit;
+  align-items: center;
+}
+
+@keyframes slideDown {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(0%);
+  }
+}
+.header-button {
+  display: block;
+  margin-right: 1.25rem;
+  padding: 0.875rem 3.5rem;
+  transition: all 0.3s ease 0s;
+  text-align: center;
+  text-decoration: none;
+  line-height: 1;
+  cursor: pointer;
+}
+.header-button-entry {
+  background-color: #AFA86F;
+  color: #fff;
+}
+.header-button-entry:hover {
+  background-color: #fff;
+  color: #222;
+}
+@media screen and (max-width: 768px) {
+  .header-button-entry {
+    display: none;
+  }
+}
+.header-button-recruit {
+  background-color: #222222;
+  color: #fff;
+}
+@media screen and (max-width: 768px) {
+  .header-button-recruit {
+    display: none;
+  }
+}
+.header-button-recruit:hover {
+  background-color: #988C2C;
+  color: #222222;
+}
+
+.sub-header-hamburger {
+  margin-left: 1.25rem;
+  transition: all 0.3s ease 0s;
+}
+.sub-header-hamburger:hover {
+  opacity: 0.7;
+}
+@media screen and (max-width: 768px) {
+  .sub-header-hamburger {
+    margin-top: 0.5rem;
+    margin-left: 0;
+  }
+}
+
+.sub-header-hamburger-icon span {
+  display: block;
+  transition: all 0.3s;
+  top: 12px;
+  left: 25%;
+  width: 52px;
+  height: 2px;
+  background-color: #222;
+  margin: 0 auto;
+}
+
+.sub-header-hamburger-icon span:nth-of-type(2) {
+  margin-top: 12px;
+}
+
+.sub-header-hamburger-icon span:nth-of-type(3) {
+  margin-top: 12px;
+}
+
+.sub-header-hamburger-item {
+  text-align: center;
+  margin: 9px 0 0 0;
+  font-size: 0.75rem;
+  line-height: 1;
+  font-weight: 400;
+  color: #222;
+}
+
+/* .header-hamburgerクラスがactiveの時のコード*/
+.sub-header-hamburger.active span:nth-child(1) {
+  transform: rotate(45deg) translate(8px, 12px);
+}
+
+.sub-header-hamburger.active span:nth-child(2) {
+  opacity: 0;
+}
+
+.sub-header-hamburger.active span:nth-child(3) {
+  transform: rotate(-45deg) translate(8px, -12px);
+}
+
+.sub-about-us {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.sub-mv {
+  height: 455px;
+  margin-top: 118px;
+  background-image: url(/img/about-fv.jpg);
+  background-position: bottom;
+  object-fit: contain;
+}
+
+.sub-inner {
+  max-width: 1024px;
+  width: 100%;
+  margin: 0 auto;
+  padding-left: 1.3%;
+}
+.sub-inner-mv {
+  padding-top: 4%;
+}
+
+.c-breadcrumbs {
+  display: flex;
+}
+
+.c-breadcrumbs span::before {
+  content: ">";
+}
+
+.sub-title {
+  font-size: 2rem;
+  line-height: 1;
+}
+.sub-title-us {
+  margin-top: 66px;
+  text-align: center;
+}
+.sub-title-message {
+  margin-top: 125px;
+  text-align: center;
+}
+.sub-title-consul {
+  margin-top: 111px;
+}
+.sub-title-company {
+  margin-top: 153px;
+}
+
+.sub-mv-title {
+  background-color: #fff;
+  font-size: 2.875rem;
+  padding: 3px 10px;
+  font-family: "Viga";
+  line-height: 1;
+  inline-size: fit-content;
+}
+
+.sub-mv-item {
+  background-color: #fff;
+  font-size: 1.5rem;
+  padding: 3px 10px;
+  font-family: "Viga";
+  line-height: 1;
+  inline-size: fit-content;
+  margin-top: 18px;
+}
+
+.sub-mv-part {
+  background-color: #fff;
+  font-size: 1rem;
+  padding: 7px 10px;
+  font-family: "Viga";
+  line-height: 1;
+  color: #988C2C;
+  inline-size: fit-content;
+  margin-top: 18px;
+}
+
+.sub-aboutus-box {
+  margin-top: 35px;
+  background-color: #FAF7F1;
+}
+.sub-aboutus-box:nth-child(1) {
+  margin-top: 86px;
+}
+
+.sub-aboutus-list {
+  padding-inline: 80px;
+}
+
+.sub-aboutus-title {
+  line-height: 1.5;
+  font-size: 1.25rem;
+  padding-top: 44px;
+  position: relative;
+}
+.sub-aboutus-title::before {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  border: 1px solid #222;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 30px;
+  box-sizing: border-box;
+  margin-right: 21px;
+  color: #222;
+}
+.sub-aboutus-title.title-1::before {
+  content: "1";
+}
+.sub-aboutus-title.title-2::before {
+  content: "2";
+}
+.sub-aboutus-title.title-3::before {
+  content: "3";
+}
+.sub-aboutus-title.title-4::before {
+  content: "4";
+}
+.sub-aboutus-title.title-5::before {
+  content: "5";
+}
+
+.sub-aboutus-item {
+  font-size: 1rem;
+  font-weight: 400;
+  padding-top: 35px;
+  padding-bottom: 30px;
+}
+
+.sub-aboutus-ceo {
+  display: flex;
+  margin-top: 109px;
+  gap: 17px;
+}
+
+.sub-about-ceo-pic {
+  max-width: 484px;
+  width: 100%;
+  height: 629px;
+}
+
+.sub-aboutus-ceo-message {
+  position: relative;
 }/*# sourceMappingURL=style.css.map */

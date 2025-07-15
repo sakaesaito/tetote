@@ -1,10 +1,10 @@
 <?php get_header(); ?>
 
 <main>
-<section class="mv">
+    <section class="mv">
         <div class="mv-inner">
             <div class="mv-bg">
-            <div class="mv-img" id="mvImg" style="background-image: url('<?php echo get_template_directory_uri(); ?>/img/fv01.jpg');">
+                <div class="mv-img" id="mvImg" style="background-image: url('<?php echo get_template_directory_uri(); ?>/img/fv01.jpg');">
                     <h2 class="mv-message-main">BECOME A<br> CHALLENGER.</h2>
                     <div class="mv-message-sub">君の挑戦が、意思が、未来を変える</div>
                     <div class="container">
@@ -99,13 +99,13 @@
     </section>
 
     <script>
-    document.addEventListener("DOMContentLoaded", function () {
-        if (window.innerWidth <= 768) {
-            document.getElementById('mvImg').style.backgroundImage = "url('<?php echo get_template_directory_uri(); ?>/img/fv02.jpg')";
-        }
-    });
-</script>
+        document.addEventListener("DOMContentLoaded", function() {
+            if (window.innerWidth <= 768) {
+                document.getElementById('mvImg').style.backgroundImage = "url('<?php echo get_template_directory_uri(); ?>/img/fv02.jpg')";
+            }
+        });
+    </script>
 
 
 
-<?php get_footer(); ?>
+    <?php get_footer(); ?>
