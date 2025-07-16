@@ -208,9 +208,16 @@
 
     @media screen and (max-width: 1024px) {
         padding-inline: 15%;
+        &-mv {
+            padding-top: 20%;
+        }
     }
     @media screen and (max-width: 768px) {
         padding-inline: 2%;
+
+        &-mv {
+            padding-top: 35%;
+        }
     }
 }
 
