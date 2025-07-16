@@ -221,6 +221,10 @@
     background-color: #f0f0f0;
     padding-left: 15%;
     align-items: center;
+    @media screen and (max-width: 768px) {
+        padding-left: 5%;
+        height: 40px;
+    }
 }
 
 .c-breadcrumbs span {
@@ -233,10 +237,16 @@
 .sub-title {
     font-size: 2rem;
     line-height: 1;
+    @media screen and (max-width: 1024px) {
+        font-size: 1.5rem;
+    }
 
     &-us {
         margin-top: 66px;
         text-align: center;
+        @media screen and (max-width: 1024px) {
+            margin-top: 40px;
+        }
     }
 
     &-message {
@@ -311,6 +321,11 @@
     padding-top: 44px;
     position: relative;
 
+    @media screen and (max-width: 768px) {
+        font-size: 1.125rem;
+        padding-top: 24px;
+    }
+
     &::before {
         display: inline-block;
         width: 30px;
@@ -318,10 +333,13 @@
         border: 1px solid #222;
         border-radius: 50%;
         text-align: center;
-        line-height: 30px;
         box-sizing: border-box;
         margin-right: 21px;
         color: #222;
+
+        @media screen and (max-width: 1024px) {
+            margin-right: 6px;
+        }
     }
 
     &.title-1::before {
@@ -343,7 +361,7 @@
         content: "5";
     }
 
-    @media screen and (max-width: 1024px) {
+    @media screen and (max-width: 768px) {
         font-size: 1.125rem;
     }
 }
@@ -353,6 +371,12 @@
     font-weight: 400;
     padding-top: 35px;
     padding-bottom: 30px;
+
+    @media screen and (max-width: 768px) {
+        padding-top: 25px;
+        padding-bottom: 20px;
+
+    }
 }
 .sub-aboutus-ceo {
     display: flex;
@@ -372,6 +396,7 @@
         width: 100%;
         max-width: 90%;
         margin: 50px auto 0;
+        height: auto;
     }
 }
 .sub-aboutus-ceo-message {
@@ -403,12 +428,16 @@
     @media screen and (max-width: 1024px) {
         display: block;
         position: static;
+        font-size: 1.5rem;
     }
 }
 .sub-aboutus-ceo-item {
     font-weight: 400;
     line-height: 2;
     margin-top: 31px;
+    @media screen and (max-width: 1024px) {
+        margin-top: 20px;
+    }
 }
 .sub-aboutus-ceo-name {
     margin-top: 21px;
@@ -455,7 +484,8 @@
     line-height: 1;
 
     @media screen and (max-width: 1024px) {
-        margin-top: 52px;
+        margin-top: 40px;
+        font-size: 1.25rem;
     }
 }
 .sub-about-box-item {
@@ -464,6 +494,7 @@
     line-height: 1.5;
     @media screen and (max-width: 1024px) {
         margin-top: 20px;
+        font-size: 1.125rem;
     }
 }
 .sub-about-box-read {
@@ -471,6 +502,7 @@
     width: 100%;
     margin-top: 40px;
     line-height: 1.5;
+    font-weight: 400;
     @media screen and (max-width: 1024px) {
         margin-top: 20px;
     }
@@ -481,6 +513,10 @@
     border-bottom: #222222 solid 1px;
     height: 88px;
     align-items: center;
+
+    @media screen and (max-width: 768px) {
+        gap: 20px;
+    }
 }
 .sub-about-list-sec {
     margin-top: 153px;
@@ -490,11 +526,14 @@
 }
 .sub-about-list-title {
     line-height: 1;
-    width: 20%;
+    width: 35%;
     display: block;
 }
 .sub-about-list-item {
     line-height: 1;
+    br {
+        display: none;
+    }
     a {
         padding-top: 36px;
         padding-bottom: 36px;
@@ -504,6 +543,14 @@
         opacity: .6;
         color: #988C2C;
     }
+    @media screen and (max-width: 768px) {
+        line-height: 1.5;
+        br {
+            display: inline;
+        }
+
+    }
+
 
 }
 .sub-inner-about-list {

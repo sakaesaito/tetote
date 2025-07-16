@@ -2011,6 +2011,12 @@ footer {
   padding-left: 15%;
   align-items: center;
 }
+@media screen and (max-width: 768px) {
+  .c-breadcrumbs {
+    padding-left: 5%;
+    height: 40px;
+  }
+}
 
 .c-breadcrumbs span::before {
   content: ">";
@@ -2021,9 +2027,19 @@ footer {
   font-size: 2rem;
   line-height: 1;
 }
+@media screen and (max-width: 1024px) {
+  .sub-title {
+    font-size: 1.5rem;
+  }
+}
 .sub-title-us {
   margin-top: 66px;
   text-align: center;
+}
+@media screen and (max-width: 1024px) {
+  .sub-title-us {
+    margin-top: 40px;
+  }
 }
 .sub-title-message {
   margin-top: 125px;
@@ -2094,6 +2110,12 @@ footer {
   padding-top: 44px;
   position: relative;
 }
+@media screen and (max-width: 768px) {
+  .sub-aboutus-title {
+    font-size: 1.125rem;
+    padding-top: 24px;
+  }
+}
 .sub-aboutus-title::before {
   display: inline-block;
   width: 30px;
@@ -2101,10 +2123,14 @@ footer {
   border: 1px solid #222;
   border-radius: 50%;
   text-align: center;
-  line-height: 30px;
   box-sizing: border-box;
   margin-right: 21px;
   color: #222;
+}
+@media screen and (max-width: 1024px) {
+  .sub-aboutus-title::before {
+    margin-right: 6px;
+  }
 }
 .sub-aboutus-title.title-1::before {
   content: "1";
@@ -2121,7 +2147,7 @@ footer {
 .sub-aboutus-title.title-5::before {
   content: "5";
 }
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 768px) {
   .sub-aboutus-title {
     font-size: 1.125rem;
   }
@@ -2132,6 +2158,12 @@ footer {
   font-weight: 400;
   padding-top: 35px;
   padding-bottom: 30px;
+}
+@media screen and (max-width: 768px) {
+  .sub-aboutus-item {
+    padding-top: 25px;
+    padding-bottom: 20px;
+  }
 }
 
 .sub-aboutus-ceo {
@@ -2156,6 +2188,7 @@ footer {
     width: 100%;
     max-width: 90%;
     margin: 50px auto 0;
+    height: auto;
   }
 }
 
@@ -2193,6 +2226,7 @@ footer {
   .sub-aboutus-ceo-main {
     display: block;
     position: static;
+    font-size: 1.5rem;
   }
 }
 
@@ -2200,6 +2234,11 @@ footer {
   font-weight: 400;
   line-height: 2;
   margin-top: 31px;
+}
+@media screen and (max-width: 1024px) {
+  .sub-aboutus-ceo-item {
+    margin-top: 20px;
+  }
 }
 
 .sub-aboutus-ceo-name {
@@ -2252,7 +2291,8 @@ footer {
 }
 @media screen and (max-width: 1024px) {
   .sub-about-box-title {
-    margin-top: 52px;
+    margin-top: 40px;
+    font-size: 1.25rem;
   }
 }
 
@@ -2264,6 +2304,7 @@ footer {
 @media screen and (max-width: 1024px) {
   .sub-about-box-item {
     margin-top: 20px;
+    font-size: 1.125rem;
   }
 }
 
@@ -2272,6 +2313,7 @@ footer {
   width: 100%;
   margin-top: 40px;
   line-height: 1.5;
+  font-weight: 400;
 }
 @media screen and (max-width: 1024px) {
   .sub-about-box-read {
@@ -2286,6 +2328,11 @@ footer {
   height: 88px;
   align-items: center;
 }
+@media screen and (max-width: 768px) {
+  .sub-about-list {
+    gap: 20px;
+  }
+}
 
 .sub-about-list-sec {
   margin-top: 153px;
@@ -2298,12 +2345,15 @@ footer {
 
 .sub-about-list-title {
   line-height: 1;
-  width: 20%;
+  width: 35%;
   display: block;
 }
 
 .sub-about-list-item {
   line-height: 1;
+}
+.sub-about-list-item br {
+  display: none;
 }
 .sub-about-list-item a {
   padding-top: 36px;
@@ -2314,6 +2364,14 @@ footer {
 .sub-about-list-item a:hover {
   opacity: 0.6;
   color: #988C2C;
+}
+@media screen and (max-width: 768px) {
+  .sub-about-list-item {
+    line-height: 1.5;
+  }
+  .sub-about-list-item br {
+    display: inline;
+  }
 }
 
 .sub-inner-about-list {
