@@ -150,6 +150,17 @@
     background-color: #fff;
     margin: 0 auto;
 }
+.sub-hamburger-icon span {
+    display: block;
+    transition: all .3s;
+    top: 12px;
+    left: 25%;
+    width: 52px;
+    height: 2px;
+    background-color: #222;
+    margin: 0 auto;
+
+}
 
 .header-hamburger-icon span:nth-of-type(2) {
     margin-top: 12px;
@@ -166,6 +177,15 @@
     line-height: 1;
     font-weight: 400;
     color:#fff;
+}
+
+.sub-header-hamburger-item {
+    text-align: center;
+    margin: 9px 0 0 0;
+    font-size: 0.75rem;
+    line-height: 1;
+    font-weight: 400;
+    color:#222;
 }
 
 /* .header-hamburgerクラスがactiveの時のコード*/

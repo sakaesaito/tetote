@@ -654,6 +654,17 @@ button {
   margin: 0 auto;
 }
 
+.sub-hamburger-icon span {
+  display: block;
+  transition: all 0.3s;
+  top: 12px;
+  left: 25%;
+  width: 52px;
+  height: 2px;
+  background-color: #222;
+  margin: 0 auto;
+}
+
 .header-hamburger-icon span:nth-of-type(2) {
   margin-top: 12px;
 }
@@ -669,6 +680,15 @@ button {
   line-height: 1;
   font-weight: 400;
   color: #fff;
+}
+
+.sub-header-hamburger-item {
+  text-align: center;
+  margin: 9px 0 0 0;
+  font-size: 0.75rem;
+  line-height: 1;
+  font-weight: 400;
+  color: #222;
 }
 
 /* .header-hamburgerクラスがactiveの時のコード*/
@@ -1972,13 +1992,29 @@ footer {
 .sub-inner-mv {
   padding-top: 4%;
 }
+@media screen and (max-width: 1024px) {
+  .sub-inner {
+    padding-inline: 15%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .sub-inner {
+    padding-inline: 2%;
+  }
+}
 
 .c-breadcrumbs {
   display: flex;
+  font-weight: 400;
+  height: 54px;
+  background-color: #f0f0f0;
+  padding-left: 15%;
+  align-items: center;
 }
 
 .c-breadcrumbs span::before {
   content: ">";
+  margin: 0 6px;
 }
 
 .sub-title {
@@ -1998,6 +2034,11 @@ footer {
 }
 .sub-title-company {
   margin-top: 153px;
+}
+@media screen and (max-width: 1024px) {
+  .sub-title-company {
+    margin-top: 52px;
+  }
 }
 
 .sub-mv-title {
@@ -2041,6 +2082,11 @@ footer {
 .sub-aboutus-list {
   padding-inline: 80px;
 }
+@media screen and (max-width: 1024px) {
+  .sub-aboutus-list {
+    padding-inline: 3%;
+  }
+}
 
 .sub-aboutus-title {
   line-height: 1.5;
@@ -2075,6 +2121,11 @@ footer {
 .sub-aboutus-title.title-5::before {
   content: "5";
 }
+@media screen and (max-width: 1024px) {
+  .sub-aboutus-title {
+    font-size: 1.125rem;
+  }
+}
 
 .sub-aboutus-item {
   font-size: 1rem;
@@ -2103,7 +2154,7 @@ footer {
 @media screen and (max-width: 1024px) {
   .sub-about-ceo-pic {
     width: 100%;
-    max-width: 80%;
+    max-width: 90%;
     margin: 50px auto 0;
   }
 }
@@ -2115,6 +2166,11 @@ footer {
 }
 .sub-aboutus-ceo-message:nth-child(2) {
   padding-top: 175px;
+}
+@media screen and (max-width: 1024px) {
+  .sub-aboutus-ceo-message:nth-child(2) {
+    padding-top: 0px;
+  }
 }
 @media screen and (max-width: 1024px) {
   .sub-aboutus-ceo-message {
@@ -2167,6 +2223,11 @@ footer {
 .sub-about-box:nth-child(1) {
   margin-top: 82px;
 }
+@media screen and (max-width: 1024px) {
+  .sub-about-box {
+    display: block;
+  }
+}
 
 .sub-about-box-img {
   max-width: 457px;
@@ -2177,11 +2238,22 @@ footer {
 .sub-about-box-img img {
   width: 100%;
 }
+@media screen and (max-width: 1024px) {
+  .sub-about-box-img {
+    max-width: 716px;
+    width: 100%;
+  }
+}
 
 .sub-about-box-title {
   font-size: 2rem;
   color: #AFA86F;
   line-height: 1;
+}
+@media screen and (max-width: 1024px) {
+  .sub-about-box-title {
+    margin-top: 52px;
+  }
 }
 
 .sub-about-box-item {
@@ -2189,12 +2261,22 @@ footer {
   margin-top: 40px;
   line-height: 1.5;
 }
+@media screen and (max-width: 1024px) {
+  .sub-about-box-item {
+    margin-top: 20px;
+  }
+}
 
 .sub-about-box-read {
   max-width: 425px;
   width: 100%;
   margin-top: 40px;
   line-height: 1.5;
+}
+@media screen and (max-width: 1024px) {
+  .sub-about-box-read {
+    margin-top: 20px;
+  }
 }
 
 .sub-about-list {
@@ -2208,6 +2290,11 @@ footer {
 .sub-about-list-sec {
   margin-top: 153px;
 }
+@media screen and (max-width: 1024px) {
+  .sub-about-list-sec {
+    margin-top: 52px;
+  }
+}
 
 .sub-about-list-title {
   line-height: 1;
@@ -2218,10 +2305,30 @@ footer {
 .sub-about-list-item {
   line-height: 1;
 }
+.sub-about-list-item a {
+  padding-top: 36px;
+  padding-bottom: 36px;
+  padding-left: auto;
+  transition: 0.3s;
+}
+.sub-about-list-item a:hover {
+  opacity: 0.6;
+  color: #988C2C;
+}
 
 .sub-inner-about-list {
   padding-inline: 22px;
   padding-bottom: 119px;
+}
+@media screen and (max-width: 1024px) {
+  .sub-inner-about-list {
+    padding-inline: 13%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .sub-inner-about-list {
+    padding-inline: 2%;
+  }
 }
 
 .sub-about-list-consul {
@@ -2230,4 +2337,10 @@ footer {
 
 .sub-about-list-item-consul2 {
   margin-top: 6px;
+}
+
+@media screen and (min-width: 767px) {
+  a[href^="tel:"] {
+    pointer-events: none;
+  }
 }/*# sourceMappingURL=style.css.map */

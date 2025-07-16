@@ -204,17 +204,29 @@
 
     &-mv {
         padding-top: 4%;
+    }
 
+    @media screen and (max-width: 1024px) {
+        padding-inline: 15%;
+    }
+    @media screen and (max-width: 768px) {
+        padding-inline: 2%;
     }
 }
 
 .c-breadcrumbs {
     display: flex;
+    font-weight: 400;
+    height: 54px;
+    background-color: #f0f0f0;
+    padding-left: 15%;
+    align-items: center;
 }
 
 .c-breadcrumbs span {
     &::before {
         content: ">";
+        margin: 0 6px;
     }
 }
 
@@ -238,6 +250,9 @@
 
     &-company {
         margin-top: 153px;
+        @media screen and (max-width: 1024px) {
+            margin-top: 52px;
+        }
     }
 }
 
@@ -285,6 +300,9 @@
 
 .sub-aboutus-list {
     padding-inline: 80px;
+    @media screen and (max-width: 1024px) {
+        padding-inline: 3%;
+    }
 }
 
 .sub-aboutus-title {
@@ -324,6 +342,10 @@
     &.title-5::before {
         content: "5";
     }
+
+    @media screen and (max-width: 1024px) {
+        font-size: 1.125rem;
+    }
 }
 
 .sub-aboutus-item {
@@ -348,7 +370,7 @@
     height: 629px;
     @media screen and (max-width: 1024px) {
         width: 100%;
-        max-width: 80%;
+        max-width: 90%;
         margin: 50px auto 0;
     }
 }
@@ -359,6 +381,9 @@
 
     &:nth-child(2) {
         padding-top: 175px;
+        @media screen and (max-width: 1024px) {
+            padding-top: 0px;
+        }
     }
     @media screen and (max-width: 1024px) {
         position: static;
@@ -401,8 +426,13 @@
     padding-top: 50px;
     padding-bottom: 49px;
     border-bottom: #AFA86F solid 1px;
+
     &:nth-child(1) {
         margin-top: 82px;
+    }
+
+    @media screen and (max-width: 1024px) {
+        display: block;
     }
 }
 .sub-about-box-img {
@@ -413,23 +443,37 @@
     img {
         width: 100%;
     }
+    @media screen and (max-width: 1024px) {
+        max-width: 716px;
+        width: 100%;
+    }
 }
 
 .sub-about-box-title {
     font-size: 2rem;
     color: #AFA86F;
     line-height: 1;
+
+    @media screen and (max-width: 1024px) {
+        margin-top: 52px;
+    }
 }
 .sub-about-box-item {
     font-size: 1.5rem;
     margin-top: 40px;
     line-height: 1.5;
+    @media screen and (max-width: 1024px) {
+        margin-top: 20px;
+    }
 }
 .sub-about-box-read {
     max-width: 425px;
     width: 100%;
     margin-top: 40px;
     line-height: 1.5;
+    @media screen and (max-width: 1024px) {
+        margin-top: 20px;
+    }
 }
 .sub-about-list {
     display: flex;
@@ -440,6 +484,9 @@
 }
 .sub-about-list-sec {
     margin-top: 153px;
+    @media screen and (max-width: 1024px) {
+        margin-top: 52px;
+    }
 }
 .sub-about-list-title {
     line-height: 1;
@@ -448,16 +495,38 @@
 }
 .sub-about-list-item {
     line-height: 1;
+    a {
+        padding-top: 36px;
+        padding-bottom: 36px;
+        padding-left: auto;transition: .3s;
+    }
+    a:hover {
+        opacity: .6;
+        color: #988C2C;
+    }
 
 }
 .sub-inner-about-list {
     padding-inline: 22px;
     padding-bottom: 119px;
+
+    @media screen and (max-width: 1024px) {
+        padding-inline: 13%;
+    }
+    @media screen and (max-width: 768px) {
+        padding-inline: 2%;
+    }
 }
 .sub-about-list-consul {
     display: block;
 }
 .sub-about-list-item-consul2 {
     margin-top: 6px;
+}
+
+@media screen and (min-width: 767px) {
+a[href^="tel:"] { 
+    pointer-events: none; 
+}
 }
 
