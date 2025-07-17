@@ -1,0 +1,10 @@
+.sub-title-benefits {
+    padding-top: 145px;
+    @media screen and (max-width: 1024px) {
+        margin-top: 70px;
+    }
+}
+.benefits-list {
+    align-items: flex-start;
+
+}
