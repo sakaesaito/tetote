@@ -193,7 +193,9 @@
     background-image: url(/img/about-fv.jpg);
     background-position: bottom;
     object-fit: contain;
-
+    @media screen and (max-width: 768px) {
+        margin-top: 90px;
+    }
 }
 
 .sub-inner {

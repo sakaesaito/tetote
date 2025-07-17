@@ -1,0 +1,58 @@
+.sub-title-career {
+    margin-top: 145px;
+    @media screen and (max-width: 768px) {
+        margin-top: 70px;
+        font-size: 1.5rem;
+    }
+}
+.career-item {
+    margin-top: 113px;
+    font-weight: 400;
+    line-height: 1;
+    @media screen and (max-width: 768px) {
+        margin-top: 50px;
+    }
+
+}
+.career-img {
+    margin-top: 48px;
+    @media screen and (max-width: 768px) {
+        margin-top: 20px;
+    }
+}
+.career-note {
+    font-weight: 400;
+    line-height: 1;
+    margin-top: 37px;
+    @media screen and (max-width: 768px) {
+        margin-top: 20px;
+    }
+}
+
+.career-menu {
+    margin-top: 89px;
+    padding-bottom: 89px;
+    @media screen and (max-width: 768px) {
+        margin-top: 30px;
+    }
+}
+
+.career-feature {
+    font-size: 1.5rem;
+    background-color: #AFA86F;
+    padding-left: 21px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    margin-top: 37px;
+    @media screen and (max-width: 768px) {
+        margin-top: 20px;
+    }
+}
+.career-detail {
+    font-weight: 400;
+    line-height: 1.8;
+    margin-top: 50px;
+    @media screen and (max-width: 768px) {
+        margin-top: 20px;
+    }
+}
