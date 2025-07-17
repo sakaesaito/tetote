@@ -19,6 +19,7 @@
 .staff-text-wrapper {
     position: relative;
 }
+
 .staff-box-wrapper {
     display: flex;
 
@@ -54,6 +55,7 @@
 }
 .staff-box {
     margin-right: 2.57%;
+    position: relative;
 
     @media screen and (max-width: 1024px) {
         margin-left:  0;
@@ -71,10 +73,12 @@
     font-size: 1.25rem;
     line-height: 1.2;
     background-color: #AFA86F;
-    
+    inline-size: fit-content;
+    margin-top: 6px;
 }
 .staff-box-past {
     display: flex;
+    margin-top: 16px;
 }
 .staff-box-position {
     margin-right: 10px;
@@ -82,6 +86,8 @@
 .staff-box-name {
     font-weight: 700;
     font-size: 1.5rem;
+    margin-top: 16px;
+    line-height: 1;
 }
 
 .viewmore-button-staff{
@@ -93,4 +99,14 @@
     top: 72px;
     left: 236px;
 }
+.staff-box-img {
+    position: absolute;
+    bottom: 24%;
+}
+.staff-box-img-box2 {
+    position: absolute;
+    bottom: 10%;
+
+}
+
 

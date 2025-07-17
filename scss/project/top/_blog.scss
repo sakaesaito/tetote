@@ -5,6 +5,8 @@
 }
 .blog-sec {
     padding-bottom: 80px;
+    max-width: 1024;
+    padding-inline: 22px;
 }
 .blog-box {
     background-color: #fff;
@@ -38,8 +40,12 @@
     grid-template-rows: repeat(2, 1fr); 
     grid-gap:  23px 52px;
     
-    @media screen and (max-width: 768px) {
-    display: block;
+    @media screen and (max-width: 1024px) {
+        display: grid;
+    grid-template-columns: repeat(1, 1fr); 
+    grid-template-rows: repeat(4, 1fr); 
+    grid-gap:  10px 20px;
+
     }
 }
 

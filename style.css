@@ -1469,6 +1469,7 @@ footer {
 
 .staff-box {
   margin-right: 2.57%;
+  position: relative;
 }
 @media screen and (max-width: 1024px) {
   .staff-box {
@@ -1487,10 +1488,13 @@ footer {
   font-size: 1.25rem;
   line-height: 1.2;
   background-color: #AFA86F;
+  inline-size: fit-content;
+  margin-top: 6px;
 }
 
 .staff-box-past {
   display: flex;
+  margin-top: 16px;
 }
 
 .staff-box-position {
@@ -1500,6 +1504,8 @@ footer {
 .staff-box-name {
   font-weight: 700;
   font-size: 1.5rem;
+  margin-top: 16px;
+  line-height: 1;
 }
 
 .viewmore-button-staff {
@@ -1510,6 +1516,16 @@ footer {
   position: absolute;
   top: 72px;
   left: 236px;
+}
+
+.staff-box-img {
+  position: absolute;
+  bottom: 24%;
+}
+
+.staff-box-img-box2 {
+  position: absolute;
+  bottom: 10%;
 }
 
 .career {
@@ -1719,6 +1735,8 @@ footer {
 
 .blog-sec {
   padding-bottom: 80px;
+  max-width: 1024;
+  padding-inline: 22px;
 }
 
 .blog-box {
@@ -1756,9 +1774,12 @@ footer {
   grid-template-rows: repeat(2, 1fr);
   grid-gap: 23px 52px;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1024px) {
   .blog-list {
-    display: block;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-gap: 10px 20px;
   }
 }
 
@@ -2015,13 +2036,18 @@ footer {
   }
 }
 
+.is-small {
+  background-color: #f0f0f0;
+}
+
 .c-breadcrumbs {
   display: flex;
   font-weight: 400;
   height: 54px;
-  background-color: #f0f0f0;
-  padding-left: 15%;
   align-items: center;
+  max-width: 1024px;
+  margin: 0 auto;
+  padding-left: 24px;
 }
 @media screen and (max-width: 768px) {
   .c-breadcrumbs {
@@ -2071,7 +2097,7 @@ footer {
 
 .sub-mv-title {
   background-color: #fff;
-  font-size: 2.875rem;
+  font-size: 4rem;
   padding: 3px 10px;
   font-family: "Viga";
   line-height: 1;
@@ -2675,4 +2701,98 @@ footer {
   .career-detail {
     margin-top: 20px;
   }
+}
+
+.sub-staff-box-wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 2列 */
+  grid-template-rows: repeat(2, 1fr); /* 3行 */
+  column-gap: 43px;
+  row-gap: 48px;
+}
+@media screen and (max-width: 1024px) {
+  .sub-staff-box-wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2列 */
+    grid-template-rows: repeat(3, 1fr); /* 3行 */
+    column-gap: 20px;
+    row-gap: 40px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .sub-staff-box-wrapper {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr); /* 2列 */
+    grid-template-rows: repeat(6, 1fr); /* 3行 */
+    column-gap: 10px;
+    row-gap: 48px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .sub-inner-staff {
+    padding-inline: 5%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .sub-inner-staff {
+    padding-inline: 2%;
+  }
+}
+
+.sub-staff-box {
+  margin-top: 0;
+  position: relative;
+}
+@media screen and (max-width: 1024px) {
+  .sub-staff-box {
+    margin-left: 0;
+  }
+}
+
+.sub-staff-box-img {
+  position: absolute;
+  bottom: 16%;
+}
+@media screen and (max-width: 1024px) {
+  .sub-staff-box-img {
+    bottom: 14%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .sub-staff-box-img {
+    bottom: 9%;
+  }
+}
+
+.sub-staff-box-message {
+  inline-size: fit-content;
+  margin-top: 6px;
+  font-size: 1.25rem;
+  line-height: 1.2;
+  background-color: #AFA86F;
+  inline-size: fit-content;
+  padding-top: 6px;
+  padding-bottom: 6px;
+}
+
+.sub-staff-sec {
+  margin-top: 130px;
+  margin-bottom: 130px;
+}
+
+.blog-sec {
+  background-color: #faf7f1;
+  width: 100%;
+}
+
+.blog-tag, .date {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1;
+  padding-top: 41px;
+}
+
+.blog-title {
+  margin-top: 45px;
 }/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,65 @@
+.sub-staff-box-wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 2列 */
+    grid-template-rows: repeat(2, 1fr);   /* 3行 */
+	column-gap: 43px;
+	row-gap: 48px;
+
+    @media screen and (max-width: 1024px) {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); /* 2列 */
+        grid-template-rows: repeat(3, 1fr);   /* 3行 */
+        column-gap: 20px;
+        row-gap: 40px;
+    }
+    @media screen and (max-width: 768px) {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr); /* 2列 */
+        grid-template-rows: repeat(6, 1fr);   /* 3行 */
+        column-gap: 10px;
+        row-gap: 48px;
+    }
+}
+.sub-inner-staff {
+    @media screen and (max-width: 1024px) {
+        padding-inline: 5%;
+    }
+    @media screen and (max-width: 768px) {
+        padding-inline: 2%;
+    }
+    
+}
+
+.sub-staff-box {
+    margin-top: 0;
+    position: relative;
+
+    @media screen and (max-width: 1024px) {
+        margin-left:  0;
+    }
+}
+.sub-staff-box-img {
+    position: absolute;
+    bottom: 16%;
+    @media screen and (max-width: 1024px) {
+        bottom: 14%;
+    }
+    @media screen and (max-width: 768px) {
+        bottom: 9%;
+    }
+}
+
+.sub-staff-box-message {
+    inline-size: fit-content;
+    margin-top: 6px;
+    font-size: 1.25rem;
+    line-height: 1.2;
+    background-color: #AFA86F;
+    inline-size: fit-content;
+    padding-top: 6px;
+    padding-bottom: 6px;
+}
+.sub-staff-sec {
+    margin-top: 130px;
+    margin-bottom: 130px;
+}

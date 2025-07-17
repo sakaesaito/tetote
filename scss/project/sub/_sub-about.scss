@@ -222,14 +222,18 @@
         }
     }
 }
-
+.is-small {
+    background-color: #f0f0f0;
+}
 .c-breadcrumbs {
     display: flex;
     font-weight: 400;
     height: 54px;
-    background-color: #f0f0f0;
-    padding-left: 15%;
     align-items: center;
+    max-width: 1024px;
+    margin: 0 auto;
+    padding-left: 24px;
+
     @media screen and (max-width: 768px) {
         padding-left: 5%;
         height: 40px;
@@ -277,7 +281,7 @@
 
 .sub-mv-title {
     background-color: #fff;
-    font-size: 2.875rem;
+    font-size: 4rem;
     padding: 3px 10px;
     font-family: "Viga";
     line-height: 1;
