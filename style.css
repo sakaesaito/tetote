@@ -2049,6 +2049,11 @@ footer {
   margin: 0 auto;
   padding-left: 24px;
 }
+@media screen and (max-width: 1024px) {
+  .c-breadcrumbs {
+    padding-left: 15%;
+  }
+}
 @media screen and (max-width: 768px) {
   .c-breadcrumbs {
     padding-left: 5%;
@@ -2708,12 +2713,107 @@ footer {
 }
 @media screen and (max-width: 1024px) {
   .sub-title-benefits {
-    margin-top: 70px;
+    padding-top: 70px;
   }
 }
 
 .benefits-list {
+  display: flex;
+  gap: 40px;
+  border-bottom: #222222 solid 1px;
   align-items: flex-start;
+  padding-top: 36px;
+  padding-bottom: 36px;
+}
+@media screen and (max-width: 768px) {
+  .benefits-list {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    gap: 10px;
+  }
+}
+
+.sub-benefits-list-sec {
+  margin-top: 113px;
+}
+@media screen and (max-width: 768px) {
+  .sub-benefits-list-sec {
+    margin-top: 50px;
+  }
+}
+
+.benefits-list-title {
+  line-height: 1;
+  width: 20%;
+  display: block;
+}
+
+.benefits-list-item {
+  line-height: 1.5;
+  font-weight: 400;
+}
+
+.sub-title-benefits2 {
+  margin-top: 128px;
+}
+@media screen and (max-width: 768px) {
+  .sub-title-benefits2 {
+    margin-top: 70px;
+  }
+}
+
+.benefits-user-box {
+  display: flex;
+  gap: 46px;
+}
+@media screen and (max-width: 768px) {
+  .benefits-user-box {
+    display: block;
+    margin: 0 auto;
+    max-width: 570px;
+    width: 100%;
+  }
+}
+
+.benefits-date {
+  color: #988c2c;
+  line-height: 1;
+  margin-top: 23px;
+}
+
+.benefits-name {
+  font-size: 1.5rem;
+  line-height: 1;
+  margin-top: 13px;
+}
+
+.benefits-note {
+  font-weight: 400;
+  line-height: 1.8;
+  margin-top: 25px;
+}
+
+.benefits-user-wrap {
+  max-width: 467px;
+  width: 100%;
+}
+@media screen and (max-width: 768px) {
+  .benefits-user-wrap {
+    margin: 0 auto;
+    max-width: 570px;
+    width: 100%;
+  }
+}
+
+.benefits-staff-img {
+  margin-top: 50px;
+  margin-bottom: 139px;
+}
+@media screen and (max-width: 768px) {
+  .benefits-staff-img {
+    margin-top: 30px;
+    margin-bottom: 70px;
+  }
 }
 
 .sub-staff-box-wrapper {
@@ -2794,8 +2894,13 @@ footer {
   margin-bottom: 130px;
 }
 
-.is-small {
+.is-small-blog {
   padding-top: 118px;
+}
+@media screen and (max-width: 768px) {
+  .is-small-blog {
+    padding-top: 90px;
+  }
 }
 
 .blog-detail {
@@ -2808,6 +2913,7 @@ footer {
   display: flex;
   align-items: center;
   gap: 16px;
+  padding-top: 41px;
 }
 
 .blog-detail-sec {
@@ -2818,7 +2924,6 @@ footer {
   font-size: 14px;
   font-weight: 400;
   line-height: 1;
-  padding-top: 41px;
 }
 
 .blog-detail-inner {
@@ -2827,15 +2932,33 @@ footer {
   max-width: 800px;
   padding-inline: 40px;
 }
+@media screen and (max-width: 1024px) {
+  .blog-detail-inner {
+    padding-inline: 22px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .blog-detail-inner {
+    padding-inline: 15px;
+  }
+}
 
 .sub-title-blog-detail {
   margin-top: 25px;
-  font-size: 2.5rem;
-  line-height: 1;
+  font-size: 32px;
+  line-height: 1.5;
 }
-@media screen and (max-width: 1024px) {
+.sub-title-blog-detail br {
+  display: none;
+}
+@media screen and (max-width: 768px) {
+  .sub-title-blog-detail br {
+    display: inline;
+  }
+}
+@media screen and (max-width: 768px) {
   .sub-title-blog-detail {
-    font-size: 1.25rem;
+    font-size: 1.8rem;
   }
 }
 
@@ -2913,10 +3036,13 @@ footer {
   border-right: 1px solid #222;
 }
 .blog-detail-news:nth-child(1)::before {
-  content: ">";
+  content: "<";
   width: 24px;
   height: 24px;
   border-radius: 50px;
+}
+.blog-detail-news:nth-child(2)::before {
+  content: ">";
 }
 @media screen and (max-width: 768px) {
   .blog-detail-news {
@@ -2926,4 +3052,15 @@ footer {
 
 .page {
   background-color: #f0f0f0;
+}
+
+@media screen and (max-width: 768px) {
+  .c-breadcrumbs-blog {
+    display: none;
+  }
+}
+
+.sub-blog-sec {
+  margin-top: 130px;
+  margin-bottom: 139px;
 }/*# sourceMappingURL=style.css.map */

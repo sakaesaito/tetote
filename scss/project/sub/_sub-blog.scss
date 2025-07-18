@@ -1,0 +1,15 @@
+.sub-blog-sec {
+    margin-top: 130px;
+    margin-bottom: 139px;
+}
+.sub-blog-list{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    grid-gap: 32px 52px;
+}
+.button-page-before {
+    width: 58px;
+    height: 58px;
+    display: inline-block;
+}
