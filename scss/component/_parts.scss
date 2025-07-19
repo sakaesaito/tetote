@@ -75,3 +75,37 @@ button {
     color: #9797971A;
 }
 
+.next-button {
+    border-radius: 50px;
+    padding: 0;
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    transition: .4s;
+
+    &-blk {
+        display: inline-block;
+        background-color: #222;
+        color: #fff;
+        width: 58px;
+        height: 58px;
+        &:hover {
+            background-color: #fff;
+            color:#222;
+            border:solid 1px #222;
+        }
+    }
+    &-white {
+        display: inline-block;
+        background-color: #fff;
+        color: #222;
+        border: solid 1px #222;
+        width: 58px;
+        height: 58px;
+        &:hover {
+            background-color: #222;
+            color:#fff;
+        }
+    }
+}
