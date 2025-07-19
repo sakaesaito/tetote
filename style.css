@@ -3295,4 +3295,15 @@ footer {
   .sub-blog-page-box {
     gap: 20px;
   }
+}
+
+.sub-mv-page-staff {
+  background-color: #faf7f1;
+  border-radius: 10px;
+  margin-top: 118px;
+}
+
+.sub-page-staff-mv {
+  display: flex;
+  gap: 60px;
 }/*# sourceMappingURL=style.css.map */
