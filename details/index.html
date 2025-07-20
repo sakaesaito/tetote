@@ -27,7 +27,7 @@
         <div class="header-inner">
             <div class="header-nav">
                 <h1 class="sub-header-logo">
-                    <a class="header-logo__link" href="#"><img src="/img/tetote-logo-black.png" alt="会社ロゴ"></a>
+                    <a class="header-logo__link" href="/"><img src="/img/tetote-logo-black.png" alt="会社ロゴ"></a>
                 </h1>
                 <div class="header-link">
                     <a class="header-button header-button-recruit" href="/details/">募集要項</a>
@@ -44,7 +44,7 @@
                 <nav class="drawer-nav js-drawer">
                     <div class="drawer-inner">
                         <div class="drawer-left">
-                            <a class="drawer-logo-link" href="#">
+                            <a class="drawer-logo-link" href="/">
                                 <img src="/img/tetote-logo-black.png" style="max-width:1440px; width:100%; height:auto; object-fit:cover; object-position: center;" alt="会社ロゴ">
                             </a>
                         </div>
@@ -95,15 +95,15 @@
             </h2>
             <p class="details-lead">TETOTEでは、コンサルタントを中心に、様々な職種を募集しています。</p>
             <div class="details-btn-box">
-                <button class="details-btn">コンサルタント</button>
-                <button class="details-btn">ソリューション営業</button>
-                <button class="details-btn">システムエンジニア</button>
+                <button class="details-btn" data-target="#sub-details">コンサルタント</button>
+                <button class="details-btn" data-target="#sub-solution">ソリューション営業</button>
+                <button class="details-btn" data-target="#sub-engineer">システムエンジニア</button>
             </div>
     </section>
     <h2></h2>
 
 
-    <section>
+    <section id="sub-details">
         <div class="sub-inner">
             <h2 class="details-title details-title-consul">募集要項-コンサルタント</h2>
             <div class="details-list-sec">
@@ -149,6 +149,7 @@
                 </dl>
             </div>
         </div>
+    <section id="sub-solution">
         <div class="sub-inner">
             <h2 class="details-title">募集要項-ソリューション営業</h2>
             <div class="details-list-sec">
@@ -194,6 +195,8 @@
                 </dl>
             </div>
         </div>
+    </section>
+    <section id="sub-engineer" class="sub-engineer">
         <div class="sub-inner">
             <h2 class="details-title">募集要項-システムエンジニア</h2>
             <div class="details-list-sec">

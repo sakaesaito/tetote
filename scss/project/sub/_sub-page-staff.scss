@@ -1,10 +1,84 @@
-.sub-mv-page-staff {
+.page-staff-mv-sec {
     background-color: #faf7f1;
     border-radius: 10px;
     margin-top: 118px;
 }
-.sub-page-staff-mv {
+.page-staff-mv-inner {
+    padding-left: 34px;
+    padding-right: 24px;
+}
+.page-staff-box {
     display: flex;
     gap: 60px;
+    max-width: 1024px;
+    width: 100%;
+    line-height: 1;
+        &-left {
+            max-width: 605px;
+            width: 100%;
+        }
+        &__title {
+            font-size: 2.25rem;
+            margin-top: 77px;
+            background-color: #fff;
+            inline-size: fit-content;
+            padding-inline: 10px;
+        }
+        &__item {
+            font-size: 1.5rem;
+            margin-top: 18px;
+            background-color: #fff;
+            inline-size: fit-content;
+            padding-inline: 10px;
+        }
+        &__position {
+            font-size: 0.875rem;
+            color: #988c2c;
+            font-weight: 400;
+            margin-top: 30px;
+        }
+        &__name {
+            font-size: 1.5em;
+            margin-top: 12px;
+        }
+        &__year {
+            font-size: 1rem;
+            font-weight: 400;
+            margin-top: 20px;
+        }
+        &__note {
+            line-height: 1.8;
+            font-weight: 400;
+            margin-top: 13px;
+        }
 }
+.page-staff-box-name-sec {
+    display: flex;
+    gap: 20px;
+}
+.page-staff-box-img {
+    max-width: 286px;
+    width: 100%;
+    padding-top: 43px;
+    padding-bottom: 43px;
+    border-radius: 0;
+}
+.page-staff-wrapper {
+    margin-top: 101px;
+}
+.page-staff {
+    &__title {
+        font-size: 1.5rem;
+        line-height: 1;
+        margin-top: 34px;
+    }
+    &__note {
+        font-weight: 400;
+        line-height: 1.5;
+        margin-top: 50px;
+    }
+}
+
+
+
 

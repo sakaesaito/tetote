@@ -641,8 +641,7 @@ button {
   color: #fff;
 }
 .header-button-entry:hover {
-  background-color: #fff;
-  color: #222;
+  background-color: #988C2C;
 }
 @media screen and (max-width: 768px) {
   .header-button-entry {
@@ -2693,6 +2692,15 @@ footer {
   }
 }
 
+.sub-engineer {
+  margin-bottom: 139px;
+}
+@media screen and (max-width: 1024px) {
+  .sub-engineer {
+    margin-bottom: 50px;
+  }
+}
+
 .sub-title-career {
   margin-top: 145px;
 }
@@ -3297,15 +3305,89 @@ footer {
   }
 }
 
-.sub-mv-page-staff {
+.page-staff-mv-sec {
   background-color: #faf7f1;
   border-radius: 10px;
   margin-top: 118px;
 }
 
-.sub-page-staff-mv {
+.page-staff-mv-inner {
+  padding-left: 34px;
+  padding-right: 24px;
+}
+
+.page-staff-box {
   display: flex;
   gap: 60px;
+  max-width: 1024px;
+  width: 100%;
+  line-height: 1;
+}
+.page-staff-box-left {
+  max-width: 605px;
+  width: 100%;
+}
+.page-staff-box__title {
+  font-size: 2.25rem;
+  margin-top: 77px;
+  background-color: #fff;
+  inline-size: fit-content;
+  padding-inline: 10px;
+}
+.page-staff-box__item {
+  font-size: 1.5rem;
+  margin-top: 18px;
+  background-color: #fff;
+  inline-size: fit-content;
+  padding-inline: 10px;
+}
+.page-staff-box__position {
+  font-size: 0.875rem;
+  color: #988c2c;
+  font-weight: 400;
+  margin-top: 30px;
+}
+.page-staff-box__name {
+  font-size: 1.5em;
+  margin-top: 12px;
+}
+.page-staff-box__year {
+  font-size: 1rem;
+  font-weight: 400;
+  margin-top: 20px;
+}
+.page-staff-box__note {
+  line-height: 1.8;
+  font-weight: 400;
+  margin-top: 13px;
+}
+
+.page-staff-box-name-sec {
+  display: flex;
+  gap: 20px;
+}
+
+.page-staff-box-img {
+  max-width: 286px;
+  width: 100%;
+  padding-top: 43px;
+  padding-bottom: 43px;
+  border-radius: 0;
+}
+
+.page-staff-wrapper {
+  margin-top: 101px;
+}
+
+.page-staff__title {
+  font-size: 1.5rem;
+  line-height: 1;
+  margin-top: 34px;
+}
+.page-staff__note {
+  font-weight: 400;
+  line-height: 1.5;
+  margin-top: 50px;
 }
 
 .accordion-content {
@@ -3350,7 +3432,7 @@ footer {
 .accordion-header.active {
   background: #fff;
   border-bottom: none;
-  transition: 0.7;
+  transition: 0.4;
   padding-bottom: 0;
 }
 
