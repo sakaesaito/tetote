@@ -1,0 +1,119 @@
+.accordion-content {
+    display: none;
+    padding: 1em;
+    padding-left: 30px;
+    border-bottom: #AFA86F 1px solid;
+}
+.accordion-content.active {
+    padding-top: 0;
+    padding-left: 24px;
+}
+
+.accordion {
+    .accordion-item:first-child {
+        .accordion-header {
+            border-top: 1px solid #AFA86F;
+        }
+    }
+
+    .accordion-header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        cursor: pointer;
+        padding-top: 36px;
+        padding-bottom: 36px;
+        border-bottom: 1px solid #AFA86F;
+        font-weight: bold;
+        background: #fff;
+        position: relative;
+        gap: 1em;
+        transition: .4s;
+
+        &:hover {
+            opacity: .7;
+        }
+        @media screen and (max-width: 768px) {
+            padding-top: 20px;
+            padding-bottom: 20px;
+        }
+    }
+}
+
+.accordion-header.active {
+    background: #fff;
+    border-bottom: none;
+    transition: .7;
+    padding-bottom: 0;
+}
+
+#faq-btn {
+    opacity: 1;
+    transition: opacity 0.8s ease-in-out;
+}
+
+section.show {
+    opacity: 1;
+}
+
+.faq-btn-box {
+    margin-top: 145px;
+    padding-top: 0;
+    @media screen and (max-width: 1024px) {
+        margin-top: 70px;
+    }
+    @media screen and (max-width: 768px) {
+        margin-top: 50px;
+    }
+}
+
+.faq-main-title {
+    margin-top: 96px;
+    @media screen and (max-width: 1024px) {
+        margin-top: 50px;
+    }
+}
+
+.accordion {
+    margin-top: 113px;
+    @media screen and (max-width: 1024px) {
+        margin-top: 50px;
+    }
+}
+
+.sub-inner-faq {
+    padding-inline: 22px;
+}
+
+.q-mark {
+    color: #988C2C;
+    font-family: "Viga";
+    font-weight: 400;
+    line-height: 1;
+    flex-shrink: 0;
+}
+
+.faq-benefits {
+    margin-bottom: 139px;
+    @media screen and (max-width: 1024px) {
+        margin-top: 50px;
+    }
+}
+.question-text {
+    flex: 1;
+    font-size: 1rem;
+    word-break: break-word;
+}
+
+.toggle-icon {
+    flex-shrink: 0;
+    font-size: 1rem;
+    color: #AFA86F;
+    margin-left: auto;
+}
+.question-text {
+    font-weight: 400;
+}
+.accordion-content {
+    font-weight: 400;
+}

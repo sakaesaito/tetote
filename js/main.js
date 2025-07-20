@@ -34,7 +34,7 @@ const swiper = new Swiper('.slider', {
     allowTouchMove: false,
     centeredSlides: true,
     autoplay: {
-    delay: 0,
+        delay: 0,
     },
     breakpoints: {
         0: { slidesPerView: 1.8, spaceBetween: 15 },
@@ -95,3 +95,44 @@ $(function () {
 })
 
 
+// _______ページ内スムーススクロール＿＿＿＿＿＿＿
+document.addEventListener("DOMContentLoaded", function () {
+    const buttons = document.querySelectorAll(".details-btn");
+
+    buttons.forEach(button => {
+        button.addEventListener("click", function () {
+            const targetId = this.getAttribute("data-target");
+            const targetElement = document.querySelector(targetId);
+
+            if (targetElement) {
+                window.scrollTo({
+                    top: targetElement.offsetTop,
+                    behavior: "smooth"
+                });
+            }
+        });
+    });
+});
+
+// _______________アコーディオン＿＿＿＿＿＿＿＿＿＿＿
+
+document.addEventListener("DOMContentLoaded", function () {
+    const headers = document.querySelectorAll(".accordion-header");
+
+    headers.forEach(header => {
+        header.addEventListener("click", function () {
+            const content = this.nextElementSibling;
+            const icon = this.querySelector(".toggle-icon");
+
+            this.classList.toggle("active");
+
+            if (content.style.display === "block") {
+                content.style.display = "none";
+                icon.textContent = "+";
+            } else {
+                content.style.display = "block";
+                icon.textContent = "−";
+            }
+        });
+    });
+});
