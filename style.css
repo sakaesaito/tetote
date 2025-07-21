@@ -1105,7 +1105,7 @@ footer {
     display: block;
     max-width: 248px;
     width: 100%;
-    margin: 53px auto 0 0;
+    margin: 53px auto 0 auto;
   }
 }
 .drawer-button a {
@@ -2956,6 +2956,7 @@ footer {
   inline-size: fit-content;
   padding-top: 6px;
   padding-bottom: 6px;
+  padding-inline: 6px;
 }
 
 .sub-staff-sec {
@@ -3310,10 +3311,22 @@ footer {
   border-radius: 10px;
   margin-top: 118px;
 }
+@media screen and (max-width: 1024px) {
+  .page-staff-mv-sec {
+    margin-top: 90px;
+    padding-top: 50px;
+  }
+}
 
 .page-staff-mv-inner {
   padding-left: 34px;
   padding-right: 24px;
+}
+@media screen and (max-width: 768px) {
+  .page-staff-mv-inner {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
 }
 
 .page-staff-box {
@@ -3333,6 +3346,12 @@ footer {
   background-color: #fff;
   inline-size: fit-content;
   padding-inline: 10px;
+}
+@media screen and (max-width: 768px) {
+  .page-staff-box__title {
+    font-size: 1.75rem;
+    margin-top: 0;
+  }
 }
 .page-staff-box__item {
   font-size: 1.5rem;
@@ -3361,10 +3380,20 @@ footer {
   font-weight: 400;
   margin-top: 13px;
 }
+@media screen and (max-width: 1024px) {
+  .page-staff-box {
+    display: block;
+  }
+}
 
 .page-staff-box-name-sec {
   display: flex;
   gap: 20px;
+}
+@media screen and (max-width: 1024px) {
+  .page-staff-box-name-sec {
+    display: block;
+  }
 }
 
 .page-staff-box-img {
@@ -3374,9 +3403,19 @@ footer {
   padding-bottom: 43px;
   border-radius: 0;
 }
+@media screen and (max-width: 1024px) {
+  .page-staff-box-img {
+    margin-inline: auto;
+  }
+}
 
 .page-staff-wrapper {
   margin-top: 101px;
+}
+@media screen and (max-width: 1024px) {
+  .page-staff-wrapper {
+    margin-top: 50px;
+  }
 }
 
 .page-staff__title {
@@ -3388,6 +3427,50 @@ footer {
   font-weight: 400;
   line-height: 1.5;
   margin-top: 50px;
+}
+@media screen and (max-width: 1024px) {
+  .page-staff__note {
+    margin-top: 30px;
+  }
+}
+
+.page-staff-pic {
+  max-width: 710px;
+  margin-top: 23px;
+  width: 100%;
+}
+.page-staff-pic img {
+  width: 100%;
+}
+
+.page-staff-title-member {
+  text-align: center;
+  font-size: 2rem;
+  margin-top: 84px;
+}
+
+.page-staff-sec {
+  margin-top: 50px;
+  display: flex;
+  gap: 43px;
+}
+@media screen and (max-width: 1024px) {
+  .page-staff-sec {
+    display: block;
+  }
+}
+
+.staff-box2 {
+  margin-top: 0;
+}
+
+.page-staff-list {
+  position: absolute;
+  bottom: -98px;
+}
+
+.page-staff-box-list {
+  margin-bottom: 180px;
 }
 
 .accordion-content {
