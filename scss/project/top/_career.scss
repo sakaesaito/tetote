@@ -7,6 +7,10 @@
     text-align: center;
     position: relative;
 
+    @media screen and (max-width: 1024px) {
+        text-align: left;    
+    }
+
     &::after {
         content: "";
     position: absolute;
@@ -17,6 +21,12 @@
     background-image: url(/img/recruitment-title.png);
     background-repeat: no-repeat;
     background-size: contain;
+        @media screen and (max-width: 1024px) {
+            left: 0;
+        }
+        @media screen and (max-width: 768px) {
+            top: 0.23em;
+        }
     }
 }
 .career-content-item  {
@@ -26,6 +36,7 @@
 
 .career-content-wrapper {
     text-align: center;
+    padding-inline: 17px;
 }
 
 .career-wrapper {
@@ -37,6 +48,10 @@
     gap: 1rem;
     width: 100%;
     max-width: 1024px;
+    @media screen and (max-width: 1024px) {
+        display: block;
+    }
+
 }
 .link-box-button {
     font-size: 1.25rem;

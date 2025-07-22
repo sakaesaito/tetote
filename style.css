@@ -567,7 +567,6 @@ button {
   width: 100%;
   max-width: 250px;
   transition: 0.3s;
-  margin-left: 26px;
 }
 .header-logo__link {
   padding: 3.7rem 0 1.75rem 0;
@@ -1453,12 +1452,12 @@ footer {
 }
 @media screen and (max-width: 1024px) {
   .staff-inner {
-    padding-left: 10%;
+    padding-left: 24px;
   }
 }
 @media screen and (max-width: 768px) {
   .staff-inner {
-    padding-left: 5%;
+    padding-left: 17px;
   }
 }
 
@@ -1481,15 +1480,26 @@ footer {
 .staff-content-title::after {
   content: "";
   position: absolute;
-  left: 14.5rem;
+  left: -3em;
   top: 0;
   z-index: -1;
   max-width: 564px;
   width: 100%;
   height: 100%;
-  background-image: url(/img/staff-title.png);
+  background-image: url(/img/member-title.png);
   background-repeat: no-repeat;
   background-size: contain;
+}
+@media screen and (max-width: 1024px) {
+  .staff-content-title::after {
+    left: 0em;
+  }
+}
+@media screen and (max-width: 768px) {
+  .staff-content-title::after {
+    width: 80%;
+    left: 0;
+  }
 }
 
 .staff-content-item {
@@ -1542,23 +1552,22 @@ footer {
 }
 
 .viewmore-button-staff {
-  margin-top: 72px;
+  margin-top: 170px;
 }
 
 .section-title-staff {
   position: absolute;
   top: 72px;
-  left: 236px;
 }
 
 .staff-box-img {
   position: absolute;
-  bottom: 24%;
+  bottom: -92px;
 }
 
 .staff-box-img-box2 {
   position: absolute;
-  bottom: 15%;
+  bottom: -30%;
 }
 
 .career {
@@ -1571,6 +1580,11 @@ footer {
   text-align: center;
   position: relative;
 }
+@media screen and (max-width: 1024px) {
+  .career-content-title {
+    text-align: left;
+  }
+}
 .career-content-title::after {
   content: "";
   position: absolute;
@@ -1582,6 +1596,16 @@ footer {
   background-repeat: no-repeat;
   background-size: contain;
 }
+@media screen and (max-width: 1024px) {
+  .career-content-title::after {
+    left: 0;
+  }
+}
+@media screen and (max-width: 768px) {
+  .career-content-title::after {
+    top: 0.23em;
+  }
+}
 
 .career-content-item {
   font-weight: 400;
@@ -1590,6 +1614,7 @@ footer {
 
 .career-content-wrapper {
   text-align: center;
+  padding-inline: 17px;
 }
 
 .career-wrapper {
@@ -1602,6 +1627,11 @@ footer {
   gap: 1rem;
   width: 100%;
   max-width: 1024px;
+}
+@media screen and (max-width: 1024px) {
+  .link-box {
+    display: block;
+  }
 }
 
 .link-box-button {
@@ -1659,15 +1689,20 @@ footer {
 .benefits-text-wrapper {
   text-align: center;
 }
+@media screen and (max-width: 1024px) {
+  .benefits-text-wrapper {
+    text-align: left;
+    padding-inline: 17px;
+  }
+}
 
 .content-title-benefits {
-  text-align: center;
   position: relative;
 }
 .content-title-benefits::after {
   content: "";
   position: absolute;
-  left: 14.5rem;
+  left: 3.5em;
   top: 0;
   z-index: -1;
   max-width: 564px;
@@ -1676,6 +1711,11 @@ footer {
   background-image: url(/img/benefit-title.png);
   background-repeat: no-repeat;
   background-size: contain;
+}
+@media screen and (max-width: 1024px) {
+  .content-title-benefits::after {
+    left: 0;
+  }
 }
 
 .benefits-main-box {
@@ -1722,7 +1762,7 @@ footer {
   font-size: 1.5rem;
   transform: rotate(90deg);
   position: absolute;
-  top: 121px;
+  top: 80px;
   right: -88px;
 }
 .benefits-img-message::after {
@@ -1733,20 +1773,37 @@ footer {
   z-index: 1;
 }
 
+.benefits-button-wrapper {
+  margin-top: 10px;
+  position: absolute;
+  margin-top: -30px;
+}
+.benefits-button-wrapper a {
+  width: 56px;
+  height: 55px;
+  background-color: #222;
+  position: absolute;
+  bottom: 10rem;
+  right: 0.9375rem;
+  color: #fff;
+  border-radius: 50%;
+  transition: 0.4s;
+}
+.benefits-button-wrapper a:hover {
+  width: 70px;
+  height: 70px;
+  padding-top: 15px;
+  padding-left: 18px;
+  font-size: 1.5rem;
+}
+
 .benefits-img-title {
   font-size: 2rem;
   line-height: 1.2;
   background-color: #AFA86F;
   display: inline-block;
-  position: absolute;
-  bottom: 7rem;
-  left: 4rem;
-  z-index: 1;
   text-align: center;
-  display: block;
-}
-.benefits-img-title-title2 {
-  margin-left: 6rem;
+  padding-inline: 10px;
 }
 
 .benefits-img-item {
@@ -1755,11 +1812,10 @@ footer {
 }
 
 .benefits-button {
-  position: absolute;
-  bottom: 11rem;
-  right: 0.9375rem;
+  font-size: 1.25rem;
+  padding-top: 8px;
+  transition: 0.4s;
 }
-
 .blog {
   background-color: #FAF7F1;
   padding-top: 87px;
@@ -1791,6 +1847,11 @@ footer {
   background-image: url(/img/blog-title.png);
   background-repeat: no-repeat;
   background-size: contain;
+}
+@media screen and (max-width: 1024px) {
+  .blog-content-title::after {
+    left: 0;
+  }
 }
 
 .blog-content-item {
@@ -1902,7 +1963,6 @@ footer {
   width: 100%;
   max-width: 250px;
   transition: 0.3s;
-  margin-left: 26px;
 }
 .sub-header-logo__link {
   padding: 3.7rem 0 1.75rem 0;
@@ -1962,8 +2022,8 @@ footer {
 }
 .header-button {
   display: block;
-  margin-right: 1.25rem;
-  padding: 0.875rem 3.5rem;
+  margin-right: 22px;
+  padding: 0.875rem 36px;
   transition: all 0.3s ease 0s;
   text-align: center;
   text-decoration: none;
@@ -1975,8 +2035,7 @@ footer {
   color: #fff;
 }
 .header-button-entry:hover {
-  background-color: #fff;
-  color: #222;
+  background-color: #988C2C;
 }
 @media screen and (max-width: 768px) {
   .header-button-entry {
@@ -1993,8 +2052,9 @@ footer {
   }
 }
 .header-button-recruit:hover {
-  background-color: #988C2C;
+  background-color: #ffffff;
   color: #222222;
+  border: #222 1px solid;
 }
 
 .sub-header-hamburger {
@@ -2084,7 +2144,7 @@ footer {
     padding-inline: 15%;
   }
   .sub-inner-mv {
-    padding-top: 20%;
+    padding-top: 10%;
   }
 }
 @media screen and (max-width: 768px) {
@@ -2092,7 +2152,7 @@ footer {
     padding-inline: 2%;
   }
   .sub-inner-mv {
-    padding-top: 35%;
+    padding-top: 15%;
   }
 }
 
@@ -2158,6 +2218,11 @@ footer {
   .sub-title-company {
     margin-top: 52px;
   }
+}
+
+.sub-mv-box {
+  margin-top: 20px;
+  margin-left: 5px;
 }
 
 .sub-mv-title {
@@ -2578,7 +2643,7 @@ footer {
 }
 
 .ditails-mv {
-  height: 455px;
+  height: 340px;
   margin-top: 118px;
   background-image: url(/img/details-fv.jpg);
   background-size: cover;
@@ -2589,7 +2654,7 @@ footer {
 .details-main {
   padding-top: 145px;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1024px) {
   .details-main {
     padding-top: 70px;
   }
@@ -2598,22 +2663,45 @@ footer {
 .details-main-title {
   font-size: 2rem;
 }
+@media screen and (max-width: 1024px) {
+  .details-main-title {
+    line-height: 1.5;
+    text-align: center;
+  }
+}
+.details-main-title br {
+  display: none;
+}
+@media screen and (max-width: 1024px) {
+  .details-main-title br {
+    display: inline;
+  }
+}
 
 .details-lead {
   font-size: 1rem;
   font-weight: 400;
-  margin-top: 113px;
+  margin-top: 106px;
+}
+.details-lead br {
+  display: none;
+}
+@media screen and (max-width: 768px) {
+  .details-lead br {
+    display: inline;
+  }
 }
 @media screen and (max-width: 768px) {
   .details-lead {
     margin-top: 50px;
+    text-align: center;
   }
 }
 
 .details-btn-box {
   display: flex;
   gap: 49px;
-  padding-top: 70px;
+  margin-top: 63px;
 }
 @media screen and (max-width: 768px) {
   .details-btn-box {
@@ -2638,13 +2726,14 @@ footer {
   width: 294px;
   padding-top: 18px;
   padding-bottom: 18px;
-  text-align: center;
   transition: 0.4s;
+  text-align: center;
+  padding-left: 28px;
 }
 .details-btn::after {
   content: "↓";
   transition: 0.4s;
-  padding-left: 20px;
+  padding-left: 10px;
 }
 .details-btn:hover {
   background-color: #222;
@@ -2676,11 +2765,16 @@ footer {
 }
 
 .details-list-sec {
-  margin-top: 70px;
+  margin-top: 88px;
 }
 
 .details-list-title {
-  width: 25%;
+  width: 19%;
+}
+@media screen and (max-width: 768px) {
+  .details-list-title {
+    width: 25%;
+  }
 }
 
 .details-list-item br {
@@ -3098,6 +3192,7 @@ footer {
 
 .blog-detail-item {
   line-height: 1.8;
+  font-weight: 400;
 }
 
 .blog-detail-list {
@@ -3247,11 +3342,11 @@ footer {
   display: inline-block;
   background-color: #222;
   color: #fff;
+  transition: 0.4s;
 }
 .button-page-before:hover {
-  background-color: #fff;
-  color: #222;
-  border: solid 1px #222;
+  width: 70px;
+  height: 70px;
 }
 
 .button-page-after {
@@ -3259,10 +3354,11 @@ footer {
   background-color: #fff;
   color: #222;
   border: solid 1px #222;
+  transition: 0.4s;
 }
 .button-page-after:hover {
-  background-color: #222;
-  color: #fff;
+  width: 70px;
+  height: 70px;
 }
 
 .sub-blog-box-right {

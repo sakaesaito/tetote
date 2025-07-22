@@ -24,7 +24,6 @@
     width: 100%;
     max-width: 250px;
     transition: .3s;
-    margin-left: 26px;
 
     &__link {
         padding: 3.7rem 0 1.75rem 0;
@@ -89,8 +88,8 @@
 
 .header-button {
     display: block;
-    margin-right: 1.25rem;
-    padding: 0.875rem 3.5rem;
+    margin-right: 22px;
+    padding: 0.875rem 36px;
     transition: all 0.3s ease 0s;
     text-align: center;
     text-decoration: none;
@@ -102,8 +101,7 @@
         color: #fff;
 
         &:hover {
-            background-color: #fff;
-            color: #222;
+            background-color: #988C2C;
         }
 
         @media screen and (max-width: 768px) {
@@ -120,8 +118,9 @@
         }
 
         &:hover {
-            background-color: #988C2C;
+            background-color: #ffffff;
             color: #222222;
+            border: #222 1px solid;
         }
     }
 }
@@ -211,14 +210,14 @@
     @media screen and (max-width: 1024px) {
         padding-inline: 15%;
         &-mv {
-            padding-top: 20%;
+            padding-top: 10%;
         }
     }
     @media screen and (max-width: 768px) {
         padding-inline: 2%;
 
         &-mv {
-            padding-top: 35%;
+            padding-top: 15%;
         }
     }
 }
@@ -281,7 +280,11 @@
         }
     }
 }
+.sub-mv-box {
+    margin-top: 20px;
+    margin-left: 5px;
 
+}
 .sub-mv-title {
     background-color: #fff;
     font-size: 4rem;
