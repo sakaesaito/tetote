@@ -89,12 +89,13 @@
 .header-button {
     display: block;
     margin-right: 22px;
-    padding: 0.875rem 36px;
+    padding: 14px 34px 14px 34px;
     transition: all 0.3s ease 0s;
     text-align: center;
     text-decoration: none;
     line-height: 1;
     cursor: pointer;
+    font-size: 14px;
 
     &-entry {
         background-color: #AFA86F;
@@ -112,6 +113,7 @@
     &-recruit {
         background-color: #222222;
         color: #fff;
+        margin-right: 22px;
 
         @media screen and (max-width: 768px) {
             display: none;

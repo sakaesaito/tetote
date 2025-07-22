@@ -537,6 +537,55 @@ button {
   color: #fff;
 }
 
+.page-button-box {
+  border-radius: 50px;
+  padding: 0;
+  cursor: pointer;
+  display: flex;
+  transition: 0.4s;
+  gap: 20px;
+  max-width: 200px;
+  width: 100%;
+  position: absolute;
+  bottom: 81px;
+  right: 10px;
+}
+@media screen and (max-width: 1024px) {
+  .page-button-box {
+    display: none;
+    width: 32px;
+    height: 32px;
+  }
+}
+
+.page-button-white__left,
+.page-button-white__right {
+  width: 58px;
+  height: 58px;
+  border-radius: 50%;
+  display: inline-block;
+  text-align: center;
+  transition: 0.4s;
+  background-color: #fff;
+  color: #222;
+  border: solid 1px #222;
+  line-height: 58px;
+}
+
+.page-button-white__right:hover {
+  width: 70px;
+  height: 70px;
+  padding-left: 15px;
+  line-height: 70px;
+}
+
+.page-button-white__left:hover {
+  width: 70px;
+  height: 70px;
+  padding-right: 15px;
+  line-height: 70px;
+}
+
 .header {
   position: fixed;
   top: 0;
@@ -627,13 +676,14 @@ button {
 }
 .header-button {
   display: block;
-  margin-right: 1.25rem;
+  margin-right: 25px;
   padding: 0.875rem 3.5rem;
   transition: all 0.3s ease 0s;
   text-align: center;
   text-decoration: none;
   line-height: 1;
   cursor: pointer;
+  font-size: 14px;
 }
 .header-button-entry {
   background-color: #AFA86F;
@@ -1259,7 +1309,7 @@ footer {
   font-size: 6rem;
   line-height: 1.2;
   top: 17.6rem;
-  left: 3rem;
+  left: 4%;
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.2509803922);
 }
 @media screen and (max-width: 768px) {
@@ -1275,7 +1325,7 @@ footer {
   position: absolute;
   font-size: 1.5rem;
   bottom: 10.6rem;
-  left: 4rem;
+  left: 4.3%;
   z-index: 2;
   color: #fff;
 }
@@ -1302,7 +1352,7 @@ footer {
   left: 0;
   width: 100%;
   height: 3.625rem;
-  clip-path: polygon(0 1%, 100% 0, 90% 100%, 0% 100%);
+  clip-path: polygon(0 1%, 100% 0, 93% 100%, 0% 100%);
   background-color: #222;
 }
 @media screen and (max-width: 768px) {
@@ -1314,7 +1364,7 @@ footer {
 .mv-news-box {
   display: flex;
   position: absolute;
-  bottom: 3.25rem;
+  bottom: 2.25rem;
   left: 4.375rem;
   max-width: 86.25rem;
   width: 87%;
@@ -1340,13 +1390,19 @@ footer {
   }
 }
 
+.mv-news-wrap {
+  display: flex;
+  justify-content: space-between;
+}
+
 .mv-news-title {
   background-color: #222;
   color: #fff;
-  padding: 0.5rem 3rem;
+  padding: 10px 58px;
   border-radius: 25px 0 0 25px;
   font-weight: 400;
   font-family: "Viga";
+  font-size: 1.5rem;
 }
 @media screen and (max-width: 768px) {
   .mv-news-title {
@@ -1371,7 +1427,7 @@ footer {
 }
 .mv-news-item a {
   display: inline-block;
-  padding: 0.5rem 0 0.5rem 10%;
+  padding: 17px 7px 17px 88px;
 }
 @media screen and (max-width: 768px) {
   .mv-news-item a {
@@ -1393,7 +1449,7 @@ footer {
 }
 .mv-news-link a {
   display: inline-block;
-  padding: 0.5rem 0;
+  padding: 17px;
 }
 @media screen and (max-width: 768px) {
   .mv-news-link {
@@ -1505,6 +1561,14 @@ footer {
 .staff-content-item {
   margin-top: 52px;
 }
+.staff-content-item br {
+  display: none;
+}
+@media screen and (max-width: 1024px) {
+  .staff-content-item br {
+    display: inline;
+  }
+}
 
 .staff-sec {
   margin-top: 52px;
@@ -1575,6 +1639,11 @@ footer {
   padding-bottom: 139px;
   background-color: #FAF7F1;
 }
+@media screen and (max-width: 1024px) {
+  .career {
+    padding-bottom: 88px;
+  }
+}
 
 .career-content-title {
   text-align: center;
@@ -1635,6 +1704,7 @@ footer {
 }
 
 .link-box-button {
+  width: 100%;
   font-size: 1.25rem;
   padding-top: 50px;
   padding-bottom: 50px;
@@ -1665,10 +1735,17 @@ footer {
   border-right: 3px solid #ffffff;
   border-top: 3px solid #ffffff;
 }
+@media screen and (max-width: 1024px) {
+  .link-box-button {
+    padding-top: 24px;
+    padding-bottom: 24px;
+    margin-top: 20px;
+  }
+}
 
 .link-box-button1 a {
-  display: block;
-  padding-inline: 10.1em;
+  display: inline-block;
+  width: 100%;
 }
 
 .link-box-button2 a {
@@ -1719,8 +1796,9 @@ footer {
 }
 
 .benefits-main-box {
-  display: flex;
-  gap: 9%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 94px;
   text-align: center;
 }
 @media screen and (max-width: 1024px) {
@@ -1749,13 +1827,21 @@ footer {
   position: relative;
   background-position: center;
 }
+@media screen and (max-width: 1024px) {
+  .benefits-img-box {
+    max-width: 251px;
+    max-height: 251px;
+    font-size: 0.875rem;
+    font-weight: 400;
+  }
+}
 
 .benefits-img-box-pic2 {
-  margin-top: 5em;
+  margin-top: 4em;
 }
 
 .benefits-img-box-pic {
-  margin-top: 4em;
+  margin-top: 3em;
 }
 
 .benefits-img-message {
@@ -1772,29 +1858,53 @@ footer {
   top: 0;
   z-index: 1;
 }
+@media screen and (max-width: 1024px) {
+  .benefits-img-message {
+    font-size: 0.875rem;
+    font-weight: 400;
+  }
+}
 
 .benefits-button-wrapper {
   margin-top: 10px;
   position: absolute;
-  margin-top: -30px;
+  margin-top: -90px;
+}
+@media screen and (max-width: 1280px) {
+  .benefits-button-wrapper {
+    margin-top: -45px;
+  }
 }
 .benefits-button-wrapper a {
   width: 56px;
   height: 55px;
   background-color: #222;
   position: absolute;
-  bottom: 10rem;
-  right: 0.9375rem;
+  bottom: 160px;
+  right: 0.5rem;
   color: #fff;
   border-radius: 50%;
   transition: 0.4s;
+  line-height: 55px;
 }
 .benefits-button-wrapper a:hover {
   width: 70px;
   height: 70px;
-  padding-top: 15px;
-  padding-left: 18px;
+  line-height: 70px;
   font-size: 1.5rem;
+}
+@media screen and (max-width: 1024px) {
+  .benefits-button-wrapper a {
+    width: 42px;
+    height: 42px;
+    line-height: 42px;
+  }
+  .benefits-button-wrapper a:hover {
+    width: 56px;
+    height: 56px;
+    line-height: 56px;
+    font-size: 1rem;
+  }
 }
 
 .benefits-img-title {
@@ -1803,12 +1913,25 @@ footer {
   background-color: #AFA86F;
   display: inline-block;
   text-align: center;
-  padding-inline: 10px;
+  padding-inline: 7px;
+}
+@media screen and (max-width: 1024px) {
+  .benefits-img-title {
+    font-size: 1.5rem;
+  }
 }
 
 .benefits-img-item {
   margin-top: 41px;
   text-align: start;
+}
+@media screen and (max-width: 1024px) {
+  .benefits-img-item {
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.5;
+    margin-top: 21px;
+  }
 }
 
 .benefits-button {
@@ -1823,7 +1946,6 @@ footer {
 }
 
 .blog-sec {
-  padding-bottom: 80px;
   max-width: 1024;
   padding-inline: 22px;
 }
@@ -1944,6 +2066,40 @@ footer {
   font-size: 0.75rem;
 }
 
+.blog-top {
+  display: flex;
+  justify-content: space-between;
+}
+@media screen and (max-width: 768px) {
+  .blog-top {
+    display: block;
+  }
+}
+
+.blog-top-link {
+  margin-left: 13px;
+  transition: 0.4s;
+}
+.blog-top-link:hover {
+  color: #988C2C;
+}
+
+@media screen and (max-width: 768px) {
+  .blog-top-page {
+    display: none;
+  }
+}
+
+.blog-top-page-2 {
+  display: none;
+}
+@media screen and (max-width: 768px) {
+  .blog-top-page-2 {
+    display: inline-block;
+    margin-top: 52px;
+  }
+}
+
 .sub-header {
   position: fixed;
   top: 0;
@@ -2023,12 +2179,13 @@ footer {
 .header-button {
   display: block;
   margin-right: 22px;
-  padding: 0.875rem 36px;
+  padding: 14px 34px 14px 34px;
   transition: all 0.3s ease 0s;
   text-align: center;
   text-decoration: none;
   line-height: 1;
   cursor: pointer;
+  font-size: 14px;
 }
 .header-button-entry {
   background-color: #AFA86F;
@@ -2045,6 +2202,7 @@ footer {
 .header-button-recruit {
   background-color: #222222;
   color: #fff;
+  margin-right: 22px;
 }
 @media screen and (max-width: 768px) {
   .header-button-recruit {

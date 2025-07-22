@@ -56,6 +56,13 @@
 
 .staff-content-item {
     margin-top: 52px;
+    br {
+        display: none;
+        @media screen and (max-width: 1024px) {
+            display: inline;
+        }
+    }
+
 }
 .staff-sec {
     margin-top: 52px;

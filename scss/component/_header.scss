@@ -89,13 +89,14 @@
 
 .header-button {
     display: block;
-    margin-right:1.25rem;
+    margin-right:25px;
     padding: 0.875rem 3.5rem;
     transition: all 0.3s ease 0s;
     text-align: center;
     text-decoration: none;
     line-height: 1;
     cursor: pointer;
+    font-size: 14px;
 
     &-entry {
         background-color: #AFA86F;
