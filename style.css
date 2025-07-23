@@ -444,16 +444,18 @@ button {
   border: 1px #222 solid;
   transition: all 0.5s;
   color: #222;
+  font-size: 1.125rem;
+  line-height: 1.5;
 }
 .viewmore-button::before {
   content: "";
   position: absolute;
   top: 0;
   bottom: 0;
-  right: 40px;
+  right: 26px;
   margin: auto;
-  width: 10px;
-  height: 10px;
+  width: 12px;
+  height: 12px;
   border-right: 3px solid #222222;
   border-top: 3px solid #222222;
   transform: rotate(45deg);
@@ -475,7 +477,7 @@ button {
 
 .viewmore-button a {
   display: block;
-  padding: 1.875rem 7.75rem;
+  padding: 1.5rem 7.75rem;
 }
 
 .content-title {
@@ -547,8 +549,8 @@ button {
   max-width: 200px;
   width: 100%;
   position: absolute;
-  bottom: 81px;
-  right: 10px;
+  bottom: 76px;
+  right: 163px;
 }
 @media screen and (max-width: 1024px) {
   .page-button-box {
@@ -875,7 +877,7 @@ footer {
   position: absolute;
   top: 0;
   bottom: 0;
-  right: 40px;
+  right: 23px;
   margin: auto;
   width: 10px;
   height: 10px;
@@ -901,11 +903,12 @@ footer {
 }
 
 .footer-content-wrapper {
-  margin-top: 223.5px;
+  margin-top: 200px;
   text-align: center;
   max-width: 956px;
   width: 100%;
-  margin-inline: auto;
+  margin-inline: 151px;
+  height: 81px;
 }
 @media screen and (max-width: 1024px) {
   .footer-content-wrapper {
@@ -940,6 +943,10 @@ footer {
   }
 }
 
+.footer-list {
+  margin-top: 12px;
+}
+
 .footer-list a {
   padding-left: 20px;
   line-height: 1;
@@ -961,7 +968,7 @@ footer {
 }
 
 .footer-list2 {
-  margin-top: 32px;
+  margin-top: 27px;
 }
 @media screen and (max-width: 1024px) {
   .footer-list2 {
@@ -971,10 +978,10 @@ footer {
 
 .footer-nav {
   display: flex;
-  gap: 10px;
+  gap: 15px;
   justify-content: end;
-  margin-right: 11%;
-  margin-top: 61px;
+  margin-right: 13.5%;
+  margin-top: 64px;
 }
 .footer-nav a {
   transition: 0.3s;
@@ -998,6 +1005,8 @@ footer {
   display: block;
   margin-left: 180px;
   line-height: 1;
+  font-size: 71%;
+  margin-top: -10px;
 }
 @media screen and (max-width: 1024px) {
   .copyright {
@@ -1208,7 +1217,7 @@ footer {
   position: absolute;
   z-index: 2;
   text-align: center;
-  top: 80%;
+  top: 91.5%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
@@ -1367,7 +1376,7 @@ footer {
   bottom: 2.25rem;
   left: 4.375rem;
   max-width: 86.25rem;
-  width: 87%;
+  width: 87.6%;
 }
 .mv-news-box::after {
   content: "";
@@ -1378,7 +1387,7 @@ footer {
   transform: rotate(45deg);
   width: 10px;
   height: 10px;
-  top: 1.125rem;
+  top: 24px;
   right: 1rem;
   position: absolute;
 }
@@ -1419,10 +1428,14 @@ footer {
   font-weight: 400;
   font-size: 1rem;
 }
+@media screen and (max-width: 1024px) {
+  .mv-news-item {
+    border-radius: 0 50px 50px 0;
+  }
+}
 @media screen and (max-width: 768px) {
   .mv-news-item {
-    font-size: 12px;
-    border-radius: 0 25px 25px 0;
+    font-size: 14px;
   }
 }
 .mv-news-item a {
@@ -1451,7 +1464,7 @@ footer {
   display: inline-block;
   padding: 17px;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1024px) {
   .mv-news-link {
     display: none;
   }
@@ -1459,6 +1472,7 @@ footer {
 
 .about {
   padding-bottom: 76px;
+  margin-top: 60px;
 }
 
 .about-viw {
@@ -1497,7 +1511,7 @@ footer {
 }
 
 .staff {
-  padding-top: 87px;
+  padding-top: 66px;
   padding-bottom: 63px;
   position: relative;
 }
@@ -1559,14 +1573,14 @@ footer {
 }
 
 .staff-content-item {
-  margin-top: 52px;
-}
-.staff-content-item br {
-  display: none;
+  margin-top: 30px;
 }
 @media screen and (max-width: 1024px) {
-  .staff-content-item br {
-    display: inline;
+  .staff-content-item {
+    margin-top: 43px;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
   }
 }
 
@@ -1575,8 +1589,9 @@ footer {
 }
 
 .staff-box {
-  margin-right: 2.57%;
   position: relative;
+  width: 306px;
+  height: 412px;
 }
 @media screen and (max-width: 1024px) {
   .staff-box {
@@ -1597,11 +1612,12 @@ footer {
   background-color: #AFA86F;
   inline-size: fit-content;
   margin-top: 6px;
+  padding: 4px;
 }
 
 .staff-box-past {
   display: flex;
-  margin-top: 16px;
+  margin-top: 8px;
 }
 
 .staff-box-position {
@@ -1611,12 +1627,12 @@ footer {
 .staff-box-name {
   font-weight: 700;
   font-size: 1.5rem;
-  margin-top: 16px;
+  margin-top: 8px;
   line-height: 1;
 }
 
 .viewmore-button-staff {
-  margin-top: 170px;
+  margin-top: 140px;
 }
 
 .section-title-staff {
@@ -1626,16 +1642,17 @@ footer {
 
 .staff-box-img {
   position: absolute;
-  bottom: -92px;
+  bottom: -61px;
+  left: 7px;
 }
 
 .staff-box-img-box2 {
   position: absolute;
-  bottom: -30%;
+  bottom: -14%;
 }
 
 .career {
-  padding-top: 87px;
+  padding-top: 68px;
   padding-bottom: 139px;
   background-color: #FAF7F1;
 }
@@ -1643,6 +1660,10 @@ footer {
   .career {
     padding-bottom: 88px;
   }
+}
+
+.career-inner {
+  padding-right: 20px;
 }
 
 .career-content-title {
@@ -1657,7 +1678,7 @@ footer {
 .career-content-title::after {
   content: "";
   position: absolute;
-  left: 6%;
+  left: 4%;
   top: 0;
   width: 100%;
   height: 100%;
@@ -1678,7 +1699,7 @@ footer {
 
 .career-content-item {
   font-weight: 400;
-  margin-top: 52px;
+  margin-top: 26px;
 }
 
 .career-content-wrapper {
@@ -1706,22 +1727,23 @@ footer {
 .link-box-button {
   width: 100%;
   font-size: 1.25rem;
-  padding-top: 50px;
-  padding-bottom: 50px;
+  padding-top: 40px;
+  padding-bottom: 40px;
   background-color: #fff;
   transition: all 0.5s;
   color: #222;
   position: relative;
+  line-height: 1.5;
 }
 .link-box-button::before {
   content: "";
   position: absolute;
   top: 0;
   bottom: 0;
-  right: 40px;
+  right: 30px;
   margin: auto;
-  width: 10px;
-  height: 10px;
+  width: 12px;
+  height: 12px;
   border-right: 3px solid #222222;
   border-top: 3px solid #222222;
   transform: rotate(45deg);
@@ -1759,8 +1781,8 @@ footer {
 }
 
 .benefits {
-  padding-top: 87px;
-  padding-bottom: 107px;
+  padding-top: 65px;
+  padding-bottom: 176px;
 }
 
 .benefits-text-wrapper {
@@ -1773,13 +1795,18 @@ footer {
   }
 }
 
+.benefits-content-item {
+  margin-top: 27px;
+  margin-left: 44px;
+}
+
 .content-title-benefits {
   position: relative;
 }
 .content-title-benefits::after {
   content: "";
   position: absolute;
-  left: 3.5em;
+  left: 4.5em;
   top: 0;
   z-index: -1;
   max-width: 564px;
@@ -1798,58 +1825,66 @@ footer {
 .benefits-main-box {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-gap: 94px;
+  grid-gap: 50px;
   text-align: center;
+  margin-left: 28px;
 }
 @media screen and (max-width: 1024px) {
   .benefits-main-box {
     display: block;
     width: 100%;
     margin-left: 40px;
-    max-width: 430px;
+    max-width: 341px;
+    height: 100%;
     margin: 0 auto;
   }
 }
 
 .benefits-img-wrapper {
-  margin-top: 114px;
-  max-width: 430px;
+  margin-top: 106px;
   position: relative;
+}
+@media screen and (max-width: 1024px) {
+  .benefits-img-wrapper {
+    margin-top: 36px;
+  }
+  .benefits-img-wrapper:nth-child(2) {
+    margin-top: 150px;
+  }
 }
 
 .benefits-img-box {
   background-color: #FAF7F1;
   border-radius: 50%;
-  max-width: 430px;
-  max-height: 430px;
-  width: 30vw;
-  height: 30vw;
+  width: 430px;
+  height: 430px;
   position: relative;
   background-position: center;
 }
 @media screen and (max-width: 1024px) {
   .benefits-img-box {
-    max-width: 251px;
-    max-height: 251px;
+    width: 251px;
+    height: 251px;
     font-size: 0.875rem;
     font-weight: 400;
   }
 }
 
 .benefits-img-box-pic2 {
-  margin-top: 4em;
+  margin-top: 6em;
 }
 
 .benefits-img-box-pic {
-  margin-top: 3em;
+  margin-top: 5em;
 }
 
 .benefits-img-message {
   font-size: 1.5rem;
   transform: rotate(90deg);
   position: absolute;
-  top: 80px;
-  right: -88px;
+  top: 107px;
+  right: -110px;
+  letter-spacing: 3px;
 }
 .benefits-img-message::after {
   content: "";
@@ -1862,17 +1897,25 @@ footer {
   .benefits-img-message {
     font-size: 0.875rem;
     font-weight: 400;
+    top: 89px;
+    right: -44px;
   }
 }
 
 .benefits-button-wrapper {
   margin-top: 10px;
   position: absolute;
-  margin-top: -90px;
+  margin-top: -53px;
+  padding-right: 30px;
 }
 @media screen and (max-width: 1280px) {
   .benefits-button-wrapper {
     margin-top: -45px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .benefits-button-wrapper {
+    margin-top: -7px;
   }
 }
 .benefits-button-wrapper a {
@@ -1880,8 +1923,8 @@ footer {
   height: 55px;
   background-color: #222;
   position: absolute;
-  bottom: 160px;
-  right: 0.5rem;
+  bottom: 152px;
+  right: 61px;
   color: #fff;
   border-radius: 50%;
   transition: 0.4s;
@@ -1905,6 +1948,10 @@ footer {
     line-height: 56px;
     font-size: 1rem;
   }
+  .benefits-button-wrapper a a {
+    top: -50px;
+    right: 78px;
+  }
 }
 
 .benefits-img-title {
@@ -1922,7 +1969,7 @@ footer {
 }
 
 .benefits-img-item {
-  margin-top: 41px;
+  margin-top: 31px;
   text-align: start;
 }
 @media screen and (max-width: 1024px) {
@@ -1936,12 +1983,11 @@ footer {
 
 .benefits-button {
   font-size: 1.25rem;
-  padding-top: 8px;
   transition: 0.4s;
 }
 .blog {
   background-color: #FAF7F1;
-  padding-top: 87px;
+  padding-top: 70px;
   padding-bottom: 80px;
 }
 
@@ -1961,7 +2007,7 @@ footer {
 .blog-content-title::after {
   content: "";
   position: absolute;
-  left: -2.875rem;
+  left: -20px;
   top: 0;
   max-width: 564px;
   width: 100%;
@@ -1977,18 +2023,18 @@ footer {
 }
 
 .blog-content-item {
-  margin-top: 73px;
+  margin-top: 48px;
 }
 
 .blog-wrapper {
-  margin-top: 61px;
+  margin-top: 64px;
 }
 
 .blog-list {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(2, 1fr);
-  grid-gap: 23px 52px;
+  grid-gap: 20px 40px;
 }
 @media screen and (max-width: 1024px) {
   .blog-list {
@@ -2021,10 +2067,10 @@ footer {
 }
 
 .blog-box-right {
-  margin-inline: 2.4%;
-  margin-top: 1%;
-  margin-bottom: 1%;
-  max-width: 250px;
+  margin-inline: 5%;
+  margin-top: 3%;
+  margin-bottom: 3%;
+  max-width: 251px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -2050,7 +2096,6 @@ footer {
 }
 
 .topics {
-  margin-top: 23px;
   font-size: 1.125rem;
   line-height: 1.5;
   text-decoration: underline solid 1px #222;
@@ -2084,6 +2129,10 @@ footer {
   color: #988C2C;
 }
 
+.blog-top-page {
+  margin-right: 37px;
+  margin-top: 19px;
+}
 @media screen and (max-width: 768px) {
   .blog-top-page {
     display: none;

@@ -18,16 +18,18 @@ button {
     border: 1px #222 solid;
     transition: all 0.5s;
     color: #222;
+    font-size: 1.125rem;
+    line-height: 1.5;
 
     &::before {
         content: "";
         position: absolute;
         top: 0;
         bottom: 0;
-        right: 40px;
+        right: 26px;
         margin: auto;
-        width: 10px;
-        height: 10px;
+        width: 12px;
+        height: 12px;
         border-right: 3px solid #222222;
         border-top: 3px solid #222222;
         transform: rotate(45deg);
@@ -51,7 +53,7 @@ button {
 
 .viewmore-button a {
     display: block;
-    padding: 1.875rem 7.75rem;
+    padding: 1.5rem 7.75rem;
 
 }
 
@@ -128,8 +130,8 @@ button {
     max-width: 200px;
     width: 100%;
     position: absolute;
-    bottom: 81px;
-    right: 10px;
+    bottom: 76px;
+    right: 163px;
     @media screen and (max-width: 1024px) {
         display: none;
         width: 32px;

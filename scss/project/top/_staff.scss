@@ -1,5 +1,5 @@
 .staff {
-    padding-top: 87px;
+    padding-top: 66px;
     padding-bottom: 63px;
     position: relative;
 }
@@ -55,12 +55,12 @@
 }
 
 .staff-content-item {
-    margin-top: 52px;
-    br {
-        display: none;
-        @media screen and (max-width: 1024px) {
-            display: inline;
-        }
+    margin-top: 30px;
+    @media screen and (max-width: 1024px) {
+        margin-top: 43px;
+        font-size: 1rem;
+        font-weight: 400;
+        line-height: 1.5;
     }
 
 }
@@ -68,8 +68,9 @@
     margin-top: 52px;
 }
 .staff-box {
-    margin-right: 2.57%;
     position: relative;
+    width: 306px;
+    height: 412px;
 
     @media screen and (max-width: 1024px) {
         margin-left:  0;
@@ -89,10 +90,11 @@
     background-color: #AFA86F;
     inline-size: fit-content;
     margin-top: 6px;
+    padding: 4px;
 }
 .staff-box-past {
     display: flex;
-    margin-top: 16px;
+    margin-top: 8px;
 }
 .staff-box-position {
     margin-right: 10px;
@@ -100,12 +102,12 @@
 .staff-box-name {
     font-weight: 700;
     font-size: 1.5rem;
-    margin-top: 16px;
+    margin-top: 8px;
     line-height: 1;
 }
 
 .viewmore-button-staff{
-    margin-top: 170px;
+    margin-top: 140px;
 }
 
 .section-title-staff {
@@ -114,11 +116,12 @@
 }
 .staff-box-img {
     position: absolute;
-    bottom: -92px;
+    bottom: -61px;
+    left: 7px;
 }
 .staff-box-img-box2 {
     position: absolute;
-    bottom: -30%;
+    bottom: -14%;
 
 }
 
