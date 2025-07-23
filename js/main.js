@@ -136,3 +136,39 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     });
 });
+
+
+// _________________フェードアップ＿＿＿＿＿＿＿＿＿
+
+
+document.addEventListener("DOMContentLoaded", () => {
+    // headerとfooter以外のbody内の要素に.fade-upを付与
+    document.querySelectorAll("body > *:not(header):not(footer)").forEach(el => {
+        el.classList.add("fade-up");
+    });
+
+    const observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add("show");
+            }
+        });
+    });
+
+    document.querySelectorAll(".fade-up").forEach(el => observer.observe(el));
+});
+
+// ___________________MVの写真切り替え＿＿＿＿＿＿＿＿＿＿＿＿＿＿
+
+
+document.addEventListener("DOMContentLoaded", function () {
+    const slides = document.querySelectorAll(".mv-slide");
+    let current = 0;
+
+    setInterval(() => {
+        slides[current].classList.remove("active");
+        current = (current + 1) % slides.length;
+        slides[current].classList.add("active");
+    }, 5000); // 5秒ごとに切り替え
+});
+

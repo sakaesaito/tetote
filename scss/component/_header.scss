@@ -47,6 +47,7 @@
 .header-link {
     display: flex;
     align-items: center;
+    gap: 13px;
 }
 .header--sticky {
     position: fixed;
@@ -89,7 +90,6 @@
 
 .header-button {
     display: block;
-    margin-right:25px;
     padding: 0.875rem 3.5rem;
     transition: all 0.3s ease 0s;
     text-align: center;
@@ -101,6 +101,7 @@
     &-entry {
         background-color: #AFA86F;
         color: #fff;
+        padding: 0.875rem 4rem;
 
         &:hover {
             background-color: #988C2C;
@@ -128,8 +129,8 @@
     
 
 .header-hamburger {
-    margin-left:1.25rem;
     transition: all 0.3s ease 0s;
+    margin-right: 14px;
 
     &:hover {
         opacity: .7;

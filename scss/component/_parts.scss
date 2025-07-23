@@ -12,7 +12,7 @@ button {
 .viewmore-button {
     max-width: 355px;
     width: 100%;
-    margin: 52px auto 0;
+    margin: 57px auto 0;
     position: relative;
     text-align: center;
     border: 1px #222 solid;
@@ -130,8 +130,8 @@ button {
     max-width: 200px;
     width: 100%;
     position: absolute;
-    bottom: 76px;
-    right: 163px;
+    bottom: 68px;
+    right: 166px;
     @media screen and (max-width: 1024px) {
         display: none;
         width: 32px;
@@ -168,4 +168,5 @@ button {
     padding-right: 15px;
     line-height: 70px;
 }
+
 

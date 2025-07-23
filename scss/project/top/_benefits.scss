@@ -1,5 +1,5 @@
 .benefits {
-    padding-top:65px;
+    padding-top:72px;
     padding-bottom: 176px;
 }
 .benefits-text-wrapper {
@@ -11,7 +11,7 @@
 
 }
 .benefits-content-item {
-    margin-top: 27px;
+    margin-top: 22px;
     margin-left: 44px;
 }
 .content-title-benefits {
@@ -54,7 +54,7 @@
 }
 
 .benefits-img-wrapper {
-    margin-top: 106px;
+    margin-top: 108px;
     position: relative;
     @media screen and (max-width: 1024px) {
         margin-top: 36px;
@@ -76,20 +76,28 @@
         height: 251px;
         font-size: 0.875rem;
         font-weight: 400;
+        margin: 0 auto;
     }
 }
 .benefits-img-box-pic2 {
-    margin-top: 6em;
+    margin-top: 5em;
+    @media screen and (max-width: 1024px) {
+    margin-top: 2em;
+    }
 }
 .benefits-img-box-pic {
-    margin-top: 5em;
+    margin-top: 6.4em;
+
+    @media screen and (max-width: 1024px) {
+    margin-top: 1em;
+    }
 }
 .benefits-img-message {
     font-size: 1.5rem;
     transform: rotate( 90deg );
     position: absolute;
-    top: 107px;
-    right: -110px;
+    top: 115px;
+    right: -113px;
     letter-spacing: 3px;
 
     &::after {
@@ -102,8 +110,8 @@
     @media screen and (max-width: 1024px) {
         font-size: 0.875rem;
         font-weight: 400;
-        top: 89px;
-        right: -44px;
+        top: 70px;
+        right: -84px;
     }
 }
 
@@ -118,6 +126,7 @@
     }
     @media screen and (max-width: 1024px) {
         margin-top: -7px;
+        padding-right: 0;
     }
     a {
     width: 56px;
@@ -140,6 +149,8 @@
         width: 42px;
         height: 42px;
         line-height: 42px;
+        bottom: 147px;
+        right: 42px;
         &:hover {
             width: 56px;
             height: 56px;

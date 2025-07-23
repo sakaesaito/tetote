@@ -8,6 +8,9 @@
 }
 .career-inner {
     padding-right: 20px;
+    @media screen and (max-width: 1024px) {
+        padding-right: 0;
+    }
 }
 .career-content-title {
     text-align: center;

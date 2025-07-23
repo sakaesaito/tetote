@@ -6,21 +6,22 @@
 }
 
 body {
-    font-family: "Noto Sans JP", "Viga" , "Poppins";
+    font-family: "Noto Sans JP", "Viga", "Poppins";
     font-size: 1rem;
     line-height: 1.875;
     color: #222222;
     font-weight: 700;
 }
+
 @media screen and (max-width: 768px) {
     body {
         font-size: 0.875rem;
     }
 }
-    
+
 
 h2 {
-    font-family: "Noto Sans JP" , "Viga";
+    font-family: "Noto Sans JP", "Viga";
     font-size: 52px;
 }
 
@@ -35,6 +36,13 @@ img {
     margin: 0 auto;
 }
 
+.fade-up {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.6s ease-out;
+}
 
-
-
+.fade-up.show {
+    opacity: 1;
+    transform: translateY(0);
+}

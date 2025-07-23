@@ -1,6 +1,6 @@
 .page-staff-mv-sec {
     background-color: #faf7f1;
-    border-radius: 10px;
+    border-radius: 0px;
     margin-top: 118px;
     @media screen and (max-width: 1024px) {
         margin-top: 90px;
@@ -8,7 +8,6 @@
     }
 }
 .page-staff-mv-inner {
-    padding-left: 34px;
     padding-right: 24px;
     @media screen and (max-width: 768px) {
         padding-left: 15px;
@@ -17,7 +16,7 @@
 }
 .page-staff-box {
     display: flex;
-    gap: 60px;
+    gap: 90px;
     max-width: 1024px;
     width: 100%;
     line-height: 1;
@@ -39,7 +38,7 @@
         }
         &__item {
             font-size: 1.5rem;
-            margin-top: 18px;
+            margin-top: 24px;
             background-color: #fff;
             inline-size: fit-content;
             padding-inline: 10px;
@@ -48,7 +47,7 @@
             font-size: 0.875rem;
             color: #988c2c;
             font-weight: 400;
-            margin-top: 30px;
+            margin-top: 34px;
         }
         &__name {
             font-size: 1.5em;
