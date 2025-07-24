@@ -49,7 +49,7 @@ window.addEventListener('scroll', function () {
     const header = document.querySelector('.header');
     const mv = document.querySelector('.mv');
     const mvHeight = mv.offsetHeight; // mvの高さを取得
-    const scrollY = window.pageYOffset;
+    const scrollY = window
 
     if (scrollY >= mvHeight) {
         header.classList.add('header--sticky');
@@ -88,6 +88,7 @@ $(function () {
 
 
 // _______ページ内スムーススクロール＿＿＿＿＿＿＿
+
 document.addEventListener("DOMContentLoaded", function () {
     const buttons = document.querySelectorAll(".details-btn");
 
@@ -106,7 +107,7 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 });
 
-// _______________アコーディオン＿＿＿＿＿＿＿＿＿＿＿
+// _______________アコーディオン＿＿＿＿＿＿＿＿＿
 
 document.addEventListener("DOMContentLoaded", function () {
     const headers = document.querySelectorAll(".accordion-header");
@@ -130,7 +131,7 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 
-// _________________フェードアップ＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿
+// _________________フェードアップ＿＿＿＿＿＿＿＿＿＿＿＿
 
 
 document.addEventListener("DOMContentLoaded", () => {
@@ -173,9 +174,14 @@ const swiper2 = new Swiper('.limited-slider', {
     loop: true,
     centeredSlides: false,
     autoplay: {
-        delay: 3000, // 4秒ごとに切り替え
+        delay: 4000, // 4秒ごとに切り替え
         disableOnInteraction: false // ユーザー操作後も自動再開
     },
+    navigation: {
+        nextEl: '.page-button-white__right',
+        prevEl: '.page-button-white__left'
+    },
+
     breakpoints: {
         0: { slidesPerView: 1, spaceBetween: 15 },
         600: { slidesPerView: 2, spaceBetween: 24 },

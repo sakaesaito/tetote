@@ -650,7 +650,7 @@ button {
 .header-link {
   display: flex;
   align-items: center;
-  gap: 13px;
+  gap: 17px;
 }
 
 .header--sticky {
@@ -727,7 +727,7 @@ button {
 
 .header-hamburger {
   transition: all 0.3s ease 0s;
-  margin-right: 14px;
+  margin-right: 7px;
 }
 .header-hamburger:hover {
   opacity: 0.7;
@@ -1464,7 +1464,7 @@ footer {
   font-weight: 400;
   font-size: 1rem;
   z-index: 3;
-  padding: 20px 0 20px 91px;
+  padding: 24px 0 24px 91px;
   line-height: 1;
 }
 @media screen and (max-width: 1024px) {
@@ -2310,7 +2310,7 @@ footer {
 .header-button-recruit {
   background-color: #222222;
   color: #fff;
-  margin-right: 15px;
+  margin-right: 9px;
 }
 @media screen and (max-width: 768px) {
   .header-button-recruit {
@@ -2384,11 +2384,14 @@ footer {
 }
 
 .sub-mv {
-  height: 455px;
+  height: 340px;
   margin-top: 118px;
   background-image: url(/img/about-fv.jpg);
-  background-position: bottom;
+  background-size: cover;
   object-fit: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
 }
 @media screen and (max-width: 768px) {
   .sub-mv {
@@ -2403,7 +2406,7 @@ footer {
   padding-inline: 1.3%;
 }
 .sub-inner-mv {
-  padding-top: 4%;
+  padding-top: 54px;
 }
 @media screen and (max-width: 1024px) {
   .sub-inner {
@@ -2450,7 +2453,7 @@ footer {
 
 .c-breadcrumbs span::before {
   content: ">";
-  margin: 0 4px;
+  margin: 0 6px;
 }
 
 .sub-title {
@@ -2463,7 +2466,7 @@ footer {
   }
 }
 .sub-title-us {
-  margin-top: 66px;
+  margin-top: 68px;
   text-align: center;
 }
 @media screen and (max-width: 1024px) {
@@ -2504,7 +2507,7 @@ footer {
 .sub-mv-item {
   background-color: #fff;
   font-size: 1.5rem;
-  padding: 3px 10px;
+  padding: 3px 13px;
   font-family: "Viga";
   line-height: 1;
   inline-size: fit-content;
@@ -2523,15 +2526,12 @@ footer {
 }
 
 .sub-aboutus-box {
-  margin-top: 35px;
+  margin-top: 30px;
   background-color: #FAF7F1;
-}
-.sub-aboutus-box:nth-child(1) {
-  margin-top: 86px;
 }
 
 .sub-aboutus-list {
-  padding-inline: 80px;
+  padding-inline: 81px;
 }
 @media screen and (max-width: 1024px) {
   .sub-aboutus-list {
@@ -2542,7 +2542,7 @@ footer {
 .sub-aboutus-title {
   line-height: 1.5;
   font-size: 1.25rem;
-  padding-top: 44px;
+  padding-top: 33px;
   position: relative;
 }
 @media screen and (max-width: 768px) {
@@ -2553,17 +2553,18 @@ footer {
 }
 .sub-aboutus-title::before {
   display: inline-block;
-  width: 30px;
-  height: 30px;
+  width: 50px;
+  height: 50px;
   border: 1px solid #222;
   border-radius: 50%;
   text-align: center;
   box-sizing: border-box;
   margin-right: 21px;
   color: #222;
+  padding-top: 7px;
 }
 @media screen and (max-width: 1024px) {
-  .sub-aboutus-title::before {
+  .sub-aboutus-title {
     margin-right: 6px;
   }
 }
@@ -2591,8 +2592,9 @@ footer {
 .sub-aboutus-item {
   font-size: 1rem;
   font-weight: 400;
-  padding-top: 35px;
+  padding-top: 21px;
   padding-bottom: 30px;
+  line-height: 1.5;
 }
 @media screen and (max-width: 768px) {
   .sub-aboutus-item {
@@ -2654,7 +2656,7 @@ footer {
   width: 100%;
   position: absolute;
   top: 0;
-  left: -19%;
+  left: -17%;
   margin-top: 18px;
 }
 @media screen and (max-width: 1024px) {
@@ -2690,8 +2692,8 @@ footer {
 .sub-about-box {
   display: flex;
   gap: 47px;
-  padding-top: 50px;
-  padding-bottom: 49px;
+  padding-top: 60px;
+  padding-bottom: 50px;
   border-bottom: #AFA86F solid 1px;
 }
 .sub-about-box:nth-child(1) {
@@ -2701,6 +2703,10 @@ footer {
   .sub-about-box {
     display: block;
   }
+}
+
+.about-box1 {
+  margin-top: 56px;
 }
 
 .sub-about-box-img {
@@ -2723,6 +2729,7 @@ footer {
   font-size: 2rem;
   color: #AFA86F;
   line-height: 1;
+  padding-top: 23px;
 }
 @media screen and (max-width: 1024px) {
   .sub-about-box-title {
@@ -2733,7 +2740,7 @@ footer {
 
 .sub-about-box-item {
   font-size: 1.5rem;
-  margin-top: 40px;
+  margin-top: 36px;
   line-height: 1.5;
 }
 @media screen and (max-width: 1024px) {
@@ -2743,10 +2750,22 @@ footer {
   }
 }
 
+.sub-about-career {
+  margin-top: 40px;
+}
+
+.sub-about-career2 {
+  margin-top: 40px;
+}
+
+.sub-about-career3 {
+  margin-top: 40px;
+}
+
 .sub-about-box-read {
   max-width: 425px;
   width: 100%;
-  margin-top: 40px;
+  margin-top: 35px;
   line-height: 1.5;
   font-weight: 400;
 }
@@ -3063,7 +3082,7 @@ footer {
 }
 
 .sub-title-career {
-  margin-top: 145px;
+  margin-top: 32px;
 }
 @media screen and (max-width: 768px) {
   .sub-title-career {
