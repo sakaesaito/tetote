@@ -78,22 +78,22 @@
     max-width: 286px;
     width: 100%;
     padding-top: 43px;
-    padding-bottom: 43px;
+    padding-bottom: 49px;
     border-radius: 0;
     @media screen and (max-width: 1024px) {
         margin-inline: auto;
     }
 }
 .page-staff-wrapper {
-    max-width: 696px;
+    max-width: 700px;
     width: 100%;
-    margin-inline: auto;
+    margin-inline: 20px;
 }
 .page-staff {
     &__title {
         font-size: 1.5rem;
         line-height: 1;
-        margin-top: 34px;
+        margin-top: 27px;
         &::before {
             content: "";
             border-left: #222 1px solid;
@@ -102,7 +102,7 @@
     }
     &__note {
         font-weight: 400;
-        line-height: 1.5;
+        line-height: 1.8;
         margin-top: 50px;
         @media screen and (max-width: 1024px) {
             margin-top: 30px;
@@ -121,7 +121,7 @@
 .page-staff-title-member {
     text-align: center;
     font-size: 2rem;
-    margin-top: 84px;  
+    margin-top: 100px;  
 }
 .page-staff-sec {
     margin-top: 50px;
@@ -146,16 +146,18 @@
     width: 100%;
     display: flex;
     margin-top: 101px;
-    gap: 56px;
+    gap: 60px;
     margin-inline: auto;
     @media screen and (max-width: 1024px) {
         margin-top: 50px;
     }
 }
-a-side {
+aside {
     color: #999;
     font-size: 14px;
-    line-height: 1.5;
+    line-height: 2.5;
+    font-weight: 400;
+
     @media screen and (max-width: 1024px) {
         display: none;
     }
@@ -165,4 +167,7 @@ a-side {
         margin-top: 0;
     }
 
+}
+.a-side-list {
+    list-style-type: disc;
 }

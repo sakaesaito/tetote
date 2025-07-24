@@ -27,31 +27,23 @@ $(function () {
 
 /* 写真無限スライダー */
 
-const swiper = new Swiper('.slider', {
+const swiper1 = new Swiper('.infinity-slider .slider', {
     speed: 5000,
     loop: true,
-    loopedSlides: 6, // 全スライド数
     allowTouchMove: false,
     centeredSlides: true,
-    autoplay: {
-        delay: 0,
-    },
+    autoplay: { delay: 0 },
     breakpoints: {
-        0: { slidesPerView: 1.8, spaceBetween: 15 },
+        0: { slidesPerView: 1, spaceBetween: 15 },
         600: { slidesPerView: 2, spaceBetween: 24 },
         1200: { slidesPerView: 3, spaceBetween: 34 },
         1500: { slidesPerView: 4, spaceBetween: 42 }
     },
-    on: {
-        init: function () {
-            // すべてのスライド（クローン含む）に対して交互クラスを適用
-            const allSlides = document.querySelectorAll('.swiper-slide');
-            allSlides.forEach((slide, index) => {
-                slide.classList.toggle('alt', index % 2 === 1);
-            });
-        }
-    }
 });
+
+
+//   ＿＿＿＿＿＿＿＿＿スクロール後ヘッダーが降りてくる＿＿＿＿＿＿
+
 
 window.addEventListener('scroll', function () {
     const header = document.querySelector('.header');
@@ -138,7 +130,7 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 
-// _________________フェードアップ＿＿＿＿＿＿＿＿＿
+// _________________フェードアップ＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿
 
 
 document.addEventListener("DOMContentLoaded", () => {
@@ -172,3 +164,22 @@ document.addEventListener("DOMContentLoaded", function () {
     }, 5000); // 5秒ごとに切り替え
 });
 
+
+// _____________________2つ目のスライダー＿＿＿＿＿＿＿＿＿＿＿＿＿
+
+
+const swiper2 = new Swiper('.limited-slider', {
+    speed: 800,
+    loop: true,
+    centeredSlides: false,
+    autoplay: {
+        delay: 3000, // 4秒ごとに切り替え
+        disableOnInteraction: false // ユーザー操作後も自動再開
+    },
+    breakpoints: {
+        0: { slidesPerView: 1, spaceBetween: 15 },
+        600: { slidesPerView: 2, spaceBetween: 24 },
+        1024: { slidesPerView: 3, spaceBetween: 34 },
+        1440: { slidesPerView: 4, spaceBetween: 42 }
+    }
+});

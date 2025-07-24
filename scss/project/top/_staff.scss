@@ -71,6 +71,7 @@
     position: relative;
     width: 306px;
     height: 412px;
+    overflow: visible;
 
     @media screen and (max-width: 1024px) {
         margin-left:  0;
@@ -115,13 +116,12 @@
     top: 72px;
 }
 .staff-box-img {
-    position: absolute;
-    bottom: -56px;
+    position: relative;
+    bottom: 70px;
 }
 .staff-box-img-box2 {
-    position: absolute;
-    bottom: -14%;
-
+    position: relative;
+    bottom: 70px;
 }
 
 

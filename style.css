@@ -1631,6 +1631,7 @@ footer {
   position: relative;
   width: 306px;
   height: 412px;
+  overflow: visible;
 }
 @media screen and (max-width: 1024px) {
   .staff-box {
@@ -1680,13 +1681,13 @@ footer {
 }
 
 .staff-box-img {
-  position: absolute;
-  bottom: -56px;
+  position: relative;
+  bottom: 70px;
 }
 
 .staff-box-img-box2 {
-  position: absolute;
-  bottom: -14%;
+  position: relative;
+  bottom: 70px;
 }
 
 .career {
@@ -2433,6 +2434,7 @@ footer {
   max-width: 1024px;
   margin: 0 auto;
   padding-left: 24px;
+  font-size: 14px;
 }
 @media screen and (max-width: 1024px) {
   .c-breadcrumbs {
@@ -2448,7 +2450,7 @@ footer {
 
 .c-breadcrumbs span::before {
   content: ">";
-  margin: 0 6px;
+  margin: 0 4px;
 }
 
 .sub-title {
@@ -3715,7 +3717,7 @@ footer {
 }
 .page-staff-box__item {
   font-size: 1.5rem;
-  margin-top: 18px;
+  margin-top: 24px;
   background-color: #fff;
   inline-size: fit-content;
   padding-inline: 10px;
@@ -3724,7 +3726,7 @@ footer {
   font-size: 0.875rem;
   color: #988c2c;
   font-weight: 400;
-  margin-top: 30px;
+  margin-top: 34px;
 }
 .page-staff-box__name {
   font-size: 1.5em;
@@ -3760,7 +3762,7 @@ footer {
   max-width: 286px;
   width: 100%;
   padding-top: 43px;
-  padding-bottom: 43px;
+  padding-bottom: 49px;
   border-radius: 0;
 }
 @media screen and (max-width: 1024px) {
@@ -3770,15 +3772,15 @@ footer {
 }
 
 .page-staff-wrapper {
-  max-width: 696px;
+  max-width: 700px;
   width: 100%;
-  margin-inline: auto;
+  margin-inline: 20px;
 }
 
 .page-staff__title {
   font-size: 1.5rem;
   line-height: 1;
-  margin-top: 34px;
+  margin-top: 27px;
 }
 .page-staff__title::before {
   content: "";
@@ -3787,7 +3789,7 @@ footer {
 }
 .page-staff__note {
   font-weight: 400;
-  line-height: 1.5;
+  line-height: 1.8;
   margin-top: 50px;
 }
 @media screen and (max-width: 1024px) {
@@ -3808,7 +3810,7 @@ footer {
 .page-staff-title-member {
   text-align: center;
   font-size: 2rem;
-  margin-top: 84px;
+  margin-top: 100px;
 }
 
 .page-staff-sec {
@@ -3840,7 +3842,7 @@ footer {
   width: 100%;
   display: flex;
   margin-top: 101px;
-  gap: 56px;
+  gap: 60px;
   margin-inline: auto;
 }
 @media screen and (max-width: 1024px) {
@@ -3849,19 +3851,24 @@ footer {
   }
 }
 
-a-side {
+aside {
   color: #999;
   font-size: 14px;
-  line-height: 1.5;
+  line-height: 2.5;
+  font-weight: 400;
 }
 @media screen and (max-width: 1024px) {
-  a-side {
+  aside {
     display: none;
   }
 }
 
 .page-staff__title:nth-child(1) {
   margin-top: 0;
+}
+
+.a-side-list {
+  list-style-type: disc;
 }
 
 .accordion-content {

@@ -235,6 +235,7 @@
     max-width: 1024px;
     margin: 0 auto;
     padding-left: 24px;
+    font-size: 14px;
     @media screen and (max-width: 1024px) {
         padding-left: 15%;
     }
@@ -248,7 +249,7 @@
 .c-breadcrumbs span {
     &::before {
         content: ">";
-        margin: 0 6px;
+        margin: 0 4px;
     }
 }
 
