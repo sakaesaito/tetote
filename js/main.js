@@ -61,7 +61,7 @@ window.addEventListener('scroll', function () {
 });
 
 
-// レスポンシブの375px未満のviewport画面幅を固定
+// _____レスポンシブの375px未満のviewport画面幅を固定_______
 
 $(function () {
     // viewport の内容を保留関数を定義
@@ -87,7 +87,7 @@ $(function () {
 })
 
 
-// _______ページ内スムーススクロール＿＿＿＿＿＿＿
+// _______________ページ内スムーススクロール＿＿＿＿＿＿＿_____
 
 document.addEventListener("DOMContentLoaded", function () {
     const buttons = document.querySelectorAll(".details-btn");
@@ -193,18 +193,21 @@ const swiper2 = new Swiper('.limited-slider', {
 // _______________page-staff　aside追従＿＿＿＿＿＿
 
 document.addEventListener('DOMContentLoaded', function () {
-    const titles = document.querySelectorAll('.page-staff__title');
     const items = document.querySelectorAll('.a-side-list li');
 
-    const sections = Array.from(titles).map(el => ({
-        id: el.id,
-        offsetTop: el.getBoundingClientRect().top + window.pageYOffset
-    }));
+    function getSections() {
+        const titles = document.querySelectorAll('.page-staff__title');
+        return Array.from(titles).map(el => ({
+            id: el.id,
+            offsetTop: el.getBoundingClientRect().top + window.pageYOffset
+        }));
+    }
 
     window.addEventListener('scroll', function () {
-        const scrollPos = window.pageYOffset + 100;
-
+        const sections = getSections();
+        const scrollPos = window.pageYOffset + 200;
         let currentId = sections[0].id;
+
         for (const sec of sections) {
             if (scrollPos >= sec.offsetTop) currentId = sec.id;
         }
@@ -212,11 +215,5 @@ document.addEventListener('DOMContentLoaded', function () {
         items.forEach(li => {
             li.classList.toggle('active', li.dataset.target === currentId);
         });
-
-        const activeLi = document.querySelector('.a-side-list li.active');
-        if (activeLi) {
-            activeLi.scrollIntoView({ block: 'nearest', inline: 'nearest' });
-        }
     });
 });
-

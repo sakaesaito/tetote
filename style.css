@@ -3047,11 +3047,12 @@ footer {
 }
 
 .details-list-sec {
-  margin-top: 88px;
+  margin-top: 86px;
 }
 
 .details-list-title {
   width: 19%;
+  padding-top: 1px;
 }
 @media screen and (max-width: 768px) {
   .details-list-title {
@@ -3075,6 +3076,18 @@ footer {
   .sub-engineer {
     margin-bottom: 50px;
   }
+}
+
+.to {
+  margin-top: 5px;
+}
+
+.sub-page-blog-list {
+  display: flex;
+  gap: 40px;
+  border-bottom: #222222 dashed 1px;
+  padding-top: 35px;
+  padding-bottom: 35px;
 }
 
 .sub-title-career {
@@ -3162,13 +3175,17 @@ footer {
   }
 }
 
+.sub-inner-benefits {
+  padding-inline: 1.48%;
+}
+
 .benefits-list {
   display: flex;
   gap: 40px;
   border-bottom: #222222 solid 1px;
   align-items: flex-start;
-  padding-top: 36px;
-  padding-bottom: 36px;
+  padding-top: 34px;
+  padding-bottom: 33px;
 }
 @media screen and (max-width: 768px) {
   .benefits-list {
@@ -3179,7 +3196,7 @@ footer {
 }
 
 .sub-benefits-list-sec {
-  margin-top: 113px;
+  margin-top: 77px;
 }
 @media screen and (max-width: 768px) {
   .sub-benefits-list-sec {
@@ -3199,7 +3216,7 @@ footer {
 }
 
 .sub-title-benefits2 {
-  margin-top: 128px;
+  margin-top: 133px;
 }
 @media screen and (max-width: 768px) {
   .sub-title-benefits2 {
@@ -3251,7 +3268,7 @@ footer {
 }
 
 .benefits-staff-img {
-  margin-top: 50px;
+  margin-top: 35px;
   margin-bottom: 139px;
 }
 @media screen and (max-width: 768px) {
@@ -3369,7 +3386,7 @@ footer {
   display: flex;
   align-items: center;
   gap: 16px;
-  padding-top: 41px;
+  padding-top: 35px;
 }
 
 .blog-detail-sec {
@@ -3400,7 +3417,7 @@ footer {
 }
 
 .sub-title-blog-detail {
-  margin-top: 25px;
+  margin-top: 16px;
   font-size: 32px;
   line-height: 1.5;
 }
@@ -3419,7 +3436,7 @@ footer {
 }
 
 .blog-detail-img {
-  margin-top: 45px;
+  margin-top: 30px;
   width: 100%;
 }
 
@@ -3483,6 +3500,7 @@ footer {
 
 .blog-detail-list {
   margin-top: 50px;
+  padding-left: 17px;
 }
 
 .blog-detail-news {
@@ -3524,7 +3542,7 @@ footer {
 }
 
 .blog-pagination-wrapper {
-  max-width: 470px;
+  max-width: 464px;
   width: 100%;
   display: flex;
 }
@@ -3565,6 +3583,14 @@ footer {
   }
 }
 
+.page-blog-date {
+  font-size: 12px;
+}
+
+.topic {
+  padding-top: 3px;
+}
+
 .sub-blog-inner {
   max-width: 1024px;
   width: 100%;
@@ -3575,6 +3601,10 @@ footer {
   .sub-blog-inner {
     padding-inline: 4%;
   }
+}
+
+.sub-inner-blog {
+  padding-top: 60px;
 }
 
 .sub-blog-sec {
@@ -3592,7 +3622,7 @@ footer {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(4, 1fr);
-  grid-gap: 32px 52px;
+  grid-gap: 24px 52px;
 }
 @media screen and (max-width: 1024px) {
   .sub-blog-list {
@@ -3647,11 +3677,20 @@ footer {
   height: 70px;
 }
 
+.c-breadcrumbs-blog {
+  padding-top: 7px;
+}
+
+.c-breadcrumbs-blog span::before {
+  content: ">";
+  margin: 0 4px;
+}
+
 .sub-blog-box-right {
   border-radius: 10px;
-  margin-inline: 23px;
-  margin-top: 20px;
-  margin-bottom: 20px;
+  margin-inline: 27px;
+  margin-top: 13px;
+  margin-bottom: 16px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -3919,6 +3958,12 @@ aside {
 .a-side-inner {
   position: sticky;
   top: 120px;
+  color: #999;
+  font-weight: 400;
+}
+
+.a-side-list li {
+  transition: color 0.3s;
 }
 
 .a-side-list li.active {
@@ -3940,6 +3985,7 @@ aside {
   padding: 1em;
   padding-left: 30px;
   border-bottom: #AFA86F 1px solid;
+  transition: max-height 0.4s ease, opacity 0.4s ease;
 }
 
 .accordion-content.active {
@@ -3955,8 +4001,8 @@ aside {
   align-items: center;
   justify-content: space-between;
   cursor: pointer;
-  padding-top: 36px;
-  padding-bottom: 36px;
+  padding-top: 30px;
+  padding-bottom: 30px;
   border-bottom: 1px solid #AFA86F;
   font-weight: bold;
   background: #fff;
@@ -4014,6 +4060,15 @@ section.show {
   }
 }
 
+.faq-main-title2 {
+  margin-top: 88px;
+}
+@media screen and (max-width: 1024px) {
+  .faq-main-title2 {
+    margin-top: 50px;
+  }
+}
+
 .accordion {
   margin-top: 113px;
 }
@@ -4033,6 +4088,7 @@ section.show {
   font-weight: 400;
   line-height: 1;
   flex-shrink: 0;
+  font-size: 24px;
 }
 
 .faq-benefits {
@@ -4052,7 +4108,8 @@ section.show {
 
 .toggle-icon {
   flex-shrink: 0;
-  font-size: 1rem;
+  font-size: 32px;
+  font-weight: 400;
   color: #AFA86F;
   margin-left: auto;
 }
@@ -4063,4 +4120,14 @@ section.show {
 
 .accordion-content {
   font-weight: 400;
+}
+
+.sub-mv-item-faq {
+  background-color: #fff;
+  font-size: 1.5rem;
+  padding: 3px 9px;
+  font-family: "Viga";
+  line-height: 1;
+  inline-size: fit-content;
+  margin-top: 18px;
 }/*# sourceMappingURL=style.css.map */

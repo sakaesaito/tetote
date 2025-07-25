@@ -4,13 +4,16 @@
         padding-top: 70px;
     }
 }
+.sub-inner-benefits {
+    padding-inline: 1.48%;
+}
 .benefits-list {
     display: flex;
     gap: 40px;
     border-bottom: #222222 solid 1px;
     align-items: flex-start;
-    padding-top: 36px;
-    padding-bottom: 36px;
+    padding-top: 34px;
+    padding-bottom: 33px;
     @media screen and (max-width: 768px) {
         padding-top: 20px;
         padding-bottom: 20px;
@@ -18,7 +21,7 @@
     }
 }
 .sub-benefits-list-sec {
-    margin-top: 113px;
+    margin-top: 77px;
     @media screen and (max-width: 768px) {
         margin-top: 50px;
     }
@@ -33,7 +36,7 @@
     font-weight: 400;
 }
 .sub-title-benefits2 {
-    margin-top: 128px;
+    margin-top: 133px;
     @media screen and (max-width: 768px) {
         margin-top: 70px;
     }
@@ -73,7 +76,7 @@
     }
 }
 .benefits-staff-img {
-    margin-top: 50px;
+    margin-top: 35px;
     margin-bottom: 139px;
     @media screen and (max-width: 768px) {
         margin-top: 30px;

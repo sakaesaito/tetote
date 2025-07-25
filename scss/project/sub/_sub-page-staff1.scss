@@ -197,6 +197,12 @@ aside {
 .a-side-inner {
     position: sticky;
     top: 120px;
+    color: #999;
+    font-weight: 400;
+}
+
+.a-side-list li {
+    transition: color 0.3s;
 }
 .a-side-list li.active {
     color: #222;

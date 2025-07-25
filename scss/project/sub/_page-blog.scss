@@ -17,7 +17,7 @@
     display: flex;
     align-items: center;
     gap: 16px;
-    padding-top: 41px;
+    padding-top: 35px;
 }
 
 .blog-detail-sec {
@@ -41,7 +41,7 @@
     }
 }
 .sub-title-blog-detail {
-    margin-top: 25px;
+    margin-top: 16px;
     font-size: 32px;
     line-height: 1.5;
         br {
@@ -55,7 +55,7 @@
     }       
 }
 .blog-detail-img {
-    margin-top: 45px;
+    margin-top: 30px;
     width: 100%;
 }
 .blog-detail-note1 {
@@ -106,6 +106,7 @@
 }
 .blog-detail-list {
     margin-top: 50px;
+    padding-left: 17px;
 }
 .blog-detail-news {
     display: flex;
@@ -143,7 +144,7 @@
 
 }
 .blog-pagination-wrapper {
-    max-width: 470px;
+    max-width: 464px;
     width: 100%;
     display: flex;
 
@@ -179,4 +180,10 @@
         @media screen and (max-width: 1024px) {
             margin-top: 5px;
         }
+}
+.page-blog-date {
+    font-size: 12px;
+}
+.topic {
+    padding-top: 3px;
 }

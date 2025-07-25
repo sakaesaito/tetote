@@ -105,10 +105,11 @@
     }
 }
 .details-list-sec {
-    margin-top: 88px;
+    margin-top: 86px;
 }
 .details-list-title {
     width: 19%;
+    padding-top: 1px;
     @media screen and (max-width: 768px) {
         width: 25%;
     }
@@ -128,4 +129,15 @@
     margin-bottom: 139px;
     @media screen and (max-width: 1024px) {
         margin-bottom: 50px};
+}
+
+.to {
+    margin-top: 5px;
+}
+.sub-page-blog-list {
+    display: flex;
+    gap: 40px;
+    border-bottom: #222222 dashed 1px;
+    padding-top: 35px;
+    padding-bottom: 35px;
 }

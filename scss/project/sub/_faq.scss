@@ -3,6 +3,7 @@
     padding: 1em;
     padding-left: 30px;
     border-bottom: #AFA86F 1px solid;
+    transition: max-height 0.4s ease, opacity 0.4s ease;
 }
 .accordion-content.active {
     padding-top: 0;
@@ -21,8 +22,8 @@
         align-items: center;
         justify-content: space-between;
         cursor: pointer;
-        padding-top: 36px;
-        padding-bottom: 36px;
+        padding-top: 30px;
+        padding-bottom: 30px;
         border-bottom: 1px solid #AFA86F;
         font-weight: bold;
         background: #fff;
@@ -73,6 +74,12 @@ section.show {
         margin-top: 50px;
     }
 }
+.faq-main-title2 {
+    margin-top: 88px;
+    @media screen and (max-width: 1024px) {
+        margin-top: 50px;
+    }
+}
 
 .accordion {
     margin-top: 113px;
@@ -91,6 +98,7 @@ section.show {
     font-weight: 400;
     line-height: 1;
     flex-shrink: 0;
+    font-size: 24px;
 }
 
 .faq-benefits {
@@ -107,7 +115,8 @@ section.show {
 
 .toggle-icon {
     flex-shrink: 0;
-    font-size: 1rem;
+    font-size: 32px;
+    font-weight: 400;
     color: #AFA86F;
     margin-left: auto;
 }
@@ -116,4 +125,13 @@ section.show {
 }
 .accordion-content {
     font-weight: 400;
+}
+.sub-mv-item-faq {
+    background-color: #fff;
+    font-size: 1.5rem;
+    padding: 3px 9px;
+    font-family: "Viga";
+    line-height: 1;
+    inline-size: fit-content;
+    margin-top: 18px;
 }
