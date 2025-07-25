@@ -85,7 +85,7 @@
     }
 }
 .page-staff-wrapper {
-    max-width: 700px;
+    max-width: 892px;
     width: 100%;
     margin-inline: 20px;
 }
@@ -103,7 +103,8 @@
     &__note {
         font-weight: 400;
         line-height: 1.8;
-        margin-top: 50px;
+        margin-top: 48px;
+        padding-left: 192px;
         @media screen and (max-width: 1024px) {
             margin-top: 30px;
         }
@@ -114,14 +115,16 @@
     max-width: 710px;
     margin-top: 23px;
     width: 100%;
+    margin-left: 189px;
     img {
         width: 100%;
+        margin-top: 10px;
     }
 }
 .page-staff-title-member {
     text-align: center;
     font-size: 2rem;
-    margin-top: 100px;  
+    margin-top: 104px;  
 }
 .page-staff-sec {
     margin-top: 50px;
@@ -136,18 +139,23 @@
 }
 .page-staff-list {
     position: absolute;
-    bottom: -98px;
+    bottom: -89px;
 }
 .page-staff-box-list {
-    margin-bottom: 180px;
+    margin-bottom: 227px;
+    @media screen and (max-width: 1024px) {
+        margin-bottom: 70px;
+        
+    }
 }
 .page-staff-main {
-    max-width: 1024px;
+    max-width: 1350px;
     width: 100%;
     display: flex;
     margin-top: 101px;
-    gap: 60px;
-    margin-inline: auto;
+    gap: 41px;
+    margin-right: auto;
+    margin-left: 20px;
     @media screen and (max-width: 1024px) {
         margin-top: 50px;
     }
@@ -157,17 +165,50 @@ aside {
     font-size: 14px;
     line-height: 2.5;
     font-weight: 400;
+    margin-top: -5px;
+    right: 242px;
+    top: 513px;
 
     @media screen and (max-width: 1024px) {
         display: none;
     }
 }
-.page-staff__title {
-    &:nth-child(1) {
-        margin-top: 0;
-    }
 
+.page-staff__title {
+    position: relative;
+    padding-left: 192px; 
 }
-.a-side-list {
-    list-style-type: disc;
+
+.page-staff__title::before {
+    content: "";
+    position: absolute;
+    left: -40px;
+    top: 63%;
+    transform: translateY(-50%);
+    width: 214px;
+    height: 2px;
+    border-bottom:  #222 solid 0.5px;
+}
+.a-side-list li::before {
+    content: "・";
+    margin-right: 0.5em;
+    color: #999;
+}
+.a-side-inner {
+    position: sticky;
+    top: 120px;
+}
+.a-side-list li.active {
+    color: #222;
+    font-weight: 700;
+}
+
+@media screen and (max-width: 1024px) {
+    .page-staff__title {
+        padding-left: 1rem;
+        margin-left: 169px;
+    }
+    .page-staff__title::before {
+        display: none;
+    }
 }

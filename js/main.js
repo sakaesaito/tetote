@@ -189,3 +189,34 @@ const swiper2 = new Swiper('.limited-slider', {
         1440: { slidesPerView: 4, spaceBetween: 42 }
     }
 });
+
+// _______________page-staff　aside追従＿＿＿＿＿＿
+
+document.addEventListener('DOMContentLoaded', function () {
+    const titles = document.querySelectorAll('.page-staff__title');
+    const items = document.querySelectorAll('.a-side-list li');
+
+    const sections = Array.from(titles).map(el => ({
+        id: el.id,
+        offsetTop: el.getBoundingClientRect().top + window.pageYOffset
+    }));
+
+    window.addEventListener('scroll', function () {
+        const scrollPos = window.pageYOffset + 100;
+
+        let currentId = sections[0].id;
+        for (const sec of sections) {
+            if (scrollPos >= sec.offsetTop) currentId = sec.id;
+        }
+
+        items.forEach(li => {
+            li.classList.toggle('active', li.dataset.target === currentId);
+        });
+
+        const activeLi = document.querySelector('.a-side-list li.active');
+        if (activeLi) {
+            activeLi.scrollIntoView({ block: 'nearest', inline: 'nearest' });
+        }
+    });
+});
+

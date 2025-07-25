@@ -1657,7 +1657,7 @@ footer {
 
 .staff-box-past {
   display: flex;
-  margin-top: 8px;
+  margin-top: 4px;
 }
 
 .staff-box-position {
@@ -2482,7 +2482,7 @@ footer {
   margin-top: 111px;
 }
 .sub-title-company {
-  margin-top: 153px;
+  margin-top: 100px;
 }
 @media screen and (max-width: 1024px) {
   .sub-title-company {
@@ -2528,6 +2528,13 @@ footer {
 .sub-aboutus-box {
   margin-top: 30px;
   background-color: #FAF7F1;
+}
+.sub-aboutus-box:nth-child(1) {
+  margin-top: 78px;
+}
+
+.aboutus-box1 {
+  margin-top: 78px;
 }
 
 .sub-aboutus-list {
@@ -2692,12 +2699,12 @@ footer {
 .sub-about-box {
   display: flex;
   gap: 47px;
-  padding-top: 60px;
-  padding-bottom: 50px;
   border-bottom: #AFA86F solid 1px;
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
 .sub-about-box:nth-child(1) {
-  margin-top: 82px;
+  margin-top: 30px;
 }
 @media screen and (max-width: 1024px) {
   .sub-about-box {
@@ -2706,7 +2713,7 @@ footer {
 }
 
 .about-box1 {
-  margin-top: 56px;
+  margin-top: 80px;
 }
 
 .sub-about-box-img {
@@ -2729,45 +2736,32 @@ footer {
   font-size: 2rem;
   color: #AFA86F;
   line-height: 1;
-  padding-top: 23px;
+  padding-top: 22px;
 }
 @media screen and (max-width: 1024px) {
   .sub-about-box-title {
-    margin-top: 40px;
     font-size: 1.25rem;
   }
 }
 
 .sub-about-box-item {
   font-size: 1.5rem;
-  margin-top: 36px;
   line-height: 1.5;
+  padding-top: 36px;
+  max-width: 457px;
 }
 @media screen and (max-width: 1024px) {
   .sub-about-box-item {
-    margin-top: 20px;
     font-size: 1.125rem;
   }
-}
-
-.sub-about-career {
-  margin-top: 40px;
-}
-
-.sub-about-career2 {
-  margin-top: 40px;
-}
-
-.sub-about-career3 {
-  margin-top: 40px;
 }
 
 .sub-about-box-read {
   max-width: 425px;
   width: 100%;
-  margin-top: 35px;
   line-height: 1.5;
   font-weight: 400;
+  padding-top: 36px;
 }
 @media screen and (max-width: 1024px) {
   .sub-about-box-read {
@@ -2778,9 +2772,10 @@ footer {
 .sub-about-list {
   display: flex;
   gap: 40px;
-  border-bottom: #222222 solid 1px;
-  height: 88px;
-  align-items: center;
+  border-bottom: #222222 dashed 1px;
+  padding-top: 36px;
+  padding-bottom: 36px;
+  align-items: baseline;
 }
 @media screen and (max-width: 768px) {
   .sub-about-list {
@@ -2789,7 +2784,7 @@ footer {
 }
 
 .sub-about-list-sec {
-  margin-top: 153px;
+  margin-top: 80px;
 }
 @media screen and (max-width: 1024px) {
   .sub-about-list-sec {
@@ -2799,8 +2794,9 @@ footer {
 
 .sub-about-list-title {
   line-height: 1;
-  width: 35%;
+  width: 19%;
   display: block;
+  align-items: baseline;
 }
 
 .sub-about-list-item {
@@ -2830,7 +2826,7 @@ footer {
 
 .sub-inner-about-list {
   padding-inline: 22px;
-  padding-bottom: 119px;
+  padding-bottom: 134px;
 }
 @media screen and (max-width: 1024px) {
   .sub-inner-about-list {
@@ -2848,7 +2844,7 @@ footer {
 }
 
 .sub-about-list-item-consul2 {
-  margin-top: 6px;
+  margin-top: 10px;
 }
 
 @media screen and (min-width: 767px) {
@@ -3270,7 +3266,7 @@ footer {
   grid-template-columns: repeat(3, 1fr); /* 2列 */
   grid-template-rows: repeat(2, 1fr); /* 3行 */
   column-gap: 43px;
-  row-gap: 48px;
+  row-gap: 135px;
 }
 @media screen and (max-width: 1024px) {
   .sub-staff-box-wrapper {
@@ -3302,6 +3298,10 @@ footer {
   }
 }
 
+.staff-mv-item {
+  padding: 5px 9px;
+}
+
 .sub-staff-box {
   margin-top: 0;
   position: relative;
@@ -3314,7 +3314,7 @@ footer {
 
 .sub-staff-box-img {
   position: absolute;
-  bottom: 16%;
+  bottom: -88px;
 }
 @media screen and (max-width: 1024px) {
   .sub-staff-box-img {
@@ -3334,14 +3334,14 @@ footer {
   line-height: 1.2;
   background-color: #AFA86F;
   inline-size: fit-content;
-  padding-top: 6px;
-  padding-bottom: 6px;
-  padding-inline: 6px;
+  padding-top: 4px;
+  padding-bottom: 5px;
+  padding-inline: 7px;
 }
 
 .sub-staff-sec {
   margin-top: 130px;
-  margin-bottom: 130px;
+  margin-bottom: 232px;
 }
 
 .is-small-blog {
@@ -3791,7 +3791,7 @@ footer {
 }
 
 .page-staff-wrapper {
-  max-width: 700px;
+  max-width: 892px;
   width: 100%;
   margin-inline: 20px;
 }
@@ -3809,7 +3809,8 @@ footer {
 .page-staff__note {
   font-weight: 400;
   line-height: 1.8;
-  margin-top: 50px;
+  margin-top: 48px;
+  padding-left: 192px;
 }
 @media screen and (max-width: 1024px) {
   .page-staff__note {
@@ -3821,15 +3822,17 @@ footer {
   max-width: 710px;
   margin-top: 23px;
   width: 100%;
+  margin-left: 189px;
 }
 .page-staff-pic img {
   width: 100%;
+  margin-top: 10px;
 }
 
 .page-staff-title-member {
   text-align: center;
   font-size: 2rem;
-  margin-top: 100px;
+  margin-top: 104px;
 }
 
 .page-staff-sec {
@@ -3849,20 +3852,26 @@ footer {
 
 .page-staff-list {
   position: absolute;
-  bottom: -98px;
+  bottom: -89px;
 }
 
 .page-staff-box-list {
-  margin-bottom: 180px;
+  margin-bottom: 227px;
+}
+@media screen and (max-width: 1024px) {
+  .page-staff-box-list {
+    margin-bottom: 70px;
+  }
 }
 
 .page-staff-main {
-  max-width: 1024px;
+  max-width: 1350px;
   width: 100%;
   display: flex;
   margin-top: 101px;
-  gap: 60px;
-  margin-inline: auto;
+  gap: 41px;
+  margin-right: auto;
+  margin-left: 20px;
 }
 @media screen and (max-width: 1024px) {
   .page-staff-main {
@@ -3875,6 +3884,9 @@ aside {
   font-size: 14px;
   line-height: 2.5;
   font-weight: 400;
+  margin-top: -5px;
+  right: 242px;
+  top: 513px;
 }
 @media screen and (max-width: 1024px) {
   aside {
@@ -3882,14 +3894,47 @@ aside {
   }
 }
 
-.page-staff__title:nth-child(1) {
-  margin-top: 0;
+.page-staff__title {
+  position: relative;
+  padding-left: 192px;
 }
 
-.a-side-list {
-  list-style-type: disc;
+.page-staff__title::before {
+  content: "";
+  position: absolute;
+  left: -40px;
+  top: 63%;
+  transform: translateY(-50%);
+  width: 214px;
+  height: 2px;
+  border-bottom: #222 solid 0.5px;
 }
 
+.a-side-list li::before {
+  content: "・";
+  margin-right: 0.5em;
+  color: #999;
+}
+
+.a-side-inner {
+  position: sticky;
+  top: 120px;
+}
+
+.a-side-list li.active {
+  color: #222;
+  font-weight: 700;
+}
+
+@media screen and (max-width: 1024px) {
+  .page-staff__title {
+    padding-left: 1rem;
+    margin-left: 169px;
+  }
+  .page-staff__title::before {
+    display: none;
+  }
+}
 .accordion-content {
   display: none;
   padding: 1em;

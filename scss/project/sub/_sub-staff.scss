@@ -3,7 +3,7 @@
     grid-template-columns: repeat(3, 1fr); /* 2列 */
     grid-template-rows: repeat(2, 1fr);   /* 3行 */
 	column-gap: 43px;
-	row-gap: 48px;
+	row-gap: 135px;
 
     @media screen and (max-width: 1024px) {
         display: grid;
@@ -29,7 +29,9 @@
     }
     
 }
-
+.staff-mv-item {
+    padding: 5px 9px;
+}
 .sub-staff-box {
     margin-top: 0;
     position: relative;
@@ -40,7 +42,7 @@
 }
 .sub-staff-box-img {
     position: absolute;
-    bottom: 16%;
+    bottom: -88px;
     @media screen and (max-width: 1024px) {
         bottom: 14%;
     }
@@ -56,11 +58,11 @@
     line-height: 1.2;
     background-color: #AFA86F;
     inline-size: fit-content;
-    padding-top: 6px;
-    padding-bottom: 6px;
-    padding-inline: 6px;
+    padding-top: 4px;
+    padding-bottom: 5px;
+    padding-inline: 7px;
 }
 .sub-staff-sec {
     margin-top: 130px;
-    margin-bottom: 130px;
+    margin-bottom: 232px;
 }
