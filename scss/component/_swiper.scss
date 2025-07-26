@@ -6,7 +6,7 @@
     z-index: 2;
     text-align: center;
     top: 91.5%;
-    left: 50%;
+    left: 49.59%;
     transform: translate(-50%, -50%);
 
     @media screen and (max-width: 768px) {
@@ -37,7 +37,7 @@
 
 .slider {
     width: 100%;
-    margin-top: 101px;
+    margin-top: 46px;
     margin-bottom: 80px;
     background-color: #fff;
     position: relative;
@@ -60,7 +60,14 @@
         width: 100%;
         display: block;
     }
+
 }
+
+
+.swiper-slide:nth-child(even) {
+    margin-top: 35px;
+}
+
 
 .swiper-slide.alt {
     margin-top: 36px;

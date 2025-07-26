@@ -42,25 +42,6 @@ const swiper1 = new Swiper('.infinity-slider .slider', {
 });
 
 
-//   ＿＿＿＿＿＿＿＿＿スクロール後ヘッダーが降りてくる＿＿＿＿＿＿
-
-
-window.addEventListener('scroll', function () {
-    const header = document.querySelector('.header');
-    const mv = document.querySelector('.mv');
-    const mvHeight = mv.offsetHeight; // mvの高さを取得
-    const scrollY = window
-
-    if (scrollY >= mvHeight) {
-        header.classList.add('header--sticky');
-        document.body.style.marginTop = header.offsetHeight + 'px'; // コンテンツにヘッダーの高さ分の余白を設定
-    } else {
-        header.classList.remove('header--sticky');
-        document.body.style.marginTop = '0'; // コンテンツの余白をリセット
-    }
-});
-
-
 // _____レスポンシブの375px未満のviewport画面幅を固定_______
 
 $(function () {
@@ -151,6 +132,8 @@ document.addEventListener("DOMContentLoaded", () => {
     document.querySelectorAll(".fade-up").forEach(el => observer.observe(el));
 });
 
+
+
 // ___________________MVの写真切り替え＿＿＿＿＿＿＿＿＿＿＿＿＿＿
 
 
@@ -186,7 +169,8 @@ const swiper2 = new Swiper('.limited-slider', {
         0: { slidesPerView: 1, spaceBetween: 15 },
         600: { slidesPerView: 2, spaceBetween: 24 },
         1024: { slidesPerView: 3, spaceBetween: 34 },
-        1440: { slidesPerView: 4, spaceBetween: 42 }
+        1400: { slidesPerView: 3.5, spaceBetween: 30 },
+        1500: { slidesPerView: 4, spaceBetween: 30 }
     }
 });
 
@@ -205,7 +189,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     window.addEventListener('scroll', function () {
         const sections = getSections();
-        const scrollPos = window.pageYOffset + 200;
+        const scrollPos = window.pageYOffset + 250;
         let currentId = sections[0].id;
 
         for (const sec of sections) {
@@ -215,5 +199,28 @@ document.addEventListener('DOMContentLoaded', function () {
         items.forEach(li => {
             li.classList.toggle('active', li.dataset.target === currentId);
         });
+    });
+});
+
+//   ＿＿＿＿＿＿＿＿＿スクロール後ヘッダーが降りてくる＿＿＿＿＿＿
+
+
+document.addEventListener('DOMContentLoaded', () => {
+    const header = document.querySelector('.header');
+    const mv = document.querySelector('.mv');
+
+    if (!header || !mv) return;
+
+    window.addEventListener('scroll', () => {
+        const scrollTop = window.scrollY;
+        const mvHeight = mv.offsetHeight;
+
+        if (scrollTop >= mvHeight) {
+            header.classList.add('header--sticky');
+            document.body.style.marginTop = header.offsetHeight + 'px';
+        } else {
+            header.classList.remove('header--sticky');
+            document.body.style.marginTop = '0';
+        }
     });
 });

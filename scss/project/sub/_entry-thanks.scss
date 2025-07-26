@@ -13,6 +13,7 @@
     background-color: #FAF7F1;
     padding-top: 33px;
     padding-bottom: 57px;
+    margin-bottom: 136px;
     @media screen and (max-width: 768px) {
         padding-top: 24px;
         padding-bottom: 40px;
@@ -33,16 +34,15 @@
 
 .sub-title-entry {
     font-size: 2rem;
-    padding-top: 58px;
+    padding-top: 44px;
     @media screen and (max-width: 768px) {
         font-size: 1.25rem;
     }
 }
 .entry-message {
-    font-size: 1.5rem;
     line-height: 1.5;
     font-weight: 400;
-    padding-top: 51px;
+    padding-top: 38px;
     padding-bottom: 95px;
 
     br {

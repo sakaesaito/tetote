@@ -1,9 +1,10 @@
 .accordion-content {
     display: none;
-    padding: 1em;
-    padding-left: 30px;
+    padding-left: 37px;
     border-bottom: #AFA86F 1px solid;
-    transition: max-height 0.4s ease, opacity 0.4s ease;
+    transition: max-height 0.5s ease, opacity 0.5s ease;
+    padding-bottom: 34px;
+    line-height: 1;
 }
 .accordion-content.active {
     padding-top: 0;
@@ -22,14 +23,14 @@
         align-items: center;
         justify-content: space-between;
         cursor: pointer;
-        padding-top: 30px;
-        padding-bottom: 30px;
+        padding-top: 14x;
+        padding-bottom: 16px;
         border-bottom: 1px solid #AFA86F;
         font-weight: bold;
         background: #fff;
         position: relative;
-        gap: 1em;
-        transition: .4s;
+        gap: 22px;
+        transition: .5s;
 
         &:hover {
             opacity: .7;
@@ -44,8 +45,10 @@
 .accordion-header.active {
     background: #fff;
     border-bottom: none;
-    transition: .4;
-    padding-bottom: 0;
+    transition: .4s;
+    padding-bottom: 2px;
+    padding-top: 12px;
+    padding-left: 3px;
 }
 
 #faq-btn {

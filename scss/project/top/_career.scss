@@ -1,17 +1,12 @@
 .career {
-    padding-top: 68px;
+    padding-top: 64px;
     padding-bottom: 139px;
     background-color: #FAF7F1;
     @media screen and (max-width: 1024px) {
         padding-bottom: 88px;
     }
 }
-.career-inner {
-    padding-right: 20px;
-    @media screen and (max-width: 1024px) {
-        padding-right: 0;
-    }
-}
+
 .career-content-title {
     text-align: center;
     position: relative;
@@ -23,7 +18,7 @@
     &::after {
         content: "";
     position: absolute;
-    left: 4%;
+    left: 5%;
     top: 0;
     width: 100%;
     height: 100%;

@@ -1,11 +1,8 @@
 .staff {
-    padding-top: 66px;
-    padding-bottom: 63px;
+    padding-top: 142px;
     position: relative;
 }
 .staff-inner {
-    width: 100%;
-    // max-width: 1199px;
     padding-left: 16.8%;
 
     @media screen and (max-width: 1024px) {
@@ -65,7 +62,17 @@
 
 }
 .staff-sec {
-    margin-top: 52px;
+        width: 100%;
+        margin-bottom: 80px;
+        margin-bottom: 0;
+        background-color: #fff;
+        position: relative;
+        margin-top: 52px;
+    
+        @media screen and (max-width: 768px) {
+            margin-top: 41px;
+            margin-bottom: 55px;
+        }
 }
 .staff-box {
     position: relative;
@@ -107,21 +114,26 @@
     line-height: 1;
 }
 
-.viewmore-button-staff{
-    margin-top: 140px;
-}
-
 .section-title-staff {
     position: absolute;
     top: 72px;
 }
 .staff-box-img {
     position: relative;
-    bottom: 70px;
+    bottom: 78px;
 }
 .staff-box-img-box2 {
     position: relative;
-    bottom: 70px;
+    bottom: 78px;
 }
 
+.staff-box:nth-child(2),
+.staff-box:nth-child(4),
+.staff-box:nth-child(6n+2),
+.staff-box:nth-child(6n+4) {
+    margin-top: 35px;
+}
 
+.viewmore-button-staff {
+    margin-top: 0;
+}
