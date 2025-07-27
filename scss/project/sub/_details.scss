@@ -26,6 +26,9 @@
             display: inline;
         }
     }
+    @media screen and (max-width: 768px) {
+        font-size: 1.5rem;
+    }
 
 }
 .details-lead {
@@ -50,7 +53,7 @@
     margin-top: 63px;
 
     @media screen and (max-width: 768px) {
-        padding-top: 45px;
+        padding-top: 0;
     }
 
     @media screen and (max-width: 1024px) {
@@ -106,6 +109,9 @@
 }
 .details-list-sec {
     margin-top: 86px;
+    @media screen and (max-width: 1024px) {
+        margin-top: 30px;
+    }
 }
 .details-list-title {
     width: 19%;

@@ -22,6 +22,10 @@
     padding-inline: 1.81%;
     height: inherit;
     width: 100%;
+    @media screen and (max-width: 768px) {
+        height: 0;
+    }
+
 }
 .header-logo {
     width: 100%;
@@ -41,7 +45,9 @@
     }
 
     @media screen and (max-width: 768px) {
-        margin-left: 0;
+        max-width: 150px;
+        margin-left: 4px;
+        margin-top: 50px;
     }
 }
 .header-link {
@@ -136,8 +142,8 @@
         opacity: .7;
     }
     @media screen and (max-width: 768px) {
-        margin-top: 0.5rem;
-        margin-left: 0;
+        margin-top: 47px;
+        margin-right: -2px;
     }
 }
 .header-hamburger-icon span {
@@ -149,6 +155,13 @@
     height: 2px;
     background-color: #fff;
     margin: 0 auto;
+    @media screen and (max-width: 768px) {
+        top: 12px;
+        left: 25%;
+        width: 32px;
+        height: 2px;
+    }
+
 }
 .sub-hamburger-icon span {
     display: block;
@@ -159,15 +172,26 @@
     height: 2px;
     background-color: #222;
     margin: 0 auto;
+    @media screen and (max-width: 768px) {
+        top: 12px;
+        left: 25%;
+        width: 32px;
+    }
 
 }
 
 .header-hamburger-icon span:nth-of-type(2) {
     margin-top: 12px;
+    @media screen and (max-width: 768px) {
+        margin-top: 7px;
+    }
 }
 
 .header-hamburger-icon span:nth-of-type(3) {
     margin-top: 12px;
+    @media screen and (max-width: 768px) {
+        margin-top: 7px;
+    }
 }
 
 .header-hamburger-item {
@@ -177,6 +201,10 @@
     line-height: 1;
     font-weight: 400;
     color:#fff;
+    @media screen and (max-width: 768px) {
+        font-size: 0.65rem;
+        margin-top: 4px;
+    }     
 }
 
 
@@ -192,6 +220,10 @@
 /* .header-hamburgerクラスがactiveの時のコード*/
 .header-hamburger.active span:nth-child(1) {
     transform: rotate(45deg) translate(8px, 12px);
+    background-color: #222;
+    @media screen and (max-width: 768px) {
+        transform: rotate(45deg) translate(1px, 5px);
+    }
 }
 
 .header-hamburger.active span:nth-child(2) {
@@ -200,6 +232,7 @@
 
 .header-hamburger.active span:nth-child(3) {
     transform: rotate(-45deg) translate(8px, -12px);
+    background-color: #222;
 }
 .header-hamburger.active .header-hamburger-item {
     display: none;

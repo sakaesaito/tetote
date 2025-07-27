@@ -1,6 +1,10 @@
 .benefits {
     padding-top:138px;
     padding-bottom: 176px;
+    @media screen and (max-width: 768px) {
+        padding-top: 83px;
+        padding-bottom: 187px;
+    }
 }
 .benefits-text-wrapper {
     text-align: center;
@@ -13,6 +17,10 @@
 .benefits-content-item {
     margin-top: 22px;
     margin-left: 44px;
+    @media screen and (max-width: 768px) {
+        margin-left: 0;
+        margin-top: 30px;
+    }
 }
 .content-title-benefits {
     // text-align: center;
@@ -62,6 +70,13 @@
             margin-top: 150px;
         }
     }
+    @media screen and (max-width: 768px) {
+        margin-top: 47px;
+        &:nth-child(2) {
+            margin-top: 145px;
+        }
+
+    }
 }
 
 .benefits-img-box {
@@ -84,12 +99,20 @@
     @media screen and (max-width: 1024px) {
     margin-top: 2em;
     }
+    @media screen and (max-width: 768px) {
+        margin-top: 4em;
+        width: 79%;
+    }
 }
 .benefits-img-box-pic {
     margin-top: 6.4em;
 
     @media screen and (max-width: 1024px) {
     margin-top: 1em;
+    }
+    @media screen and (max-width: 768px) {
+    margin-top: 38px;
+        width: 79%;
     }
 }
 .benefits-img-message {
@@ -113,6 +136,11 @@
         top: 70px;
         right: -84px;
     }
+    @media screen and (max-width: 768px) {
+        font-size: 0.75rem;
+        top: 64px;
+        right: -64px;
+    }
 }
 
 .benefits-button-wrapper {
@@ -124,8 +152,8 @@
     @media screen and (max-width: 1280px) {
         margin-top: -45px;
     }
-    @media screen and (max-width: 1024px) {
-        margin-top: -7px;
+    @media screen and (max-width: 768px) {
+        margin-top: -20px;
         padding-right: 0;
     }
     a {
@@ -164,6 +192,12 @@
         
         }      
     }
+    @media screen and (max-width: 768px) {
+        a {
+            bottom: 148px;
+            right: 59px;
+        }
+    }
 }
 .benefits-img-title {
     font-size: 2rem;
@@ -175,8 +209,14 @@
     @media screen and (max-width: 1024px) {
         font-size: 1.5rem;
     }
-    
+    @media screen and (max-width: 768px) {
+        padding: 8px 7px;
+        line-height: 1;
+    }
 }
+
+    
+
 
 .benefits-img-item {
     margin-top: 31px;

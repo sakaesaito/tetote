@@ -15,20 +15,21 @@
     transform: translateX(0%);
     opacity: 1;
     pointer-events: all;
-    color: #000;
+    color: #222;
     overflow-y: auto;
     -webkit-overflow-scrolling: touch;
     padding-bottom: 10%;
     
     @media screen and (max-width: 768px) {
         top: 90px;
+        margin-top: -5px;
     }
 }
 .drawer-inner {
     display: flex;
     padding-inline: 0.84vw;
     justify-content: end;
-    padding-inline: 9.1vw;
+    padding-inline: 9.6vw;
     align-items: center;
     width: 100%;
     @media screen and (max-width: 1024px) {
@@ -40,15 +41,19 @@
 .drawer-left {
     max-width: 250px;
     width: 100%;
-    margin-right: 63px;
-
+    margin-right: 77px;
+    margin-top: 57px;
     @media screen and (max-width: 1024px) {
         display: none;
     }
 }
 .drawer-logo-link {
-    padding: 95% 15%;
+    padding:84% 24% 72% 6%;
     border-right: #AFA86F 1px solid;
+    transition: 0.3s;
+    &:hover {
+        opacity: .7;
+    }
 }
 .drawer-right {
     margin-left: 63px;
@@ -60,7 +65,7 @@
     display: flex;
     text-align: left;
     align-items: center;
-    margin-top: 90px;
+    margin-top: 107px;
     gap: 30px;
     justify-content: center;
 
@@ -68,6 +73,10 @@
         display: block;
         margin-top: 43px;
     }
+    @media screen and (max-width: 768px) {
+        margin-top: 0px;
+    }
+
 }
 .drawer-item {
     border-bottom: solid 1px #AFA86F;
@@ -88,8 +97,8 @@
 }
 .drawer-item a {
     list-style: none;
-    padding-top: 32px;
-    padding-bottom: 32px;
+    padding-top: 26px;
+    padding-bottom: 14px;
     font-size: 2rem;
     line-height: 1;
     font-family: Viga;
@@ -103,7 +112,7 @@
     }
     
     span {
-        font-size: 0.6875rem;
+        font-size: 1rem;
         font-weight: 700;
         margin-top: 11;
         font-family: Noto sans jp;
@@ -111,6 +120,17 @@
     @media screen and (max-width: 1024px) {
         width: 100%;
     }
+    @media screen and (max-width: 768px) {
+        padding-top: 15px;
+        padding-bottom: 12px;
+        font-size: 18px;
+        span {
+            font-size: 12px;
+            display: block;
+            padding-top: 7px;
+        }
+    }
+
 }
 .drawer-button {
     display: flex;
@@ -125,10 +145,16 @@
         width: 100%;
         margin: 53px auto 0 auto;
     }
+    @media screen and (max-width: 768px) {
+        display: block;
+        max-width: 248px;
+        width: 100%;
+        margin: 53px auto 0 0;
+    }
 
     a {
-        padding-top: 16px;
-        padding-bottom: 16px;
+        padding-top: 14px;
+        padding-bottom: 14px;
         width: 100%;
         transition: all 0.3s ease 0s;
         text-align: center;
@@ -137,6 +163,8 @@
         cursor: pointer;
             @media screen and (max-width: 1024px) {
                 display: block;
+                padding-top: 15px;
+                padding-bottom: 15px;
             }
         }
 

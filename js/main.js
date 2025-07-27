@@ -149,7 +149,7 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 
-// _____________________2つ目のスライダー＿＿＿＿＿＿＿＿＿＿＿＿＿
+// ________________2つ目のスライダー＿＿＿＿＿＿＿＿＿
 
 
 const swiper2 = new Swiper('.limited-slider', {
@@ -166,7 +166,7 @@ const swiper2 = new Swiper('.limited-slider', {
     },
 
     breakpoints: {
-        0: { slidesPerView: 1, spaceBetween: 15 },
+        0: { slidesPerView: 1.4, spaceBetween: 20 },
         600: { slidesPerView: 2, spaceBetween: 24 },
         1024: { slidesPerView: 3, spaceBetween: 34 },
         1400: { slidesPerView: 3.5, spaceBetween: 30 },

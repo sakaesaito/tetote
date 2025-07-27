@@ -19,6 +19,9 @@
     position: relative;
     height: 823px;
     overflow: hidden;
+    @media screen and (max-width: 768px) {
+        height: 668px;
+    }
 }
 .mv-slide {
     position: absolute;
@@ -48,8 +51,8 @@
     text-shadow: 0px 4px 4px  #00000040;
     @media screen and (max-width: 768px) {
         font-size: 3rem;
-        top: 33rem;
-        left: 1rem;
+        left: 12px;
+        top: 413px;
     }
 }
 
@@ -115,9 +118,9 @@
     }
 
     @media screen and (max-width: 768px) {
-        margin-right: 0.75rem;
         left: 0.75rem;
-        width: 95%;
+        width: 93%;
+        bottom: 14px;
     }
 }
 .mv-news-wrap {
@@ -135,8 +138,8 @@
     z-index: 2;
 
     @media screen and (max-width: 768px) {
-        font-size: 12px;
-        padding: 0.75rem;
+        font-size: 10px;
+        padding: 15px 12px 12px;
     }
 }
 .mv-news-item {
@@ -151,10 +154,12 @@
     line-height: 1;
 
     @media screen and (max-width: 1024px) {
+        display: none;
         border-radius: 0 50px 50px 0;
     }
     @media screen and (max-width: 768px) {
-        font-size: 14px;
+        font-size: 12px;
+        padding: 0;
     }
 
     a{
@@ -162,10 +167,39 @@
         padding: 24px 7px 23px 88;
 
         @media screen and (max-width: 768px) {
-            padding: 0.625rem 0 0.625rem 10%;
+            padding: 10px;
         }
     }
 }
+.mv-news-item2 {
+    display: none;
+    @media screen and (max-width: 1024px) {
+        width: 100%;
+        background-color: #FFF;
+        color: #222;
+        font-weight: 400;
+        font-size: 1rem;
+        z-index: 3;
+        padding: 24px;
+        line-height: 1;
+        display: block;
+        border-radius: 0 50px 50px 0;
+    }
+    @media screen and (max-width: 768px) {
+        font-size: 12px;
+        padding: 0;
+    }
+    a{
+        display: inline-block;
+        padding: 24px 7px 23px 88;
+
+        @media screen and (max-width: 768px) {
+            padding: 10px;
+        }
+    }
+
+}
+
 .mv-news-link {
     display: block;
     width: 25%;

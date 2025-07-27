@@ -10,14 +10,13 @@
         grid-template-columns: repeat(2, 1fr); /* 2列 */
         grid-template-rows: repeat(3, 1fr);   /* 3行 */
         column-gap: 20px;
-        row-gap: 40px;
+        row-gap: 100px;
     }
     @media screen and (max-width: 768px) {
         display: grid;
         grid-template-columns: repeat(1, 1fr); /* 2列 */
         grid-template-rows: repeat(6, 1fr);   /* 3行 */
         column-gap: 10px;
-        row-gap: 48px;
     }
 }
 .sub-inner-staff {
@@ -35,19 +34,19 @@
 .sub-staff-box {
     margin-top: 0;
     position: relative;
-
     @media screen and (max-width: 1024px) {
         margin-left:  0;
+        margin-inline: auto;
     }
 }
 .sub-staff-box-img {
     position: absolute;
     bottom: -88px;
     @media screen and (max-width: 1024px) {
-        bottom: 14%;
+        bottom: -82px;
     }
     @media screen and (max-width: 768px) {
-        bottom: 9%;
+        bottom: -82px;
     }
 }
 

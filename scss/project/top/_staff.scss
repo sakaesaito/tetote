@@ -1,6 +1,9 @@
 .staff {
     padding-top: 142px;
     position: relative;
+    @media screen and (max-width: 768px) {
+        padding-top: 83px;
+    }
 }
 .staff-inner {
     padding-left: 16.8%;
@@ -59,6 +62,10 @@
         font-weight: 400;
         line-height: 1.5;
     }
+    @media screen and (max-width: 768px) {
+        margin-top: 28px;
+        margin-right: 13px;
+    }
 
 }
 .staff-sec {
@@ -70,8 +77,8 @@
         margin-top: 52px;
     
         @media screen and (max-width: 768px) {
-            margin-top: 41px;
-            margin-bottom: 55px;
+            margin-top: 50px;
+            padding-left: 10px;
         }
 }
 .staff-box {
@@ -99,19 +106,42 @@
     inline-size: fit-content;
     margin-top: 6px;
     padding: 4px;
+    @media screen and (max-width: 768px) {
+        font-size: 1rem;
+        &:nth-child(2){
+            margin-top: 9px;
+        }
+    }
+}
+.staff-box-year {
+    font-size: 0.75rem;
+    margin-top: 4px;
 }
 .staff-box-past {
     display: flex;
     margin-top: 4px;
+    @media screen and (max-width: 768px) {
+        font-size: 1rem;
+        &:nth-child(2){
+            margin-top: 9px;
+        }
+    }
 }
 .staff-box-position {
     margin-right: 10px;
+    @media screen and (max-width: 768px) {
+        font-size: 0.75rem;
+        margin-top: 5px;
+    }
 }
 .staff-box-name {
     font-weight: 700;
     font-size: 1.5rem;
     margin-top: 8px;
     line-height: 1;
+    @media screen and (max-width: 768px) {
+        font-size: 1.25rem;
+    }
 }
 
 .section-title-staff {
@@ -121,10 +151,16 @@
 .staff-box-img {
     position: relative;
     bottom: 78px;
+    @media screen and (max-width: 768px) {
+        bottom: 38px;
+    }
 }
 .staff-box-img-box2 {
     position: relative;
     bottom: 78px;
+    @media screen and (max-width: 768px) {
+        bottom: 60px;
+    }
 }
 
 .staff-box:nth-child(2),
@@ -132,6 +168,9 @@
 .staff-box:nth-child(6n+2),
 .staff-box:nth-child(6n+4) {
     margin-top: 35px;
+    @media screen and (max-width: 768px) {
+        margin-top: 28px;
+    }
 }
 
 .viewmore-button-staff {

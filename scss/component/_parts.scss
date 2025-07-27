@@ -34,6 +34,9 @@ button {
         border-top: 3px solid #222222;
         transform: rotate(45deg);
         transition: all 0.5s;
+        @media screen and (max-width: 768px) {
+            right: 22px;
+        }
     }
 
     &:hover {
@@ -48,12 +51,17 @@ button {
 
     @media screen and (max-width: 1024px) {
         margin-top: 39px;
+        max-width: 278px;
+        font-size: 1rem;
     }
 }
 
 .viewmore-button a {
     display: block;
-    padding: 1.5rem 7.75rem;
+    padding: 1.5rem 3.75rem;
+    @media screen and (max-width: 768px) {
+        padding: 17px;
+    }
 
 }
 
@@ -132,7 +140,8 @@ button {
     position: absolute;
     bottom: 8px;
     right: 157px;
-    @media screen and (max-width: 1024px) {
+
+    @media screen and (max-width: 1200px) {
         display: none;
         width: 32px;
         height: 32px;

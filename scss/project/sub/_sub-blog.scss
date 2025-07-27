@@ -108,4 +108,10 @@
         gap: 20px;
     }
 }
+.blog-box {
+    transition: .4s;
+    &:hover {
+        opacity: .7;
+    }
+}
 

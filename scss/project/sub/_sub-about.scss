@@ -299,6 +299,9 @@
     font-family: "Viga";
     line-height: 1;
     inline-size: fit-content;
+    @media screen and (max-width: 1024px) {
+        font-size: 3rem;
+    }
 }
 
 .sub-mv-item {
@@ -309,6 +312,13 @@
     line-height: 1;
     inline-size: fit-content;
     margin-top: 18px;
+    @media screen and (max-width: 1024px) {
+        font-size: 1.25em;
+        margin-top: 10px;
+    }
+    @media screen and (max-width: 735px) {
+        font-size: 1em;
+    }
 }
 
 .sub-mv-part {
@@ -320,6 +330,15 @@
     color: #988C2C;
     inline-size: fit-content;
     margin-top: 18px;
+    @media screen and (max-width: 1024px) {
+        font-size: 1rem;
+        margin-top: 10px;
+        padding: 5px 7px;
+    }
+    @media screen and (max-width: 1024px) {
+        padding: 3px 5px;
+        font-size: 0.875rem;
+    }
 }
 
 // --------------------------------------------
@@ -341,7 +360,6 @@
         padding-inline: 3%;
     }
 }
-
 
 .sub-aboutus-title {
     line-height: 1.5;
