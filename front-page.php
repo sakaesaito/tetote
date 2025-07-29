@@ -4,34 +4,42 @@
     <section class="mv">
         <div class="mv-inner">
             <div class="mv-bg">
-                <div class="mv-img" id="mvImg" style="background-image: url('<?php echo get_template_directory_uri(); ?>/img/fv01.jpg');">
+                <div class="mv-img-slider">
+                    <img src="<?php echo get_template_directory_uri(); ?>/img/fv01.jpg" alt="" class="mv-slide active">
+                    <img src="<?php echo get_template_directory_uri(); ?>/img/fv02.jpg" alt="" class="mv-slide">
+                </div>
+                <div class="mv-img">
                     <h2 class="mv-message-main">BECOME A<br> CHALLENGER.</h2>
                     <div class="mv-message-sub">君の挑戦が、意思が、未来を変える</div>
                     <div class="container">
                         <div class="skew-background"></div>
                     </div>
                     <div class="mv-news-box">
-                        <div class="mv-news-title"><a href="<?php echo home_url('/blog/'); ?>">NEWS</a></div>
-                        <div class="mv-news-item"><a href="<?php echo home_url('/blog/'); ?>">新入社員に向けに、入社名研修を行いました。</a></div>
-                        <div class="mv-news-link"><a href="<?php echo home_url('/blog/'); ?>">VIEW MORE</a></div>
+                        <?php if (have_posts()): while (have_posts()): the_post(); ?>
+                                <div class="mv-news-title"><a href="<?php echo home_url('/blog/'); ?>">NEWS</a></div>
+                                <div class="mv-news-item"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></div>
+                                <div class="mv-news-link"><a href="<?php echo home_url('/blog/'); ?>">VIEW MORE</a></div>
+                        <?php endwhile;
+                        endif; ?>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Swiper Section -->
-    <section class="swiper">
-        <div class="slider">
+    <!-- Infinity Slider セクション -->
+    <section class="swiper infinity-slider">
+        <div class="slider slider">
             <div class="swiper-wrapper">
                 <?php
                 $slide_images = ['top-slide01.jpg', 'top-slide02.jpg', 'top-slide03.jpg'];
-                foreach ($slide_images as $image) {
-                    for ($i = 0; $i < 2; $i++) {
-                        echo '<div class="swiper-slide"><img src="' . esc_url(get_template_directory_uri() . '/img/' . $image) . '" alt=""></div>';
-                    }
-                }
+                for ($i = 0; $i < 9; $i++):
+                    $img = $slide_images[$i % 3];
                 ?>
+                    <div class="swiper-slide">
+                        <img src="<?php echo get_template_directory_uri() . '/img/' . esc_html($img); ?>" alt="">
+                    </div>
+                <?php endfor; ?>
             </div>
             <div class="slider-heading">
                 <p class="slider-heading-ms">後悔しないキャリアを作る、</p><br>
@@ -39,73 +47,226 @@
             </div>
         </div>
     </section>
-
-    <!-- About Section -->
     <section id="about" class="about">
         <div class="inner">
             <div class="about-viw">
                 <div class="about-lead">
-                    <p class="about-lead-ms">「人手不足」<br>今の日本が抱えるこの社会課題に挑み、<br>企業と個人の可能性を最大限に引き出す。<br>それが私達の役目。</p>
-                    <p class="about-lead-ms about-lead-ms2">単につなぐだけじゃない。<br>「手と手」を取り合っていけるような、<br>持続可能な社会を、一緒に作りませんか？</p>
+                    <p class="about-lead-ms">
+                        「人手不足」<br>
+                        今の日本が抱えるこの社会課題に挑み、<br>
+                        企業と個人の可能性を最大限に引き出す。<br>
+                        それが私達の役目。
+                    </p>
+                    <p class="about-lead-ms about-lead-ms2">
+                        単につなぐだけじゃない。<br>
+                        「手と手」を取り合っていけるような、<br>
+                        持続可能な社会を、一緒に作りませんか？
+                    </p>
                 </div>
             </div>
-            <div class="viewmore-button"><a href="<?php echo home_url('/about/about-us.html'); ?>">VIEW MORE</a></div>
+            <div class="viewmore-button">
+                <a href="<?php echo esc_url(home_url('http://tetote.local/about/')); ?>">VIEW MORE</a>
+            </div>
         </div>
     </section>
 
-    <!-- Staff Section -->
+    <!-- STAFF セクション -->
     <section id="staff" class="staff">
-        <div class="section-title section-title-staff">MEMBER</div>
-        <div class="inner staff-inner">
+        <div class="staff-inner">
             <div class="content-wrapper">
                 <div class="text-wrapper staff-text-wrapper">
-                    <div class="staff-section-title">
-                        <h2 class="content-title staff-content-title"><span>人</span>を知る</h2>
-                    </div>
-                    <p class="content-item staff-content-item">TETOTEの社員がどういった信念を持って働いているのか、<br>一日のスケジュールや仕事内容などを紹介します。</p>
+                    <h2 class="content-title staff-content-title"><span>人</span>を知る</h2>
+                    <p class="content-item staff-content-item">社員がどういった信念を持って働いているのかを紹介します。</p>
                 </div>
             </div>
-            <div class="staff-sec">
-                <div class="staff-sec-inner">
-                    <div class="staff-box-wrapper">
+            <div class="staff-sec slider-post slider">
+                <div class="staff-sec-inner swiper limited-slider">
+                    <div class="staff-box-wrapper swiper-wrapper">
                         <?php
-                        $staffs = [
-                            ['img' => 'syain01.jpg', 'messages' => ['「あなたが担当で良かった」', 'この一言が、最高のやりがい'], 'position' => 'コンサルタント', 'year' => '2011年入社', 'name' => '西村 優'],
-                            ['img' => 'syain02.jpg', 'messages' => ['全力で考えぬける環境', '試練の数だけ強くなれました'], 'position' => 'コンサルタント', 'year' => '2015年入社', 'name' => '橋本 拓也'],
-                            ['img' => 'syain03.jpg', 'messages' => ['お客様も知らない課題を', '一緒に探し出す醍醐味'], 'position' => 'ソリューション営業', 'year' => '2017年入社', 'name' => '青木 美月'],
-                            ['img' => 'syain04.jpg', 'messages' => ['「あなたが担当で良かった」', 'この一言が、最高のやりがい'], 'position' => 'コンサルタント', 'year' => '2004年入社', 'name' => '佐々木 健'],
-                        ];
-
-                        foreach ($staffs as $staff): ?>
-                            <div class="staff-box">
-                                <img src="<?php echo esc_url(get_template_directory_uri() . '/img/' . $staff['img']); ?>" alt="">
-                                <div class="staff-box-img">
-                                    <?php foreach ($staff['messages'] as $msg): ?>
-                                        <h3 class="staff-box-message"><?php echo esc_html($msg); ?></h3>
-                                    <?php endforeach; ?>
-                                    <div class="staff-box-past">
-                                        <p class="staff-box-position"><?php echo esc_html($staff['position']); ?></p>
-                                        <p class="staff-box-year"><?php echo esc_html($staff['year']); ?></p>
+                        $staff_posts = get_posts(['post_type' => 'staff', 'posts_per_page' => 4]);
+                        foreach ($staff_posts as $idx => $staff):
+                            $thumb = get_the_post_thumbnail_url($staff->ID, 'medium');
+                        ?>
+                            <div class="staff-box swiper-slide">
+                                <article class="post-slide-item">
+                                    <img src="<?php echo esc_url($thumb); ?>" alt="<?php echo esc_attr(get_the_title($staff)); ?>">
+                                    <div class="staff-box-img<?php if ($idx % 2 === 1) echo '-box2'; ?>">
+                                        <p class="staff-box-message"><?php echo esc_html(get_field('message_line1', $staff)); ?></p>
+                                        <p class="staff-box-message"><?php echo esc_html(get_field('message_line2', $staff)); ?></p>
+                                        <div class="staff-box-past">
+                                            <p class="staff-box-position"><?php echo esc_html(get_field('position', $staff)); ?></p>
+                                            <p class="staff-box-year"><?php echo esc_html(get_field('year', $staff)); ?></p>
+                                        </div>
+                                        <p class="staff-box-name"><?php echo esc_html(get_the_title($staff)); ?></p>
                                     </div>
-                                    <p class="staff-box-name"><?php echo esc_html($staff['name']); ?></p>
-                                </div>
+                                </article>
                             </div>
-                        <?php endforeach; ?>
+                        <?php endforeach;
+                        wp_reset_postdata(); ?>
                     </div>
                 </div>
-                <div class="viewmore-button viewmore-button-staff"><a href="#">VIEW MORE</a></div>
+            </div>
+            <div class="viewmore-button viewmore-button-staff"><a href="<?php echo home_url('/staff/'); ?>">VIEW MORE</a></div>
+            <div class="page-button-box">
+                <a href="#" class="page-button-white__left">←</a>
+                <a href="#" class="page-button-white__right">→</a>
             </div>
         </div>
     </section>
+    <section id="benefits" class="benefits">
+        <div class="inner">
+            <div class="content-wrapper">
+                <div class="benefits-text-wrapper">
+                    <h2 data-title="" class="content-title content-title-benefits"><span>制度・環境</span>を知る</h2>
+                    <p class="content-item benefits-content-item">当社では働く従業員とそのご家族が穏やかに過ごせるよう、多様な研修、福利厚生を提供しています。
+                    </p>
+                </div>
+                <div class="benefits-main-box">
+                    <div class="benefits-img-wrapper">
+                        <div class="benefits-img-box">
+                            <img class="benefits-img-box-pic" src="img/career1.svg" alt="">
+                            <p class="benefits-img-message">Traning And Career</p>
+                        </div>
+                        <div class="benefits-button-wrapper">
+                            <a class="benefits-button" href="/career/">→</a>
+                            <h3 class="benefits-img-title">研修制度とキャリアパス</h3>
+                            <p class="benefits-img-item">個々の目標に合わせたキャリアパスを支える、豊富な研修メニューで、あなた自身の成長を強力にサポートします。</p>
+                        </div>
+                    </div>
+                    <div class="benefits-img-wrapper">
+                        <div class="benefits-img-box">
+                            <img class="benefits-img-box-pic2" src="img/top-welfare.svg" alt="">
+                            <p class="benefits-img-message">Employee Benefits</p>
+                        </div>
+                        <div class="benefits-button-wrapper">
+                            <a class="benefits-button" href="/benefits/">→</a>
+                            <h3 class="benefits-img-title benefits-img-title-title2">福利厚生</h3>
+                            <p class="benefits-img-item">TETOTEの福利厚生制度は、従業員の健康と幸福を重視し、働きやすい環境を提供することを目的としています。</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="blog" class="blog">
+        <div class="inner">
+            <div class="blog-sec">
+                <div class="content-wrapper">
+                    <div class="blog-top">
+                        <div class="blog-top-title-sec">
+                            <h2 class="content-title blog-content-title">採用ブログ</h2>
+                            <p class="content-item blog-content-item">採用情報やイベント情報、社員の紹介など、<br> 日々の現場の様子をご紹介します。</p>
+                        </div>
+                        <div class="blog-top-page">
+                            <a href="/blog/" class="page-button-white__right">→</a>
+                            <a href="/blog/" class="blog-top-link" href="/blog/">VIEW MORE</a>
+                        </div>
+                    </div>
+                    <div class="blog-wrapper">
+                        <ul class="blog-list">
+                            <li class="blog-box">
+                                <a href="/blog/">
+                                    <div class="blog-box-main">
+                                        <div class="thumbnail"><img src="img/blog01.jpg" alt=""></div>
+                                        <div class="blog-box-right">
+                                            <ul class="cat-list">
+                                                <li class="blog-category">社内研修</li>
+                                            </ul>
+                                            <p class="topics">新入社員向けに、入社前研修を行いました。</p>
+                                            <time datetime="2055-02-11" class="date">2055.03.25</time>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="blog-box">
+                                <a href="/blog/">
+                                    <div class="blog-box-main">
+                                        <div class="thumbnail"><img src="img/blog02.jpg" alt=""></div>
+                                        <div class="blog-box-right">
+                                            <ul class="cat-list">
+                                                <li class="blog-category">社内研修</li>
+                                            </ul>
+                                            <p class="topics">内定者向け研修を行いました。</p>
+                                            <time datetime="2024.08.25" class="date">2024.08.25</time>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="blog-box">
+                                <a href="/blog/">
+                                    <div class="blog-box-main">
+                                        <div class="thumbnail"><img src="img/blog03.jpg" alt=""></div>
+                                        <div class="blog-box-right">
+                                            <ul class="cat-list">
+                                                <li class="blog-category">社内イベント</li>
+                                            </ul>
+                                            <p class="topics topics3">【社員旅行2023】沖縄でリフレッシュ！チームワークも深まった！</p>
+                                            <time datetime="2024.03.25" class="date">2024.03.25</time>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="blog-box">
+                                <a href="/blog/">
+                                    <div class="blog-box-main">
+                                        <div class="thumbnail">
+                                            <img src="img/blog04.jpg" alt="">
+                                        </div>
+                                        <div class="blog-box-right">
+                                            <ul class="cat-list">
+                                                <li class="blog-category">お知らせ</li>
+                                            </ul>
+                                            <p class="topics">【新卒採用2024】エントリー受付中！</p>
+                                            <time datetime="2024.03.01" class="date">2024.03.01</time>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="blog-top-page-2">
+                        <div class="page-button-white__right">→</div>
+                        <a class="blog-top-link" href="/blog/">VIEW MORE</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="career" class="career">
+        <div class="inner career-inner">
+            <div class="content-wrapper career-content-wrapper">
+                <div class="text-wrapper2">
+                    <h2 data-title="" class="content-title career-content-title">採用情報</h2>
+                    <p class="content-item career-content-item">
+                        募集要項（職種、業務内容、応募条件、選考フロー）とよくある質問・会社概要などをまとめています。
+                    </p>
+                </div>
+                <div class="career-wrapper">
+                    <div class="link-box">
+                        <div class="link-box-button link-box-button1">
+                            <a href="<?php echo esc_url(home_url('/details/')); ?>">募集要項</a>
+                        </div>
+                        <div class="link-box-button link-box-button1">
+                            <a href="<?php echo esc_url(home_url('/faq/')); ?>">よくある質問</a>
+                        </div>
+                    </div>
+                    <div class="link-box-button link-box-button2">
+                        <a href="<?php echo esc_url(home_url('/about/')); ?>">会社概要</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
 
-    <script>
-        document.addEventListener("DOMContentLoaded", function() {
-            if (window.innerWidth <= 768) {
-                document.getElementById('mvImg').style.backgroundImage = "url('<?php echo get_template_directory_uri(); ?>/img/fv02.jpg')";
-            }
-        });
-    </script>
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        if (window.innerWidth <= 768) {
+            document.getElementById('mvImg').style.backgroundImage = "url('<?php echo get_template_directory_uri(); ?>/img/fv02.jpg')";
+        }
+    });
+</script>
 
 
 
-    <?php get_footer(); ?>
+<?php get_footer(); ?>
