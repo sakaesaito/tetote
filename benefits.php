@@ -13,7 +13,9 @@
     </section>
     <div class="is-small">
         <ol class="c-breadcrumbs">
-            <li><a href="<?php create_breadcrumb(); ?>">TOP</a></li>
+            <li><a href="<?php if ( function_exists('my_breadcrumb_step1') ) {
+    create_breadcrumb_step1();
+}  ?>">TOP</a></li>
             <li><span>BENEFITS</span></li>
         </ol>
     </div>

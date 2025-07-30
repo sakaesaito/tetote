@@ -50,22 +50,23 @@
                     <div class="drawer-right">
                         <div class="drawer-list">
                             <div class="drawer-line">
-                                <div class="drawer-item"><a href="/about/">ABOUT US<br><span>TETOTEについて</span></a></div>
-                                <div class="drawer-item"><a href="/staff/">STAFF<br><span>社員について</span></a></div>
-                                <div class="drawer-item"><a href="/blog/">BLOG<br><span>採用ブログ</span></a></div>
+                                <div class="drawer-item"><a href="<?php echo esc_url(home_url('/about/')); ?>">ABOUT US<br><span>TETOTEについて</span></a></div>
+                                <div class="drawer-item"><a href="<?php echo esc_url(home_url('/staff/')); ?>">STAFF<br><span>社員について</span></a></div>
+                                <div class="drawer-item"><a href="<?php echo esc_url(home_url('/blog/')); ?>">BLOG<br><span>採用ブログ</span></a></div>
                                 <div>
                                     <p class="drawer-parts"></p>
                                 </div>
                             </div>
                             <div>
-                                <div class="drawer-item"><a href="/benefits/">BENEFITS<br><span>福利厚生について</span></a></div>
-                                <div class="drawer-item"><a href="/career/">CARRER<br><span>研修制度とキャリアパス</span></a></div>
-                                <div class="drawer-item"><a href="/faq/">FAQ<br><span>よくある質問</span></a></div>
+                                <div class="drawer-item"><a href="<?php echo esc_url(home_url('/benefits/')); ?>">BENEFITS<br><span>福利厚生について</span></a></div>
+                                <div class="drawer-item"><a href="<?php echo esc_url(home_url('/career/')); ?>">CARRER<br><span>研修制度とキャリアパス</span></a></div>
+                                <div class="drawer-item"><a href="<?php echo esc_url(home_url('/faq/')); ?>">FAQ<br><span>よくある質問</span></a></div>
                             </div>
                         </div>
+
                         <div class="drawer-button">
-                            <a class="drawer-button-recruit" href="/details/">募集要項</a>
-                            <a class="drawer-button-entry" href="/entry/">ENTRY</a>
+                            <a class="drawer-button-recruit" href="<?php echo esc_url(home_url('/details/')); ?>">募集要項</a>
+                            <a class="drawer-button-entry" href="<?php echo esc_url(home_url('/entry/')); ?>">ENTRY</a>
                         </div>
                     </div>
                 </div>

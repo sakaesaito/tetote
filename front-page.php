@@ -124,22 +124,22 @@
                 <div class="benefits-main-box">
                     <div class="benefits-img-wrapper">
                         <div class="benefits-img-box">
-                            <img class="benefits-img-box-pic" src="img/career1.svg" alt="">
+                            <img class="benefits-img-box-pic" src="<?php echo get_template_directory_uri(); ?>/img/career1.svg" alt="">
                             <p class="benefits-img-message">Traning And Career</p>
                         </div>
                         <div class="benefits-button-wrapper">
-                            <a class="benefits-button" href="/career/">→</a>
+                            <a class="benefits-button" href="<?php echo home_url('/career/'); ?>">→</a>
                             <h3 class="benefits-img-title">研修制度とキャリアパス</h3>
                             <p class="benefits-img-item">個々の目標に合わせたキャリアパスを支える、豊富な研修メニューで、あなた自身の成長を強力にサポートします。</p>
                         </div>
                     </div>
                     <div class="benefits-img-wrapper">
                         <div class="benefits-img-box">
-                            <img class="benefits-img-box-pic2" src="img/top-welfare.svg" alt="">
+                            <img class="benefits-img-box-pic2" src="<?php echo get_template_directory_uri(); ?>/img/top-welfare.svg" alt="">
                             <p class="benefits-img-message">Employee Benefits</p>
                         </div>
                         <div class="benefits-button-wrapper">
-                            <a class="benefits-button" href="/benefits/">→</a>
+                            <a class="benefits-button" href="<?php echo home_url('/benefits/'); ?>">→</a>
                             <h3 class="benefits-img-title benefits-img-title-title2">福利厚生</h3>
                             <p class="benefits-img-item">TETOTEの福利厚生制度は、従業員の健康と幸福を重視し、働きやすい環境を提供することを目的としています。</p>
                         </div>
@@ -159,7 +159,7 @@
                         </div>
                         <div class="blog-top-page">
                             <a href="/blog/" class="page-button-white__right">→</a>
-                            <a href="/blog/" class="blog-top-link" href="/blog/">VIEW MORE</a>
+                            <a href="<?php echo esc_url(home_url('/blog/')); ?>" class="blog-top-link" href="/blog/">VIEW MORE</a>
                         </div>
                     </div>
                     <div class="blog-wrapper">
@@ -167,7 +167,7 @@
                             <li class="blog-box">
                                 <a href="/blog/">
                                     <div class="blog-box-main">
-                                        <div class="thumbnail"><img src="img/blog01.jpg" alt=""></div>
+                                        <div class="thumbnail"><img src="<?php echo get_template_directory_uri(); ?>/img/blog01.jpg" alt=""></div>
                                         <div class="blog-box-right">
                                             <ul class="cat-list">
                                                 <li class="blog-category">社内研修</li>
@@ -181,7 +181,7 @@
                             <li class="blog-box">
                                 <a href="/blog/">
                                     <div class="blog-box-main">
-                                        <div class="thumbnail"><img src="img/blog02.jpg" alt=""></div>
+                                        <div class="thumbnail"><img src="<?php echo get_template_directory_uri(); ?>/img/blog02.jpg" alt=""></div>
                                         <div class="blog-box-right">
                                             <ul class="cat-list">
                                                 <li class="blog-category">社内研修</li>
@@ -195,7 +195,7 @@
                             <li class="blog-box">
                                 <a href="/blog/">
                                     <div class="blog-box-main">
-                                        <div class="thumbnail"><img src="img/blog03.jpg" alt=""></div>
+                                        <div class="thumbnail"><img src="<?php echo get_template_directory_uri(); ?>/img/blog03.jpg" alt=""></div>
                                         <div class="blog-box-right">
                                             <ul class="cat-list">
                                                 <li class="blog-category">社内イベント</li>
@@ -210,7 +210,7 @@
                                 <a href="/blog/">
                                     <div class="blog-box-main">
                                         <div class="thumbnail">
-                                            <img src="img/blog04.jpg" alt="">
+                                            <img src="<?php echo get_template_directory_uri(); ?>/img/blog04.jpg" alt="">
                                         </div>
                                         <div class="blog-box-right">
                                             <ul class="cat-list">
@@ -226,7 +226,7 @@
                     </div>
                     <div class="blog-top-page-2">
                         <div class="page-button-white__right">→</div>
-                        <a class="blog-top-link" href="/blog/">VIEW MORE</a>
+                        <a class="blog-top-link" href="<?php echo esc_url(home_url('/blog/')); ?>">VIEW MORE</a>
                     </div>
                 </div>
             </div>

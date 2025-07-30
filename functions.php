@@ -7,6 +7,20 @@ function theme_setup()
 add_action('after_setup_theme', 'theme_setup');
 
 
+
+/*  パンくずリスト生成関数（ステップ1：基本形） */
+function create_breadcrumb_step1() {
+    // トップページの場合は、何も表示しない
+    if ( is_front_page() ) { return; }
+    
+    echo '<nav class="my-breadcrumb">';
+    echo '<a href="' . esc_url( home_url('/') ) . '">ホーム</a>';
+    echo ' <span class="separator">&gt;</span> ';
+    echo '<span class="current-page">' . get_the_title() . '</span>';
+    echo '</nav>';
+}
+
+
 // 管理画面｜投稿の名前変更
 function change_menu_label()
 {

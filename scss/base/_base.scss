@@ -46,3 +46,29 @@ img {
     opacity: 1;
     transform: translateY(0);
 }
+
+.create_breadcrumbs {
+    display: flex;
+    font-weight: 400;
+    height: 54px;
+    align-items: center;
+    max-width: 1024px;
+    margin: 0 auto;
+    padding-left: 24px;
+    font-size: 14px;
+    @media screen and (max-width: 1024px) {
+        padding-left: 15%;
+    }
+
+    @media screen and (max-width: 768px) {
+        padding-left: 5%;
+        height: 40px;
+    }
+}
+
+.c-breadcrumbs span {
+    &::before {
+        content: ">";
+        margin: 0 6px;
+    }
+}
