@@ -1,5 +1,5 @@
 .is-small-blog {
-    padding-top: 118px;
+    margin-top: 118px;
     @media screen and (max-width: 768px) {
         padding-top: 90px;
     }
@@ -116,10 +116,6 @@
     }
 }
     
-
-.page {
-    background-color: #f0f0f0;
-}
 .c-breadcrumbs-blog {
     @media screen and (max-width: 768px) {
         display: none;

@@ -1,5 +1,5 @@
 <footer>
-    <div class="footer-view"></div>
+    <div class="footer-view" style="background-image: url('<?php echo get_template_directory_uri(); ?>/img/footer.jpg');"></div>
     <div class="inner footer-inner">
         <div class="contact-box">
             <p class="content-item footer-contact-item">

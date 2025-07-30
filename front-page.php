@@ -49,7 +49,7 @@
     </section>
     <section id="about" class="about">
         <div class="inner">
-            <div class="about-viw">
+            <div class="about-viw" style="background-image: url('<?php echo get_template_directory_uri(); ?>/img/top-map.jpg');">
                 <div class="about-lead">
                     <p class="about-lead-ms">
                         「人手不足」<br>
@@ -65,7 +65,7 @@
                 </div>
             </div>
             <div class="viewmore-button">
-                <a href="<?php echo esc_url(home_url('http://tetote.local/about/')); ?>">VIEW MORE</a>
+                <a href="<?php echo esc_url(home_url('/about/')); ?>">VIEW MORE</a>
             </div>
         </div>
     </section>
@@ -139,7 +139,7 @@
                             <p class="benefits-img-message">Employee Benefits</p>
                         </div>
                         <div class="benefits-button-wrapper">
-                            <a class="benefits-button" href="<?php echo home_url('/benefits/'); ?>">→</a>
+                            <a class="benefits-button" href="<?php echo esc_url(home_url('/benefits/')); ?>">→</a>
                             <h3 class="benefits-img-title benefits-img-title-title2">福利厚生</h3>
                             <p class="benefits-img-item">TETOTEの福利厚生制度は、従業員の健康と幸福を重視し、働きやすい環境を提供することを目的としています。</p>
                         </div>
@@ -158,14 +158,14 @@
                             <p class="content-item blog-content-item">採用情報やイベント情報、社員の紹介など、<br> 日々の現場の様子をご紹介します。</p>
                         </div>
                         <div class="blog-top-page">
-                            <a href="/blog/" class="page-button-white__right">→</a>
-                            <a href="<?php echo esc_url(home_url('/blog/')); ?>" class="blog-top-link" href="/blog/">VIEW MORE</a>
+                            <a href="<?php echo esc_url(home_url('/blog-detalis/')); ?>" class="page-button-white__right">→</a>
+                            <a href="<?php echo esc_url(home_url('/blog/')); ?>" class="blog-top-link" href="<?php echo esc_url(home_url('/blog/')); ?>">VIEW MORE</a>
                         </div>
                     </div>
                     <div class="blog-wrapper">
                         <ul class="blog-list">
                             <li class="blog-box">
-                                <a href="/blog/">
+                                <a href="<?php echo esc_url(home_url('/blog-detalis/')); ?>">
                                     <div class="blog-box-main">
                                         <div class="thumbnail"><img src="<?php echo get_template_directory_uri(); ?>/img/blog01.jpg" alt=""></div>
                                         <div class="blog-box-right">
@@ -179,7 +179,7 @@
                                 </a>
                             </li>
                             <li class="blog-box">
-                                <a href="/blog/">
+                                <a href="<?php echo esc_url(home_url('/blog-detalis/')); ?>">
                                     <div class="blog-box-main">
                                         <div class="thumbnail"><img src="<?php echo get_template_directory_uri(); ?>/img/blog02.jpg" alt=""></div>
                                         <div class="blog-box-right">
@@ -193,7 +193,7 @@
                                 </a>
                             </li>
                             <li class="blog-box">
-                                <a href="/blog/">
+                                <a href="<?php echo esc_url(home_url('/blog-detalis/')); ?>">
                                     <div class="blog-box-main">
                                         <div class="thumbnail"><img src="<?php echo get_template_directory_uri(); ?>/img/blog03.jpg" alt=""></div>
                                         <div class="blog-box-right">
@@ -207,7 +207,7 @@
                                 </a>
                             </li>
                             <li class="blog-box">
-                                <a href="/blog/">
+                                <a href="<?php echo esc_url(home_url('/blog-detalis/')); ?>">
                                     <div class="blog-box-main">
                                         <div class="thumbnail">
                                             <img src="<?php echo get_template_directory_uri(); ?>/img/blog04.jpg" alt="">

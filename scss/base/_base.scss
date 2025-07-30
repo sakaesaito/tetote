@@ -3,14 +3,17 @@
     margin: 0;
     padding: 0;
     list-style: none;
+    line-height: 1.875;
 }
 
 body {
     font-family: "Noto Sans JP", "Viga", "Poppins";
     font-size: 1rem;
-    line-height: 1.875;
+    line-height: 1;
     color: #222222;
     font-weight: 700;
+    background-color: #fff;
+
 }
 
 @media screen and (max-width: 768px) {
@@ -47,7 +50,11 @@ img {
     transform: translateY(0);
 }
 
-.create_breadcrumbs {
+.create_breadcrumbs
+
+
+
+{
     display: flex;
     font-weight: 400;
     height: 54px;
@@ -65,6 +72,7 @@ img {
         height: 40px;
     }
 }
+
 
 .c-breadcrumbs span {
     &::before {

@@ -7,13 +7,13 @@
     height: 118px;
     background-color: #fff;
 
-    // &.drawer-open {
-    //     background-color: #fff;
+    &.drawer-open {
+        background-color: #fff;
 
-    //     .header-logo__link img {
-    //         content: url('/img/tetote-logo-black.png'); 
-    //     }
-    // }
+        .header-logo__link img {
+            content: url('/img/tetote-logo-black.png'); 
+        }
+    }
 
     @media screen and (max-width: 768px) {
         height: 90px;

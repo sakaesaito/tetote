@@ -8,7 +8,8 @@
     top: 91.5%;
     left: 49.59%;
     transform: translate(-50%, -50%);
-
+    background-color: #fff;
+    
     @media screen and (max-width: 768px) {
         max-width: 335px;
         width: 100%; 
@@ -79,4 +80,7 @@
 .swiper-wrapper {
     display: flex;
     transition-timing-function: linear !important;
+}
+.swiper {
+    background-color: #fff;
 }
