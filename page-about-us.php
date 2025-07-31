@@ -53,7 +53,7 @@
     </div>
 </section>
 <section>
-    <div class="sub-inner">
+    <div class="sub-inner sub-inner-ceo">
         <div>
             <h2 class="sub-title sub-title-message">代表メッセージ</h2>
             <div class="sub-aboutus-ceo">

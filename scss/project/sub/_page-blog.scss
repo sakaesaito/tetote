@@ -1,7 +1,8 @@
 .is-small-blog {
     margin-top: 118px;
     @media screen and (max-width: 768px) {
-        padding-top: 90px;
+        padding-top: 60px;
+        margin-top: 0;
     }
 }
 .blog-detail {
@@ -41,7 +42,7 @@
     }
 }
 .sub-title-blog-detail {
-    margin-top: 16px;
+    margin-top: 10px;
     font-size: 32px;
     line-height: 1.5;
         br {
@@ -96,6 +97,7 @@
     max-width: 1024px;
     width: 100%;
     margin: 0 auto;
+    margin-bottom: 10px;
 }
 .time {
     font-weight: 400;
@@ -106,7 +108,6 @@
 }
 .blog-detail-list {
     margin-top: 50px;
-    padding-left: 17px;
 }
 .blog-detail-news {
     display: flex;
@@ -179,7 +180,12 @@
 }
 .page-blog-date {
     font-size: 12px;
+    line-height: 1;
 }
 .topic {
     padding-top: 3px;
+    font-weight: 400;
+}
+.blog-page {
+    background-color: #F0F0F0;
 }

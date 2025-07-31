@@ -1,7 +1,7 @@
 <?php get_header(); ?>
 
 <section id="details" class="details">
-        <div class="ditails-mv" style="background-image: url('<?php echo get_template_directory_uri(); ?>/img/faq-fv.jpg');">
+        <div class="ditails-mv faq-mv" style="background-image: url('<?php echo get_template_directory_uri(); ?>/img/faq-fv.jpg');">
             <div class="sub-inner sub-inner-mv">
                 <div class="sub-mv-box">
                     <h2 class="sub-mv-title">FAQ</h2>
@@ -46,7 +46,7 @@
                     <div class="accordion-content"><span>弊社採用サイトからエントリーしてください。</span></div>
                 </div>
                 <div class="accordion-item">
-                    <div class="accordion-header">
+                    <div class="accordion-header accordion-header-flow">
                         <span class="q-mark">Q</span>
                         <span class="question-text">選考フローは？</span>
                         <span class="toggle-icon">+</span>

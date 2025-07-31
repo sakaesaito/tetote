@@ -75,44 +75,65 @@
         <div class="staff-inner">
             <div class="content-wrapper">
                 <div class="text-wrapper staff-text-wrapper">
-                    <h2 class="content-title staff-content-title"><span>人</span>を知る</h2>
-                    <p class="content-item staff-content-item">社員がどういった信念を持って働いているのかを紹介します。</p>
+                    <div class="staff-section-title">
+                        <h2 class="content-title staff-content-title"><span>人</span>を知る</h2>
+                    </div>
+                    <p class="content-item staff-content-item">
+                        TETOTEの社員がどういった信念を持って働いているのか、<br>
+                        一日のスケジュールや仕事内容などを紹介します。
+                    </p>
                 </div>
             </div>
             <div class="staff-sec slider-post slider">
                 <div class="staff-sec-inner swiper limited-slider">
                     <div class="staff-box-wrapper swiper-wrapper">
                         <?php
-                        $staff_posts = get_posts(['post_type' => 'staff', 'posts_per_page' => 4]);
-                        foreach ($staff_posts as $idx => $staff):
-                            $thumb = get_the_post_thumbnail_url($staff->ID, 'medium');
+                        $staffs = new WP_Query([
+                            'post_type' => 'staff',
+                            'posts_per_page' => 4,
+                        ]);
+                        if ($staffs->have_posts()) :
+                            while ($staffs->have_posts()) : $staffs->the_post();
+                                $photo = get_field('photo'); // ACF画像
+                                $message1 = get_field('message_1');
+                                $message2 = get_field('message_2');
+                                $position = get_field('position');
+                                $entry_year = get_field('entry_year');
                         ?>
-                            <div class="staff-box swiper-slide">
-                                <article class="post-slide-item">
-                                    <img src="<?php echo esc_url($thumb); ?>" alt="<?php echo esc_attr(get_the_title($staff)); ?>">
-                                    <div class="staff-box-img<?php if ($idx % 2 === 1) echo '-box2'; ?>">
-                                        <p class="staff-box-message"><?php echo esc_html(get_field('message_line1', $staff)); ?></p>
-                                        <p class="staff-box-message"><?php echo esc_html(get_field('message_line2', $staff)); ?></p>
-                                        <div class="staff-box-past">
-                                            <p class="staff-box-position"><?php echo esc_html(get_field('position', $staff)); ?></p>
-                                            <p class="staff-box-year"><?php echo esc_html(get_field('year', $staff)); ?></p>
-                                        </div>
-                                        <p class="staff-box-name"><?php echo esc_html(get_the_title($staff)); ?></p>
-                                    </div>
-                                </article>
-                            </div>
-                        <?php endforeach;
-                        wp_reset_postdata(); ?>
+                                <div class="staff-box swiper-slide">
+                                    <article class="post-slide-item">
+                                        <a href="<?php the_permalink(); ?>">
+                                            <img src="<?php echo esc_url($photo); ?>" alt="<?php the_title_attribute(); ?>">
+                                            <div class="staff-box-img">
+                                                <p class="staff-box-message"><?php echo esc_html($message1); ?></p>
+                                                <p class="staff-box-message"><?php echo esc_html($message2); ?></p>
+                                                <div class="staff-box-past">
+                                                    <p class="staff-box-position"><?php echo esc_html($position); ?></p>
+                                                    <p class="staff-box-year"><?php echo esc_html($entry_year); ?>年入社</p>
+                                                </div>
+                                                <p class="staff-box-name"><?php the_title(); ?></p>
+                                            </div>
+                                        </a>
+                                    </article>
+                                </div>
+                        <?php endwhile;
+                            wp_reset_postdata();
+                        endif; ?>
                     </div>
                 </div>
             </div>
-            <div class="viewmore-button viewmore-button-staff"><a href="<?php echo home_url('/staff/'); ?>">VIEW MORE</a></div>
-            <div class="page-button-box">
-                <a href="#" class="page-button-white__left">←</a>
-                <a href="#" class="page-button-white__right">→</a>
-            </div>
+        </div>
+
+        <div class="viewmore-button viewmore-button-staff">
+            <a href="<?php echo get_post_type_archive_link('staff'); ?>">VIEW MORE</a>
+        </div>
+
+        <div class="page-button-box">
+            <a href="#" class="page-button-white__left">←</a>
+            <a href="#" class="page-button-white__right">→</a>
         </div>
     </section>
+
     <section id="benefits" class="benefits">
         <div class="inner">
             <div class="content-wrapper">
@@ -148,7 +169,7 @@
             </div>
         </div>
     </section>
-    <section id="blog" class="blog">
+    <section id="top-blog" class="top-blog">
         <div class="inner">
             <div class="blog-sec">
                 <div class="content-wrapper">

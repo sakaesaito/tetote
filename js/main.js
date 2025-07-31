@@ -224,3 +224,36 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 });
+
+document.addEventListener('DOMContentLoaded', function () {
+    if (document.body.classList.contains('home')) {
+        const hamburgerSpans = document.querySelectorAll('.header-hamburger span');
+        const mv = document.querySelector('.ditails-mv') || document.querySelector('.mv'); 
+        const whiteLogo = document.querySelector('.logo-white');
+        const blackLogo = document.querySelector('.logo-black');
+
+        if (!mv) return; 
+
+        window.addEventListener('scroll', () => {
+            const scrollTop = window.scrollY;
+            const mvHeight = mv.offsetHeight;
+
+
+            if (scrollTop >= mvHeight) {
+                whiteLogo.classList.add('hidden');
+                blackLogo.classList.remove('hidden');
+
+                hamburgerSpans.forEach(span => {
+                    span.style.backgroundColor = '#222';
+                });
+            } else {
+                hamburgerSpans.forEach(span => {
+                    span.style.backgroundColor = '#fff';
+
+                whiteLogo.classList.remove('hidden');
+                blackLogo.classList.add('hidden');
+                });
+            }
+        });
+    }
+});

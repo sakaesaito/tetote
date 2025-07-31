@@ -16,7 +16,7 @@
     }
 
     @media screen and (max-width: 768px) {
-        height: 90px;
+        height: 60px;
     }
 }
 
@@ -88,7 +88,7 @@
 
 .header-button {
     display: block;
-    margin-right: 22px;
+    margin-right: 33px;
     padding: 14px 34px 14px 34px;
     transition: all 0.3s ease 0s;
     text-align: center;
@@ -199,7 +199,7 @@
     background-position: center;
     width: 100%;
     @media screen and (max-width: 768px) {
-        margin-top: 90px;
+        margin-top: 60px;
     }
 }
 
@@ -216,15 +216,18 @@
     @media screen and (max-width: 1024px) {
         padding-inline: 15%;
         &-mv {
-            padding-top: 10%;
+            padding-top: 146px;
         }
     }
     @media screen and (max-width: 768px) {
         padding-inline: 2%;
 
         &-mv {
-            padding-top: 15%;
+            padding-top: 146px;
         }
+    }
+    &-ceo {
+        padding-inline: 1.6%;
     }
 }
 .is-small {
@@ -272,8 +275,11 @@
     }
 
     &-message {
-        margin-top: 125px;
+        margin-top: 120px;
         text-align: center;
+        @media screen and (max-width: 768px) {
+            margin-top: 60px;
+        }
     }
 
     &-consul {
@@ -316,7 +322,7 @@
         font-size: 1.25em;
         margin-top: 10px;
     }
-    @media screen and (max-width: 735px) {
+    @media screen and (max-width: 768px) {
         font-size: 1em;
     }
 }
@@ -351,7 +357,7 @@
     }
 }
 .aboutus-box1 {
-    margin-top: 78px;
+    margin-top: 80px;
 }
 
 .sub-aboutus-list {
@@ -368,7 +374,7 @@
     position: relative;
 
     @media screen and (max-width: 768px) {
-        font-size: 1.125rem;
+        font-size: 1rem;
         padding-top: 24px;
     }
 
@@ -383,6 +389,13 @@
         margin-right: 21px;
         color: #222;
         padding-top: 7px;
+        @media screen and (max-width: 768px) {
+            width: 35px;
+            height: 35px;
+            margin-right: 10px;
+            padding-top: 0;
+        }
+
     }
     
 
@@ -462,6 +475,7 @@
     }
     @media screen and (max-width: 1024px) {
         position: static;
+        max-width: none;
     }
 }
 .sub-aboutus-ceo-main {
@@ -512,10 +526,11 @@
 
     @media screen and (max-width: 1024px) {
         display: block;
+        padding-top: 0;
     }
 }
 .about-box1 {
-    margin-top: 80px;
+    margin-top: 30px;
 }
 .sub-about-box-img {
     max-width: 457px;
@@ -528,6 +543,7 @@
     @media screen and (max-width: 1024px) {
         max-width: 716px;
         width: 100%;
+        margin-top: 40px;
     }
 }
 
@@ -548,6 +564,8 @@
     max-width: 457px;
     @media screen and (max-width: 1024px) {
         font-size: 1.125rem;
+        padding-top: 10px;
+        max-width: none;
     }
 }
 
@@ -559,6 +577,14 @@
     padding-top: 36px;
     @media screen and (max-width: 1024px) {
         margin-top: 20px;
+        max-width: none;
+        padding-top: 0;
+    }
+}
+.solution-read ,.system-read {
+    padding-top: 42px;
+    @media screen and (max-width: 768px) {
+        padding-top: 0;
     }
 }
 .sub-about-list {
@@ -568,13 +594,20 @@
     padding-top: 36px;
     padding-bottom: 36px;
     align-items: baseline;
+    &:nth-child(n+5){
+        padding-bottom: 24px;
+        padding-top: 34px;
+    }
+    &:last-child {
+        padding-bottom: 35px;
+    }
 
     @media screen and (max-width: 768px) {
         gap: 20px;
     }
 }
 .sub-about-list-sec {
-    margin-top: 80px;
+    margin-top: 73px;
     @media screen and (max-width: 1024px) {
         margin-top: 52px;
     }
@@ -610,7 +643,7 @@
 
 }
 .sub-inner-about-list {
-    padding-inline: 22px;
+    padding-inline: 16px;
     padding-bottom: 134px;
 
     @media screen and (max-width: 1024px) {
@@ -622,6 +655,7 @@
 }
 .sub-about-list-consul {
     display: block;
+    padding-left: 14px;
 }
 .sub-about-list-item-consul2 {
     margin-top: 10px;

@@ -5,7 +5,7 @@
             <div class="sub-inner sub-inner-mv">
                 <div class="sub-mv-box">
                     <h2 class="sub-mv-title">DETAILS</h2>
-                    <h3 class="sub-mv-item">募集要項</h3>
+                    <h3 class="sub-mv-item details-mv-item">募集要項</h3>
                     <p class="sub-mv-part">TETOTEは幅広く仲間を募集しています。</p>
                 </div>
             </div>
@@ -52,7 +52,7 @@
                 </dl>
                 <dl class="sub-page-blog-list">
                     <dt class="sub-about-list-title details-list-title">給与</dt>
-                    <dd class="sub-about-list-item">年収５００万円〜（経験・能力による）</dd>
+                    <dd class="sub-about-list-item">年収500万円〜（経験・能力による）</dd>
                 </dl>
                 <dl class="sub-page-blog-list">
                     <dt class="sub-about-list-title details-list-title">勤務地</dt>

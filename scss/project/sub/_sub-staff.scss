@@ -3,7 +3,7 @@
     grid-template-columns: repeat(3, 1fr); /* 2列 */
     grid-template-rows: repeat(2, 1fr);   /* 3行 */
 	column-gap: 43px;
-	row-gap: 135px;
+	row-gap: 136px;
 
     @media screen and (max-width: 1024px) {
         display: grid;

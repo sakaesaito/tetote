@@ -16,8 +16,7 @@
                 </div>
                 <h2 class="sub-title sub-title-blog-detail">新入社員向けに、<br>入社前研修を行いました。</h2>
                 <div class="blog-detail-img"><img src="<?php echo get_template_directory_uri(); ?>/img/blogdetail-top.jpg" alt=""></div>
-                <p class="blog-detail-note1">2023年3月25日、新入社員を対象とした入社前研修を実施しました。<br>
-                    今回の研修では、社会人としての基礎知識やビジネスマナー、当社の事業内容や社風について学びました。</p>
+                <p class="blog-detail-note1">2023年3月25日、新入社員を対象とした入社前研修を実施しました。<br>今回の研修では、社会人としての基礎知識やビジネスマナー、当社の事業内容や社風について学びました。</p>
                     <h3 class="blog-detail-menu">研修内容</h3>
                 <ul class="blog-detail-list">
                     <li class="blog-detail-item">・挨拶、自己紹介</li>
@@ -29,7 +28,7 @@
                     <li class="blog-detail-item">・懇親会</li>
                 </ul>
                 <h3 class="blog-detail-menu">研修の様子</h3>
-                <p class="blog-detail-note">研修は、座学とグループワーク、懇親会を通して行いました。
+                <p class="blog-detail-note">研修は、座学とグループワーク、懇親会を通して行いました。<br>
                     座学では、社会人としての心構えやビジネスマナーについて学びました。<br>
                     グループワークでは、チームで課題に取り組むことで、コミュニケーション能力や問題解決能力を向上させました。<br>
                     懇親会では、社員同士が交流を深め、親睦を図りました。<br>
@@ -41,7 +40,7 @@
             </div>
         </div>
     </section>
-    <section class="page">
+    <section class="blog-page">
         <div class="blog-detail-page-inner">
             <div class="blog-pagination-sec">
                 <div class="blog-pagination-wrapper before">

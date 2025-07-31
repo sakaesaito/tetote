@@ -1,10 +1,17 @@
 .ditails-mv {
-    height: 340px;
+    height: 560px;
     margin-top: 118px;
     background-image: url(/img/details-fv.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    @media screen and (max-width: 768px) {
+        margin-top: 60px;
+    }
+
+}
+.details-mv-item {
+    padding: 3px 9px;
 }
 
 .details-main {
@@ -108,7 +115,7 @@
     }
 }
 .details-list-sec {
-    margin-top: 86px;
+    margin-top: 83px;
     @media screen and (max-width: 1024px) {
         margin-top: 30px;
     }
@@ -146,4 +153,9 @@
     border-bottom: #222222 dashed 1px;
     padding-top: 35px;
     padding-bottom: 35px;
+}
+.details-list-title{
+    &:nth-child(1) {
+    padding-bottom: 2px;
+    }
 }
