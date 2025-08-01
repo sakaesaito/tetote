@@ -50,11 +50,10 @@ img {
     transform: translateY(0);
 }
 
-.create_breadcrumbs
-
-
-
-{
+.is-small {
+    background-color: #f0f0f0;
+}
+.c-breadcrumbs {
     display: flex;
     font-weight: 400;
     height: 54px;
@@ -73,10 +72,11 @@ img {
     }
 }
 
-
 .c-breadcrumbs span {
     &::before {
-        content: ">";
-        margin: 0 6px;
+    //     content: "";
+    //     margin: 0 6px;
+    // }
+    content: none;
     }
 }

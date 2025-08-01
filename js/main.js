@@ -205,55 +205,51 @@ document.addEventListener('DOMContentLoaded', function () {
 //   ＿＿＿＿＿＿＿＿＿スクロール後ヘッダーが降りてくる＿＿＿＿＿＿
 
 
-document.addEventListener('DOMContentLoaded', () => {
-    const header = document.querySelector('.header');
-    const mv = document.querySelector('.mv');
-
-    if (!header || !mv) return;
-
-    window.addEventListener('scroll', () => {
-        const scrollTop = window.scrollY;
-        const mvHeight = mv.offsetHeight;
-
-        if (scrollTop >= mvHeight) {
-            header.classList.add('header--sticky');
-            document.body.style.marginTop = header.offsetHeight + 'px';
-        } else {
-            header.classList.remove('header--sticky');
-            document.body.style.marginTop = '0';
-        }
-    });
-});
-
 document.addEventListener('DOMContentLoaded', function () {
-    if (document.body.classList.contains('home')) {
-        const hamburgerSpans = document.querySelectorAll('.header-hamburger span');
-        const mv = document.querySelector('.ditails-mv') || document.querySelector('.mv'); 
-        const whiteLogo = document.querySelector('.logo-white');
-        const blackLogo = document.querySelector('.logo-black');
+    const header = document.querySelector('.header');
+    const mv = document.querySelector('.ditails-mv') || document.querySelector('.mv') || document.querySelector('.sub-mv') ;
+    const hamburgerSpans = document.querySelectorAll('.header-hamburger span');
+    const menuText = document.querySelector('.header-hamburger-item');
+    const whiteLogo = document.querySelector('.logo-white');
+    const blackLogo = document.querySelector('.logo-black');
 
-        if (!mv) return; 
+    if (!header) return;
 
+    const isHome = document.body.classList.contains('home');
+
+    if (isHome && mv) {
+        // トップページ：スクロールで切り替え
         window.addEventListener('scroll', () => {
             const scrollTop = window.scrollY;
             const mvHeight = mv.offsetHeight;
 
-
             if (scrollTop >= mvHeight) {
-                whiteLogo.classList.add('hidden');
-                blackLogo.classList.remove('hidden');
+                header.classList.add('header--sticky');
+                header.style.backgroundColor = '#fff';
+                document.body.style.marginTop = header.offsetHeight + 'px';
 
-                hamburgerSpans.forEach(span => {
-                    span.style.backgroundColor = '#222';
-                });
+                if (whiteLogo) whiteLogo.classList.add('hidden');
+                if (blackLogo) blackLogo.classList.remove('hidden');
+                hamburgerSpans.forEach(span => span.style.backgroundColor = '#222');
+                if (menuText) menuText.style.color = '#222';
             } else {
-                hamburgerSpans.forEach(span => {
-                    span.style.backgroundColor = '#fff';
+                header.classList.remove('header--sticky');
+                header.style.backgroundColor = 'transparent';
+                document.body.style.marginTop = '0';
 
-                whiteLogo.classList.remove('hidden');
-                blackLogo.classList.add('hidden');
-                });
+                if (whiteLogo) whiteLogo.classList.remove('hidden');
+                if (blackLogo) blackLogo.classList.add('hidden');
+                hamburgerSpans.forEach(span => span.style.backgroundColor = '#fff');
+                if (menuText) menuText.style.color = '#fff';
             }
         });
+    } else {
+        // 下層ページ：初期状態で白背景・黒ロゴ・黒線・黒文字
+        header.classList.add('header--sticky');
+        header.style.backgroundColor = '#fff';
+        if (whiteLogo) whiteLogo.classList.add('hidden');
+        if (blackLogo) blackLogo.classList.remove('hidden');
+        hamburgerSpans.forEach(span => span.style.backgroundColor = '#222');
+        if (menuText) menuText.style.color = '#222';
     }
 });

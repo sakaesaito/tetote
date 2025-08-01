@@ -10,9 +10,9 @@
     &.drawer-open {
         background-color: #fff;
 
-        .header-logo__link img {
-            content: url('/img/tetote-logo-black.png'); 
-        }
+        // .header-logo__link img {
+        //     content: url('/img/tetote-logo-black.png'); 
+        // }
     }
 
     @media screen and (max-width: 768px) {
@@ -192,11 +192,11 @@
 .sub-mv {
     height: 340px;
     margin-top: 118px;
-    background-image: url(/img/about-fv.jpg);
-    background-size: cover;
-    object-fit: contain;
+    // background-image: url(/img/about-fv.jpg);
+    // background-size: cover;
+    // object-fit: contain;
     background-repeat: no-repeat;
-    background-position: center;
+    // background-position: center;
     width: 100%;
     @media screen and (max-width: 768px) {
         margin-top: 60px;
@@ -230,34 +230,7 @@
         padding-inline: 1.6%;
     }
 }
-.is-small {
-    background-color: #f0f0f0;
-}
-.c-breadcrumbs {
-    display: flex;
-    font-weight: 400;
-    height: 54px;
-    align-items: center;
-    max-width: 1024px;
-    margin: 0 auto;
-    padding-left: 24px;
-    font-size: 14px;
-    @media screen and (max-width: 1024px) {
-        padding-left: 15%;
-    }
 
-    @media screen and (max-width: 768px) {
-        padding-left: 5%;
-        height: 40px;
-    }
-}
-
-.c-breadcrumbs span {
-    &::before {
-        content: ">";
-        margin: 0 6px;
-    }
-}
 
 .sub-title {
     font-size: 2rem;

@@ -25,19 +25,13 @@
 </head>
 
 <body <?php body_class(); ?>>
-    <header class="header">
+    <header class="header" class="header <?php if (!is_front_page()) echo 'is-subpage'; ?>">
         <div class="header-inner">
             <div class="header-nav">
-                <!-- <h1 class="header-logo">
-                    <a class="header-logo__link" href="<?php echo esc_url(home_url('/')); ?>">
-                        <img src="<?php echo get_template_directory_uri(); ?>/img/tetote-logo-white.png" alt="白ロゴ" class="logo logo-white">
-                        <img src="<?php echo get_template_directory_uri(); ?>/img/tetote-logo-black.png" alt="黒ロゴ" class="logo logo-black hidden">
-                    </a>
-                </h1> -->
                 <h1 class="header-logo">
                     <a class="header-logo__link" href="<?php echo esc_url(home_url('/')); ?>">
                         <img src="<?php echo get_template_directory_uri(); ?>/img/tetote-logo-white.png" alt="白ロゴ" class="logo logo-white">
-                        <img src="<?php echo get_template_directory_uri(); ?>/img/tetote-logo-black.png" alt="黒ロゴ" class="logo logo-black hidden">
+                        <img src="<?php echo get_template_directory_uri(); ?>/img/tetote-logo-black.png" alt="黒ロゴ" class="logo logo-black hidden" >
                     </a>
                 </h1>
                 <div class="header-link">

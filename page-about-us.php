@@ -2,7 +2,7 @@
 
 <section id="about-us" class="sub-about-us">
     <div class="sub-mv">
-    <div class="sub-mv" style="background-image: url('<?php echo get_template_directory_uri(); ?>/img/about-fv.jpg');">
+    <div class="sub-mv" style="background-image: url('<?php echo get_template_directory_uri(); ?>/img/about-fv.jpg');background-size: cover;object-fit: contain;" >
         <div class="sub-inner sub-inner-mv">
             <div class="sub-mv-box">
                 <h2 class="sub-mv-title">ABOUT US</h2>

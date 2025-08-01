@@ -437,7 +437,11 @@ img {
   transform: translateY(0);
 }
 
-.create_breadcrumbs {
+.is-small {
+  background-color: #f0f0f0;
+}
+
+.c-breadcrumbs {
   display: flex;
   font-weight: 400;
   height: 54px;
@@ -448,20 +452,19 @@ img {
   font-size: 14px;
 }
 @media screen and (max-width: 1024px) {
-  .create_breadcrumbs {
+  .c-breadcrumbs {
     padding-left: 15%;
   }
 }
 @media screen and (max-width: 768px) {
-  .create_breadcrumbs {
+  .c-breadcrumbs {
     padding-left: 5%;
     height: 40px;
   }
 }
 
 .c-breadcrumbs span::before {
-  content: ">";
-  margin: 0 6px;
+  content: none;
 }
 
 button {
@@ -653,6 +656,9 @@ button {
 }
 .header.drawer-open .header-logo__link img {
   content: url("/img/tetote-logo-black.png");
+}
+.header.is-subpage {
+  background-color: #fff;
 }
 @media screen and (max-width: 768px) {
   .header {
@@ -890,12 +896,18 @@ button {
   display: none;
 }
 
-.logo-black.hidden {
-  display: none;
-}
-
 .header--sticky {
   background-color: #fff;
+}
+
+.logo {
+  display: inline-block;
+  height: auto;
+  max-width: 100%;
+}
+
+.logo.hidden {
+  display: none;
 }
 
 footer {
@@ -2589,9 +2601,6 @@ footer {
 .sub-header.drawer-open {
   background-color: #fff;
 }
-.sub-header.drawer-open .header-logo__link img {
-  content: url("/img/tetote-logo-black.png");
-}
 @media screen and (max-width: 768px) {
   .sub-header {
     height: 60px;
@@ -2762,11 +2771,7 @@ footer {
 .sub-mv {
   height: 340px;
   margin-top: 118px;
-  background-image: url(/img/about-fv.jpg);
-  background-size: cover;
-  object-fit: contain;
   background-repeat: no-repeat;
-  background-position: center;
   width: 100%;
 }
 @media screen and (max-width: 768px) {
@@ -2802,37 +2807,6 @@ footer {
 }
 .sub-inner-ceo {
   padding-inline: 1.6%;
-}
-
-.is-small {
-  background-color: #f0f0f0;
-}
-
-.c-breadcrumbs {
-  display: flex;
-  font-weight: 400;
-  height: 54px;
-  align-items: center;
-  max-width: 1024px;
-  margin: 0 auto;
-  padding-left: 24px;
-  font-size: 14px;
-}
-@media screen and (max-width: 1024px) {
-  .c-breadcrumbs {
-    padding-left: 15%;
-  }
-}
-@media screen and (max-width: 768px) {
-  .c-breadcrumbs {
-    padding-left: 5%;
-    height: 40px;
-  }
-}
-
-.c-breadcrumbs span::before {
-  content: ">";
-  margin: 0 6px;
 }
 
 .sub-title {

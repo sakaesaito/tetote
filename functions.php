@@ -7,21 +7,6 @@ function theme_setup()
 add_action('after_setup_theme', 'theme_setup');
 
 
-
-// /*  パンくずリスト生成関数（ステップ1：基本形） */
-// function c_breadcrumbs() {
-//     // トップページの場合は、何も表示しない
-//     if ( is_front_page() ) { return; }
-    
-//     echo '<nav class="my-breadcrumb">';
-//     echo '<a href="' . esc_url( home_url('/') ) . '">TOP</a>';
-//     echo ' <span class="separator">&gt;</span> ';
-//     echo '<span class="current-page">' . get_the_title() . '</span>';
-//     echo '</nav>';
-// }
-
-
-
 function tetote_enqueue_scripts()
 {
     // Swiper CSS

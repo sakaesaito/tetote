@@ -2,8 +2,7 @@
 
 <div class="is-small is-small-blog">
     <ol class="c-breadcrumbs c-breadcrumbs-blog">
-        <li><a href="<?php echo home_url(); ?>">TOP</a></li>
-        <li><span>BLOG</span></li>
+        <?php if (function_exists('bcn_display')) bcn_display_list(); ?>
         <li><span class="c-breadcrumbs-blog"><?php the_title(); ?></span></li>
     </ol>
 </div>

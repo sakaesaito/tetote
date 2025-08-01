@@ -13,11 +13,15 @@
             content: url('/img/tetote-logo-black.png'); 
         }
     }
+    &.is-subpage {
+        background-color: #fff;
+    }
 
     @media screen and (max-width: 768px) {
         height: 60px;
     }
 }
+
 .header-inner {
     padding-inline: 1.81%;
     height: inherit;
@@ -238,9 +242,16 @@
     display: none;
 }
 
-.logo-black.hidden {
-    display: none;
-}
 .header--sticky {
     background-color: #fff;
+}
+
+
+.logo {
+    display: inline-block;
+    height: auto;
+    max-width: 100%;
+}
+.logo.hidden {
+    display: none;
 }

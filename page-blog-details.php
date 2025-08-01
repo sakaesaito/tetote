@@ -2,7 +2,7 @@
 
 <div class="is-small is-small-blog">
         <ol class="c-breadcrumbs  c-breadcrumbs-blog">
-        <?php if (function_exists('bcn_display')) bcn_display_list(); ?>
+            <?php if (function_exists('bcn_display')) bcn_display_list(); ?>
             <li><span class="c-breadcrumbs-blog">新入社員向けに、入社前研修を行いました。</span></li>
         </ol>
     </div>
