@@ -17,7 +17,7 @@
                     echo '<p class="blog-detail-tag">' . esc_html($category[0]->name) . '</p>';
                 }
                 ?>
-                <time class="date" datetime="<?php echo get_the_date('Y-m-d'); ?>"><?php echo get_the_date('Y.m.d'); ?></time>
+                <time class="date" datetime="<?php echo get_the_date('Y.m.d'); ?>"><?php echo get_the_date('Y.m.d'); ?></time>
             </div>
 
             <h2 class="sub-title sub-title-blog-detail"><?php the_title(); ?></h2>

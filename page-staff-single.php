@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 
-<section id="staff-no01" class="staff-no01">
+    <section id="staff-no01" class="staff-no01">
         <div class="page-staff-mv-sec">
             <div class="sub-inner page-staff-mv-inner">
                 <div class="page-staff-box">
@@ -16,14 +16,14 @@
                             東京大学工学部を卒業後、大手IT企業でシステムエンジニアとして5年間、システム開発に携わった。その後、TETOTEに転職し、IT戦略策定やシステム導入プロジェクトの支援に従事。豊富な経験と知識を活かし、クライアントの課題解決に貢献している。
                         </p>
                     </div>
-                    <div class="page-staff-box-img"><img src="<?php echo get_template_directory_uri(); ?>/img/staff-single-syain01.jpg" alt="社員写真 西村優"></div>
+                    <div class="page-staff-box-img"><img src="<?php echo get_template_directory_uri(); ?>/img/syain01.jpg" alt="社員写真 西村優"></div>
                 </div>
             </div>
         </div>
     </section>
     <div class="is-small">
         <ol class="c-breadcrumbs">
-            <?php if(function_exists('bcn_display')) bcn_display_list(); ?>
+        <?php if (function_exists('bcn_display')) bcn_display_list(); ?>
             <li><span>NISHIMURA</span></li>
         </ol>
     </div>
@@ -32,7 +32,7 @@
             <div class="page-staff-wrapper">
                 <h2 id="title-01" class="page-staff__title">普段の業務内容について</h2>
                 <p class="page-staff__note">TETOTEのコンサルティング本部で、ITコンサルタントとして勤務しています。主な業務内容は、以下の3つです。</p>
-                <div class="page-staff-pic"><img src="<?php echo get_template_directory_uri(); ?>/img/sub-page-staff-img.png" alt=""></div>
+                <div class="page-staff-pic"><img src="/img/sub-page-staff-img.png" alt=""></div>
                 <h2 id="title-02" class="page-staff__title">学生時代に力を入れたことは？</h2>
                 <p class="page-staff__note">学生時代に力を入れたことは、ロボットプログラミングサークルでの活動です。<br>
                 私は、東京大学工学部在学中に、ロボットプログラミングサークルに所属していました。サークルでは、二足歩行ロボットや自律走行ロボットなどの製作に取り組み、全国大会にも出場しました。<br>
@@ -61,12 +61,12 @@
                 <div class="a-side-inner">
                     <p>目次</p>
                     <ul class="a-side-list">
-                        <li data-target="title-no title-01">普段の業務内容について</li>
-                        <li data-target="title-no title-02">学生時代に力を入れたことは</li>
-                        <li data-target="title-no title-03">TETOTEを志望した理由は？</li>
-                        <li data-target="title-no title-04">やりがいを感じる瞬間は？</li>
-                        <li data-target="title-no title-05">どんな人と一緒に働きたい？</li>
-                        <li data-target="title-no title-06">応募者へのメッセージ</li>
+                        <li data-target="title-01">普段の業務内容について</li>
+                        <li data-target="title-02">学生時代に力を入れたことは</li>
+                        <li data-target="title-03">TETOTEを志望した理由は？</li>
+                        <li data-target="title-04">やりがいを感じる瞬間は？</li>
+                        <li data-target="title-05">どんな人と一緒に働きたい？</li>
+                        <li data-target="title-06">応募者へのメッセージ</li>
                     </ul>
                 </div>
             </aside>
@@ -77,7 +77,7 @@
             <h2 class="page-staff-title-member">その他のメンバー</h2>
             <div class="page-staff-sec">
                 <div class="sub-staff-box page-staff-box-list">
-                    <a href="<?php echo esc_url(home_url('/staff-single/')); ?>">
+                    <a href="/staff/takahashi-satoru/">
                         <img src="<?php echo get_template_directory_uri(); ?>/img/syain04.jpg" alt="社員写真ー高橋智">
                         <div class="sub-staff-box-img page-staff-list">
                             <p class="sub-staff-box-message">ビジネスの課題を</p>
@@ -91,7 +91,7 @@
                     </a>
                 </div>
                 <div class="sub-staff-box page-staff-box-list">
-                    <a href="<?php echo esc_url(home_url('/staff-single/')); ?>">
+                    <a href="/staff/takada-rin/">
                         <img src="<?php echo get_template_directory_uri(); ?>/img/syain05.jpg" alt="社員写真ー高田凛">
                         <div class="sub-staff-box-img page-staff-list">
                             <p class="sub-staff-box-message">どんな難解な案件も</p>
@@ -105,7 +105,7 @@
                     </a>
                 </div>
                 <div class="sub-staff-box page-staff-box-list">
-                    <a href="<?php echo esc_url(home_url('/staff-single/')); ?>">
+                    <a href="/staff/tachibana-hikaru/">
                         <img src="<?php echo get_template_directory_uri(); ?>/img/syain06.jpg" alt="社員写真 橘光">
                         <div class="sub-staff-box-img page-staff-list">
                             <p class="sub-staff-box-message">お客様と一緒に開発</p>
@@ -122,4 +122,4 @@
         </div>
     </section>
 
-    <?php get_footer(); ?>
+<?php get_footer(); ?>

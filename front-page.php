@@ -94,9 +94,12 @@
                         ]);
                         if ($staffs->have_posts()) :
                             while ($staffs->have_posts()) : $staffs->the_post();
-                                $photo = get_field('photo'); // ACF画像
-                                $message1 = get_field('message_1');
-                                $message2 = get_field('message_2');
+                                $photo = get_field('staff-image');
+                                if (!empty($image)) {
+                                    echo '<img src="' . esc_url($image['url']) . '" alt="' . esc_attr($image['alt']) . '" />';
+                                }
+                                $message1 = get_field('message1');
+                                $message2 = get_field('message2');
                                 $position = get_field('position');
                                 $entry_year = get_field('entry_year');
                         ?>
@@ -116,9 +119,7 @@
                                         </a>
                                     </article>
                                 </div>
-                        <?php endwhile;
-                            wp_reset_postdata();
-                        endif; ?>
+                        <?php endwhile; wp_reset_postdata();endif; ?>
                     </div>
                 </div>
             </div>
