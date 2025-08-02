@@ -1,7 +1,9 @@
 <?php get_header(); ?>
 
 <section id="sub-benefits" class="sub-benefits">
-    <div class="sub-mv" style="background-image: url('<?php echo get_template_directory_uri(); ?>/img/about-fv.jpg');" style="max-width:1440px; width:100%; height:338px; background-size:cover;">
+    <div class="sub-mv" style="background-image: url('<?php echo get_template_directory_uri(); ?>/img/about-fv.jpg'); background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;">
         <div class="sub-inner sub-inner-mv">
             <div class="sub-mv-box">
                 <h2 class="sub-mv-title">BENEFITS</h2>

@@ -180,14 +180,14 @@
                             <p class="content-item blog-content-item">採用情報やイベント情報、社員の紹介など、<br> 日々の現場の様子をご紹介します。</p>
                         </div>
                         <div class="blog-top-page">
-                            <a href="<?php echo esc_url(home_url('/blog-detalis/')); ?>" class="page-button-white__right">→</a>
-                            <a href="<?php echo esc_url(home_url('/blog/')); ?>" class="blog-top-link" href="<?php echo esc_url(home_url('/blog/')); ?>">VIEW MORE</a>
+                            <a href="<?php echo esc_url(home_url('/blog-detalis/')); ?>/blog-detail/"> class="page-button-white__right">→</a>
+                            <a href="<?php echo esc_url(home_url('/blog/')); ?>" class="blog-top-link" href="<?php echo esc_url(home_url('/blog/')); ?>/blog/">VIEW MORE</a>
                         </div>
                     </div>
                     <div class="blog-wrapper">
                         <ul class="blog-list">
                             <li class="blog-box">
-                                <a href="<?php echo esc_url(home_url('/blog-detalis/')); ?>">
+                            <a href="<?php echo esc_url(home_url('/blog-details/')); ?>/blog-detail/">
                                     <div class="blog-box-main">
                                         <div class="thumbnail"><img src="<?php echo get_template_directory_uri(); ?>/img/blog01.jpg" alt=""></div>
                                         <div class="blog-box-right">
@@ -201,7 +201,7 @@
                                 </a>
                             </li>
                             <li class="blog-box">
-                                <a href="<?php echo esc_url(home_url('/blog-detalis/')); ?>">
+                                <a href="<?php echo esc_url(home_url('/blog-detalis/')); ?>/blog-detail/">
                                     <div class="blog-box-main">
                                         <div class="thumbnail"><img src="<?php echo get_template_directory_uri(); ?>/img/blog02.jpg" alt=""></div>
                                         <div class="blog-box-right">
@@ -215,7 +215,7 @@
                                 </a>
                             </li>
                             <li class="blog-box">
-                                <a href="<?php echo esc_url(home_url('/blog-detalis/')); ?>">
+                                <a href="<?php echo esc_url(home_url('/blog-detalis/')); ?>/blog-detail/">
                                     <div class="blog-box-main">
                                         <div class="thumbnail"><img src="<?php echo get_template_directory_uri(); ?>/img/blog03.jpg" alt=""></div>
                                         <div class="blog-box-right">
@@ -229,7 +229,7 @@
                                 </a>
                             </li>
                             <li class="blog-box">
-                                <a href="<?php echo esc_url(home_url('/blog-detalis/')); ?>">
+                                <a href="<?php echo esc_url(home_url('/blog-details/')); ?>/blog-detail/">
                                     <div class="blog-box-main">
                                         <div class="thumbnail">
                                             <img src="<?php echo get_template_directory_uri(); ?>/img/blog04.jpg" alt="">
@@ -248,7 +248,7 @@
                     </div>
                     <div class="blog-top-page-2">
                         <div class="page-button-white__right">→</div>
-                        <a class="blog-top-link" href="<?php echo esc_url(home_url('/blog/')); ?>">VIEW MORE</a>
+                        <a class="blog-top-link" href="<?php echo esc_url(home_url('/blog-details/')); ?>/blog-detail/">VIEW MORE</a>
                     </div>
                 </div>
             </div>

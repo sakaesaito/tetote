@@ -1,7 +1,7 @@
 <?php get_header(); ?>
 
 <section id="sub-blog" class="sub-blog">
-        <div class="sub-mv" style="background-image: url('<?php echo get_template_directory_uri(); ?>/img/sub-blog-fv.jpg');">
+        <div class="sub-mv" style="background-image: url('<?php echo get_template_directory_uri(); ?>/img/sub-blog-fv.jpg'); background-size: cover;background-position: center;background-repeat: no-repeat;">
             <div class="sub-inner sub-inner-blog">
                 <div class="sub-mv-box">
                     <h2 class="sub-mv-title">BLOG</h2>
@@ -22,7 +22,7 @@
                     <div class="blog-wrapper">
                         <ul class="blog-list sub-blog-list">
                             <li class="blog-box">
-                                <a href="/blog-detail/">
+                                <a href="<?php echo esc_url(home_url('/blog-details/')); ?>/blog-detail/">
                                     <div class="blog-box-main sub-blog-box-main">
                                         <div class="thumbnail"><img src="<?php echo get_template_directory_uri(); ?>/img/blog01.jpg" alt=""></div>
                                         <div class="blog-box-right sub-blog-box-right">

@@ -1,7 +1,9 @@
 <?php get_header(); ?>
 
 <section id="details" class="details">
-<div class="ditails-mv" style="background-image: url('<?php echo get_template_directory_uri(); ?>/img/details-fv.jpg');">
+<div class="ditails-mv" style="background-image: url('<?php echo get_template_directory_uri(); ?>/img/details-fv.jpg'); background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;">
             <div class="sub-inner sub-inner-mv">
                 <div class="sub-mv-box">
                     <h2 class="sub-mv-title">DETAILS</h2>
