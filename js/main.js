@@ -245,7 +245,7 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     } else {
         // 下層ページ：初期状態で白背景・黒ロゴ・黒線・黒文字
-        header.classList.add('header--sticky');
+        // header.classList.add('header--sticky');
         header.style.backgroundColor = '#fff';
         if (whiteLogo) whiteLogo.classList.add('hidden');
         if (blackLogo) blackLogo.classList.remove('hidden');

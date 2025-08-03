@@ -9,10 +9,6 @@
 
     &.drawer-open {
         background-color: #fff;
-
-        // .header-logo__link img {
-        //     content: url('/img/tetote-logo-black.png'); 
-        // }
     }
 
     @media screen and (max-width: 768px) {
@@ -55,10 +51,6 @@
     visibility: visible;
     animation: slideDown 0.3s ease-in-out;
     background-color: #fff;
-
-    .header-logo__link img {
-        content: url('/img/tetote-logo-black.png');
-    }
 
     .header-hamburger-icon span {
         background-color: #222222;

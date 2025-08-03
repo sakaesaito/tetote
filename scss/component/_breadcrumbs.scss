@@ -1,0 +1,26 @@
+.breadcrumbs {
+    display: flex;
+    font-weight: 400;
+    height: 54px;
+    align-items: center;
+    max-width: 1024px;
+    margin: 0 auto;
+    padding-left: 24px;
+    font-size: 14px;
+    content: ">";
+
+    @media screen and (max-width: 1024px) {
+        padding-left: 15%;
+    }
+
+    @media screen and (max-width: 768px) {
+        padding-left: 5%;
+        height: 40px;
+    }
+
+}
+.breadcrumbs li:not(:first-child)::before {
+    margin: 0 6px;
+    content: ">";
+}
+

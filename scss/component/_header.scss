@@ -8,10 +8,6 @@
 
     &.drawer-open {
         background-color: #fff;
-
-        .header-logo__link img {
-            content: url('/img/tetote-logo-black.png'); 
-        }
     }
     &.is-subpage {
         background-color: #fff;
@@ -40,8 +36,7 @@
         padding:3.7rem 0 1.75rem 0;
         @media screen and (max-width: 768px) {
             padding: 0;
-        }
-        
+        }   
     }
 
     &:hover {
@@ -69,9 +64,6 @@
     animation: slideDown 0.3s ease-in-out;
     background-color: #fff;
 
-    .header-logo__link img {
-        content: url('/img/tetote-logo-black.png');
-    }
     .header-hamburger-icon span {
         background-color: #222222;
     }
@@ -240,10 +232,6 @@
 }
 .header-hamburger.active .header-hamburger-item {
     display: none;
-}
-
-.header--sticky {
-    background-color: #fff;
 }
 
 

@@ -1,9 +1,9 @@
-<?php get_header(); ?>
+<!-- <?php get_header(); ?>
 
 <div class="is-small is-small-blog">
-        <ol class="c-breadcrumbs  c-breadcrumbs-blog">
+        <ol class="breadcrumbs  breadcrumbs__blog">
             <?php if (function_exists('bcn_display')) bcn_display_list(); ?>
-            <li><span class="c-breadcrumbs-blog">新入社員向けに、入社前研修を行いました。</span></li>
+            <li><span class="breadcrumbs-blog">新入社員向けに、入社前研修を行いました。</span></li>
         </ol>
     </div>
 
@@ -54,7 +54,7 @@
                     </div>
                 </div>
                 <div>
-                    <div class="blog-pagination-wrapper">
+                    <div class="blog-pagination-wrapper wp-pagenavi" role="navigation" >
                         <div class="blog-detail-news">
                             <a href="/blog/post02">
                             <p class="topic">【新卒採用2024】エントリー受付中！</p>
@@ -69,4 +69,4 @@
     </section>
 
 
-<?php get_footer(); ?>
+<?php get_footer(); ?> -->

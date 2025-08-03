@@ -4,7 +4,7 @@
 
   <h1 data-title="Not Found" class="page-title">ページが見つかりません</h1>
   <div class="inner is-small">
-    <ol class="c-breadcrumbs">
+    <ol class="breadcrumbs">
       <?php if (function_exists('bcn_display')) bcn_display_list(); ?>
     </ol>
 

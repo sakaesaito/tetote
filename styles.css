@@ -441,32 +441,6 @@ img {
   background-color: #f0f0f0;
 }
 
-.c-breadcrumbs {
-  display: flex;
-  font-weight: 400;
-  height: 54px;
-  align-items: center;
-  max-width: 1024px;
-  margin: 0 auto;
-  padding-left: 24px;
-  font-size: 14px;
-}
-@media screen and (max-width: 1024px) {
-  .c-breadcrumbs {
-    padding-left: 15%;
-  }
-}
-@media screen and (max-width: 768px) {
-  .c-breadcrumbs {
-    padding-left: 5%;
-    height: 40px;
-  }
-}
-
-.c-breadcrumbs span::before {
-  content: none;
-}
-
 button {
   appearance: none;
   outline: none;
@@ -654,9 +628,6 @@ button {
 .header.drawer-open {
   background-color: #fff;
 }
-.header.drawer-open .header-logo__link img {
-  content: url("/img/tetote-logo-black.png");
-}
 .header.is-subpage {
   background-color: #fff;
 }
@@ -716,9 +687,6 @@ button {
   visibility: visible;
   animation: slideDown 0.3s ease-in-out;
   background-color: #fff;
-}
-.header--sticky .header-logo__link img {
-  content: url("/img/tetote-logo-black.png");
 }
 .header--sticky .header-hamburger-icon span {
   background-color: #222222;
@@ -894,10 +862,6 @@ button {
 
 .header-hamburger.active .header-hamburger-item {
   display: none;
-}
-
-.header--sticky {
-  background-color: #fff;
 }
 
 .logo {
@@ -1458,6 +1422,34 @@ footer {
 
 .swiper {
   background-color: #fff;
+}
+
+.breadcrumbs {
+  display: flex;
+  font-weight: 400;
+  height: 54px;
+  align-items: center;
+  max-width: 1024px;
+  margin: 0 auto;
+  padding-left: 24px;
+  font-size: 14px;
+  content: ">";
+}
+@media screen and (max-width: 1024px) {
+  .breadcrumbs {
+    padding-left: 15%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .breadcrumbs {
+    padding-left: 5%;
+    height: 40px;
+  }
+}
+
+.breadcrumbs li:not(:first-child)::before {
+  margin: 0 6px;
+  content: ">";
 }
 
 .mv-inner {
@@ -2643,9 +2635,6 @@ footer {
   visibility: visible;
   animation: slideDown 0.3s ease-in-out;
   background-color: #fff;
-}
-.header--sticky .header-logo__link img {
-  content: url("/img/tetote-logo-black.png");
 }
 .header--sticky .header-hamburger-icon span {
   background-color: #222222;
@@ -3952,7 +3941,6 @@ footer {
   max-width: 1024px;
   width: 100%;
   margin: 0 auto;
-  margin-bottom: 10px;
 }
 
 .time {
@@ -3974,12 +3962,6 @@ footer {
 }
 @media screen and (max-width: 1024px) {
   .blog-detail-news {
-    display: none;
-  }
-}
-
-@media screen and (max-width: 768px) {
-  .c-breadcrumbs-blog {
     display: none;
   }
 }
@@ -4142,15 +4124,6 @@ footer {
 .button-page-after:hover {
   width: 70px;
   height: 70px;
-}
-
-.c-breadcrumbs-blog {
-  padding-top: 7px;
-}
-
-.c-breadcrumbs-blog span::before {
-  content: ">";
-  margin: 0 4px;
 }
 
 .sub-blog-box-right {

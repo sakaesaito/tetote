@@ -3,14 +3,14 @@
 
 
 <main class="main">
-  <?php if (have_posts()): ?>
+    <?php if (have_posts()): ?>
     <?php while (have_posts()): the_post(); ?>
 
 
     <div class="is-small is-small-blog">
-        <ol class="c-breadcrumbs  c-breadcrumbs-blog">
+        <ol class="breadcrumbs  breadcrumbs__blog">
             <?php if (function_exists('bcn_display')) bcn_display_list(); ?>
-            <li><span class="c-breadcrumbs-blog">新入社員向けに、入社前研修を行いました。</span></li>
+            <li><span class="breadcrumbs__blog"><?php the_title(); ?></span></li>
         </ol>
     </div>
 
@@ -19,9 +19,9 @@
             <div class="sub-inner blog-detail-inner">
                 <div class="blog-detail-date">
                     <p class="blog-detail-tag">社内研修</p>
-                    <time class="date" datetime="2023-03-25">2023.03.25</time>
+                    <time class="date"><?php echo get_the_date('Y.N.j') ; ?></time>
                 </div>
-                <h2 class="sub-title sub-title-blog-detail">新入社員向けに、<br>入社前研修を行いました。</h2>
+                <h2 class="sub-title sub-title-blog-detail"><?php the_title(); ?></h2>
                 <div class="blog-detail-img"><img src="<?php echo get_template_directory_uri(); ?>/img/blogdetail-top.jpg" alt=""></div>
                 <p class="blog-detail-note1">2023年3月25日、新入社員を対象とした入社前研修を実施しました。<br>今回の研修では、社会人としての基礎知識やビジネスマナー、当社の事業内容や社風について学びました。</p>
                     <h3 class="blog-detail-menu">研修内容</h3>
@@ -56,7 +56,7 @@
                     <div class="blog-detail-news">
                         <a href="/blog/post01">
                         <p class="topic">内定者向け研修を行いました</p>
-                        <time datetime="2024-03-25" class="page-blog-date">2024.08.25</time>
+                        <span datetime="2024-03-25" class="page-blog-date"><?php echo get_the_date('Y.N.j') ; ?></span>
                         </a>
                     </div>
                 </div>
@@ -65,7 +65,7 @@
                         <div class="blog-detail-news">
                             <a href="/blog/post02">
                             <p class="topic">【新卒採用2024】エントリー受付中！</p>
-                            <time datetime="2024-08-25 " class="page-blog-date">2024.08.25</time>
+                            <span datetime="2024-08-25 " class="page-blog-date"><?php echo get_the_date('Y.N.j') ; ?></span>
                             </a>
                         </div>
                         <a href="/blog/next" class="blog-pagination-button next" aria-label="次のページ">></a>
@@ -75,16 +75,7 @@
         </div>
     </section>
 
-
-
-
-
-
-
-
-
-
     <?php endwhile; ?>
-  <?php endif; ?>
+<?php endif; ?>
 
-  <?php get_footer(); ?>
+<?php get_footer(); ?>

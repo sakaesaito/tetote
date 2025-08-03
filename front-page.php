@@ -150,7 +150,7 @@
                             <p class="benefits-img-message">Traning And Career</p>
                         </div>
                         <div class="benefits-button-wrapper">
-                            <a class="benefits-button" href="<?php echo home_url('/career/'); ?>">→</a>
+                            <a class="benefits-button" href="<?php echo home_url('/career/'); ?>/career/">→</a>
                             <h3 class="benefits-img-title">研修制度とキャリアパス</h3>
                             <p class="benefits-img-item">個々の目標に合わせたキャリアパスを支える、豊富な研修メニューで、あなた自身の成長を強力にサポートします。</p>
                         </div>
@@ -161,7 +161,7 @@
                             <p class="benefits-img-message">Employee Benefits</p>
                         </div>
                         <div class="benefits-button-wrapper">
-                            <a class="benefits-button" href="<?php echo esc_url(home_url('/benefits/')); ?>">→</a>
+                            <a class="benefits-button" href="/">→</a>
                             <h3 class="benefits-img-title benefits-img-title-title2">福利厚生</h3>
                             <p class="benefits-img-item">TETOTEの福利厚生制度は、従業員の健康と幸福を重視し、働きやすい環境を提供することを目的としています。</p>
                         </div>
@@ -180,7 +180,7 @@
                             <p class="content-item blog-content-item">採用情報やイベント情報、社員の紹介など、<br> 日々の現場の様子をご紹介します。</p>
                         </div>
                         <div class="blog-top-page">
-                            <a href="<?php echo esc_url(home_url('/blog-detalis/')); ?>/blog-detail/"> class="page-button-white__right">→</a>
+                            <a href="<?php echo esc_url(home_url('/blog/')); ?>/blog/" class="page-button-white__right">→</a>
                             <a href="<?php echo esc_url(home_url('/blog/')); ?>" class="blog-top-link" href="<?php echo esc_url(home_url('/blog/')); ?>/blog/">VIEW MORE</a>
                         </div>
                     </div>

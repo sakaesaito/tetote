@@ -97,7 +97,6 @@
     max-width: 1024px;
     width: 100%;
     margin: 0 auto;
-    margin-bottom: 10px;
 }
 .time {
     font-weight: 400;
@@ -116,13 +115,6 @@
         display: none;
     }
 }
-    
-.c-breadcrumbs-blog {
-    @media screen and (max-width: 768px) {
-        display: none;
-    }
-}
-
 
 .blog-pagination-sec {
     display: flex;

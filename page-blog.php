@@ -12,7 +12,7 @@
         </div>
     </section>
     <div class="is-small">
-        <ol class="c-breadcrumbs">
+        <ol class="breadcrumbs">
         <?php if (function_exists('bcn_display')) bcn_display_list(); ?> 
         </ol>
     </div>
@@ -30,7 +30,7 @@
                                                 <li class="blog-category">社内研修</li>
                                             </ul>
                                             <p class="topics">新入社員向けに、入社前研修を行いました。</p>
-                                            <time datetime="2025-03-25" class="date">2025.03.25</time>
+                                            <time datetime="2025-03-25" class="date"><?php echo get_the_date('Y.N.j') ; ?>2025.03.25</time>
                                         </div>
                                     </div>
                                 </a>
@@ -44,7 +44,7 @@
                                                 <li class="blog-category">社内研修</li>
                                             </ul>
                                             <p class="topics">内定者向け研修を行いました。</p>
-                                            <time datetime="2024-08-25" class="date">2024.08.25</time>
+                                            <time datetime="2024-08-25" class="date"><?php echo get_the_date('Y.N.j') ; ?>2024.08.25</time>
                                         </div>
                                     </div>
                                 </a>
@@ -58,7 +58,7 @@
                                                 <li class="blog-category">社内イベント</li>
                                             </ul>
                                             <p class="topics">【社員旅行2023】沖縄でリフレッシュ！チームワークも深まった！</p>
-                                            <time datetime="2024-03-25" class="date">2024.03.25</time>
+                                            <time datetime="2024-03-25" class="date"><?php echo get_the_date('Y.N.j') ; ?>2024.03.25</time>
                                         </div>
                                     </div>
                                 </a>
@@ -74,7 +74,7 @@
                                                 <li class="blog-category">お知らせ</li>
                                             </ul>
                                             <p class="topics">【新卒採用2024】エントリー受付中！</p>
-                                            <time datetime="2024-03-01" class="date">2024.03.01</time>
+                                            <time datetime="2024-03-01" class="date"><?php echo get_the_date('Y.N.j') ; ?>2024.03.01</time>
                                         </div>
                                     </div>
                                 </a>
@@ -88,7 +88,7 @@
                                                 <li class="blog-category">社内研修</li>
                                             </ul>
                                             <p class="topics">新入社員向けに、入社前研修を行いました。</p>
-                                            <time datetime="2055-02-11" class="date">2055.02.11</time>
+                                            <time datetime="2055-02-11" class="date"><?php echo get_the_date('Y.N.j') ; ?>2055.02.11</time>
                                         </div>
                                     </div>
                                 </a>
@@ -102,7 +102,7 @@
                                                 <li class="blog-category">社内研修</li>
                                             </ul>
                                             <p class="topics">内定者向け研修を行いました。</p>
-                                            <time datetime="2024-08-25" class="date">2024.08.25</time>
+                                            <time datetime="2024-08-25" class="date"><?php echo get_the_date('Y.N.j') ; ?>2024.08.25</time>
                                         </div>
                                     </div>
                                 </a>
@@ -116,7 +116,7 @@
                                                 <li class="blog-category">社内イベント</li>
                                             </ul>
                                             <p class="topics">【社員旅行2023】沖縄でリフレッシュ！チームワークも深まった！</p>
-                                            <time datetime="2024-03-25" class="date">2024.03.25</time>
+                                            <time datetime="2024-03-25" class="date"><?php echo get_the_date('Y.N.j') ; ?>2024.03.25</time>
                                         </div>
                                     </div>
                                 </a>
@@ -132,7 +132,7 @@
                                                 <li class="blog-category">お知らせ</li>
                                             </ul>
                                             <p class="topics">【新卒採用2024】エントリー受付中！</p>
-                                            <time datetime="2024-03-01" class="date">2024.03.01</time>
+                                            <time datetime="2024-03-01" class="date"><?php echo get_the_date('Y.N.j') ; ?>2024.03.01</time>
                                         </div>
                                     </div>
                                 </a>

@@ -22,7 +22,7 @@
         </div>
     </section>
     <div class="is-small">
-        <ol class="c-breadcrumbs">
+        <ol class="breadcrumbs">
         <?php if (function_exists('bcn_display')) bcn_display_list(); ?>
             <li><span>NISHIMURA</span></li>
         </ol>
