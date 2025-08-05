@@ -15,12 +15,12 @@
                         <div class="skew-background"></div>
                     </div>
                     <div class="mv-news-box">
-                        <?php if (have_posts()): while (have_posts()): the_post(); ?>
+                        <!-- <?php if (have_posts()): while (have_posts()): the_post(); ?> -->
                                 <div class="mv-news-title"><a href="<?php echo home_url('/blog/'); ?>">NEWS</a></div>
-                                <!-- <div class="mv-news-item"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></div> -->
+                                <div class="mv-news-item"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></div>
                                 <div class="mv-news-link"><a href="<?php echo home_url('/blog/'); ?>">VIEW MORE</a></div>
-                        <?php endwhile;
-                        endif; ?>
+                        <!-- <?php endwhile;
+                        endif; ?> -->
                     </div>
                 </div>
             </div>

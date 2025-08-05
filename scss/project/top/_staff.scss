@@ -42,7 +42,7 @@
         max-width: 564px;
         width: 100%;
         height: 100%;
-        background-image: url(/img/member-title.png);
+        background-image: url(../img/member-title.png);
         background-repeat: no-repeat;
         background-size: contain;
         @media screen and (max-width: 1024px) {
@@ -54,6 +54,7 @@
         }
     }
 }
+
 
 .staff-content-item {
     margin-top: 30px;
@@ -156,17 +157,14 @@
 }
 .staff-box-img {
     position: relative;
-    bottom: 78px;
+    bottom: 60px;
     @media screen and (max-width: 768px) {
         bottom: 38px;
     }
 }
 .staff-box-img-box2 {
     position: relative;
-    bottom: 78px;
-    @media screen and (max-width: 768px) {
-        bottom: 60px;
-    }
+    bottom: 60px;
 }
 
 .staff-box:nth-child(2),

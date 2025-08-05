@@ -1689,7 +1689,7 @@ footer {
 }
 
 .about-viw {
-  background-image: url(/img/top-map.jpg);
+  background-image: url("/img/top-map.jpg");
   background-size: contain;
   background-repeat: no-repeat;
   width: 100%;
@@ -1779,7 +1779,7 @@ footer {
   max-width: 564px;
   width: 100%;
   height: 100%;
-  background-image: url(/img/member-title.png);
+  background-image: url(../img/member-title.png);
   background-repeat: no-repeat;
   background-size: contain;
 }
@@ -1917,7 +1917,7 @@ footer {
 
 .staff-box-img {
   position: relative;
-  bottom: 78px;
+  bottom: 60px;
 }
 @media screen and (max-width: 768px) {
   .staff-box-img {
@@ -1927,12 +1927,7 @@ footer {
 
 .staff-box-img-box2 {
   position: relative;
-  bottom: 78px;
-}
-@media screen and (max-width: 768px) {
-  .staff-box-img-box2 {
-    bottom: 60px;
-  }
+  bottom: 60px;
 }
 
 .staff-box:nth-child(2),
@@ -1983,7 +1978,7 @@ footer {
   top: 0;
   width: 100%;
   height: 100%;
-  background-image: url(/img/recruitment-title.png);
+  background-image: url("/img/recruitment-title.png");
   background-repeat: no-repeat;
   background-size: contain;
 }
@@ -2158,7 +2153,7 @@ footer {
   max-width: 564px;
   width: 100%;
   height: 100%;
-  background-image: url(/img/benefit-title.png);
+  background-image: url(/img/blog-title.png);
   background-repeat: no-repeat;
   background-size: contain;
 }
@@ -2384,6 +2379,7 @@ footer {
   font-size: 1.25rem;
   transition: 0.4s;
 }
+
 .top-blog {
   background-color: #FAF7F1;
   padding-top: 70px;
@@ -2422,7 +2418,7 @@ footer {
   max-width: 564px;
   width: 100%;
   height: 100%;
-  background-image: url(/img/blog-title.png);
+  background-image: url("/img/blog-title.png");
   background-repeat: no-repeat;
   background-size: contain;
 }
@@ -3336,7 +3332,7 @@ footer {
 .ditails-mv {
   height: 560px;
   margin-top: 118px;
-  background-image: url(/img/details-fv.jpg);
+  background-image: url("/img/details-fv.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
