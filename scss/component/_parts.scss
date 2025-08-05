@@ -64,6 +64,9 @@ button {
     }
 
 }
+.viewmore-button-staff {
+    margin-top: 240px;
+}
 
 .content-title {
     font-size: 3.25rem;
@@ -138,7 +141,7 @@ button {
     max-width: 200px;
     width: 100%;
     position: absolute;
-    bottom: 8px;
+    bottom: 16px;
     right: 157px;
 
     @media screen and (max-width: 1200px) {

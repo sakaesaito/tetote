@@ -17,7 +17,7 @@
                     <div class="mv-news-box">
                         <?php if (have_posts()): while (have_posts()): the_post(); ?>
                                 <div class="mv-news-title"><a href="<?php echo home_url('/blog/'); ?>">NEWS</a></div>
-                                <div class="mv-news-item"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></div>
+                                <!-- <div class="mv-news-item"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></div> -->
                                 <div class="mv-news-link"><a href="<?php echo home_url('/blog/'); ?>">VIEW MORE</a></div>
                         <?php endwhile;
                         endif; ?>
@@ -69,71 +69,88 @@
             </div>
         </div>
     </section>
-
-    <!-- STAFF セクション -->
     <section id="staff" class="staff">
-        <div class="staff-inner">
-            <div class="content-wrapper">
-                <div class="text-wrapper staff-text-wrapper">
-                    <div class="staff-section-title">
-                        <h2 class="content-title staff-content-title"><span>人</span>を知る</h2>
-                    </div>
-                    <p class="content-item staff-content-item">
-                        TETOTEの社員がどういった信念を持って働いているのか、<br>
-                        一日のスケジュールや仕事内容などを紹介します。
-                    </p>
-                </div>
-            </div>
-            <div class="staff-sec slider-post slider">
-                <div class="staff-sec-inner swiper limited-slider">
-                    <div class="staff-box-wrapper swiper-wrapper">
-                        <?php
-                        $staffs = new WP_Query([
-                            'post_type' => 'staff',
-                            'posts_per_page' => 4,
-                        ]);
-                        if ($staffs->have_posts()) :
-                            while ($staffs->have_posts()) : $staffs->the_post();
-                                $photo = get_field('staff-image');
-                                if (!empty($image)) {
-                                    echo '<img src="' . esc_url($image['url']) . '" alt="' . esc_attr($image['alt']) . '" />';
-                                }
-                                $message1 = get_field('message1');
-                                $message2 = get_field('message2');
-                                $position = get_field('position');
-                                $entry_year = get_field('entry_year');
-                        ?>
-                                <div class="staff-box swiper-slide">
-                                    <article class="post-slide-item">
-                                        <a href="<?php the_permalink(); ?>">
-                                            <img src="<?php echo esc_url($photo); ?>" alt="<?php the_title_attribute(); ?>">
-                                            <div class="staff-box-img">
-                                                <p class="staff-box-message"><?php echo esc_html($message1); ?></p>
-                                                <p class="staff-box-message"><?php echo esc_html($message2); ?></p>
-                                                <div class="staff-box-past">
-                                                    <p class="staff-box-position"><?php echo esc_html($position); ?></p>
-                                                    <p class="staff-box-year"><?php echo esc_html($entry_year); ?>年入社</p>
-                                                </div>
-                                                <p class="staff-box-name"><?php the_title(); ?></p>
-                                            </div>
-                                        </a>
-                                    </article>
-                                </div>
-                        <?php endwhile; wp_reset_postdata();endif; ?>
+            <div class="staff-inner">
+                <div class="content-wrapper">
+                    <div class="text-wrapper staff-text-wrapper">
+                        <div class="staff-section-title">
+                            <h2 class="content-title staff-content-title"><span>人</span>を知る</h2>
+                        </div>
+                        <p class="content-item staff-content-item">TETOTEの社員がどういった信念を持って働いているのか、<br>
+                            一日のスケジュールや仕事内容などを紹介します。</p>
                     </div>
                 </div>
+                <div class="staff-sec slider-post slider">
+                    <div class="staff-sec-inner swiper limited-slider">
+                        <div class="staff-box-wrapper swiper-wrapper">
+                            <div class="staff-box swiper-slide">
+                                <article class="post-slide-item">
+                                    <img src="<?php echo get_template_directory_uri(); ?>/img/syain01.jpg" alt="社員スタッフ西村優">
+                                    <div class="staff-box-img">
+                                        <p class="staff-box-message">「あなたが担当で良かった」</p>
+                                        <p class="staff-box-message">この一言が、最高のやりがい</p>
+                                        <div class="staff-box-past">
+                                            <p class="staff-box-position">コンサルタント</p>
+                                            <p class="staff-box-year">2011年入社</p>
+                                        </div>
+                                        <p class="staff-box-name">西村 優</p>
+                                    </div>
+                                </article>
+                            </div>
+                            <div class="staff-box swiper-slide">
+                                <article class="post-slide-item">
+                                    <img src="<?php echo get_template_directory_uri(); ?>/img/syain02.jpg" alt="社員スタッフ橋本拓也">
+                                    <div class="staff-box-img-box2">
+                                        <p class="staff-box-message">全力で考えぬける環境</p>
+                                        <p class="staff-box-message">試練の数だけ強くなれました</p>
+                                        <div class="staff-box-past">
+                                            <p class="staff-box-position">コンサルタント</p>
+                                            <p class="staff-box-year">2015年入社</p>
+                                        </div>
+                                        <p class="staff-box-name">橋本 拓也</p>
+                                    </div>
+                                </article>
+                            </div>
+                            <div class="staff-box swiper-slide">
+                                <article class="post-slide-item">
+                                    <img src="<?php echo get_template_directory_uri(); ?>/img/syain03.jpg" alt="社員スタッフ青木美月">
+                                    <div class="staff-box-img">
+                                        <p class="staff-box-message">お客様も知らない課題を</p>
+                                        <p class="staff-box-message">一緒に探し出す醍醐味</p>
+                                        <div class="staff-box-past">
+                                            <p class="staff-box-position">ソリューション営業</p>
+                                            <p class="staff-box-year">2017年入社</p>
+                                        </div>
+                                        <p class="staff-box-name">青木 美月</p>
+                                    </div>
+                                </article>
+                            </div>   
+                            <div class="staff-box swiper-slide">
+                                <article class="post-slide-item">
+                                    <img src="<?php echo get_template_directory_uri(); ?>/img/syain04.jpg" alt="社員スタッフ佐々木健">
+                                    <div class="staff-box-img-box2">
+                                        <p class="staff-box-message">「あなたが担当で良かった」</p>
+                                        <p class="staff-box-message">この一言が、最高のやりがい</p>
+                                        <div class="staff-box-past">
+                                            <p class="staff-box-position">コンサルタント</p>
+                                            <p class="staff-box-year">2004年入社</p>
+                                        </div>
+                                        <p class="staff-box-name">佐々木 健</p>
+                                    </div>
+                                </article>
+                            </div>
+                        </div>
+                    </div>
+                </div>   
             </div>
-        </div>
-
-        <div class="viewmore-button viewmore-button-staff">
-            <a href="<?php echo get_post_type_archive_link('staff'); ?>">VIEW MORE</a>
-        </div>
-
-        <div class="page-button-box">
-            <a href="#" class="page-button-white__left">←</a>
-            <a href="#" class="page-button-white__right">→</a>
-        </div>
-    </section>
+            <div class="viewmore-button viewmore-button-staff">
+                <a href="<?php echo esc_url(home_url('/staff/')); ?>/staff/">VIEW MORE</a>
+            </div>
+            <div class="page-button-box" >
+                <a href="" class="page-button-white__left">←</a>
+                <a href="" class="page-button-white__right">→</a>
+            </div>     
+        </section>
 
     <section id="benefits" class="benefits">
         <div class="inner">

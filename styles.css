@@ -509,6 +509,10 @@ button {
   }
 }
 
+.viewmore-button-staff {
+  margin-top: 240px;
+}
+
 .content-title {
   font-size: 3.25rem;
 }
@@ -578,7 +582,7 @@ button {
   max-width: 200px;
   width: 100%;
   position: absolute;
-  bottom: 8px;
+  bottom: 16px;
   right: 157px;
 }
 @media screen and (max-width: 1200px) {
@@ -685,8 +689,16 @@ button {
   right: 0;
   opacity: 1;
   visibility: visible;
-  animation: slideDown 0.3s ease-in-out;
+  animation: slideDown 0.4s ease-in-out;
   background-color: #fff;
+}
+@keyframes slideDown {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(0%);
+  }
 }
 .header--sticky .header-hamburger-icon span {
   background-color: #222222;
@@ -702,14 +714,6 @@ button {
   align-items: center;
 }
 
-@keyframes slideDown {
-  0% {
-    transform: translateY(-100%);
-  }
-  100% {
-    transform: translateY(0%);
-  }
-}
 .header-button {
   display: block;
   padding: 0.875rem 3.5rem;
@@ -1944,10 +1948,6 @@ footer {
   .staff-box:nth-child(6n+4) {
     margin-top: 28px;
   }
-}
-
-.viewmore-button-staff {
-  margin-top: 0;
 }
 
 .career {
@@ -4441,7 +4441,7 @@ aside {
   display: none;
   padding-left: 36px;
   border-bottom: #AFA86F 1px solid;
-  transition: max-height 0.5s ease, opacity 0.5s ease;
+  transition: max-height 0.9s ease, opacity 0.5s ease;
   padding-bottom: 23px;
   line-height: 1;
 }
@@ -4466,7 +4466,7 @@ aside {
   background: #fff;
   position: relative;
   gap: 22px;
-  transition: 0.5s;
+  transition: 0.9s;
 }
 .accordion .accordion-header:hover {
   opacity: 0.7;

@@ -7,6 +7,15 @@ function theme_setup()
 add_action('after_setup_theme', 'theme_setup');
 
 
+//cssの読み込み
+function my_theme_scripts()
+{
+    $version = filemtime(get_theme_file_path('/css/style.css'));
+    wp_enqueue_style('my-theme-style', get_theme_file_uri('/css/style.css'), array(), $version);
+}
+add_action('wp_enqueue_script', 'my_theme_scripts');
+
+
 function tetote_enqueue_scripts()
 {
     // Swiper CSS
@@ -41,17 +50,14 @@ function tetote_enqueue_scripts()
 add_action('wp_enqueue_scripts', 'tetote_enqueue_scripts');
 
 
-//cssの読み込み
-function my_theme_scripts() {
-    $version = filemtime(get_theme_file_path('/css/style.css'));
-    wp_enqueue_style('my-theme-style', get_theme_file_uri('/css/style.css'), array(), $version);
-}
-add_action('wp_enqueue_script','my_theme_scripts');
+
 
 
 //スタッフ紹介のカスタム
-function create_post_type_staff() {
-    register_post_type('staff',
+function create_post_type_staff()
+{
+    register_post_type(
+        'staff',
         array(
             'labels' => array(
                 'name' => 'スタッフ紹介',

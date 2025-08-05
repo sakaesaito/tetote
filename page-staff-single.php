@@ -16,7 +16,7 @@
                             東京大学工学部を卒業後、大手IT企業でシステムエンジニアとして5年間、システム開発に携わった。その後、TETOTEに転職し、IT戦略策定やシステム導入プロジェクトの支援に従事。豊富な経験と知識を活かし、クライアントの課題解決に貢献している。
                         </p>
                     </div>
-                    <div class="page-staff-box-img"><img src="<?php echo get_template_directory_uri(); ?>/img/syain01.jpg" alt="社員写真 西村優"></div>
+                    <div class="page-staff-box-img"><img src="<?php echo get_template_directory_uri(); ?>/img/staff-single-syain01.jpg" alt="社員写真 西村優"></div>
                 </div>
             </div>
         </div>
@@ -77,7 +77,7 @@
             <h2 class="page-staff-title-member">その他のメンバー</h2>
             <div class="page-staff-sec">
                 <div class="sub-staff-box page-staff-box-list">
-                    <a href="/staff/takahashi-satoru/">
+                    <a href="<?php echo home_url('/staff-single/'); ?>/staff-single/">
                         <img src="<?php echo get_template_directory_uri(); ?>/img/syain04.jpg" alt="社員写真ー高橋智">
                         <div class="sub-staff-box-img page-staff-list">
                             <p class="sub-staff-box-message">ビジネスの課題を</p>
@@ -91,7 +91,7 @@
                     </a>
                 </div>
                 <div class="sub-staff-box page-staff-box-list">
-                    <a href="/staff/takada-rin/">
+                    <a href="<?php echo home_url('/staff-single/'); ?>/staff-single/">
                         <img src="<?php echo get_template_directory_uri(); ?>/img/syain05.jpg" alt="社員写真ー高田凛">
                         <div class="sub-staff-box-img page-staff-list">
                             <p class="sub-staff-box-message">どんな難解な案件も</p>
@@ -105,7 +105,7 @@
                     </a>
                 </div>
                 <div class="sub-staff-box page-staff-box-list">
-                    <a href="/staff/tachibana-hikaru/">
+                    <a href="<?php echo home_url('/staff-single/'); ?>/staff-single/">
                         <img src="<?php echo get_template_directory_uri(); ?>/img/syain06.jpg" alt="社員写真 橘光">
                         <div class="sub-staff-box-img page-staff-list">
                             <p class="sub-staff-box-message">お客様と一緒に開発</p>

@@ -1,4 +1,4 @@
-<!-- <?php get_header(); ?>
+<?php get_header(); ?>
 
 <div class="is-small is-small-blog">
         <ol class="breadcrumbs  breadcrumbs__blog">
@@ -69,4 +69,4 @@
     </section>
 
 
-<?php get_footer(); ?> -->
+<?php get_footer(); ?>

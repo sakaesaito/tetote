@@ -1,27 +1,130 @@
 'use script';
 
-/*ハンバーガーメニュー */
-$(function () {
-    $(".header-hamburger").click(function () {
-        $(this).toggleClass("active");
-        $(".drawer-nav").toggleClass("active");
-        $(".header").toggleClass("drawer-open");
 
-        if ($(".drawer-nav").hasClass("active")) {
-            $("body").css("overflow", "hidden");
+
+// document.addEventListener('DOMContentLoaded', function () {
+//     const header = document.querySelector('.header');
+//     const mv = document.querySelector('.mv') || document.querySelector('.sub-mv');
+//     const hamburger = document.querySelector('.header-hamburger');
+//     const hamburgerSpans = document.querySelectorAll('.header-hamburger span');
+//     const menuText = document.querySelector('.header-hamburger-item');
+//     const whiteLogo = document.querySelector('.logo-white');
+//     const blackLogo = document.querySelector('.logo-black');
+
+//     if (!header) return;
+
+//     const isHome = document.body.classList.contains('home');
+
+//     if (isHome && mv) {
+//         window.addEventListener('scroll', function () {
+//             const scrollY = window.pageYOffset;
+//             const headerHeight = header.offsetHeight;
+
+//             if (scrollY >= 100) {
+//                 header.classList.add('header--sticky');
+//                 header.style.backgroundColor = '#fff';
+//                 document.body.style.marginTop = headerHeight + 'px';
+
+//                 if (whiteLogo) whiteLogo.classList.add('hidden');
+//                 if (blackLogo) blackLogo.classList.remove('hidden');
+//                 hamburgerSpans.forEach(span => span.style.backgroundColor = '#222');
+//                 if (menuText) menuText.style.color = '#222';
+//             } else {
+//                 header.classList.remove('header--sticky');
+//                 document.body.style.marginTop = '0';
+//             }
+//         });
+
+//     } else {
+//         // 下層ページ
+//         header.classList.add('header--sticky');
+//         header.style.backgroundColor = '#fff';
+
+//         if (whiteLogo) whiteLogo.classList.add('hidden');
+//         if (blackLogo) blackLogo.classList.remove('hidden');
+//         hamburgerSpans.forEach(span => span.style.backgroundColor = '#222');
+//         if (menuText) menuText.style.color = '#222';
+//     }
+
+// });
+
+document.addEventListener('DOMContentLoaded', function () {
+    const header = document.querySelector('.header');
+    const mv = document.querySelector('.mv') || document.querySelector('.sub-mv');
+    const hamburger = document.querySelector('.header-hamburger');
+    const drawer = document.querySelector('.drawer-nav');
+    const hamburgerSpans = document.querySelectorAll('.header-hamburger span');
+    const menuText = document.querySelector('.header-hamburger-item');
+    const whiteLogo = document.querySelector('.logo-white');
+    const blackLogo = document.querySelector('.logo-black');
+
+    if (!header || !hamburger || !drawer) return;
+
+    const isHome = document.body.classList.contains('home');
+
+    if (isHome && mv) {
+        window.addEventListener('scroll', function () {
+            const scrollY = window.pageYOffset;
+            const headerHeight = header.offsetHeight;
+
+            if (scrollY >= 100) {
+                header.classList.add('header--sticky');
+                header.style.backgroundColor = '#fff';
+                document.body.style.marginTop = headerHeight + 'px';
+                if (whiteLogo) whiteLogo.classList.add('hidden');
+                if (blackLogo) blackLogo.classList.remove('hidden');
+                hamburgerSpans.forEach(span => span.style.backgroundColor = '#222');
+                if (menuText) menuText.style.color = '#222';
+            } else {
+                header.classList.remove('header--sticky');
+                header.style.backgroundColor = 'transparent';
+                document.body.style.marginTop = '0';
+                if (!drawer.classList.contains('active')) {
+                    if (whiteLogo) whiteLogo.classList.remove('hidden');
+                    if (blackLogo) blackLogo.classList.add('hidden');
+                    hamburgerSpans.forEach(span => span.style.backgroundColor = '#fff');
+                    if (menuText) menuText.style.color = '#fff';
+                }
+            }
+        });
+    } else {
+        // 下層ページ
+        header.classList.add('header--sticky');
+        header.style.backgroundColor = '#fff';
+        if (whiteLogo) whiteLogo.classList.add('hidden');
+        if (blackLogo) blackLogo.classList.remove('hidden');
+        hamburgerSpans.forEach(span => span.style.backgroundColor = '#222');
+        if (menuText) menuText.style.color = '#222';
+    }
+
+    // ドロワーの開閉でロゴと色を切り替え
+    hamburger.addEventListener('click', function () {
+        drawer.classList.toggle('active');
+        hamburger.classList.toggle('active');
+        header.classList.toggle('drawer-open');
+
+        const drawerOpen = drawer.classList.contains('active');
+
+        if (drawerOpen) {
+            // ドロワー開いたら黒ロゴに
+            if (whiteLogo) whiteLogo.classList.add('hidden');
+            if (blackLogo) blackLogo.classList.remove('hidden');
+            hamburgerSpans.forEach(span => span.style.backgroundColor = '#222');
+            if (menuText) menuText.style.color = '#222';
+            document.body.style.overflow = 'hidden';
         } else {
-            $("body").css("overflow", "auto");
+            // ドロワー閉じたらスクロール位置に応じて戻す
+            const scrollY = window.pageYOffset;
+            if (isHome && scrollY < 100) {
+                if (whiteLogo) whiteLogo.classList.remove('hidden');
+                if (blackLogo) blackLogo.classList.add('hidden');
+                hamburgerSpans.forEach(span => span.style.backgroundColor = '#fff');
+                if (menuText) menuText.style.color = '#fff';
+            }
+            document.body.style.overflow = 'auto';
         }
     });
-
-    $(".drawer-item a").click(function () {
-        $(".drawer-nav").removeClass("active");
-        $(".header-hamburger").removeClass("active");
-        $(".header").removeClass("drawer-open");
-        $("body").css("overflow", "auto");
-    });
 });
-
 
 
 
@@ -168,7 +271,7 @@ const swiper2 = new Swiper('.limited-slider', {
     breakpoints: {
         0: { slidesPerView: 1.4, spaceBetween: 20 },
         600: { slidesPerView: 2, spaceBetween: 24 },
-        1024: { slidesPerView: 3, spaceBetween: 34 },
+        1024: { slidesPerView: 3, spaceBetween: 24 },
         1400: { slidesPerView: 3.5, spaceBetween: 30 },
         1500: { slidesPerView: 4, spaceBetween: 30 }
     }
@@ -205,51 +308,51 @@ document.addEventListener('DOMContentLoaded', function () {
 //   ＿＿＿＿＿＿＿＿＿スクロール後ヘッダーが降りてくる＿＿＿＿＿＿
 
 
-document.addEventListener('DOMContentLoaded', function () {
-    const header = document.querySelector('.header');
-    const mv = document.querySelector('.ditails-mv') || document.querySelector('.mv') || document.querySelector('.sub-mv') ;
-    const hamburgerSpans = document.querySelectorAll('.header-hamburger span');
-    const menuText = document.querySelector('.header-hamburger-item');
-    const whiteLogo = document.querySelector('.logo-white');
-    const blackLogo = document.querySelector('.logo-black');
+// document.addEventListener('DOMContentLoaded', function () {
+//     const header = document.querySelector('.header');
+//     const mv = document.querySelector('.mv') || document.querySelector('.sub-mv');
+//     const hamburgerSpans = document.querySelectorAll('.header-hamburger span');
+//     const menuText = document.querySelector('.header-hamburger-item');
+//     const whiteLogo = document.querySelector('.logo-white');
+//     const blackLogo = document.querySelector('.logo-black');
 
-    if (!header) return;
+//     if (!header) return;
 
-    const isHome = document.body.classList.contains('home');
+//     const isHome = document.body.classList.contains('home');
 
-    if (isHome && mv) {
-        // トップページ：スクロールで切り替え
-        window.addEventListener('scroll', () => {
-            const scrollTop = window.scrollY;
-            const mvHeight = mv.offsetHeight;
+//     if (isHome && mv) {
+//         // トップページ：スクロールで切り替え
+//         window.addEventListener('scroll', function () {
+//             const header = document.querySelector('.header');
+//             const headerHeight = header.offsetHeight; // ヘッダーの高さを取得
+//             const scrollY = window.pageYOffset;
 
-            if (scrollTop >= mvHeight) {
-                header.classList.add('header--sticky');
-                header.style.backgroundColor = '#fff';
-                document.body.style.marginTop = header.offsetHeight + 'px';
+//             if (scrollY >= 118) {
+//                 header.classList.add('header--sticky');
+//                 header.style.backgroundColor = '#fff';
+//                 document.body.style.marginTop = headerHeight + 'px'; // コンテンツにヘッダーの高さ分の余白を設定
+//                 if (whiteLogo) whiteLogo.classList.add('hidden');
+//                 if (blackLogo) blackLogo.classList.remove('hidden');
+//                 hamburgerSpans.forEach(span => span.style.backgroundColor = '#222');
+//                 if (menuText) menuText.style.color = '#222';
+//             } else {
+//                 header.classList.remove('header--sticky');
+//                 document.body.style.marginTop = '0'; // コンテンツの余白をリセット
+//             }
+//         });
+//         if (whiteLogo) whiteLogo.classList.remove('hidden');
+//         if (blackLogo) blackLogo.classList.add('hidden');
+//         hamburgerSpans.forEach(span => span.style.backgroundColor = '#fff');
+//         if (menuText) menuText.style.color = '#fff';
+//     }
+//     else {
+//         // 下層ページ：初期状態で白背景・黒ロゴ・黒線・黒文字
+//         header.classList.add('header--sticky');
+//         header.style.backgroundColor = '#fff';
+//         if (whiteLogo) whiteLogo.classList.add('hidden');
+//         if (blackLogo) blackLogo.classList.remove('hidden');
+//         hamburgerSpans.forEach(span => span.style.backgroundColor = '#222');
+//         if (menuText) menuText.style.color = '#222';
+//     }
+// });
 
-                if (whiteLogo) whiteLogo.classList.add('hidden');
-                if (blackLogo) blackLogo.classList.remove('hidden');
-                hamburgerSpans.forEach(span => span.style.backgroundColor = '#222');
-                if (menuText) menuText.style.color = '#222';
-            } else {
-                header.classList.remove('header--sticky');
-                header.style.backgroundColor = 'transparent';
-                document.body.style.marginTop = '0';
-
-                if (whiteLogo) whiteLogo.classList.remove('hidden');
-                if (blackLogo) blackLogo.classList.add('hidden');
-                hamburgerSpans.forEach(span => span.style.backgroundColor = '#fff');
-                if (menuText) menuText.style.color = '#fff';
-            }
-        });
-    } else {
-        // 下層ページ：初期状態で白背景・黒ロゴ・黒線・黒文字
-        // header.classList.add('header--sticky');
-        header.style.backgroundColor = '#fff';
-        if (whiteLogo) whiteLogo.classList.add('hidden');
-        if (blackLogo) blackLogo.classList.remove('hidden');
-        hamburgerSpans.forEach(span => span.style.backgroundColor = '#222');
-        if (menuText) menuText.style.color = '#222';
-    }
-});
