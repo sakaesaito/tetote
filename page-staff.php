@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 
-<section id="sub-staff" class="sub-sutaff">
+<section id="sub-staff" class="sub-staff">
     <div class="sub-mv" style="background-image: url('<?php echo get_template_directory_uri(); ?>/img/staff-fv.jpg');background-size: cover;background-position: center;background-repeat: no-repeat;">
         <div class="sub-inner sub-inner-mv">
             <div class="sub-mv-box">
@@ -21,8 +21,8 @@
         <div class="sub-staff-sec">
             <div class="sub-staff-box-wrapper">
                 <div class="sub-staff-box">
-                    <a href="<?php echo home_url('/staff-single/'); ?>/staff-single/">
-                        <img src="<?php echo get_template_directory_uri(); ?>/img/staff-single-syain01.jpg" alt="社員写真ー西村優">
+                    <a href="<?php echo esc_url(home_url('/staff-single/')); ?>">
+                    <img src="<?php echo get_template_directory_uri(); ?>/img/staff-single-syain01.jpg" alt="社員写真ー西村優">
                         <div class="sub-staff-box-img">
                             <p class="sub-staff-box-message">「あなたが担当で良かった」</p>
                             <p class="sub-staff-box-message">この一言が、最高のやりがい</p>
@@ -35,7 +35,7 @@
                     </a>
                 </div>
                 <div class="sub-staff-box">
-                    <a href="<?php echo home_url('/staff-single/'); ?>/staff-single/">
+                    <a href="<?php echo home_url('/staff-single/'); ?>">
                         <img src="<?php echo get_template_directory_uri(); ?>/img/syain02.jpg" alt="社員写真ー橋本拓也">
                         <div class="sub-staff-box-img">
                             <p class="sub-staff-box-message">全力で考えぬける環境</p>
@@ -49,8 +49,8 @@
                     </a>
                 </div>
                 <div class="sub-staff-box">
-                    <a href="<?php echo home_url('/staff-single/'); ?>/staff-single/">
-                        <img src="<?php echo get_template_directory_uri(); ?>/img/syain03.jpg" alt="社員写真ー青木美月">
+                    <a href="<?php echo home_url('/staff-single/'); ?>">
+                        <img src="<?php echo get_template_directory_uri(); ?>/img/syain03.jpg" alt="社員青木美月">
                         <div class="sub-staff-box-img">
                             <p class="sub-staff-box-message">お客様も知らない課題を</p>
                             <p class="sub-staff-box-message">一緒に探し出す醍醐味</p>
@@ -108,7 +108,6 @@
         </div>
     </div>
 </section>
-
 
 
 <?php get_footer(); ?>

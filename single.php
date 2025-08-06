@@ -56,7 +56,7 @@
                     <div class="blog-detail-news">
                         <a href="/blog/post01">
                         <p class="topic">内定者向け研修を行いました</p>
-                        <span datetime="2024-03-25" class="page-blog-date"><?php echo get_the_date('Y.N.j') ; ?></span>
+                        <span datetime="2024-03-25" class="page-blog-date"></span>
                         </a>
                     </div>
                 </div>
@@ -65,7 +65,7 @@
                         <div class="blog-detail-news">
                             <a href="/blog/post02">
                             <p class="topic">【新卒採用2024】エントリー受付中！</p>
-                            <span datetime="2024-08-25 " class="page-blog-date"><?php echo get_the_date('Y.N.j') ; ?></span>
+                            <span datetime="2024-08-25 " class="page-blog-date"></span>
                             </a>
                         </div>
                         <a href="/blog/next" class="blog-pagination-button next" aria-label="次のページ">></a>
