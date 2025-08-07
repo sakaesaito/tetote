@@ -153,8 +153,8 @@ button {
 
 }
 
-.page-button-white__left,
-.page-button-white__right {
+.page-button-white-left,
+.page-button-white-right {
     width: 58px;
     height: 58px;
     border-radius: 50%;
@@ -167,14 +167,14 @@ button {
     line-height: 58px;
 }
 
-.page-button-white__right:hover {
+.page-button-white-right:hover {
     width: 70px;
     height: 70px;
     padding-left: 15px;
     line-height: 70px;
 }
 
-.page-button-white__left:hover {
+.page-button-white-left:hover {
     width: 70px;
     height: 70px;
     padding-right: 15px;

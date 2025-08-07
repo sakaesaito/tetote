@@ -7,7 +7,6 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Viga&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri(); ?>/styles.css">
     <?php if (is_single()): ?>
         <link rel="stylesheet" href="http://cdnjs.cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/css/lightbox.min.css">
     <?php endif; ?>
@@ -15,6 +14,7 @@
     <?php if(is_single()): ?>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/css/lightbox.min.css">
     <?php endif; ?>
+    <link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri(); ?>/styles.css">
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"
         integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
@@ -32,7 +32,7 @@
         <div class="header-inner">
             <div class="header-nav">
                 <h1 class="header-logo">
-                    <a class="header-logo__link" href="<?php echo esc_url(home_url('/')); ?>">
+                    <a class="header-logo-link" href="<?php echo esc_url(home_url('/')); ?>">
                         <img src="<?php echo get_template_directory_uri(); ?>/img/tetote-logo-white.png" alt="白ロゴ" class="logo logo-white">
                         <img src="<?php echo get_template_directory_uri(); ?>/img/tetote-logo-black.png" alt="黒ロゴ" class="logo logo-black hidden" >
                     </a>
@@ -55,21 +55,20 @@
                     </div>
                     <div class="drawer-right">
                         <div class="drawer-list">
-                            <div class="drawer-line">
-                                <div class="drawer-item"><a href="<?php echo esc_url(home_url('/about/')); ?>">ABOUT US<br><span>TETOTEについて</span></a></div>
-                                <div class="drawer-item"><a href="<?php echo esc_url(home_url('/staff/')); ?>">STAFF<br><span>社員について</span></a></div>
-                                <div class="drawer-item"><a href="<?php echo esc_url(home_url('/blog/')); ?>">BLOG<br><span>採用ブログ</span></a></div>
-                                <div>
+                            <ul class="drawer-line">
+                                <li class="drawer-item"><a href="<?php echo esc_url(home_url('/about/')); ?>">ABOUT US<br><span>TETOTEについて</span></a></li>
+                                <li class="drawer-item"><a href="<?php echo esc_url(home_url('/staff/')); ?>">STAFF<br><span>社員について</span></a></li>
+                                <li class="drawer-item"><a href="<?php echo esc_url(home_url('/blog/')); ?>">BLOG<br><span>採用ブログ</span></a></li>
+                                <li>
                                     <p class="drawer-parts"></p>
-                                </div>
-                            </div>
-                            <div>
-                                <div class="drawer-item"><a href="<?php echo esc_url(home_url('/benefits/')); ?>">BENEFITS<br><span>福利厚生について</span></a></div>
-                                <div class="drawer-item"><a href="<?php echo esc_url(home_url('/career/')); ?>">CARRER<br><span>研修制度とキャリアパス</span></a></div>
-                                <div class="drawer-item"><a href="<?php echo esc_url(home_url('/faq/')); ?>">FAQ<br><span>よくある質問</span></a></div>
-                            </div>
+                                </li>
+                            </ul>
+                            <ul>
+                                <li class="drawer-item"><a href="<?php echo esc_url(home_url('/benefits/')); ?>">BENEFITS<br><span>福利厚生について</span></a></li>
+                                <li class="drawer-item"><a href="<?php echo esc_url(home_url('/career/')); ?>">CARRER<br><span>研修制度とキャリアパス</span></a></li>
+                                <li class="drawer-item"><a href="<?php echo esc_url(home_url('/faq/')); ?>">FAQ<br><span>よくある質問</span></a></li>
+                            </ul>
                         </div>
-
                         <div class="drawer-button">
                             <a class="drawer-button-recruit" href="<?php echo esc_url(home_url('/details/')); ?>">募集要項</a>
                             <a class="drawer-button-entry" href="<?php echo esc_url(home_url('/entry/')); ?>">ENTRY</a>
@@ -78,6 +77,5 @@
                 </div>
             </nav>
             <?php get_template_part('template-parts/drawer'); ?>
-        </div>
         </div>
     </header>

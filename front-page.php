@@ -147,8 +147,8 @@
                 <a href="<?php echo home_url('/staff/'); ?>">VIEW MORE</a>
             </div>
             <div class="page-button-box" >
-                <a href="" class="page-button-white__left">←</a>
-                <a href="" class="page-button-white__right">→</a>
+                <a href="" class="page-button-white-left">←</a>
+                <a href="" class="page-button-white-right">→</a>
             </div>     
         </section>
 
@@ -264,7 +264,7 @@
                         </ul>
                     </div>
                     <div class="blog-top-page-2">
-                        <div class="page-button-white__right">→</div>
+                        <div class="page-button-white-right">→</div>
                         <a class="blog-top-link" href="<?php echo esc_url(home_url('/blog-details/')); ?>/blog-detail/">VIEW MORE</a>
                     </div>
                 </div>
@@ -305,7 +305,4 @@
         }
     });
 </script>
-
-
-
 <?php get_footer(); ?>

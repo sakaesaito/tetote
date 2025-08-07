@@ -1,7 +1,7 @@
 <?php get_header(); ?>
 
 <section id="sub-benefits" class="sub-benefits">
-    <div class="sub-mv" style="background-image: url('<?php echo get_template_directory_uri(); ?>/img/about-fv.jpg'); background-size: cover;
+    <div class="sub-mv" style="background-image: url('<?php echo get_template_directory_uri(); ?>/img/benefits-fv.jpg'); background-size: cover;
     background-position: center;
     background-repeat: no-repeat;">
         <div class="sub-inner sub-inner-mv">
@@ -84,8 +84,6 @@
         <div class="benefits-staff-img"><img src="<?php echo esc_url(get_template_directory_uri()); ?>/img/benefits-user.jpg" alt=""></div>
     </div>
 </section>
-<section>
 
-</section>
 
 <?php get_footer(); ?>

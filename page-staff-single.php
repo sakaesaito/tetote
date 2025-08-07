@@ -5,14 +5,14 @@
             <div class="sub-inner page-staff-mv-inner">
                 <div class="page-staff-box">
                     <div class="page-staff-box-left">
-                        <h2 class="page-staff-box__title">あなたが担当で良かった</h2>
-                        <h3 class="page-staff-box__item">この一言が、最高のやりがい</h3>
-                        <p class="page-staff-box__position">コンサルタント</p>
+                        <h2 class="page-staff-box-title">あなたが担当で良かった</h2>
+                        <h3 class="page-staff-box-item">この一言が、最高のやりがい</h3>
+                        <p class="page-staff-box-position">コンサルタント</p>
                         <div class="page-staff-box-name-sec">
-                            <p class="page-staff-box__name">西村 優</p>
-                            <p class="page-staff-box__year">2011年入社</p>
+                            <p class="page-staff-box-name">西村 優</p>
+                            <p class="page-staff-box-year">2011年入社</p>
                         </div>
-                        <p class="page-staff-box__note">
+                        <p class="page-staff-box-note">
                             東京大学工学部を卒業後、大手IT企業でシステムエンジニアとして5年間、システム開発に携わった。その後、TETOTEに転職し、IT戦略策定やシステム導入プロジェクトの支援に従事。豊富な経験と知識を活かし、クライアントの課題解決に貢献している。
                         </p>
                     </div>
@@ -30,30 +30,30 @@
     <section>
         <div class="page-staff-main">
             <div class="page-staff-wrapper">
-                <h2 id="title-01" class="page-staff__title">普段の業務内容について</h2>
-                <p class="page-staff__note">TETOTEのコンサルティング本部で、ITコンサルタントとして勤務しています。主な業務内容は、以下の3つです。</p>
+                <h2 id="title-01" class="page-staff-title">普段の業務内容について</h2>
+                <p class="page-staff-note">TETOTEのコンサルティング本部で、ITコンサルタントとして勤務しています。主な業務内容は、以下の3つです。</p>
                 <div class="page-staff-pic"><img src="/img/sub-page-staff-img.png" alt=""></div>
-                <h2 id="title-02" class="page-staff__title">学生時代に力を入れたことは？</h2>
-                <p class="page-staff__note">学生時代に力を入れたことは、ロボットプログラミングサークルでの活動です。<br>
+                <h2 id="title-02" class="page-staff-title">学生時代に力を入れたことは？</h2>
+                <p class="page-staff-note">学生時代に力を入れたことは、ロボットプログラミングサークルでの活動です。<br>
                 私は、東京大学工学部在学中に、ロボットプログラミングサークルに所属していました。サークルでは、二足歩行ロボットや自律走行ロボットなどの製作に取り組み、全国大会にも出場しました。<br>
                 この活動を通して、問題解決能力、チームワーク力、プレゼンテーション能力を身につけました。<br>
                 特に、二足歩行ロボットの製作では、ロボットが歩行できるようにするためのプログラムを開発しました。試行錯誤を繰り返しながら、目標を達成するために必要な知識を積極的に学び、チームメンバーと協力して課題を解決しました。<br>
                 この経験は、現在の仕事、つまり、クライアントの課題を解決するために、必要な知識を積極的に学び、チームメンバーと協力して課題を解決する、ここに活かされています。</p>
-                <h2 id="title-03" class="page-staff__title">TETOTEを志望した理由は？</h2>
-                <p class="page-staff__note">IT戦略策定からシステム導入まで一貫して支援できる点です。<br>
+                <h2 id="title-03" class="page-staff-title">TETOTEを志望した理由は？</h2>
+                <p class="page-staff-note">IT戦略策定からシステム導入まで一貫して支援できる点です。<br>
                 前職でシステムエンジニアとして5年間、システム開発に携わった中で、単なる技術課題解決ではなく、クライアントの経営課題解決に貢献したいと考えるようになりました。<br>
                 TETOTEは、IT戦略策定から導入まで一貫して支援できる数少ないコンサルティング会社です。自分の技術力と経営視点を活かし、課題解決に貢献したいという想いを叶えられる環境だと確信しました。
                 </p>
-                <h2 id="title-04" class="page-staff__title">やりがいを感じる瞬間は？</h2>
-                <p class="page-staff__note">特に印象深いのは、大手製造業のA社でのプロジェクトです。A社は、生産管理システムの老朽化により、作業効率の低下とコスト増加に悩んでいました。<br>
+                <h2 id="title-04" class="page-staff-title">やりがいを感じる瞬間は？</h2>
+                <p class="page-staff-note">特に印象深いのは、大手製造業のA社でのプロジェクトです。A社は、生産管理システムの老朽化により、作業効率の低下とコスト増加に悩んでいました。<br>
                 私は、A社の経営層や現場担当者と綿密なヒアリングを行い、課題を分析しました。そして、最新のクラウド技術を活用した新しい生産管理システムを提案しました。<br>
                 導入後は、作業効率が大幅に向上し、コストも削減できました。さらに、システムの使いやすさが好評で、現場担当者からも感謝の言葉を頂きました。<br>
                 この経験を通して、ITの力でクライアントの課題解決に貢献できる仕事の価値を実感しました。</p>
-                <h2 id="title-05" class="page-staff__title">どんな人と一緒に働きたい？</h2>
-                <p class="page-staff__note">自分の考えを相手に分かりやすく伝え、相手の意見を尊重できる人です。<br>
+                <h2 id="title-05" class="page-staff-title">どんな人と一緒に働きたい？</h2>
+                <p class="page-staff-note">自分の考えを相手に分かりやすく伝え、相手の意見を尊重できる人です。<br>
                 このような人々と共に働くことで、互いに刺激を与え合い、より高いレベルを目指していけると考えています。</p>
-                <h2 id="title-06" class="page-staff__title">応募者へのメッセージ</h2>
-                <p class="page-staff__note">TETOTEは、「ITの力で社会課題を解決する」というビジョンを掲げ、日々成長している会社です。<br>
+                <h2 id="title-06" class="page-staff-title">応募者へのメッセージ</h2>
+                <p class="page-staff-note">TETOTEは、「ITの力で社会課題を解決する」というビジョンを掲げ、日々成長している会社です。<br>
                 高い志を持ち、自ら考え行動できる人と一緒に働きたいです。<br>
                 一緒に、社会に貢献できる仕事に挑戦しましょう！</p>
             </div>

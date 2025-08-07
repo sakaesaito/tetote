@@ -29,7 +29,7 @@
     max-width: 564px;
     width: 100%;
     height: 100%;
-    background-image: url("/img/blog-title.png");
+    background-image: url(./img/blog-title.png);
     background-repeat: no-repeat;
     background-size: contain;
         @media screen and (max-width: 1024px) {
@@ -114,11 +114,6 @@
     @media screen and (max-width: 768px) {
         font-size: 0.875rem;
         margin-top: -17px;
-    }
-
-    &:nth-child(3) {
-        
-        
     }
 }
 .topics3 {

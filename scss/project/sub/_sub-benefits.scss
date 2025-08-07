@@ -7,6 +7,33 @@
 .sub-inner-benefits {
     padding-inline: 1.48%;
 }
+
+.content-title-benefits {
+    text-align: center;
+    position: relative;
+
+    @media screen and (max-width: 1024px) {
+        text-align: left;    
+    }
+
+    &::after {
+        content: "";
+    position: absolute;
+    left: 5%;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(./img/benefits-title.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+        @media screen and (max-width: 1024px) {
+            left: 0;
+        }
+        @media screen and (max-width: 768px) {
+            top: 0.23em;
+        }
+    }
+}
 .benefits-list {
     display: flex;
     gap: 40px;

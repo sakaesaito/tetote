@@ -38,11 +38,10 @@
         position: absolute;
         left: -3em;
         top: 0;
-        z-index: -1;
         max-width: 564px;
         width: 100%;
         height: 100%;
-        background-image: url(../img/member-title.png);
+        background-image: url(./img/member-title.png);
         background-repeat: no-repeat;
         background-size: contain;
         @media screen and (max-width: 1024px) {

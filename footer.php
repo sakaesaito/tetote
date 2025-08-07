@@ -37,9 +37,9 @@
         </div>
 
         <ul class="footer-nav">
-            <li><a href="#"><img src="<?php echo esc_url(get_template_directory_uri() . '/img/facebook-icon.png'); ?>" alt="フェイスブックアイコン"></a></li>
-            <li><a href="#"><img src="<?php echo esc_url(get_template_directory_uri() . '/img/twitter-icon.png'); ?>" alt="ツイッターアイコン"></a></li>
-            <li><a href="#"><img src="<?php echo esc_url(get_template_directory_uri() . '/img/movie-icon.png'); ?>" alt="ユーチューブアイコン"></a></li>
+            <li><a href="#"><img src="<?php echo esc_url(get_template_directory_uri() . '/img/facebook-icon.svg'); ?>" alt="フェイスブックアイコン"></a></li>
+            <li><a href="#"><img src="<?php echo esc_url(get_template_directory_uri() . '/img/twitter-icon.svg'); ?>" alt="ツイッターアイコン"></a></li>
+            <li><a href="#"><img src="<?php echo esc_url(get_template_directory_uri() . '/img/moves-icon.svg'); ?>" alt="動画アイコン"></a></li>
         </ul>
         <small class="copyright">&copy;2024 TETOTE All Right Reserved.</small>
     </div>

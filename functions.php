@@ -53,22 +53,22 @@ add_action('wp_enqueue_scripts', 'tetote_enqueue_scripts');
 
 
 
-//スタッフ紹介のカスタム
-function create_post_type_staff()
-{
-    register_post_type(
-        'staff',
-        array(
-            'labels' => array(
-                'name' => 'スタッフ紹介',
-                'singular_name' => 'スタッフ',
-            ),
-            'public' => true,
-            'has_archive' => true,
-            'menu_position' => 6,
-            'menu_icon' => 'dashicons-businessman',
-            'supports' => array('title', 'editor', 'thumbnail'),
-        )
-    );
-}
-add_action('init', 'create_post_type_staff');
+// //スタッフ紹介のカスタム
+// function create_post_type_staff()
+// {
+//     register_post_type(
+//         'staff',
+//         array(
+//             'labels' => array(
+//                 'name' => 'スタッフ紹介',
+//                 'singular_name' => 'スタッフ',
+//             ),
+//             'public' => true,
+//             'has_archive' => true,
+//             'menu_position' => 6,
+//             'menu_icon' => 'dashicons-businessman',
+//             'supports' => array('title', 'editor', 'thumbnail'),
+//         )
+//     );
+// }
+// add_action('init', 'create_post_type_staff');
