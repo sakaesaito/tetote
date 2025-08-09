@@ -1,7 +1,7 @@
 <?php get_header(); ?>
 
 <section id="details" class="details">
-        <div class="ditails-mv faq-mv" style="background-image: url('<?php echo get_template_directory_uri(); ?>/img/faq-fv.jpg'); background-size: cover;background-position: center;background-repeat: no-repeat;">
+        <div class="ditails-mv faq-mv">
             <div class="sub-inner sub-inner-mv">
                 <div class="sub-mv-box">
                     <h2 class="sub-mv-title">FAQ</h2>
@@ -79,6 +79,7 @@
                     </span></div>
                 </div>
             </div>
+        </div>
     </section>
     <section id="faq-career">
         <div class="sub-inner  sub-inner-faq">

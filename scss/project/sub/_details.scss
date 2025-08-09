@@ -1,14 +1,13 @@
 .ditails-mv {
     height: 560px;
     margin-top: 118px;
-    background-image: url("/img/details-fv.jpg");
+    background-image: url("./img/details-fv.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     @media screen and (max-width: 768px) {
         margin-top: 60px;
     }
-
 }
 .details-mv-item {
     padding: 3px 9px;

@@ -182,11 +182,19 @@
 }
 
 .sub-mv {
-    background-image: url(./img/about-fv.jpg);
     height: 340px;
     margin-top: 118px;
-    background-repeat: no-repeat;
     width: 100%;
+    @media screen and (max-width: 768px) {
+        margin-top: 60px;
+    }
+}
+.about-mv {
+    margin-top: 118px;
+    background-image: url(./img/about-fv.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     @media screen and (max-width: 768px) {
         margin-top: 60px;
     }

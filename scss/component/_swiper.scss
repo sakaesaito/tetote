@@ -37,14 +37,14 @@
 
 .slider {
     width: 100%;
-    margin-top: 46px;
-    margin-bottom: 80px;
+    padding-top: 46px;
+    padding-bottom: 80px;
     background-color: #fff;
     position: relative;
 
     @media screen and (max-width: 768px) {
-        margin-top: 41px;
-        margin-bottom: 0;
+        padding-top: 41px;
+        padding-bottom: 0;
     }
 }
 
@@ -53,8 +53,6 @@
     justify-content: center;
     align-items: center;
     max-width: 506px;
-    height: auto;
-    transition: margin 0.3s ease;
 
     img {
         width: 100%;
@@ -63,18 +61,16 @@
 
 }
 
-
 .swiper-slide:nth-child(even) {
-    margin-top: 35px;
+    padding-top: 35px;
     @media screen and (max-width: 768px) {
-        margin-top: 30px;
+        padding-top: 30px;
     }
     
 }
 
-
 .swiper-slide.alt {
-    margin-top: 36px;
+    padding-top: 36px;
 }
 .swiper-wrapper {
     display: flex;
@@ -83,3 +79,4 @@
 .swiper {
     background-color: #fff;
 }
+

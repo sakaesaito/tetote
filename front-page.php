@@ -15,12 +15,9 @@
                         <div class="skew-background"></div>
                     </div>
                     <div class="mv-news-box">
-                        <?php if (have_posts()): while (have_posts()): the_post(); ?>
-                                <div class="mv-news-title"><a href="<?php echo home_url('/blog/'); ?>">NEWS</a></div>
-                                <div class="mv-news-item"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></div>
-                                <div class="mv-news-link"><a href="<?php echo home_url('/blog/'); ?>">VIEW MORE</a></div>
-                        <?php endwhile;
-                        endif; ?>
+                        <div class="mv-news-title"><a href="<?php echo home_url('/blog/'); ?>">NEWS</a></div>
+                        <div class="mv-news-item"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></div>
+                        <div class="mv-news-link"><a href="<?php echo home_url('/blog/'); ?>">VIEW MORE</a></div>
                     </div>
                 </div>
             </div>
@@ -49,7 +46,7 @@
     </section>
     <section id="about" class="about">
         <div class="inner">
-            <div class="about-viw" style="background-image: url('<?php echo get_template_directory_uri(); ?>/img/top-map.jpg');">
+            <div class="about-viw">
                 <div class="about-lead">
                     <p class="about-lead-ms">
                         「人手不足」<br>
@@ -89,7 +86,7 @@
                                     <div class="staff-box-img">
                                         <p class="staff-box-message">「あなたが担当で良かった」</p>
                                         <p class="staff-box-message">この一言が、最高のやりがい</p>
-                                        <div class="staff-box-past">
+                                        <div class="staff-box-post">
                                             <p class="staff-box-position">コンサルタント</p>
                                             <p class="staff-box-year">2011年入社</p>
                                         </div>
@@ -155,11 +152,11 @@
     <section id="benefits" class="benefits">
         <div class="inner">
             <div class="content-wrapper">
-                <div class="benefits-text-wrapper">
+                <a class="benefits-text-wrapper">
                     <h2 data-title="" class="content-title content-title-benefits"><span>制度・環境</span>を知る</h2>
                     <p class="content-item benefits-content-item">当社では働く従業員とそのご家族が穏やかに過ごせるよう、多様な研修、福利厚生を提供しています。
                     </p>
-                </div>
+                </a>
                 <div class="benefits-main-box">
                     <div class="benefits-img-wrapper">
                         <div class="benefits-img-box">
@@ -197,7 +194,7 @@
                             <p class="content-item blog-content-item">採用情報やイベント情報、社員の紹介など、<br> 日々の現場の様子をご紹介します。</p>
                         </div>
                         <div class="blog-top-page">
-                            <a href="<?php echo esc_url(home_url('/blog/')); ?>/blog/" class="page-button-white__right">→</a>
+                            <a href="<?php echo esc_url(home_url('/blog/')); ?>/blog/" class="page-button-white-right"></a>
                             <a href="<?php echo esc_url(home_url('/blog/')); ?>" class="blog-top-link" href="<?php echo esc_url(home_url('/blog/')); ?>/blog/">VIEW MORE</a>
                         </div>
                     </div>
@@ -212,7 +209,7 @@
                                                 <li class="blog-category">社内研修</li>
                                             </ul>
                                             <p class="topics">新入社員向けに、入社前研修を行いました。</p>
-                                            <time datetime="2055-02-11" class="date">2055.03.25</time>
+                                            <time datetime="2055-02-11" class="date">2055.02.11</time>
                                         </div>
                                     </div>
                                 </a>

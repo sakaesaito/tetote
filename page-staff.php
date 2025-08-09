@@ -1,8 +1,7 @@
 <?php get_header(); ?>
 
 <section id="sub-staff" class="sub-staff">
-    <div class="sub-mv" style="background-image: url('<?php echo get_template_directory_uri(); ?>/img/staff-fv.jpg');background-size: cover;background-position: center;background-repeat: no-repeat;">
-        <div class="sub-inner sub-inner-mv">
+    <div class="sub-mv">
             <div class="sub-mv-box">
                 <h2 class="sub-mv-title">STAFF</h2>
                 <h3 class="sub-mv-item staff-mv-item">社員について</h3>

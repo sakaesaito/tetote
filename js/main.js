@@ -1,52 +1,7 @@
 'use script';
 
 
-
-// document.addEventListener('DOMContentLoaded', function () {
-//     const header = document.querySelector('.header');
-//     const mv = document.querySelector('.mv') || document.querySelector('.sub-mv');
-//     const hamburger = document.querySelector('.header-hamburger');
-//     const hamburgerSpans = document.querySelectorAll('.header-hamburger span');
-//     const menuText = document.querySelector('.header-hamburger-item');
-//     const whiteLogo = document.querySelector('.logo-white');
-//     const blackLogo = document.querySelector('.logo-black');
-
-//     if (!header) return;
-
-//     const isHome = document.body.classList.contains('home');
-
-//     if (isHome && mv) {
-//         window.addEventListener('scroll', function () {
-//             const scrollY = window.pageYOffset;
-//             const headerHeight = header.offsetHeight;
-
-//             if (scrollY >= 100) {
-//                 header.classList.add('header--sticky');
-//                 header.style.backgroundColor = '#fff';
-//                 document.body.style.marginTop = headerHeight + 'px';
-
-//                 if (whiteLogo) whiteLogo.classList.add('hidden');
-//                 if (blackLogo) blackLogo.classList.remove('hidden');
-//                 hamburgerSpans.forEach(span => span.style.backgroundColor = '#222');
-//                 if (menuText) menuText.style.color = '#222';
-//             } else {
-//                 header.classList.remove('header--sticky');
-//                 document.body.style.marginTop = '0';
-//             }
-//         });
-
-//     } else {
-//         // 下層ページ
-//         header.classList.add('header--sticky');
-//         header.style.backgroundColor = '#fff';
-
-//         if (whiteLogo) whiteLogo.classList.add('hidden');
-//         if (blackLogo) blackLogo.classList.remove('hidden');
-//         hamburgerSpans.forEach(span => span.style.backgroundColor = '#222');
-//         if (menuText) menuText.style.color = '#222';
-//     }
-
-// });
+//   ＿＿＿＿＿＿＿＿＿スクロール後ヘッダーが降りてくる＿＿＿＿＿＿
 
 document.addEventListener('DOMContentLoaded', function () {
     const header = document.querySelector('.header');
@@ -98,7 +53,7 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 
     // ドロワーの開閉でロゴと色を切り替え
-    hamburger.addEventListener('click', function () {
+        hamburger.addEventListener('click', function () {
         drawer.classList.toggle('active');
         hamburger.classList.toggle('active');
         header.classList.toggle('drawer-open');
@@ -109,12 +64,13 @@ document.addEventListener('DOMContentLoaded', function () {
             // ドロワー開いたら黒ロゴに
             if (whiteLogo) whiteLogo.classList.add('hidden');
             if (blackLogo) blackLogo.classList.remove('hidden');
+            header.style.backgroundColor = '#fff';
             hamburgerSpans.forEach(span => span.style.backgroundColor = '#222');
             if (menuText) menuText.style.color = '#222';
             document.body.style.overflow = 'hidden';
         } else {
             // ドロワー閉じたらスクロール位置に応じて戻す
-            const scrollY = window.pageYOffset;
+            const scrollY = window;
             if (isHome && scrollY < 100) {
                 if (whiteLogo) whiteLogo.classList.remove('hidden');
                 if (blackLogo) blackLogo.classList.add('hidden');
@@ -130,50 +86,54 @@ document.addEventListener('DOMContentLoaded', function () {
 
 /* 写真無限スライダー */
 
-const swiper1 = new Swiper('.infinity-slider .slider', {
-    speed: 5000,
-    loop: true,
-    allowTouchMove: false,
-    centeredSlides: true,
-    autoplay: { delay: 0 },
-    breakpoints: {
-        0: { slidesPerView: 1, spaceBetween: 15 },
-        600: { slidesPerView: 2, spaceBetween: 24 },
-        1200: { slidesPerView: 3, spaceBetween: 34 },
-        1500: { slidesPerView: 4, spaceBetween: 42 }
-    },
+document.addEventListener('DOMContentLoaded', function () {
+    if (document.querySelector('.infinity-slider .slider')) {
+        const swiper1 = new Swiper('.infinity-slider .slider', {
+            speed: 5000,
+            loop: true,
+            allowTouchMove: false,
+            centeredSlides: true,
+            autoplay: { delay: 0 },
+            breakpoints: {
+                0: { slidesPerView: 1, spaceBetween: 15 },
+                600: { slidesPerView: 2, spaceBetween: 24 },
+                1200: { slidesPerView: 3, spaceBetween: 34 },
+                1500: { slidesPerView: 4, spaceBetween: 42 }
+            }
+        });
+    }
 });
+
+
+
 
 
 // _____レスポンシブの375px未満のviewport画面幅を固定_______
 
-$(function () {
-    // viewport の内容を保留関数を定義
-    const viewport = document.querySelector('meta[name="viewport"]');
-    //画面幅が 375px より広い場合は大丈夫設定、それ以外は幅を 375px に固定
-    function switchViewport() {
-        // 新しいコンテンツを設定 } }
-        const value =
-            //画面幅が 375px より広い場合は大丈夫設定、それ以外は幅を 375px に固定
-            window.outerWidth > 375
-                // 375px未満の場合の設定// 現在のビューポートのコンテンツ属性が変更する値と異なる場合のみ設定を更新する
+(function ($) {
+    $(function () {
+        const viewport = document.querySelector('meta[name="viewport"]');
+
+        function switchViewport() {
+            const value = window.outerWidth > 375
                 ? 'width=device-width,initial-scale=1'
                 : 'width=375';
-        // 新しいコンテンツを設定 } 
-        // ウィンドウのリサイズイベントに関数を登録（画面サイズ変更実行されるようにする
-        if (viewport.getAttribute('content') !== value) {
-            viewport.setAttribute('content', value);
+
+            if (viewport.getAttribute('content') !== value) {
+                viewport.setAttribute('content', value);
+            }
         }
-    }
-    // ページ読み込み時に最初に一度 viewport の切り替えを実行 
-    addEventListener('resize', switchViewport, false);
-    switchViewport();
-})
+
+        addEventListener('resize', switchViewport, false);
+        switchViewport();
+    });
+})(jQuery);
 
 
 // _______________ページ内スムーススクロール＿＿＿＿＿＿＿_____
 
 document.addEventListener("DOMContentLoaded", function () {
+    if (!document.body.classList.contains('front-page')) return;
     const buttons = document.querySelectorAll(".details-btn");
 
     buttons.forEach(button => {
@@ -241,6 +201,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
 document.addEventListener("DOMContentLoaded", function () {
+    if (!document.body.classList.contains("home")) return;
+
     const slides = document.querySelectorAll(".mv-slide");
     let current = 0;
 
@@ -255,27 +217,6 @@ document.addEventListener("DOMContentLoaded", function () {
 // ________________2つ目のスライダー＿＿＿＿＿＿＿＿＿
 
 
-const swiper2 = new Swiper('.limited-slider', {
-    speed: 800,
-    loop: true,
-    centeredSlides: false,
-    autoplay: {
-        delay: 4000, // 4秒ごとに切り替え
-        disableOnInteraction: false // ユーザー操作後も自動再開
-    },
-    navigation: {
-        nextEl: '.page-button-white__right',
-        prevEl: '.page-button-white__left'
-    },
-
-    breakpoints: {
-        0: { slidesPerView: 1.4, spaceBetween: 20 },
-        600: { slidesPerView: 2, spaceBetween: 24 },
-        1024: { slidesPerView: 3, spaceBetween: 24 },
-        1400: { slidesPerView: 3.5, spaceBetween: 30 },
-        1500: { slidesPerView: 4, spaceBetween: 30 }
-    }
-});
 
 // _______________page-staff　aside追従＿＿＿＿＿＿
 
@@ -283,16 +224,19 @@ document.addEventListener('DOMContentLoaded', function () {
     const items = document.querySelectorAll('.a-side-list li');
 
     function getSections() {
-        const titles = document.querySelectorAll('.page-staff__title');
+        const titles = document.querySelectorAll('.page-staff-title');
         return Array.from(titles).map(el => ({
             id: el.id,
-            offsetTop: el.getBoundingClientRect().top + window.pageYOffset
+            offsetTop: el.getBoundingClientRect().top + window.scrollY
         }));
     }
 
     window.addEventListener('scroll', function () {
         const sections = getSections();
-        const scrollPos = window.pageYOffset + 250;
+        const scrollPos = window.scrollY + 250;
+
+        if (sections.length === 0) return;
+
         let currentId = sections[0].id;
 
         for (const sec of sections) {
@@ -304,55 +248,3 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     });
 });
-
-//   ＿＿＿＿＿＿＿＿＿スクロール後ヘッダーが降りてくる＿＿＿＿＿＿
-
-
-// document.addEventListener('DOMContentLoaded', function () {
-//     const header = document.querySelector('.header');
-//     const mv = document.querySelector('.mv') || document.querySelector('.sub-mv');
-//     const hamburgerSpans = document.querySelectorAll('.header-hamburger span');
-//     const menuText = document.querySelector('.header-hamburger-item');
-//     const whiteLogo = document.querySelector('.logo-white');
-//     const blackLogo = document.querySelector('.logo-black');
-
-//     if (!header) return;
-
-//     const isHome = document.body.classList.contains('home');
-
-//     if (isHome && mv) {
-//         // トップページ：スクロールで切り替え
-//         window.addEventListener('scroll', function () {
-//             const header = document.querySelector('.header');
-//             const headerHeight = header.offsetHeight; // ヘッダーの高さを取得
-//             const scrollY = window.pageYOffset;
-
-//             if (scrollY >= 118) {
-//                 header.classList.add('header--sticky');
-//                 header.style.backgroundColor = '#fff';
-//                 document.body.style.marginTop = headerHeight + 'px'; // コンテンツにヘッダーの高さ分の余白を設定
-//                 if (whiteLogo) whiteLogo.classList.add('hidden');
-//                 if (blackLogo) blackLogo.classList.remove('hidden');
-//                 hamburgerSpans.forEach(span => span.style.backgroundColor = '#222');
-//                 if (menuText) menuText.style.color = '#222';
-//             } else {
-//                 header.classList.remove('header--sticky');
-//                 document.body.style.marginTop = '0'; // コンテンツの余白をリセット
-//             }
-//         });
-//         if (whiteLogo) whiteLogo.classList.remove('hidden');
-//         if (blackLogo) blackLogo.classList.add('hidden');
-//         hamburgerSpans.forEach(span => span.style.backgroundColor = '#fff');
-//         if (menuText) menuText.style.color = '#fff';
-//     }
-//     else {
-//         // 下層ページ：初期状態で白背景・黒ロゴ・黒線・黒文字
-//         header.classList.add('header--sticky');
-//         header.style.backgroundColor = '#fff';
-//         if (whiteLogo) whiteLogo.classList.add('hidden');
-//         if (blackLogo) blackLogo.classList.remove('hidden');
-//         hamburgerSpans.forEach(span => span.style.backgroundColor = '#222');
-//         if (menuText) menuText.style.color = '#222';
-//     }
-// });
-

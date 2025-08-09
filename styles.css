@@ -593,8 +593,8 @@ button {
   }
 }
 
-.page-button-white__left,
-.page-button-white__right {
+.page-button-white-left,
+.page-button-white-right {
   width: 58px;
   height: 58px;
   border-radius: 50%;
@@ -607,14 +607,14 @@ button {
   line-height: 58px;
 }
 
-.page-button-white__right:hover {
+.page-button-white-right:hover {
   width: 70px;
   height: 70px;
   padding-left: 15px;
   line-height: 70px;
 }
 
-.page-button-white__left:hover {
+.page-button-white-left:hover {
   width: 70px;
   height: 70px;
   padding-right: 15px;
@@ -657,11 +657,11 @@ button {
   max-width: 250px;
   transition: 0.3s;
 }
-.header-logo__link {
+.header-logo-link {
   padding: 3.7rem 0 1.75rem 0;
 }
 @media screen and (max-width: 768px) {
-  .header-logo__link {
+  .header-logo-link {
     padding: 0;
   }
 }
@@ -885,7 +885,7 @@ footer {
 }
 
 .footer-view {
-  background-image: url(/img/footer.jpg);
+  background-image: url(./img/footer.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -1689,7 +1689,7 @@ footer {
 }
 
 .about-viw {
-  background-image: url("/img/top-map.jpg");
+  background-image: url("./img/top-map.jpg");
   background-size: contain;
   background-repeat: no-repeat;
   width: 100%;
@@ -1779,7 +1779,7 @@ footer {
   max-width: 564px;
   width: 100%;
   height: 100%;
-  background-image: url(../img/member-title.png);
+  background-image: url(./img/member-title.png);
   background-repeat: no-repeat;
   background-size: contain;
 }
@@ -2260,7 +2260,7 @@ footer {
 .benefits-img-message::after {
   content: "";
   position: absolute;
-  background-image: url(/img/page-black.png);
+  background-image: url(./img/page-black.png);
   top: 0;
   z-index: 1;
 }
@@ -2417,7 +2417,7 @@ footer {
   max-width: 564px;
   width: 100%;
   height: 100%;
-  background-image: url("/img/blog-title.png");
+  background-image: url("./img/blog-title.png");
   background-repeat: no-repeat;
   background-size: contain;
 }
@@ -2600,11 +2600,11 @@ footer {
   max-width: 250px;
   transition: 0.3s;
 }
-.sub-header-logo__link {
+.sub-header-logo-link {
   padding: 3.7rem 0 1.75rem 0;
 }
 @media screen and (max-width: 768px) {
-  .sub-header-logo__link {
+  .sub-header-logo-link {
     padding: 0;
   }
 }
@@ -3331,7 +3331,7 @@ footer {
 .ditails-mv {
   height: 560px;
   margin-top: 118px;
-  background-image: url("/img/details-fv.jpg");
+  background-image: url("./img/details-fv.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -4203,7 +4203,7 @@ footer {
   max-width: 606px;
   width: 100%;
 }
-.page-staff-box__title {
+.page-staff-box-title {
   font-size: 2.25rem;
   margin-top: 63px;
   background-color: #fff;
@@ -4211,35 +4211,35 @@ footer {
   padding-inline: 14px;
 }
 @media screen and (max-width: 768px) {
-  .page-staff-box__title {
+  .page-staff-box-title {
     font-size: 1.75rem;
     margin-top: 0;
   }
 }
-.page-staff-box__item {
+.page-staff-box-item {
   font-size: 1.5rem;
   margin-top: -2px;
   background-color: #fff;
   inline-size: fit-content;
   padding-inline: 14px;
 }
-.page-staff-box__position {
+.page-staff-box-position {
   font-size: 0.875rem;
   color: #988c2c;
   font-weight: 400;
   margin-top: 24px;
   line-height: 1;
 }
-.page-staff-box__name {
+.page-staff-box-name {
   font-size: 1.5em;
   margin-top: 5px;
 }
-.page-staff-box__year {
+.page-staff-box-year {
   font-size: 1rem;
   font-weight: 400;
   margin-top: 16px;
 }
-.page-staff-box__note {
+.page-staff-box-note {
   line-height: 1.8;
   font-weight: 400;
   margin-top: 2px;
@@ -4282,24 +4282,24 @@ footer {
   margin-inline: 20px;
 }
 
-.page-staff__title {
+.page-staff-title {
   font-size: 1.5rem;
   line-height: 1;
   margin-top: 27px;
 }
-.page-staff__title::before {
+.page-staff-title::before {
   content: "";
   border-left: #222 1px solid;
   width: 200px;
 }
-.page-staff__note {
+.page-staff-note {
   font-weight: 400;
   line-height: 1.8;
   margin-top: 48px;
   padding-left: 192px;
 }
 @media screen and (max-width: 1024px) {
-  .page-staff__note {
+  .page-staff-note {
     margin-top: 30px;
   }
 }
@@ -4380,12 +4380,12 @@ aside {
   }
 }
 
-.page-staff__title {
+.page-staff-title {
   position: relative;
   padding-left: 192px;
 }
 
-.page-staff__title::before {
+.page-staff-title::before {
   content: "";
   position: absolute;
   left: -40px;
@@ -4424,11 +4424,11 @@ aside {
 }
 
 @media screen and (max-width: 1024px) {
-  .page-staff__title {
+  .page-staff-title {
     padding-left: 1rem;
     margin-left: 169px;
   }
-  .page-staff__title::before {
+  .page-staff-title::before {
     display: none;
   }
 }

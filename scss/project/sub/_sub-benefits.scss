@@ -5,7 +5,7 @@
     }
 }
 .sub-inner-benefits {
-    padding-inline: 1.48%;
+    padding-inline: 20px;
 }
 
 .content-title-benefits {
@@ -37,7 +37,7 @@
 .benefits-list {
     display: flex;
     gap: 40px;
-    border-bottom: #222222 solid 1px;
+    border-bottom: #222222 dashed 1px;
     align-items: flex-start;
     padding-top: 34px;
     padding-bottom: 33px;

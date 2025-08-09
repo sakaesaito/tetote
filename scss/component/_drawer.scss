@@ -1,9 +1,6 @@
 /* ドロワーメニュー */
 .drawer-nav {
     display: none;
-}
-
-.drawer-nav.active {
     display: block;
     position: fixed;
     top: 100px;
@@ -11,20 +8,21 @@
     width: 100%;
     height: 100vh;
     background-color: #fff;
-    transition: 0.5s;
+    transform: translateX(100%);
+    opacity: 0;
+    pointer-events: none;
+    transition: transform 0.5s ease, opacity 0.5s ease;
+    z-index: 10;
+    overflow-y: auto;
+    padding-bottom: 10%;
+}
+
+.drawer-nav.active {
     transform: translateX(0%);
     opacity: 1;
     pointer-events: all;
-    color: #222;
-    overflow-y: auto;
-    -webkit-overflow-scrolling: touch;
-    padding-bottom: 10%;
-    
-    @media screen and (max-width: 768px) {
-        top: 90px;
-        margin-top: -5px;
-    }
 }
+
 .drawer-inner {
     display: flex;
     padding-inline: 0.84vw;
@@ -32,6 +30,7 @@
     padding-inline: 9.6vw;
     align-items: center;
     width: 100%;
+
     @media screen and (max-width: 1024px) {
         display: block;
         padding-inline: 12px;
@@ -43,24 +42,30 @@
     width: 100%;
     margin-right: 77px;
     margin-top: 57px;
+
     @media screen and (max-width: 1024px) {
         display: none;
     }
 }
+
 .drawer-logo-link {
-    padding:84% 24% 72% 6%;
+    padding: 84% 24% 72% 6%;
     border-right: #AFA86F 1px solid;
     transition: 0.3s;
+
     &:hover {
         opacity: .7;
     }
 }
+
 .drawer-right {
     margin-left: 63px;
+
     @media screen and (max-width: 1024px) {
         margin-left: 0;
     }
 }
+
 .drawer-list {
     display: flex;
     text-align: left;
@@ -73,28 +78,33 @@
         display: block;
         margin-top: 43px;
     }
+
     @media screen and (max-width: 768px) {
         margin-top: 0px;
     }
 
 }
+
 .drawer-item {
     border-bottom: solid 1px #AFA86F;
 
-    &:nth-child(1){
+    &:nth-child(1) {
         border-top: #AFA86F solid 1px;
+
         @media screen and (max-width: 1024px) {
-            border-top: none;   
+            border-top: none;
         }
     }
 }
+
 .drawer-line {
-    &:nth-child(1){
+    &:nth-child(1) {
         @media screen and (max-width: 1024px) {
             border-top: solid 1px #AFA86F;
         }
     }
 }
+
 .drawer-item a {
     list-style: none;
     padding-top: 26px;
@@ -105,25 +115,28 @@
     font-weight: 400;
     width: 248px;
     display: block;
-    transition:  0.3s;
+    transition: 0.3s;
 
-    &:hover{
+    &:hover {
         opacity: .5;
     }
-    
+
     span {
         font-size: 1rem;
         font-weight: 700;
         margin-top: 11;
-        font-family:"Noto sans jp";
+        font-family: "Noto sans jp";
     }
+
     @media screen and (max-width: 1024px) {
         width: 100%;
     }
+
     @media screen and (max-width: 768px) {
         padding-top: 15px;
         padding-bottom: 12px;
         font-size: 18px;
+
         span {
             font-size: 12px;
             display: block;
@@ -132,6 +145,7 @@
     }
 
 }
+
 .drawer-button {
     display: flex;
     justify-content: center;
@@ -145,6 +159,7 @@
         width: 100%;
         margin: 53px auto 0 auto;
     }
+
     @media screen and (max-width: 768px) {
         display: block;
         max-width: 248px;
@@ -161,14 +176,15 @@
         text-decoration: none;
         line-height: 1;
         cursor: pointer;
-            @media screen and (max-width: 1024px) {
-                display: block;
-                padding-top: 15px;
-                padding-bottom: 15px;
-            }
-        }
 
-        &-recruit {
+        @media screen and (max-width: 1024px) {
+            display: block;
+            padding-top: 15px;
+            padding-bottom: 15px;
+        }
+    }
+
+    &-recruit {
         transition: all 0.3s ease 0s;
         text-align: center;
         text-decoration: none;
@@ -183,25 +199,20 @@
             border: #222 solid 1px;
         }
 
-        }
-    
-        &-entry {
-            transition: all 0.3s ease 0s;
-            background-color: #AFA86F;
-            color: #fff;
-
-            @media screen and (max-width: 1024px) {
-                margin-top: 13px;
-            }
-
-            &:hover {
-                background-color: #988C2C;
-                color: #222222;
-            }
-        }
     }
 
+    &-entry {
+        transition: all 0.3s ease 0s;
+        background-color: #AFA86F;
+        color: #fff;
 
+        @media screen and (max-width: 1024px) {
+            margin-top: 13px;
+        }
 
-
-
+        &:hover {
+            background-color: #988C2C;
+            color: #222222;
+        }
+    }
+}

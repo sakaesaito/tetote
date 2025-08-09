@@ -1,7 +1,7 @@
 <?php get_header(); ?>
 
 <section id="sub-career" class="sub-career">
-        <div class="sub-mv" style="background-image: url('<?php echo get_template_directory_uri(); ?>/img/carrer-fv.jpg');background-size: cover;background-position: center;background-repeat: no-repeat;">
+        <div class="sub-mv career-mv">
             <div class="sub-inner sub-inner-career">
                 <div class="sub-mv-box sub-mv-box-career">
                     <h2 class="sub-mv-title">CAREER</h2>

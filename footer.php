@@ -1,5 +1,5 @@
 <footer>
-    <div class="footer-view" style="background-image: url('<?php echo get_template_directory_uri(); ?>/img/footer.jpg');"></div>
+    <div class="footer-view"></div>
     <div class="inner footer-inner">
         <div class="contact-box">
             <p class="content-item footer-contact-item">
@@ -45,9 +45,6 @@
     </div>
 </footer>
 <?php wp_footer(); ?>
-
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
-<script src="/js/main.js"></script>
 
 </body>
 </html>

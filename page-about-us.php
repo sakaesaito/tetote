@@ -1,8 +1,7 @@
 <?php get_header(); ?>
 
 <section id="about-us" class="sub-about-us">
-    <div class="sub-mv">
-    <div class="sub-mv">
+    <div class="sub-mv about-mv">
         <div class="sub-inner sub-inner-mv">
             <div class="sub-mv-box">
                 <h2 class="sub-mv-title">ABOUT US</h2>

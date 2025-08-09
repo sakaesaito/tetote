@@ -1,7 +1,7 @@
 <?php get_header(); ?>
 
 <section id="sub-blog" class="sub-blog">
-        <div class="sub-mv" style="background-image: url('<?php echo get_template_directory_uri(); ?>/img/sub-blog-fv.jpg'); background-size: cover;background-position: center;background-repeat: no-repeat;">
+        <div class="sub-mv">
             <div class="sub-inner sub-inner-blog">
                 <div class="sub-mv-box">
                     <h2 class="sub-mv-title">BLOG</h2>

@@ -1,9 +1,7 @@
 <?php get_header(); ?>
 
 <section id="details" class="details">
-<div class="ditails-mv" style="background-image: url('<?php echo get_template_directory_uri(); ?>/img/details-fv.jpg'); background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;">
+<div class="ditails-mv">
             <div class="sub-inner sub-inner-mv">
                 <div class="sub-mv-box">
                     <h2 class="sub-mv-title">DETAILS</h2>
@@ -28,10 +26,8 @@
                 <button class="details-btn" data-target="#sub-solution">ソリューション営業</button>
                 <button class="details-btn" data-target="#sub-engineer">システムエンジニア</button>
             </div>
+        </div>
     </section>
-    <h2></h2>
-
-
     <section id="sub-details">
         <div class="sub-inner">
             <h2 class="details-title details-title-consul">募集要項-コンサルタント</h2>
@@ -78,6 +74,7 @@
                 </dl>
             </div>
         </div>
+    </section>
     <section id="sub-solution">
         <div class="sub-inner">
             <h2 class="details-title">募集要項-ソリューション営業</h2>
