@@ -100,7 +100,7 @@
                                     <div class="staff-box-img-box2">
                                         <p class="staff-box-message">全力で考えぬける環境</p>
                                         <p class="staff-box-message">試練の数だけ強くなれました</p>
-                                        <div class="staff-box-past">
+                                        <div class="staff-box-post">
                                             <p class="staff-box-position">コンサルタント</p>
                                             <p class="staff-box-year">2015年入社</p>
                                         </div>
@@ -114,7 +114,7 @@
                                     <div class="staff-box-img">
                                         <p class="staff-box-message">お客様も知らない課題を</p>
                                         <p class="staff-box-message">一緒に探し出す醍醐味</p>
-                                        <div class="staff-box-past">
+                                        <div class="staff-box-post">
                                             <p class="staff-box-position">ソリューション営業</p>
                                             <p class="staff-box-year">2017年入社</p>
                                         </div>
@@ -128,7 +128,7 @@
                                     <div class="staff-box-img-box2">
                                         <p class="staff-box-message">「あなたが担当で良かった」</p>
                                         <p class="staff-box-message">この一言が、最高のやりがい</p>
-                                        <div class="staff-box-past">
+                                        <div class="staff-box-post">
                                             <p class="staff-box-position">コンサルタント</p>
                                             <p class="staff-box-year">2004年入社</p>
                                         </div>
@@ -175,7 +175,7 @@
                             <p class="benefits-img-message">Employee Benefits</p>
                         </div>
                         <div class="benefits-button-wrapper">
-                            <a class="benefits-button" href="/">→</a>
+                            <a class="zoom-button" href="/">→</a>
                             <h3 class="benefits-img-title benefits-img-title-title2">福利厚生</h3>
                             <p class="benefits-img-item">TETOTEの福利厚生制度は、従業員の健康と幸福を重視し、働きやすい環境を提供することを目的としています。</p>
                         </div>

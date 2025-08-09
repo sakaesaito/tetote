@@ -1,11 +1,11 @@
 <?php get_header(); ?>
 
 <section id="details" class="details">
-<div class="ditails-mv">
+<div class="sub-mv details-mv">
             <div class="sub-inner sub-inner-mv">
                 <div class="sub-mv-box">
                     <h2 class="sub-mv-title">DETAILS</h2>
-                    <h3 class="sub-mv-item details-mv-item">募集要項</h3>
+                    <h3 class="sub-mv-item sub-mv-item-details">募集要項</h3>
                     <p class="sub-mv-part">TETOTEは幅広く仲間を募集しています。</p>
                 </div>
             </div>

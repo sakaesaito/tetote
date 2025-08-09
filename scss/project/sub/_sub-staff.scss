@@ -1,3 +1,12 @@
+/*staff一覧ページ＿＿＿＿＿＿＿＿＿＿*/
+.sub-inner-staff {
+    @media screen and (max-width: 1024px) {
+        padding-inline: 5%;
+    }
+    @media screen and (max-width: 768px) {
+        padding-inline: 2%;
+    }  
+}
 .sub-staff-box-wrapper {
     display: grid;
     grid-template-columns: repeat(3, 1fr); /* 2列 */
@@ -18,18 +27,6 @@
         grid-template-rows: repeat(6, 1fr);   /* 3行 */
         column-gap: 10px;
     }
-}
-.sub-inner-staff {
-    @media screen and (max-width: 1024px) {
-        padding-inline: 5%;
-    }
-    @media screen and (max-width: 768px) {
-        padding-inline: 2%;
-    }
-    
-}
-.staff-mv-item {
-    padding: 5px 9px;
 }
 .sub-staff-box {
     margin-top: 0;

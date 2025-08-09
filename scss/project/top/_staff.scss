@@ -13,13 +13,9 @@
         padding-left: 24px;
     }
     @media screen and (max-width: 768px) {
-        padding-left: 17px;
+        padding-left: 20px;
     }
 }
-.staff-text-wrapper {
-    position: relative;
-}
-
 .staff-box-wrapper {
     display: flex;
 
@@ -141,7 +137,7 @@
         font-size: 1.25rem;
     }
 }
-.section-title-staff {
+.staff-section-title {
     position: absolute;
     top: 72px;
 }

@@ -1,7 +1,7 @@
 <?php get_header(); ?>
 
 <section id="sub-benefits" class="sub-benefits">
-    <div class="sub-mv">
+    <div class="sub-mv sub-mv-benefits">
         <div class="sub-inner sub-inner-mv">
             <div class="sub-mv-box">
                 <h2 class="sub-mv-title">BENEFITS</h2>
@@ -16,7 +16,7 @@
     <?php if (function_exists('bcn_display')) bcn_display_list(); ?>
     </ol>
 </div>
-<section class="benefuts-system">
+<section class="benefits-system">
     <div class="sub-inner sub-inner-benefits">
         <h2 class="sub-title sub-title-benefits">各種制度</h2>
         <div class="sub-benefits-list-sec ">

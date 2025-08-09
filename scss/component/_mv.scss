@@ -1,3 +1,5 @@
+/* topページのmv */
+
 .mv-inner {
     width: 100%;
 }
@@ -13,7 +15,6 @@
 
     @media screen and (max-width: 768px) {
         background-size: cover;
-        background-position: center center;
     }
 }
 .mv-img-slider {
@@ -43,7 +44,6 @@
     position: absolute;
     color: #fff;
     font-family: "Viga";
-    font-weight: 400;
     font-size: 6rem;
     line-height: 1.2;
     top: 289px;
@@ -61,6 +61,7 @@
     text-align: center;
     position: absolute;
     font-size: 1.5rem;
+    font-weight: 700;
     bottom: 227px;
     left: 65px;
     z-index: 3;
@@ -194,5 +195,150 @@
 
     @media screen and (max-width: 1024px) {
         display: none;
+    }
+}
+
+
+
+/* ______subページのmv______ */
+.sub-mv-box {
+    margin-top: 20px;
+    margin-left: 5px;
+}
+
+.sub-mv {
+    height: 340px;
+    margin-top: 118px;
+    width: 100%;
+    @media screen and (max-width: 768px) {
+        margin-top: 60px;
+    }
+
+    &-about {
+        background-image: url(./img/about-fv.jpg);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    &-details {
+        background-image: url(./img/details-fv.jpg);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    &-career {
+        background-image: url(./img/career-fv.jpg);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    &-staff {
+        background-image: url(./img/staff-fv.jpg);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    &-benefits {
+        background-image: url(./img/benefits-fv.jpg);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    &-faq {
+        background-image: url(./img/faq-fv.jpg);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    &-blog {
+        background-image: url(./img/blog-fv.jpg);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    
+
+}
+.sub-mv-title {
+    background-color: #fff;
+    font-size: 4rem;
+    padding: 3px 10px;
+    font-family: "Viga";
+    line-height: 1;
+    inline-size: fit-content;
+    @media screen and (max-width: 1024px) {
+        font-size: 3rem;
+    }
+}
+
+.sub-mv-item {
+    background-color: #fff;
+    font-size: 1.5rem;
+    padding: 3px 13px;
+    font-family: "Viga";
+    line-height: 1;
+    inline-size: fit-content;
+    margin-top: 18px;
+    @media screen and (max-width: 1024px) {
+        font-size: 1.25em;
+        margin-top: 10px;
+    }
+    @media screen and (max-width: 768px) {
+        font-size: 1em;
+    }
+    &-details {
+        padding: 3px 9px;
+    }
+    &-staff {
+        padding: 5px 9px;
+    }
+}
+
+
+.sub-mv-part {
+    background-color: #fff;
+    font-size: 1rem;
+    padding: 7px 10px;
+    font-family: "Viga";
+    line-height: 1;
+    color: #988C2C;
+    inline-size: fit-content;
+    margin-top: 18px;
+    @media screen and (max-width: 1024px) {
+        font-size: 1rem;
+        margin-top: 10px;
+        padding: 5px 7px;
+    }
+    @media screen and (max-width: 1024px) {
+        padding: 3px 5px;
+        font-size: 0.875rem;
+    }
+}
+
+.sub-inner {
+    max-width: 1024px;
+    width: 100%;
+    margin: 0 auto;
+    padding-inline: 1.3%;
+
+    &-mv {
+        padding-top: 54px;
+    }
+
+    @media screen and (max-width: 1024px) {
+        padding-inline: 15%;
+        &-mv {
+            padding-top: 146px;
+        }
+    }
+    @media screen and (max-width: 768px) {
+        padding-inline: 2%;
+
+        &-mv {
+            padding-top: 146px;
+        }
+    }
+    &-ceo {
+        padding-inline: 1.6%;
     }
 }

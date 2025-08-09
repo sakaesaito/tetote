@@ -1,7 +1,7 @@
 <?php get_header(); ?>
 
 <section id="about-us" class="sub-about-us">
-    <div class="sub-mv about-mv">
+    <div class="sub-mv sub-mv-about">
         <div class="sub-inner sub-inner-mv">
             <div class="sub-mv-box">
                 <h2 class="sub-mv-title">ABOUT US</h2>
@@ -56,7 +56,7 @@
         <div>
             <h2 class="sub-title sub-title-message">代表メッセージ</h2>
             <div class="sub-aboutus-ceo">
-                <div class="sub-about-ceo-pic">
+                <div class="sub-aboutus-ceo-pic">
                     <img src="<?php echo get_template_directory_uri(); ?>/img/ceo.jpg" alt="代表取締役社長の写真">
                 </div>
                 <div class="sub-aboutus-ceo-message">

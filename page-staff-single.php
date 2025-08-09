@@ -82,7 +82,7 @@
                         <div class="sub-staff-box-img page-staff-list">
                             <p class="sub-staff-box-message">ビジネスの課題を</p>
                             <p class="sub-staff-box-message">データで解決する醍醐味</p>
-                            <div class="staff-box-past">
+                            <div class="staff-box-post">
                                 <p class="staff-box-position">データサイエンティスト</p>
                                 <p class="staff-box-year">2002年入社</p>
                             </div>
@@ -96,7 +96,7 @@
                         <div class="sub-staff-box-img page-staff-list">
                             <p class="sub-staff-box-message">どんな難解な案件も</p>
                             <p class="sub-staff-box-message">チームで突破できる強い連携</p>
-                            <div class="staff-box-past">
+                            <div class="staff-box-post">
                                 <p class="staff-box-position">コンサルタント</p>
                                 <p class="staff-box-year">2006年入社</p>
                             </div>
@@ -110,7 +110,7 @@
                         <div class="sub-staff-box-img page-staff-list">
                             <p class="sub-staff-box-message">お客様と一緒に開発</p>
                             <p class="sub-staff-box-message">豊富なプライム案件が魅力です</p>
-                            <div class="staff-box-past">
+                            <div class="staff-box-post">
                                 <p class="staff-box-position">システム事業部部長</p>
                                 <p class="staff-box-year">2007年入社</p>
                             </div>

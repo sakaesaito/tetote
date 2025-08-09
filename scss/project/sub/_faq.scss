@@ -1,3 +1,15 @@
+.faq-mv {
+    height: 340px;
+    margin-top: 118px;
+    background-image: url("../img/faq-fv.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    @media screen and (max-width: 768px) {
+        margin-top: 60px;
+    }
+}
+
 .accordion-content {
     display: none;
     padding-left: 36px;
@@ -141,8 +153,4 @@ section.show {
     line-height: 1;
     inline-size: fit-content;
     margin-top: 18px;
-}
-.faq-mv {
-    background-position: bottom;
-    height: 340px;
 }

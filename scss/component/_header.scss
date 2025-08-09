@@ -262,3 +262,183 @@
 .logo.hidden {
     display: none;
 }
+
+
+
+.sub-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    width: 100%;
+    height: 118px;
+    background-color: #fff;
+
+    &.drawer-open {
+        background-color: #fff;
+    }
+
+    @media screen and (max-width: 768px) {
+        height: 60px;
+    }
+}
+
+.sub-header-logo {
+    width: 100%;
+    max-width: 250px;
+    transition: .3s;
+
+    &-link {
+        padding: 3.7rem 0 1.75rem 0;
+
+        @media screen and (max-width: 768px) {
+            padding: 0;
+        }
+    }
+
+    &:hover {
+        opacity: .7;
+    }
+
+    @media screen and (max-width: 768px) {
+        margin-left: 0;
+    }
+}
+
+.header-link {
+    display: flex;
+    align-items: center;
+}
+
+.header--sticky {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    visibility: visible;
+    animation: slideDown 0.3s ease-in-out;
+    background-color: #fff;
+
+    .header-hamburger-icon span {
+        background-color: #222222;
+    }
+
+    .header-hamburger-item {
+        color: #222222;
+    }
+}
+
+.header-nav {
+    display: flex;
+    justify-content: space-between;
+    height: inherit;
+    align-items: center;
+}
+
+@keyframes slideDown {
+    0% {
+        transform: translateY(-100%);
+    }
+
+    100% {
+        transform: translateY(0%);
+    }
+}
+
+.header-button {
+    display: block;
+    margin-right: 33px;
+    padding: 14px 34px 14px 34px;
+    transition: all 0.3s ease 0s;
+    text-align: center;
+    text-decoration: none;
+    line-height: 1;
+    cursor: pointer;
+    font-size: 14px;
+
+    &-entry {
+        padding: 14px 42px 14px 42px;
+        background-color: #AFA86F;
+        color: #fff;
+
+        &:hover {
+            background-color: #988C2C;
+        }
+
+        @media screen and (max-width: 768px) {
+            display: none;
+        }
+    }
+
+    &-recruit {
+        background-color: #222222;
+        color: #fff;
+        margin-right: 9px;
+
+        @media screen and (max-width: 768px) {
+            display: none;
+        }
+
+        &:hover {
+            background-color: #ffffff;
+            color: #222222;
+            border: #222 1px solid;
+        }
+    }
+}
+
+/* サブページのヘッダー */
+.sub-header-hamburger {
+    margin-left: 1.25rem;
+    transition: all 0.3s ease 0s;
+
+    &:hover {
+        opacity: .7;
+    }
+
+    @media screen and (max-width: 768px) {
+        margin-top: 0.5rem;
+        margin-left: 0;
+    }
+}
+
+.sub-header-hamburger-icon span {
+    display: block;
+    transition: all .3s;
+    top: 12px;
+    left: 25%;
+    width: 52px;
+    height: 2px;
+    background-color: #222;
+    margin: 0 auto;
+}
+
+.sub-header-hamburger-icon span:nth-of-type(2) {
+    margin-top: 12px;
+}
+
+.sub-header-hamburger-icon span:nth-of-type(3) {
+    margin-top: 12px;
+}
+
+.sub-header-hamburger-item {
+    text-align: center;
+    margin: 9px 0 0 0;
+    font-size: 0.75rem;
+    line-height: 1;
+    font-weight: 400;
+    color: #222;
+}
+
+/* .header-hamburgerクラスがactiveの時のコード*/
+.sub-header-hamburger.active span:nth-child(1) {
+    transform: rotate(45deg) translate(8px, 12px);
+}
+
+.sub-header-hamburger.active span:nth-child(2) {
+    opacity: 0;
+}
+
+.sub-header-hamburger.active span:nth-child(3) {
+    transform: rotate(-45deg) translate(8px, -12px);
+}
