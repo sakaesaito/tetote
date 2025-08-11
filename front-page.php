@@ -40,7 +40,7 @@
             </div>
             <div class="slider-heading">
                 <p class="slider-heading-ms">後悔しないキャリアを作る、</p><br>
-                <p class="slider-heading-ms">それこそが、我々の使命だ</p>
+                <p class="slider-heading-ms slider-heading-ms2 ">それこそが、我々の使命だ</p>
             </div>
         </div>
     </section>
@@ -71,7 +71,7 @@
             <div class="content-wrapper">
                 <div class="text-wrapper staff-text-wrapper">
                     <div class="staff-section-title">
-                        <h2 class="content-title staff-content-title"><span>人</span>を知る</h2>
+                        <h2 class="content-title staff-content-title underline"><span>人</span>を知る</h2>
                     </div>
                     <p class="content-item staff-content-item">TETOTEの社員がどういった信念を持って働いているのか、<br>
                         一日のスケジュールや仕事内容などを紹介します。</p>
@@ -144,8 +144,8 @@
             <a href="<?php echo home_url('/staff/'); ?>">VIEW MORE</a>
         </div>
         <div class="page-button-box">
-            <a href="" class="page-button-white-left">←</a>
-            <a href="" class="page-button-white-right">→</a>
+            <a href="" class="page-button-white-left"></a>
+            <a href="" class="page-button-white-right"></a>
         </div>
     </section>
 
@@ -153,32 +153,35 @@
         <div class="inner">
             <div class="content-wrapper">
                 <a class="benefits-text-wrapper">
-                    <h2 data-title="" class="content-title content-title-benefits"><span>制度・環境</span>を知る</h2>
+                    <h2 data-title="" class="content-title content-title-benefits underline"><span>制度・環境</span>を知る</h2>
                     <p class="content-item benefits-content-item">当社では働く従業員とそのご家族が穏やかに過ごせるよう、多様な研修、福利厚生を提供しています。
                     </p>
                 </a>
                 <div class="benefits-main-box">
                     <div class="benefits-img-wrapper">
-                        <div class="benefits-img-box">
-                            <img class="benefits-img-box-pic" src="<?php echo get_template_directory_uri(); ?>/img/career1.svg" alt="">
-                            <p class="benefits-img-message">Traning And Career</p>
-                        </div>
-                        <div class="benefits-button-wrapper">
-                            <a class="benefits-button" href="<?php echo home_url('/career/'); ?>/career/">→</a>
-                            <h3 class="benefits-img-title">研修制度とキャリアパス</h3>
-                            <p class="benefits-img-item">個々の目標に合わせたキャリアパスを支える、豊富な研修メニューで、あなた自身の成長を強力にサポートします。</p>
-                        </div>
+                        <a href="<?php echo home_url('/career'); ?>">
+                            <div class="benefits-img-box">
+                                <img class="benefits-img-box-pic" src="<?php echo get_template_directory_uri(); ?>/img/career1.svg" alt="">
+                                <p class="benefits-img-message">Traning And Career</p>
+                            </div>
+                            <div class="benefits-button-wrapper">
+                                <a class="benefits-button" href="<?php echo home_url('/career/'); ?>/career/"></a>
+                                <h3 class="benefits-img-title">研修制度とキャリアパス</h3>
+                                <p class="benefits-img-item">個々の目標に合わせたキャリアパスを支える、豊富な研修メニューで、あなた自身の成長を強力にサポートします。</p>
+                            </div>
+                        </a>
                     </div>
                     <div class="benefits-img-wrapper">
-                        <div class="benefits-img-box">
-                            <img class="benefits-img-box-pic2" src="<?php echo get_template_directory_uri(); ?>/img/top-welfare.svg" alt="">
-                            <p class="benefits-img-message">Employee Benefits</p>
-                        </div>
-                        <div class="benefits-button-wrapper">
-                            <a class="zoom-button" href="/">→</a>
-                            <h3 class="benefits-img-title benefits-img-title-title2">福利厚生</h3>
-                            <p class="benefits-img-item">TETOTEの福利厚生制度は、従業員の健康と幸福を重視し、働きやすい環境を提供することを目的としています。</p>
-                        </div>
+                        <a href="<?php echo home_url('/benefits/'); ?>">
+                            <div class="benefits-img-box">
+                                <img class="benefits-img-box-pic2" src="<?php echo get_template_directory_uri(); ?>/img/top-welfare.svg" alt="">
+                                <p class="benefits-img-message">Employee Benefits</p>
+                            </div>
+                            <div class="benefits-button-wrapper">
+                                <h3 class="benefits-img-title benefits-img-title-title2">福利厚生</h3>
+                                <p class="benefits-img-item">TETOTEの福利厚生制度は、従業員の健康と幸福を重視し、働きやすい環境を提供することを目的としています。</p>
+                            </div>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -261,7 +264,7 @@
                         </ul>
                     </div>
                     <div class="blog-top-page-2">
-                        <div class="page-button-white-right">→</div>
+                        <div class="page-button-white-right"></div>
                         <a class="blog-top-link" href="<?php echo esc_url(home_url('/blog-details/')); ?>/blog-detail/">VIEW MORE</a>
                     </div>
                 </div>

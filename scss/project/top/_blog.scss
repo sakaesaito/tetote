@@ -44,7 +44,7 @@
     }
 }
 .blog-wrapper {
-    margin-top: 64px;
+    margin-top: 60px;
     @media screen and (max-width: 768px) {
         margin-top: 42px;
     }
@@ -53,7 +53,7 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr); 
     grid-template-rows: repeat(2, 1fr); 
-    grid-gap:  20px 48px;
+    grid-gap:  22px 48px;
     
     @media screen and (max-width: 1024px) {
         display: grid;
@@ -82,12 +82,12 @@
 }
 .blog-box-right {
     margin-inline: 5%;
-    margin-top: 2%;
-    margin-bottom: 4%;
+    margin-top: 19px;
     max-width: 251px;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    height: auto;
+    margin-bottom: 20px;
     @media screen and (max-width: 1024px) {
         max-width: 560px;
         width: 100%;
@@ -97,19 +97,33 @@
     }
     @media screen and (max-width: 768px) {
         margin-bottom: 0px;
-    }
-    
+    }   
 }
+
 .blog-category {
+    position: relative;
     font-size: 0.875rem;
-    font-weight: 400;
+    padding-left: 18px;
+    line-height: 1;
     @media screen and (max-width: 768px) {
         font-size: 0.75rem;
+    }
+    &::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 50%;
+        width: 15px;            
+        height:15px;        
+        background: url("img/blog-mark.png") no-repeat center/contain;
+        transform: translateY(-50%);
     }
 }
 .topics {
     font-size: 1.125rem;
+    font-weight: 700;
     line-height: 1.5;
+    padding-top: 26px;
     text-decoration: underline solid 1px #222;
     @media screen and (max-width: 768px) {
         font-size: 0.875rem;
@@ -125,6 +139,9 @@
 }
 .date {
     font-size: 0.75rem;
+    line-height: 1;
+    margin-top: auto; 
+
 }
 .blog-top {
     display: flex;
@@ -136,9 +153,12 @@
 }
 .blog-top-link {
     margin-left: 13px;
+    transition: .4s;   
+    font-weight: 700;
+    border-bottom: solid #222 ;
     transition: .4s;
     &:hover {
-        color: #988C2C;
+        opacity: .7;
     }
 }
 .blog-top-page {

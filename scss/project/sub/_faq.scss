@@ -1,69 +1,13 @@
 .faq-mv {
     height: 340px;
     margin-top: 118px;
-    background-image: url("../img/faq-fv.jpg");
+    background-image: url("./img/faq-fv.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     @media screen and (max-width: 768px) {
         margin-top: 60px;
     }
-}
-
-.accordion-content {
-    display: none;
-    padding-left: 36px;
-    border-bottom: #AFA86F 1px solid;
-    transition: max-height 0.9s ease, opacity 0.5s ease;
-    padding-bottom: 23px;
-    line-height: 1;
-}
-.accordion-content.active {
-    padding-top: 0;
-    padding-left: 24px;
-}
-
-.accordion {
-    .accordion-item:first-child {
-        .accordion-header {
-            border-top: 1px solid #AFA86F;
-        }
-    }
-
-    .accordion-header {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        cursor: pointer;
-        padding-top: 14x;
-        padding-bottom: 21px;
-        border-bottom: 1px solid #AFA86F;
-        font-weight: bold;
-        background: #fff;
-        position: relative;
-        gap: 22px;
-        transition: .9s;
-
-        &:hover {
-            opacity: .7;
-        }
-        @media screen and (max-width: 768px) {
-            padding-top: 20px;
-            padding-bottom: 20px;
-        }
-    }
-}
-
-.accordion-header-flow {
-    padding-bottom: 19px;
-}
-
-.accordion-header.active {
-    background: #fff;
-    border-bottom: none;
-    transition: .4s;
-    padding-bottom: 0;
-    padding-left: 0;
 }
 
 #faq-btn {
@@ -153,4 +97,62 @@ section.show {
     line-height: 1;
     inline-size: fit-content;
     margin-top: 18px;
+}
+
+
+/*_____Q&A アコーディオン______*/
+.accordion-content {
+    display: none;
+    padding-left: 36px;
+    border-bottom: #AFA86F 1px solid;
+    transition: max-height 0.9s ease, opacity 0.5s ease;
+    padding-bottom: 23px;
+    line-height: 1;
+}
+.accordion-content.active {
+    padding-top: 0;
+    padding-left: 24px;
+}
+
+.accordion {
+    .accordion-item:first-child {
+        .accordion-header {
+            border-top: 1px solid #AFA86F;
+        }
+    }
+
+    .accordion-header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        cursor: pointer;
+        padding-top: 14x;
+        padding-bottom: 21px;
+        border-bottom: 1px solid #AFA86F;
+        font-weight: bold;
+        background: #fff;
+        position: relative;
+        gap: 22px;
+        transition: .9s;
+
+        &:hover {
+            opacity: .7;
+        }
+        @media screen and (max-width: 768px) {
+            padding-top: 20px;
+            padding-bottom: 20px;
+        }
+    }
+}
+
+.accordion-header-flow {
+    padding-bottom: 19px;
+}
+
+.accordion-header.active {
+    background: #fff;
+    border-bottom: none;
+    transition: .4s;
+    padding-bottom: 0;
+    padding-left: 0;
 }

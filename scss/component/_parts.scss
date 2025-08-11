@@ -9,6 +9,7 @@ button {
     padding: 0;
     margin: 0;
     cursor: pointer;
+    font-weight: 700;
 }
 
 .viewmore-button {
@@ -21,6 +22,7 @@ button {
     transition: all 0.5s;
     color: #222;
     font-size: 1.125rem;
+    font-weight: 700;
     line-height: 1.5;
 
     &::before {
@@ -60,14 +62,14 @@ button {
 
 .viewmore-button a {
     display: block;
-    padding: 1.5rem 3.75rem;
+    padding: 21px 79px;
     @media screen and (max-width: 768px) {
         padding: 17px;
     }
 
 }
 .viewmore-button-staff {
-    margin-top: 240px;
+    margin-top: 187px;
 }
 
 .next-button {
@@ -142,7 +144,8 @@ button {
     line-height: 58px;
 }
 .page-button-white-left{
-    background-image: url(./img/arrow-left.svg);
+    background-image: url(../img/arrow-left.svg);
+    background-repeat: no-repeat;
 }
 
 .page-button-white-right:hover {
@@ -191,7 +194,7 @@ button {
     &::after {
         content: "";
         position: absolute;
-        left: 5%;
+        left: 23%;
         top: 0;
         width: 100%;
         height: 100%;
@@ -215,7 +218,3 @@ button {
 }
 
 
-
-.content-title-benefits {
-    
-}

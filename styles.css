@@ -451,6 +451,7 @@ button {
   padding: 0;
   margin: 0;
   cursor: pointer;
+  font-weight: 700;
 }
 
 .viewmore-button {
@@ -463,6 +464,7 @@ button {
   transition: all 0.5s;
   color: #222;
   font-size: 1.125rem;
+  font-weight: 700;
   line-height: 1.5;
 }
 .viewmore-button::before {
@@ -502,7 +504,7 @@ button {
 
 .viewmore-button a {
   display: block;
-  padding: 1.5rem 3.75rem;
+  padding: 21px 79px;
 }
 @media screen and (max-width: 768px) {
   .viewmore-button a {
@@ -511,7 +513,7 @@ button {
 }
 
 .viewmore-button-staff {
-  margin-top: 240px;
+  margin-top: 187px;
 }
 
 .next-button {
@@ -584,7 +586,8 @@ button {
 }
 
 .page-button-white-left {
-  background-image: url(./img/arrow-left.svg);
+  background-image: url(../img/arrow-left.svg);
+  background-repeat: no-repeat;
 }
 
 .page-button-white-right:hover {
@@ -631,7 +634,7 @@ button {
 .content-title-benefits::after {
   content: "";
   position: absolute;
-  left: 5%;
+  left: 23%;
   top: 0;
   width: 100%;
   height: 100%;
@@ -1496,14 +1499,13 @@ footer {
 }
 
 .slider-heading {
-  max-width: 560px;
+  max-width: 300px;
   width: 100%;
   display: block;
   position: absolute;
   z-index: 2;
-  text-align: center;
-  top: 91.5%;
-  left: 49.59%;
+  top: 397px;
+  left: 721px;
   transform: translate(-50%, -50%);
 }
 @media screen and (max-width: 768px) {
@@ -1513,7 +1515,6 @@ footer {
     display: block;
     position: absolute;
     z-index: 2;
-    text-align: center;
     bottom: -214px;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -1526,7 +1527,10 @@ footer {
   font-size: 2.5rem;
   font-weight: 700;
   line-height: 1.8;
-  margin-top: -27px;
+  margin-top: -24px;
+  inline-size: fit-content;
+  text-align: center;
+  padding-left: 20px;
 }
 @media screen and (max-width: 768px) {
   .slider-heading-ms {
@@ -1536,10 +1540,14 @@ footer {
   }
 }
 
+.slider-heading-ms2 {
+  margin-left: 26px;
+  padding-right: 12px;
+  padding-left: 12px;
+}
+
 .slider {
   width: 100%;
-  padding-top: 46px;
-  padding-bottom: 80px;
   background-color: #fff;
   position: relative;
 }
@@ -1554,7 +1562,7 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
-  max-width: 506px;
+  max-width: 300px;
 }
 .swiper-slide img {
   width: 100%;
@@ -2042,6 +2050,7 @@ footer {
 }
 
 .staff {
+  margin-top: 71px;
   padding-top: 142px;
   position: relative;
   background-color: #fff;
@@ -2083,8 +2092,7 @@ footer {
   position: absolute;
   left: -3em;
   top: 0;
-  max-width: 564px;
-  width: 100%;
+  width: 520px;
   height: 100%;
   background-image: url(./img/member-title.png);
   background-repeat: no-repeat;
@@ -2102,8 +2110,24 @@ footer {
   }
 }
 
+.underline span {
+  position: relative;
+  display: inline-block;
+  line-height: 1.4;
+}
+
+.underline span::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0.1em;
+  width: 100%;
+  height: 3px;
+  background: #222;
+}
+
 .staff-content-item {
-  margin-top: 30px;
+  margin-top: 66px;
 }
 @media screen and (max-width: 1024px) {
   .staff-content-item {
@@ -2344,6 +2368,7 @@ footer {
 .link-box-button {
   width: 100%;
   font-size: 1.25rem;
+  font-weight: 700;
   padding-top: 40px;
   padding-bottom: 40px;
   background-color: #fff;
@@ -2418,7 +2443,7 @@ footer {
 }
 
 .benefits {
-  padding-top: 138px;
+  padding-top: 129px;
   padding-bottom: 176px;
   background-color: #fff;
 }
@@ -2508,7 +2533,7 @@ footer {
 }
 
 .benefits-img-box-pic2 {
-  margin-top: 5em;
+  margin-top: 104px;
 }
 @media screen and (max-width: 1024px) {
   .benefits-img-box-pic2 {
@@ -2523,7 +2548,7 @@ footer {
 }
 
 .benefits-img-box-pic {
-  margin-top: 6.4em;
+  margin-top: 80px;
 }
 @media screen and (max-width: 1024px) {
   .benefits-img-box-pic {
@@ -2539,11 +2564,12 @@ footer {
 
 .benefits-img-message {
   font-size: 1.5rem;
-  font-weight: 700;
+  font-weight: 400;
+  font-family: "Viga";
   transform: rotate(90deg);
   position: absolute;
   top: 115px;
-  right: -113px;
+  right: -103px;
   letter-spacing: 3px;
 }
 .benefits-img-message::after {
@@ -2552,10 +2578,12 @@ footer {
   background-image: url(./img/page-black.png);
   top: 0;
 }
+.benefits-img-message:hover {
+  transform: scale(1.2); /* 1.2倍に拡大 */
+}
 @media screen and (max-width: 1024px) {
   .benefits-img-message {
     font-size: 0.875rem;
-    font-weight: 400;
     top: 70px;
     right: -84px;
   }
@@ -2569,10 +2597,10 @@ footer {
 }
 
 .benefits-button-wrapper {
-  margin-top: 10px;
   position: absolute;
-  margin-top: -53px;
-  padding-right: 30px;
+  margin-top: -44px;
+  padding-right: 43px;
+  line-height: 1.5;
 }
 @media screen and (max-width: 1280px) {
   .benefits-button-wrapper {
@@ -2596,6 +2624,8 @@ footer {
   border-radius: 50%;
   transition: 0.2s;
   line-height: 55px;
+  transition: transform 0.3s ease; /* アニメーションの追加 */
+  transform-origin: center; /* 中央を基準に拡大縮小 */
 }
 .benefits-button-wrapper a:hover {
   width: 70px;
@@ -2632,6 +2662,7 @@ footer {
 .benefits-img-title {
   font-size: 2rem;
   line-height: 1.2;
+  font-weight: 700;
   background-color: #AFA86F;
   display: inline-block;
   text-align: center;
@@ -2665,26 +2696,6 @@ footer {
 .benefits-button {
   font-size: 1.25rem;
   transition: 0.4s;
-}
-
-.zoom-button {
-  background-color: #4CAF50;
-  border: none;
-  color: white;
-  padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  margin: 4px 2px;
-  cursor: pointer;
-  border-radius: 8px;
-  transition: transform 0.3s ease; /* アニメーションの追加 */
-  transform-origin: center; /* 中央を基準に拡大縮小 */
-}
-
-.zoom-button:hover {
-  transform: scale(1.2); /* 1.2倍に拡大 */
 }
 
 .top-blog {
@@ -2745,7 +2756,7 @@ footer {
 }
 
 .blog-wrapper {
-  margin-top: 64px;
+  margin-top: 60px;
 }
 @media screen and (max-width: 768px) {
   .blog-wrapper {
@@ -2757,7 +2768,7 @@ footer {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(2, 1fr);
-  grid-gap: 20px 48px;
+  grid-gap: 22px 48px;
 }
 @media screen and (max-width: 1024px) {
   .blog-list {
@@ -2791,12 +2802,12 @@ footer {
 
 .blog-box-right {
   margin-inline: 5%;
-  margin-top: 2%;
-  margin-bottom: 4%;
+  margin-top: 19px;
   max-width: 251px;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  height: auto;
+  margin-bottom: 20px;
 }
 @media screen and (max-width: 1024px) {
   .blog-box-right {
@@ -2814,18 +2825,32 @@ footer {
 }
 
 .blog-category {
+  position: relative;
   font-size: 0.875rem;
-  font-weight: 400;
+  padding-left: 18px;
+  line-height: 1;
 }
 @media screen and (max-width: 768px) {
   .blog-category {
     font-size: 0.75rem;
   }
 }
+.blog-category::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 15px;
+  height: 15px;
+  background: url("img/blog-mark.png") no-repeat center/contain;
+  transform: translateY(-50%);
+}
 
 .topics {
   font-size: 1.125rem;
+  font-weight: 700;
   line-height: 1.5;
+  padding-top: 26px;
   text-decoration: underline solid 1px #222;
 }
 @media screen and (max-width: 768px) {
@@ -2846,6 +2871,8 @@ footer {
 
 .date {
   font-size: 0.75rem;
+  line-height: 1;
+  margin-top: auto;
 }
 
 .blog-top {
@@ -2861,9 +2888,12 @@ footer {
 .blog-top-link {
   margin-left: 13px;
   transition: 0.4s;
+  font-weight: 700;
+  border-bottom: solid #222;
+  transition: 0.4s;
 }
 .blog-top-link:hover {
-  color: #988C2C;
+  opacity: 0.7;
 }
 
 .blog-top-page {
@@ -3130,7 +3160,7 @@ footer {
 
 .sub-about-consul-lead {
   line-height: 1.5;
-  margin-top: 44px;
+  margin-top: 46px;
   font-weight: 400;
 }
 
@@ -3475,6 +3505,7 @@ footer {
   transition: 0.4s;
   text-align: center;
   padding-left: 28px;
+  background-color: #f9f9f9;
 }
 .details-btn::after {
   content: "↓";
@@ -3500,6 +3531,7 @@ footer {
   font-size: 2rem;
   line-height: 1;
   margin-top: 88px;
+  font-weight: 700;
 }
 @media screen and (max-width: 1024px) {
   .details-title {
@@ -4496,7 +4528,7 @@ aside {
 .faq-mv {
   height: 340px;
   margin-top: 118px;
-  background-image: url("../img/faq-fv.jpg");
+  background-image: url("./img/faq-fv.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -4505,59 +4537,6 @@ aside {
   .faq-mv {
     margin-top: 60px;
   }
-}
-
-.accordion-content {
-  display: none;
-  padding-left: 36px;
-  border-bottom: #AFA86F 1px solid;
-  transition: max-height 0.9s ease, opacity 0.5s ease;
-  padding-bottom: 23px;
-  line-height: 1;
-}
-
-.accordion-content.active {
-  padding-top: 0;
-  padding-left: 24px;
-}
-
-.accordion .accordion-item:first-child .accordion-header {
-  border-top: 1px solid #AFA86F;
-}
-.accordion .accordion-header {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  cursor: pointer;
-  padding-top: 14x;
-  padding-bottom: 21px;
-  border-bottom: 1px solid #AFA86F;
-  font-weight: bold;
-  background: #fff;
-  position: relative;
-  gap: 22px;
-  transition: 0.9s;
-}
-.accordion .accordion-header:hover {
-  opacity: 0.7;
-}
-@media screen and (max-width: 768px) {
-  .accordion .accordion-header {
-    padding-top: 20px;
-    padding-bottom: 20px;
-  }
-}
-
-.accordion-header-flow {
-  padding-bottom: 19px;
-}
-
-.accordion-header.active {
-  background: #fff;
-  border-bottom: none;
-  transition: 0.4s;
-  padding-bottom: 0;
-  padding-left: 0;
 }
 
 #faq-btn {
@@ -4664,4 +4643,58 @@ section.show {
   line-height: 1;
   inline-size: fit-content;
   margin-top: 18px;
+}
+
+/*_____Q&A アコーディオン______*/
+.accordion-content {
+  display: none;
+  padding-left: 36px;
+  border-bottom: #AFA86F 1px solid;
+  transition: max-height 0.9s ease, opacity 0.5s ease;
+  padding-bottom: 23px;
+  line-height: 1;
+}
+
+.accordion-content.active {
+  padding-top: 0;
+  padding-left: 24px;
+}
+
+.accordion .accordion-item:first-child .accordion-header {
+  border-top: 1px solid #AFA86F;
+}
+.accordion .accordion-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+  padding-top: 14x;
+  padding-bottom: 21px;
+  border-bottom: 1px solid #AFA86F;
+  font-weight: bold;
+  background: #fff;
+  position: relative;
+  gap: 22px;
+  transition: 0.9s;
+}
+.accordion .accordion-header:hover {
+  opacity: 0.7;
+}
+@media screen and (max-width: 768px) {
+  .accordion .accordion-header {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+}
+
+.accordion-header-flow {
+  padding-bottom: 19px;
+}
+
+.accordion-header.active {
+  background: #fff;
+  border-bottom: none;
+  transition: 0.4s;
+  padding-bottom: 0;
+  padding-left: 0;
 }/*# sourceMappingURL=styles.css.map */

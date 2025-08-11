@@ -1,5 +1,5 @@
 .benefits {
-    padding-top:138px;
+    padding-top:129px;
     padding-bottom: 176px;
     background-color: #fff;
     @media screen and (max-width: 768px) {
@@ -76,7 +76,8 @@
     }
 }
 .benefits-img-box-pic2 {
-    margin-top: 5em;
+    margin-top: 104px;
+
     @media screen and (max-width: 1024px) {
     margin-top: 2em;
     }
@@ -86,7 +87,7 @@
     }
 }
 .benefits-img-box-pic {
-    margin-top: 6.4em;
+    margin-top: 80px;
 
     @media screen and (max-width: 1024px) {
     margin-top: 1em;
@@ -98,11 +99,12 @@
 }
 .benefits-img-message {
     font-size: 1.5rem;
-    font-weight: 700;
+    font-weight: 400;
+    font-family:"Viga";
     transform: rotate( 90deg );
     position: absolute;
     top: 115px;
-    right: -113px;
+    right: -103px;
     letter-spacing: 3px;
 
     &::after {
@@ -110,11 +112,12 @@
         position: absolute;
         background-image: url(./img/page-black.png);
         top: 0;
-
+    }
+    &:hover {
+        transform: scale(1.2); /* 1.2倍に拡大 */
     }
     @media screen and (max-width: 1024px) {
         font-size: 0.875rem;
-        font-weight: 400;
         top: 70px;
         right: -84px;
     }
@@ -126,10 +129,10 @@
 }
 
 .benefits-button-wrapper {
-    margin-top: 10px;
     position: absolute;
-    margin-top: -53px;
-    padding-right: 30px;
+    margin-top: -44px;
+    padding-right: 43px;
+    line-height: 1.5;
 
     @media screen and (max-width: 1280px) {
         margin-top: -45px;
@@ -149,6 +152,8 @@
     border-radius: 50%;
     transition: .2s;
     line-height: 55px;
+    transition: transform 0.3s ease; /* アニメーションの追加 */
+    transform-origin: center; /* 中央を基準に拡大縮小 */
     &:hover {
         width: 70px;
         height: 70px;
@@ -184,6 +189,7 @@
 .benefits-img-title {
     font-size: 2rem;
     line-height: 1.2;
+    font-weight: 700;
     background-color: #AFA86F;
     display: inline-block;
     text-align: center;
@@ -212,27 +218,3 @@
     font-size: 1.25rem;
     transition: .4s;
 }
-
-
-
-
-
-.zoom-button {
-    background-color: #4CAF50;
-    border: none;
-    color: white;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 4px 2px;
-    cursor: pointer;
-    border-radius: 8px;
-    transition: transform 0.3s ease; /* アニメーションの追加 */
-    transform-origin: center; /* 中央を基準に拡大縮小 */
-  }
-  
-  .zoom-button:hover {
-    transform: scale(1.2); /* 1.2倍に拡大 */
-  }
