@@ -170,7 +170,8 @@
         padding: 0 0 0 93px;
 
         @media screen and (max-width: 768px) {
-            padding: 10px;
+            padding: 5px 5px 5px 8px;
+            line-height: 1.5;
         }
     }
 }
@@ -256,9 +257,8 @@
         background-position: center;
         background-repeat: no-repeat;
     }
-    
-
 }
+
 .sub-mv-title {
     background-color: #fff;
     font-size: 4rem;
@@ -274,8 +274,8 @@
 .sub-mv-item {
     background-color: #fff;
     font-size: 1.5rem;
+    font-weight: 700;
     padding: 3px 13px;
-    font-family: "Viga";
     line-height: 1;
     inline-size: fit-content;
     margin-top: 18px;
@@ -294,12 +294,11 @@
     }
 }
 
-
 .sub-mv-part {
     background-color: #fff;
     font-size: 1rem;
+    font-weight: 700;
     padding: 7px 10px;
-    font-family: "Viga";
     line-height: 1;
     color: #988C2C;
     inline-size: fit-content;
@@ -319,10 +318,11 @@
     max-width: 1024px;
     width: 100%;
     margin: 0 auto;
-    padding-inline: 1.3%;
+    padding-inline: 22px;
 
     &-mv {
-        padding-top: 54px;
+        padding-top: 57px;
+        padding-inline: 15px;
     }
 
     @media screen and (max-width: 1024px) {
@@ -339,6 +339,6 @@
         }
     }
     &-ceo {
-        padding-inline: 1.6%;
+        padding-inline: 20px;
     }
 }

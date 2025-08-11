@@ -77,7 +77,7 @@
             <h2 class="page-staff-title-member">その他のメンバー</h2>
             <div class="page-staff-sec">
                 <div class="sub-staff-box page-staff-box-list">
-                    <a href="<?php echo home_url('/staff-single/'); ?>/staff-single/">
+                    <a href="<?php echo home_url('/staff-single/'); ?>">
                         <img src="<?php echo get_template_directory_uri(); ?>/img/syain04.jpg" alt="社員写真ー高橋智">
                         <div class="sub-staff-box-img page-staff-list">
                             <p class="sub-staff-box-message">ビジネスの課題を</p>
@@ -91,7 +91,7 @@
                     </a>
                 </div>
                 <div class="sub-staff-box page-staff-box-list">
-                    <a href="<?php echo home_url('/staff-single/'); ?>/staff-single/">
+                    <a href="<?php echo home_url('/staff-single/'); ?>">
                         <img src="<?php echo get_template_directory_uri(); ?>/img/syain05.jpg" alt="社員写真ー高田凛">
                         <div class="sub-staff-box-img page-staff-list">
                             <p class="sub-staff-box-message">どんな難解な案件も</p>
@@ -105,7 +105,7 @@
                     </a>
                 </div>
                 <div class="sub-staff-box page-staff-box-list">
-                    <a href="<?php echo home_url('/staff-single/'); ?>/staff-single/">
+                    <a href="<?php echo home_url('/staff-single/'); ?>">
                         <img src="<?php echo get_template_directory_uri(); ?>/img/syain06.jpg" alt="社員写真 橘光">
                         <div class="sub-staff-box-img page-staff-list">
                             <p class="sub-staff-box-message">お客様と一緒に開発</p>

@@ -53,7 +53,7 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 
     // ドロワーの開閉でロゴと色を切り替え
-        hamburger.addEventListener('click', function () {
+    hamburger.addEventListener('click', function () {
         drawer.classList.toggle('active');
         hamburger.classList.toggle('active');
         header.classList.toggle('drawer-open');
@@ -179,6 +179,8 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 document.addEventListener("DOMContentLoaded", () => {
+    const isTop = document.body.classList.contains('home') || document.body.classList.contains('front-page');
+    if (!isTop) return;
     // headerとfooter以外のbody内の要素に.fade-upを付与
     document.querySelectorAll("body > *:not(header):not(footer)").forEach(el => {
         el.classList.add("fade-up");
@@ -212,9 +214,6 @@ document.addEventListener("DOMContentLoaded", function () {
         slides[current].classList.add("active");
     }, 5000); // 5秒ごとに切り替え
 });
-
-
-// ________________2つ目のスライダー＿＿＿＿＿＿＿＿＿
 
 
 

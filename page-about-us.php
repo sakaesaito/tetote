@@ -17,7 +17,7 @@
     </ol>
 </div>
 <section>
-    <div class="sub-inner">
+    <div class="sub-inner sub-inner-ceo">
         <h2 class="sub-title sub-title-us">私達が大切にしていること</h2>
         <div class="sub-aboutus-box aboutus-box1">
             <ul class="sub-aboutus-list">
@@ -76,9 +76,9 @@
     </div>
 </section>
 <section>
-    <div class="sub-inner">
+    <div class="sub-inner sub-inner-consul">
         <h2 class="sub-title sub-title-consul">事業紹介</h2>
-        <p class="sub-aboutus-consul-lead">
+        <p class="sub-about-consul-lead">
             TETOTEの主力事業である「コンサルティング」以外に、新規に取り組んでいる事業をいくつか<br>
             紹介させていただきます。
         </p>

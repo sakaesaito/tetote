@@ -97,6 +97,7 @@
     inline-size: fit-content;
     margin-top: 6px;
     padding: 4px;
+    font-weight: 700;
     @media screen and (max-width: 768px) {
         font-size: 1rem;
         &:nth-child(2){
@@ -106,6 +107,7 @@
 }
 .staff-box-year {
     font-size: 1rem;
+    font-weight: 700;
     @media screen and (max-width: 768px) {
         font-size: 0.75rem;
         margin-top: 4px;
@@ -114,6 +116,7 @@
 .staff-box-post {
     display: flex;
     margin-top: 4px;
+    font-weight: 700;
     @media screen and (max-width: 768px) {
         font-size: 1rem;
         &:nth-child(2){

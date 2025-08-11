@@ -2,7 +2,7 @@
     <div class="footer-view"></div>
     <div class="inner footer-inner">
         <div class="contact-box">
-            <p class="content-item footer-contact-item">
+            <p class="footer-contact-item">
                 わたしたちと一緒に働く仲間を募集中です。<br>
                 少数精鋭のチームで、<br>
                 あなたも会社も一緒に成長していきましょう。

@@ -67,87 +67,87 @@
         </div>
     </section>
     <section id="staff" class="staff">
-            <div class="staff-inner">
-                <div class="content-wrapper">
-                    <div class="text-wrapper staff-text-wrapper">
-                        <div class="staff-section-title">
-                            <h2 class="content-title staff-content-title"><span>人</span>を知る</h2>
+        <div class="staff-inner">
+            <div class="content-wrapper">
+                <div class="text-wrapper staff-text-wrapper">
+                    <div class="staff-section-title">
+                        <h2 class="content-title staff-content-title"><span>人</span>を知る</h2>
+                    </div>
+                    <p class="content-item staff-content-item">TETOTEの社員がどういった信念を持って働いているのか、<br>
+                        一日のスケジュールや仕事内容などを紹介します。</p>
+                </div>
+            </div>
+            <div class="staff-sec slider-post slider">
+                <div class="staff-sec-inner swiper limited-slider">
+                    <div class="staff-box-wrapper swiper-wrapper">
+                        <div class="staff-box swiper-slide">
+                            <article class="post-slide-item">
+                                <img src="<?php echo get_template_directory_uri(); ?>/img/syain01.jpg" alt="社員スタッフ西村優">
+                                <div class="staff-box-img">
+                                    <p class="staff-box-message">「あなたが担当で良かった」</p>
+                                    <p class="staff-box-message">この一言が、最高のやりがい</p>
+                                    <div class="staff-box-post">
+                                        <p class="staff-box-position">コンサルタント</p>
+                                        <p class="staff-box-year">2011年入社</p>
+                                    </div>
+                                    <p class="staff-box-name">西村 優</p>
+                                </div>
+                            </article>
                         </div>
-                        <p class="content-item staff-content-item">TETOTEの社員がどういった信念を持って働いているのか、<br>
-                            一日のスケジュールや仕事内容などを紹介します。</p>
+                        <div class="staff-box swiper-slide">
+                            <article class="post-slide-item">
+                                <img src="<?php echo get_template_directory_uri(); ?>/img/syain02.jpg" alt="社員スタッフ橋本拓也">
+                                <div class="staff-box-img-box2">
+                                    <p class="staff-box-message">全力で考えぬける環境</p>
+                                    <p class="staff-box-message">試練の数だけ強くなれました</p>
+                                    <div class="staff-box-post">
+                                        <p class="staff-box-position">コンサルタント</p>
+                                        <p class="staff-box-year">2015年入社</p>
+                                    </div>
+                                    <p class="staff-box-name">橋本 拓也</p>
+                                </div>
+                            </article>
+                        </div>
+                        <div class="staff-box swiper-slide">
+                            <article class="post-slide-item">
+                                <img src="<?php echo get_template_directory_uri(); ?>/img/syain03.jpg" alt="社員スタッフ青木美月">
+                                <div class="staff-box-img">
+                                    <p class="staff-box-message">お客様も知らない課題を</p>
+                                    <p class="staff-box-message">一緒に探し出す醍醐味</p>
+                                    <div class="staff-box-post">
+                                        <p class="staff-box-position">ソリューション営業</p>
+                                        <p class="staff-box-year">2017年入社</p>
+                                    </div>
+                                    <p class="staff-box-name">青木 美月</p>
+                                </div>
+                            </article>
+                        </div>
+                        <div class="staff-box swiper-slide">
+                            <article class="post-slide-item">
+                                <img src="<?php echo get_template_directory_uri(); ?>/img/syain04.jpg" alt="社員スタッフ佐々木健">
+                                <div class="staff-box-img-box2">
+                                    <p class="staff-box-message">「あなたが担当で良かった」</p>
+                                    <p class="staff-box-message">この一言が、最高のやりがい</p>
+                                    <div class="staff-box-post">
+                                        <p class="staff-box-position">コンサルタント</p>
+                                        <p class="staff-box-year">2004年入社</p>
+                                    </div>
+                                    <p class="staff-box-name">佐々木 健</p>
+                                </div>
+                            </article>
+                        </div>
                     </div>
                 </div>
-                <div class="staff-sec slider-post slider">
-                    <div class="staff-sec-inner swiper limited-slider">
-                        <div class="staff-box-wrapper swiper-wrapper">
-                            <div class="staff-box swiper-slide">
-                                <article class="post-slide-item">
-                                    <img src="<?php echo get_template_directory_uri(); ?>/img/syain01.jpg" alt="社員スタッフ西村優">
-                                    <div class="staff-box-img">
-                                        <p class="staff-box-message">「あなたが担当で良かった」</p>
-                                        <p class="staff-box-message">この一言が、最高のやりがい</p>
-                                        <div class="staff-box-post">
-                                            <p class="staff-box-position">コンサルタント</p>
-                                            <p class="staff-box-year">2011年入社</p>
-                                        </div>
-                                        <p class="staff-box-name">西村 優</p>
-                                    </div>
-                                </article>
-                            </div>
-                            <div class="staff-box swiper-slide">
-                                <article class="post-slide-item">
-                                    <img src="<?php echo get_template_directory_uri(); ?>/img/syain02.jpg" alt="社員スタッフ橋本拓也">
-                                    <div class="staff-box-img-box2">
-                                        <p class="staff-box-message">全力で考えぬける環境</p>
-                                        <p class="staff-box-message">試練の数だけ強くなれました</p>
-                                        <div class="staff-box-post">
-                                            <p class="staff-box-position">コンサルタント</p>
-                                            <p class="staff-box-year">2015年入社</p>
-                                        </div>
-                                        <p class="staff-box-name">橋本 拓也</p>
-                                    </div>
-                                </article>
-                            </div>
-                            <div class="staff-box swiper-slide">
-                                <article class="post-slide-item">
-                                    <img src="<?php echo get_template_directory_uri(); ?>/img/syain03.jpg" alt="社員スタッフ青木美月">
-                                    <div class="staff-box-img">
-                                        <p class="staff-box-message">お客様も知らない課題を</p>
-                                        <p class="staff-box-message">一緒に探し出す醍醐味</p>
-                                        <div class="staff-box-post">
-                                            <p class="staff-box-position">ソリューション営業</p>
-                                            <p class="staff-box-year">2017年入社</p>
-                                        </div>
-                                        <p class="staff-box-name">青木 美月</p>
-                                    </div>
-                                </article>
-                            </div>   
-                            <div class="staff-box swiper-slide">
-                                <article class="post-slide-item">
-                                    <img src="<?php echo get_template_directory_uri(); ?>/img/syain04.jpg" alt="社員スタッフ佐々木健">
-                                    <div class="staff-box-img-box2">
-                                        <p class="staff-box-message">「あなたが担当で良かった」</p>
-                                        <p class="staff-box-message">この一言が、最高のやりがい</p>
-                                        <div class="staff-box-post">
-                                            <p class="staff-box-position">コンサルタント</p>
-                                            <p class="staff-box-year">2004年入社</p>
-                                        </div>
-                                        <p class="staff-box-name">佐々木 健</p>
-                                    </div>
-                                </article>
-                            </div>
-                        </div>
-                    </div>
-                </div>   
             </div>
-            <div class="viewmore-button viewmore-button-staff">
-                <a href="<?php echo home_url('/staff/'); ?>">VIEW MORE</a>
-            </div>
-            <div class="page-button-box" >
-                <a href="" class="page-button-white-left">←</a>
-                <a href="" class="page-button-white-right">→</a>
-            </div>     
-        </section>
+        </div>
+        <div class="viewmore-button viewmore-button-staff">
+            <a href="<?php echo home_url('/staff/'); ?>">VIEW MORE</a>
+        </div>
+        <div class="page-button-box">
+            <a href="" class="page-button-white-left">←</a>
+            <a href="" class="page-button-white-right">→</a>
+        </div>
+    </section>
 
     <section id="benefits" class="benefits">
         <div class="inner">
@@ -201,7 +201,7 @@
                     <div class="blog-wrapper">
                         <ul class="blog-list">
                             <li class="blog-box">
-                            <a href="<?php echo esc_url(home_url('/blog-details/')); ?>/blog-detail/">
+                                <a href="<?php echo esc_url(home_url('/blog-details/')); ?>/blog-detail/">
                                     <div class="blog-box-main">
                                         <div class="thumbnail"><img src="<?php echo get_template_directory_uri(); ?>/img/blog01.jpg" alt=""></div>
                                         <div class="blog-box-right">

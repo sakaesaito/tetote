@@ -2,10 +2,12 @@
 
 <section id="sub-staff" class="sub-staff">
     <div class="sub-mv sub-mv-staff">
-        <div class="sub-mv-box">
-            <h2 class="sub-mv-title">STAFF</h2>
-            <h3 class="sub-mv-item sub-mv-item-staff">社員について</h3>
-            <p class="sub-mv-part">弊社社員のリアルな声を紹介しています。</p>
+        <div class="sub-inner sub-inner-mv">
+            <div class="sub-mv-box">
+                <h2 class="sub-mv-title">STAFF</h2>
+                <h3 class="sub-mv-item sub-mv-item-staff">社員について</h3>
+                <p class="sub-mv-part">弊社社員のリアルな声を紹介しています。</p>
+            </div>
         </div>
     </div>
 </section>
@@ -20,7 +22,7 @@
             <div class="sub-staff-box-wrapper">
                 <div class="sub-staff-box">
                     <a href="<?php echo esc_url(home_url('/staff-single/')); ?>">
-                    <img src="<?php echo get_template_directory_uri(); ?>/img/staff-single-syain01.jpg" alt="社員写真ー西村優">
+                    <img src="<?php echo get_template_directory_uri(); ?>/img/syain01.jpg" alt="社員写真ー西村優">
                         <div class="sub-staff-box-img">
                             <p class="sub-staff-box-message">「あなたが担当で良かった」</p>
                             <p class="sub-staff-box-message">この一言が、最高のやりがい</p>

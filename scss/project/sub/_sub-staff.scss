@@ -1,11 +1,8 @@
 /*staff一覧ページ＿＿＿＿＿＿＿＿＿＿*/
 .sub-inner-staff {
     @media screen and (max-width: 1024px) {
-        padding-inline: 5%;
+        padding-inline: 20px;
     }
-    @media screen and (max-width: 768px) {
-        padding-inline: 2%;
-    }  
 }
 .sub-staff-box-wrapper {
     display: grid;
@@ -51,6 +48,7 @@
     inline-size: fit-content;
     margin-top: 6px;
     font-size: 1.25rem;
+    font-weight: 700;
     line-height: 1.2;
     background-color: #AFA86F;
     inline-size: fit-content;
@@ -61,4 +59,7 @@
 .sub-staff-sec {
     margin-top: 130px;
     margin-bottom: 232px;
+    @media screen and (max-width: 1024px) {
+        margin-top: 50px;
+    }
 }

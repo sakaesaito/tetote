@@ -1,7 +1,7 @@
 <?php get_header(); ?>
 
 <section id="details" class="details">
-<div class="sub-mv details-mv">
+<div class="sub-mv sub-mv-details">
             <div class="sub-inner sub-inner-mv">
                 <div class="sub-mv-box">
                     <h2 class="sub-mv-title">DETAILS</h2>

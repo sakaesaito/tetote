@@ -21,17 +21,17 @@
 
 .header-inner {
     padding-inline: 1.81%;
-    height: inherit;
+    height: auto;
     width: 100%;
 
     @media screen and (max-width: 768px) {
         height: 0;
     }
-
 }
 
 .header-logo {
     width: 100%;
+    height: auto;
     max-width: 250px;
     transition: .3s;
 
@@ -49,8 +49,6 @@
 
     @media screen and (max-width: 768px) {
         max-width: 150px;
-        margin-left: 4px;
-        margin-top: 50px;
     }
 }
 
@@ -60,47 +58,20 @@
     gap: 17px;
 }
 
-.header--sticky {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    opacity: 1;
-    visibility: visible;
-    animation: slideDown 0.4s ease-in-out;
-    background-color: #fff;
-
-    @keyframes slideDown {
-        0% {
-            transform: translateY(-100%);
-        }
-
-        100% {
-            transform: translateY(0%);
-        }
-    }
-
-    .header-hamburger-icon span {
-        background-color: #222222;
-    }
-
-    .header-hamburger-item {
-        color: #222222;
-    }
-
-}
-
 .header-nav {
     display: flex;
     justify-content: space-between;
     height: inherit;
     align-items: center;
+    @media screen and (max-width: 768px) {
+        margin-top: 11px;
+    }
 }
-
 
 .header-button {
     display: block;
-    padding: 0.875rem 3.5rem;
+    margin-right: 13px;
+    padding: 14px 34px 14px 34px;
     transition: all 0.3s ease 0s;
     text-align: center;
     text-decoration: none;
@@ -109,9 +80,10 @@
     font-size: 14px;
 
     &-entry {
+        padding: 14px 42px 14px 42px;
         background-color: #AFA86F;
         color: #fff;
-        padding: 0.875rem 4rem;
+        font-family: "Viga";
 
         &:hover {
             background-color: #988C2C;
@@ -123,16 +95,20 @@
     }
 
     &-recruit {
+        padding: 14px 37px 14px 37px;
         background-color: #222222;
         color: #fff;
+        margin-right: 9px;
+        font-weight: 700;
 
         @media screen and (max-width: 768px) {
             display: none;
         }
 
         &:hover {
-            background-color: #988C2C;
+            background-color: #ffffff;
             color: #222222;
+            border: #222 1px solid;
         }
     }
 }
@@ -140,15 +116,14 @@
 
 .header-hamburger {
     transition: all 0.3s ease 0s;
-    margin-right: 7px;
+    margin-right: 3px;
 
     &:hover {
         opacity: .7;
     }
 
     @media screen and (max-width: 768px) {
-        margin-top: 47px;
-        margin-right: -2px;
+        margin-right: 11px;
     }
 }
 
@@ -168,25 +143,6 @@
         width: 32px;
         height: 2px;
     }
-
-}
-
-.sub-hamburger span {
-    display: block;
-    transition: all .3s;
-    top: 12px;
-    left: 25%;
-    width: 52px;
-    height: 2px;
-    background-color: #222;
-    margin: 0 auto;
-
-    @media screen and (max-width: 768px) {
-        top: 12px;
-        left: 25%;
-        width: 32px;
-    }
-
 }
 
 .header-hamburger span:nth-of-type(2) {
@@ -221,11 +177,6 @@
 
 
 .sub-header-hamburger-item {
-    text-align: center;
-    margin: 9px 0 0 0;
-    font-size: 0.75rem;
-    line-height: 1;
-    font-weight: 400;
     color: #222;
 }
 
@@ -263,8 +214,36 @@
     display: none;
 }
 
+.header--sticky {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    visibility: visible;
+    animation: slideDown 0.3s ease-in-out;
+    background-color: #fff;
+
+    .header-hamburger-icon span {
+        background-color: #222222;
+    }
+
+    .header-hamburger-item {
+        color: #222222;
+    }
+}
+
+@keyframes slideDown {
+    0% {
+        transform: translateY(-100%);
+    }
+
+    100% {
+        transform: translateY(0%);
+    }
+}
 
 
+/* サブページのヘッダー */
 .sub-header {
     position: fixed;
     top: 0;
@@ -280,6 +259,11 @@
 
     @media screen and (max-width: 768px) {
         height: 60px;
+    }
+}
+.sub-header-nav {
+    @media screen and (max-width: 768px) {
+    margin-top: 0;
     }
 }
 
@@ -305,89 +289,31 @@
     }
 }
 
-.header-link {
-    display: flex;
-    align-items: center;
-}
-
-.header--sticky {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    visibility: visible;
-    animation: slideDown 0.3s ease-in-out;
-    background-color: #fff;
-
-    .header-hamburger-icon span {
-        background-color: #222222;
-    }
-
-    .header-hamburger-item {
-        color: #222222;
-    }
-}
-
-.header-nav {
-    display: flex;
-    justify-content: space-between;
-    height: inherit;
-    align-items: center;
-}
-
-@keyframes slideDown {
-    0% {
-        transform: translateY(-100%);
-    }
-
-    100% {
-        transform: translateY(0%);
-    }
-}
-
-.header-button {
+.sub-hamburger span {
     display: block;
-    margin-right: 33px;
-    padding: 14px 34px 14px 34px;
-    transition: all 0.3s ease 0s;
-    text-align: center;
-    text-decoration: none;
-    line-height: 1;
-    cursor: pointer;
-    font-size: 14px;
+    transition: all .3s;
+    top: 12px;
+    left: 25%;
+    width: 52px;
+    height: 2px;
+    background-color: #222;
+    margin: 0 auto;
 
-    &-entry {
-        padding: 14px 42px 14px 42px;
-        background-color: #AFA86F;
-        color: #fff;
-
-        &:hover {
-            background-color: #988C2C;
-        }
-
-        @media screen and (max-width: 768px) {
-            display: none;
-        }
-    }
-
-    &-recruit {
-        background-color: #222222;
-        color: #fff;
-        margin-right: 9px;
-
-        @media screen and (max-width: 768px) {
-            display: none;
-        }
-
-        &:hover {
-            background-color: #ffffff;
-            color: #222222;
-            border: #222 1px solid;
-        }
+    @media screen and (max-width: 768px) {
+        top: 12px;
+        left: 25%;
+        width: 32px;
     }
 }
 
-/* サブページのヘッダー */
+.sub-header-inner {
+    padding-right: 28px;
+    height: inherit;
+    @media screen and (max-width: 768px) {
+        padding-right: 0;
+    }
+}
+
 .sub-header-hamburger {
     margin-left: 1.25rem;
     transition: all 0.3s ease 0s;
@@ -397,9 +323,13 @@
     }
 
     @media screen and (max-width: 768px) {
-        margin-top: 0.5rem;
+        margin-top: 0;
         margin-left: 0;
     }
+}
+
+.sub-header-link {
+    gap: 6px;
 }
 
 .sub-header-hamburger-icon span {
