@@ -159,7 +159,7 @@
                 </a>
                 <div class="benefits-main-box">
                     <div class="benefits-img-wrapper">
-                        <a href="<?php echo home_url('/career'); ?>">
+                        <a href="<?php echo home_url('/career/'); ?>">
                             <div class="benefits-img-box">
                                 <img class="benefits-img-box-pic" src="<?php echo get_template_directory_uri(); ?>/img/career1.svg" alt="">
                                 <p class="benefits-img-message">Traning And Career</p>
@@ -178,6 +178,7 @@
                                 <p class="benefits-img-message">Employee Benefits</p>
                             </div>
                             <div class="benefits-button-wrapper">
+                            <a class="benefits-button" href="<?php echo home_url('/benefits/'); ?>/career/"></a>
                                 <h3 class="benefits-img-title benefits-img-title-title2">福利厚生</h3>
                                 <p class="benefits-img-item">TETOTEの福利厚生制度は、従業員の健康と幸福を重視し、働きやすい環境を提供することを目的としています。</p>
                             </div>

@@ -629,6 +629,7 @@ button {
 @media screen and (max-width: 1024px) {
   .content-title-benefits {
     text-align: left;
+    margin-left: 20px;
   }
 }
 .content-title-benefits::after {
@@ -2479,6 +2480,7 @@ footer {
   .benefits-content-item {
     margin-left: 0;
     margin-top: 30px;
+    margin-inline: 20px;
   }
 }
 
@@ -2545,12 +2547,12 @@ footer {
 @media screen and (max-width: 1024px) {
   .benefits-img-box-pic2 {
     margin-top: 2em;
+    width: 202px;
   }
 }
 @media screen and (max-width: 768px) {
   .benefits-img-box-pic2 {
     margin-top: 4em;
-    width: 79%;
   }
 }
 
@@ -2560,12 +2562,12 @@ footer {
 @media screen and (max-width: 1024px) {
   .benefits-img-box-pic {
     margin-top: 1em;
+    width: 202px;
   }
 }
 @media screen and (max-width: 768px) {
   .benefits-img-box-pic {
     margin-top: 38px;
-    width: 79%;
   }
 }
 
@@ -2579,27 +2581,12 @@ footer {
   right: -103px;
   letter-spacing: 3px;
 }
-.benefits-img-message::after {
-  content: "";
-  position: absolute;
-  background-image: url(./img/page-black.png);
-  top: 0;
-}
-.benefits-img-message:hover {
-  transform: scale(1.2); /* 1.2倍に拡大 */
-}
 @media screen and (max-width: 1024px) {
   .benefits-img-message {
-    font-size: 0.875rem;
-    top: 70px;
-    right: -84px;
-  }
-}
-@media screen and (max-width: 768px) {
-  .benefits-img-message {
-    font-size: 0.75rem;
-    top: 64px;
-    right: -64px;
+    font-size: 14px;
+    top: 56px;
+    right: -53px;
+    letter-spacing: 1px;
   }
 }
 
@@ -2611,12 +2598,13 @@ footer {
 }
 @media screen and (max-width: 1280px) {
   .benefits-button-wrapper {
-    margin-top: -45px;
+    margin-top: -30px;
+    padding-right: 0;
   }
 }
 @media screen and (max-width: 768px) {
   .benefits-button-wrapper {
-    margin-top: -20px;
+    margin-top: -35px;
     padding-right: 0;
   }
 }
@@ -2625,44 +2613,34 @@ footer {
   height: 55px;
   background-color: #222;
   position: absolute;
-  bottom: 152px;
+  bottom: 135px;
   right: 61px;
   color: #fff;
   border-radius: 50%;
   transition: 0.2s;
   line-height: 55px;
+  background-image: url(./img/arrow-left-wh.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 32px 32px;
   transition: transform 0.3s ease; /* アニメーションの追加 */
   transform-origin: center; /* 中央を基準に拡大縮小 */
 }
+.benefits-button-wrapper a::after {
+  content: "";
+  position: absolute;
+  top: 0;
+}
 .benefits-button-wrapper a:hover {
-  width: 70px;
-  height: 70px;
-  line-height: 70px;
-  font-size: 1.5rem;
+  transform: scale(1.2); /* 1.2倍に拡大 */
 }
 @media screen and (max-width: 1024px) {
   .benefits-button-wrapper a {
     width: 42px;
     height: 42px;
-    line-height: 42px;
-    bottom: 147px;
-    right: 42px;
-  }
-  .benefits-button-wrapper a:hover {
-    width: 56px;
-    height: 56px;
-    line-height: 56px;
-    font-size: 1rem;
-  }
-  .benefits-button-wrapper a a {
-    top: -50px;
-    right: 78px;
-  }
-}
-@media screen and (max-width: 768px) {
-  .benefits-button-wrapper a {
-    bottom: 148px;
-    right: 59px;
+    bottom: 135px;
+    right: 61px;
+    background-size: 20px 20px;
   }
 }
 
@@ -3608,10 +3586,6 @@ footer {
   .sub-engineer {
     margin-bottom: 50px;
   }
-}
-
-.to {
-  margin-top: 5px;
 }
 
 .sub-page-blog-list {

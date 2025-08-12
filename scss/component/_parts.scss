@@ -185,10 +185,11 @@ button {
     }
     &-benefits {
         text-align: center;
-    position: relative;
+        position: relative;
 
     @media screen and (max-width: 1024px) {
-        text-align: left;    
+        text-align: left;
+        margin-left: 20px;    
     }
 
     &::after {

@@ -50,9 +50,7 @@
     @media screen and (max-width: 1024px) {
         padding-inline: 17px;
     }
-
 }
-
 .sub-aboutus-box {
     margin-top: 30px;
     background-color: #FAF7F1;
@@ -60,7 +58,6 @@
         margin-top: 50px;
     }
 }
-
 .aboutus-box1 {
     margin-top: 82px;
 }
@@ -79,12 +76,10 @@
     font-weight: 700;
     padding-top: 33px;
     position: relative;
-
     @media screen and (max-width: 768px) {
         font-size: 1rem;
         padding-top: 24px;
     }
-
     &::before {
         display: inline-block;
         width: 50px;
@@ -102,9 +97,7 @@
             margin-right: 6px;
             padding-top: 0;
         }
-    }
-        
-    
+    } 
         &.title-1::before {
             content: "1";
         }
@@ -147,7 +140,6 @@
     display: flex;
     margin-top: 109px;
     gap: 17px;
-
     @media screen and (max-width: 1024px) {
         display: block;
         margin:  0 auto;
