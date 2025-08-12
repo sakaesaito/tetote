@@ -1,6 +1,9 @@
 /*staff一覧ページ＿＿＿＿＿＿＿＿＿＿*/
 .sub-inner-staff {
     @media screen and (max-width: 1024px) {
+        padding-inline: 70px;
+    }
+    @media screen and (max-width: 768px) {
         padding-inline: 20px;
     }
 }

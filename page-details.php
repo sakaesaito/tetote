@@ -2,7 +2,7 @@
 
 <section id="details" class="details">
 <div class="sub-mv sub-mv-details">
-            <div class="sub-inner sub-inner-mv">
+            <div class="sub-inner sub-inner-mv sub-inner-details">
                 <div class="sub-mv-box">
                     <h2 class="sub-mv-title">DETAILS</h2>
                     <h3 class="sub-mv-item sub-mv-item-details">募集要項</h3>

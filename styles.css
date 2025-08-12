@@ -1025,6 +1025,11 @@ button {
 .sub-header-hamburger.active span:nth-child(1) {
   transform: rotate(45deg) translate(8px, 12px);
 }
+@media screen and (max-width: 768px) {
+  .sub-header-hamburger.active span:nth-child(1) {
+    transform: rotate(45deg) translate(8px, 5px);
+  }
+}
 
 .sub-header-hamburger.active span:nth-child(2) {
   opacity: 0;
@@ -1032,6 +1037,11 @@ button {
 
 .sub-header-hamburger.active span:nth-child(3) {
   transform: rotate(-45deg) translate(8px, -12px);
+}
+@media screen and (max-width: 768px) {
+  .sub-header-hamburger.active span:nth-child(3) {
+    transform: rotate(-45deg) translate(8px, -5px);
+  }
 }
 
 footer {
@@ -1287,7 +1297,6 @@ footer {
   display: none;
   display: block;
   position: fixed;
-  top: 100px;
   right: 0;
   width: 100%;
   height: 100vh;
@@ -1319,6 +1328,7 @@ footer {
   .drawer-inner {
     display: block;
     padding-inline: 12px;
+    padding-top: 43px;
   }
 }
 
@@ -1977,23 +1987,20 @@ footer {
   padding-inline: 15px;
 }
 @media screen and (max-width: 1024px) {
-  .sub-inner {
-    padding-inline: 15%;
-  }
-  .sub-inner-mv {
+  .sub-inner-details {
     padding-top: 146px;
+  }
+  .sub-inner-ceo {
+    padding-inline: 70px;
   }
 }
 @media screen and (max-width: 768px) {
   .sub-inner {
-    padding-inline: 2%;
-  }
-  .sub-inner-mv {
-    padding-top: 146px;
+    padding-inline: 20px;
   }
 }
 .sub-inner-ceo {
-  padding-inline: 20px;
+  padding-inline: 30px;
 }
 
 .about {
@@ -2955,7 +2962,7 @@ footer {
 }
 @media screen and (max-width: 1024px) {
   .sub-title-consul {
-    margin-top: 70px;
+    margin-top: 100px;
   }
 }
 .sub-title-company {
@@ -2993,7 +3000,12 @@ footer {
 }
 @media screen and (max-width: 1024px) {
   .sub-aboutus-list {
-    padding-inline: 6px;
+    padding-inline: 60px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .sub-aboutus-list {
+    padding-inline: 15px;
   }
 }
 
@@ -3103,6 +3115,7 @@ footer {
 @media screen and (max-width: 1024px) {
   .sub-aboutus-ceo-message:nth-child(2) {
     padding-top: 0px;
+    padding-inline: 5%;
   }
 }
 @media screen and (max-width: 1024px) {
@@ -3157,6 +3170,16 @@ footer {
 .sub-inner-consul {
   padding-inline: 20px;
 }
+@media screen and (max-width: 1024px) {
+  .sub-inner-consul {
+    padding-inline: 70px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .sub-inner-consul {
+    padding-inline: 20px;
+  }
+}
 
 .sub-about-consul-lead {
   line-height: 1.5;
@@ -3196,6 +3219,7 @@ footer {
     max-width: 716px;
     width: 100%;
     margin-top: 40px;
+    height: 100%;
   }
 }
 
@@ -3237,7 +3261,7 @@ footer {
 @media screen and (max-width: 1024px) {
   .sub-about-box-read {
     margin-top: 20px;
-    max-width: none;
+    max-width: 700px;
     padding-top: 0;
   }
 }
@@ -3245,7 +3269,7 @@ footer {
 .solution-read, .system-read {
   padding-top: 42px;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1024px) {
   .solution-read, .system-read {
     padding-top: 0;
   }
@@ -3330,7 +3354,14 @@ footer {
 }
 @media screen and (max-width: 1024px) {
   .sub-inner-about-list {
+    padding-inline: 70px;
+    padding-bottom: 50px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .sub-inner-about-list {
     padding-inline: 20px;
+    padding-bottom: 50px;
   }
 }
 
@@ -3726,6 +3757,7 @@ footer {
 }
 @media screen and (max-width: 768px) {
   .benefits-list {
+    display: block;
     padding-top: 20px;
     padding-bottom: 20px;
     gap: 10px;
@@ -3736,6 +3768,11 @@ footer {
   line-height: 1;
   width: 20%;
   display: block;
+}
+@media screen and (max-width: 768px) {
+  .benefits-list-title {
+    padding-bottom: 20px;
+  }
 }
 
 .benefits-list-item {
@@ -3782,16 +3819,17 @@ footer {
   color: #988c2c;
   line-height: 1;
   margin-top: 23px;
+  font-weight: 700;
 }
 
 .benefits-name {
   font-size: 1.5rem;
+  font-weight: 700;
   line-height: 1;
   margin-top: 13px;
 }
 
 .benefits-note {
-  font-weight: 400;
   line-height: 1.8;
   margin-top: 25px;
 }
@@ -3809,6 +3847,11 @@ footer {
 
 /*staff一覧ページ＿＿＿＿＿＿＿＿＿＿*/
 @media screen and (max-width: 1024px) {
+  .sub-inner-staff {
+    padding-inline: 70px;
+  }
+}
+@media screen and (max-width: 768px) {
   .sub-inner-staff {
     padding-inline: 20px;
   }
@@ -4134,7 +4177,7 @@ footer {
   margin-top: 130px;
   margin-bottom: 139px;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1024px) {
   .sub-blog-sec {
     margin-top: 50px;
     margin-bottom: 50px;
@@ -4214,7 +4257,7 @@ footer {
     max-width: 560px;
     width: 100%;
     margin-top: 9px;
-    margin-bottom: 5px;
+    margin-bottom: 10px;
     margin-inline: 18px;
   }
 }

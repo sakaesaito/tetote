@@ -326,19 +326,17 @@
     }
 
     @media screen and (max-width: 1024px) {
-        padding-inline: 15%;
-        &-mv {
+        &-details {
             padding-top: 146px;
+        }
+        &-ceo {
+            padding-inline: 70px;
         }
     }
     @media screen and (max-width: 768px) {
-        padding-inline: 2%;
-
-        &-mv {
-            padding-top: 146px;
-        }
+        padding-inline: 20px;
     }
     &-ceo {
-        padding-inline: 20px;
+        padding-inline: 30px;
     }
 }
