@@ -10,6 +10,21 @@
         padding-top: 0;
     }
 }
+.career-inner {
+    margin: 0 auto;
+}
+.career-content-wrapper {
+    text-align: center;
+    padding-inline: 17px;
+}
+.career-wrapper {
+    margin-top: 64px;
+    text-align: center;
+    
+    @media screen and (max-width: 768px) {
+        margin-top: 28px;
+    }
+}
 .career-content-title {
     text-align: center;
     position: relative;
@@ -45,20 +60,6 @@
         margin-top: 30px;
     }
 }
-
-.career-content-wrapper {
-    text-align: center;
-    padding-inline: 17px;
-}
-
-.career-wrapper {
-    margin-top: 64px;
-    text-align: center;
-    
-    @media screen and (max-width: 768px) {
-        margin-top: 28px;
-    }
-}
 .link-box {
     display: flex;
     gap: 1rem;
@@ -67,7 +68,6 @@
     @media screen and (max-width: 1024px) {
         display: block;
     }
-
 }
 .link-box-button {
     width: 100%;

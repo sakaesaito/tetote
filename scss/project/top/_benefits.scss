@@ -7,7 +7,9 @@
         padding-bottom: 187px;
     }
 }
-
+.benefits-inner {
+    margin: 0 auto;
+}
 .benefits-text-wrapper {
     text-align: center;
     @media screen and (max-width: 1024px) {
@@ -15,7 +17,6 @@
         padding-inline: 17px;
     }
 }
-
 .benefits-content-item {
     margin-top: 22px;
     margin-left: 44px;
@@ -25,7 +26,6 @@
         margin-inline: 20px;
     }
 }
-
 .benefits-main-box {
     display: grid;
     grid-template-columns: repeat(2, 1fr); 
@@ -142,7 +142,7 @@
     background-image: url(./img/arrow-left-wh.png);
     background-repeat: no-repeat;
     background-position: center center;
-    background-size:32px 32px;
+    background-size:16px 16px;
     transition: transform 0.3s ease; /* アニメーションの追加 */
     transform-origin: center; /* 中央を基準に拡大縮小 */
         &::after {
@@ -150,7 +150,6 @@
             position: absolute;
             top: 0;
         }
-    
         &:hover {
             transform: scale(1.2); /* 1.2倍に拡大 */
         }
@@ -160,8 +159,7 @@
             bottom: 135px;
             right: 61px;
             background-size:20px 20px;
-        }
-    
+        } 
     }
 }
 .benefits-img-title {
