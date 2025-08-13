@@ -201,7 +201,7 @@
 
 
 
-/* ______subページのmv______ */
+/* ______下層ページのmv______ */
 .sub-mv-box {
     margin-top: 20px;
     margin-left: 5px;
@@ -248,7 +248,7 @@
     &-faq {
         background-image: url(./img/faq-fv.jpg);
         background-size: cover;
-        background-position: center;
+        background-position: bottom;
         background-repeat: no-repeat;
     }
     &-blog {
@@ -326,9 +326,6 @@
     }
 
     @media screen and (max-width: 1024px) {
-        &-details {
-            padding-top: 146px;
-        }
         &-ceo {
             padding-inline: 70px;
         }

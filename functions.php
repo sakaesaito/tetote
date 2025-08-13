@@ -14,54 +14,46 @@ add_action('after_setup_theme', 'theme_setup');
 
 //css.jQueryの読み込み
 
-wp_enqueue_style(
-    'theme-style',
-    get_template_directory_uri() . '/style.css',
-    [],
-    null
-);
+add_action('wp_enqueue_scripts', function () {
+    // ===== CSS =====
+    // テーマのメインCSS（キャッシュ対策にfilemtime）
+    $theme_css_path = get_stylesheet_directory() . '/style.css';
+    wp_enqueue_style(
+        'theme-style',
+        get_stylesheet_uri(),
+        [],
+        file_exists($theme_css_path) ? filemtime($theme_css_path) : null
+    );
 
-function tetote_enqueue_scripts()
-{
     // Swiper CSS
     wp_enqueue_style(
         'swiper-css',
         'https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css',
         [],
-        null
+        '11'
     );
 
-    // Swiper JS
+    // ===== JS =====
+    // WP 同梱の jQuery（依存解決のためハンドルのみ）
+    wp_enqueue_script('jquery');
+
+    // Swiper JS（jQuery非依存）
     wp_enqueue_script(
         'swiper-js',
         'https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js',
         [],
-        null,
+        '11',
         true
     );
 
-    wp_enqueue_script('jquery');
-
-
+    // テーマの main.js（キャッシュ対策にfilemtime）
+    $main_js_uri  = get_template_directory_uri() . '/js/main.js';
+    $main_js_path = get_template_directory() . '/js/main.js';
     wp_enqueue_script(
-        'main-js',
-        get_template_directory_uri() . '/js/main.js',
+        'theme-main',
+        $main_js_uri,
         ['jquery', 'swiper-js'],
-        null,
+        file_exists($main_js_path) ? filemtime($main_js_path) : null,
         true
     );
-}
-
-add_action('wp_enqueue_scripts', 'tetote_enqueue_scripts');
-
-
-function theme_assets()
-{
-    wp_enqueue_style(
-        'theme-style',
-        get_stylesheet_uri(),
-        array(),
-        filemtime(get_stylesheet_directory() . '/style.css')
-    );
-}
-add_action('wp_enqueue_scripts', 'theme_assets');
+});

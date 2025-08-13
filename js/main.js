@@ -153,27 +153,14 @@ document.addEventListener("DOMContentLoaded", function () {
 
 // _______________アコーディオン＿＿＿＿＿＿＿＿＿
 
-document.addEventListener("DOMContentLoaded", function () {
-    const headers = document.querySelectorAll(".accordion-header");
-
-    headers.forEach(header => {
-        header.addEventListener("click", function () {
-            const content = this.nextElementSibling;
-            const icon = this.querySelector(".toggle-icon");
-
-            this.classList.toggle("active");
-
-            if (content.style.display === "block") {
-                content.style.display = "none";
-                icon.textContent = "+";
-            } else {
-                content.style.display = "block";
-                icon.textContent = "−";
-            }
-        });
+$(function () {
+    $('.jsAccordionTitle').on('click', function () {
+    const $header  = $(this).closest('.accordion-header');
+    const $content = $header.next('.accordion-content');
+    $content.toggleClass('is-open');
+    $(this).toggleClass('active');
     });
 });
-
 
 // _________________フェードアップ＿＿＿＿＿＿＿＿＿＿＿＿
 
@@ -247,3 +234,5 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     });
 });
+
+

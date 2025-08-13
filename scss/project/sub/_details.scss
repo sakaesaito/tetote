@@ -1,9 +1,14 @@
-
 .details-main {
     padding-top: 145px;
     @media screen and (max-width: 1024px) {
         padding-top: 70px;
     }
+}
+#sub-details, #sub-solution, #sub-engineer { 
+    scroll-margin-top: 118px;
+}
+section.show {
+    opacity: 1;
 }
 .details-main-title {
     font-size: 2rem;
@@ -12,7 +17,6 @@
         line-height: 1.5;
         text-align: center;
     }
-
     br {
         display: none;
         @media screen and (max-width: 1024px) {
@@ -22,7 +26,6 @@
     @media screen and (max-width: 768px) {
         font-size: 1.5rem;
     }
-
 }
 .details-lead {
     font-size: 1rem;
@@ -34,7 +37,6 @@
             display: inline;
         }
     }
-
     @media screen and (max-width: 768px) {
         margin-top: 50px;
         text-align: center;
@@ -44,11 +46,9 @@
     display: flex;
     gap: 49px;
     margin-top: 63px;
-
     @media screen and (max-width: 768px) {
         padding-top: 0;
     }
-
     @media screen and (max-width: 1024px) {
         display: block;
         max-width: 294px;
@@ -57,34 +57,47 @@
     }
 }
 .details-btn {
+    position: relative;
     display: inline-block;
     border: 1px #222 solid;
     border-radius: 50px;
     font-size: 1.25rem;
+    font-weight: 700;
     line-height: 1;
     width: 294px;
-    padding-top: 18px;
-    padding-bottom: 18px;
+    padding: 18px 28px;
     transition: .4s;
     text-align: center;
-    padding-left: 28px;
-    background-color: #f9f9f9;
-
-    &::after {
-        content: "↓";
-        transition: .4s;
-        padding-left: 10px;
-    }
-
-    &:hover{
+    background-color: #FAF7F1;
+    color: #222;
+    cursor: pointer;
+    &:hover {
         background-color: #222;
         color: #fff;
-
     }
     @media screen and (max-width: 1024px) {
         margin-top: 30px;
-        align-items: center;
+        width: 100%;
     }
+}
+
+.details-btn::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+    width: 20px;  
+    height: 20px;
+    background-image: url(./img/arrow-details-button.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    transition: filter .4s;
+}
+
+.details-btn:hover::after {
+    filter: brightness(0) invert(1);
 }
 .details-list-box {
     padding-bottom: 139px;
@@ -109,15 +122,14 @@
 }
 .details-list-title {
     width: 19%;
-    padding-top: 1px;
-    
-    
+    padding-top: 1px; 
+    font-weight: 400; 
     @media screen and (max-width: 768px) {
         width: 25%;
     }
-
 }
 .details-list-item {
+    font-weight: 400;
     br {
         display: none;
     }

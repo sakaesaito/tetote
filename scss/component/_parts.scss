@@ -29,7 +29,6 @@ button {
         content: "";
         position: absolute;
         top: 0;
-        bottom: 0;
         right: 26px;
         margin: auto;
         width: 12px;
@@ -160,10 +159,10 @@ button {
         @media screen and (max-width: 1024px) {
             width: 42px;
             height: 42px;
-            bottom: 135px;
-            right: 61px;
+            top: 0;
+            right: 100px;
             background-size:10px 10px;
-        }         
+        }
 }
 
 

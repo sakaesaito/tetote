@@ -266,9 +266,8 @@
                     </div>
                     <div class="blog-top-page-2">
                         <a href="<?php echo esc_url(home_url('/blog-details/')); ?>">
-                        <div class="button-white-right"></div>
-                        <div class="blog-top-link">VIEW MORE</div>
-                        
+                            <div class="button-white-right"></div>
+                            <div class="blog-top-link">VIEW MORE</div>
                         </a>
                     </div>
                 </div>

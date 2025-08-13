@@ -22,9 +22,9 @@
             </h2>
             <p class="details-lead">TETOTEでは、コンサルタントを中心に、<br>様々な職種を募集しています。</p>
             <div class="details-btn-box">
-                <button class="details-btn" data-target="#sub-details">コンサルタント</button>
-                <button class="details-btn" data-target="#sub-solution">ソリューション営業</button>
-                <button class="details-btn" data-target="#sub-engineer">システムエンジニア</button>
+                <a class="details-btn" href="#sub-details">コンサルタント</a>
+                <a class="details-btn" href="#sub-solution">ソリューション営業</a>
+                <a class="details-btn" href="#sub-engineer">システムエンジニア</a>
             </div>
         </div>
     </section>

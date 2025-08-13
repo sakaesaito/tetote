@@ -440,6 +440,10 @@ img {
   background-color: #f0f0f0;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 /* ボタン共通　*/
 button {
   appearance: none;
@@ -470,7 +474,6 @@ button {
   content: "";
   position: absolute;
   top: 0;
-  bottom: 0;
   right: 26px;
   margin: auto;
   width: 12px;
@@ -602,8 +605,8 @@ button {
   .button-white-right {
     width: 42px;
     height: 42px;
-    bottom: 135px;
-    right: 61px;
+    top: 0;
+    right: 100px;
     background-size: 10px 10px;
   }
 }
@@ -1857,7 +1860,7 @@ footer {
   }
 }
 
-/* ______subページのmv______ */
+/* ______下層ページのmv______ */
 .sub-mv-box {
   margin-top: 20px;
   margin-left: 5px;
@@ -1906,7 +1909,7 @@ footer {
 .sub-mv-faq {
   background-image: url(./img/faq-fv.jpg);
   background-size: cover;
-  background-position: center;
+  background-position: bottom;
   background-repeat: no-repeat;
 }
 .sub-mv-blog {
@@ -1992,9 +1995,6 @@ footer {
   padding-inline: 15px;
 }
 @media screen and (max-width: 1024px) {
-  .sub-inner-details {
-    padding-top: 146px;
-  }
   .sub-inner-ceo {
     padding-inline: 70px;
   }
@@ -3460,6 +3460,14 @@ footer {
   }
 }
 
+#sub-details, #sub-solution, #sub-engineer {
+  scroll-margin-top: 118px;
+}
+
+section.show {
+  opacity: 1;
+}
+
 .details-main-title {
   font-size: 2rem;
   font-weight: 700;
@@ -3524,23 +3532,20 @@ footer {
 }
 
 .details-btn {
+  position: relative;
   display: inline-block;
   border: 1px #222 solid;
   border-radius: 50px;
   font-size: 1.25rem;
+  font-weight: 700;
   line-height: 1;
   width: 294px;
-  padding-top: 18px;
-  padding-bottom: 18px;
+  padding: 18px 28px;
   transition: 0.4s;
   text-align: center;
-  padding-left: 28px;
-  background-color: #f9f9f9;
-}
-.details-btn::after {
-  content: "↓";
-  transition: 0.4s;
-  padding-left: 10px;
+  background-color: #FAF7F1;
+  color: #222;
+  cursor: pointer;
 }
 .details-btn:hover {
   background-color: #222;
@@ -3549,8 +3554,27 @@ footer {
 @media screen and (max-width: 1024px) {
   .details-btn {
     margin-top: 30px;
-    align-items: center;
+    width: 100%;
   }
+}
+
+.details-btn::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  transform: translateY(-50%);
+  width: 20px;
+  height: 20px;
+  background-image: url(./img/arrow-details-button.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  transition: filter 0.4s;
+}
+
+.details-btn:hover::after {
+  filter: brightness(0) invert(1);
 }
 
 .details-list-box {
@@ -3584,6 +3608,7 @@ footer {
 .details-list-title {
   width: 19%;
   padding-top: 1px;
+  font-weight: 400;
 }
 @media screen and (max-width: 768px) {
   .details-list-title {
@@ -3591,6 +3616,9 @@ footer {
   }
 }
 
+.details-list-item {
+  font-weight: 400;
+}
 .details-list-item br {
   display: none;
 }
@@ -3767,6 +3795,7 @@ footer {
 @media screen and (max-width: 768px) {
   .benefits-list-title {
     padding-bottom: 20px;
+    width: 22%;
   }
 }
 
@@ -4019,6 +4048,7 @@ footer {
 
 .blog-detail-menu {
   font-size: 1.5rem;
+  font-weight: 700;
   line-height: 1;
   margin-top: 23px;
 }
@@ -4563,23 +4593,13 @@ aside {
     display: none;
   }
 }
-.faq-mv {
-  height: 340px;
-  margin-top: 118px;
-  background-image: url("./img/faq-fv.jpg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-@media screen and (max-width: 768px) {
-  .faq-mv {
-    margin-top: 60px;
-  }
-}
-
 #faq-btn {
   opacity: 1;
   transition: opacity 0.8s ease-in-out;
+}
+
+#faq-details, #faq-career, #faq-benefits {
+  scroll-margin-top: 118px;
 }
 
 section.show {
@@ -4619,58 +4639,18 @@ section.show {
   }
 }
 
-.accordion {
-  margin-top: 113px;
-}
-@media screen and (max-width: 1024px) {
-  .accordion {
-    margin-top: 50px;
-  }
-}
-
 .sub-inner-faq {
   padding-inline: 22px;
 }
-
-.q-mark {
-  color: #988C2C;
-  line-height: 1;
-  flex-shrink: 0;
-  font-size: 24px;
-  padding-top: 15px;
-}
-
-.faq-benefits {
-  margin-bottom: 139px;
-}
 @media screen and (max-width: 1024px) {
-  .faq-benefits {
-    margin-top: 50px;
+  .sub-inner-faq {
+    padding-inline: 50px;
   }
 }
-
-.question-text {
-  flex: 1;
-  font-size: 1rem;
-  word-break: break-word;
-  padding-top: 18px;
-}
-
-.toggle-icon {
-  flex-shrink: 0;
-  font-size: 32px;
-  font-weight: 400;
-  color: #AFA86F;
-  margin-left: auto;
-  padding-top: 10px;
-}
-
-.question-text {
-  font-weight: 400;
-}
-
-.accordion-content {
-  font-weight: 400;
+@media screen and (max-width: 768px) {
+  .sub-inner-faq {
+    padding-inline: 20px;
+  }
 }
 
 .sub-mv-item-faq {
@@ -4683,12 +4663,35 @@ section.show {
   margin-top: 18px;
 }
 
+.q-mark {
+  color: #988C2C;
+  line-height: 1;
+  flex-shrink: 0;
+  font-size: 24px;
+}
+
+.faq-benefits {
+  margin-bottom: 139px;
+}
+@media screen and (max-width: 1024px) {
+  .faq-benefits {
+    margin-top: 50px;
+  }
+}
+
 /*_____Q&A アコーディオン______*/
+.accordion-title {
+  flex: 1;
+  font-size: 1rem;
+  word-break: break-word;
+  padding-top: 18px;
+}
+
 .accordion-content {
-  display: none;
+  overflow: hidden;
   padding-left: 36px;
-  border-bottom: #AFA86F 1px solid;
-  transition: max-height 0.9s ease, opacity 0.5s ease;
+  border-bottom: #AFA86F 1px solid transparent;
+  transition: max-height 0.4s ease, opacity 0.4s ease;
   padding-bottom: 23px;
   line-height: 1;
 }
@@ -4700,26 +4703,26 @@ section.show {
 
 .accordion .accordion-item:first-child .accordion-header {
   border-top: 1px solid #AFA86F;
+  margin-top: 113px;
 }
-.accordion .accordion-header {
+
+.accordion-header {
   display: flex;
   align-items: center;
   justify-content: space-between;
   cursor: pointer;
-  padding-top: 14x;
-  padding-bottom: 21px;
+  padding-top: 14px;
   border-bottom: 1px solid #AFA86F;
-  font-weight: bold;
   background: #fff;
   position: relative;
   gap: 22px;
   transition: 0.9s;
 }
-.accordion .accordion-header:hover {
+.accordion-header:hover {
   opacity: 0.7;
 }
 @media screen and (max-width: 768px) {
-  .accordion .accordion-header {
+  .accordion-header {
     padding-top: 20px;
     padding-bottom: 20px;
   }
@@ -4735,4 +4738,66 @@ section.show {
   transition: 0.4s;
   padding-bottom: 0;
   padding-left: 0;
+}
+
+.accordion {
+  margin-top: 10px;
+}
+
+.accordion-container {
+  width: 500px;
+  margin: 0 auto;
+}
+
+.accordion-title {
+  background-color: #fff;
+  padding: 36px 12px 36px 32px;
+  position: relative;
+  cursor: pointer;
+  user-select: none;
+}
+
+.accordion-title::before,
+.accordion-title::after {
+  content: "";
+  display: block;
+  background-color: #AFA86F;
+  position: absolute;
+  top: 50%;
+  width: 15px;
+  height: 2px;
+  right: 25px;
+}
+
+.accordion-title::after {
+  transform: rotate(90deg);
+  transition-duration: 0.3s;
+}
+
+.accordion-title.active::before {
+  opacity: 0;
+}
+
+.accordion-title.active::after {
+  transform: rotate(0);
+}
+
+.accordion-content {
+  border-left: 1px solid transparent;
+  border-right: 1px solid transparent;
+  padding: 0 18px;
+  line-height: 0;
+  height: 0;
+  overflow: hidden;
+  opacity: 0;
+  transition-duration: 0.3s;
+}
+
+.accordion-content.is-open {
+  background-color: #fff;
+  padding-left: 36px;
+  border-bottom: #AFA86F 1px solid;
+  transition: max-height 0.9s ease, opacity 0.5s ease;
+  padding-bottom: 23px;
+  line-height: 1;
 }/*# sourceMappingURL=styles.css.map */

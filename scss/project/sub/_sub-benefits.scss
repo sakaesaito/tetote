@@ -35,14 +35,13 @@
     display: block;
     @media screen and (max-width: 768px) {
         padding-bottom: 20px;
+        width: 22%;
     }
 }
-
 .benefits-list-item {
     line-height: 1.5;
     font-weight: 400;
 }
-
 /*section[benefit-user]________*/
 .sub-title-benefits2 {
     margin-top: 133px;
@@ -85,7 +84,6 @@
     line-height: 1.8;
     margin-top: 25px;
 }
-
 .benefits-staff-img {
     margin-top: 35px;
     margin-bottom: 139px;
