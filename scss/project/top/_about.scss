@@ -12,6 +12,7 @@
     background-image: url("./img/top-map.jpg");
     background-size: contain;
     background-repeat: no-repeat;
+    background-position: center;
     width: 100%;
     height: auto;
     @media screen and (max-width: 1024px) {
@@ -27,9 +28,12 @@
     line-height: 1.8;
     text-align: center; 
     @media screen and (max-width: 1024px) {
-        font-size: 1.125rem;
+        font-size: 1.8rem;
         line-height: 2.5;
         margin-top: -10px;        
+    }
+    @media screen and (max-width: 768px) {
+        font-size: 1.125rem;
     }
 }
 .about-lead-ms2 {

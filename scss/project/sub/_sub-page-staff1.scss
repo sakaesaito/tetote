@@ -133,7 +133,8 @@
 .page-staff-title-member {
     text-align: center;
     font-size: 2rem;
-    margin-top: 104px;  
+    margin-top: 104px; 
+    font-weight: 700;
 }
 .page-staff-sec {
     margin-top: 50px;
@@ -177,9 +178,9 @@ aside {
     right: 242px;
     top: 513px;
 
-    @media screen and (max-width: 1439px) {
-        display: none;
-    }
+    // @media screen and (max-width: 1439px) {
+    //     display: none;
+    // }
 }
 
 .page-staff-title {
@@ -201,9 +202,9 @@ aside {
     height: 2px;
     border-bottom:  #222 solid 0.5px;
 
-    @media screen and (max-width: 1439px) {
-        display: none;
-    }
+    // @media screen and (max-width: 1439px) {
+    //     display: none;
+    // }
 }
 .a-side-list li::before {
     content: "・";

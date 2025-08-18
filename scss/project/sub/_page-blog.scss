@@ -20,7 +20,6 @@
     gap: 16px;
     padding-top: 35px;
 }
-
 .blog-detail-sec {
     width: 100%;
 }
@@ -34,11 +33,8 @@
     background-color: #fff;
     max-width: 800px;
     padding-inline: 40px;
-    @media screen and (max-width: 1024px) {
-        padding-inline: 22px;
-    }
     @media screen and (max-width: 768px) {
-        padding-inline: 15px;
+        padding-inline: 20px;
     }
 }
 .sub-title-blog-detail {
@@ -91,8 +87,7 @@
     align-items: center;
     padding-top: 31px;
     padding-bottom: 31px;
-    padding-inline: 50px;
-    
+    padding-inline: 50px;   
 }
 .blog-detail-page-inner {
     max-width: 1024px;
@@ -104,7 +99,6 @@
 }
 .blog-detail-item {
     line-height: 1.8;
-    font-weight: 400;
 }
 .blog-detail-list {
     margin-top: 50px;
@@ -116,7 +110,6 @@
         display: none;
     }
 }
-
 .blog-pagination-sec {
     display: flex;
     justify-content:space-between;
@@ -131,7 +124,6 @@
     @media screen and (max-width: 768px) {
         padding-inline:20px;
     }
-
 }
 .blog-pagination-wrapper {
     max-width: 464px;
@@ -147,12 +139,9 @@
         }
     }
 }
-
 .blog-pagination-button {
     width: 24px;
     height: 24px;
-    border-radius: 50%;
-    border: #222 solid 2px;
     position: relative;
     cursor: pointer;
     padding: 0;
@@ -163,9 +152,17 @@
     transition: .4s;
         &.prev {
         margin-right: 21px;
+        background-image: url(./img/arrow-detail-left.png);
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: 24px;
         }
         &.next {
             margin-left: 21px;
+            background-image: url(./img/arrow-detail-right.png);
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-size: 24px;
         }
         @media screen and (max-width: 1024px) {
             margin-top: 5px;
@@ -176,8 +173,9 @@
     line-height: 1;
 }
 .topic {
-    padding-top: 3px;
+    padding-top: 13px;
     font-weight: 400;
+    line-height: 1;
 }
 .blog-page {
     background-color: #F0F0F0;

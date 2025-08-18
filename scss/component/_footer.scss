@@ -3,7 +3,6 @@ footer {
     flex-direction: column;
     position: relative;
 }
-
 .footer-view {
     background-image: url(./img/footer.jpg);
     background-size: cover;
@@ -15,7 +14,6 @@ footer {
         height: 250px;
     }
 }
-
 .contact-box {
     max-width: 956px;
     height: 273px;
@@ -28,7 +26,6 @@ footer {
     left: 50%;
     transform: translate(-50%, -50%);
     padding-top: 50px;
-
     @media screen and (max-width: 1024px) {
         width: 91.5%;
         height: 236px;
@@ -47,13 +44,12 @@ footer {
     padding-bottom: 64px;
     border-radius: 0 0 20px 20px;
     margin-bottom: 40px;
-
+    margin-inline: auto;
     @media screen and (max-width: 1024px) {
         height: 100%;
         margin-bottom: 0;
         padding-bottom: 24px;
-    }
-    
+    }    
 }
 .button-viewmore-entry {
     max-width: 556px;
@@ -62,7 +58,6 @@ footer {
     margin:  30px auto 0 auto;
     position: relative;
     line-height: 1;
-
     @media screen and (max-width: 1024px) {
         width: 53%;
     }
@@ -70,7 +65,6 @@ footer {
         width: 200px;
         margin:  25px auto 0 auto;
     }
-
 }
 .button-viewmore-entry a {
     display: block;
@@ -93,15 +87,13 @@ footer {
         transform: rotate(45deg);
         transition: all 0.4s;
     }
-
     &:hover {
         background-color: #222;
         color: #fff;
-
-        &::before {
-            border-right: 3px solid #ffffff;
-            border-top: 3px solid #ffffff;
-        }    
+    &::before {
+        border-right: 3px solid #ffffff;
+        border-top: 3px solid #ffffff;
+    }    
     }
     @media screen and (max-width: 1024px) {
         padding-top: 20px;
@@ -116,7 +108,6 @@ footer {
     width: 100%;
     margin-inline: 200px;
     margin-left: auto;
-    // height: 81px;
 
     @media screen and (max-width: 1024px) {
         margin-top: 50px;
@@ -137,12 +128,9 @@ footer {
     max-width: 250px;
     width: 100%;
     transition: .4s;
-
     &:hover {
         opacity: .7;
     }
-
-
     @media screen and (max-width: 1024px) {
         margin: 108px auto 0 auto;
     }
@@ -156,23 +144,18 @@ footer {
     line-height: 1;
     transition: .3s;
     font-weight: 700;
-
     &:hover {
         opacity: .7;
     }
-
     &:nth-child(1) {
     padding-left: 0;
-    } 
-    
+    }    
     @media screen and (max-width: 1024px) {
         display: block;
         margin-top: 20px;
         text-align: center;
         padding-left: 0;
-
-    }
-    
+    }   
 }
 .footer-list2 {
     margin-top: 27px;
@@ -186,7 +169,6 @@ footer {
     justify-content: end;
     margin-right: 13.5%;
     margin-top: 45px;
-
     a{
         transition: .3s;
 
@@ -194,9 +176,6 @@ footer {
             opacity: .7;
         }
     }
-    
-
-
     @media screen and (max-width: 1024px) {
         margin: 0;
         justify-content: center;
@@ -214,14 +193,12 @@ footer {
     font-size: 12px;
     margin-top: -10px;
     font-family: "Viga";
-
     @media screen and (max-width: 1024px) {
         text-align: center;
         margin-top: 49px;
         margin-inline: auto;
     }
 }
-
 .footer-contact-item {
     font-weight: 700;
     line-height: 1.5;

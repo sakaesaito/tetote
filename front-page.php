@@ -28,7 +28,7 @@
     <section class="swiper infinity-slider">
         <div class="slider slider">
             <div class="swiper-wrapper">
-                <!-- <?php
+                <?php
                 $slide_images = ['top-slide01.jpg', 'top-slide02.jpg', 'top-slide03.jpg'];
                 for ($i = 0; $i < 9; $i++):
                     $img = $slide_images[$i % 3];
@@ -36,7 +36,7 @@
                     <div class="swiper-slide">
                         <img src="<?php echo get_template_directory_uri() . '/img/' . esc_html($img); ?>" alt="">
                     </div>
-                <?php endfor; ?> -->
+                <?php endfor; ?>
             </div>
             <div class="slider-heading">
                 <p class="slider-heading-ms">後悔しないキャリアを作る、</p><br>
@@ -77,7 +77,7 @@
                         一日のスケジュールや仕事内容などを紹介します。</p>
                 </div>
             </div>
-            <!-- <div class="staff-sec slider-post slider">
+            <div class="staff-sec slider-post slider">
                 <div class="staff-sec-inner swiper limited-slider">
                     <div class="staff-box-wrapper swiper-wrapper">
                         <div class="staff-box swiper-slide">
@@ -139,7 +139,7 @@
                     </div>
                 </div>
             </div>
-        </div> -->
+        </div>
         <div class="viewmore-button viewmore-button-staff">
             <a href="<?php echo home_url('/staff/'); ?>">VIEW MORE</a>
         </div>
@@ -266,7 +266,7 @@
                     </div>
                     <div class="blog-top-page-2">
                         <a href="<?php echo esc_url(home_url('/blog-details/')); ?>">
-                            <div class="button-white-right"></div>
+                            <div class="button-white-right button-white-right-blog"></div>
                             <div class="blog-top-link">VIEW MORE</div>
                         </a>
                     </div>

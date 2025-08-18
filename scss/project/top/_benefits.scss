@@ -12,6 +12,8 @@
 }
 .benefits-text-wrapper {
     text-align: center;
+    max-width: 1024px;
+    width: 100%;
     @media screen and (max-width: 1024px) {
         text-align: left;
         padding-inline: 17px;
@@ -41,7 +43,6 @@
         margin: 0 auto;
     }
 }
-
 .benefits-img-wrapper {
     margin-top: 108px;
     position: relative;
@@ -58,7 +59,6 @@
         }
     }
 }
-
 .benefits-img-box {
     background-color:#FAF7F1;
     border-radius: 50%;

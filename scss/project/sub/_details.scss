@@ -37,8 +37,8 @@ section.show {
             display: inline;
         }
     }
-    @media screen and (max-width: 768px) {
-        margin-top: 50px;
+    @media screen and (max-width: 1024px) {
+        margin-top: 30px;
         text-align: center;
     }
 }
@@ -46,14 +46,14 @@ section.show {
     display: flex;
     gap: 49px;
     margin-top: 63px;
-    @media screen and (max-width: 768px) {
-        padding-top: 0;
-    }
     @media screen and (max-width: 1024px) {
         display: block;
         max-width: 294px;
         width: 100%;
-        margin: 0 auto;
+        margin: 30px auto 0;
+    }
+    @media screen and (max-width: 768px) {
+        padding-top: 0;
     }
 }
 .details-btn {

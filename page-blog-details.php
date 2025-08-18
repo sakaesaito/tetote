@@ -44,7 +44,7 @@
         <div class="blog-detail-page-inner">
             <div class="blog-pagination-sec">
                 <div class="blog-pagination-wrapper before">
-                    <a href="/blog/prev" class="blog-pagination-button prev" aria-label="前のページ"><</a>
+                    <a href="/blog/prev" class="blog-pagination-button prev" aria-label="前のページ"></a>
                     
                     <div class="blog-detail-news">
                         <a href="/blog/post01">
@@ -61,7 +61,7 @@
                             <time datetime="2024-08-25 " class="page-blog-date">2024.08.25</time>
                             </a>
                         </div>
-                        <a href="/blog/next" class="blog-pagination-button next" aria-label="次のページ">></a>
+                        <a href="/blog/next" class="blog-pagination-button next" aria-label="次のページ"></a>
                     </div>
                 </div>
             </div>

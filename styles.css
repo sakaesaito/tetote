@@ -412,7 +412,7 @@ body {
 }
 h2 {
   font-family: "Noto Sans JP", "Viga";
-  font-size: 52px;
+  font-size: 3.25rem;
 }
 
 img {
@@ -444,19 +444,7 @@ html {
   scroll-behavior: smooth;
 }
 
-/* ボタン共通　*/
-button {
-  appearance: none;
-  outline: none;
-  border: none;
-  background-color: transparent;
-  color: inherit;
-  padding: 0;
-  margin: 0;
-  cursor: pointer;
-  font-weight: 700;
-}
-
+/*viewmoreのボタン*/
 .viewmore-button {
   max-width: 355px;
   width: 100%;
@@ -466,6 +454,7 @@ button {
   border: 1px #222 solid;
   transition: all 0.5s;
   color: #222;
+  background-color: #fff;
   font-size: 1.125rem;
   font-weight: 700;
   line-height: 1.5;
@@ -473,7 +462,7 @@ button {
 .viewmore-button::before {
   content: "";
   position: absolute;
-  top: 0;
+  top: 30px;
   right: 26px;
   margin: auto;
   width: 12px;
@@ -518,6 +507,7 @@ button {
   margin-top: 187px;
 }
 
+/*丸nextのボタン*/
 .next-button {
   border-radius: 50px;
   padding: 0;
@@ -552,6 +542,7 @@ button {
   color: #fff;
 }
 
+/*丸矢印ボタン*/
 .page-button-box {
   border-radius: 50px;
   padding: 0;
@@ -579,8 +570,8 @@ button {
   height: 55px;
   background-color: #fff;
   position: absolute;
-  top: -10px;
-  right: 110px;
+  top: -50px;
+  right: -12px;
   color: #222;
   border-radius: 50%;
   transition: 0.2s;
@@ -590,7 +581,7 @@ button {
   background-repeat: no-repeat;
   background-position: center center;
   background-size: 16px 16px;
-  transition: transform 0.3s ease; /* アニメーションの追加 */
+  transition: transform 0.3s ease;
   transform-origin: center; /* 中央を基準に拡大縮小 */
 }
 .button-white-right::after {
@@ -609,6 +600,62 @@ button {
     right: 100px;
     background-size: 10px 10px;
   }
+}
+
+.button-white-left {
+  display: block;
+  width: 56px;
+  height: 55px;
+  background-color: #fff;
+  position: absolute;
+  top: -50px;
+  right: 50px;
+  color: #222;
+  border-radius: 50%;
+  transition: 0.2s;
+  line-height: 55px;
+  border: #222 1px solid;
+  background-image: url(./img/arrow-left-bk.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 16px 16px;
+  transition: transform 0.3s ease;
+  transform-origin: center; /* 中央を基準に拡大縮小 */
+}
+.button-white-left::after {
+  content: "";
+  position: absolute;
+  top: 0;
+}
+.button-white-left:hover {
+  transform: scale(1.2); /* 1.2倍に拡大 */
+}
+@media screen and (max-width: 1024px) {
+  .button-white-left {
+    width: 42px;
+    height: 42px;
+    top: 0;
+    right: 100px;
+    background-size: 10px 10px;
+  }
+}
+
+.button-white-right-blog {
+  top: -15px;
+  right: 125px;
+}
+
+/* 下層ページ　ブログページのベージボタン*/
+button {
+  appearance: none;
+  outline: none;
+  border: none;
+  background-color: transparent;
+  color: inherit;
+  padding: 0;
+  margin: 0;
+  cursor: pointer;
+  font-weight: 700;
 }
 
 /* ________topページの共通タイトル ________*/
@@ -644,6 +691,7 @@ button {
   position: absolute;
   left: 23%;
   top: 0;
+  max-width: 600px;
   width: 100%;
   height: 100%;
   background-image: url(./img/benefits-title.png);
@@ -1106,6 +1154,7 @@ footer {
   padding-bottom: 64px;
   border-radius: 0 0 20px 20px;
   margin-bottom: 40px;
+  margin-inline: auto;
 }
 @media screen and (max-width: 1024px) {
   .footer-inner {
@@ -2026,6 +2075,7 @@ footer {
   background-image: url("./img/top-map.jpg");
   background-size: contain;
   background-repeat: no-repeat;
+  background-position: center;
   width: 100%;
   height: auto;
 }
@@ -2048,9 +2098,14 @@ footer {
 }
 @media screen and (max-width: 1024px) {
   .about-lead-ms {
-    font-size: 1.125rem;
+    font-size: 1.8rem;
     line-height: 2.5;
     margin-top: -10px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .about-lead-ms {
+    font-size: 1.125rem;
   }
 }
 
@@ -2074,6 +2129,7 @@ footer {
 @media screen and (max-width: 768px) {
   .staff {
     padding-top: 83px;
+    margin-top: 0;
   }
 }
 
@@ -2108,7 +2164,8 @@ footer {
   position: absolute;
   left: -3em;
   top: 0;
-  width: 520px;
+  max-width: 600px;
+  width: 265%;
   height: 100%;
   background-image: url(./img/member-title.png);
   background-repeat: no-repeat;
@@ -2343,6 +2400,7 @@ footer {
   position: absolute;
   left: 5%;
   top: 0;
+  max-width: 890px;
   width: 100%;
   height: 100%;
   background-image: url(./img/recruitment-title.png);
@@ -2479,6 +2537,8 @@ footer {
 
 .benefits-text-wrapper {
   text-align: center;
+  max-width: 1024px;
+  width: 100%;
 }
 @media screen and (max-width: 1024px) {
   .benefits-text-wrapper {
@@ -2726,7 +2786,7 @@ footer {
 
 .blog-box {
   background-color: #fff;
-  border-radius: 0 10px 10px 0;
+  border-radius: 10px;
 }
 
 .blog-content-title {
@@ -2958,6 +3018,7 @@ footer {
 }
 .sub-title-consul {
   margin-top: 111px;
+  padding-left: 20px;
 }
 @media screen and (max-width: 1024px) {
   .sub-title-consul {
@@ -3167,10 +3228,12 @@ footer {
 
 /*事業紹介＿＿＿＿＿＿＿＿＿＿＿＿＿＿*/
 .sub-inner-consul {
-  padding-inline: 20px;
+  padding-inline: 0;
+  padding-right: 20px;
 }
 @media screen and (max-width: 1024px) {
   .sub-inner-consul {
+    padding-right: 0;
     padding-inline: 70px;
   }
 }
@@ -3183,7 +3246,12 @@ footer {
 .sub-about-consul-lead {
   line-height: 1.5;
   margin-top: 46px;
-  font-weight: 400;
+  padding-left: 20px;
+}
+@media screen and (max-width: 1024px) {
+  .sub-about-consul-lead {
+    padding-left: 0;
+  }
 }
 
 .sub-about-box {
@@ -3192,16 +3260,23 @@ footer {
   border-bottom: #AFA86F solid 1px;
   padding-top: 50px;
   padding-bottom: 50px;
+  padding-left: 20px;
 }
 @media screen and (max-width: 1024px) {
   .sub-about-box {
     display: block;
     padding-top: 0;
+    padding-left: 0;
   }
 }
 
 .about-box1 {
   margin-top: 30px;
+}
+@media screen and (max-width: 1024px) {
+  .about-box1 {
+    padding-left: 0;
+  }
 }
 
 .sub-about-box-img {
@@ -3323,7 +3398,7 @@ footer {
 }
 
 .sub-about-list-item {
-  line-height: 1;
+  line-height: 1.5;
 }
 .sub-about-list-item br {
   display: none;
@@ -3505,9 +3580,9 @@ section.show {
     display: inline;
   }
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1024px) {
   .details-lead {
-    margin-top: 50px;
+    margin-top: 30px;
     text-align: center;
   }
 }
@@ -3517,17 +3592,17 @@ section.show {
   gap: 49px;
   margin-top: 63px;
 }
-@media screen and (max-width: 768px) {
-  .details-btn-box {
-    padding-top: 0;
-  }
-}
 @media screen and (max-width: 1024px) {
   .details-btn-box {
     display: block;
     max-width: 294px;
     width: 100%;
-    margin: 0 auto;
+    margin: 30px auto 0;
+  }
+}
+@media screen and (max-width: 768px) {
+  .details-btn-box {
+    padding-top: 0;
   }
 }
 
@@ -3681,7 +3756,7 @@ section.show {
 .sub-career-item {
   margin-top: 113px;
   font-weight: 400;
-  line-height: 1;
+  line-height: 1.5;
 }
 @media screen and (max-width: 768px) {
   .sub-career-item {
@@ -3700,7 +3775,7 @@ section.show {
 
 .sub-career-note {
   font-weight: 400;
-  line-height: 1;
+  line-height: 1.5;
   margin-top: 37px;
 }
 @media screen and (max-width: 768px) {
@@ -4000,14 +4075,9 @@ section.show {
   max-width: 800px;
   padding-inline: 40px;
 }
-@media screen and (max-width: 1024px) {
-  .blog-detail-inner {
-    padding-inline: 22px;
-  }
-}
 @media screen and (max-width: 768px) {
   .blog-detail-inner {
-    padding-inline: 15px;
+    padding-inline: 20px;
   }
 }
 
@@ -4091,7 +4161,6 @@ section.show {
 
 .blog-detail-item {
   line-height: 1.8;
-  font-weight: 400;
 }
 
 .blog-detail-list {
@@ -4145,8 +4214,6 @@ section.show {
 .blog-pagination-button {
   width: 24px;
   height: 24px;
-  border-radius: 50%;
-  border: #222 solid 2px;
   position: relative;
   cursor: pointer;
   padding: 0;
@@ -4158,9 +4225,17 @@ section.show {
 }
 .blog-pagination-button.prev {
   margin-right: 21px;
+  background-image: url(./img/arrow-detail-left.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 24px;
 }
 .blog-pagination-button.next {
   margin-left: 21px;
+  background-image: url(./img/arrow-detail-right.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 24px;
 }
 @media screen and (max-width: 1024px) {
   .blog-pagination-button {
@@ -4174,8 +4249,9 @@ section.show {
 }
 
 .topic {
-  padding-top: 3px;
+  padding-top: 13px;
   font-weight: 400;
+  line-height: 1;
 }
 
 .blog-page {
@@ -4470,6 +4546,7 @@ section.show {
   text-align: center;
   font-size: 2rem;
   margin-top: 104px;
+  font-weight: 700;
 }
 
 .page-staff-sec {
@@ -4524,11 +4601,6 @@ aside {
   right: 242px;
   top: 513px;
 }
-@media screen and (max-width: 1439px) {
-  aside {
-    display: none;
-  }
-}
 
 .page-staff-title {
   position: relative;
@@ -4550,11 +4622,6 @@ aside {
   width: 214px;
   height: 2px;
   border-bottom: #222 solid 0.5px;
-}
-@media screen and (max-width: 1439px) {
-  .page-staff-title::before {
-    display: none;
-  }
 }
 
 .a-side-list li::before {
@@ -4690,20 +4757,29 @@ section.show {
 .accordion-content {
   overflow: hidden;
   padding-left: 36px;
+  max-height: 0;
+  opacity: 0;
   border-bottom: #AFA86F 1px solid transparent;
   transition: max-height 0.4s ease, opacity 0.4s ease;
   padding-bottom: 23px;
   line-height: 1;
 }
 
-.accordion-content.active {
+.accordion-content.is-open {
   padding-top: 0;
   padding-left: 24px;
+  max-height: 1000px;
+  opacity: 1;
 }
 
 .accordion .accordion-item:first-child .accordion-header {
   border-top: 1px solid #AFA86F;
   margin-top: 113px;
+}
+@media screen and (max-width: 1024px) {
+  .accordion .accordion-item:first-child .accordion-header {
+    margin-top: 50px;
+  }
 }
 
 .accordion-header {
@@ -4756,6 +4832,11 @@ section.show {
   cursor: pointer;
   user-select: none;
 }
+@media screen and (max-width: 1024px) {
+  .accordion-title {
+    padding: 36px 43px 36px 3px;
+  }
+}
 
 .accordion-title::before,
 .accordion-title::after {
@@ -4780,24 +4861,4 @@ section.show {
 
 .accordion-title.active::after {
   transform: rotate(0);
-}
-
-.accordion-content {
-  border-left: 1px solid transparent;
-  border-right: 1px solid transparent;
-  padding: 0 18px;
-  line-height: 0;
-  height: 0;
-  overflow: hidden;
-  opacity: 0;
-  transition-duration: 0.3s;
-}
-
-.accordion-content.is-open {
-  background-color: #fff;
-  padding-left: 36px;
-  border-bottom: #AFA86F 1px solid;
-  transition: max-height 0.9s ease, opacity 0.5s ease;
-  padding-bottom: 23px;
-  line-height: 1;
 }/*# sourceMappingURL=styles.css.map */

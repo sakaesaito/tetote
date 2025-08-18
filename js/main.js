@@ -105,9 +105,6 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 
-
-
-
 // _____レスポンシブの375px未満のviewport画面幅を固定_______
 
 (function ($) {
@@ -153,12 +150,13 @@ document.addEventListener("DOMContentLoaded", function () {
 
 // _______________アコーディオン＿＿＿＿＿＿＿＿＿
 
-$(function () {
+
+jQuery(function ($) {
     $('.jsAccordionTitle').on('click', function () {
-    const $header  = $(this).closest('.accordion-header');
-    const $content = $header.next('.accordion-content');
-    $content.toggleClass('is-open');
-    $(this).toggleClass('active');
+        const $header = $(this).closest('.accordion-header');
+        const $content = $header.next('.accordion-content');
+        $content.toggleClass('is-open');
+        $(this).toggleClass('active');
     });
 });
 

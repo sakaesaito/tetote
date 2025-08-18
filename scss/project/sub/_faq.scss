@@ -37,7 +37,6 @@ section.show {
     @media screen and (max-width: 768px) {
         padding-inline: 20px;
     }
-
 }
 .sub-mv-item-faq {
     background-color: #fff;
@@ -73,15 +72,19 @@ section.show {
 .accordion-content {
     overflow: hidden;
     padding-left: 36px;
+    max-height: 0;
+    opacity: 0;
     border-bottom: #AFA86F 1px solid transparent;
     transition: max-height 0.4s ease, opacity 0.4s ease;
     padding-bottom: 23px;
     line-height: 1;
 }
 
-.accordion-content.active {
+.accordion-content.is-open {
     padding-top: 0;
     padding-left: 24px;
+    max-height: 1000px;  
+    opacity: 1;
 }
 
 .accordion {
@@ -89,6 +92,9 @@ section.show {
         .accordion-header {
             border-top: 1px solid #AFA86F;
             margin-top: 113px;
+            @media screen and (max-width: 1024px) {
+                margin-top: 50px;
+            }
         }
     }
 }
@@ -108,7 +114,6 @@ section.show {
     &:hover {
         opacity: .7;
     }
-
     @media screen and (max-width: 768px) {
         padding-top: 20px;
         padding-bottom: 20px;
@@ -142,6 +147,9 @@ section.show {
     position: relative;
     cursor: pointer;
     user-select: none;
+    @media screen and (max-width: 1024px) {
+        padding:  36px 43px 36px 3px;
+    }
 }
 
 .accordion-title::before,
@@ -161,7 +169,6 @@ section.show {
     transition-duration: .3s;
 }
 
-
 .accordion-title.active::before {
     opacity: 0;
 }
@@ -169,24 +176,3 @@ section.show {
 .accordion-title.active::after {
     transform: rotate(0);
 }
-
-.accordion-content {
-    border-left: 1px solid transparent;
-    border-right: 1px solid transparent;
-    padding: 0 18px;
-    line-height: 0;
-    height: 0;
-    overflow: hidden;
-    opacity: 0;
-    transition-duration: .3s;
-}
-
-.accordion-content.is-open {
-    background-color: #fff;
-    padding-left: 36px;
-    border-bottom: #AFA86F 1px solid;
-    transition: max-height 0.9s ease, opacity 0.5s ease;
-    padding-bottom: 23px;
-    line-height: 1;
-}
-
