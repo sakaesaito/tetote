@@ -57,3 +57,31 @@ add_action('wp_enqueue_scripts', function () {
         true
     );
 });
+
+
+// functions.php に追記
+function my_enqueue_swiper_assets() {
+    wp_enqueue_style(
+      'swiper',
+      'https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css',
+      [],
+      '11.0.0'
+    );
+    wp_enqueue_script(
+      'swiper',
+      'https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js',
+      [],
+      '11.0.0',
+      true
+    );
+  
+    // あなたの初期化JS（ファイル名は合わせてね）
+    wp_enqueue_script(
+      'front-infinity-slider',
+      get_stylesheet_directory_uri() . '/js/front-infinity-slider.js',
+      ['swiper'],
+      filemtime(get_stylesheet_directory() . '/js/front-infinity-slider.js'),
+      true
+    );
+  }
+  add_action('wp_enqueue_scripts', 'my_enqueue_swiper_assets');

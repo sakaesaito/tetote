@@ -128,6 +128,11 @@ section.show {
         width: 25%;
     }
 }
+.details-list-title{
+    &:nth-child(1) {
+    padding-bottom: 2px;
+    }
+}
 .details-list-item {
     font-weight: 400;
     br {
@@ -150,9 +155,7 @@ section.show {
     border-bottom: #222222 dashed 1px;
     padding-top: 35px;
     padding-bottom: 35px;
-}
-.details-list-title{
-    &:nth-child(1) {
-    padding-bottom: 2px;
+    @media screen and (max-width: 768px) {
+        gap: 20px;
     }
 }

@@ -1,10 +1,9 @@
 .page-staff-mv-sec {
     background-color: #faf7f1;
     border-radius: 0px;
-    margin-top: 118px;
+    padding-top: 47px;
     @media screen and (max-width: 1024px) {
-        margin-top: 90px;
-        padding-top: 50px;
+        padding-bottom: 50px;
     }
 }
 .page-staff-mv-inner {
@@ -21,56 +20,59 @@
     max-width: 1024px;
     width: 100%;
     line-height: 1;
-        &-left {
-            max-width: 606px;
-            width: 100%;
-            margin-top: 76px;
-        }
-        &-title {
-            font-size: 2.25rem;
-            font-weight: 700;
-            background-color: #fff;
-            inline-size: fit-content;
-            padding-inline: 14px;
-            line-height: 1.2;
-            @media screen and (max-width: 768px) {
-                font-size: 1.75rem;
-                margin-top: 0;
-            }
-        }
-        &-item {
-            font-size: 1.5rem;
-            font-weight: 700;
-            margin-top: 14px;
-            background-color: #fff;
-            inline-size: fit-content;
-            padding-inline: 14px;
-            line-height: 1.5;
-        }
-        &-position {
-            font-size: 0.875rem;
-            font-weight: 700;
-            color: #988c2c;
-            margin-top: 24px;
-            line-height: 1;
-        }
-        &-name {
-            font-size: 1.5em;
-            margin-top: 5px;
-            font-weight: 700;
-        }
-        &-year {
-            font-size: 1rem;
-            margin-top: 16px;
-        }
-        &-note {
-            line-height: 1.8;
-            margin-top: 2px;
-            padding-left: 5px;
-        }
+    &-left {
+        max-width: 606px;
+        width: 100%;
+        margin-top: 70px;
+    }
+    &-title {
+        font-size: 2.25rem;
+        font-weight: 700;
+        background-color: #fff;
+        inline-size: fit-content;
+        padding-inline: 14px;
+        line-height: 1.2;
         @media screen and (max-width: 1024px) {
-            display: block;   
+            font-size: 1.75rem;
+            margin-top: 0;
         }
+    }
+    &-item {
+        font-size: 1.5rem;
+        font-weight: 700;
+        margin-top: 14px;
+        background-color: #fff;
+        inline-size: fit-content;
+        padding-inline: 14px;
+        line-height: 1.5;
+        @media screen and (max-width: 1024px) {
+            font-size: 1.25rem;
+        }
+    }
+    &-position {
+        font-size: 0.875rem;
+        font-weight: 700;
+        color: #988c2c;
+        margin-top: 24px;
+        line-height: 1;
+    }
+    &-name {
+        font-size: 1.5em;
+        margin-top: 5px;
+        font-weight: 700;
+    }
+    &-year {
+        font-size: 1rem;
+        margin-top: 16px;
+    }
+    &-note {
+        line-height: 1.8;
+        margin-top: 2px;
+        padding-left: 5px;
+    }
+    @media screen and (max-width: 768px) {
+        display: block;   
+    }
 }
 .page-staff-box-name-sec {
     display: flex;
@@ -84,7 +86,7 @@
 .page-staff-box-img {
     max-width: 286px;
     width: 100%;
-    padding-top: 49px;
+    padding-top: 38px;
     padding-bottom: 46px;
     border-radius: 0;
     @media screen and (max-width: 1024px) {
@@ -92,9 +94,32 @@
     }
 }
 .page-staff-wrapper {
-    max-width: 892px;
     width: 100%;
-    margin-inline: 20px;
+}
+.single-inner {
+    max-width: 1024px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-inline: auto;
+    position: relative;
+    @media screen and (max-width: 768px) {
+        display: block;
+    }
+}
+.staff-content {
+    max-width: 723px;
+    width: 100%;
+    padding-left: 22px;
+    @media screen and (max-width: 1024px) {
+        max-width: 530px;
+        width: 100%;
+        padding-left: 20px;
+    }
+    @media screen and (max-width: 768px) {
+        max-width: 700px;
+        padding-right: 20px;
+    }
 }
 .page-staff {
     &-title {
@@ -111,20 +136,16 @@
     &-note {
         font-weight: 400;
         line-height: 1.8;
-        margin-top: 48px;
-        padding-left: 192px;
-
+        margin-top: 50px;
         @media screen and (max-width: 1024px) {
             margin-top: 30px;
         }
-
     }
 }
 .page-staff-pic {
     max-width: 710px;
     margin-top: 23px;
     width: 100%;
-    margin-left: 189px;
     img {
         width: 100%;
         margin-top: 10px;
@@ -133,15 +154,19 @@
 .page-staff-title-member {
     text-align: center;
     font-size: 2rem;
-    margin-top: 104px; 
+    margin-top: 98px; 
     font-weight: 700;
 }
 .page-staff-sec {
     margin-top: 50px;
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
     gap: 43px;
     @media screen and (max-width: 1024px) {
-        display: block;
+        grid-template-columns: repeat(2, 2fr);
+    }
+    @media screen and (max-width: 768px) {
+        grid-template-columns: repeat(1, 3fr);
     }
 }
 .staff-box2 {
@@ -154,16 +179,13 @@
 .page-staff-box-list {
     margin-bottom: 227px;
     @media screen and (max-width: 1024px) {
-        margin-bottom: 70px;
-        
+        margin-bottom: 70px;    
     }
 }
 .page-staff-main {
     max-width: 1440px;
     width: 100%;
-    display: flex;
-    gap: 41px;
-    margin: 75px auto 0;
+    margin: 72px auto 0;
     @media screen and (max-width: 1024px) {
         max-width: 1024px;
         margin-top: 50px;
@@ -175,36 +197,28 @@ aside {
     line-height: 3;
     font-weight: 400;
     margin-top: 26px;
+    padding-right: 30px;
     right: 242px;
     top: 513px;
-
-    // @media screen and (max-width: 1439px) {
-    //     display: none;
-    // }
-}
-
-.page-staff-title {
-    position: relative;
-    padding-left: 192px;
-    @media screen and (max-width: 1439px) {
-        padding-left: 20px;
-        margin-left: auto;
+    position: sticky;
+    right: 0;
+    @media screen and (max-width: 768px) {
+        display: none;
     }
 }
-
+.a-side-list {
+    padding-top: 2px;
+}
 .page-staff-title::before {
     content: "";
     position: absolute;
-    left: -40px;
-    top: 63%;
-    transform: translateY(-50%);
-    width: 214px;
-    height: 2px;
     border-bottom:  #222 solid 0.5px;
-
-    // @media screen and (max-width: 1439px) {
-    //     display: none;
-    // }
+    transform-origin: left center;   /* 縮小の基準点 */
+    transform: scale(1);
+    width: calc(50vw - 50% );
+    height: 15px;
+    background-color: #fff;
+    left: calc(50% - 50vw);
 }
 .a-side-list li::before {
     content: "・";
@@ -214,13 +228,12 @@ aside {
 .a-side-inner {
     position: sticky;
     top: 120px;
-    color: #999;
-    font-weight: 400;
 }
-
 .a-side-list li {
     transition: color 0.3s;
     color: #999;
+    font-weight: 400;
+    line-height: 2.5;
 }
 .a-side-list li.active {
     color: #222;
@@ -230,11 +243,12 @@ aside {
     margin-top: 5px;
 }
 @media screen and (max-width: 1024px) {
-    .page-staff-title {
-        padding-left: 1rem;
-        margin-left: 169px;
-    }
     .page-staff-title::before {
         display: none;
+    }
+}
+.sub-inner-staff-details {
+    @media screen and (max-width: 1024px) {
+    padding-bottom: 60px;
     }
 }

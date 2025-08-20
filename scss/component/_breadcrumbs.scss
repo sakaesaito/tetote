@@ -17,7 +17,12 @@
         padding-left: 5%;
         height: 40px;
     }
-
+    &-blog-details {
+        padding-left: 25px;
+    }
+    &-staff {
+        padding-left: 22px;
+    }
 }
 .breadcrumbs li:not(:first-child)::before {
     margin: 0 6px;

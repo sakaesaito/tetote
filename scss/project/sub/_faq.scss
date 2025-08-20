@@ -2,42 +2,58 @@
     opacity: 1;
     transition: opacity 0.8s ease-in-out;
 }
-#faq-details, #faq-career, #faq-benefits { 
-    scroll-margin-top: 118px; }
+
+#faq-details,
+#faq-career,
+#faq-benefits {
+    scroll-margin-top: 118px;
+}
+
 section.show {
     opacity: 1;
 }
+
 .faq-btn-box {
     margin-top: 145px;
     padding-top: 0;
+
     @media screen and (max-width: 1024px) {
         margin-top: 70px;
     }
+
     @media screen and (max-width: 768px) {
         margin-top: 50px;
     }
 }
+
 .faq-main-title {
     margin-top: 96px;
+
     @media screen and (max-width: 1024px) {
         margin-top: 50px;
     }
 }
+
 .faq-main-title2 {
     margin-top: 88px;
+
     @media screen and (max-width: 1024px) {
         margin-top: 50px;
     }
 }
+
 .sub-inner-faq {
     padding-inline: 22px;
+
     @media screen and (max-width: 1024px) {
         padding-inline: 50px;
     }
+
     @media screen and (max-width: 768px) {
         padding-inline: 20px;
     }
 }
+
 .sub-mv-item-faq {
     background-color: #fff;
     font-size: 1.5rem;
@@ -47,14 +63,10 @@ section.show {
     inline-size: fit-content;
     margin-top: 18px;
 }
-.q-mark {
-    color: #988C2C;
-    line-height: 1;
-    flex-shrink: 0;
-    font-size: 24px;
-}
+
 .faq-benefits {
     margin-bottom: 139px;
+
     @media screen and (max-width: 1024px) {
         margin-top: 50px;
     }
@@ -62,94 +74,155 @@ section.show {
 
 
 /*_____Q&A アコーディオン______*/
-.accordion-title {
-    flex: 1;
-    font-size: 1rem;
-    word-break: break-word;
-    padding-top: 18px;
-}
 
-.accordion-content {
-    overflow: hidden;
-    padding-left: 36px;
-    max-height: 0;
-    opacity: 0;
-    border-bottom: #AFA86F 1px solid transparent;
-    transition: max-height 0.4s ease, opacity 0.4s ease;
-    padding-bottom: 23px;
-    line-height: 1;
-}
+// .accordion {
+//     margin-top: 113px;
 
-.accordion-content.is-open {
-    padding-top: 0;
-    padding-left: 24px;
-    max-height: 1000px;  
-    opacity: 1;
-}
+//     @media screen and (max-width: 1024px) {
+//         margin-top: 50px;
+//     }
 
+//     .accordion-item:first-child {
+//         .accordion-header {
+//             border-top: 1px solid #AFA86F;
+//         }
+//     }
+// }
+
+// .q-mark {
+//     display: inline-grid;
+//     place-items: center;
+//     width: 24px;
+//     height: 24px;
+//     border-radius: 50%;
+//     background: #fff;
+//     color: #AFA86F;
+//     font-weight: 700;
+//     font-size: 2rem;
+//     flex: 0 0 auto;
+// }
+
+// .accordion-item {
+//     display: flex;
+//     align-items: center;
+//     justify-content: space-between;
+//     border-bottom: 1px solid #AFA86F;
+//     padding: 33px 12px 33px 32px;
+//     background: #fff;
+//     cursor: pointer;
+//     user-select: none;
+//     gap: 22px;
+
+//     @media screen and (max-width: 1024px) {
+//         padding: 20px 43px 20px 3px;
+//     }
+// }
+
+// .accordion-title {
+//     position: relative;
+//     transition: .9s;
+
+//     &:hover {
+//         opacity: .7;
+//     }
+
+//     @media screen and (max-width: 768px) {
+//         padding-top: 20px;
+//         padding-bottom: 20px;
+//     }
+// }
+
+
+// .accordion-title.active {
+//     background: #fff;
+//     border-bottom: none;
+//     transition: .4s;
+//     padding-bottom: 0;
+//     padding-left: 0;
+// }
+
+// .accordion-content.is-open {
+//     overflow: hidden;
+//     padding-left: 36px;
+//     max-height: 0;
+//     opacity: 0;
+//     border-bottom: #AFA86F 1px solid transparent;
+//     transition: max-height 0.4s ease, opacity 0.4s ease;
+//     padding-bottom: 23px;
+//     line-height: 1;
+// }
+
+// .accordion-title::before,
+// .accordion-title::after {
+//     content: '';
+//     display: block;
+//     background-color: #AFA86F;
+//     position: absolute;
+//     top: 50%;
+//     width: 15px;
+//     height: 2px;
+//     right: 25px;
+// }
+
+// .accordion-title::after {
+//     transform: rotate(90deg);
+//     transition-duration: .3s;
+// }
+
+// .accordion-title.active::before {
+//     opacity: 0;
+// }
+
+// .accordion-title.active::after {
+//     transform: rotate(0);
+// }
+
+
+
+// ________________________
 .accordion {
-    .accordion-item:first-child {
-        .accordion-header {
-            border-top: 1px solid #AFA86F;
-            margin-top: 113px;
-            @media screen and (max-width: 1024px) {
-                margin-top: 50px;
-            }
-        }
+    margin-top: 113px;
+    @media screen and (max-width: 1024px) {
+        margin-top: 50px;
     }
 }
 
-.accordion-header {
+.q-mark {
+    display: inline-grid;
+    place-items: center;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background: #fff;
+    color: #AFA86F;
+    font-weight: 400;
+    font-size: 24px;
+    font-family: "Viga";
+    margin-right: 20px;
+}
+
+.accordion-item {
     display: flex;
-    align-items: center;
     justify-content: space-between;
-    cursor: pointer;
-    padding-top: 14px;
-    border-bottom: 1px solid #AFA86F;
-    background: #fff;
-    position: relative;
-    gap: 22px;
-    transition: .9s;
-
-    &:hover {
-        opacity: .7;
-    }
-    @media screen and (max-width: 768px) {
-        padding-top: 20px;
-        padding-bottom: 20px;
-    }
-}
-
-.accordion-header-flow {
-    padding-bottom: 19px;
-}
-
-.accordion-header.active {
-    background: #fff;
-    border-bottom: none;
-    transition: .4s;
-    padding-bottom: 0;
-    padding-left: 0;
-}
-
-.accordion {
-    margin-top: 10px;
-}
-
-.accordion-container {
-    width: 500px;
+    max-width: 980px;
+    width: 100%;
     margin: 0 auto;
+    border-bottom: 1px solid #AFA86F;
+    padding: 33px 12px 33px 0;
+    background: #fff;
+    cursor: pointer;
+    user-select: none;
 }
+.accordion-item:first-child {
+    border-top:  1px solid #AFA86F;
+}
+
 
 .accordion-title {
     background-color: #fff;
-    padding: 36px 12px 36px 32px;
     position: relative;
     cursor: pointer;
     user-select: none;
-    @media screen and (max-width: 1024px) {
-        padding:  36px 43px 36px 3px;
-    }
 }
 
 .accordion-title::before,
@@ -159,7 +232,7 @@ section.show {
     background-color: #AFA86F;
     position: absolute;
     top: 50%;
-    width: 15px;
+    width: 16px;
     height: 2px;
     right: 25px;
 }
@@ -169,10 +242,28 @@ section.show {
     transition-duration: .3s;
 }
 
-.accordion-title.active::before {
+.accordion-title.is-active::before {
     opacity: 0;
 }
 
-.accordion-title.active::after {
+.accordion-title.is-active::after {
     transform: rotate(0);
+}
+
+.accordion-content {
+    border-left: 1px solid transparent;
+    border-right: 1px solid transparent;
+    padding: 0 18px;
+    line-height: 0;
+    height: 0;
+    overflow: hidden;
+    opacity: 0;
+    transition-duration: .3s;
+}
+
+.accordion-content.is-open {
+    background-color: #fff;
+    padding: 12px 48px 0;
+    height: auto;
+    opacity: 1;
 }

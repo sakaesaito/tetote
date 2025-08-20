@@ -25,23 +25,32 @@
     </section>
 
     <!-- Infinity Slider セクション -->
+    <?php
+    $slides = [
+        get_stylesheet_directory_uri() . '/img/top-slide01.jpg',
+        get_stylesheet_directory_uri() . '/img/top-slide02.jpg',
+        get_stylesheet_directory_uri() . '/img/top-slide03.jpg',
+    ];
+    $repeat = 3;
+    ?>
     <section class="swiper infinity-slider">
-        <div class="slider slider">
+        <div class="swiper slider">
             <div class="swiper-wrapper">
-                <?php
-                $slide_images = ['top-slide01.jpg', 'top-slide02.jpg', 'top-slide03.jpg'];
-                for ($i = 0; $i < 9; $i++):
-                    $img = $slide_images[$i % 3];
-                ?>
-                    <div class="swiper-slide">
-                        <img src="<?php echo get_template_directory_uri() . '/img/' . esc_html($img); ?>" alt="">
-                    </div>
+                <?php for ($r = 0; $r < $repeat; $r++): ?>
+                    <?php foreach ($slides as $src): ?>
+                        <div class="swiper-slide">
+                            <div class="slide-inner">
+                                <img src="<?php echo esc_url($src); ?>" alt="">
+                            </div>
+                        </div>
+                    <?php endforeach; ?>
                 <?php endfor; ?>
             </div>
-            <div class="slider-heading">
-                <p class="slider-heading-ms">後悔しないキャリアを作る、</p><br>
-                <p class="slider-heading-ms slider-heading-ms2 ">それこそが、我々の使命だ</p>
-            </div>
+        </div>
+        <div class="slider-heading">
+            <p class="slider-heading-ms">後悔しないキャリアを作る、</p>
+            <br>
+            <p class="slider-heading-ms">それこそが、我々の使命だ</p>
         </div>
     </section>
     <section id="about" class="about">
@@ -178,7 +187,7 @@
                                 <p class="benefits-img-message">Employee Benefits</p>
                             </div>
                             <div class="benefits-button-wrapper">
-                            <a class="benefits-button" href="<?php echo home_url('/benefits/'); ?>"></a>
+                                <a class="benefits-button" href="<?php echo home_url('/benefits/'); ?>"></a>
                                 <h3 class="benefits-img-title benefits-img-title-title2">福利厚生</h3>
                                 <p class="benefits-img-item">TETOTEの福利厚生制度は、従業員の健康と幸福を重視し、働きやすい環境を提供することを目的としています。</p>
                             </div>

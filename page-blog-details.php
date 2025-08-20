@@ -1,7 +1,7 @@
 <?php get_header(); ?>
 
 <div class="is-small is-small-blog">
-        <ol class="breadcrumbs  breadcrumbs__blog">
+        <ol class="breadcrumbs  breadcrumbs-blog-details">
             <?php if (function_exists('bcn_display')) bcn_display_list(); ?>
             <li><span class="breadcrumbs-blog">新入社員向けに、入社前研修を行いました。</span></li>
         </ol>
@@ -11,21 +11,21 @@
         <div class="blog-detail-sec">
             <div class="sub-inner blog-detail-inner">
                 <div class="blog-detail-date">
-                    <p class="blog-detail-tag">社内研修</p>
+                    <p class="blog-detail-tag blog-category">社内研修</p>
                     <time class="date" datetime="2023-03-25">2023.03.25</time>
                 </div>
                 <h2 class="sub-title sub-title-blog-detail">新入社員向けに、<br>入社前研修を行いました。</h2>
                 <div class="blog-detail-img"><img src="<?php echo get_template_directory_uri(); ?>/img/blogdetail-top.jpg" alt=""></div>
                 <p class="blog-detail-note1">2023年3月25日、新入社員を対象とした入社前研修を実施しました。<br>今回の研修では、社会人としての基礎知識やビジネスマナー、当社の事業内容や社風について学びました。</p>
-                    <h3 class="blog-detail-menu">研修内容</h3>
+                <h3 class="blog-detail-menu">研修内容</h3>
                 <ul class="blog-detail-list">
-                    <li class="blog-detail-item">・挨拶、自己紹介</li>
-                    <li class="blog-detail-item">・社会人としての心構え</li>
-                    <li class="blog-detail-item">・ビジネスマナー</li>
-                    <li class="blog-detail-item">・当社の事業内容</li>
-                    <li class="blog-detail-item">・社員</li>
-                    <li class="blog-detail-item">・グループワーク</li>
-                    <li class="blog-detail-item">・懇親会</li>
+                    <li class="blog-detail-item">挨拶、自己紹介</li>
+                    <li class="blog-detail-item">社会人としての心構え</li>
+                    <li class="blog-detail-item">ビジネスマナー</li>
+                    <li class="blog-detail-item">当社の事業内容</li>
+                    <li class="blog-detail-item">社員</li>
+                    <li class="blog-detail-item">グループワーク</li>
+                    <li class="blog-detail-item">懇親会</li>
                 </ul>
                 <h3 class="blog-detail-menu">研修の様子</h3>
                 <p class="blog-detail-note">研修は、座学とグループワーク、懇親会を通して行いました。<br>

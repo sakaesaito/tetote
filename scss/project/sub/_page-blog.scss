@@ -38,7 +38,7 @@
     }
 }
 .sub-title-blog-detail {
-    margin-top: 10px;
+    margin-top: 20px;
     font-size: 32px;
     line-height: 1.5;
         br {
@@ -97,11 +97,14 @@
 .time {
     font-weight: 400;
 }
-.blog-detail-item {
-    line-height: 1.8;
-}
 .blog-detail-list {
     margin-top: 50px;
+    list-style: disc;
+    padding-left: 1.5em;
+}
+.blog-detail-item {
+    line-height: 1.8;
+    list-style: inherit;
 }
 .blog-detail-news {
     display: flex;

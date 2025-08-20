@@ -21,7 +21,7 @@
     }
 
     &-message {
-        margin-top: 120px;
+        margin-top: 126px;
         text-align: center;
         @media screen and (max-width: 768px) {
             margin-top: 60px;
@@ -33,6 +33,7 @@
         padding-left: 20px;
         @media screen and (max-width: 1024px) {
             margin-top: 100px;
+            padding-left: 0px;
         }
     }
 
@@ -53,7 +54,7 @@
     }
 }
 .sub-aboutus-box {
-    margin-top: 30px;
+    margin-top: 34px;
     background-color: #FAF7F1;
     @media screen and (max-width: 1024px) {
         margin-top: 50px;
@@ -61,76 +62,81 @@
 }
 .aboutus-box1 {
     margin-top: 82px;
+    @media screen and (max-width: 1024px) {
+        margin-top: 50px;
+    }
 }
 .sub-aboutus-list {
     padding-inline: 84px;
+    padding-bottom: 30px;
     @media screen and (max-width: 1024px) {
-        padding-inline: 60px;
-    }
-    @media screen and (max-width: 768px) {
-        padding-inline: 15px;
+        padding-inline: 6%;
+        padding-bottom: 20px;
     }
 }
 .sub-aboutus-title {
+    display: flex;
+    align-items: center;
     line-height: 1.5;
     font-size: 1.25rem;
     font-weight: 700;
-    padding-top: 33px;
+    padding-top: 40px;
+    padding-left: 67px;
     position: relative;
     @media screen and (max-width: 768px) {
         font-size: 1rem;
         padding-top: 24px;
     }
     &::before {
-        display: inline-block;
-        width: 50px;
-        height: 50px;
+        width: 48px;
+        height: 48px;
         border: 1px solid #222;
         border-radius: 50%;
         text-align: center;
         box-sizing: border-box;
-        margin-right: 21px;
         color: #222;
         padding-top: 7px;
-        @media screen and (max-width: 768px) {
-            width: 30px;
-            height: 30px;
-            margin-right: 6px;
-            padding-top: 0;
-        }
+        font-weight: 400;
+        left: 20px;
+        transform: translate(-50%, 0%);
+        position: absolute;
+
     } 
-        &.title-1::before {
-            content: "1";
-        }
+    &.title-1::before {
+        content: "1";
+    }
 
-        &.title-2::before {
-            content: "2";
-        }
+    &.title-2::before {
+        content: "2";
+    }
 
-        &.title-3::before {
-            content: "3";
-        }
+    &.title-3::before {
+        content: "3";
+    }
 
-        &.title-4::before {
-            content: "4";
-        }
-        &.title-5::before {
-            content: "5";
-        }
-
+    &.title-4::before {
+        content: "4";
+    }
+    &.title-5::before {
+        content: "5";
+    }
+    @media screen and (max-width: 768px) {
+        font-size: 1.25rem;
+    }
+    br {
+        display: none;
         @media screen and (max-width: 768px) {
-            font-size: 1rem;
-        }
+            display: block;
+        }  
+    }  
 }
 .sub-aboutus-item {
     font-size: 1rem;
-    padding-top: 21px;
-    padding-bottom: 30px;
+    padding-top: 30px;
     line-height: 1.5;
 
     @media screen and (max-width: 768px) {
         padding-top: 25px;
-        padding-bottom: 20px;
     }
 }
 
@@ -167,7 +173,7 @@
         padding-top: 175px;
         @media screen and (max-width: 1024px) {
             padding-top: 0px;
-            padding-inline: 5%;
+            padding-inline: 4%;
         }
     }
     @media screen and (max-width: 1024px) {
@@ -316,8 +322,8 @@
     display: flex;
     gap: 40px;
     border-bottom: #222222 dashed 1px;
-    padding-top: 36px;
-    padding-bottom: 36px;
+    padding-top: 33px;
+    padding-bottom: 30px;
     align-items: baseline;
     &:nth-child(n+5){
         padding-bottom: 24px;
