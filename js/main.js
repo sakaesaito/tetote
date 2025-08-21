@@ -155,11 +155,13 @@ jQuery(function ($) {
         const $header = $(this).closest('.accordion-title');
         const $content = $header.next('.accordion-content');
         $content.toggleClass('is-open');
-        $(this).toggleClass('active');
+        $(this).toggleClass('is-active');
     });
 });
 
+
 // _________________フェードアップ＿＿＿＿＿＿＿＿＿＿＿＿
+
 
 
 document.addEventListener("DOMContentLoaded", () => {

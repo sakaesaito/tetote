@@ -4575,6 +4575,12 @@ section.show {
   border-left: #222 1px solid;
   width: 200px;
 }
+@media screen and (max-width: 768px) {
+  .page-staff-title {
+    font-size: 1.25rem;
+    margin-top: 50px;
+  }
+}
 .page-staff-note {
   font-weight: 400;
   line-height: 1.8;
@@ -4612,11 +4618,16 @@ section.show {
 @media screen and (max-width: 1024px) {
   .page-staff-sec {
     grid-template-columns: repeat(2, 2fr);
+    max-width: 600px;
+    width: 100%;
+    margin-inline: auto;
   }
 }
 @media screen and (max-width: 768px) {
   .page-staff-sec {
     grid-template-columns: repeat(1, 3fr);
+    max-width: 300px;
+    width: 100%;
   }
 }
 
@@ -4629,9 +4640,6 @@ section.show {
   bottom: -89px;
 }
 
-.page-staff-box-list {
-  margin-bottom: 227px;
-}
 @media screen and (max-width: 1024px) {
   .page-staff-box-list {
     margin-bottom: 70px;
@@ -4679,9 +4687,9 @@ aside {
   transform-origin: left center; /* 縮小の基準点 */
   transform: scale(1);
   width: calc(50vw - 50%);
+  left: calc(50% - 50vw - 0.2rem);
   height: 15px;
   background-color: #fff;
-  left: calc(50% - 50vw);
 }
 
 .a-side-list li::before {
@@ -4715,6 +4723,9 @@ aside {
   .page-staff-title::before {
     display: none;
   }
+}
+.sub-inner-staff-details {
+  padding-bottom: 227px;
 }
 @media screen and (max-width: 1024px) {
   .sub-inner-staff-details {
@@ -4803,7 +4814,6 @@ section.show {
   }
 }
 
-/*_____Q&A アコーディオン______*/
 .accordion {
   margin-top: 113px;
 }
@@ -4813,23 +4823,7 @@ section.show {
   }
 }
 
-.q-mark {
-  display: inline-grid;
-  place-items: center;
-  width: 24px;
-  height: 24px;
-  border-radius: 50%;
-  background: #fff;
-  color: #AFA86F;
-  font-weight: 400;
-  font-size: 24px;
-  font-family: "Viga";
-  margin-right: 20px;
-}
-
 .accordion-item {
-  display: flex;
-  justify-content: space-between;
   max-width: 980px;
   width: 100%;
   margin: 0 auto;
@@ -4837,7 +4831,6 @@ section.show {
   padding: 33px 12px 33px 0;
   background: #fff;
   cursor: pointer;
-  user-select: none;
 }
 
 .accordion-item:first-child {
@@ -4847,8 +4840,6 @@ section.show {
 .accordion-title {
   background-color: #fff;
   position: relative;
-  cursor: pointer;
-  user-select: none;
 }
 
 .accordion-title::before,
@@ -4877,10 +4868,8 @@ section.show {
 }
 
 .accordion-content {
-  border-left: 1px solid transparent;
-  border-right: 1px solid transparent;
+  background-color: #fff;
   padding: 0 18px;
-  line-height: 0;
   height: 0;
   overflow: hidden;
   opacity: 0;
@@ -4889,7 +4878,31 @@ section.show {
 
 .accordion-content.is-open {
   background-color: #fff;
-  padding: 12px 48px 0;
+  padding: 12px 34px 0;
   height: auto;
   opacity: 1;
+}
+
+.accordion-item span {
+  position: relative;
+  display: inline-block;
+  padding-left: 34px;
+}
+.accordion-item span::before {
+  position: absolute;
+  content: "Q";
+  font-family: "Viga";
+  font-size: 16px;
+  font-weight: 400;
+  color: #AFA86F;
+  background-color: #fff;
+  border-radius: 50px;
+  width: 24px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  left: -10px;
+  top: 50%;
+  transform: translateY(-50%);
 }/*# sourceMappingURL=styles.css.map */

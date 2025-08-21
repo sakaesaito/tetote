@@ -72,164 +72,43 @@ section.show {
     }
 }
 
-
-/*_____Q&A アコーディオン______*/
-
-// .accordion {
-//     margin-top: 113px;
-
-//     @media screen and (max-width: 1024px) {
-//         margin-top: 50px;
-//     }
-
-//     .accordion-item:first-child {
-//         .accordion-header {
-//             border-top: 1px solid #AFA86F;
-//         }
-//     }
-// }
-
-// .q-mark {
-//     display: inline-grid;
-//     place-items: center;
-//     width: 24px;
-//     height: 24px;
-//     border-radius: 50%;
-//     background: #fff;
-//     color: #AFA86F;
-//     font-weight: 700;
-//     font-size: 2rem;
-//     flex: 0 0 auto;
-// }
-
-// .accordion-item {
-//     display: flex;
-//     align-items: center;
-//     justify-content: space-between;
-//     border-bottom: 1px solid #AFA86F;
-//     padding: 33px 12px 33px 32px;
-//     background: #fff;
-//     cursor: pointer;
-//     user-select: none;
-//     gap: 22px;
-
-//     @media screen and (max-width: 1024px) {
-//         padding: 20px 43px 20px 3px;
-//     }
-// }
-
-// .accordion-title {
-//     position: relative;
-//     transition: .9s;
-
-//     &:hover {
-//         opacity: .7;
-//     }
-
-//     @media screen and (max-width: 768px) {
-//         padding-top: 20px;
-//         padding-bottom: 20px;
-//     }
-// }
+// Q&Aアコーディオン________________________
+$bg:#fff;
+$text:#AFA86F;
 
 
-// .accordion-title.active {
-//     background: #fff;
-//     border-bottom: none;
-//     transition: .4s;
-//     padding-bottom: 0;
-//     padding-left: 0;
-// }
-
-// .accordion-content.is-open {
-//     overflow: hidden;
-//     padding-left: 36px;
-//     max-height: 0;
-//     opacity: 0;
-//     border-bottom: #AFA86F 1px solid transparent;
-//     transition: max-height 0.4s ease, opacity 0.4s ease;
-//     padding-bottom: 23px;
-//     line-height: 1;
-// }
-
-// .accordion-title::before,
-// .accordion-title::after {
-//     content: '';
-//     display: block;
-//     background-color: #AFA86F;
-//     position: absolute;
-//     top: 50%;
-//     width: 15px;
-//     height: 2px;
-//     right: 25px;
-// }
-
-// .accordion-title::after {
-//     transform: rotate(90deg);
-//     transition-duration: .3s;
-// }
-
-// .accordion-title.active::before {
-//     opacity: 0;
-// }
-
-// .accordion-title.active::after {
-//     transform: rotate(0);
-// }
-
-
-
-// ________________________
 .accordion {
     margin-top: 113px;
+
     @media screen and (max-width: 1024px) {
         margin-top: 50px;
     }
 }
 
-.q-mark {
-    display: inline-grid;
-    place-items: center;
-    width: 24px;
-    height: 24px;
-    border-radius: 50%;
-    background: #fff;
-    color: #AFA86F;
-    font-weight: 400;
-    font-size: 24px;
-    font-family: "Viga";
-    margin-right: 20px;
-}
-
 .accordion-item {
-    display: flex;
-    justify-content: space-between;
     max-width: 980px;
     width: 100%;
     margin: 0 auto;
-    border-bottom: 1px solid #AFA86F;
+    border-bottom: 1px solid $text;
     padding: 33px 12px 33px 0;
-    background: #fff;
+    background:$bg;
     cursor: pointer;
-    user-select: none;
-}
-.accordion-item:first-child {
-    border-top:  1px solid #AFA86F;
 }
 
+.accordion-item:first-child {
+    border-top: 1px solid $text;
+}
 
 .accordion-title {
-    background-color: #fff;
+    background-color: $bg;
     position: relative;
-    cursor: pointer;
-    user-select: none;
 }
 
 .accordion-title::before,
 .accordion-title::after {
     content: '';
     display: block;
-    background-color: #AFA86F;
+    background-color: $text;
     position: absolute;
     top: 50%;
     width: 16px;
@@ -251,10 +130,8 @@ section.show {
 }
 
 .accordion-content {
-    border-left: 1px solid transparent;
-    border-right: 1px solid transparent;
+    background-color: $bg;
     padding: 0 18px;
-    line-height: 0;
     height: 0;
     overflow: hidden;
     opacity: 0;
@@ -262,8 +139,33 @@ section.show {
 }
 
 .accordion-content.is-open {
-    background-color: #fff;
-    padding: 12px 48px 0;
+    background-color: $bg;
+    padding: 12px 34px 0;
     height: auto;
     opacity: 1;
+}
+
+.accordion-item span {
+    position: relative;
+    display: inline-block;
+    padding-left: 34px;
+
+    &::before {
+        position: absolute;
+        content: "Q";
+        font-family: "Viga";
+        font-size: 16px;
+        font-weight: 400;
+        color:$text;
+        background-color: $bg;
+        border-radius: 50px;
+        width: 24px;
+        height: 24px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        left: -10px;
+        top: 50%;
+        transform: translateY(-50%);
+    }
 }
