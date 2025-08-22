@@ -2,7 +2,7 @@
 
 <section id="faq" class="faq">
     <div class=" sub-mv sub-mv-faq">
-        <div class="sub-inner sub-inner-mv">
+        <div class="sub-inner sub-inner-mv-faq">
             <div class="sub-mv-box">
                 <h2 class="sub-mv-title">FAQ</h2>
                 <h3 class="sub-mv-item sub-mv-item-faq">よくある質問</h3>
@@ -19,9 +19,9 @@
 <section id="faq-btn">
     <div class="sub-inner">
         <div class="details-btn-box faq-btn-box">
-            <a class="details-btn" href="#faq-details">応募・選考について</a>
-            <a class="details-btn" href="#faq-career">キャリアについて</a>
-            <a class="details-btn" href="#faq-benefits">福利厚生について</a>
+            <a class="details-btn faq-btn1" href="#faq-details">応募・選考について</a>
+            <a class="details-btn faq-btn" href="#faq-career">キャリアについて</a>
+            <a class="details-btn faq-btn" href="#faq-benefits">福利厚生について</a>
         </div>
     </div>
 </section>

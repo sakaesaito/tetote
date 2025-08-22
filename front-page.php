@@ -1,5 +1,4 @@
 <?php get_header(); ?>
-
 <main>
     <section class="mv">
         <div class="mv-inner">
@@ -31,26 +30,28 @@
         get_stylesheet_directory_uri() . '/img/top-slide02.jpg',
         get_stylesheet_directory_uri() . '/img/top-slide03.jpg',
     ];
-    $repeat = 3;
+    $repeat = 20;
     ?>
     <section class="swiper infinity-slider">
-        <div class="swiper slider">
-            <div class="swiper-wrapper">
-                <?php for ($r = 0; $r < $repeat; $r++): ?>
-                    <?php foreach ($slides as $src): ?>
-                        <div class="swiper-slide">
-                            <div class="slide-inner">
-                                <img src="<?php echo esc_url($src); ?>" alt="">
+        <div class="slider-inner">
+            <div class="swiper slider">
+                <div class="swiper-wrapper">
+                    <?php for ($r = 0; $r < $repeat; $r++): ?>
+                        <?php foreach ($slides as $src): ?>
+                            <div class="swiper-slide">
+                                <div class="slide-inner">
+                                    <img src="<?php echo esc_url($src); ?>" alt="">
+                                </div>
                             </div>
-                        </div>
-                    <?php endforeach; ?>
-                <?php endfor; ?>
+                        <?php endforeach; ?>
+                    <?php endfor; ?>
+                </div>
             </div>
-        </div>
-        <div class="slider-heading">
-            <p class="slider-heading-ms">後悔しないキャリアを作る、</p>
-            <br>
-            <p class="slider-heading-ms">それこそが、我々の使命だ</p>
+            <div class="slider-heading">
+                <p class="slider-heading-ms">後悔しないキャリアを作る、</p>
+                <br>
+                <p class="slider-heading-ms slider-heading-ms2">それこそが、我々の使命だ</p>
+            </div>
         </div>
     </section>
     <section id="about" class="about">

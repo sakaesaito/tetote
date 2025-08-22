@@ -12,6 +12,7 @@
     background-position: center center;
     background-color: #fff;
     width: 100%;
+    margin-bottom: 45px;
 
     @media screen and (max-width: 768px) {
         background-size: cover;
@@ -336,4 +337,9 @@
     &-ceo {
         padding-inline: 20px;
     }
+}
+
+.sub-inner-mv-faq {
+    padding-inline: 20px;
+    padding-top: 57px;
 }

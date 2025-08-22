@@ -4,17 +4,18 @@
     display: block;
     position: absolute;
     z-index: 2;
-    bottom: -50%;
+    margin-left: 18px;
+    bottom: -16%;
     left: 50%;
     transform: translate(-50%, -50%);
     
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 1024px) {
         max-width: 335px;
         width: 100%; 
         display: block;
         position: absolute;
         z-index: 2;
-        bottom: -214px;
+        bottom: -16%;
         left: 50%;
         transform: translate(-50%, -50%);
     }  
@@ -30,22 +31,24 @@
     text-align: center;
     padding-left: 20px;
 
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 1024px) {
         font-size: 1.5rem;
-        max-width: 335px;
+        max-width: 350px;
         margin-top: -13px;
+        padding-left: 10px;
     }  
 }
 .slider-heading-ms2 {
     margin-left: 26px;
     padding-right: 12px;
     padding-left: 12px;
+    @media screen and (max-width: 1024px) {
+        margin-left: 6px;
+    }
 }
 
 .slider {
     width: 100%;
-    // padding-top: 46px;
-    // padding-bottom: 80px;
     background-color: #fff;
     position: relative;
 
@@ -60,12 +63,11 @@
     gap: 20px;
     justify-content: center;
     align-items: center;
-    max-width: 300px;
+    max-width: 550px;
     img {
         width: 100%;
         display: block;
     }
-
 }
 
 .swiper-slide:nth-child(even) {

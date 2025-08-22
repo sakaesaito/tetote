@@ -84,20 +84,20 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
 
-/* 写真無限スライダー */
+/* 無限スライダー */
 
 const swiper1 = new Swiper('.infinity-slider .slider', {
     speed: 6000,
     loop: true,
-    loopAdditionalSlides: 6,
+    loopAdditionalSlides: 3,
     allowTouchMove: false,
     centeredSlides: true,
     autoplay: { delay: 0, disableOnInteraction: false },
     breakpoints: {
         0: { slidesPerView: 1, spaceBetween: 15 },
         600: { slidesPerView: 2, spaceBetween: 24 },
-        1200: { slidesPerView: 3, spaceBetween: 34 },
-        1500: { slidesPerView: 4, spaceBetween: 42 }
+        1200: { slidesPerView: 2.8, spaceBetween: 34 },
+        1450: { slidesPerView: 4, spaceBetween: 42 }
     },
     watchSlidesProgress: true,
     observeParents: true,

@@ -26,6 +26,14 @@ section.show {
     }
 }
 
+.faq-btn-box.faq-btn::after {
+    right: 35px;
+}
+
+.faq-btn1::after {
+    right: 26px;
+}
+
 .faq-main-title {
     margin-top: 96px;
 
@@ -73,8 +81,8 @@ section.show {
 }
 
 // Q&Aアコーディオン________________________
-$bg:#fff;
-$text:#AFA86F;
+$bg: #fff;
+$text: #AFA86F;
 
 
 .accordion {
@@ -90,8 +98,8 @@ $text:#AFA86F;
     width: 100%;
     margin: 0 auto;
     border-bottom: 1px solid $text;
-    padding: 33px 12px 33px 0;
-    background:$bg;
+    padding: 30px 12px 30px 0;
+    background: $bg;
     cursor: pointer;
 }
 
@@ -102,6 +110,7 @@ $text:#AFA86F;
 .accordion-title {
     background-color: $bg;
     position: relative;
+    padding-right: 30px;
 }
 
 .accordion-title::before,
@@ -113,7 +122,7 @@ $text:#AFA86F;
     top: 50%;
     width: 16px;
     height: 2px;
-    right: 25px;
+    right: -11px;
 }
 
 .accordion-title::after {
@@ -140,7 +149,7 @@ $text:#AFA86F;
 
 .accordion-content.is-open {
     background-color: $bg;
-    padding: 12px 34px 0;
+    padding: 7px 36px 0;
     height: auto;
     opacity: 1;
 }
@@ -149,22 +158,16 @@ $text:#AFA86F;
     position: relative;
     display: inline-block;
     padding-left: 34px;
+    line-height: 1.5;
 
     &::before {
         position: absolute;
         content: "Q";
         font-family: "Viga";
-        font-size: 16px;
-        font-weight: 400;
-        color:$text;
+        font-size: 24px;
+        color: $text;
         background-color: $bg;
-        border-radius: 50px;
-        width: 24px;
-        height: 24px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        left: -10px;
+        left: 0;
         top: 50%;
         transform: translateY(-50%);
     }
