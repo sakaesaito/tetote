@@ -2219,7 +2219,7 @@ footer {
 }
 
 .staff-content-item {
-  margin-top: 66px;
+  margin-top: 56px;
 }
 @media screen and (max-width: 1024px) {
   .staff-content-item {
@@ -4431,7 +4431,7 @@ section.show {
 .page-staff-mv-sec {
   background-color: #faf7f1;
   border-radius: 0px;
-  padding-top: 47px;
+  padding-top: 124px;
 }
 @media screen and (max-width: 1024px) {
   .page-staff-mv-sec {

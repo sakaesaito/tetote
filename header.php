@@ -15,18 +15,26 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <?php wp_head(); ?>
 </head>
-
 <body <?php body_class(); ?>>
     <header class="header <?php if (!is_front_page()) echo 'is-subpage'; ?>">
         <div class="header-inner sub-header-inner">
             <div class="header-nav sub-header-nav">
-                <h1 class="header-logo">
-                    <a class="header-logo-link sub-header-link"  href="<?php echo esc_url(home_url('/')); ?>">
-                        <img src="<?php echo get_template_directory_uri(); ?>/img/tetote-logo-white.png" alt="白ロゴ" class="logo logo-white">
-                        <img src="<?php echo get_template_directory_uri(); ?>/img/tetote-logo-black.png" alt="黒ロゴ" class="logo logo-black hidden" >
-                    </a>
-                </h1>
-                <div class="header-link sub-header-link">
+                <?php if (!is_front_page()): ?>
+                    <h1 class="header-logo">
+                        <a class="header-logo-link sub-header-link" href="<?php echo esc_url(home_url('/')); ?>">
+                            <img src="<?php echo get_template_directory_uri(); ?>/img/tetote-logo-white.png" alt="白ロゴ" class="logo logo-white">
+                            <img src="<?php echo get_template_directory_uri(); ?>/img/tetote-logo-black.png" alt="黒ロゴ" class="logo logo-black hidden">
+                        </a>
+                    </h1>
+                <?php else: ?>
+                    <div class="header-logo">
+                        <a class="header-logo-link sub-header-link" href="<?php echo esc_url(home_url('/')); ?>">
+                            <img src="<?php echo get_template_directory_uri(); ?>/img/tetote-logo-white.png" alt="白ロゴ" class="logo logo-white">
+                            <img src="<?php echo get_template_directory_uri(); ?>/img/tetote-logo-black.png" alt="黒ロゴ" class="logo logo-black hidden">
+                        </a>
+                    </div>
+                <?php endif; ?>
+                <div class="header-link">
                     <a class="header-button sub-header-button header-button-recruit" href="<?php echo home_url('/details/'); ?>">募集要項</a>
                     <a class="header-button  sub-header-button
                     header-button-entry" href="<?php echo home_url('/entry/'); ?>">ENTRY</a>

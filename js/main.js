@@ -104,6 +104,13 @@ const swiper1 = new Swiper('.infinity-slider .slider', {
     observer: true,
 });
 
+
+/* STAFFスライダー */
+
+
+
+
+
 // _____レスポンシブの375px未満のviewport画面幅を固定_____
 
 (function ($) {
