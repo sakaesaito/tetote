@@ -13,9 +13,7 @@
 <section class="blog-detail">
     <div class="blog-detail-sec">
         <div class="sub-inner blog-detail-inner">
-        <?php the_content(); ?>
-
-            <!-- <div class="blog-detail-date">
+            <div class="blog-detail-date">
                 <p class="blog-detail-tag blog-category">社内研修</p>
                 <time class="date" datetime="2023-03-25">2023.03.25</time>
             </div>
@@ -41,7 +39,7 @@
             <h3 class="blog-detail-menu">今後の期待</h3>
             <p class="blog-detail-note">今回の研修で学んだことを活かして、新入社員の皆さんが、一人前の社会人として成長していくことを期待しています。<br>
                 当社は、新入社員の皆さんが、自分の能力を最大限に発揮できる環境を提供します。<br>
-                ぜひ、積極的にチャレンジし、自分自身を成長させてください！</p> -->
+                ぜひ、積極的にチャレンジし、自分自身を成長させてください！</p>
         </div>
     </div>
 </section>
