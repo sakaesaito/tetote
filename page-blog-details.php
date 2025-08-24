@@ -1,8 +1,5 @@
 <?php get_header(); ?>
 
-<?php if(have_posts()): ?>
-<?php while(have_posts()): the_post(); ?>
-
 <div class="is-small is-small-blog">
     <ol class="breadcrumbs  breadcrumbs-blog-details">
         <?php if (function_exists('bcn_display')) bcn_display_list(); ?>
@@ -18,7 +15,7 @@
                 <time class="date" datetime="2023-03-25">2023.03.25</time>
             </div>
             <h2 class="sub-title sub-title-blog-detail">新入社員向けに、<br>入社前研修を行いました。</h2>
-            <div class="blog-detail-img"><img src="<?php echo get_template_directory_uri(); ?>/img/blogdetail-top.jpg" alt=""></div>
+            <div class="blog-detail-img"><img src="<?php echo get_template_directory_uri(); ?>/img/blog-detail-top.jpg" alt=""></div>
             <p class="blog-detail-note1">2023年3月25日、新入社員を対象とした入社前研修を実施しました。<br>今回の研修では、社会人としての基礎知識やビジネスマナー、当社の事業内容や社風について学びました。</p>
             <h3 class="blog-detail-menu">研修内容</h3>
             <ul class="blog-detail-list">

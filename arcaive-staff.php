@@ -19,29 +19,33 @@
 </div>
 
 <main id="content_wrap">
-    <div class="content_area">
-        <?php
-        $paged = get_query_var('paged') ? get_query_var('paged') : 1;
-        $args = array(
-            'paged' => $paged,
-            'post_type' => 'staff', 
-            'posts_per_page' => 6,
-        ); ?>
-        <?php $my_query = new WP_Query($args); ?>
-        <?php if ($my_query->have_posts()) : ?>
-            <ul class="cp_list">
-                <?php while ($my_query->have_posts()) : $my_query->the_post(); ?>
-                    <li class="cp_item">
-                        <a href="<?php the_permalink(); ?>" class="cp_link">
-                            <p class="cp_ttl">
-                                <?php the_title(); ?>
-                            </p>
-                        </a>
-                    </li>
-                <?php endwhile; ?>
-            </ul>
-        <?php endif; ?>
-    </div>
+    <section>
+        <div class="sub-inner sub-inner-staff">
+            <div class="sub-staff-sec">
+                <div class="sub-staff-box-wrapper">
+                    <?php
+                    $paged = get_query_var('paged') ? get_query_var('paged') : 1;
+                    $args = array(
+                        'paged' => $paged,
+                        'post_type' => 'staff', 
+                        'posts_per_page' => 6,
+                    ); ?>
+                    <?php $my_query = new WP_Query($args); ?>
+                    <?php if ($my_query->have_posts()) : ?>
+                        <?php while ($my_query->have_posts()) : $my_query->the_post(); ?>
+                            <li class="cp_item">
+                                <a href="<?php the_permalink(); ?>" class="cp_link">
+                                    <p class="cp_ttl">
+                                        <?php the_title(); ?>
+                                    </p>
+                                </a>
+                            </li>
+                        <?php endwhile; ?>
+                    <?php endif; ?>
+                </div>
+            </div>
+        </div>
+    </section>
 </main>
 
 <?php get_footer(); ?>
