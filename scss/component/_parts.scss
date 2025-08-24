@@ -193,6 +193,10 @@
 .button-white-right-blog {
     top: -15px;
     right: 125px;
+    @media screen and (max-width: 1024px) {
+        top: 0;
+    }
+
 }
 
 

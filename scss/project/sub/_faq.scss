@@ -139,20 +139,19 @@ $text: #AFA86F;
 }
 
 .accordion-content {
+    display: none;
     background-color: $bg;
-    padding: 0 18px;
-    height: 0;
+    padding: 0 36px;
+    height: auto;
     overflow: hidden;
-    opacity: 0;
-    transition-duration: .3s;
 }
 
-.accordion-content.is-open {
-    background-color: $bg;
-    padding: 7px 36px 0;
-    height: auto;
-    opacity: 1;
-}
+// .accordion-content.is-open {
+//     background-color: $bg;
+//     padding: 7px 36px 0;
+//     height: auto;
+//     opacity: 1;
+// }
 
 .accordion-item span {
     position: relative;

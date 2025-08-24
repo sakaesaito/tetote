@@ -80,9 +80,7 @@
         <div class="staff-inner">
             <div class="content-wrapper">
                 <div class="text-wrapper staff-text-wrapper">
-                    <div class="staff-section-title">
-                        <h2 class="content-title staff-content-title underline"><span>人</span>を知る</h2>
-                    </div>
+                    <h2 class="content-title staff-content-title underline"><span>人</span>を知る</h2>
                     <p class="content-item staff-content-item">TETOTEの社員がどういった信念を持って働いているのか、<br>
                         一日のスケジュールや仕事内容などを紹介します。</p>
                 </div>
@@ -207,10 +205,10 @@
                             <h2 class="content-title blog-content-title">採用ブログ</h2>
                             <p class="content-item blog-content-item">採用情報やイベント情報、社員の紹介など、<br> 日々の現場の様子をご紹介します。</p>
                         </div>
-                        <div class="blog-top-page">
-                            <a href="<?php echo esc_url(home_url('/blog/')); ?>" class="button-white-right"></a>
-                            <a href="<?php echo esc_url(home_url('/blog/')); ?>" class="blog-top-link" href="<?php echo esc_url(home_url('/blog/')); ?>/blog/">VIEW MORE</a>
-                        </div>
+                        <a class="blog-top-page" href="<?php echo esc_url(home_url('/blog/')); ?>/blog/">
+                            <div class="button-white-right button-white-right-blog"></div>
+                            <div class="blog-top-link">VIEW MORE</div>
+                        </a>
                     </div>
                     <div class="blog-wrapper">
                         <ul class="blog-list">

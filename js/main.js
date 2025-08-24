@@ -158,11 +158,10 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 jQuery(function ($) {
-    $('.jsAccordionTitle').on('click', function () {
+    $('.accordion-title').on('click', function () {
         const $header = $(this).closest('.accordion-title');
-        const $content = $header.next('.accordion-content');
-        $content.toggleClass('is-open');
         $(this).toggleClass('is-active');
+        $(this).next().slideToggle();
     });
 });
 
