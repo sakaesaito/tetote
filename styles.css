@@ -646,7 +646,13 @@ html {
 }
 @media screen and (max-width: 1024px) {
   .button-white-right-blog {
-    top: 0;
+    top: -5px;
+    left: -60px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .button-white-right-blog {
+    left: 0px;
   }
 }
 
@@ -1588,7 +1594,7 @@ footer {
     display: block;
     position: absolute;
     z-index: 2;
-    bottom: -16%;
+    bottom: -46px;
     left: 50%;
     transform: translate(-50%, -50%);
   }
@@ -1899,7 +1905,7 @@ footer {
 }
 @media screen and (max-width: 768px) {
   .mv-news-item a {
-    padding: 5px 5px 5px 8px;
+    padding: 12px 5px 5px 12px;
     line-height: 1.5;
   }
 }
@@ -2108,11 +2114,6 @@ footer {
     margin-top: 55px;
   }
 }
-@media screen and (max-width: 768px) {
-  .about-viw {
-    margin-top: 0;
-  }
-}
 
 .about-lead-ms {
   font-size: 2.25rem;
@@ -2257,9 +2258,10 @@ footer {
 
 .staff-box {
   position: relative;
-  width: 306px;
+  width: 100%;
   height: 412px;
   overflow: visible;
+  max-width: 300px;
 }
 @media screen and (max-width: 1024px) {
   .staff-box {
@@ -3008,6 +3010,7 @@ footer {
   .blog-top-page-2 {
     display: inline-block;
     margin-top: 52px;
+    position: relative;
   }
 }
 

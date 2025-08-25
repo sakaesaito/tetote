@@ -15,7 +15,7 @@
         display: block;
         position: absolute;
         z-index: 2;
-        bottom: -16%;
+        bottom: -46px;
         left: 50%;
         transform: translate(-50%, -50%);
     }  
@@ -38,6 +38,7 @@
         padding-left: 10px;
     }  
 }
+
 .slider-heading-ms2 {
     margin-left: 26px;
     padding-right: 12px;
@@ -63,7 +64,6 @@
     gap: 20px;
     justify-content: center;
     align-items: center;
-    // max-width: 550px;
     img {
         width: 100%;
         display: block;

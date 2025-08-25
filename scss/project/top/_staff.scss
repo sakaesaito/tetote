@@ -90,9 +90,10 @@
 }
 .staff-box {
     position: relative;
-    width: 306px;
+    width: 100%;
     height: 412px;
     overflow: visible;
+    max-width: 300px;
 
     @media screen and (max-width: 1024px) {
         margin-left:  0;

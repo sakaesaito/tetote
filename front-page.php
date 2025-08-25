@@ -30,7 +30,7 @@
         get_stylesheet_directory_uri() . '/img/top-slide02.jpg',
         get_stylesheet_directory_uri() . '/img/top-slide03.jpg',
     ];
-    $repeat = 20;
+    $repeat = 40;
     ?>
     <section class="swiper infinity-slider">
         <div class="slider-inner">
@@ -47,11 +47,11 @@
                     <?php endfor; ?>
                 </div>
             </div>
-            <div class="slider-heading">
-                <p class="slider-heading-ms">後悔しないキャリアを作る、</p>
-                <br>
-                <p class="slider-heading-ms slider-heading-ms2">それこそが、我々の使命だ</p>
-            </div>
+        </div>
+        <div class="slider-heading">
+            <p class="slider-heading-ms">後悔しないキャリアを作る、</p>
+            <br>
+            <p class="slider-heading-ms slider-heading-ms2">それこそが、我々の使命だ</p>
         </div>
     </section>
     <section id="about" class="about">

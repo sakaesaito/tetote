@@ -94,10 +94,10 @@ const swiper1 = new Swiper('.infinity-slider .slider', {
     centeredSlides: true,
     autoplay: { delay: 0, disableOnInteraction: false },
     breakpoints: {
-        0: { slidesPerView: 1, spaceBetween: 15 },
-        600: { slidesPerView: 2, spaceBetween: 24 },
+        0: { slidesPerView: 1.25, spaceBetween: 15 },
+        769: { slidesPerView: 2, spaceBetween: 24 },
         1200: { slidesPerView: 2.8, spaceBetween: 34 },
-        1450: { slidesPerView: 4, spaceBetween: 42 }
+        1450: { slidesPerView: 3.5, spaceBetween: 42 }
     },
     watchSlidesProgress: true,
     observeParents: true,

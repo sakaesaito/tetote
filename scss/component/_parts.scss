@@ -194,7 +194,11 @@
     top: -15px;
     right: 125px;
     @media screen and (max-width: 1024px) {
-        top: 0;
+        top: -5px;
+        left: -60px;
+    }
+    @media screen and (max-width: 768px) {
+        left: 0px;
     }
 
 }
