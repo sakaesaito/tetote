@@ -72,7 +72,7 @@
                 </div>
             </div>
             <div class="viewmore-button">
-                <a href="<?php echo esc_url(home_url('/about/')); ?>">VIEW MORE</a>
+                <a href="<?php echo get_permalink( get_page_by_path('about') ); ?>">VIEW MORE</a>
             </div>
         </div>
     </section>
@@ -149,7 +149,9 @@
             </div>
         </div>
         <div class="viewmore-button viewmore-button-staff">
-            <a href="<?php echo home_url('/staff/'); ?>">VIEW MORE</a>
+            <!-- <a href="<?php echo home_url('/staff/'); ?>">VIEW MORE</a> -->
+            <a href="<?php echo get_permalink( get_page_by_path('staff') ); ?>">VIEW MORE</a>
+            
         </div>
         <div class="page-button-box">
             <a href="" class="button-white-left"></a>

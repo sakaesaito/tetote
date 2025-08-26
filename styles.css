@@ -4052,7 +4052,7 @@ section.show {
   }
 }
 
-.sub-staff-box-message {
+.sub-staff-box-message1, .sub-staff-box-message2 {
   inline-size: fit-content;
   margin-top: 6px;
   font-size: 1.25rem;
