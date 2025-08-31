@@ -1,5 +1,3 @@
-'use script';
-
 
 //   ＿＿＿＿＿＿＿＿＿スクロール後ヘッダーが降りてくる＿＿＿＿＿＿
 
@@ -86,10 +84,10 @@ document.addEventListener('DOMContentLoaded', function () {
 
 /* 無限スライダー */
 
-const swiper1 = new Swiper('.infinity-slider .slider', {
+const swiper1 = new Swiper('.infinity-slider .swiper', {
     speed: 6000,
     loop: true,
-    loopAdditionalSlides: 3,
+    // loopAdditionalSlides: 3,
     allowTouchMove: false,
     centeredSlides: true,
     autoplay: { delay: 0, disableOnInteraction: false },
@@ -108,7 +106,7 @@ const swiper1 = new Swiper('.infinity-slider .slider', {
 /* STAFFスライダー */
 
 document.addEventListener('DOMContentLoaded', function () {
-    const staffSliderEl = document.querySelector('.staff-slider.swiper');
+    const staffSliderEl = document.querySelector('.staff-slider.swiper02');
     if (staffSliderEl) {
         new Swiper(staffSliderEl, {
             loop: false,               // 無限OFF

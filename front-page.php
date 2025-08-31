@@ -30,9 +30,9 @@
         get_stylesheet_directory_uri() . '/img/top-slide02.jpg',
         get_stylesheet_directory_uri() . '/img/top-slide03.jpg',
     ];
-    $repeat = 40;
+    $repeat = 10;
     ?>
-    <section class="swiper infinity-slider">
+    <section class="infinity-slider">
         <div class="slider-inner">
             <div class="swiper slider">
                 <div class="swiper-wrapper">
@@ -72,7 +72,7 @@
                 </div>
             </div>
             <div class="viewmore-button">
-                <a href="<?php echo get_permalink( get_page_by_path('about') ); ?>">VIEW MORE</a>
+                <a href="<?php echo get_permalink(get_page_by_path('about')); ?>">VIEW MORE</a>
             </div>
         </div>
     </section>
@@ -86,66 +86,69 @@
                 </div>
             </div>
             <div class="staff-sec slider-post slider">
-                <div class="staff-sec-inner swiper limited-slider">
+                <div class="staff-sec-inner swiper02 limited-slider">
                     <div class="staff-box-wrapper swiper-wrapper">
                         <?php
-                            $staff_q = new WP_Query([
-                                'post_type'      => 'staff',
-                                'posts_per_page' => 6,
-                                'orderby'        => 'date',
-                                'order'          => 'DESC',
-                            ]);
-                            if ($staff_q->have_posts()) :
-                                while ($staff_q->have_posts()) : $staff_q->the_post();
+                        $staff_q = new WP_Query([
+                            'post_type'      => 'staff',
+                            'posts_per_page' => 6,
+                            'orderby'        => 'date',
+                            'order'          => 'DESC',
+                        ]);
+                        if ($staff_q->have_posts()) :
+                            while ($staff_q->have_posts()) : $staff_q->the_post();
                                 $message01 = get_field('message01') ?: '';
                                 $message02 = get_field('message02') ?: '';
                                 $position  = get_field('position')  ?: '';
                                 $date_text = get_field('year') ?: '';
-                                $name = get_title('name'); 
+                                $name = get_title('name');
                         ?>
-                        <div class="swiper-slide">
-                            <article class="staff-card">
-                                <a href="<?php the_permalink(); ?>">
-                                    <?php if (has_post_thumbnail()) {
-                                        the_post_thumbnail('medium');
-                                        } else { ?>
-                                        <img src="<?php echo esc_url(get_template_directory_uri()); ?>/img/noimg-600x400.jpg" alt="">
-                                    <?php } ?>
-                                    <div class="post-slide-item">
-                                        <img src="<?php echo get_template_directory_uri(); ?>" alt="社員写真">
-                                        <div class="staff-box-img">
-                                            
-                                            <?php if ($message01 !== '') : ?>
-                                                <p class="staff-box-message01"><?php echo esc_html($message01); ?></p>
-                                            <?php endif; ?>
-                                            <?php if ($message02 !== '') : ?>
-                                                <p class="staff-box-message02"><?php echo esc_html($message02); ?></p>
-                                            <?php endif; ?>
-                                            <?php if ($position !== '') : ?>
-                                                <p class="staff-box-position"><?php echo esc_html($position); ?></p>
-                                            <?php endif; ?>
-                                            <?php if ($year !== '') : ?>
-                                                <p class="staff-box-year">年入社<?php echo esc_html($year); ?></p>
-                                            <?php endif; ?>
-                                            <?php if ($name !== '') : ?>
-                                                <p class="staff-box-name"><?php echo esc_html($name); ?></p>
-                                            <?php endif; ?>               
-                                        </div>   
-                                    </div>   
-                                </a>
-                            </article>
-                        </div> 
-                        <?php endwhile; else : echo '<div class="swiper-slide">スタッフ情報はまだありません。</div>'; endif;  wp_reset_postdata();
-                        ?>      
+                                <div class="swiper-slide">
+                                    <article class="staff-card">
+                                        <a href="<?php the_permalink(); ?>">
+                                            <?php if (has_post_thumbnail()) {
+                                                the_post_thumbnail('medium');
+                                            } else { ?>
+                                                <img src="<?php echo esc_url(get_template_directory_uri()); ?>/img/noimg-600x400.jpg" alt="">
+                                            <?php } ?>
+                                            <div class="post-slide-item">
+                                                <img src="<?php echo get_template_directory_uri(); ?>" alt="社員写真">
+                                                <div class="staff-box-img">
+
+                                                    <?php if ($message01 !== '') : ?>
+                                                        <p class="staff-box-message01"><?php echo esc_html($message01); ?></p>
+                                                    <?php endif; ?>
+                                                    <?php if ($message02 !== '') : ?>
+                                                        <p class="staff-box-message02"><?php echo esc_html($message02); ?></p>
+                                                    <?php endif; ?>
+                                                    <?php if ($position !== '') : ?>
+                                                        <p class="staff-box-position"><?php echo esc_html($position); ?></p>
+                                                    <?php endif; ?>
+                                                    <?php if ($year !== '') : ?>
+                                                        <p class="staff-box-year">年入社<?php echo esc_html($year); ?></p>
+                                                    <?php endif; ?>
+                                                    <?php if ($name !== '') : ?>
+                                                        <p class="staff-box-name"><?php echo esc_html($name); ?></p>
+                                                    <?php endif; ?>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </article>
+                                </div>
+                        <?php endwhile;
+                        else : echo '<div class="swiper-slide">スタッフ情報はまだありません。</div>';
+                        endif;
+                        wp_reset_postdata();
+                        ?>
                     </div>
                 </div>
             </div>
             <div class="viewmore-button viewmore-button-staff">
-                <a href="<?php echo get_permalink( get_page_by_path('staff') ); ?>">VIEW MORE</a>  
+                <a href="<?php echo get_permalink(get_page_by_path('staff')); ?>">VIEW MORE</a>
             </div>
             <div class="page-button-box">
-                <a href="" class="button-white-left"></a>
-                <a href="" class="button-white-right"></a>
+                <a href="" class="button-white-left .swiper-button-next"></a>
+                <a href="" class="button-white-right .swiper-button-prev"></a>
             </div>
         </div>
     </section>
@@ -205,7 +208,7 @@
                     <div class="blog-wrapper">
                         <ul class="blog-list">
 
-                        <?php
+                            <?php
                             $blog_q = new WP_Query([
                                 'post_type'           => 'post',
                                 'posts_per_page'      => 4,
@@ -216,34 +219,34 @@
                             if ($blog_q->have_posts()) :
                                 while ($blog_q->have_posts()) : $blog_q->the_post(); ?>
 
-                            <div class="blog-box">
-                                <a href="<?php the_permalink(); ?>">
-                                    <div class="blog-box-main">
-                                        <div class="thumbnail"> 
-                                            <?php if (has_post_thumbnail()) {
-                                            the_post_thumbnail('medium_large', ['loading' => 'lazy']);
-                                            } else { ?>
-                                            <img src="<?php echo esc_url(get_template_directory_uri()); ?>/img/noimg-600x400.jpg" alt="">
-                                            <?php } ?>
-                                        </div>
-                                        <div class="blog-box-right">
-                                            <ul class="cat-list">
-                                                <li class="blog-category">
-                                                    <?php
-                                                        $cats = get_the_category();
-                                                        if (!empty($cats)) {
-                                                            echo '<div class="cat-list"><span class="blog-category">' . esc_html($cats[0]->name) . '</span></div>';
-                                                        }
-                                                    ?>
-                                                </li>
-                                            </ul>
-                                            <p class="topics"><?php the_title(); ?></p>
-                                            <time datetime="<?php echo esc_attr(get_the_date('c')); ?>" class="date"><?php echo esc_html(get_the_date('Y.m.d')); ?></time>
-                                        </div>
+                                    <div class="blog-box">
+                                        <a href="<?php the_permalink(); ?>">
+                                            <div class="blog-box-main">
+                                                <div class="thumbnail">
+                                                    <?php if (has_post_thumbnail()) {
+                                                        the_post_thumbnail('medium_large', ['loading' => 'lazy']);
+                                                    } else { ?>
+                                                        <img src="<?php echo esc_url(get_template_directory_uri()); ?>/img/noimg-600x400.jpg" alt="">
+                                                    <?php } ?>
+                                                </div>
+                                                <div class="blog-box-right">
+                                                    <ul class="cat-list">
+                                                        <li class="blog-category">
+                                                            <?php
+                                                            $cats = get_the_category();
+                                                            if (!empty($cats)) {
+                                                                echo '<div class="cat-list"><span class="blog-category">' . esc_html($cats[0]->name) . '</span></div>';
+                                                            }
+                                                            ?>
+                                                        </li>
+                                                    </ul>
+                                                    <p class="topics"><?php the_title(); ?></p>
+                                                    <time datetime="<?php echo esc_attr(get_the_date('c')); ?>" class="date"><?php echo esc_html(get_the_date('Y.m.d')); ?></time>
+                                                </div>
+                                            </div>
+                                        </a>
                                     </div>
-                                </a>
-                            </div>
-                            <!-- <li class="blog-box">
+                                    <!-- <li class="blog-box">
                                 <a href="<?php echo esc_url(home_url('/blog-detalis/')); ?>">
                                     <div class="blog-box-main">
                                         <div class="thumbnail"><img src="<?php echo get_template_directory_uri(); ?>/img/blog02.jpg" alt=""></div>
@@ -287,9 +290,11 @@
                                     </div>
                                 </a>
                             </li>-->
-                            <?php endwhile; else : ?>
+                                <?php endwhile;
+                            else : ?>
                                 <li class="blog-box">記事はまだありません。</li>
-                            <?php endif; wp_reset_postdata(); ?>
+                            <?php endif;
+                            wp_reset_postdata(); ?>
                         </ul>
                     </div>
                     <div class="blog-top-page-2">
@@ -332,10 +337,10 @@
 <script>
     document.addEventListener("DOMContentLoaded", function() {
         if (window.innerWidth <= 768) {
-      const target = document.querySelector('.mv-img'); // ← idではなくクラスで取得
-        if (target) {
-        target.style.backgroundImage = "url('<?php echo esc_js(get_template_directory_uri()); ?>/img/fv02.jpg')";
-        }
+            const target = document.querySelector('.mv-img'); 
+            if (target) {
+                target.style.backgroundImage = "url('<?php echo esc_js(get_template_directory_uri()); ?>/img/fv02.jpg')";
+            }
         }
     });
 </script>

@@ -1676,6 +1676,12 @@ footer {
   background-color: #fff;
 }
 
+.infinity-slider .swiper-slide img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
 .breadcrumbs {
   display: flex;
   font-weight: 400;

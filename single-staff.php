@@ -69,7 +69,7 @@
             <h2 class="page-staff-title-member">その他のメンバー</h2>
             <div class="page-staff-sec">
                 <div class="sub-staff-box page-staff-box-list">
-                    <a href="<?php echo home_url('/staff-single/'); ?>">
+                    <a href="<?php echo home_url('/single-staff/'); ?>">
                         <img src="<?php echo get_template_directory_uri(); ?>/img/syain04.jpg" alt="社員写真ー高橋智">
                         <div class="sub-staff-box-img page-staff-list">
                             <p class="sub-staff-box-message"><?php the_field('message1'); ?></p>
@@ -83,7 +83,7 @@
                     </a>
                 </div>
                 <div class="sub-staff-box page-staff-box-list">
-                    <a href="<?php echo home_url('/staff-single/'); ?>">
+                    <a href="<?php echo home_url('/single-staff/'); ?>">
                         <img src="<?php the_post_thumbnail('medium'); ?>">
                         <div class="sub-staff-box-img page-staff-list">
                             <p class="sub-staff-box-message"><?php the_field('message1'); ?></p>
@@ -97,7 +97,7 @@
                     </a>
                 </div>
                 <div class="sub-staff-box page-staff-box-list">
-                    <a href="<?php echo home_url('/staff-single/'); ?>">
+                    <a href="<?php echo home_url('/single-staff/'); ?>">
                         <img src="<?php the_post_thumbnail('medium'); ?>">
                         <div class="sub-staff-box-img page-staff-list">
                             <p class="sub-staff-box-message"><?php the_field('message1'); ?></p>
