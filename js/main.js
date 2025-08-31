@@ -107,8 +107,32 @@ const swiper1 = new Swiper('.infinity-slider .slider', {
 
 /* STAFFスライダー */
 
-
-
+document.addEventListener('DOMContentLoaded', function () {
+    const staffSliderEl = document.querySelector('.staff-slider.swiper');
+    if (staffSliderEl) {
+        new Swiper(staffSliderEl, {
+            loop: false,               // 無限OFF
+            speed: 600,
+            slidesPerView: 1,
+            spaceBetween: 20,
+            allowTouchMove: false,     // ボタンでのみスライド
+            keyboard: { enabled: true },
+            navigation: {
+                nextEl: staffSliderEl.querySelector('.swiper-button-next'),
+                prevEl: staffSliderEl.querySelector('.swiper-button-prev'),
+            },
+            breakpoints: {
+                640: { slidesPerView: 2, spaceBetween: 24 },
+                1024: { slidesPerView: 3, spaceBetween: 28 },
+                1280: { slidesPerView: 4, spaceBetween: 32 },
+            },
+            watchSlidesProgress: true,
+            watchOverflow: true,
+            preloadImages: false,
+            lazy: true,
+        });
+    }
+});
 
 
 // _____レスポンシブの375px未満のviewport画面幅を固定_____

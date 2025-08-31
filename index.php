@@ -1,172 +1,296 @@
 <?php get_header(); ?>
-
-<section id="about-us" class="sub-about-us">
-    <div class="sub-mv sub-mv-about">
-        <div class="sub-inner sub-inner-mv">
-            <div class="sub-mv-box">
-                <?php (is_page('about-us')); ?>
-                <h2 class="sub-mv-title">ABOUT-US</h2>
-                <h3 class="sub-mv-item">TETOTEについて</h3>
-                <p class="sub-mv-part">私たちの理念を紹介をします。</p>
-            </div>
-        </div>
-    </div>
-</section>
-<div class="is-small">
-    <ol class="breadcrumbs">
-        <?php if (function_exists('bcn_display')) bcn_display_list(); ?>
-    </ol>
-</div>
-<section>
-    <div class="sub-inner sub-inner-ceo">
-        <h2 class="sub-title sub-title-us">私達が大切にしていること</h2>
-        <div class="sub-aboutus-box aboutus-box1">
-            <div class="sub-aboutus-list">
-                <h3 class="sub-aboutus-title title-1">飽くなき探求心で、<br>革新を創り出す</h3>
-                <p class="sub-aboutus-item">100年を超える歴史を誇りながらも、常に挑戦し続ける気概を忘れずに、未来を切り開くソリューションを提供し続けます。変化を恐れず、最新技術やトレンドを積極的に研究し、お客様のニーズを超える価値を生み出すことに情熱を燃やしています。</p>
-            </div>
-        </div>
-        <div class="sub-aboutus-box">
-            <div class="sub-aboutus-list">
-                <h3 class="sub-aboutus-title title-2">デジタル技術の力で、<br>未来を加速させる</h3>
-                <p class="sub-aboutus-item">ITコンサルタント会社として、業務効率化やイノベーション創出に貢献するために、デジタル技術を活用した最適なソリューションを提案します。自動化、データ分析、AIなどの技術を駆使し、お客様のビジネスを革新し、未来への飛躍を力強くサポートします。</p>
-            </div>
-        </div>
-        <div class="sub-aboutus-box">
-            <div class="sub-aboutus-list">
-                <h3 class="sub-aboutus-title title-3">人材こそが、未来への鍵</h3>
-                <p class="sub-aboutus-item">従業員一人ひとりが、高い専門性と人間性を兼ね備えた人材であることが、お客様への最高のサービスにつながると確信しています。個々の能力やキャリア目標に合わせた育成プログラムや、多様な経験を積む機会を提供することで、成長を支援します。</p>
-            </div>
-        </div>
-        <div class="sub-aboutus-box">
-            <div class="sub-aboutus-list">
-                <h3 class="sub-aboutus-title title-4">未経験者も歓迎！<br>情熱と意欲があれば、誰でも活躍できる</h3>
-                <p class="sub-aboutus-item">IT業界未経験の方でも、熱意と向上心があれば、当社で活躍できるチャンスがあります。研修やOJTを通じて、必要な知識やスキルを丁寧に習得し、即戦力となる人材へと育成します。先輩社員によるサポート体制も充実しているので、安心してスキルアップを目指せます。</p>
-            </div>
-        </div>
-        <div class="sub-aboutus-box">
-            <div class="sub-aboutus-list">
-                <h3 class="sub-aboutus-title title-5">
-                働きがいと充実感あふれる環境</h3>
-                <p class="sub-aboutus-item">ワークライフバランスを重視し、従業員が働きがいと充実感を感じられる環境づくりに積極的に取り組んでいます。充実した福利厚生制度や、多様な働き方を可能にする制度を導入し、個々のライフスタイルに合わせた働き方を支援します。</p>
-            </div>
-        </div>
-    </div>
-</section>
-<section>
-    <div class="sub-inner sub-inner-ceo">
-        <div>
-            <h2 class="sub-title sub-title-message">代表メッセージ</h2>
-            <div class="sub-aboutus-ceo">
-                <div class="sub-aboutus-ceo-pic">
-                    <img src="<?php echo get_template_directory_uri(); ?>/img/ceo.jpg" alt="代表取締役社長の写真">
+<!-- 
+<main>
+    <section class="mv">
+        <div class="mv-inner">
+            <div class="mv-bg">
+                <div class="mv-img-slider">
+                    <img src="<?php echo get_template_directory_uri(); ?>/img/fv01.jpg" alt="" class="mv-slide active">
+                    <img src="<?php echo get_template_directory_uri(); ?>/img/fv02.jpg" alt="" class="mv-slide">
                 </div>
-                <div class="sub-aboutus-ceo-message">
-                    <h3 class="sub-aboutus-ceo-main">
-                        あなたがやりたいこと<br>
-                        それを全力でサポートできる、<br>
-                        それがTETOTEの強みです。
-                    </h3>
-                    <p class="sub-aboutus-ceo-item">TETOTEは、ITコンサルティングとコンサル導入企業への営業を専門とする会社です。設立以来、私たちは「お客様の課題解決に真摯に取り組み、共に成長する」という理念を掲げ、お客様とパートナーと共に歩んできました。</p>
-                    <p class="sub-aboutus-ceo-item">お客様のニーズを深く理解し、最適なソリューションを提供することで、数多くの課題解決を支援してきました。その結果、お客様との深い信頼関係を築き、共に成長することができています。</p>
-                    <p class="sub-aboutus-ceo-item">TETOTEは、個々の能力や個性を尊重し、多様な人材が活躍できる環境づくりに力を入れています。年齢、性別、国籍、経験などに関係なく、意欲と向上心のある人材を歓迎します。</p>
-                    <p class="sub-aboutus-ceo-item">私たちと共に、未来を創造していきましょう。</p>
-                    <img class="sub-aboutus-ceo-name" src="<?php echo get_template_directory_uri(); ?>/img/ceo-name.svg" alt="">
+                <div class="mv-img">
+                    <h2 class="mv-message-main">BECOME A<br> CHALLENGER.</h2>
+                    <div class="mv-message-sub">君の挑戦が、意思が、未来を変える</div>
+                    <div class="container">
+                        <div class="skew-background"></div>
+                    </div>
+                    <div class="mv-news-box">
+                        <div class="mv-news-title"><a href="<?php echo home_url('/blog/'); ?>">NEWS</a></div>
+                        <div class="mv-news-item"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></div>
+                        <div class="mv-news-link"><a href="<?php echo home_url('/blog/'); ?>">VIEW MORE</a></div>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-</section>
-<section>
-    <div class="sub-inner sub-inner-consul">
-        <h2 class="sub-title sub-title-consul">事業紹介</h2>
-        <p class="sub-about-consul-lead">
-            TETOTEの主力事業である「コンサルティング」以外に、新規に取り組んでいる事業をいくつか<br>
-            紹介させていただきます。
-        </p>
+    </section>
 
-        <div class="sub-about-box about-box1">
-            <div class="sub-about-box-img">
-                <img src="<?php echo get_template_directory_uri(); ?>/img/about-consulting.jpg" alt="コンサルティング事業">
-            </div>
-            <div class="sub-about-career">
-                <h3 class="sub-about-box-title">コンサルティング事業</h3>
-                <h4 class="sub-about-box-item">お客様と伴走し、売上に直接貢献できる</h4>
-                <p class="sub-about-box-read">
-                    営業との連携で、人と組織の成長・変革に向けた計画立案・サービス実施、さらにフォローまで。コンサルタントとして一気通貫で携わります。
-                </p>
-            </div>
-        </div>
-
-        <div class="sub-about-box">
-            <div class="sub-about-box-img">
-                <img src="<?php echo get_template_directory_uri(); ?>/img/about-solution-sales.jpg" alt="ソリューション営業事業">
-            </div>
-            <div class="sub-about-career2">
-                <h3 class="sub-about-box-title solution-title">ソリューション営業事業</h3>
-                <h4 class="sub-about-box-item solution-item">お客様の課題を見つけ出し、必要な施策を提案する</h4>
-                <p class="sub-about-box-read solution-read">
-                    お客様が抱える課題へ、ヒアリングベースで提案型営業を行い、コンサルタントとの連携で課題解決を目指します。
-                </p>
-            </div>
-        </div>
-
-        <div class="sub-about-box">
-            <div class="sub-about-box-img">
-                <img src="<?php echo get_template_directory_uri(); ?>/img/about-desiner.jpg" alt="業務系システム開発事業">
-            </div>
-            <div class="sub-about-career3">
-                <h3 class="sub-about-box-title system-title">業務系システム開発事業</h3>
-                <h4 class="sub-about-box-item system-item">お客様の課題解決を強力にサポートするシステムを設計する</h4>
-                <p class="sub-about-box-read system-read">
-                    基本設計書に従って開発とテストを実施し、本番稼働をサポート。企画から運用までの全工程を通じて包括的なアプローチで、安定した運用と迅速な対応を保証します。
-                </p>
-            </div>
-        </div>
-    </div>
-</section>
-<section>
-    <div class="sub-inner sub-inner-about-list">
-        <h2 class="sub-title sub-title-company">会社概要</h2>
-        <div class="sub-about-list-sec">
-            <dl class="sub-about-list">
-                <dt class="sub-about-list-title">会社名</dt>
-                <dd class="sub-about-list-item">TETOTE株式会社</dd>
-            </dl>
-            <dl class="sub-about-list">
-                <dt class="sub-about-list-title">所在地</dt>
-                <dd class="sub-about-list-item">〒100-0001<br>東京都千代田区千代田 1-1-1</dd>
-            </dl>
-            <dl class="sub-about-list">
-                <dt class="sub-about-list-title">代表者名</dt>
-                <dd class="sub-about-list-item">田中 浩二郎 (代表取締役)</dd>
-            </dl>
-            <dl class="sub-about-list">
-                <dt class="sub-about-list-title">事業内容</dt>
-                <div class="sub-about-list-consul">
-                    <dd class="sub-about-list-item sub-about-list-item-consul1">・ITコンサルティング</dd>
-                    <dd class="sub-about-list-item sub-about-list-item-consul2">・コンサル導入企業への営業</dd>
+    <!-- Infinity Slider セクション -->
+    <!-- <?php
+    $slides = [
+        get_stylesheet_directory_uri() . '/img/top-slide01.jpg',
+        get_stylesheet_directory_uri() . '/img/top-slide02.jpg',
+        get_stylesheet_directory_uri() . '/img/top-slide03.jpg',
+    ];
+    $repeat = 40;
+    ?>
+    <section class="swiper infinity-slider">
+        <div class="slider-inner">
+            <div class="swiper slider">
+                <div class="swiper-wrapper">
+                    <?php for ($r = 0; $r < $repeat; $r++): ?>
+                        <?php foreach ($slides as $src): ?>
+                            <div class="swiper-slide">
+                                <div class="slide-inner">
+                                    <img src="<?php echo esc_url($src); ?>" alt="">
+                                </div>
+                            </div>
+                        <?php endforeach; ?>
+                    <?php endfor; ?>
                 </div>
-            </dl>
-            <dl class="sub-about-list">
-                <dt class="sub-about-list-title">電話番号</dt>
-                <dd class="sub-about-list-item"><a href="tel:0312345678">03-1234-5678</a></dd>
-            </dl>
-            <dl class="sub-about-list">
-                <dt class="sub-about-list-title">ウェブサイトURL</dt>
-                <dd class="sub-about-list-item"><a href="https://tetote.co.jp" target="_blank" rel="noopener">https://tetote.co.jp</a></dd>
-            </dl>
-            <dl class="sub-about-list">
-                <dt class="sub-about-list-title">メールアドレス</dt>
-                <dd class="sub-about-list-item"><a href="mailto:tetote@tetote.co.jp" class="mail-link">tetote@tetote.co.jp</a></dd>
-            </dl>
-            <dl class="sub-about-list">
-                <dt class="sub-about-list-title">設立年月</dt>
-                <dd class="sub-about-list-item">1923年4月1日</dd>
-            </dl>
+            </div>
         </div>
-    </div>
-</section>
+        <div class="slider-heading">
+            <p class="slider-heading-ms">後悔しないキャリアを作る、</p>
+            <br>
+            <p class="slider-heading-ms slider-heading-ms2">それこそが、我々の使命だ</p>
+        </div>
+    </section>
+    <section id="about" class="about">
+        <div class="inner about-inner">
+            <div class="about-viw">
+                <div class="about-lead">
+                    <p class="about-lead-ms">
+                        「人手不足」<br>
+                        今の日本が抱えるこの社会課題に挑み、<br>
+                        企業と個人の可能性を最大限に引き出す。<br>
+                        それが私達の役目。
+                    </p>
+                    <p class="about-lead-ms about-lead-ms2">
+                        単につなぐだけじゃない。<br>
+                        「手と手」を取り合っていけるような、<br>
+                        持続可能な社会を、一緒に作りませんか？
+                    </p>
+                </div>
+            </div>
+            <div class="viewmore-button">
+                <a href="<?php echo get_permalink( get_page_by_path('about') ); ?>">VIEW MORE</a>
+            </div>
+        </div>
+    </section>
+    <section id="staff" class="staff">
+        <div class="staff-inner">
+            <div class="content-wrapper">
+                <div class="text-wrapper staff-text-wrapper">
+                    <h2 class="content-title staff-content-title underline"><span>人</span>を知る</h2>
+                    <p class="content-item staff-content-item">TETOTEの社員がどういった信念を持って働いているのか、<br>
+                        一日のスケジュールや仕事内容などを紹介します。</p>
+                </div>
+            </div>
+            <div class="staff-sec slider-post slider">
+                <div class="staff-sec-inner swiper limited-slider">
+                    <div class="staff-box-wrapper swiper-wrapper">
+                    <?php $args = array(
+                            'post_type' => 'staff',
+                            'posts_per_page' => 6, // 必要に応じて
+                        );
+                        $query = new WP_Query($args);
+
+                        if ( $query->have_posts() ) : 
+                            while ( $query->have_posts() ) : 
+                                $query->the_post(); 
+                        ?>
+                            <div class="staff-box swiper-slide">
+                                <a href="<?php the_permalink(); ?>">
+                                    <article class="post-slide-item">
+                                        <img src="<?php echo get_template_directory_uri(); ?>/img/syain01.jpg" alt="社員スタッフ西村優">
+                                        <div class="staff-box-img">
+                                            <p class="staff-box-message">「あなたが担当で良かった」</p>
+                                            <p class="staff-box-message">この一言が、最高のやりがい</p>
+                                            <div class="staff-box-post">
+                                                <p class="staff-box-position">コンサルタント</p>
+                                                <p class="staff-box-year">2011年入社</p>
+                                            </div>
+                                            <p class="staff-box-name">西村 優</p>
+                                        </div>
+                                    </article>
+                                </a>
+                            </div> 
+
+                        <?php endwhile; endif; wp_reset_postdate() ?>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="viewmore-button viewmore-button-staff">
+            <a href="<?php echo home_url('/staff/'); ?>">VIEW MORE</a>
+            <a href="<?php echo get_permalink( get_page_by_path('staff') ); ?>">VIEW MORE</a>
+            
+        </div>
+        <div class="page-button-box">
+            <a href="" class="button-white-left"></a>
+            <a href="" class="button-white-right"></a>
+        </div>
+    </section>
+
+    <section id="benefits" class="benefits">
+        <div class="inner benefits-inner">
+            <div class="content-wrapper">
+                <a class="benefits-text-wrapper">
+                    <h2 data-title="" class="content-title content-title-benefits underline"><span>制度・環境</span>を知る</h2>
+                    <p class="content-item benefits-content-item">当社では働く従業員とそのご家族が穏やかに過ごせるよう、多様な研修、福利厚生を提供しています。
+                    </p>
+                </a>
+                <div class="benefits-main-box">
+                    <div class="benefits-img-wrapper">
+                        <a href="<?php echo home_url('/career/'); ?>">
+                            <div class="benefits-img-box">
+                                <img class="benefits-img-box-pic" src="<?php echo get_template_directory_uri(); ?>/img/career1.svg" alt="">
+                                <p class="benefits-img-message">Traning And Career</p>
+                            </div>
+                            <div class="benefits-button-wrapper">
+                                <a class="benefits-button" href="<?php echo home_url('/career/'); ?>"></a>
+                                <h3 class="benefits-img-title">研修制度とキャリアパス</h3>
+                                <p class="benefits-img-item">個々の目標に合わせたキャリアパスを支える、豊富な研修メニューで、あなた自身の成長を強力にサポートします。</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="benefits-img-wrapper">
+                        <a href="<?php echo home_url('/benefits/'); ?>">
+                            <div class="benefits-img-box">
+                                <img class="benefits-img-box-pic2" src="<?php echo get_template_directory_uri(); ?>/img/top-welfare.svg" alt="">
+                                <p class="benefits-img-message">Employee Benefits</p>
+                            </div>
+                            <div class="benefits-button-wrapper">
+                                <a class="benefits-button" href="<?php echo home_url('/benefits/'); ?>"></a>
+                                <h3 class="benefits-img-title benefits-img-title-title2">福利厚生</h3>
+                                <p class="benefits-img-item">TETOTEの福利厚生制度は、従業員の健康と幸福を重視し、働きやすい環境を提供することを目的としています。</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="top-blog" class="top-blog">
+        <div class="inner blog-inner">
+            <div class="blog-sec">
+                <div class="content-wrapper">
+                    <div class="blog-top">
+                        <div class="blog-top-title-sec">
+                            <h2 class="content-title blog-content-title">採用ブログ</h2>
+                            <p class="content-item blog-content-item">採用情報やイベント情報、社員の紹介など、<br> 日々の現場の様子をご紹介します。</p>
+                        </div>
+                        <a class="blog-top-page" href="<?php echo esc_url(home_url('/blog/')); ?>/blog/">
+                            <div class="button-white-right button-white-right-blog"></div>
+                            <div class="blog-top-link">VIEW MORE</div>
+                        </a>
+                    </div>
+                    <div class="blog-wrapper">
+                        <ul class="blog-list">
+                            <li class="blog-box">
+                                <a href="<?php echo esc_url(home_url('/blog-details/')); ?>">
+                                    <div class="blog-box-main">
+                                        <div class="thumbnail"><img src="<?php echo get_template_directory_uri(); ?>/img/blog01.jpg" alt=""></div>
+                                        <div class="blog-box-right">
+                                            <ul class="cat-list">
+                                                <li class="blog-category">社内研修</li>
+                                            </ul>
+                                            <p class="topics">新入社員向けに、入社前研修を行いました。</p>
+                                            <time datetime="2055-02-11" class="date">2055.02.11</time>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="blog-box">
+                                <a href="<?php echo esc_url(home_url('/blog-detalis/')); ?>">
+                                    <div class="blog-box-main">
+                                        <div class="thumbnail"><img src="<?php echo get_template_directory_uri(); ?>/img/blog02.jpg" alt=""></div>
+                                        <div class="blog-box-right">
+                                            <ul class="cat-list">
+                                                <li class="blog-category">社内研修</li>
+                                            </ul>
+                                            <p class="topics">内定者向け研修を行いました。</p>
+                                            <time datetime="2024.08.25" class="date">2024.08.25</time>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="blog-box">
+                                <a href="<?php echo esc_url(home_url('/blog-detalis/')); ?>">
+                                    <div class="blog-box-main">
+                                        <div class="thumbnail"><img src="<?php echo get_template_directory_uri(); ?>/img/blog03.jpg" alt=""></div>
+                                        <div class="blog-box-right">
+                                            <ul class="cat-list">
+                                                <li class="blog-category">社内イベント</li>
+                                            </ul>
+                                            <p class="topics topics3">【社員旅行2023】沖縄でリフレッシュ！チームワークも深まった！</p>
+                                            <time datetime="2024.03.25" class="date">2024.03.25</time>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="blog-box">
+                                <a href="<?php echo esc_url(home_url('/blog-details/')); ?>">
+                                    <div class="blog-box-main">
+                                        <div class="thumbnail">
+                                            <img src="<?php echo get_template_directory_uri(); ?>/img/blog04.jpg" alt="">
+                                        </div>
+                                        <div class="blog-box-right">
+                                            <ul class="cat-list">
+                                                <li class="blog-category">お知らせ</li>
+                                            </ul>
+                                            <p class="topics">【新卒採用2024】エントリー受付中！</p>
+                                            <time datetime="2024.03.01" class="date">2024.03.01</time>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="blog-top-page-2">
+                        <a href="<?php echo esc_url(home_url('/blog-details/')); ?>">
+                            <div class="button-white-right button-white-right-blog"></div>
+                            <div class="blog-top-link">VIEW MORE</div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="career" class="career">
+        <div class="inner career-inner">
+            <div class="content-wrapper career-content-wrapper">
+                <div class="text-wrapper2">
+                    <h2 data-title="" class="content-title career-content-title">採用情報</h2>
+                    <p class="content-item career-content-item">
+                        募集要項（職種、業務内容、応募条件、選考フロー）とよくある質問・会社概要などをまとめています。
+                    </p>
+                </div>
+                <div class="career-wrapper">
+                    <div class="link-box">
+                        <div class="link-box-button link-box-button1">
+                            <a href="<?php echo esc_url(home_url('/details/')); ?>">募集要項</a>
+                        </div>
+                        <div class="link-box-button link-box-button1">
+                            <a href="<?php echo esc_url(home_url('/faq/')); ?>">よくある質問</a>
+                        </div>
+                    </div>
+                    <div class="link-box-button link-box-button2">
+                        <a href="<?php echo esc_url(home_url('/about/')); ?>">会社概要</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        if (window.innerWidth <= 768) {
+            document.getElementById('mvImg').style.backgroundImage = "url('<?php echo get_template_directory_uri(); ?>/img/fv02.jpg')";
+        }
+    }); -->
+</script>
 
 
 <?php get_footer(); ?>

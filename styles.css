@@ -2349,6 +2349,16 @@ footer {
 .staff-box-img {
   position: relative;
   bottom: 60px;
+  aspect-ratio: 3/4;
+  width: 100%;
+}
+.staff-box-img img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
 }
 @media screen and (max-width: 768px) {
   .staff-box-img {

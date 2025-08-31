@@ -88,77 +88,67 @@
             <div class="staff-sec slider-post slider">
                 <div class="staff-sec-inner swiper limited-slider">
                     <div class="staff-box-wrapper swiper-wrapper">
-                        <div class="staff-box swiper-slide">
-                            <article class="post-slide-item">
-                                <img src="<?php echo get_template_directory_uri(); ?>/img/syain01.jpg" alt="社員スタッフ西村優">
-                                <div class="staff-box-img">
-                                    <p class="staff-box-message">「あなたが担当で良かった」</p>
-                                    <p class="staff-box-message">この一言が、最高のやりがい</p>
-                                    <div class="staff-box-post">
-                                        <p class="staff-box-position">コンサルタント</p>
-                                        <p class="staff-box-year">2011年入社</p>
-                                    </div>
-                                    <p class="staff-box-name">西村 優</p>
-                                </div>
+                        <?php
+                            $staff_q = new WP_Query([
+                                'post_type'      => 'staff',
+                                'posts_per_page' => 6,
+                                'orderby'        => 'date',
+                                'order'          => 'DESC',
+                            ]);
+                            if ($staff_q->have_posts()) :
+                                while ($staff_q->have_posts()) : $staff_q->the_post();
+                                $message01 = get_field('message01') ?: '';
+                                $message02 = get_field('message02') ?: '';
+                                $position  = get_field('position')  ?: '';
+                                $date_text = get_field('year') ?: '';
+                                $name = get_title('name'); 
+                        ?>
+                        <div class="swiper-slide">
+                            <article class="staff-card">
+                                <a href="<?php the_permalink(); ?>">
+                                    <?php if (has_post_thumbnail()) {
+                                        the_post_thumbnail('medium');
+                                        } else { ?>
+                                        <img src="<?php echo esc_url(get_template_directory_uri()); ?>/img/noimg-600x400.jpg" alt="">
+                                    <?php } ?>
+                                    <div class="post-slide-item">
+                                        <img src="<?php echo get_template_directory_uri(); ?>" alt="社員写真">
+                                        <div class="staff-box-img">
+                                            
+                                            <?php if ($message01 !== '') : ?>
+                                                <p class="staff-box-message01"><?php echo esc_html($message01); ?></p>
+                                            <?php endif; ?>
+                                            <?php if ($message02 !== '') : ?>
+                                                <p class="staff-box-message02"><?php echo esc_html($message02); ?></p>
+                                            <?php endif; ?>
+                                            <?php if ($position !== '') : ?>
+                                                <p class="staff-box-position"><?php echo esc_html($position); ?></p>
+                                            <?php endif; ?>
+                                            <?php if ($year !== '') : ?>
+                                                <p class="staff-box-year">年入社<?php echo esc_html($year); ?></p>
+                                            <?php endif; ?>
+                                            <?php if ($name !== '') : ?>
+                                                <p class="staff-box-name"><?php echo esc_html($name); ?></p>
+                                            <?php endif; ?>               
+                                        </div>   
+                                    </div>   
+                                </a>
                             </article>
-                        </div>
-                        <div class="staff-box swiper-slide">
-                            <article class="post-slide-item">
-                                <img src="<?php echo get_template_directory_uri(); ?>/img/syain02.jpg" alt="社員スタッフ橋本拓也">
-                                <div class="staff-box-img-box2">
-                                    <p class="staff-box-message">全力で考えぬける環境</p>
-                                    <p class="staff-box-message">試練の数だけ強くなれました</p>
-                                    <div class="staff-box-post">
-                                        <p class="staff-box-position">コンサルタント</p>
-                                        <p class="staff-box-year">2015年入社</p>
-                                    </div>
-                                    <p class="staff-box-name">橋本 拓也</p>
-                                </div>
-                            </article>
-                        </div>
-                        <div class="staff-box swiper-slide">
-                            <article class="post-slide-item">
-                                <img src="<?php echo get_template_directory_uri(); ?>/img/syain03.jpg" alt="社員スタッフ青木美月">
-                                <div class="staff-box-img">
-                                    <p class="staff-box-message">お客様も知らない課題を</p>
-                                    <p class="staff-box-message">一緒に探し出す醍醐味</p>
-                                    <div class="staff-box-post">
-                                        <p class="staff-box-position">ソリューション営業</p>
-                                        <p class="staff-box-year">2017年入社</p>
-                                    </div>
-                                    <p class="staff-box-name">青木 美月</p>
-                                </div>
-                            </article>
-                        </div>
-                        <div class="staff-box swiper-slide">
-                            <article class="post-slide-item">
-                                <img src="<?php echo get_template_directory_uri(); ?>/img/syain04.jpg" alt="社員スタッフ佐々木健">
-                                <div class="staff-box-img-box2">
-                                    <p class="staff-box-message">「あなたが担当で良かった」</p>
-                                    <p class="staff-box-message">この一言が、最高のやりがい</p>
-                                    <div class="staff-box-post">
-                                        <p class="staff-box-position">コンサルタント</p>
-                                        <p class="staff-box-year">2004年入社</p>
-                                    </div>
-                                    <p class="staff-box-name">佐々木 健</p>
-                                </div>
-                            </article>
-                        </div>
+                        </div> 
+                        <?php endwhile; else : echo '<div class="swiper-slide">スタッフ情報はまだありません。</div>'; endif;  wp_reset_postdata();
+                        ?>      
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="viewmore-button viewmore-button-staff">
-            <!-- <a href="<?php echo home_url('/staff/'); ?>">VIEW MORE</a> -->
-            <a href="<?php echo get_permalink( get_page_by_path('staff') ); ?>">VIEW MORE</a>
-            
-        </div>
-        <div class="page-button-box">
-            <a href="" class="button-white-left"></a>
-            <a href="" class="button-white-right"></a>
+            <div class="viewmore-button viewmore-button-staff">
+                <a href="<?php echo get_permalink( get_page_by_path('staff') ); ?>">VIEW MORE</a>  
+            </div>
+            <div class="page-button-box">
+                <a href="" class="button-white-left"></a>
+                <a href="" class="button-white-right"></a>
+            </div>
         </div>
     </section>
-
     <section id="benefits" class="benefits">
         <div class="inner benefits-inner">
             <div class="content-wrapper">
@@ -207,28 +197,53 @@
                             <h2 class="content-title blog-content-title">採用ブログ</h2>
                             <p class="content-item blog-content-item">採用情報やイベント情報、社員の紹介など、<br> 日々の現場の様子をご紹介します。</p>
                         </div>
-                        <a class="blog-top-page" href="<?php echo esc_url(home_url('/blog/')); ?>/blog/">
+                        <a class="blog-top-page" href="<?php echo esc_url(get_permalink(get_option('page_for_posts')) ?: home_url('/blog/')); ?>">
                             <div class="button-white-right button-white-right-blog"></div>
                             <div class="blog-top-link">VIEW MORE</div>
                         </a>
                     </div>
                     <div class="blog-wrapper">
                         <ul class="blog-list">
-                            <li class="blog-box">
-                                <a href="<?php echo esc_url(home_url('/blog-details/')); ?>">
+
+                        <?php
+                            $blog_q = new WP_Query([
+                                'post_type'           => 'post',
+                                'posts_per_page'      => 4,
+                                'orderby'             => 'date',
+                                'order'               => 'DESC',
+                                'ignore_sticky_posts' => true,
+                            ]);
+                            if ($blog_q->have_posts()) :
+                                while ($blog_q->have_posts()) : $blog_q->the_post(); ?>
+
+                            <div class="blog-box">
+                                <a href="<?php the_permalink(); ?>">
                                     <div class="blog-box-main">
-                                        <div class="thumbnail"><img src="<?php echo get_template_directory_uri(); ?>/img/blog01.jpg" alt=""></div>
+                                        <div class="thumbnail"> 
+                                            <?php if (has_post_thumbnail()) {
+                                            the_post_thumbnail('medium_large', ['loading' => 'lazy']);
+                                            } else { ?>
+                                            <img src="<?php echo esc_url(get_template_directory_uri()); ?>/img/noimg-600x400.jpg" alt="">
+                                            <?php } ?>
+                                        </div>
                                         <div class="blog-box-right">
                                             <ul class="cat-list">
-                                                <li class="blog-category">社内研修</li>
+                                                <li class="blog-category">
+                                                    <?php
+                                                        $cats = get_the_category();
+                                                        if (!empty($cats)) {
+                                                            echo '<div class="cat-list"><span class="blog-category">' . esc_html($cats[0]->name) . '</span></div>';
+                                                        }
+                                                    ?>
+                                                </li>
                                             </ul>
-                                            <p class="topics">新入社員向けに、入社前研修を行いました。</p>
-                                            <time datetime="2055-02-11" class="date">2055.02.11</time>
+                                            <p class="topics"><?php the_title(); ?></p>
+                                            <time datetime="<?php echo esc_attr(get_the_date('c')); ?>" class="date"><?php echo esc_html(get_the_date('Y.m.d')); ?></time>
                                         </div>
                                     </div>
                                 </a>
-                            </li>
-                            <li class="blog-box">
+                            </div>
+                            <!-- <li class="blog-box">
                                 <a href="<?php echo esc_url(home_url('/blog-detalis/')); ?>">
                                     <div class="blog-box-main">
                                         <div class="thumbnail"><img src="<?php echo get_template_directory_uri(); ?>/img/blog02.jpg" alt=""></div>
@@ -271,11 +286,14 @@
                                         </div>
                                     </div>
                                 </a>
-                            </li>
+                            </li>-->
+                            <?php endwhile; else : ?>
+                                <li class="blog-box">記事はまだありません。</li>
+                            <?php endif; wp_reset_postdata(); ?>
                         </ul>
                     </div>
                     <div class="blog-top-page-2">
-                        <a href="<?php echo esc_url(home_url('/blog-details/')); ?>">
+                        <a href="<?php echo esc_url(get_permalink(get_option('page_for_posts')) ?: home_url('/blog/')); ?>">
                             <div class="button-white-right button-white-right-blog"></div>
                             <div class="blog-top-link">VIEW MORE</div>
                         </a>
@@ -314,7 +332,10 @@
 <script>
     document.addEventListener("DOMContentLoaded", function() {
         if (window.innerWidth <= 768) {
-            document.getElementById('mvImg').style.backgroundImage = "url('<?php echo get_template_directory_uri(); ?>/img/fv02.jpg')";
+      const target = document.querySelector('.mv-img'); // ← idではなくクラスで取得
+        if (target) {
+        target.style.backgroundImage = "url('<?php echo esc_js(get_template_directory_uri()); ?>/img/fv02.jpg')";
+        }
         }
     });
 </script>
