@@ -24,24 +24,36 @@
             <div class="sub-staff-sec">
                 <div class="sub-staff-box-wrapper">
                     <?php
-                    $paged = get_query_var('paged') ? get_query_var('paged') : 1;
+                    // 取得する投稿の条件を設定する
                     $args = array(
                         'paged' => $paged,
-                        'post_type' => 'staff', 
+                        'post_type' => 'staff',
                         'posts_per_page' => 6,
-                    ); ?>
-                    <?php $my_query = new WP_Query($args); ?>
-                    <?php if ($my_query->have_posts()) : ?>
-                        <?php while ($my_query->have_posts()) : $my_query->the_post(); ?>
-                            <li class="cp_item">
-                                <a href="<?php the_permalink(); ?>" class="cp_link">
-                                    <p class="cp_ttl">
-                                        <?php the_title(); ?>
-                                    </p>
+                    );
+
+                    // 上記の条件に基づいて投稿情報を取得
+                    $query = new WP_Query($args);
+
+                    //ループ処理を行う（カスタム投稿：staff)
+                    if ($query->have_posts()) : while ($query->have_posts()) : $query->the_post(); ?>
+
+                            <div class="sub-staff-box">
+                                <a href="<?php the_permalink(); ?>">
+                                    <img src="<?php the_post_thumbnail(); ?>" alt="">
+                                    <div class="sub-staff-box-img">
+                                        <p class="sub-staff-box-message1"><?php the_field('message1'); ?></p>
+                                        <p class="sub-staff-box-message2"><?php the_field('message2'); ?></p>
+                                        <div class="staff-box-post">
+                                            <p class="staff-box-position"><?php the_field('position'); ?></p>
+                                            <p class="staff-box-year"><?php the_field('year'); ?>年入社</p>
+                                        </div>
+                                        <p class="staff-box-name"><?php the_title(); ?></p>
+                                    </div>
                                 </a>
-                            </li>
-                        <?php endwhile; ?>
-                    <?php endif; ?>
+                            </div>
+                    <?php endwhile;
+                    endif;
+                    wp_reset_postdate(); ?>
                 </div>
             </div>
         </div>

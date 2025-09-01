@@ -30,11 +30,11 @@
         get_stylesheet_directory_uri() . '/img/top-slide02.jpg',
         get_stylesheet_directory_uri() . '/img/top-slide03.jpg',
     ];
-    $repeat = 10;
+    $repeat = 4;
     ?>
     <section class="infinity-slider">
         <div class="slider-inner">
-            <div class="swiper slider">
+            <div class="swiper01 slider">
                 <div class="swiper-wrapper">
                     <?php for ($r = 0; $r < $repeat; $r++): ?>
                         <?php foreach ($slides as $src): ?>
@@ -97,40 +97,35 @@
                         ]);
                         if ($staff_q->have_posts()) :
                             while ($staff_q->have_posts()) : $staff_q->the_post();
-                                $message01 = get_field('message01') ?: '';
-                                $message02 = get_field('message02') ?: '';
-                                $position  = get_field('position')  ?: '';
-                                $date_text = get_field('year') ?: '';
-                                $name = get_title('name');
+                                $message01 = the_field('message01') ?: '';
+                                $message02 = the_field('message02') ?: '';
+                                $position  = the_field('position')  ?: '';
+                                $date_text = the_field('year') ?: '';
+                                $name = the_title();
                         ?>
                                 <div class="swiper-slide">
                                     <article class="staff-card">
                                         <a href="<?php the_permalink(); ?>">
                                             <?php if (has_post_thumbnail()) {
-                                                the_post_thumbnail('medium');
+                                                the_post_thumbnail('small');
                                             } else { ?>
-                                                <img src="<?php echo esc_url(get_template_directory_uri()); ?>/img/noimg-600x400.jpg" alt="">
                                             <?php } ?>
                                             <div class="post-slide-item">
-                                                <img src="<?php echo get_template_directory_uri(); ?>" alt="社員写真">
-                                                <div class="staff-box-img">
-
-                                                    <?php if ($message01 !== '') : ?>
-                                                        <p class="staff-box-message01"><?php echo esc_html($message01); ?></p>
-                                                    <?php endif; ?>
-                                                    <?php if ($message02 !== '') : ?>
-                                                        <p class="staff-box-message02"><?php echo esc_html($message02); ?></p>
-                                                    <?php endif; ?>
-                                                    <?php if ($position !== '') : ?>
-                                                        <p class="staff-box-position"><?php echo esc_html($position); ?></p>
-                                                    <?php endif; ?>
-                                                    <?php if ($year !== '') : ?>
-                                                        <p class="staff-box-year">年入社<?php echo esc_html($year); ?></p>
-                                                    <?php endif; ?>
-                                                    <?php if ($name !== '') : ?>
-                                                        <p class="staff-box-name"><?php echo esc_html($name); ?></p>
-                                                    <?php endif; ?>
-                                                </div>
+                                                <?php if ($message01 !== '') : ?>
+                                                    <p class="staff-box-message"><?php echo esc_html($message01); ?></p>
+                                                <?php endif; ?>
+                                                <?php if ($message02 !== '') : ?>
+                                                    <p class="staff-box-message"><?php echo esc_html($message02); ?></p>
+                                                <?php endif; ?>
+                                                <?php if ($position !== '') : ?>
+                                                    <p class="staff-box-position"><?php echo esc_html($position); ?></p>
+                                                <?php endif; ?>
+                                                <?php if ($year !== '') : ?>
+                                                    <p class="staff-box-year"><?php echo esc_html($year); ?></p>
+                                                <?php endif; ?>
+                                                <?php if ($name !== '') : ?>
+                                                    <p class="staff-box-name"><?php echo esc_html($name); ?></p>
+                                                <?php endif; ?>
                                             </div>
                                         </a>
                                     </article>
@@ -224,9 +219,8 @@
                                             <div class="blog-box-main">
                                                 <div class="thumbnail">
                                                     <?php if (has_post_thumbnail()) {
-                                                        the_post_thumbnail('medium_large', ['loading' => 'lazy']);
+                                                        the_post_thumbnail('medium', ['loading' => 'lazy']);
                                                     } else { ?>
-                                                        <img src="<?php echo esc_url(get_template_directory_uri()); ?>/img/noimg-600x400.jpg" alt="">
                                                     <?php } ?>
                                                 </div>
                                                 <div class="blog-box-right">

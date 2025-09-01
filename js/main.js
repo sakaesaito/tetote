@@ -1,3 +1,4 @@
+'use strict';
 
 //   ＿＿＿＿＿＿＿＿＿スクロール後ヘッダーが降りてくる＿＿＿＿＿＿
 
@@ -68,7 +69,7 @@ document.addEventListener('DOMContentLoaded', function () {
             document.body.style.overflow = 'hidden';
         } else {
             // ドロワー閉じたらスクロール位置に応じて戻す
-            const scrollY = window;
+            const scrollY = window.pageYOffset;
             if (isHome && scrollY < 100) {
                 if (whiteLogo) whiteLogo.classList.remove('hidden');
                 if (blackLogo) blackLogo.classList.add('hidden');
@@ -83,30 +84,32 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
 /* 無限スライダー */
-
-const swiper1 = new Swiper('.infinity-slider .swiper', {
-    speed: 6000,
-    loop: true,
-    // loopAdditionalSlides: 3,
-    allowTouchMove: false,
-    centeredSlides: true,
-    autoplay: { delay: 0, disableOnInteraction: false },
-    breakpoints: {
-        0: { slidesPerView: 1.25, spaceBetween: 15 },
-        769: { slidesPerView: 2, spaceBetween: 24 },
-        1200: { slidesPerView: 2.8, spaceBetween: 34 },
-        1450: { slidesPerView: 3.5, spaceBetween: 42 }
-    },
-    watchSlidesProgress: true,
-    observeParents: true,
-    observer: true,
+document.addEventListener('DOMContentLoaded', () => {
+    const sliderContainer = document.querySelector('.infinity-slider .swiper01');
+    if (sliderContainer);
+    new Swiper(sliderContainer, {
+        speed: 6000,
+        autoplay: { delay: 0, disableOnInteraction: false },
+        loop: true,
+        allowTouchMove: false,
+        centeredSlides: true,
+        breakpoints: {
+            0: { slidesPerView: 1.25, spaceBetween: 15 },
+            769: { slidesPerView: 2, spaceBetween: 24 },
+            1200: { slidesPerView: 2.8, spaceBetween: 34 },
+            1450: { slidesPerView: 3.5, spaceBetween: 42 }
+        },
+        watchSlidesProgress: true,
+        observer: true,
+        observeParents: true,
+    });
 });
 
 
 /* STAFFスライダー */
 
 document.addEventListener('DOMContentLoaded', function () {
-    const staffSliderEl = document.querySelector('.staff-slider.swiper02');
+    const staffSliderEl = document.querySelector('.staff-sec-inner .swiper02');
     if (staffSliderEl) {
         new Swiper(staffSliderEl, {
             loop: false,               // 無限OFF

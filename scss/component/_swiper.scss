@@ -50,15 +50,14 @@
     }
 }
 
-.slider {
-    width: 100%;
+.infinity-slider { 
+    overflow: hidden;
     background-color: #fff;
     position: relative;
-
     @media screen and (max-width: 768px) {
         padding-top: 41px;
         padding-bottom: 0;
-    }
+    } 
 }
 
 .swiper-slide {
@@ -66,10 +65,11 @@
     gap: 20px;
     justify-content: center;
     align-items: center;
+    transition-timing-function: linear !important;
 
     img {
-        width: 100%;
         display: block;
+        height: auto;
     }
 }
 
@@ -79,24 +79,8 @@
     @media screen and (max-width: 768px) {
         padding-top: 30px;
     }
-
 }
 
 .swiper-slide.alt {
     padding-top: 36px;
-}
-
-.swiper-wrapper {
-    display: flex;
-    transition-timing-function: linear !important;
-}
-
-.swiper {
-    background-color: #fff;
-}
-
-.infinity-slider .swiper-slide img {
-    display: block;
-    width: 100%;
-    height: auto;
 }
