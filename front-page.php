@@ -34,7 +34,7 @@
     ?>
     <section class="infinity-slider">
         <div class="slider-inner">
-            <div class="swiper01 slider">
+            <div class="swiper">
                 <div class="swiper-wrapper">
                     <?php for ($r = 0; $r < $repeat; $r++): ?>
                         <?php foreach ($slides as $src): ?>
@@ -97,19 +97,18 @@
                         ]);
                         if ($staff_q->have_posts()) :
                             while ($staff_q->have_posts()) : $staff_q->the_post();
-                                $message01 = the_field('message01') ?: '';
-                                $message02 = the_field('message02') ?: '';
-                                $position  = the_field('position')  ?: '';
-                                $date_text = the_field('year') ?: '';
-                                $name = the_title();
+                                $message01 = get_field('message01') ?: '';
+                                $message02 = get_field('message02') ?: '';
+                                $position  = get_field('position')  ?: '';
+                                $year = get_field('year') ?: '';
+                                $name = get_field('staff');
                         ?>
-                                <div class="swiper-slide">
-                                    <article class="staff-card">
-                                        <a href="<?php the_permalink(); ?>">
+                                <div class="swiper-slide staff-slide">
+                                    <article class="staff-card ">
+                                        <a class="staff-box" href="<?php the_permalink(); ?>">
                                             <?php if (has_post_thumbnail()) {
-                                                the_post_thumbnail('small');
-                                            } else { ?>
-                                            <?php } ?>
+                                                the_post_thumbnail('medium' , ['loading' => 'lazy', 'alt' => $name]);
+                                            } ?>
                                             <div class="post-slide-item">
                                                 <?php if ($message01 !== '') : ?>
                                                     <p class="staff-box-message"><?php echo esc_html($message01); ?></p>
@@ -117,12 +116,14 @@
                                                 <?php if ($message02 !== '') : ?>
                                                     <p class="staff-box-message"><?php echo esc_html($message02); ?></p>
                                                 <?php endif; ?>
-                                                <?php if ($position !== '') : ?>
-                                                    <p class="staff-box-position"><?php echo esc_html($position); ?></p>
-                                                <?php endif; ?>
-                                                <?php if ($year !== '') : ?>
-                                                    <p class="staff-box-year"><?php echo esc_html($year); ?></p>
-                                                <?php endif; ?>
+                                                <div class="staff-box-post">
+                                                    <?php if ($position !== '') : ?>
+                                                        <p class="staff-box-position"><?php echo esc_html($position); ?></p>
+                                                    <?php endif; ?>
+                                                    <?php if ($year !== '') : ?>
+                                                        <p class="staff-box-year"><?php echo esc_html($year); ?>年入社</p>
+                                                    <?php endif; ?>
+                                                </div>
                                                 <?php if ($name !== '') : ?>
                                                     <p class="staff-box-name"><?php echo esc_html($name); ?></p>
                                                 <?php endif; ?>
@@ -130,11 +131,9 @@
                                         </a>
                                     </article>
                                 </div>
-                        <?php endwhile;
-                        else : echo '<div class="swiper-slide">スタッフ情報はまだありません。</div>';
-                        endif;
-                        wp_reset_postdata();
-                        ?>
+                        <?php endwhile; else: ?>
+                        <div class="swiper-slide">スタッフ情報はまだありません。</div>
+                        <?php endif; wp_reset_postdata(); ?>
                     </div>
                 </div>
             </div>
@@ -142,8 +141,8 @@
                 <a href="<?php echo get_permalink(get_page_by_path('staff')); ?>">VIEW MORE</a>
             </div>
             <div class="page-button-box">
-                <a href="" class="button-white-left .swiper-button-next"></a>
-                <a href="" class="button-white-right .swiper-button-prev"></a>
+                <a href="#" class="button-white-left swiper-button-next"></a>
+                <a href="#" class="button-white-right swiper-button-prev"></a>
             </div>
         </div>
     </section>
@@ -213,23 +212,44 @@
                             ]);
                             if ($blog_q->have_posts()) :
                                 while ($blog_q->have_posts()) : $blog_q->the_post(); ?>
-
-                                    <div class="blog-box">
+                                    <li class="blog-box"><a href="<?php the_permalink(); ?>">
+                                    <div class="blog-box-main">
                                         <a href="<?php the_permalink(); ?>">
                                             <div class="blog-box-main">
-                                                <div class="thumbnail">
-                                                    <?php if (has_post_thumbnail()) {
-                                                        the_post_thumbnail('medium', ['loading' => 'lazy']);
-                                                    } else { ?>
-                                                    <?php } ?>
-                                                </div>
+                                            <figure class="thumbnail ">
+                                                <?php
+                                                $acf_img = get_field('blog-detail-img'); 
+                                                if ($acf_img) {
+                                                    if (is_array($acf_img)) {
+                                                    $src = $acf_img['sizes']['medium_large'] ?? $acf_img['url'];
+                                                    $alt = $acf_img['alt'] ?: get_the_title();
+                                                    } else {
+                                                    // 返り値が「画像URL」の設定の場合
+                                                    $src = $acf_img;
+                                                    $alt = get_the_title();
+                                                    }
+                                                    echo '<img src="' . esc_url($src) . '" alt="' . esc_attr($alt) . '">';
+                                                }
+                                                // 2) アイキャッチ
+                                                elseif (has_post_thumbnail()) {
+                                                    the_post_thumbnail('medium_large', [
+                                                    'alt' => get_the_title(),
+                                                    'loading' => 'lazy'
+                                                    ]);
+                                                }
+                                                // 3) どちらも無いときのダミー
+                                                else {
+                                                    echo '<img src="' . esc_url(get_stylesheet_directory_uri()) . '/img/noimg-156x190.jpg" alt="">';
+                                                }
+                                                ?>
+                                                </figure>
                                                 <div class="blog-box-right">
                                                     <ul class="cat-list">
                                                         <li class="blog-category">
                                                             <?php
                                                             $cats = get_the_category();
                                                             if (!empty($cats)) {
-                                                                echo '<div class="cat-list"><span class="blog-category">' . esc_html($cats[0]->name) . '</span></div>';
+                                                                echo '<div class="cat-list">' . esc_html($cats[0]->name) . '</div>';
                                                             }
                                                             ?>
                                                         </li>
@@ -240,50 +260,7 @@
                                             </div>
                                         </a>
                                     </div>
-                                    <!-- <li class="blog-box">
-                                <a href="<?php echo esc_url(home_url('/blog-detalis/')); ?>">
-                                    <div class="blog-box-main">
-                                        <div class="thumbnail"><img src="<?php echo get_template_directory_uri(); ?>/img/blog02.jpg" alt=""></div>
-                                        <div class="blog-box-right">
-                                            <ul class="cat-list">
-                                                <li class="blog-category">社内研修</li>
-                                            </ul>
-                                            <p class="topics">内定者向け研修を行いました。</p>
-                                            <time datetime="2024.08.25" class="date">2024.08.25</time>
-                                        </div>
-                                    </div>
-                                </a>
-                            </li>
-                            <li class="blog-box">
-                                <a href="<?php echo esc_url(home_url('/blog-detalis/')); ?>">
-                                    <div class="blog-box-main">
-                                        <div class="thumbnail"><img src="<?php echo get_template_directory_uri(); ?>/img/blog03.jpg" alt=""></div>
-                                        <div class="blog-box-right">
-                                            <ul class="cat-list">
-                                                <li class="blog-category">社内イベント</li>
-                                            </ul>
-                                            <p class="topics topics3">【社員旅行2023】沖縄でリフレッシュ！チームワークも深まった！</p>
-                                            <time datetime="2024.03.25" class="date">2024.03.25</time>
-                                        </div>
-                                    </div>
-                                </a>
-                            </li>
-                            <li class="blog-box">
-                                <a href="<?php echo esc_url(home_url('/blog-details/')); ?>">
-                                    <div class="blog-box-main">
-                                        <div class="thumbnail">
-                                            <img src="<?php echo get_template_directory_uri(); ?>/img/blog04.jpg" alt="">
-                                        </div>
-                                        <div class="blog-box-right">
-                                            <ul class="cat-list">
-                                                <li class="blog-category">お知らせ</li>
-                                            </ul>
-                                            <p class="topics">【新卒採用2024】エントリー受付中！</p>
-                                            <time datetime="2024.03.01" class="date">2024.03.01</time>
-                                        </div>
-                                    </div>
-                                </a>
-                            </li>-->
+        
                                 <?php endwhile;
                             else : ?>
                                 <li class="blog-box">記事はまだありません。</li>

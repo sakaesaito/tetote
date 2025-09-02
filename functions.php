@@ -5,8 +5,8 @@ function theme_enqueue_files()
     wp_enqueue_style(
         'theme-style', 
         get_stylesheet_uri(), [], 
-        filemtime(get_stylesheet_directory() . '/style.css'
-    ));
+        filemtime(get_stylesheet_directory() . '/style.css')
+    );
 
     // Lightbox
     wp_enqueue_style(
@@ -38,3 +38,10 @@ function theme_enqueue_files()
 }
 
 add_action('wp_enqueue_scripts', 'theme_enqueue_files');
+ // アイキャッチ機能を有効化
+add_theme_support('post-thumbnails');
+
+ // ブログカード用の画像サイズ（
+add_image_size('blog-card', 158, 190, true); 
+ // ブログカード用の画像サイズ（
+add_image_size('staff-box', 300, 379, true); 

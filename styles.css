@@ -1643,12 +1643,15 @@ footer {
   }
 }
 
+.infinity-slider .swiper-wrapper {
+  transition-timing-function: linear !important;
+}
+
 .swiper-slide {
   display: flex;
   gap: 20px;
   justify-content: center;
   align-items: center;
-  transition-timing-function: linear !important;
 }
 .swiper-slide img {
   display: block;
@@ -2151,6 +2154,7 @@ footer {
 }
 
 .staff-inner {
+  width: 100%;
   padding-left: 16.8%;
 }
 @media screen and (max-width: 1024px) {
@@ -2248,24 +2252,35 @@ footer {
   }
 }
 
-.staff-box {
+.post-slide-item {
   position: relative;
   width: 100%;
   height: 412px;
   overflow: visible;
-  max-width: 300px;
 }
 @media screen and (max-width: 1024px) {
-  .staff-box {
+  .post-slide-item {
     margin-left: 0;
   }
 }
-.staff-box:nth-child(4) {
+.post-slide-item:nth-child(4) {
   margin-right: 0;
   margin-top: 30px;
 }
-.staff-box:nth-child(2) {
+.post-slide-item:nth-child(2) {
   margin-top: 30px;
+}
+
+.staff-box {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  object-fit: contain;
+}
+
+.staff-slide {
+  max-width: 300px;
+  width: 100%;
 }
 
 .staff-box-message {
@@ -2376,6 +2391,10 @@ footer {
   .staff-box:nth-child(6n+4) {
     margin-top: 28px;
   }
+}
+
+.infinity-slider .swiper-wrapper {
+  transition-timing-function: linear !important;
 }
 
 .career {
@@ -2899,7 +2918,7 @@ footer {
   display: flex;
   flex-direction: column;
   height: auto;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 @media screen and (max-width: 1024px) {
   .blog-box-right {

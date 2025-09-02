@@ -85,11 +85,12 @@ document.addEventListener('DOMContentLoaded', function () {
 
 /* 無限スライダー */
 document.addEventListener('DOMContentLoaded', () => {
-    const sliderContainer = document.querySelector('.infinity-slider .swiper01');
-    if (sliderContainer);
+    const sliderContainer = document.querySelector('.infinity-slider .swiper');
+    if (sliderContainer)
     new Swiper(sliderContainer, {
         speed: 6000,
         autoplay: { delay: 0, disableOnInteraction: false },
+        loopAdditionalSlides: 10,
         loop: true,
         allowTouchMove: false,
         centeredSlides: true,

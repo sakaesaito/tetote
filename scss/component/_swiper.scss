@@ -59,13 +59,15 @@
         padding-bottom: 0;
     } 
 }
+.infinity-slider .swiper-wrapper {
+    transition-timing-function: linear !important;
+    }
 
 .swiper-slide {
     display: flex;
     gap: 20px;
     justify-content: center;
     align-items: center;
-    transition-timing-function: linear !important;
 
     img {
         display: block;
