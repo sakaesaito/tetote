@@ -13,6 +13,14 @@ function theme_enqueue_files()
         'lightbox-css', 
         'https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/css/lightbox.min.css', [], '2.11.4'
     );
+    // JS
+wp_enqueue_script(
+    'lightbox-js',
+    'https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/js/lightbox.min.js',
+    ['jquery'],
+    '2.11.4',
+    true
+    );
 
     // Swiper
     wp_enqueue_style(

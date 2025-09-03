@@ -14,7 +14,7 @@
                                 <h3 class="page-staff-box-item"><?php the_field('message2'); ?></h3>
                                 <p class="page-staff-box-position"><?php the_field('position'); ?></p>
                                 <div class="page-staff-box-name-sec">
-                                    <p class="page-staff-box-name"><?php the_title(); ?></p>
+                                    <p class="page-staff-box-name"><?php the_field('staff'); ?></p>
                                     <p class="page-staff-box-year"><?php the_field('year'); ?>年入社</p>
                                 </div>
                                 <p class="page-staff-box-note"><?php the_field('note'); ?></p>
@@ -75,48 +75,41 @@
     <div class="sub-inner sub-inner-staff-details">
         <h2 class="page-staff-title-member">その他のメンバー</h2>
         <div class="page-staff-sec">
-            <div class="sub-staff-box page-staff-box-list">
-                <a href="<?php echo home_url('/single-staff/'); ?>">
-                    <img src="<?php echo get_template_directory_uri(); ?>/img/syain04.jpg" alt="社員写真ー高橋智">
-                    <div class="sub-staff-box-img page-staff-list">
-                        <p class="sub-staff-box-message"><?php the_field('message1'); ?></p>
-                        <p class="sub-staff-box-message"><?php the_field('message2'); ?></p>
-                        <div class="staff-box-post">
-                            <p class="staff-box-position"><?php the_field('position'); ?></p>
-                            <p class="staff-box-year"><?php the_field('year'); ?>年入社</p>
-                        </div>
-                        <p class="staff-box-name"><?php the_title(); ?></p>
+
+            <?php
+            $staff_q = new WP_Query([
+                'post_type'      => 'staff',
+                'posts_per_page' => 3,
+                'orderby'        => 'date',
+                'order'          => 'DESC',
+            ]);
+            if ($staff_q->have_posts()) :
+                while ($staff_q->have_posts()) : $staff_q->the_post();
+                    $message01 = get_field('message01') ?: '';
+                    $message02 = get_field('message02') ?: '';
+                    $position  = get_field('position')  ?: '';
+                    $year = get_field('year') ?: '';
+                    $name = get_field('staff');
+            ?>
+                    <div class="sub-staff-box page-staff-box-list">
+                        <a href="<?php the_permalink(); ?>">
+                            <figure><?php the_post_thumbnail('medium'); ?></figure>
+                            <div class="sub-staff-box-img page-staff-list">
+                                <p class="sub-staff-box-message1"><?php the_field('message1'); ?></p>
+                                <p class="sub-staff-box-message2"><?php the_field('message2'); ?></p>
+                                <div class="staff-box-post">
+                                    <p class="staff-box-position"><?php the_field('position'); ?></p>
+                                    <p class="staff-box-year"><?php the_field('year'); ?>年入社</p>
+                                </div>
+                                <p class="staff-box-name"><?php the_field('staff'); ?></p>
+                            </div>
+                        </a>
                     </div>
-                </a>
-            </div>
-            <div class="sub-staff-box page-staff-box-list">
-                <a href="<?php echo home_url('/single-staff/'); ?>">
-                    <img src="<?php the_post_thumbnail('medium'); ?>">
-                    <div class="sub-staff-box-img page-staff-list">
-                        <p class="sub-staff-box-message"><?php the_field('message1'); ?></p>
-                        <p class="sub-staff-box-message"><?php the_field('message2'); ?></p>
-                        <div class="staff-box-post">
-                            <p class="staff-box-position"><?php the_field('position'); ?></p>
-                            <p class="staff-box-year"><?php the_field('year'); ?>年入社</p>
-                        </div>
-                        <p class="staff-box-name"><?php the_title(); ?></p>
-                    </div>
-                </a>
-            </div>
-            <div class="sub-staff-box page-staff-box-list">
-                <a href="<?php echo home_url('/single-staff/'); ?>">
-                    <img src="<?php the_post_thumbnail('medium'); ?>">
-                    <div class="sub-staff-box-img page-staff-list">
-                        <p class="sub-staff-box-message"><?php the_field('message1'); ?></p>
-                        <p class="sub-staff-box-message"><?php the_field('message2'); ?></p>
-                        <div class="staff-box-post">
-                            <p class="staff-box-position"><?php the_field('position'); ?></p>
-                            <p class="staff-box-year"><?php the_field('year'); ?>年入社</p>
-                        </div>
-                        <p class="staff-box-name"><?php the_title(); ?></p>
-                    </div>
-                </a>
-            </div>
+                <?php endwhile;
+            else: ?>
+                <div class="swiper-slide">スタッフ情報はまだありません。</div>
+            <?php endif;
+            wp_reset_postdata(); ?>
         </div>
     </div>
 </section>

@@ -110,18 +110,18 @@ document.addEventListener('DOMContentLoaded', () => {
 /* STAFFスライダー */
 
 document.addEventListener('DOMContentLoaded', function () {
-    const staffSliderEl = document.querySelector('.staff-sec-inner .swiper02');
+    const staffSliderEl = document.querySelector('.staff-sec-inner.swiper02');
     if (staffSliderEl) {
         new Swiper(staffSliderEl, {
-            loop: false,               // 無限OFF
+            loop: false,            
             speed: 600,
             slidesPerView: 1,
             spaceBetween: 20,
-            allowTouchMove: false,     // ボタンでのみスライド
+            allowTouchMove: true,    
             keyboard: { enabled: true },
             navigation: {
-                nextEl: staffSliderEl.querySelector('.swiper-button-next'),
-                prevEl: staffSliderEl.querySelector('.swiper-button-prev'),
+                nextEl:('.swiper-button-next'),
+                prevEl:('.swiper-button-prev'),
             },
             breakpoints: {
                 640: { slidesPerView: 2, spaceBetween: 24 },

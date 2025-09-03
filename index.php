@@ -1,5 +1,5 @@
 <?php get_header(); ?>
-<!-- 
+
 <main>
     <section class="mv">
         <div class="mv-inner">
@@ -25,7 +25,7 @@
     </section>
 
     <!-- Infinity Slider セクション -->
-    <!-- <?php
+    <?php
     $slides = [
         get_stylesheet_directory_uri() . '/img/top-slide01.jpg',
         get_stylesheet_directory_uri() . '/img/top-slide02.jpg',
@@ -289,7 +289,7 @@
         if (window.innerWidth <= 768) {
             document.getElementById('mvImg').style.backgroundImage = "url('<?php echo get_template_directory_uri(); ?>/img/fv02.jpg')";
         }
-    }); -->
+    });
 </script>
 
 
