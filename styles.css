@@ -1656,6 +1656,20 @@ footer {
 .swiper-slide img {
   display: block;
   height: auto;
+  border-radius: 30px;
+}
+
+.swiper-slide:nth-child(even) {
+  padding-top: 35px;
+}
+@media screen and (max-width: 768px) {
+  .swiper-slide:nth-child(even) {
+    padding-top: 30px;
+  }
+}
+
+.swiper-slide.alt {
+  padding-top: 36px;
 }
 
 .breadcrumbs {
@@ -2262,6 +2276,7 @@ footer {
   position: relative;
   width: 100%;
   overflow: visible;
+  top: -64px;
 }
 @media screen and (max-width: 1024px) {
   .post-slide-item {
@@ -4642,6 +4657,7 @@ section.show {
   max-width: 710px;
   margin-top: 23px;
   width: 100%;
+  border-radius: 30px;
 }
 .page-staff-pic img {
   width: 100%;
@@ -4664,7 +4680,7 @@ section.show {
 @media screen and (max-width: 1024px) {
   .page-staff-sec {
     grid-template-columns: repeat(2, 2fr);
-    max-width: 600px;
+    max-width: 650px;
     width: 100%;
     margin-inline: auto;
   }

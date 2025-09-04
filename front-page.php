@@ -107,7 +107,7 @@
                                     <article class="staff-card ">
                                         <a class="staff-box" href="<?php the_permalink(); ?>">
                                             <?php if (has_post_thumbnail()) {
-                                                the_post_thumbnail('full' , ['loading' => 'lazy', 'alt' => $name]);
+                                                the_post_thumbnail('large' , ['loading' => 'lazy', 'alt' => $name]);
                                             } ?>
                                             <div class="post-slide-item">
                                                 <?php if ($message01 !== '') : ?>
@@ -138,11 +138,11 @@
                 </div>
             </div>
             <div class="viewmore-button viewmore-button-staff">
-                <a href="<?php echo get_permalink(get_page_by_path('staff')); ?>">VIEW MORE</a>
+            <a href="<?php echo esc_url( get_post_type_archive_link( 'staff' ) ); ?>">VIEW MORE</a>
             </div>
             <div class="page-button-box">
-                <a href="" class="button-white-left"></a>
-                <a href="" class="button-white-right"></a>
+                <a href="" class="button-white-left "></a>
+                <a href="" class="button-white-right "></a>
             </div>
         </div>
     </section>

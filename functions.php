@@ -3,33 +3,41 @@ function theme_enqueue_files()
 {
     // テーマCSS
     wp_enqueue_style(
-        'theme-style', 
-        get_stylesheet_uri(), [], 
+        'theme-style',
+        get_stylesheet_uri(),
+        [],
         filemtime(get_stylesheet_directory() . '/style.css')
     );
 
     // Lightbox
     wp_enqueue_style(
-        'lightbox-css', 
-        'https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/css/lightbox.min.css', [], '2.11.4'
+        'lightbox-css',
+        'https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/css/lightbox.min.css',
+        [],
+        '2.11.4'
     );
     // JS
-wp_enqueue_script(
-    'lightbox-js',
-    'https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/js/lightbox.min.js',
-    ['jquery'],
-    '2.11.4',
-    true
+    wp_enqueue_script(
+        'lightbox-js',
+        'https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/js/lightbox.min.js',
+        ['jquery'],
+        '2.11.4',
+        true
     );
 
     // Swiper
     wp_enqueue_style(
-        'swiper-css', 
-        'https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css', [], '11.0.0'
+        'swiper-css',
+        'https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css',
+        [],
+        '11.0.0'
     );
     wp_enqueue_script(
-        'swiper-js', 
-        'https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js', [], '11.0.0', true
+        'swiper-js',
+        'https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js',
+        [],
+        '11.0.0',
+        true
     );
 
     // ★ WordPress 同梱の jQuery を使う
@@ -46,9 +54,21 @@ wp_enqueue_script(
 }
 
 add_action('wp_enqueue_scripts', 'theme_enqueue_files');
- // アイキャッチ機能を有効化
+
+
+// アイキャッチ機能を有効化
 add_theme_support('post-thumbnails');
 
 
 //  // ブログカード用の画像サイズ（
-add_image_size('staff-box', 300, 379, true); 
+add_image_size('staff-box', 300, 379, true);
+
+add_action('init', function () {
+    register_post_type('staff', [
+        'label'       => 'スタッフ',
+        'public'      => true,
+        'has_archive' => true,                  
+        'rewrite'     => ['slug' => 'staff'],  
+        'supports'    => ['title', 'editor', 'thumbnail'],
+    ]);
+});
