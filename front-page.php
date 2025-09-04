@@ -72,7 +72,7 @@
                 </div>
             </div>
             <div class="viewmore-button">
-                <a href="<?php echo get_permalink(get_page_by_path('about')); ?>">VIEW MORE</a>
+                <a href="<?php echo home_url('/about/'); ?>">VIEW MORE</a>
             </div>
         </div>
     </section>
@@ -107,7 +107,7 @@
                                     <article class="staff-card ">
                                         <a class="staff-box" href="<?php the_permalink(); ?>">
                                             <?php if (has_post_thumbnail()) {
-                                                the_post_thumbnail('medium' , ['loading' => 'lazy', 'alt' => $name]);
+                                                the_post_thumbnail('full' , ['loading' => 'lazy', 'alt' => $name]);
                                             } ?>
                                             <div class="post-slide-item">
                                                 <?php if ($message01 !== '') : ?>
@@ -141,8 +141,8 @@
                 <a href="<?php echo get_permalink(get_page_by_path('staff')); ?>">VIEW MORE</a>
             </div>
             <div class="page-button-box">
-                <a href="#" class="button-white-left swiper-button-next"></a>
-                <a href="#" class="button-white-right swiper-button-prev"></a>
+                <a href="" class="button-white-left"></a>
+                <a href="" class="button-white-right"></a>
             </div>
         </div>
     </section>
@@ -221,7 +221,7 @@
                                                 $acf_img = get_field('blog-detail-img'); 
                                                 if ($acf_img) {
                                                     if (is_array($acf_img)) {
-                                                    $src = $acf_img['sizes']['medium_large'] ?? $acf_img['url'];
+                                                    $src = $acf_img['sizes']['medium'] ?? $acf_img['url'];
                                                     $alt = $acf_img['alt'] ?: get_the_title();
                                                     } else {
                                                     // 返り値が「画像URL」の設定の場合

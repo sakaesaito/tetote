@@ -39,7 +39,7 @@
 
                             <div class="sub-staff-box">
                                 <a href="<?php the_permalink(); ?>">
-                                    <img src="<?php the_post_thumbnail(); ?>" alt="">
+                                    <img src="<?php the_post_thumbnail('full'); ?>" alt="">
                                     <div class="sub-staff-box-img">
                                         <p class="sub-staff-box-message1"><?php the_field('message1'); ?></p>
                                         <p class="sub-staff-box-message2"><?php the_field('message2'); ?></p>
@@ -47,12 +47,11 @@
                                             <p class="staff-box-position"><?php the_field('position'); ?></p>
                                             <p class="staff-box-year"><?php the_field('year'); ?>年入社</p>
                                         </div>
-                                        <p class="staff-box-name"><?php the_title(); ?></p>
+                                        <p class="staff-box-name"><?php the_field('staff'); ?></p>
                                     </div>
                                 </a>
                             </div>
-                    <?php endwhile;
-                    endif;
+                    <?php endwhile;endif;
                     wp_reset_postdate(); ?>
                 </div>
             </div>

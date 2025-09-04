@@ -113,15 +113,15 @@ document.addEventListener('DOMContentLoaded', function () {
     const staffSliderEl = document.querySelector('.staff-sec-inner.swiper02');
     if (staffSliderEl) {
         new Swiper(staffSliderEl, {
-            loop: false,            
+            loop: true,            
             speed: 600,
+            autoHeight: false,
             slidesPerView: 1,
             spaceBetween: 20,
             allowTouchMove: true,    
-            keyboard: { enabled: true },
             navigation: {
-                nextEl:('.swiper-button-next'),
-                prevEl:('.swiper-button-prev'),
+                nextEl:'.swiper-button-next',
+                prevEl:'.swiper-button-prev',
             },
             breakpoints: {
                 640: { slidesPerView: 2, spaceBetween: 24 },

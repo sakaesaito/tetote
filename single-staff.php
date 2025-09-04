@@ -80,7 +80,7 @@
             $staff_q = new WP_Query([
                 'post_type'      => 'staff',
                 'posts_per_page' => 3,
-                'orderby'        => 'date',
+                'orderby'        => 'rand',
                 'order'          => 'DESC',
             ]);
             if ($staff_q->have_posts()) :
@@ -93,10 +93,10 @@
             ?>
                     <div class="sub-staff-box page-staff-box-list">
                         <a href="<?php the_permalink(); ?>">
-                            <figure><?php the_post_thumbnail('medium'); ?></figure>
+                            <figure><?php the_post_thumbnail('full'); ?></figure>
                             <div class="sub-staff-box-img page-staff-list">
-                                <p class="sub-staff-box-message1"><?php the_field('message1'); ?></p>
-                                <p class="sub-staff-box-message2"><?php the_field('message2'); ?></p>
+                                <p class="sub-staff-box-message1"><?php the_field('message01'); ?></p>
+                                <p class="sub-staff-box-message2"><?php the_field('message02'); ?></p>
                                 <div class="staff-box-post">
                                     <p class="staff-box-position"><?php the_field('position'); ?></p>
                                     <p class="staff-box-year"><?php the_field('year'); ?>年入社</p>

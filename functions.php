@@ -49,7 +49,6 @@ add_action('wp_enqueue_scripts', 'theme_enqueue_files');
  // アイキャッチ機能を有効化
 add_theme_support('post-thumbnails');
 
- // ブログカード用の画像サイズ（
-add_image_size('blog-card', 158, 190, true); 
- // ブログカード用の画像サイズ（
+
+//  // ブログカード用の画像サイズ（
 add_image_size('staff-box', 300, 379, true); 
