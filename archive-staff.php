@@ -39,7 +39,7 @@
 
                             <div class="sub-staff-box">
                                 <a href="<?php the_permalink(); ?>">
-                                    <img src="<?php the_post_thumbnail('full'); ?>" alt="">
+                                    <img src="<?php the_post_thumbnail('full'); ?>">
                                     <div class="sub-staff-box-img">
                                         <p class="sub-staff-box-message1"><?php the_field('message1'); ?></p>
                                         <p class="sub-staff-box-message2"><?php the_field('message2'); ?></p>
@@ -52,7 +52,7 @@
                                 </a>
                             </div>
                     <?php endwhile;endif;
-                    wp_reset_postdate(); ?>
+                    wp_reset_postdata(); ?>
                 </div>
             </div>
         </div>
