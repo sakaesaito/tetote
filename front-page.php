@@ -30,7 +30,7 @@
         get_stylesheet_directory_uri() . '/img/top-slide02.jpg',
         get_stylesheet_directory_uri() . '/img/top-slide03.jpg',
     ];
-    $repeat = 4;
+    $repeat = 10;
     ?>
     <section class="infinity-slider">
         <div class="slider-inner">
@@ -194,7 +194,7 @@
                             <h2 class="content-title blog-content-title">採用ブログ</h2>
                             <p class="content-item blog-content-item">採用情報やイベント情報、社員の紹介など、<br> 日々の現場の様子をご紹介します。</p>
                         </div>
-                        <a class="blog-top-page" href="<?php echo esc_url(get_permalink(get_option('page_for_posts')) ?: home_url('/blog/')); ?>">
+                        <a class="blog-top-page" href="<?php echo get_permalink( get_option('page_for_posts') ); ?>">
                             <div class="button-white-right button-white-right-blog"></div>
                             <div class="blog-top-link">VIEW MORE</div>
                         </a>
@@ -212,7 +212,7 @@
                             ]);
                             if ($blog_q->have_posts()) :
                                 while ($blog_q->have_posts()) : $blog_q->the_post(); ?>
-                                    <li class="blog-box"><a href="<?php the_permalink(); ?>">
+                                    <li class="blog-box">
                                     <div class="blog-box-main">
                                         <a href="<?php the_permalink(); ?>">
                                             <div class="blog-box-main">
@@ -242,21 +242,21 @@
                                                     echo '<img src="' . esc_url(get_stylesheet_directory_uri()) . '/img/noimg-156x190.jpg" alt="">';
                                                 }
                                                 ?>
-                                                </figure>
-                                                <div class="blog-box-right">
-                                                    <ul class="cat-list">
-                                                        <li class="blog-category">
-                                                            <?php
-                                                            $cats = get_the_category();
-                                                            if (!empty($cats)) {
-                                                                echo '<div class="cat-list">' . esc_html($cats[0]->name) . '</div>';
-                                                            }
-                                                            ?>
-                                                        </li>
-                                                    </ul>
-                                                    <p class="topics"><?php the_title(); ?></p>
-                                                    <time datetime="<?php echo esc_attr(get_the_date('c')); ?>" class="date"><?php echo esc_html(get_the_date('Y.m.d')); ?></time>
-                                                </div>
+                                            </figure>
+                                            <div class="blog-box-right">
+                                                <ul class="cat-list">
+                                                    <li class="blog-category">
+                                                        <?php
+                                                        $cats = get_the_category();
+                                                        if (!empty($cats)) {
+                                                            echo '<div class="cat-list">' . esc_html($cats[0]->name) . '</div>';
+                                                        }
+                                                        ?>
+                                                    </li>
+                                                </ul>
+                                                <p class="topics"><?php the_title(); ?></p>
+                                                <time datetime="<?php echo esc_attr(get_the_date('c')); ?>" class="date"><?php echo esc_html(get_the_date('Y.m.d')); ?></time>
+                                            </div>
                                             </div>
                                         </a>
                                     </div>
@@ -269,7 +269,7 @@
                         </ul>
                     </div>
                     <div class="blog-top-page-2">
-                        <a href="<?php echo esc_url(get_permalink(get_option('page_for_posts')) ?: home_url('/blog/')); ?>">
+                        <a href="<?php echo get_permalink( get_option('page_for_posts') ); ?>">
                             <div class="button-white-right button-white-right-blog"></div>
                             <div class="blog-top-link">VIEW MORE</div>
                         </a>

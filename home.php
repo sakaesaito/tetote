@@ -1,8 +1,5 @@
 <?php get_header(); ?>
 
-<?php if(have_posts()): ?>
-<?php while(have_posts()): the_post(); ?>
-
 <section id="sub-blog" class="sub-blog">
     <div class="sub-mv sub-mv-blog">
         <div class="sub-inner sub-inner-blog">
@@ -24,122 +21,23 @@
         <div class="sub-blog-sec">
             <div class="blog-wrapper">
                 <ul class="blog-list sub-blog-list">
-                    <li class="blog-box">
-                        <a href="<?php echo esc_url(home_url('/blog01/')); ?>">
-                            <div class="blog-box-main sub-blog-box-main">
-                                <div class="thumbnail"><img src="<?php echo get_template_directory_uri(); ?>/img/blog01.jpg" alt=""></div>
-                                <div class="blog-box-right sub-blog-box-right">
-                                    <ul class="cat-list">
-                                        <li class="blog-category">社内研修</li>
-                                    </ul>
-                                    <p class="topics">新入社員向けに、入社前研修を行いました。</p>
-                                    <time datetime="2025-03-25" class="date">2025.03.25</time>
-                                </div>
-                            </div>
-                        </a>
-                    </li>
-                    <li class="blog-box">
-                        <a href="<?php echo esc_url(home_url('/blog02/')); ?>">
-                            <div class="blog-box-main sub-blog-box-main">
-                                <div class="thumbnail"><img src="<?php echo get_template_directory_uri(); ?>/img/blog02.jpg" alt=""></div>
-                                <div class="blog-box-right sub-blog-box-right">
-                                    <ul class="cat-list">
-                                        <li class="blog-category"><?php the_field('blog-category'); ?></li>
-                                    </ul>
-                                    <p class="topics">内定者向け研修を行いました。</p>
-                                    <time datetime="2024-08-25" class="date">2024.08.25</time>
-                                </div>
-                            </div>
-                        </a>
-                    </li>
-                    <li class="blog-box">
-                        <a href="<?php echo esc_url(home_url('/blog03/')); ?>">
-                            <div class="blog-box-main sub-blog-box-main">
-                                <div class="thumbnail"><img src="<?php echo get_template_directory_uri(); ?>/img/blog03.jpg" alt=""></div>
-                                <div class="blog-box-right sub-blog-box-right">
-                                    <ul class="cat-list">
-                                        <li class="blog-category">社内イベント</li>
-                                    </ul>
-                                    <p class="topics">【社員旅行2023】沖縄でリフレッシュ！チームワークも深まった！</p>
-                                    <time datetime="2024-03-25" class="date">2024.03.25</time>
-                                </div>
-                            </div>
-                        </a>
-                    </li>
-                    <li class="blog-box">
-                        <a href="<?php echo esc_url(home_url('/blog04/')); ?>">
-                            <div class="blog-box-main sub-blog-box-main">
-                                <div class="thumbnail">
-                                    <img src="<?php echo get_template_directory_uri(); ?>/img/blog04.jpg" alt="">
-                                </div>
-                                <div class="blog-box-right sub-blog-box-right">
-                                    <ul class="cat-list">
-                                        <li class="blog-category">お知らせ</li>
-                                    </ul>
-                                    <p class="topics">【新卒採用2024】エントリー受付中！</p>
-                                    <time datetime="2024-03-01" class="date">2024.03.01</time>
-                                </div>
-                            </div>
-                        </a>
-                    </li>
-                    <li class="blog-box">
-                        <a href="<?php echo esc_url(home_url('/blog01/')); ?>">
-                            <div class="blog-box-main sub-blog-box-main">
-                                <div class="thumbnail"><img src="<?php echo get_template_directory_uri(); ?>/img/blog01.jpg" alt=""></div>
-                                <div class="blog-box-right sub-blog-box-right">
-                                    <ul class="cat-list">
-                                        <li class="blog-category">社内研修</li>
-                                    </ul>
-                                    <p class="topics">新入社員向けに、入社前研修を行いました。</p>
-                                    <time datetime="2055-02-11" class="date">2055.02.11</time>
-                                </div>
-                            </div>
-                        </a>
-                    </li>
-                    <li class="blog-box">
-                        <a href="<?php echo esc_url(home_url('/blog02/')); ?>">
-                            <div class="blog-box-main sub-blog-box-main">
-                                <div class="thumbnail"><img src="<?php echo get_template_directory_uri(); ?>/img/blog02.jpg" alt=""></div>
-                                <div class="blog-box-right sub-blog-box-right">
-                                    <ul class="cat-list">
-                                        <li class="blog-category">社内研修</li>
-                                    </ul>
-                                    <p class="topics">内定者向け研修を行いました。</p>
-                                    <time datetime="2024-08-25" class="date">2024.08.25</time>
-                                </div>
-                            </div>
-                        </a>
-                    </li>
-                    <li class="blog-box">
-                        <a href="<?php echo esc_url(home_url('/blog03/')); ?>">
-                            <div class="blog-box-main sub-blog-box-main">
-                                <div class="thumbnail"><img src="<?php echo get_template_directory_uri(); ?>/img/blog03.jpg" alt=""></div>
-                                <div class="blog-box-right sub-blog-box-right">
-                                    <ul class="cat-list">
-                                        <li class="blog-category">社内イベント</li>
-                                    </ul>
-                                    <p class="topics">【社員旅行2023】沖縄でリフレッシュ！チームワークも深まった！</p>
-                                    <time datetime="2024-03-25" class="date">2024.03.25</time>
-                                </div>
-                            </div>
-                        </a>
-                    </li>
-                    <li class="blog-box">
-                        <a href="<?php echo esc_url(home_url('/blog04/')); ?>">
-                            <div class="blog-box-main sub-blog-box-main">
-                                <div class="thumbnail">
-                                    <img src="<?php echo get_template_directory_uri(); ?>/img/blog04.jpg" alt="">
-                                </div>
-                                <div class="blog-box-right sub-blog-box-right">
-                                    <ul class="cat-list">
-                                        <li class="blog-category">お知らせ</li>
-                                    </ul>
-                                    <p class="topics">【新卒採用2024】エントリー受付中！</p>
-                                    <time datetime="2024-03-01" class="date">2024.03.01</time>
-                                </div>
-                            </div>
-                        </a>
-                    </li>
+
+                <?php if (have_posts()): ?>
+                    <?php while (have_posts()): the_post(); ?>
+
+                    <div class="blog-detail-date">
+                        <p class="blog-detail-tag blog-category"><?php the_field('blog-category'); ?></p>
+                        <time class="date" datetime="2023-03-25"><?php the_field('datetime'); ?></time>
+                    </div>
+                    <h2 class="sub-title sub-title-blog-detail"><?php the_field('blog-title'); ?></h2>
+                    <div class="blog-detail-img"><?php if (has_post_thumbnail()) : ?>
+                        <?php the_post_thumbnail('full'); ?>
+                        <?php endif; ?></div>
+                    <p class="blog-detail-note1"><?php the_content(); ?></p>
+                    
+                <?php endwhile; ?>
+                <?php endif; ?> 
+
                 </ul>
             </div>
             <div class="sub-blog-page-box">
@@ -152,7 +50,5 @@
     </div>
 </section>
 
-<?php endwhile; ?>
-<?php endif; ?>
 
 <?php get_footer(); ?>

@@ -35,7 +35,7 @@
                 </div>
             
         <?php endwhile; ?>
-    <?php endif; ?>
+        <?php endif; ?>
 </main>
 
 <script>

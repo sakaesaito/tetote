@@ -4111,6 +4111,10 @@ section.show {
   }
 }
 
+.custom-thumbnail {
+  border-radius: 30px;
+}
+
 .is-small-blog {
   margin-top: 118px;
 }

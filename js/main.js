@@ -107,6 +107,8 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 
+
+
 /* STAFFスライダー */
 
 document.addEventListener('DOMContentLoaded', function () {
@@ -125,8 +127,10 @@ document.addEventListener('DOMContentLoaded', function () {
             },
             breakpoints: {
                 640: { slidesPerView: 2, spaceBetween: 24 },
-                1024: { slidesPerView: 3, spaceBetween: 28 },
-                1280: { slidesPerView: 4, spaceBetween: 32 },
+                1200: { slidesPerView: 2.6, spaceBetween: 28 },
+                1200: { slidesPerView: 3, spaceBetween: 28 },
+                1400: { slidesPerView: 3.6, spaceBetween: 32 },
+                1600: { slidesPerView: 4, spaceBetween: 32 },
             },
             watchSlidesProgress: true,
             watchOverflow: true,

@@ -39,7 +39,7 @@
 
                             <div class="sub-staff-box">
                                 <a href="<?php the_permalink(); ?>">
-                                    <img src="<?php the_post_thumbnail('full'); ?>">
+                                    <?php the_post_thumbnail('full' , array('class' => 'custom-thumbnail')); ?>
                                     <div class="sub-staff-box-img">
                                         <p class="sub-staff-box-message1"><?php the_field('message1'); ?></p>
                                         <p class="sub-staff-box-message2"><?php the_field('message2'); ?></p>

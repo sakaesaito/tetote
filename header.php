@@ -55,8 +55,8 @@
                         <div class="drawer-list">
                             <ul class="drawer-line">
                                 <li class="drawer-item"><a href="<?php echo esc_url(home_url('/about/')); ?>">ABOUT US<br><span>TETOTEについて</span></a></li>
-                                <li class="drawer-item"><a href="<?php the_permalink(); ?>">STAFF<br><span>社員について</span></a></li>
-                                <li class="drawer-item"><a href="<?php echo esc_url(home_url('/blog/')); ?>">BLOG<br><span>採用ブログ</span></a></li>
+                                <li class="drawer-item"><a href="<?php echo get_post_type_archive_link('staff'); ?>">STAFF<br><span>社員について</span></a></li>
+                                <li class="drawer-item"><a href="<?php echo home_url('/home'); ?>">BLOG<br><span>採用ブログ</span></a></li>
                                 <li>
                                     <p class="drawer-parts"></p>
                                 </li>
