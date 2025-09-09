@@ -22,6 +22,14 @@
             <div class="blog-wrapper">
                 <ul class="blog-list sub-blog-list">
 
+                    <?php
+                    query_posts( array(
+                    'post_type'      => 'post',
+                    'posts_per_page' => 8,
+                    'paged'          => get_query_var('paged') ?: 1
+                    ) );
+                    ?>
+
                 <?php if (have_posts()): ?>
                     <?php while (have_posts()): the_post(); ?>
 
@@ -32,10 +40,7 @@
                     <h2 class="sub-title sub-title-blog-detail"><?php the_field('blog-title'); ?></h2>
                     <div class="blog-detail-img"><?php if (has_post_thumbnail()) : ?>
                         <?php the_post_thumbnail('full'); ?>
-                        <?php endif; ?></div>
-                    <p class="blog-detail-note1"><?php the_content(); ?></p>
-                    
-                <?php endwhile; ?>
+                        
                 <?php endif; ?> 
 
                 </ul>

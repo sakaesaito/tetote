@@ -3,7 +3,6 @@
     <div class="is-small is-small-blog">
         <ol class="breadcrumbs  breadcrumbs-blog-details">
             <?php if (function_exists('bcn_display')) bcn_display_list(); ?>
-            <li><span class="page-title"></li>
         </ol>
     </div>
 
@@ -15,7 +14,7 @@
 
                     <div class="blog-detail-date">
                         <p class="blog-detail-tag blog-category"><?php the_field('blog-category'); ?></p>
-                        <time class="date" datetime="2023-03-25"><?php the_field('datetime'); ?></time>
+                        <time class="date" datetime=""><?php the_field('datetime'); ?></time>
                     </div>
                     <h2 class="sub-title sub-title-blog-detail"><?php the_field('blog-title'); ?></h2>
                     <div class="blog-detail-img"><?php if (has_post_thumbnail()) : ?>
@@ -26,6 +25,7 @@
                 <?php endwhile; ?>
                 <?php endif; ?> 
             </div>
+
         </div>
     </section>
     <section class="blog-page">

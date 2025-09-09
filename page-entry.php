@@ -10,8 +10,7 @@
     <section class="entry-main">
         <div class="entry-bg">
             <div class="sub-inner entry-inner">
-                <h2 class="sub-title-entry">送信ありがとうございました。</h2>
-                <p class="entry-message">３営業日以内に人事担当者より<br>連絡させていただきます。</p>
+            <?php echo do_shortcode( '[contact-form-7 id="4f82566" title="ENTRY FORM"]' ); ?>
             </div>
         </div>
     </section>

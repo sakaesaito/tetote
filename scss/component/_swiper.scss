@@ -50,19 +50,6 @@
     }
 }
 
-.infinity-slider { 
-    overflow: hidden;
-    background-color: #fff;
-    position: relative;
-    @media screen and (max-width: 768px) {
-        padding-top: 41px;
-        padding-bottom: 0;
-    } 
-}
-.infinity-slider .swiper-wrapper {
-    transition-timing-function: linear !important;
-    }
-
 .swiper-slide {
     display: flex;
     gap: 20px;
@@ -74,16 +61,4 @@
         height: auto;
         border-radius: 30px;
     }
-}
-
-.swiper-slide:nth-child(even) {
-    padding-top: 35px;
-
-    @media screen and (max-width: 768px) {
-        padding-top: 30px;
-    }
-}
-
-.swiper-slide.alt {
-    padding-top: 36px;
 }

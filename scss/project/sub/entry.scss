@@ -1,0 +1,14 @@
+.Form-Item {
+    display: flex;
+    color: #222;
+}
+
+.form-title {
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 1;
+
+    & span {
+        color: #98802C;
+    }
+}

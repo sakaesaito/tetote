@@ -37,7 +37,7 @@
                 <div class="header-link">
                     <a class="header-button sub-header-button header-button-recruit" href="<?php echo home_url('/details/'); ?>">募集要項</a>
                     <a class="header-button  sub-header-button
-                    header-button-entry" href="<?php echo esc_url(home_url('/')); ?>contact/"<?php if(is_page('contact'))echo ' class="current"'; ?>>ENTRY</a>
+                    header-button-entry" href="<?php echo esc_url(home_url('/entry/')); ?>">ENTRY</a>
                     <button class="header-hamburger sub-header-hamburger js-hamburger">
                         <span></span>
                         <span></span>
@@ -56,7 +56,7 @@
                             <ul class="drawer-line">
                                 <li class="drawer-item"><a href="<?php echo esc_url(home_url('/about/')); ?>">ABOUT US<br><span>TETOTEについて</span></a></li>
                                 <li class="drawer-item"><a href="<?php echo get_post_type_archive_link('staff'); ?>">STAFF<br><span>社員について</span></a></li>
-                                <li class="drawer-item"><a href="<?php echo home_url('/home'); ?>">BLOG<br><span>採用ブログ</span></a></li>
+                                <li class="drawer-item"><a href="<?php echo esc_url( get_permalink( get_option('page_for_posts') ) ); ?>">BLOG<br><span>採用ブログ</span></a></li>
                                 <li>
                                     <p class="drawer-parts"></p>
                                 </li>
