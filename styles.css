@@ -3563,6 +3563,25 @@ footer {
   }
 }
 
+.input-text, .input-email, .input-file, .input-submit {
+  padding: 0;
+  border: none;
+  border-radius: 0;
+  outline: none;
+  background: none;
+  box-shadow: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border: 1px solid #AFA86F;
+}
+
+.input-text:focus,
+.input-email:focus {
+  outline: 2px solid #3498db;
+  outline-offset: 0;
+}
+
 .Form-Item {
   display: flex;
   color: #222;
@@ -3572,9 +3591,15 @@ footer {
   font-size: 32px;
   font-weight: 700;
   line-height: 1;
+  margin-top: 29px;
 }
 .form-title span {
   color: #98802C;
+}
+
+.Form-Item-Label {
+  width: 128px;
+  text-align: left;
 }
 
 .details-main {
@@ -4247,7 +4272,6 @@ section.show {
   justify-content: space-between;
   align-items: center;
   gap: 1rem;
-  flex-wrap: wrap;
   padding-top: 20px;
   padding-bottom: 20px;
   max-width: 1024px;

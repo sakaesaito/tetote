@@ -84,61 +84,61 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
 /* 無限スライダー */
-document.addEventListener('DOMContentLoaded', () => {
-    const sliderContainer = document.querySelector('.infinity-slider .swiper');
-    if (sliderContainer)
-    new Swiper(sliderContainer, {
-        speed: 6000,
-        autoplay: { delay: 0, disableOnInteraction: false },
-        loopAdditionalSlides: 10,
-        loop: true,
-        allowTouchMove: false,
-        centeredSlides: true,
-        breakpoints: {
-            0: { slidesPerView: 1.25, spaceBetween: 15 },
-            769: { slidesPerView: 2, spaceBetween: 24 },
-            1200: { slidesPerView: 2.8, spaceBetween: 34 },
-            1450: { slidesPerView: 3.5, spaceBetween: 42 }
-        },
-        watchSlidesProgress: true,
-        observer: true,
-        observeParents: true,
-    });
-});
+// document.addEventListener('DOMContentLoaded', () => {
+//     const sliderContainer = document.querySelector('.infinity-slider .swiper');
+//     if (sliderContainer)
+//     new Swiper(sliderContainer, {
+//         speed: 6000,
+//         autoplay: { delay: 0, disableOnInteraction: false },
+//         loopAdditionalSlides: 10,
+//         loop: true,
+//         allowTouchMove: false,
+//         centeredSlides: true,
+//         breakpoints: {
+//             0: { slidesPerView: 1.25, spaceBetween: 15 },
+//             769: { slidesPerView: 2, spaceBetween: 24 },
+//             1200: { slidesPerView: 2.8, spaceBetween: 34 },
+//             1450: { slidesPerView: 3.5, spaceBetween: 42 }
+//         },
+//         watchSlidesProgress: true,
+//         observer: true,
+//         observeParents: true,
+//     });
+// });
 
 
 
 
 /* STAFFスライダー */
 
-document.addEventListener('DOMContentLoaded', function () {
-    const staffSliderEl = document.querySelector('.staff-sec-inner.swiper02');
-    if (staffSliderEl) {
-        new Swiper(staffSliderEl, {
-            loop: true,            
-            speed: 600,
-            autoHeight: false,
-            slidesPerView: 1,
-            spaceBetween: 20,
-            allowTouchMove: true,    
-            navigation: {
-                nextEl:'.swiper-button-next',
-                prevEl:'.swiper-button-prev',
-            },
-            breakpoints: {
-                640: { slidesPerView: 2, spaceBetween: 24 },
-                1200: { slidesPerView: 2.6, spaceBetween: 28 },
-                1200: { slidesPerView: 3, spaceBetween: 28 },
-                1400: { slidesPerView: 3.6, spaceBetween: 32 },
-                1600: { slidesPerView: 4, spaceBetween: 32 },
-            },
-            watchSlidesProgress: true,
-            watchOverflow: true,
-            preloadImages: false,
-            lazy: true,
-        });
-    }
-});
+// document.addEventListener('DOMContentLoaded', function () {
+//     const staffSliderEl = document.querySelector('.staff-sec-inner.swiper02');
+//     if (staffSliderEl) {
+//         new Swiper(staffSliderEl, {
+//             loop: true,            
+//             speed: 600,
+//             autoHeight: false,
+//             slidesPerView: 1,
+//             spaceBetween: 20,
+//             allowTouchMove: true,    
+//             navigation: {
+//                 nextEl:'.swiper-button-next',
+//                 prevEl:'.swiper-button-prev',
+//             },
+//             breakpoints: {
+//                 640: { slidesPerView: 2, spaceBetween: 24 },
+//                 1200: { slidesPerView: 2.6, spaceBetween: 28 },
+//                 1200: { slidesPerView: 3, spaceBetween: 28 },
+//                 1400: { slidesPerView: 3.6, spaceBetween: 32 },
+//                 1600: { slidesPerView: 4, spaceBetween: 32 },
+//             },
+//             watchSlidesProgress: true,
+//             watchOverflow: true,
+//             preloadImages: false,
+//             lazy: true,
+//         });
+//     }
+// });
 
 
 // _____レスポンシブの375px未満のviewport画面幅を固定_____
