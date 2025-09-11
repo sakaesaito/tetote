@@ -30,30 +30,38 @@
                     ) );
                     ?>
 
-                <?php if (have_posts()): ?>
-                    <?php while (have_posts()): the_post(); ?>
+                    <?php if (have_posts()): ?>
+                        <?php while (have_posts()): the_post(); ?>
 
-                    <div class="blog-detail-date">
-                        <p class="blog-detail-tag blog-category"><?php the_field('blog-category'); ?></p>
-                        <time class="date" datetime="2023-03-25"><?php the_field('datetime'); ?></time>
-                    </div>
-                    <h2 class="sub-title sub-title-blog-detail"><?php the_field('blog-title'); ?></h2>
-                    <div class="blog-detail-img"><?php if (has_post_thumbnail()) : ?>
-                        <?php the_post_thumbnail('full'); ?>
-                        
-                <?php endif; ?> 
-
+                        <div class="blog-detail-date">
+                            <p class="blog-detail-tag blog-category">
+                            <?php the_category( ', ' ); ?></p>
+                            <time class="date" datetime="<?php echo get_the_date('Y-m-d'); ?>">
+                            <?php echo get_the_date('Y.m.d'); ?></time>
+                        </div>
+                        <h2 class="sub-title sub-title-blog-detail">
+                            <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
+                        </h2>
+                        <div class="blog-detail-img"><?php if (has_post_thumbnail()) : ?>
+                    <?php the_post_thumbnail('medium'); ?>
+                    <?php endif; ?> 
+                    <?php endwhile; ?>
                 </ul>
             </div>
             <div class="sub-blog-page-box">
-                <button class="button-page-before">1
+                <button class="button-page-before"><?php the_posts_pagination(); ?>1
                 </button>
-                <button class="button-page-after">2
+                <button class="button-page-after"><?php the_posts_pagination(); ?>2
                 </button>
             </div>
         </div>
     </div>
 </section>
+<?php else : ?>
+<p>記事はまだありません。</p>
+<?php endif; ?>
+
+<!-- <?php wp_reset_query(); ?> -->
 
 
 <?php get_footer(); ?>

@@ -24,15 +24,15 @@
     </section>
 
     <!-- Infinity Slider セクション -->
-    <?php
-    $slides = [
-        get_stylesheet_directory_uri() . '/img/top-slide01.jpg',
-        get_stylesheet_directory_uri() . '/img/top-slide02.jpg',
-        get_stylesheet_directory_uri() . '/img/top-slide03.jpg',
-    ];
-    $repeat = 10;
-    ?>
     <section class="infinity-slider">
+        <?php
+        $slides = [
+            get_stylesheet_directory_uri() . '/img/top-slide01.jpg',
+            get_stylesheet_directory_uri() . '/img/top-slide02.jpg',
+            get_stylesheet_directory_uri() . '/img/top-slide03.jpg',
+        ];
+        $repeat = 10;
+        ?>
         <div class="slider-inner">
             <div class="swiper">
                 <div class="swiper-wrapper">

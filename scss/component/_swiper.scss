@@ -1,11 +1,12 @@
-.slider-heading {
+.infinity-slider {
+    height: 100%;
+
+}.slider-heading {
     max-width: 600px;
     width: 100%;
-    display: block;
     position: absolute;
     z-index: 2;
     margin-left: 18px;
-    bottom: -16%;
     left: 50%;
     transform: translate(-50%, -50%);
 
@@ -62,3 +63,15 @@
         border-radius: 30px;
     }
 }
+
+.slide-inner {
+    transition: transform 0.3s ease;
+    }
+    
+    /* 偶数番目だけ下にズラす */
+    .swiper-slide:nth-child(even) .slide-inner {
+        transform: translateY(30px);
+    }
+    .swiper-slide {
+        overflow: visible;
+    }
