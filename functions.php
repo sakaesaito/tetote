@@ -28,15 +28,15 @@ function theme_enqueue_files()
     // Swiper
     wp_enqueue_style(
         'swiper-css',
-        'https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css',
+        'https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css',
         [],
-        '11.0.0'
+        '8.0.0'
     );
     wp_enqueue_script(
         'swiper-js',
-        'https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js',
+        'https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js',
         [],
-        '11.0.0',
+        '8.0.0',
         true
     );
 

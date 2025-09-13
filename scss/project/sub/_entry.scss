@@ -1,4 +1,7 @@
-.input-text, .input-email, .input-file, .input-submit {
+.input-text,
+.input-email,
+.input-file,
+.input-submit {
     padding: 0;
     border: none;
     border-radius: 0;
@@ -9,16 +12,79 @@
     -moz-appearance: none;
     appearance: none;
     border: 1px solid #AFA86F;
-    }
+}
 
 .input-text:focus,
 .input-email:focus {
-outline: 2px solid #3498db;
-outline-offset: 0;
+    outline: 2px solid #3498db;
+    outline-offset: 0;
 }
+.input[type="text"]{ 
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: #FAF7F1;
+}
+
 .Form-Item {
     display: flex;
     color: #222;
+    justify-content: space-between;
+    @media screen and (max-width: 768px) {
+        display: block;
+    }
+}
+.Form-Item-check {
+    display: block;
+}
+
+
+// -----------------------
+
+.entry-main {
+    width: 100%;
+}
+
+.entry-bg {
+    padding-top: 33px;
+    padding-bottom: 57px;
+    margin-bottom: 136px;
+    background-color: #FAF7F1;
+
+    @media screen and (max-width: 768px) {
+        padding-top: 24px;
+        padding-bottom: 40px;
+    }
+}
+
+.entry-inner {
+    max-width: 880px;
+    width: 100%;
+    padding-inline: 71px;
+    padding-top: 56px;
+    background-color: #fff;
+
+}
+
+.entry-top {
+    max-width: 738px;
+    width: 100%;
+    text-align: center;
+}
+
+.form-entry {
+    font-size: 24px;
+    line-height: 1;
+    text-align: center;
+}
+
+.form-message-box {
+    margin: 0 auto;
+    max-width: 510px;
+    width: 100%;
+}
+
+.form-message {
+    text-align: left;
 }
 
 .form-title {
@@ -31,7 +97,83 @@ outline-offset: 0;
         color: #98802C;
     }
 }
+
+
 .Form-Item-Label {
     width: 128px;
     text-align: left;
+    line-height: 1.5;
+}
+
+.Form-Item-Label-Required {
+    color: #98802C;
+}
+
+.wpcf7-list-item input[type="checkbox"],
+.wpcf7-list-item input[type="radio"] {
+    position: absolute;
+    opacity: 0;
+    z-index: -1;
+}
+.wpcf7-list-item label {
+    position: relative;
+    display: block;
+    padding-left: 32px;
+    cursor: pointer;
+    margin-bottom: 8px;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+/* チェックボックス（□→▪️塗りつぶし） */
+.wpcf7-list-item-label::before {
+    content: "";
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border: 2px solid #AFA86F;
+    border-radius: 4px;
+    /* 四角形 */
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    background: #FAF7F1;
+}
+
+/* チェック時に塗りつぶし */
+.wpcf7-list-item input[type="checkbox"]:checked+.wpcf7-list-item-label::before {
+    content: "";
+    display: block;
+    width: 10px; 
+    height: 10px;
+    background: #222;  
+    position: absolute;
+    left: 5px;            
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+/* ラジオボタン（○→⚫️） */
+.radio-works .wpcf7-list-item-label::before {
+    border-radius: 50%;
+}
+
+/* ラジオが選択された時の黒丸 */
+.radio-works input[type="radio"]:checked+.wpcf7-list-item-label::before {
+    background: #222;
+    content: "";
+    display: block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%; /* Rounded corners for checked state */
+    position: absolute;
+    top: 50%;
+    left: 7px;  /* Centering the filled circle */
+    transform: translateY(-50%);
+}
+
+/* フォーカス時 */
+.wpcf7-list-item input:focus+.wpcf7-list-item-label::before {
+    outline: 2px solid #3498db;
 }
