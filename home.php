@@ -27,6 +27,7 @@
                     'orderby'             => 'date',
                     'order'               => 'DESC',
                     'ignore_sticky_posts' => true,
+                    'paged'               => $paged
                 ]);
                 if ($blog_q->have_posts()) :
                     while ($blog_q->have_posts()) : $blog_q->the_post(); ?>
@@ -82,10 +83,11 @@
                     <li class="blog-box">記事はまだありません。</li>
                 <?php endif; wp_reset_postdata(); ?>
             </ul>
+            <?php the_posts_pagination(); ?>
         </div>
     </div>
 </section>
- <?php wp_reset_query(); ?>
+<?php wp_reset_query(); ?>
 
 
 <?php get_footer(); ?>

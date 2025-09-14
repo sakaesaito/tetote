@@ -3582,6 +3582,7 @@ footer {
   display: flex;
   color: #222;
   justify-content: space-between;
+  margin-top: 27px;
 }
 @media screen and (max-width: 768px) {
   .Form-Item {
@@ -3591,6 +3592,10 @@ footer {
 
 .Form-Item-check {
   display: block;
+}
+
+.Form {
+  margin-top: 97px;
 }
 
 .entry-main {
@@ -3615,6 +3620,7 @@ footer {
   width: 100%;
   padding-inline: 71px;
   padding-top: 56px;
+  padding-bottom: 81px;
   background-color: #fff;
 }
 
@@ -3622,6 +3628,8 @@ footer {
   max-width: 738px;
   width: 100%;
   text-align: center;
+  padding-bottom: 95px;
+  border-bottom: 1px solid #AFA86F;
 }
 
 .form-entry {
@@ -3660,6 +3668,26 @@ footer {
   color: #98802C;
 }
 
+.wpcf7 input[type=url],
+.wpcf7 input[type=email],
+.wpcf7 input[type=tel],
+.wpcf7 input[type=text],
+.wpcf7 input[type="textarea pr"] {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  max-width: 575px;
+  width: 100%;
+  background-color: #FAF7F1;
+  border: 1px solid #AFA86F;
+}
+
+.wpcf7 input[type=select] {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  max-width: 168px;
+  width: 100%;
+}
+
 .wpcf7-list-item input[type=checkbox],
 .wpcf7-list-item input[type=radio] {
   position: absolute;
@@ -3677,7 +3705,7 @@ footer {
   line-height: 1.5;
 }
 
-/* チェックボックス（□→▪️塗りつぶし） */
+/* チェックボックス */
 .wpcf7-list-item-label::before {
   content: "";
   display: inline-block;
@@ -3685,7 +3713,6 @@ footer {
   height: 20px;
   border: 2px solid #AFA86F;
   border-radius: 4px;
-  /* 四角形 */
   position: absolute;
   left: 0;
   top: 50%;
@@ -3695,6 +3722,16 @@ footer {
 
 /* チェック時に塗りつぶし */
 .wpcf7-list-item input[type=checkbox]:checked + .wpcf7-list-item-label::before {
+  content: "";
+  display: block;
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.wpcf7-list-item input[type=checkbox]:checked + .wpcf7-list-item-label::after {
   content: "";
   display: block;
   width: 10px;
@@ -3711,23 +3748,77 @@ footer {
   border-radius: 50%;
 }
 
-/* ラジオが選択された時の黒丸 */
+/* ラジオボタン */
 .radio-works input[type=radio]:checked + .wpcf7-list-item-label::before {
-  background: #222;
+  content: "";
+  display: block;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 2px;
+  transform: translateY(-50%);
+}
+
+/* ラジオが選択された時の黒丸 */
+.radio-works input[type=radio]:checked + .wpcf7-list-item-label::after {
   content: "";
   display: block;
   width: 10px;
   height: 10px;
-  border-radius: 50%; /* Rounded corners for checked state */
+  background-color: #000;
+  border-radius: 50%;
   position: absolute;
   top: 50%;
-  left: 7px; /* Centering the filled circle */
+  left: 7px;
   transform: translateY(-50%);
 }
 
 /* フォーカス時 */
 .wpcf7-list-item input:focus + .wpcf7-list-item-label::before {
   outline: 2px solid #3498db;
+}
+
+/*送信ボタン*/
+.wpcf7-submit {
+  display: block;
+  width: 256px;
+  margin: 40px auto 0;
+  padding: 16px;
+  font-size: 18px;
+  text-align: center;
+  background-color: #fff;
+  color: #222;
+  border: 1px solid #222;
+  cursor: pointer;
+}
+
+.wpcf7-submit:hover {
+  background-color: #222;
+  color: #fff;
+}
+
+.Form-Item-birthday {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px 20px;
+  margin-top: 27px;
+}
+
+.Form-Item-birthday input[type=text],
+.Form-Item-birthday select {
+  width: 168px;
+  max-width: 100%;
+  margin-top: 0;
+}
+
+.Form-Item-check {
+  text-align: center;
+}
+
+.wpcf7-checkbox {
+  display: block;
 }
 
 .details-main {
