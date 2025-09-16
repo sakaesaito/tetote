@@ -31,6 +31,7 @@
     color: #222;
     justify-content: space-between;
     margin-top: 27px;
+
     @media screen and (max-width: 768px) {
         display: block;
     }
@@ -39,6 +40,7 @@
 .Form-Item-check {
     display: block;
 }
+
 .Form {
     margin-top: 97px;
 }
@@ -108,7 +110,6 @@
 
 .Form-Item-Label {
     max-width: 128px;
-    width: 100%;
     text-align: left;
     line-height: 1.5;
 }
@@ -118,14 +119,18 @@
 }
 
 .wpcf7 input[type="url"],
-.wpcf7 input[type="email"], 
+.wpcf7 input[type="email"],
 .wpcf7 input[type="tel"],
-.wpcf7 input[type="text"], 
+.wpcf7 input[type="text"],
 .wpcf7 input[type="textarea"] {
     padding-top: 20px;
     padding-bottom: 20px;
+    padding-left: 20px;
     background-color: #FAF7F1;
-    border:1px solid #AFA86F;
+    border: 1px solid #AFA86F;
+    max-width: 575px;
+    width: 100%;
+    border-radius: 10px;
 }
 
 .wpcf7 input[type="textarea"] {
@@ -215,12 +220,28 @@
     display: block;
     width: 10px;
     height: 10px;
-    background-color: #000;
+    background-color: #222;
     border-radius: 50%;
     position: absolute;
     top: 50%;
     left: 7px;
     transform: translateY(-50%);
+}
+
+.radio-box span {
+    display: block;
+    width: 100%;
+}
+
+.Form-Item-works {
+    margin-top: 43px;
+    display: flex;
+    justify-content: left;
+}
+
+.Form-Item-Label-works {
+    width: 100%;
+    max-width: 128px;
 }
 
 /* フォーカス時 */
@@ -247,6 +268,38 @@
     color: #fff;
 }
 
+.Form-Item-check {
+    text-align: center;
+}
+
+.wpcf7-textarea {
+    background-color: #FAF7F1;
+    border: 1px solid #AFA86F;
+    border-radius: 10px;
+    max-width: 575px;
+    width: 100%;
+    padding-left: 20px;
+    padding-top: 20px;
+}
+
+.wpcf7-radio {
+    display: block;
+    margin-left: 15px;
+}
+
+.wpcf7-select {
+    width: 168px;
+    padding-top: 22px;
+    padding-bottom: 22px;
+    padding-left: 20px;
+    background-color: #FAF7F1;
+    border: 1px solid #AFA86F;
+    display: flex;
+    border-radius: 10px;
+    font-size: 12px;
+}
+
+// ＿＿＿誕生日＿＿＿＿＿＿
 .Form-Item-birthday {
     display: flex;
     flex-wrap: wrap;
@@ -254,57 +307,34 @@
     margin-top: 27px;
 }
 
-.Form-Item-birthday input[type="text"],
-.Form-Item-birthday select {
-    width: 168px;
-    max-width: 100%;
-    margin-top: 0;
-}
-.Form-Item-check {
-    text-align: center;
-}
-
-.wpcf7-text,
-.wpcf7-textarea {
-    background-color: #FAF7F1;
-    border: 1px solid #AFA86F;
-    border-radius: 10px;
-    max-width: 575px;
-    width: 100%;
-}
-
-.wpcf7-radio {
-	display: block;
-}
-
-.wpcf7-select {
-	width: 168px;
-    padding-top: 22px;
-    padding-bottom: 22px;
-    background-color: #FAF7F1;
-    border: 1px solid #AFA86F;
-    display: flex;
-    border-radius: 10px;
-}
-
-.year {
-    max-width: 168px;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    border-radius: 0px;
-}
 .birth {
     display: flex;
     align-items: center;
     margin-top: 20px;
-    width: 60%;
+}
+
+.birth-box {
+    width: 100%;
 }
 
 .wpcf7-form-control-wrap {
     width: 78%;
 }
 
-.checkbox-item span {
+// ____知るきっかけチェックボックス__
+.checkbox-item {
     width: 100%;
+    margin-left: 20px;
+}
+
+.checkbox-item span {
+    display: block;
+}
+
+.Form-Item-checkbox {
+    margin-top: 43px;
+}
+
+.Form-Item-check {
+    margin-top: 99px;
 }
