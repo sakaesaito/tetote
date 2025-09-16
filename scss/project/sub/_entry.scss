@@ -109,7 +109,7 @@
 }
 
 .Form-Item-Label {
-    max-width: 128px;
+    width: 128px;
     text-align: left;
     line-height: 1.5;
 }
@@ -311,6 +311,7 @@
     display: flex;
     align-items: center;
     margin-top: 20px;
+    justify-content: left;
 }
 
 .birth-box {
@@ -321,6 +322,14 @@
     width: 78%;
 }
 
+.year {
+    width: 168px;
+    display: flex;
+    align-items: center;
+    span {
+        margin-right: 20px;
+    }  
+}
 // ____知るきっかけチェックボックス__
 .checkbox-item {
     width: 100%;

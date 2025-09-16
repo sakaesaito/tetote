@@ -3659,7 +3659,7 @@ footer {
 }
 
 .Form-Item-Label {
-  max-width: 128px;
+  width: 128px;
   text-align: left;
   line-height: 1.5;
 }
@@ -3860,6 +3860,7 @@ footer {
   display: flex;
   align-items: center;
   margin-top: 20px;
+  justify-content: left;
 }
 
 .birth-box {
@@ -3868,6 +3869,15 @@ footer {
 
 .wpcf7-form-control-wrap {
   width: 78%;
+}
+
+.year {
+  width: 168px;
+  display: flex;
+  align-items: center;
+}
+.year span {
+  margin-right: 20px;
 }
 
 .checkbox-item {
@@ -4584,6 +4594,9 @@ section.show {
     max-width: 200px;
   }
 }
+.blog-pagination-wrapper.after {
+  justify-content: end;
+}
 
 .blog-pagination-button {
   width: 24px;
@@ -4625,7 +4638,9 @@ section.show {
 .topic {
   padding-top: 13px;
   font-weight: 400;
-  line-height: 1;
+  line-height: 1.5;
+  max-width: 310px;
+  width: 100%;
 }
 
 .blog-page {
