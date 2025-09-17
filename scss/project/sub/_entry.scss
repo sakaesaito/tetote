@@ -74,8 +74,6 @@
 }
 
 .entry-top {
-    max-width: 738px;
-    width: 100%;
     text-align: center;
     padding-bottom: 95px;
     border-bottom: 1px solid #AFA86F;
@@ -107,9 +105,14 @@
         color: #98802C;
     }
 }
+.form-name ,.form-email ,.form-tell ,.form-textarea{
+    max-width: 575px;
+    width: 100%;
+}
 
 .Form-Item-Label {
-    width: 128px;
+    max-width: 163px;
+    width: 100%;
     text-align: left;
     line-height: 1.5;
 }
@@ -128,9 +131,9 @@
     padding-left: 20px;
     background-color: #FAF7F1;
     border: 1px solid #AFA86F;
+    border-radius: 10px;
     max-width: 575px;
     width: 100%;
-    border-radius: 10px;
 }
 
 .wpcf7 input[type="textarea"] {
@@ -239,10 +242,6 @@
     justify-content: left;
 }
 
-.Form-Item-Label-works {
-    width: 100%;
-    max-width: 128px;
-}
 
 /* フォーカス時 */
 .wpcf7-list-item input:focus+.wpcf7-list-item-label::before {
@@ -272,6 +271,7 @@
     text-align: center;
 }
 
+
 .wpcf7-textarea {
     background-color: #FAF7F1;
     border: 1px solid #AFA86F;
@@ -287,6 +287,49 @@
     margin-left: 15px;
 }
 
+.form-radio span{
+    margin: 0;
+}
+
+
+// ＿＿＿誕生日＿＿＿＿＿＿
+.Form-Item-birthday {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px 20px;
+    margin-top: 27px;
+}
+
+.form-birth {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    justify-content: left;
+}
+
+.birth {
+    display: flex;
+    gap: 25px;
+}
+.birth-box {
+    max-width: 575px;
+    width: 100%;
+}
+
+.year {
+    max-width: 194px;
+    width: 100%;
+}
+.form-year {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    span {
+        padding-right: 10px;
+    } 
+
+}
+
 .wpcf7-select {
     width: 168px;
     padding-top: 22px;
@@ -299,41 +342,17 @@
     font-size: 12px;
 }
 
-// ＿＿＿誕生日＿＿＿＿＿＿
-.Form-Item-birthday {
+.form-tsuki ,.form-nichi {
     display: flex;
-    flex-wrap: wrap;
-    gap: 10px 20px;
+    align-items: center;
+    gap: 10px;
     margin-top: 27px;
-}
-
-.birth {
-    display: flex;
-    align-items: center;
-    margin-top: 20px;
-    justify-content: left;
-}
-
-.birth-box {
-    width: 100%;
-}
-
-.wpcf7-form-control-wrap {
-    width: 78%;
-}
-
-.year {
-    width: 168px;
-    display: flex;
-    align-items: center;
-    span {
-        margin-right: 20px;
-    }  
 }
 // ____知るきっかけチェックボックス__
 .checkbox-item {
     width: 100%;
-    margin-left: 20px;
+    max-width: 590px;
+    margin-left: 15px
 }
 
 .checkbox-item span {
@@ -346,4 +365,9 @@
 
 .Form-Item-check {
     margin-top: 99px;
+}
+
+.Form-Item-Label-checkbox {
+    max-width: 128px;
+    width: 100%;
 }

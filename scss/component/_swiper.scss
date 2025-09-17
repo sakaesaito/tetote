@@ -1,14 +1,16 @@
 .infinity-slider {
-    height: 100%;
+    height: auto;
 
-}.slider-heading {
+}
+
+.slider-heading {
     max-width: 600px;
     width: 100%;
     position: absolute;
     z-index: 2;
     margin-left: 18px;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -115%);
 
     @media screen and (max-width: 1024px) {
         max-width: 335px;
@@ -51,27 +53,28 @@
     }
 }
 
-.swiper-slide {
-    display: flex;
-    gap: 20px;
-    justify-content: center;
-    align-items: center;
-
-    img {
-        display: block;
-        height: auto;
-        border-radius: 30px;
-    }
+.slider1 .swiper-slide:nth-child(even) {
+    transform: translateY(36px);
 }
 
-.slide-inner {
-    transition: transform 0.3s ease;
-    }
-    
-    /* 偶数番目だけ下にズラす */
-    .swiper-slide:nth-child(even) .slide-inner {
-        transform: translateY(30px);
-    }
-    .swiper-slide {
-        overflow: visible;
-    }
+.swiper-slide img {
+    height: auto;
+    width: 100%;
+}
+
+/* スライドの動き等速 */
+.swiper-wrapper {
+    transition-timing-function: linear;
+}
+.slider01-inner {
+    height: 400px;
+}
+
+.swiper {
+    height: 500px;
+}
+.swiper02 {
+    height: 100%;
+}
+
+

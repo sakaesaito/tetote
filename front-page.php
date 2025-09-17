@@ -25,27 +25,14 @@
 
     <!-- Infinity Slider セクション -->
     <section class="infinity-slider">
-        <?php
-        $slides = [
-            get_stylesheet_directory_uri() . '/img/top-slide01.jpg',
-            get_stylesheet_directory_uri() . '/img/top-slide02.jpg',
-            get_stylesheet_directory_uri() . '/img/top-slide03.jpg',
-        ];
-        $repeat = 10;
-        ?>
-        <div class="slider-inner">
-            <div class="swiper">
-                <div class="swiper-wrapper">
-                    <?php for ($r = 0; $r < $repeat; $r++): ?>
-                        <?php foreach ($slides as $src): ?>
-                            <div class="swiper-slide">
-                                <div class="slide-inner">
-                                    <img src="<?php echo esc_url($src); ?>" alt="">
-                                </div>
-                            </div>
-                        <?php endforeach; ?>
-                    <?php endfor; ?>
-                </div>
+        <div class="swiper slider1">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="<?php echo get_template_directory_uri(); ?>/img/top-slide01.jpg" alt=""></div>
+                <div class="swiper-slide"><img src="<?php echo get_template_directory_uri(); ?>/img/top-slide02.jpg" alt=""></div>
+                <div class="swiper-slide"><img src="<?php echo get_template_directory_uri(); ?>/img/top-slide03.jpg" alt=""></div>
+                <div class="swiper-slide"><img src="<?php echo get_template_directory_uri(); ?>/img/top-slide01.jpg" alt=""></div>
+                <div class="swiper-slide"><img src="<?php echo get_template_directory_uri(); ?>/img/top-slide02.jpg" alt=""></div>
+                <div class="swiper-slide"><img src="<?php echo get_template_directory_uri(); ?>/img/top-slide03.jpg" alt=""></div>
             </div>
         </div>
         <div class="slider-heading">
@@ -54,6 +41,7 @@
             <p class="slider-heading-ms slider-heading-ms2">それこそが、我々の使命だ</p>
         </div>
     </section>
+
     <section id="about" class="about">
         <div class="inner about-inner">
             <div class="about-viw">
@@ -72,11 +60,11 @@
                 </div>
             </div>
             <div class="viewmore-button">
-                <a href="<?php echo home_url('/about/'); ?>">VIEW MORE</a>
+                <a href="<?php echo esc_url(home_url('/about/')); ?>">VIEW MORE</a>
             </div>
         </div>
     </section>
-    <section id="staff" class="staff">
+    <section id="top-staff" class="staff">
         <div class="staff-inner">
             <div class="content-wrapper">
                 <div class="text-wrapper staff-text-wrapper">

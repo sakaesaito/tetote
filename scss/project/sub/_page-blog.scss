@@ -113,6 +113,9 @@
         display: none;
     }
 }
+
+
+// _____ブログ個別記事のページネーション_____
 .blog-pagination-sec {
     display: flex;
     justify-content:space-between;
@@ -144,6 +147,7 @@
         justify-content: end;
     }
 }
+
 .blog-pagination-button {
     width: 24px;
     height: 24px;
@@ -187,3 +191,4 @@
 .blog-page {
     background-color: #F0F0F0;
 }
+

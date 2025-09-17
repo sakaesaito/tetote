@@ -21,6 +21,7 @@
         <div class="sub-blog-inner">
             <ul class="blog-list">
                 <?php
+                $paged = get_query_var('paged') ? get_query_var('paged') : 1;
                 $blog_q = new WP_Query([
                     'post_type'           => 'post',
                     'posts_per_page'      => 8,
@@ -79,11 +80,20 @@
                                     </div>
                                 </a>
                             </div>
-                    <?php endwhile; else : ?>
-                    <li class="blog-box">記事はまだありません。</li>
-                <?php endif; wp_reset_postdata(); ?>
+                        <?php endwhile;
+                else : ?>
+                        <li class="blog-box">記事はまだありません。</li>
+                    <?php endif;
+                wp_reset_postdata(); ?>
             </ul>
-            <?php the_posts_pagination(); ?>
+            <?php the_posts_pagination(
+                array(
+                    'prev_next' => false,
+                    'prev_text' => '<i class="fas fa-chevron-left"></i>',
+                    'next_text' => '<i class="fas fa-chevron-right"></i>',
+                    'type'      => 'list',
+                )
+            ); ?>
         </div>
     </div>
 </section>
