@@ -43,6 +43,9 @@
 
 .Form {
     margin-top: 97px;
+    @media screen and (max-width: 1024px) {
+        margin-top: 40px;
+    }
 }
 
 // -----------------------
@@ -70,6 +73,9 @@
     padding-top: 56px;
     padding-bottom: 81px;
     background-color: #fff;
+    @media screen and (max-width: 1024px) {
+        padding-inline: 30px;
+    }
 
 }
 
@@ -77,6 +83,10 @@
     text-align: center;
     padding-bottom: 95px;
     border-bottom: 1px solid #AFA86F;
+    @media screen and (max-width: 1024px) {
+        padding-bottom: 40px;
+    }
+    
 }
 
 .form-entry {
@@ -93,6 +103,11 @@
 
 .form-message {
     text-align: left;
+    &:nth-child(1) {
+    @media screen and (max-width: 1024px) {
+        margin-top: 20px;
+        }
+    }
 }
 
 .form-title {
@@ -103,6 +118,15 @@
 
     & span {
         color: #98802C;
+    }
+    @media screen and (max-width: 1024px) {
+        font-size: 24px;
+    }
+    br {
+        display: none;
+        @media screen and (max-width: 768px) {
+            display: block;
+        }
     }
 }
 .form-name ,.form-email ,.form-tell ,.form-textarea{
@@ -115,6 +139,10 @@
     width: 100%;
     text-align: left;
     line-height: 1.5;
+    padding-top: 20px;   
+}
+.Form-Item-Label-works ,.Form-Item-Label-checkbox {
+    padding-top: 0;
 }
 
 .Form-Item-Label-Required {
@@ -134,6 +162,9 @@
     border-radius: 10px;
     max-width: 575px;
     width: 100%;
+    @media screen and (max-width: 768px) {
+        margin-top: 10px;
+    }
 }
 
 .wpcf7 input[type="textarea"] {
@@ -240,6 +271,9 @@
     margin-top: 43px;
     display: flex;
     justify-content: left;
+    @media screen and (max-width: 768px) {
+        display: block;
+    }
 }
 
 
@@ -280,6 +314,9 @@
     width: 100%;
     padding-left: 20px;
     padding-top: 20px;
+    @media screen and (max-width: 768px) {
+        margin-top: 10px;
+    }
 }
 
 .wpcf7-radio {
@@ -289,6 +326,9 @@
 
 .form-radio span{
     margin: 0;
+    @media screen and (max-width: 768px) {
+        margin-top: 10px;
+    }
 }
 
 
@@ -310,9 +350,11 @@
 .birth {
     display: flex;
     gap: 25px;
+    @media screen and (max-width: 768px) {
+        display: block;
+    }
 }
 .birth-box {
-    max-width: 575px;
     width: 100%;
 }
 
@@ -320,6 +362,7 @@
     max-width: 194px;
     width: 100%;
 }
+
 .form-year {
     width: 100%;
     display: flex;
@@ -327,11 +370,9 @@
     span {
         padding-right: 10px;
     } 
-
 }
 
 .wpcf7-select {
-    width: 168px;
     padding-top: 22px;
     padding-bottom: 22px;
     padding-left: 20px;
@@ -340,23 +381,48 @@
     display: flex;
     border-radius: 10px;
     font-size: 12px;
+    width: 164px;
 }
+
 
 .form-tsuki ,.form-nichi {
     display: flex;
     align-items: center;
     gap: 10px;
     margin-top: 27px;
+        
+    ::after {
+        content: "";
+        position: absolute;
+        top: 27px;
+        right: 15px;
+        margin: auto;
+        width: 11px;
+        height: 11px;
+        border-right: 1px solid #000;
+        border-top: 1px solid #000;
+        transform: rotate(134deg);
+        transition: all 0.5s;    
+        }
+}
+.from-tsuki span {
+    width: 198px;
 }
 // ____知るきっかけチェックボックス__
 .checkbox-item {
     width: 100%;
     max-width: 590px;
-    margin-left: 15px
+    margin-left: 15px;
+    @media screen and (max-width: 768px) {
+        margin-left: 0px;
+    }
 }
 
 .checkbox-item span {
     display: block;
+    @media screen and (max-width: 768px) {
+        margin-top: 10px;
+    }
 }
 
 .Form-Item-checkbox {
@@ -365,9 +431,18 @@
 
 .Form-Item-check {
     margin-top: 99px;
+    @media screen and (max-width: 768px) {
+        margin-top: 40px;
+    }
 }
 
 .Form-Item-Label-checkbox {
     max-width: 128px;
     width: 100%;
+}
+.wpcf7-list-item {
+    @media screen and (max-width: 768px) {
+        margin-left: 0px;
+    }
+
 }

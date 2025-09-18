@@ -25,14 +25,16 @@
 
     <!-- Infinity Slider セクション -->
     <section class="infinity-slider">
-        <div class="swiper slider1">
-            <div class="swiper-wrapper">
-                <div class="swiper-slide"><img src="<?php echo get_template_directory_uri(); ?>/img/top-slide01.jpg" alt=""></div>
-                <div class="swiper-slide"><img src="<?php echo get_template_directory_uri(); ?>/img/top-slide02.jpg" alt=""></div>
-                <div class="swiper-slide"><img src="<?php echo get_template_directory_uri(); ?>/img/top-slide03.jpg" alt=""></div>
-                <div class="swiper-slide"><img src="<?php echo get_template_directory_uri(); ?>/img/top-slide01.jpg" alt=""></div>
-                <div class="swiper-slide"><img src="<?php echo get_template_directory_uri(); ?>/img/top-slide02.jpg" alt=""></div>
-                <div class="swiper-slide"><img src="<?php echo get_template_directory_uri(); ?>/img/top-slide03.jpg" alt=""></div>
+        <div class="swiper-container">
+            <div class="swiper slider1">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img src="<?php echo get_template_directory_uri(); ?>/img/top-slide01.jpg" alt=""></div>
+                    <div class="swiper-slide"><img src="<?php echo get_template_directory_uri(); ?>/img/top-slide02.jpg" alt=""></div>
+                    <div class="swiper-slide"><img src="<?php echo get_template_directory_uri(); ?>/img/top-slide03.jpg" alt=""></div>
+                    <div class="swiper-slide"><img src="<?php echo get_template_directory_uri(); ?>/img/top-slide01.jpg" alt=""></div>
+                    <div class="swiper-slide"><img src="<?php echo get_template_directory_uri(); ?>/img/top-slide02.jpg" alt=""></div>
+                    <div class="swiper-slide"><img src="<?php echo get_template_directory_uri(); ?>/img/top-slide03.jpg" alt=""></div>
+                </div>
             </div>
         </div>
         <div class="slider-heading">

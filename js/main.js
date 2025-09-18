@@ -86,12 +86,18 @@ document.addEventListener('DOMContentLoaded', function () {
 /* 無限スライダー */
 const slider1 = new Swiper('.slider1', {
     loop: true,
-    slidesPerView: 3,
-    spaceBetween: 34,
     speed: 5000,
+    autoHeight: true,
+    slidesPerView: 1.2, 
+    spaceBetween: 16, 
     autoplay: {
-        delay: 0,
+        delay: 0,                
         disableOnInteraction: false,
+    },
+    breakpoints: {
+        1000: { slidesPerView: 2, spaceBetween: 22 },
+        1400: { slidesPerView: 2.8, spaceBetween: 34 },
+        1600: { slidesPerView: 4, spaceBetween: 32 },
     },
 });
 
@@ -261,17 +267,22 @@ document.addEventListener('DOMContentLoaded', function () {
 
 // ________送信フォーム全入力で送信ボタン反映＿＿＿＿＿＿
 
+jQuery(function($) {
 const $submitBtn = $('#js-submit')
-$('#form input,#form textarea').on('change', function () {
+$('#form input,#form textarea, #form select').on('change', function () {
     if (
-        $('#form input[type="text"]').val() !== "" &&
-        $('#form input[type="email"]').val() !== "" &&
-        $('#form input[type="checkbox"]').val() !== "" &&
-        $('#form #privacyCheck').prop('checked') === true
+        $('#form input[type="text"]').val() .trim()!== "" &&
+        $('#form input[type="email"]').val() .trim()!== "" &&
+        $('#form input[type="tell"]').val() .trim()!== "" &&
+        $('#form input[type="radio"]:checked').length > 0 &&
+        $('#form textarea').val() !== "" &&
+        $('#form select').val() !== "" &&
+        $('#form #check').prop('checked') === true
     ) {
         $submitBtn.prop('disabled', false);
 
     } else {
         $submitBtn.prop('disabled', true);
     }
+});
 });

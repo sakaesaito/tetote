@@ -1,8 +1,24 @@
 .infinity-slider {
     height: auto;
-
+    width: 100%;
+    overflow: visible;    
 }
-
+.infinity-slider .slider1 {
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.infinity-slider .swiper-slide img {
+    width: 100%;   
+    height: auto; 
+    object-fit: contain;
+    display: block;
+}
+.swiper-container {
+    height: 100%;
+    position: relative;
+}
 .slider-heading {
     max-width: 600px;
     width: 100%;
@@ -10,7 +26,7 @@
     z-index: 2;
     margin-left: 18px;
     left: 50%;
-    transform: translate(-50%, -115%);
+    transform: translate(-50%, -50%);
 
     @media screen and (max-width: 1024px) {
         max-width: 335px;
@@ -18,9 +34,9 @@
         display: block;
         position: absolute;
         z-index: 2;
-        bottom: -46px;
         left: 50%;
         transform: translate(-50%, -50%);
+
     }
 }
 
@@ -71,7 +87,7 @@
 }
 
 .swiper {
-    height: 500px;
+    height: 380px;
 }
 .swiper02 {
     height: 100%;
