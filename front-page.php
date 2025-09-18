@@ -15,8 +15,25 @@
                     </div>
                     <div class="mv-news-box">
                         <div class="mv-news-title"><a href="<?php echo home_url('/blog/'); ?>">NEWS</a></div>
-                        <div class="mv-news-item"><a href="<?php echo home_url('/blog/'); ?>"><?php the_title(); ?></a></div>
-                        <div class="mv-news-link"><a href="<?php echo home_url('/blog/'); ?>">VIEW MORE</a></div>
+
+                        <?php
+                        $latest_post = new WP_Query([
+                            'post_type'      => 'post', // 通常の投稿
+                            'posts_per_page' => 1       // 最新1件
+                        ]);
+                        if ($latest_post->have_posts()) :
+                            while ($latest_post->have_posts()) : $latest_post->the_post(); ?>
+                                <div class="mv-news-item">
+                                    <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
+                                </div>
+                        <?php endwhile;
+                            wp_reset_postdata();
+                        endif;
+                        ?>
+
+                        <div class="mv-news-link">
+                            <a href="<?php echo esc_url(get_post_type_archive_link('post')); ?>">VIEW MORE</a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -62,7 +79,7 @@
                 </div>
             </div>
             <div class="viewmore-button">
-                <a href="<?php echo esc_url(home_url('/about/')); ?>">VIEW MORE</a>
+                <a href="<?php echo esc_url(get_permalink(get_page_by_path('about-us'))); ?>">VIEW MORE</a>
             </div>
         </div>
     </section>
@@ -207,7 +224,7 @@
                             <h2 class="content-title blog-content-title">採用ブログ</h2>
                             <p class="content-item blog-content-item">採用情報やイベント情報、社員の紹介など、<br> 日々の現場の様子をご紹介します。</p>
                         </div>
-                        <a class="blog-top-page" href="<?php echo get_permalink(get_option('page_for_posts')); ?>">
+                        <a class="blog-top-page" href="<?php echo esc_url( get_permalink( get_option('page_for_posts') ) ); ?>">
                             <div class="button-white-right button-white-right-blog"></div>
                             <div class="blog-top-link">VIEW MORE</div>
                         </a>
