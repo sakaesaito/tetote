@@ -88,10 +88,10 @@ const slider1 = new Swiper('.slider1', {
     loop: true,
     speed: 5000,
     autoHeight: true,
-    slidesPerView: 1.2, 
-    spaceBetween: 16, 
+    slidesPerView: 1.2,
+    spaceBetween: 16,
     autoplay: {
-        delay: 0,                
+        delay: 0,
         disableOnInteraction: false,
     },
     breakpoints: {
@@ -268,16 +268,17 @@ document.addEventListener('DOMContentLoaded', function () {
 // ________送信フォーム全入力で送信ボタン反映＿＿＿＿＿＿
 
 jQuery(function($) {
+    const $form = $('#form');  
 const $submitBtn = $('#js-submit')
 $('#form input,#form textarea, #form select').on('change', function () {
     if (
         $('#form input[type="text"]').val() .trim()!== "" &&
         $('#form input[type="email"]').val() .trim()!== "" &&
-        $('#form input[type="tell"]').val() .trim()!== "" &&
+        $('#form input[type="tel"]').val() .trim()!== "" &&
         $('#form input[type="radio"]:checked').length > 0 &&
         $('#form textarea').val() !== "" &&
         $('#form select').val() !== "" &&
-        $('#form #check').prop('checked') === true
+        $('#form privacy-check').prop('checked') === true
     ) {
         $submitBtn.prop('disabled', false);
 
@@ -286,3 +287,4 @@ $('#form input,#form textarea, #form select').on('change', function () {
     }
 });
 });
+

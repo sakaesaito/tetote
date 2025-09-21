@@ -171,8 +171,8 @@
                         <a href="<?php echo esc_url(get_post_type_archive_link('staff')); ?>">VIEW MORE</a>
                     </div>
                     <div class="page-button-box">
-                        <a href="" class="button-white-left swiper-button-prev"></a>
-                        <a href="" class="button-white-right swiper-button-next"></a>
+                        <a href="" class="swiper-button-prev"></a>
+                        <a href="" class="swiper-button-next"></a>
                     </div>
                 </div>
     </section>
