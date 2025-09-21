@@ -95,7 +95,7 @@
                 </div>
             </div>
 
-            <div class="staff-sec slider-post slider">
+            <div class="staff-sec slider-post">
                 <div class="staff-sec-inner swiper swiper02">
                     <div class="staff-box-wrapper swiper-wrapper">
                         <?php

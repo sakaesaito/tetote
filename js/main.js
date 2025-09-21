@@ -121,10 +121,8 @@ document.addEventListener('DOMContentLoaded', function () {
             },
             breakpoints: {
                 640: { slidesPerView: 2, spaceBetween: 24 },
-                1200: { slidesPerView: 2.6, spaceBetween: 28 },
-                1200: { slidesPerView: 3, spaceBetween: 28 },
-                1400: { slidesPerView: 3.6, spaceBetween: 32 },
-                1600: { slidesPerView: 4, spaceBetween: 32 },
+                1200: { slidesPerView: 2.5, spaceBetween: 28 },
+                1400: { slidesPerView: 3, spaceBetween: 32 },
             },
             watchSlidesProgress: true,
             watchOverflow: true,
@@ -287,4 +285,3 @@ $('#form input,#form textarea, #form select').on('change', function () {
     }
 });
 });
-

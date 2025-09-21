@@ -1,7 +1,7 @@
 .infinity-slider {
     height: auto;
     width: 100%;
-    overflow: visible;    
+    overflow: hidden;    
 }
 .infinity-slider .slider1 {
     height: auto;
@@ -25,7 +25,7 @@
     z-index: 2;
     margin-left: 18px;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-49%, -97%);
 
     @media screen and (max-width: 1024px) {
         max-width: 335px;
@@ -69,7 +69,7 @@
 }
 
 .slider1 .swiper-slide:nth-child(even) {
-    transform: translateY(36px);
+    padding-top: 36px;
 }
 
 .swiper-slide img {
@@ -84,6 +84,7 @@
 
 .swiper02 {
     height: 100%;
+    overflow: visible
 }
 
 .swiper-button-next::after , 
