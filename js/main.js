@@ -121,8 +121,8 @@ document.addEventListener('DOMContentLoaded', function () {
             },
             breakpoints: {
                 640: { slidesPerView: 2, spaceBetween: 24 },
-                1200: { slidesPerView: 2.5, spaceBetween: 28 },
-                1400: { slidesPerView: 3, spaceBetween: 32 },
+                1200: { slidesPerView: 2.5, spaceBetween: 35 },
+                1400: { slidesPerView: 3, spaceBetween: 43 },
             },
             watchSlidesProgress: true,
             watchOverflow: true,
