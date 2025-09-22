@@ -2349,17 +2349,19 @@ footer {
   background-position: center center;
   background-size: 16px 16px;
   transition: transform 0.3s ease;
-  transform-origin: center; /* 中央を基準に拡大縮小 */
+  transform-origin: center;
+  width: 58px !important;
+  height: 58px !important;
+  /* 中央を基準に拡大縮小 */
 }
 .swiper-button-prev::after {
   content: "";
   position: absolute;
   top: 0;
-  width: 58px;
-  height: 58px;
 }
 .swiper-button-prev:hover {
-  transform: scale(1.2); /* 1.2倍に拡大 */
+  transform: scale(1.2);
+  /* 1.2倍に拡大 */
 }
 @media screen and (max-width: 1024px) {
   .swiper-button-prev {
@@ -2373,8 +2375,8 @@ footer {
 
 .swiper-button-next {
   display: block;
-  width: 58px;
-  height: 58px;
+  width: 58px !important;
+  height: 58px !important;
   background-color: #fff;
   position: absolute;
   right: -12px;
@@ -2388,7 +2390,8 @@ footer {
   background-position: center center;
   background-size: 16px 16px;
   transition: transform 0.3s ease;
-  transform-origin: center; /* 中央を基準に拡大縮小 */
+  transform-origin: center;
+  /* 中央を基準に拡大縮小 */
 }
 .swiper-button-next::after {
   content: "";
@@ -2396,7 +2399,8 @@ footer {
   top: 0;
 }
 .swiper-button-next:hover {
-  transform: scale(1.2); /* 1.2倍に拡大 */
+  transform: scale(1.2);
+  /* 1.2倍に拡大 */
 }
 @media screen and (max-width: 1024px) {
   .swiper-button-next {
@@ -2746,7 +2750,7 @@ footer {
   height: 55px;
   background-color: #222;
   position: absolute;
-  bottom: 135px;
+  bottom: 145px;
   right: 61px;
   color: #fff;
   border-radius: 50%;

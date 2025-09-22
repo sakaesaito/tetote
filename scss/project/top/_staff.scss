@@ -83,9 +83,11 @@
     height: 2px;
     background: #222;
 }
+
 .staff-text-wrapper {
     padding-left: 30px;
 }
+
 .staff-content-item {
     margin-top: 30px;
 
@@ -131,6 +133,7 @@
     width: 100%;
     height: auto;
     object-fit: contain;
+
     img {
         border-radius: 30px;
     }
@@ -219,14 +222,14 @@
     overflow: visible
 }
 
-.swiper-button-next::after , 
-.swiper-button-prev::after{  
+.swiper-button-next::after,
+.swiper-button-prev::after {
     color: #000;
     opacity: 0;
 }
 
 .swiper-button-prev {
-    display: block;   
+    display: block;
     background-color: #fff;
     position: absolute;
     right: -12px;
@@ -238,32 +241,37 @@
     background-image: url(./img/arrow-right-bk.png);
     background-repeat: no-repeat;
     background-position: center center;
-    background-size:16px 16px;
+    background-size: 16px 16px;
     transition: transform 0.3s ease;
-    transform-origin: center; /* 中央を基準に拡大縮小 */
-        &::after {
-            content: "";
-            position: absolute;
-            top: 0;
-            width: 58px;
-        height: 58px;
-        }
-        &:hover {
-            transform: scale(1.2); /* 1.2倍に拡大 */
-        }
-        @media screen and (max-width: 1024px) {
-            width: 42px;
-            height: 42px;
-            top: 0;
-            right: 100px;
-            background-size:10px 10px;
-        }
+    transform-origin: center;
+    width: 58px  !important;
+    height: 58px  !important;
+
+    /* 中央を基準に拡大縮小 */
+    &::after {
+        content: "";
+        position: absolute;
+        top: 0; 
+    }
+
+    &:hover {
+        transform: scale(1.2);
+        /* 1.2倍に拡大 */
+    }
+
+    @media screen and (max-width: 1024px) {
+        width: 42px;
+        height: 42px;
+        top: 0;
+        right: 100px;
+        background-size: 10px 10px;
+    }
 }
 
 .swiper-button-next {
     display: block;
-    width: 58px;
-    height: 58px;
+    width: 58px  !important;
+    height: 58px !important;
     background-color: #fff;
     position: absolute;
     right: -12px;
@@ -275,23 +283,27 @@
     background-image: url(./img/arrow-left-bk.png);
     background-repeat: no-repeat;
     background-position: center center;
-    background-size:16px 16px;
+    background-size: 16px 16px;
     transition: transform 0.3s ease;
-    transform-origin: center; /* 中央を基準に拡大縮小 */
-        &::after {
-            content: "";
-            position: absolute;
-            top: 0;
-        }
-        &:hover {
-            transform: scale(1.2); /* 1.2倍に拡大 */
-        }
-        @media screen and (max-width: 1024px) {
-            width: 42px;
-            height: 42px;
-            top: 0;
-            right: 100px;
-            background-size:10px 10px;
-        }
-}
+    transform-origin: center;
 
+    /* 中央を基準に拡大縮小 */
+    &::after {
+        content: "";
+        position: absolute;
+        top: 0;
+    }
+
+    &:hover {
+        transform: scale(1.2);
+        /* 1.2倍に拡大 */
+    }
+
+    @media screen and (max-width: 1024px) {
+        width: 42px;
+        height: 42px;
+        top: 0;
+        right: 100px;
+        background-size: 10px 10px;
+    }
+}
