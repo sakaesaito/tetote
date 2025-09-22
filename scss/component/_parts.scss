@@ -3,7 +3,7 @@
 .viewmore-button {
     max-width: 355px;
     width: 100%;
-    margin: 52px auto 0;
+    margin: 52px auto 0 16.5em;
     position: relative;
     text-align: center;
     border: 1px #222 solid;
@@ -109,7 +109,7 @@
     gap: 20px;
     position: absolute;
     bottom: 45px;
-    right: 157px;
+    right: 125px;
 
     @media screen and (max-width: 1200px) {
         display: none;

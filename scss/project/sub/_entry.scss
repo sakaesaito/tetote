@@ -81,7 +81,7 @@
 
 .entry-top {
     text-align: center;
-    padding-bottom: 95px;
+    padding-bottom: 88px;
     border-bottom: 1px solid #AFA86F;
     @media screen and (max-width: 1024px) {
         padding-bottom: 40px;
@@ -103,18 +103,23 @@
 
 .form-message {
     text-align: left;
+    margin-top: 30px;
     &:nth-child(1) {
     @media screen and (max-width: 1024px) {
         margin-top: 20px;
         }
     }
 }
+.form-message-02 {
+    text-align: left;
+    margin-top: 0;
+}
 
 .form-title {
     font-size: 32px;
     font-weight: 700;
     line-height: 1;
-    margin-top: 29px;
+    margin-top: 20px;
 
     & span {
         color: #98802C;
@@ -139,7 +144,7 @@
     width: 100%;
     text-align: left;
     line-height: 1.5;
-    padding-top: 20px;   
+    padding-top: 12px;   
 }
 .Form-Item-Label-works ,.Form-Item-Label-checkbox {
     padding-top: 0;
@@ -154,8 +159,8 @@
 .wpcf7 input[type="tel"],
 .wpcf7 input[type="text"],
 .wpcf7 input[type="textarea"] {
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding-top: 14px;
+    padding-bottom: 11px;
     padding-left: 20px;
     background-color: #FAF7F1;
     border: 1px solid #AFA86F;
@@ -186,7 +191,7 @@
 .wpcf7-list-item label {
     position: relative;
     display: block;
-    padding-left: 32px;
+    padding-left: 36px;
     cursor: pointer;
     margin-bottom: 8px;
     font-size: 16px;
@@ -197,8 +202,8 @@
 .wpcf7-list-item-label::before {
     content: "";
     display: inline-block;
-    width: 20px;
-    height: 20px;
+    width: 25px;
+    height: 25px;
     border: 1px solid #AFA86F;
     position: absolute;
     left: 0;
@@ -312,8 +317,11 @@
     border-radius: 10px;
     max-width: 575px;
     width: 100%;
-    padding-left: 20px;
-    padding-top: 20px;
+    padding-left: 23px;
+    padding-top: 10px;
+    margin-top: -6px;
+    height: 238px;
+
     @media screen and (max-width: 768px) {
         margin-top: 10px;
     }
@@ -373,15 +381,15 @@
 }
 
 .wpcf7-select {
-    padding-top: 22px;
-    padding-bottom: 22px;
+    padding-top: 15px;
+    padding-bottom: 15px;
     padding-left: 20px;
     background-color: #FAF7F1;
     border: 1px solid #AFA86F;
     display: flex;
     border-radius: 10px;
     font-size: 12px;
-    width: 164px;
+    width: 168px;
 }
 
 
@@ -389,16 +397,16 @@
     display: flex;
     align-items: center;
     gap: 10px;
-    margin-top: 27px;
+    margin-top: 12px;
         
     ::after {
         content: "";
         position: absolute;
-        top: 27px;
+        top: 20px;
         right: 15px;
         margin: auto;
-        width: 11px;
-        height: 11px;
+        width: 8px;
+        height: 8px;
         border-right: 1px solid #000;
         border-top: 1px solid #000;
         transform: rotate(134deg);
@@ -436,6 +444,9 @@
     }
 }
 
+.Form-Item-pr {
+    margin-top: 24px;
+}
 .Form-Item-Label-checkbox {
     max-width: 128px;
     width: 100%;
@@ -450,4 +461,12 @@
     background: #ccc;
     cursor: not-allowed;
     opacity: 0.6;
+}
+
+// 自己pr
+.isMsg {
+    margin-top: -12px;
+}
+.form-textarea {
+    margin-top: -2px;
 }

@@ -79,3 +79,6 @@ function wpcf7_autop_return_false() {
     return false;
 } 
 
+// スタッフ個別ページ写真
+add_image_size('single-thumb', 286, 362, true); 
+

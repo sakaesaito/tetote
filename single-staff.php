@@ -19,7 +19,7 @@
                                 </div>
                                 <p class="page-staff-box-note"><?php the_field('note'); ?></p>
                     </article>
-                    <figure class="page-staff-box-img"><?php the_post_thumbnail('medium'); ?>
+                    <figure class="page-staff-box-img"><?php the_post_thumbnail('single-thumb'); ?>
                     </figure>
                 </div>
             </div>

@@ -15,7 +15,7 @@
                     <h2 class="form-title"><span>新卒・中途採用</span><br>エントリーフォーム</h2>
                     <div class="form-message-box">
                         <p class="form-message">当社へ入社ご希望の方は、下記の送信フォームより送信して下さい。
-                        <p class="form-message">※は必須項目になります。</P>
+                        <p class="form-message-02">※は必須項目になります。</P>
                     </div>
                 </div>
             <?php echo do_shortcode( '[contact-form-7 id="4f82566" title="ENTRY FORM"]' ); ?>
