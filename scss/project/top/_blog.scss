@@ -85,12 +85,12 @@
 }
 .blog-box-right {
     margin-inline: 5%;
-    margin-top: 19px;
+    margin-top: 16px;
     max-width: 251px;
     display: flex;
     flex-direction: column;
     height: auto;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
     @media screen and (max-width: 1024px) {
         max-width: 560px;
         width: 100%;
@@ -125,7 +125,7 @@
     font-size: 1.125rem;
     font-weight: 700;
     line-height: 1.5;
-    padding-top: 26px;
+    padding-top: 14px;
     text-decoration: underline solid 1px #222;
     @media screen and (max-width: 768px) {
         font-size: 0.875rem;

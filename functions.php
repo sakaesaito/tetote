@@ -65,7 +65,7 @@ add_image_size('staff-box', 300, 379, true);
 
 add_action('init', function () {
     register_post_type('staff', [
-        'label'       => 'スタッフ',
+        'label'       => 'STAFF',
         'public'      => true,
         'has_archive' => true,                  
         'rewrite'     => ['slug' => 'staff'],  
@@ -82,3 +82,14 @@ function wpcf7_autop_return_false() {
 // スタッフ個別ページ写真
 add_image_size('single-thumb', 286, 362, true); 
 
+// staff 投稿のパンくずを英語名に置き換える
+add_filter('bcn_after_fill', function($trail) {
+    if (is_singular('staff')) {
+        $last = end($trail->breadcrumbs);
+        $english_name = get_field('english_name', get_the_ID()); // ACF の英語名フィールド
+        if ($english_name) {
+            $last->title = $english_name;
+        }
+    }
+    return $trail;
+});

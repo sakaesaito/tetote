@@ -2213,7 +2213,7 @@ footer {
   margin-top: 54px;
   margin-bottom: 0;
   background-color: #fff;
-  margin-left: 30px;
+  overflow: hidden;
 }
 @media screen and (max-width: 768px) {
   .staff-sec {
@@ -2323,8 +2323,9 @@ footer {
 }
 
 .swiper02 {
-  height: 100%;
-  overflow: visible;
+  margin: 0 auto;
+  max-width: 1024px;
+  width: 100%;
 }
 
 .swiper-button-next::after,
@@ -2929,12 +2930,12 @@ footer {
 
 .blog-box-right {
   margin-inline: 5%;
-  margin-top: 19px;
+  margin-top: 16px;
   max-width: 251px;
   display: flex;
   flex-direction: column;
   height: auto;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
 }
 @media screen and (max-width: 1024px) {
   .blog-box-right {
@@ -2977,7 +2978,7 @@ footer {
   font-size: 1.125rem;
   font-weight: 700;
   line-height: 1.5;
-  padding-top: 26px;
+  padding-top: 14px;
   text-decoration: underline solid 1px #222;
 }
 @media screen and (max-width: 768px) {
@@ -4196,7 +4197,7 @@ section.show {
   content: "";
   position: absolute;
   top: 50%;
-  right: 20px;
+  right: 34px;
   transform: translateY(-50%);
   width: 20px;
   height: 20px;
@@ -4242,7 +4243,7 @@ section.show {
 .details-list-title {
   width: 19%;
   padding-top: 1px;
-  font-weight: 400;
+  font-weight: 700;
 }
 @media screen and (max-width: 768px) {
   .details-list-title {
@@ -4279,8 +4280,8 @@ section.show {
   display: flex;
   gap: 40px;
   border-bottom: #222222 dashed 1px;
-  padding-top: 35px;
-  padding-bottom: 35px;
+  padding-top: 32px;
+  padding-bottom: 31px;
 }
 @media screen and (max-width: 768px) {
   .sub-page-blog-list {
@@ -4329,7 +4330,7 @@ section.show {
 }
 
 .sub-career-img {
-  margin-top: 48px;
+  margin-top: 38px;
 }
 @media screen and (max-width: 768px) {
   .sub-career-img {
@@ -4340,7 +4341,7 @@ section.show {
 .sub-career-note {
   font-weight: 400;
   line-height: 1.5;
-  margin-top: 37px;
+  margin-top: 38px;
 }
 @media screen and (max-width: 768px) {
   .sub-career-note {
@@ -4349,7 +4350,7 @@ section.show {
 }
 
 .sub-career-menu {
-  margin-top: 89px;
+  margin-top: 84px;
   padding-bottom: 175px;
 }
 @media screen and (max-width: 768px) {
@@ -4969,7 +4970,7 @@ section.show {
   display: flex;
   justify-content: center;
   font-size: 14px;
-  margin-top: 120px;
+  margin-top: 100px;
   gap: 32px;
 }
 @media screen and (max-width: 1024px) {
@@ -5446,7 +5447,7 @@ section.show {
   width: 100%;
   margin: 0 auto;
   border-bottom: 1px solid #AFA86F;
-  padding: 30px 12px 30px 0;
+  padding: 30.3px 12px 30.3px 0;
   background: #fff;
   cursor: pointer;
 }
