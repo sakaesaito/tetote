@@ -2336,7 +2336,12 @@ footer {
   max-width: 1024px;
   width: 100%;
   overflow: visible !important;
-  margin-left: 40px !important;
+  margin-left: 36px !important;
+}
+@media screen and (max-width: 768px) {
+  .swiper02 {
+    margin-left: 0;
+  }
 }
 
 .swiper-button-next::after,

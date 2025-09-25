@@ -112,7 +112,7 @@ document.addEventListener('DOMContentLoaded', function () {
             loop: true,
             speed: 600,
             autoHeight: false,
-            slidesPerView: 1.2,
+            slidesPerView: 1,
             spaceBetween: 23,
             allowTouchMove: true,
             navigation: {
@@ -120,9 +120,10 @@ document.addEventListener('DOMContentLoaded', function () {
                 prevEl: '.swiper-button-prev',
             },
             breakpoints: {
-                640: { slidesPerView: 2, spaceBetween: 24 },
+                375: { slidesPerView: 1.3, spaceBetween: 24 },
+                768: { slidesPerView: 2, spaceBetween: 24 },
                 1200: { slidesPerView: 2.5, spaceBetween: 35 },
-                1400: { slidesPerView: 3.5, spaceBetween: 43 },
+                1400: { slidesPerView: 3.1, spaceBetween: 43 },
             },
             watchSlidesProgress: true,
             watchOverflow: true,
