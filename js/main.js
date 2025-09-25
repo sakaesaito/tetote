@@ -112,8 +112,8 @@ document.addEventListener('DOMContentLoaded', function () {
             loop: true,
             speed: 600,
             autoHeight: false,
-            slidesPerView: 1,
-            spaceBetween: 20,
+            slidesPerView: 1.2,
+            spaceBetween: 23,
             allowTouchMove: true,
             navigation: {
                 nextEl: '.swiper-button-next',
@@ -122,7 +122,7 @@ document.addEventListener('DOMContentLoaded', function () {
             breakpoints: {
                 640: { slidesPerView: 2, spaceBetween: 24 },
                 1200: { slidesPerView: 2.5, spaceBetween: 35 },
-                1400: { slidesPerView: 3, spaceBetween: 43 },
+                1400: { slidesPerView: 3.5, spaceBetween: 43 },
             },
             watchSlidesProgress: true,
             watchOverflow: true,
@@ -266,19 +266,45 @@ document.addEventListener('DOMContentLoaded', function () {
 // ________送信フォーム全入力で送信ボタン反映＿＿＿＿＿＿
 
 jQuery(function ($) {
-        const $submitBtn = $('#js-submit');
-        const $form = $('#form');
-        $submitBtn.prop('disabled', true);
-        function checkForm() {
-        $form.find('input[required], textarea[required], select[required]').each(function () {
-            const allFilled = $form.find('input[type="text"]').val() !== "" &&
-                $form.find('input[type="email"]').val() !== "" &&
-                $form.find('select').val() !== "" &&
-                $form.find('input[type="radio"]:checked').length > 0
-                $form.find('#check').prop('checked') === true;
+    const $form = $('.wpcf7-form');        // CF7 のフォーム本体
+    const $submitBtn = $('#js-submit');    // 送信ボタン
 
-            $submitBtn.prop('disabled', !allFilled);
+    // 初期状態で送信ボタンを無効化
+    $submitBtn.prop('disabled', true);
+
+    function checkForm() {
+        let isValid = true;
+
+        // 必須項目を全部調べる
+        $form.find(
+            'input[required], input[aria-required="true"], textarea[required], textarea[aria-required="true"], select[required], select[aria-required="true"]'
+        ).each(function () {
+            const $field = $(this);
+
+            if ($field.is(':radio')) {
+                // ラジオボタンは同じnameの中で1つ選ばれているかチェック
+                const name = $field.attr('name');
+                if ($form.find(`input[name="${name}"]:checked`).length === 0) {
+                    isValid = false;
+                }
+            } else if ($field.is(':checkbox')) {
+                // チェックボックスはONかどうか
+                if (!$field.prop('checked')) {
+                    isValid = false;
+                }
+            } else if (($field.val() || '').trim() === '') {
+                // テキスト/メール/セレクトなど空文字か
+                isValid = false;
+            }
         });
 
-    };
+        // 結果によってボタン切り替え
+        $submitBtn.prop('disabled', !isValid);
+    }
+
+    // 入力・変更があったら都度チェック
+    $form.on('input change', 'input, textarea, select', checkForm);
+
+    // 初期表示時も一度チェックしておく
+    checkForm();
 });

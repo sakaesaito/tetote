@@ -186,6 +186,7 @@
     position: absolute;
     opacity: 0;
     z-index: -1;
+    color: #222;
 }
 
 .wpcf7-list-item label {
@@ -428,6 +429,7 @@
 
 .checkbox-item span {
     display: block;
+    padding-bottom: 3px;
     @media screen and (max-width: 768px) {
         margin-top: 10px;
     }
@@ -438,12 +440,14 @@
 }
 
 .Form-Item-check {
-    margin-top: 99px;
+    margin-top: 70px;
     @media screen and (max-width: 768px) {
         margin-top: 40px;
     }
 }
-
+.form-checkbox-item {
+    padding-bottom: 8px;
+}
 .Form-Item-pr {
     margin-top: 24px;
 }
@@ -469,4 +473,10 @@
 }
 .form-textarea {
     margin-top: -2px;
+}
+
+// 個人情報チェックボックス
+
+.privacy-check{
+    font-size: 14px;
 }

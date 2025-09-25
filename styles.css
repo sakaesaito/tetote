@@ -416,7 +416,7 @@ h2 {
 }
 
 img {
-  max-width: 100%;
+  width: 100%;
   height: auto;
 }
 
@@ -2115,7 +2115,7 @@ footer {
 }
 
 .swiper-slide {
-  width: calc(100% + (100vw - 1024px) / 2);
+  width: calc(100% + 100vw - 1024px);
   overflow: hidden;
   z-index: 2;
 }
@@ -2223,6 +2223,7 @@ footer {
   margin-top: 54px;
   margin-bottom: 0;
   background-color: #fff;
+  overflow: hidden;
 }
 @media screen and (max-width: 768px) {
   .staff-sec {
@@ -2334,7 +2335,8 @@ footer {
   margin: 0 auto;
   max-width: 1024px;
   width: 100%;
-  overflow: hidden;
+  overflow: visible !important;
+  margin-left: 40px !important;
 }
 
 .swiper-button-next::after,
@@ -3797,6 +3799,7 @@ footer {
   position: absolute;
   opacity: 0;
   z-index: -1;
+  color: #222;
 }
 
 .wpcf7-list-item label {
@@ -4044,6 +4047,7 @@ footer {
 
 .checkbox-item span {
   display: block;
+  padding-bottom: 3px;
 }
 @media screen and (max-width: 768px) {
   .checkbox-item span {
@@ -4056,12 +4060,16 @@ footer {
 }
 
 .Form-Item-check {
-  margin-top: 99px;
+  margin-top: 70px;
 }
 @media screen and (max-width: 768px) {
   .Form-Item-check {
     margin-top: 40px;
   }
+}
+
+.form-checkbox-item {
+  padding-bottom: 8px;
 }
 
 .Form-Item-pr {
@@ -4091,6 +4099,10 @@ footer {
 
 .form-textarea {
   margin-top: -2px;
+}
+
+.privacy-check {
+  font-size: 14px;
 }
 
 .details-main {

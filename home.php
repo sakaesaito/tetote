@@ -25,7 +25,7 @@
                 $blog_q = new WP_Query([
                     'post_type'           => 'post',
                     'posts_per_page'      => 8,
-                    'orderby'             => 'date',
+                    'orderby'             => 'modified',
                     'order'               => 'DESC',
                     'ignore_sticky_posts' => true,
                     'paged'               => $paged
