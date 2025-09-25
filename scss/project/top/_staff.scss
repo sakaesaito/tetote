@@ -16,13 +16,11 @@
     justify-content: flex-start;
     height: 100%;
 }
-// .swiper-slide {
-//     flex-grow: 1;
-//     /* インナーを超えて右側を拡張 */
-//     margin-right: calc(50% - 50vw);
-//     overflow-x: hidden;
-//     position: relative;
-// }
+.swiper-slide {
+    width: calc(100% + (100vw - 1024px) / 2);
+	overflow: hidden;
+	z-index: 2;
+}
 .swiper-slide:nth-child(odd) .staff-card {
     transform: translateY(35px);
 }
@@ -47,6 +45,9 @@
     @media screen and (max-width: 1024px) {
         display: block;
     }
+}
+.staff-card {
+    overflow: visible;
 }
 
 .staff-content-title {
@@ -111,12 +112,11 @@
 }
 
 .staff-sec {
-    width: 100%;
+    width: 100vw;
     height: 100%;
     margin-top: 54px;
     margin-bottom: 0;
     background-color: #fff;
-    overflow: hidden;
 
     @media screen and (max-width: 768px) {
         margin-top: 50px;
@@ -127,7 +127,6 @@
 .post-slide-item {
     position: relative;
     width: 100%;
-    overflow: visible;
     top: -64px;
 
     @media screen and (max-width: 1024px) {
@@ -221,12 +220,11 @@
     bottom: 60px;
 }
 
-
-
 .swiper02 {
     margin: 0 auto;
     max-width: 1024px;
     width: 100%;
+    overflow: hidden;
 }
 
 .swiper-button-next::after,

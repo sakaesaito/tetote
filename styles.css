@@ -2114,6 +2114,12 @@ footer {
   height: 100%;
 }
 
+.swiper-slide {
+  width: calc(100% + (100vw - 1024px) / 2);
+  overflow: hidden;
+  z-index: 2;
+}
+
 .swiper-slide:nth-child(odd) .staff-card {
   transform: translateY(35px);
 }
@@ -2141,6 +2147,10 @@ footer {
   .staff-box-wrapper {
     display: block;
   }
+}
+
+.staff-card {
+  overflow: visible;
 }
 
 .staff-content-title {
@@ -2208,12 +2218,11 @@ footer {
 }
 
 .staff-sec {
-  width: 100%;
+  width: 100vw;
   height: 100%;
   margin-top: 54px;
   margin-bottom: 0;
   background-color: #fff;
-  overflow: hidden;
 }
 @media screen and (max-width: 768px) {
   .staff-sec {
@@ -2225,7 +2234,6 @@ footer {
 .post-slide-item {
   position: relative;
   width: 100%;
-  overflow: visible;
   top: -64px;
 }
 @media screen and (max-width: 1024px) {
@@ -2326,6 +2334,7 @@ footer {
   margin: 0 auto;
   max-width: 1024px;
   width: 100%;
+  overflow: hidden;
 }
 
 .swiper-button-next::after,

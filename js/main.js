@@ -266,20 +266,19 @@ document.addEventListener('DOMContentLoaded', function () {
 // ________送信フォーム全入力で送信ボタン反映＿＿＿＿＿＿
 
 jQuery(function ($) {
-    $(document).ready(function () {
-
         const $submitBtn = $('#js-submit');
         const $form = $('#form');
-
-        $form.find('input, textarea').on('change', function () {
+        $submitBtn.prop('disabled', true);
+        function checkForm() {
+        $form.find('input[required], textarea[required], select[required]').each(function () {
             const allFilled = $form.find('input[type="text"]').val() !== "" &&
                 $form.find('input[type="email"]').val() !== "" &&
-                $form.find('input[type="select"]').val() !== "" &&
-                $form.find('input[type="radio"]').val() !== "" &&
+                $form.find('select').val() !== "" &&
+                $form.find('input[type="radio"]:checked').length > 0
                 $form.find('#check').prop('checked') === true;
 
             $submitBtn.prop('disabled', !allFilled);
         });
 
-    });
+    };
 });
