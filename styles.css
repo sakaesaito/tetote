@@ -3740,7 +3740,10 @@ footer {
   }
 }
 
-.form-name, .form-email, .form-tell, .form-textarea {
+.form-name,
+.form-email,
+.form-tell,
+.form-textarea {
   max-width: 575px;
   width: 100%;
 }
@@ -3753,7 +3756,8 @@ footer {
   padding-top: 12px;
 }
 
-.Form-Item-Label-works, .Form-Item-Label-checkbox {
+.Form-Item-Label-works,
+.Form-Item-Label-checkbox {
   padding-top: 0;
 }
 
@@ -3907,7 +3911,7 @@ footer {
   display: block;
   width: 256px;
   margin: 40px auto 0;
-  padding: 16px;
+  padding: 12px;
   font-size: 18px;
   text-align: center;
   background-color: #fff;
@@ -4010,13 +4014,15 @@ footer {
   width: 168px;
 }
 
-.form-tsuki, .form-nichi {
+.form-tsuki,
+.form-nichi {
   display: flex;
   align-items: center;
   gap: 10px;
   margin-top: 12px;
 }
-.form-tsuki ::after, .form-nichi ::after {
+.form-tsuki ::after,
+.form-nichi ::after {
   content: "";
   position: absolute;
   top: 20px;
@@ -4101,7 +4107,20 @@ footer {
   margin-top: -2px;
 }
 
-.privacy-check {
+/* 個人情報保護方針のチェックボックスだけ四角を16pxに */
+.privacy-check .wpcf7-list-item-label::before {
+  width: 16px;
+  height: 16px;
+}
+
+/* チェック時の内側マークの大きさ */
+.privacy-check input[type=checkbox]:checked + .wpcf7-list-item-label::after {
+  width: 12px;
+  height: 12px;
+}
+
+/* ラベル文字サイズ */
+.privacy-check .wpcf7-list-item-label {
   font-size: 14px;
 }
 
