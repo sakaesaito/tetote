@@ -39,7 +39,7 @@
 
                             <div class="sub-staff-box">
                                 <a href="<?php the_permalink(); ?>">
-                                    <?php the_post_thumbnail('full' , array('class' => 'custom-thumbnail')); ?>
+                                    <?php the_post_thumbnail('full', array('class' => 'custom-thumbnail')); ?>
                                     <div class="sub-staff-box-img">
                                         <p class="sub-staff-box-message1"><?php the_field('message1'); ?></p>
                                         <p class="sub-staff-box-message2"><?php the_field('message2'); ?></p>
@@ -51,7 +51,8 @@
                                     </div>
                                 </a>
                             </div>
-                    <?php endwhile;endif;
+                    <?php endwhile;
+                    endif;
                     wp_reset_postdata(); ?>
                 </div>
             </div>

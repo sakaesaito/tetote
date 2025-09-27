@@ -1,23 +1,27 @@
 .infinity-slider {
     height: auto;
     width: 100%;
-    overflow: hidden;    
+    overflow: hidden;
 }
+
 .infinity-slider .slider1 {
     height: auto;
     display: flex;
     justify-content: center;
     align-items: center;
 }
+
 .infinity-slider .swiper-slide img {
-    width: 100%;   
-    height: auto; 
+    width: 100%;
+    height: auto;
     object-fit: contain;
     display: block;
 }
+
 .swiper-container {
     position: relative;
 }
+
 .slider-heading {
     max-width: 600px;
     width: 100%;

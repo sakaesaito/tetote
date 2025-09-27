@@ -2,29 +2,35 @@
     background-color: #faf7f1;
     border-radius: 0px;
     padding-top: 124px;
+
     @media screen and (max-width: 1024px) {
         padding-bottom: 50px;
     }
 }
+
 .page-staff-mv-inner {
     padding-right: 24px;
     padding-left: 20px;
+
     @media screen and (max-width: 768px) {
         padding-left: 15px;
         padding-right: 15px;
     }
 }
+
 .page-staff-box {
     display: flex;
     gap: 88px;
     max-width: 1024px;
     width: 100%;
     line-height: 1;
+
     &-left {
         max-width: 606px;
         width: 100%;
         margin-top: 70px;
     }
+
     &-title {
         font-size: 2.25rem;
         font-weight: 700;
@@ -32,11 +38,13 @@
         inline-size: fit-content;
         padding-inline: 14px;
         line-height: 1.2;
+
         @media screen and (max-width: 1024px) {
             font-size: 1.75rem;
             margin-top: 0;
         }
     }
+
     &-item {
         font-size: 1.5rem;
         font-weight: 700;
@@ -45,10 +53,12 @@
         inline-size: fit-content;
         padding-inline: 14px;
         line-height: 1.5;
+
         @media screen and (max-width: 1024px) {
             font-size: 1.25rem;
         }
     }
+
     &-position {
         font-size: 0.875rem;
         font-weight: 700;
@@ -56,46 +66,56 @@
         margin-top: 24px;
         line-height: 1;
     }
+
     &-name {
         font-size: 1.5em;
         margin-top: 5px;
         font-weight: 700;
     }
+
     &-year {
         font-size: 1rem;
         margin-top: 16px;
     }
+
     &-note {
         line-height: 1.8;
         margin-top: 2px;
         padding-left: 5px;
     }
+
     @media screen and (max-width: 768px) {
-        display: block;   
+        display: block;
     }
 }
+
 .page-staff-box-name-sec {
     display: flex;
     gap: 20px;
     padding-left: 5px;
     margin-top: 0;
+
     @media screen and (max-width: 1024px) {
         display: block;
     }
 }
+
 .page-staff-box-img {
     max-width: 286px;
     width: 100%;
     padding-top: 38px;
     padding-bottom: 46px;
     border-radius: 0;
+
     @media screen and (max-width: 1024px) {
         margin-inline: auto;
     }
 }
+
 .page-staff-wrapper {
     width: 100%;
 }
+
 .single-inner {
     max-width: 1024px;
     display: flex;
@@ -103,104 +123,125 @@
     width: 100%;
     margin-inline: auto;
     position: relative;
+
     @media screen and (max-width: 768px) {
         display: block;
     }
 }
+
 .staff-content {
     max-width: 723px;
     width: 100%;
     padding-left: 22px;
+
     @media screen and (max-width: 1024px) {
         max-width: 530px;
         width: 100%;
         padding-left: 20px;
     }
+
     @media screen and (max-width: 768px) {
         max-width: 700px;
         padding-right: 20px;
     }
 }
+
 .page-staff {
     &-title {
         font-size: 1.5rem;
         font-weight: 700;
         line-height: 1;
         margin-top: 27px;
+
         &::before {
             content: "";
             border-left: #222 1px solid;
             width: 200px;
         }
+
         @media screen and (max-width: 768px) {
             font-size: 1.25rem;
             margin-top: 50px;
         }
     }
+
     &-note {
         font-weight: 400;
         line-height: 1.8;
         margin-top: 50px;
+
         @media screen and (max-width: 1024px) {
             margin-top: 30px;
         }
     }
 }
+
 .page-staff-pic {
     max-width: 710px;
     margin-top: 23px;
     width: 100%;
     border-radius: 30px;
+
     img {
         width: 100%;
         margin-top: 10px;
-        
+
     }
 }
+
 .page-staff-title-member {
     text-align: center;
     font-size: 2rem;
-    margin-top: 98px; 
+    margin-top: 98px;
     font-weight: 700;
 }
+
 .page-staff-sec {
     margin-top: 50px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 43px;
+
     @media screen and (max-width: 1024px) {
         grid-template-columns: repeat(2, 2fr);
         max-width: 650px;
         width: 100%;
         margin-inline: auto;
     }
+
     @media screen and (max-width: 768px) {
         grid-template-columns: repeat(1, 3fr);
         max-width: 300px;
         width: 100%;
     }
 }
+
 .staff-box2 {
     margin-top: 0;
 }
+
 .page-staff-list {
     position: absolute;
     bottom: -89px;
 }
+
 .page-staff-box-list {
     @media screen and (max-width: 1024px) {
-        margin-bottom: 70px;    
+        margin-bottom: 70px;
     }
 }
+
 .page-staff-main {
     max-width: 1440px;
     width: 100%;
     margin: 72px auto 0;
+
     @media screen and (max-width: 1024px) {
         max-width: 1024px;
         margin-top: 50px;
     }
 }
+
 aside {
     color: #999;
     font-size: 14px;
@@ -212,54 +253,66 @@ aside {
     top: 513px;
     position: sticky;
     right: 0;
+
     @media screen and (max-width: 768px) {
         display: none;
     }
 }
+
 .a-side-list {
     padding-top: 2px;
 }
+
 .page-staff-title::before {
     content: "";
     position: absolute;
-    border-bottom:  #222 solid 0.5px;
-    transform-origin: left center;   /* 縮小の基準点 */
+    border-bottom: #222 solid 0.5px;
+    transform-origin: left center;
+    /* 縮小の基準点 */
     transform: scale(1);
-    width: calc(50vw - 50% );
+    width: calc(50vw - 50%);
     left: calc(50% - 50vw - 0.2rem);
     height: 15px;
-    background-color: #fff;   
+    background-color: #fff;
 }
+
 .a-side-list li::before {
     content: "・";
     margin-right: 0.5em;
     color: #999;
 }
+
 .a-side-inner {
     position: sticky;
     top: 120px;
 }
+
 .a-side-list li {
     transition: color 0.3s;
     color: #999;
     font-weight: 400;
     line-height: 2.5;
 }
+
 .a-side-list li.active {
     color: #222;
     font-weight: 700;
 }
+
 .title-no {
     margin-top: 5px;
 }
+
 @media screen and (max-width: 1024px) {
     .page-staff-title::before {
         display: none;
     }
 }
+
 .sub-inner-staff-details {
     padding-bottom: 227px;
+
     @media screen and (max-width: 1024px) {
-    padding-bottom: 60px;
+        padding-bottom: 60px;
     }
 }

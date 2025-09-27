@@ -3,51 +3,60 @@
     @media screen and (max-width: 1024px) {
         padding-inline: 70px;
     }
+
     @media screen and (max-width: 768px) {
         padding-inline: 20px;
     }
 }
+
 .sub-staff-box-wrapper {
     display: grid;
-    grid-template-columns: repeat(3, 1fr); /* 2列 */
-    grid-template-rows: repeat(2, 1fr);   /* 3行 */
-	column-gap: 43px;
-	row-gap: 136px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    column-gap: 43px;
+    row-gap: 136px;
 
     @media screen and (max-width: 1024px) {
         display: grid;
-        grid-template-columns: repeat(2, 1fr); /* 2列 */
-        grid-template-rows: repeat(3, 1fr);   /* 3行 */
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
         column-gap: 20px;
         row-gap: 100px;
     }
+
     @media screen and (max-width: 768px) {
         display: grid;
-        grid-template-columns: repeat(1, 1fr); /* 2列 */
-        grid-template-rows: repeat(6, 1fr);   /* 3行 */
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(6, 1fr);
         column-gap: 10px;
     }
 }
+
 .sub-staff-box {
     margin-top: 0;
     position: relative;
+
     @media screen and (max-width: 1024px) {
-        margin-left:  0;
+        margin-left: 0;
         margin-inline: auto;
     }
 }
+
 .sub-staff-box-img {
     position: absolute;
     bottom: -88px;
+
     @media screen and (max-width: 1024px) {
         bottom: -82px;
     }
+
     @media screen and (max-width: 768px) {
         bottom: -82px;
     }
 }
 
-.sub-staff-box-message1, .sub-staff-box-message2{
+.sub-staff-box-message1,
+.sub-staff-box-message2 {
     inline-size: fit-content;
     margin-top: 6px;
     font-size: 1.25rem;
@@ -59,9 +68,11 @@
     padding-bottom: 5px;
     padding-inline: 7px;
 }
+
 .sub-staff-sec {
     margin-top: 130px;
     margin-bottom: 232px;
+
     @media screen and (max-width: 1024px) {
         margin-top: 50px;
     }

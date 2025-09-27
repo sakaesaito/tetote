@@ -67,23 +67,24 @@ add_action('init', function () {
     register_post_type('staff', [
         'label'       => 'STAFF',
         'public'      => true,
-        'has_archive' => true,                  
-        'rewrite'     => ['slug' => 'staff'],  
+        'has_archive' => true,
+        'rewrite'     => ['slug' => 'staff'],
         'supports'    => ['title', 'editor', 'thumbnail'],
     ]);
 });
 
 // Contact Form 7で自動挿入されるPタグ、brタグを削除
 add_filter('wpcf7_autop_or_not', 'wpcf7_autop_return_false');
-function wpcf7_autop_return_false() {
+function wpcf7_autop_return_false()
+{
     return false;
-} 
+}
 
 // スタッフ個別ページ写真
-add_image_size('single-thumb', 286, 362, true); 
+add_image_size('single-thumb', 286, 362, true);
 
 // staff 投稿のパンくずを英語名に置き換える
-add_filter('bcn_after_fill', function($trail) {
+add_filter('bcn_after_fill', function ($trail) {
     if (is_singular('staff')) {
         $last = end($trail->breadcrumbs);
         $english_name = get_field('english_name', get_the_ID()); // ACF の英語名フィールド

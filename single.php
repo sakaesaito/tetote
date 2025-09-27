@@ -46,7 +46,7 @@
                             </a>
                         </div>
                     </div>
-                    <?php else: ?>
+                <?php else: ?>
                     <p>前の記事はありません</p>
                 <?php endif; ?>
             </div>

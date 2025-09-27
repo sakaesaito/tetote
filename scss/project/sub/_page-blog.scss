@@ -1,114 +1,141 @@
 .is-small-blog {
     margin-top: 118px;
+
     @media screen and (max-width: 768px) {
         padding-top: 60px;
         margin-top: 0;
     }
 }
+
 .blog-detail {
     background-color: #faf7f1;
     padding-top: 40px;
     padding-bottom: 139px;
+
     @media screen and (max-width: 1024px) {
         padding-top: 24px;
         padding-bottom: 50px;
     }
 }
+
 .blog-detail-date {
     display: flex;
     align-items: center;
     gap: 16px;
     padding-top: 35px;
 }
+
 .blog-detail-sec {
     width: 100%;
 }
-.blog-detail-tag , .time {
+
+.blog-detail-tag,
+.time {
     font-size: 14px;
     font-weight: 400;
     line-height: 1;
 }
+
 .blog-detail-inner {
     padding-bottom: 23px;
     background-color: #fff;
     max-width: 800px;
     padding-inline: 40px;
+
     @media screen and (max-width: 768px) {
         padding-inline: 20px;
     }
 }
+
 .sub-title-blog-detail {
     margin-top: 20px;
     font-size: 32px;
     line-height: 1.5;
-        br {
-            display: none;
-            @media screen and (max-width: 768px) {
-                display: inline;
-            }
+
+    br {
+        display: none;
+
+        @media screen and (max-width: 768px) {
+            display: inline;
         }
+    }
+
     @media screen and (max-width: 768px) {
         font-size: 1.8rem;
-    }       
+    }
 }
+
 .blog-detail-img {
     margin-top: 30px;
     width: 100%;
 }
+
 .blog-detail-note1 {
     font-weight: 400;
     line-height: 1.8;
     margin-top: 45px;
+
     @media screen and (max-width: 1024px) {
         line-height: 1.5;
     }
 }
+
 .blog-detail-menu {
     font-size: 1.5rem;
     font-weight: 700;
     line-height: 1;
     margin-top: 23px;
+
     @media screen and (max-width: 1024px) {
         font-size: 1.125rem;
     }
 }
+
 .blog-detail-note {
     margin-top: 50px;
     font-weight: 400;
     line-height: 1.8;
+
     @media screen and (max-width: 1024px) {
         line-height: 1.5;
         margin-top: 30px;
     }
 }
+
 .blog-detail-page {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding-top: 31px;
     padding-bottom: 31px;
-    padding-inline: 50px;   
+    padding-inline: 50px;
 }
+
 .blog-detail-page-inner {
     max-width: 1024px;
     width: 100%;
     margin: 0 auto;
 }
+
 .time {
     font-weight: 400;
 }
+
 .blog-detail-list {
     margin-top: 50px;
     list-style: disc;
     padding-left: 1.5em;
 }
+
 .blog-detail-item {
     line-height: 1.8;
     list-style: inherit;
 }
+
 .blog-detail-news {
     display: flex;
     padding-top: 31px 50px;
+
     @media screen and (max-width: 1024px) {
         display: none;
     }
@@ -118,18 +145,20 @@
 // _____ブログ個別記事のページネーション_____
 .blog-pagination-sec {
     display: flex;
-    justify-content:space-between;
+    justify-content: space-between;
     align-items: center;
     gap: 1rem;
     padding-top: 20px;
     padding-bottom: 20px;
     max-width: 1024px;
     width: 100%;
-    padding-inline:50px;
+    padding-inline: 50px;
+
     @media screen and (max-width: 768px) {
-        padding-inline:20px;
+        padding-inline: 20px;
     }
 }
+
 .blog-pagination-wrapper {
     max-width: 464px;
     width: 100%;
@@ -138,11 +167,13 @@
     &.before {
         display: flex;
         border-right: 1px solid #222;
+
         @media screen and (max-width: 1024px) {
             border-right: none;
             max-width: 200px;
         }
     }
+
     &.after {
         justify-content: end;
     }
@@ -159,28 +190,33 @@
     display: flex;
     margin-top: 21px;
     transition: .4s;
-        &.prev {
+
+    &.prev {
         margin-right: 21px;
         background-image: url(./img/arrow-detail-left.png);
         background-repeat: no-repeat;
         background-position: center center;
         background-size: 24px;
-        }
-        &.next {
-            margin-left: 21px;
-            background-image: url(./img/arrow-detail-right.png);
-            background-repeat: no-repeat;
-            background-position: center center;
-            background-size: 24px;
-        }
-        @media screen and (max-width: 1024px) {
-            margin-top: 5px;
-        }
+    }
+
+    &.next {
+        margin-left: 21px;
+        background-image: url(./img/arrow-detail-right.png);
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: 24px;
+    }
+
+    @media screen and (max-width: 1024px) {
+        margin-top: 5px;
+    }
 }
+
 .page-blog-date {
     font-size: 12px;
     line-height: 1;
 }
+
 .topic {
     padding-top: 13px;
     font-weight: 400;
@@ -188,7 +224,7 @@
     max-width: 310px;
     width: 100%;
 }
+
 .blog-page {
     background-color: #F0F0F0;
 }
-

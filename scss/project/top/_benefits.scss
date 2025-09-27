@@ -1,39 +1,47 @@
 .benefits {
-    padding-top:129px;
+    padding-top: 129px;
     padding-bottom: 176px;
     background-color: #fff;
+
     @media screen and (max-width: 768px) {
         padding-top: 52px;
         padding-bottom: 187px;
     }
 }
+
 .benefits-inner {
     margin: 0 auto;
 }
+
 .benefits-text-wrapper {
     text-align: center;
     max-width: 1024px;
     width: 100%;
+
     @media screen and (max-width: 1024px) {
         text-align: left;
         padding-inline: 17px;
     }
 }
+
 .benefits-content-item {
     margin-top: 22px;
     margin-left: 44px;
+
     @media screen and (max-width: 768px) {
         margin-left: 0;
         margin-top: 30px;
         margin-inline: 20px;
     }
 }
+
 .benefits-main-box {
     display: grid;
-    grid-template-columns: repeat(2, 1fr); 
+    grid-template-columns: repeat(2, 1fr);
     grid-gap: 50px;
     text-align: center;
     margin-left: 28px;
+
     @media screen and (max-width: 1024px) {
         display: block;
         width: 100%;
@@ -43,29 +51,36 @@
         margin: 0 auto;
     }
 }
+
 .benefits-img-wrapper {
     margin-top: 108px;
     position: relative;
+
     @media screen and (max-width: 1024px) {
         margin-top: 36px;
+
         &:nth-child(2) {
             margin-top: 150px;
         }
     }
+
     @media screen and (max-width: 768px) {
         margin-top: 35px;
+
         &:nth-child(2) {
             margin-top: 145px;
         }
     }
 }
+
 .benefits-img-box {
-    background-color:#FAF7F1;
+    background-color: #FAF7F1;
     border-radius: 50%;
     width: 430px;
     height: 430px;
     position: relative;
     background-position: center;
+
     @media screen and (max-width: 1024px) {
         width: 251px;
         height: 251px;
@@ -83,6 +98,7 @@
         margin-top: 2em;
         width: 202px;
     }
+
     @media screen and (max-width: 768px) {
         margin-top: 4em;
     }
@@ -91,10 +107,12 @@
 .benefits-img-box-pic {
     margin-top: 80px;
     width: 79%;
+
     @media screen and (max-width: 1024px) {
         margin-top: 1em;
         width: 202px;
     }
+
     @media screen and (max-width: 768px) {
         margin-top: 33px;
     }
@@ -103,12 +121,13 @@
 .benefits-img-message {
     font-size: 1.5rem;
     font-weight: 400;
-    font-family:"Viga";
-    transform: rotate( 90deg );
+    font-family: "Viga";
+    transform: rotate(90deg);
     position: absolute;
     top: 115px;
     right: -103px;
     letter-spacing: 3px;
+
     @media screen and (max-width: 1024px) {
         font-size: 14px;
         top: 56px;
@@ -127,44 +146,53 @@
         margin-top: -30px;
         padding-right: 0;
     }
+
     @media screen and (max-width: 768px) {
         margin-top: -35px;
         padding-right: 0;
     }
+
     a {
-    width: 56px;
-    height: 55px;
-    background-color: #222;
-    position: absolute;
-    bottom: 145px;
-    right: 61px;
-    color: #fff;
-    border-radius: 50%;
-    transition: .2s;
-    line-height: 55px;
-    background-image: url(./img/arrow-left-wh.png);
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size:16px 16px;
-    transition: transform 0.3s ease; /* アニメーションの追加 */
-    transform-origin: center; /* 中央を基準に拡大縮小 */
+        width: 56px;
+        height: 55px;
+        background-color: #222;
+        position: absolute;
+        bottom: 145px;
+        right: 61px;
+        color: #fff;
+        border-radius: 50%;
+        transition: .2s;
+        line-height: 55px;
+        background-image: url(./img/arrow-left-wh.png);
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: 16px 16px;
+        transition: transform 0.3s ease;
+        /* アニメーションの追加 */
+        transform-origin: center;
+
+        /* 中央を基準に拡大縮小 */
         &::after {
             content: "";
             position: absolute;
             top: 0;
         }
+
         &:hover {
-            transform: scale(1.2); /* 1.2倍に拡大 */
+            transform: scale(1.2);
+            /* 1.2倍に拡大 */
         }
+
         @media screen and (max-width: 1024px) {
             width: 42px;
             height: 42px;
             bottom: 142px;
             right: 57px;
-            background-size:20px 20px;
-        } 
+            background-size: 20px 20px;
+        }
     }
 }
+
 .benefits-img-title {
     font-size: 2rem;
     line-height: 1.2;
@@ -173,19 +201,22 @@
     display: inline-block;
     text-align: center;
     padding-inline: 7px;
+
     @media screen and (max-width: 1024px) {
         font-size: 1.5rem;
     }
+
     @media screen and (max-width: 768px) {
         padding: 8px 7px;
         line-height: 1;
     }
 }
 
-    
+
 .benefits-img-item {
     margin-top: 31px;
     text-align: start;
+
     @media screen and (max-width: 1024px) {
         font-weight: 400;
         font-size: 1rem;
@@ -193,6 +224,7 @@
         margin-top: 21px;
     }
 }
+
 .benefits-button {
     font-size: 1.25rem;
     transition: .4s;

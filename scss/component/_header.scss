@@ -63,6 +63,7 @@
     justify-content: space-between;
     height: inherit;
     align-items: center;
+
     @media screen and (max-width: 768px) {
         margin-top: 11px;
     }
@@ -261,9 +262,10 @@
         height: 60px;
     }
 }
+
 .sub-header-nav {
     @media screen and (max-width: 768px) {
-    margin-top: 0;
+        margin-top: 0;
     }
 }
 
@@ -309,6 +311,7 @@
 .sub-header-inner {
     padding-right: 28px;
     height: inherit;
+
     @media screen and (max-width: 768px) {
         padding-right: 0;
     }
@@ -363,6 +366,7 @@
 /* .header-hamburgerクラスがactiveの時のコード*/
 .sub-header-hamburger.active span:nth-child(1) {
     transform: rotate(45deg) translate(8px, 12px);
+
     @media screen and (max-width: 768px) {
         transform: rotate(45deg) translate(8px, 5px);
     }
@@ -374,6 +378,7 @@
 
 .sub-header-hamburger.active span:nth-child(3) {
     transform: rotate(-45deg) translate(8px, -12px);
+
     @media screen and (max-width: 768px) {
         transform: rotate(-45deg) translate(8px, -5px);
     }

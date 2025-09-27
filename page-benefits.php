@@ -13,7 +13,7 @@
 </section>
 <div class="is-small">
     <ol class="breadcrumbs">
-    <?php if (function_exists('bcn_display')) bcn_display_list(); ?>
+        <?php if (function_exists('bcn_display')) bcn_display_list(); ?>
     </ol>
 </div>
 <section class="benefits-system">

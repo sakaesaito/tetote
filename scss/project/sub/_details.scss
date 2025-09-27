@@ -50,6 +50,7 @@ section.show {
             display: inline;
         }
     }
+
     @media screen and (max-width: 1024px) {
         margin-top: 30px;
         text-align: center;
@@ -67,6 +68,7 @@ section.show {
         width: 100%;
         margin: 30px auto 0;
     }
+
     @media screen and (max-width: 768px) {
         padding-top: 0;
     }
@@ -92,6 +94,7 @@ section.show {
         background-color: #222;
         color: #fff;
     }
+
     @media screen and (max-width: 1024px) {
         margin-top: 30px;
         width: 100%;
@@ -126,9 +129,11 @@ section.show {
     line-height: 1;
     margin-top: 88px;
     font-weight: 700;
+
     @media screen and (max-width: 1024px) {
         font-size: 1.5rem;
     }
+
     &-consul {
         margin-top: 97px;
     }
@@ -136,6 +141,7 @@ section.show {
 
 .details-list-sec {
     margin-top: 83px;
+
     @media screen and (max-width: 1024px) {
         margin-top: 30px;
     }
@@ -145,6 +151,7 @@ section.show {
     width: 19%;
     padding-top: 1px;
     font-weight: 700;
+
     @media screen and (max-width: 768px) {
         width: 25%;
     }
@@ -158,9 +165,11 @@ section.show {
 
 .details-list-item {
     font-weight: 400;
+
     br {
         display: none;
     }
+
     @media screen and (max-width: 1024px) {
         br {
             display: inline;

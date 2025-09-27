@@ -46,7 +46,7 @@
         <div class="sub-aboutus-box">
             <div class="sub-aboutus-list">
                 <h3 class="sub-aboutus-title title-5">
-                働きがいと充実感あふれる環境</h3>
+                    働きがいと充実感あふれる環境</h3>
                 <p class="sub-aboutus-item">ワークライフバランスを重視し、従業員が働きがいと充実感を感じられる環境づくりに積極的に取り組んでいます。充実した福利厚生制度や、多様な働き方を可能にする制度を導入し、個々のライフスタイルに合わせた働き方を支援します。</p>
             </div>
         </div>

@@ -93,7 +93,7 @@
             ?>
                     <div class="sub-staff-box page-staff-box-list">
                         <a href="<?php the_permalink(); ?>">
-                            <figure><?php the_post_thumbnail('large' , array('class' => 'custom-thumbnail')); ?></figure>
+                            <figure><?php the_post_thumbnail('large', array('class' => 'custom-thumbnail')); ?></figure>
                             <div class="sub-staff-box-img page-staff-list">
                                 <p class="sub-staff-box-message1"><?php the_field('message01'); ?></p>
                                 <p class="sub-staff-box-message2"><?php the_field('message02'); ?></p>

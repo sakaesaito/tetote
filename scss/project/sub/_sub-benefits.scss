@@ -3,18 +3,23 @@
 .sub-inner-benefits {
     padding-inline: 20px;
 }
+
 .sub-title-benefits {
     padding-top: 145px;
+
     @media screen and (max-width: 1024px) {
         padding-top: 70px;
     }
 }
+
 .sub-benefits-list-sec {
     margin-top: 77px;
+
     @media screen and (max-width: 768px) {
         margin-top: 50px;
     }
 }
+
 .benefits-list {
     display: flex;
     gap: 40px;
@@ -22,6 +27,7 @@
     align-items: flex-start;
     padding-top: 34px;
     padding-bottom: 33px;
+
     @media screen and (max-width: 768px) {
         display: block;
         padding-top: 20px;
@@ -29,29 +35,36 @@
         gap: 10px;
     }
 }
+
 .benefits-list-title {
     line-height: 1;
     width: 20%;
     display: block;
+
     @media screen and (max-width: 768px) {
         padding-bottom: 20px;
         width: 22%;
     }
 }
+
 .benefits-list-item {
     line-height: 1.5;
     font-weight: 400;
 }
+
 /*section[benefit-user]________*/
 .sub-title-benefits2 {
     margin-top: 133px;
+
     @media screen and (max-width: 768px) {
         margin-top: 70px;
     }
 }
+
 .benefits-user-box {
     display: flex;
     gap: 46px;
+
     @media screen and (max-width: 768px) {
         display: block;
         margin: 0 auto;
@@ -59,34 +72,41 @@
         width: 100%;
     }
 }
+
 .benefits-user-wrap {
     max-width: 467px;
     width: 100%;
+
     @media screen and (max-width: 768px) {
         margin: 0 auto;
         max-width: 570px;
         width: 100%;
     }
 }
+
 .benefits-date {
     color: #988c2c;
     line-height: 1;
     margin-top: 23px;
     font-weight: 700;
 }
+
 .benefits-name {
     font-size: 1.5rem;
     font-weight: 700;
     line-height: 1;
     margin-top: 13px;
 }
+
 .benefits-note {
     line-height: 1.8;
     margin-top: 25px;
 }
+
 .benefits-staff-img {
     margin-top: 35px;
     margin-bottom: 139px;
+
     @media screen and (max-width: 768px) {
         margin-top: 30px;
         margin-bottom: 70px;

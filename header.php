@@ -15,6 +15,7 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <?php wp_head(); ?>
 </head>
+
 <body <?php body_class(); ?>>
     <header class="header <?php if (!is_front_page()) echo 'is-subpage'; ?>">
         <div class="header-inner sub-header-inner">
@@ -56,7 +57,7 @@
                             <ul class="drawer-line">
                                 <li class="drawer-item"><a href="<?php echo esc_url(home_url('/about/')); ?>">ABOUT US<br><span>TETOTEについて</span></a></li>
                                 <li class="drawer-item"><a href="<?php echo get_post_type_archive_link('staff'); ?>">STAFF<br><span>社員について</span></a></li>
-                                <li class="drawer-item"><a href="<?php echo esc_url( get_permalink( get_option('page_for_posts') ) ); ?>">BLOG<br><span>採用ブログ</span></a></li>
+                                <li class="drawer-item"><a href="<?php echo esc_url(get_permalink(get_option('page_for_posts'))); ?>">BLOG<br><span>採用ブログ</span></a></li>
                                 <li>
                                     <p class="drawer-parts"></p>
                                 </li>

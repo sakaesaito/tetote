@@ -1,18 +1,22 @@
 .entry-mv {
     width: 100%;
     padding-top: 118px;
+
     @media screen and (max-width: 768px) {
         padding-top: 60px;
     }
 }
+
 .sub-title-entry {
     font-size: 2rem;
     font-weight: 700;
     padding-top: 44px;
+
     @media screen and (max-width: 768px) {
         font-size: 1.25rem;
     }
 }
+
 .entry-message {
     line-height: 1.5;
     font-weight: 400;
@@ -22,11 +26,12 @@
     br {
         display: none;
     }
+
     @media screen and (max-width: 768px) {
         font-size: 1rem;
         padding-top: 24px;
-        padding-bottom: 40px; 
-        
+        padding-bottom: 40px;
+
         br {
             display: inline;
         }
@@ -40,8 +45,8 @@
     text-align: center;
     background-color: #fff;
     border-radius: 10px;
+
     @media screen and (max-width: 768px) {
         padding-inline: 15px;
     }
 }
-
