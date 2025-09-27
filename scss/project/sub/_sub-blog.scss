@@ -3,33 +3,37 @@
     width: 100%;
     margin: 0 auto;
     padding-inline: 2.3%;
+
     @media screen and (max-width: 1024px) {
         padding-inline: 4%;
-    }   
+    }
 }
-.blog-wrapper {
-    padding-inline: 20px;
-}
+
 .sub-inner-blog {
     padding-top: 60px;
 }
+
 .sub-blog-sec {
     margin-top: 130px;
     margin-bottom: 139px;
+
     @media screen and (max-width: 1024px) {
         margin-top: 50px;
         margin-bottom: 50px;
     }
 }
+
 .sub-blog-wrapper {
     margin-top: 130px;
     margin-bottom: 139px;
+
     @media screen and (max-width: 1024px) {
         margin-top: 50px;
         margin-bottom: 50px;
     }
 
 }
+
 .sub-blog-page-box button {
     border-radius: 50px;
     padding: 0;
@@ -40,28 +44,33 @@
     width: 58px;
     height: 58px;
     transition: .4s;
+
     @media screen and (max-width: 768px) {
         width: 32px;
         height: 32px;
     }
-    
+
 }
+
 .button-page-before {
     display: inline-block;
     background-color: #222;
     color: #fff;
     transition: .4s;
+
     &:hover {
         width: 70px;
         height: 70px;
     }
 }
+
 .button-page-after {
     display: inline-block;
     background-color: #fff;
     color: #222;
     border: solid 1px #222;
     transition: .4s;
+
     &:hover {
         width: 70px;
         height: 70px;
@@ -76,6 +85,7 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+
     @media screen and (max-width: 1024px) {
         max-width: 560px;
         width: 100%;
@@ -84,32 +94,38 @@
         margin-inline: 18px;
     }
 }
+
 .sub-blog-box-main {
     background-color: #faf7f1;
     border-radius: 10px;
 }
+
 .sub-blog-page-box {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 32px; 
+    gap: 32px;
     margin: 98px 0 0;
+
     @media screen and (max-width: 1024px) {
-        margin-top: 50px;  
+        margin-top: 50px;
     }
+
     @media screen and (max-width: 768px) {
         gap: 20px;
     }
 }
+
 .blog-box {
     transition: .4s;
+
     &:hover {
         opacity: .7;
     }
 }
 
 // ____ブログ一覧のページネーション___
-.page-numbers{
+.page-numbers {
     display: flex;
     justify-content: center;
     font-size: 14px;
@@ -117,9 +133,9 @@
     gap: 32px;
 
     @media screen and (max-width: 1024px) {
-        margin-top: 50px;  
+        margin-top: 50px;
     }
-    
+
     li {
         border-radius: 50px;
         padding: 0;
@@ -131,36 +147,46 @@
         height: 58px;
         transition: .4s;
         background-position: center center;
-        background-size:16px 16px;
-        transform-origin: center; /* 中央を基準に拡大縮小 */
+        background-size: 16px 16px;
+        transform-origin: center;
+
+        /* 中央を基準に拡大縮小 */
         &::after {
             content: "";
             position: absolute;
             top: 0;
         }
+
         &:hover {
-            transform: scale(1.2); /* 1.2倍に拡大 */
+            transform: scale(1.2);
+            /* 1.2倍に拡大 */
         }
+
         &:nth-child(2) {
-        border: 1px solid #222;
-        background-color: #fff;
-        color: #222;
-        transition: .4s;
-        &::after {
-            content: "";
-            position: absolute;
-            top: 0;
-        }
-        &:hover {
-            transform: scale(1.2); /* 1.2倍に拡大 */
-        }
+            border: 1px solid #222;
+            background-color: #fff;
+            color: #222;
+            transition: .4s;
+
+            &::after {
+                content: "";
+                position: absolute;
+                top: 0;
+            }
+
+            &:hover {
+                transform: scale(1.2);
+                /* 1.2倍に拡大 */
+            }
         }
 
     }
+
     a {
         padding-top: 15px;
         margin-top: 0;
     }
+
     span {
         padding-top: 15px;
         margin-top: 0;

@@ -19,7 +19,7 @@
                         <?php
                         $latest_post = new WP_Query([
                             'post_type'      => 'post', // 通常の投稿
-                            'posts_per_page' => 1       ,// 最新1件
+                            'posts_per_page' => 1, // 最新1件
                             'orderby'        => 'modified', // ★ 更新日順
                             'order'          => 'DESC'      // 新しい順
                         ]);
@@ -324,7 +324,7 @@
                         <div class="link-box-button link-box-button1">
                             <a href="<?php echo esc_url(home_url('/details/')); ?>">募集要項</a>
                         </div>
-                        <div class="link-box-button link-box-button1">
+                        <div class="link-box-button">
                             <a href="<?php echo esc_url(home_url('/faq/')); ?>">よくある質問</a>
                         </div>
                     </div>

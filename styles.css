@@ -448,7 +448,7 @@ html {
 .viewmore-button {
   max-width: 355px;
   width: 100%;
-  margin: 52px auto 0 16.5em;
+  margin: 57px auto 0 18.5em;
   position: relative;
   text-align: center;
   border: 1px #222 solid;
@@ -490,6 +490,7 @@ html {
     margin-top: 39px;
     max-width: 278px;
     font-size: 1rem;
+    margin-inline: auto;
   }
 }
 
@@ -504,7 +505,24 @@ html {
 }
 
 .viewmore-button-staff {
-  margin-top: 40px;
+  margin-top: 60px;
+  margin: 60px auto 0 17em;
+}
+@media screen and (max-width: 1024px) {
+  .viewmore-button-staff {
+    margin-inline: auto;
+  }
+}
+@media screen and (max-width: 768px) {
+  .viewmore-button-staff {
+    margin-top: 25px;
+  }
+}
+@media screen and (max-width: 375px) {
+  .viewmore-button-staff {
+    margin-top: 27px;
+    margin-left: 20px;
+  }
 }
 
 /*丸nextのボタン*/
@@ -552,7 +570,7 @@ html {
   gap: 20px;
   position: absolute;
   bottom: 45px;
-  right: 125px;
+  right: 110px;
 }
 @media screen and (max-width: 1200px) {
   .page-button-box {
@@ -592,8 +610,6 @@ html {
 }
 @media screen and (max-width: 1024px) {
   .button-white-right {
-    width: 42px;
-    height: 42px;
     top: 0;
     right: 100px;
     background-size: 10px 10px;
@@ -601,8 +617,8 @@ html {
 }
 
 .button-white-right-blog {
-  top: -15px;
-  right: 125px;
+  top: -11px;
+  right: 104px;
 }
 @media screen and (max-width: 1024px) {
   .button-white-right-blog {
@@ -1185,8 +1201,8 @@ footer {
 }
 @media screen and (max-width: 1024px) {
   .button-viewmore-entry a {
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding-top: 16px;
+    padding-bottom: 16px;
     font-size: 0.875rem;
   }
 }
@@ -1576,7 +1592,7 @@ footer {
     position: absolute;
     z-index: 2;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-55%, -120%);
   }
 }
 
@@ -2060,7 +2076,7 @@ footer {
 }
 @media screen and (max-width: 1024px) {
   .about-viw {
-    margin-top: 55px;
+    margin-top: 41px;
   }
 }
 
@@ -2120,8 +2136,8 @@ footer {
   z-index: 2;
 }
 
-.swiper-slide:nth-child(odd) .staff-card {
-  transform: translateY(35px);
+.swiper-slide:nth-child(even) .staff-card {
+  transform: translateY(36px);
 }
 
 .staff-inner {
@@ -2131,12 +2147,7 @@ footer {
 }
 @media screen and (max-width: 1024px) {
   .staff-inner {
-    padding-left: 24px;
-  }
-}
-@media screen and (max-width: 768px) {
-  .staff-inner {
-    padding-left: 20px;
+    padding-left: 0;
   }
 }
 
@@ -2198,6 +2209,11 @@ footer {
 .staff-text-wrapper {
   padding-left: 30px;
 }
+@media screen and (max-width: 768px) {
+  .staff-text-wrapper {
+    padding-left: 20px;
+  }
+}
 
 .staff-content-item {
   margin-top: 30px;
@@ -2212,7 +2228,6 @@ footer {
 }
 @media screen and (max-width: 768px) {
   .staff-content-item {
-    margin-top: 60px;
     margin-right: 13px;
   }
 }
@@ -2220,14 +2235,14 @@ footer {
 .staff-sec {
   width: 100vw;
   height: 100%;
-  margin-top: 54px;
+  margin-top: 50px;
   margin-bottom: 0;
   background-color: #fff;
   overflow: hidden;
 }
 @media screen and (max-width: 768px) {
   .staff-sec {
-    margin-top: 50px;
+    margin-top: 48px;
     padding-left: 10px;
   }
 }
@@ -2235,7 +2250,8 @@ footer {
 .post-slide-item {
   position: relative;
   width: 100%;
-  top: -64px;
+  top: -56px;
+  left: 10px;
 }
 @media screen and (max-width: 1024px) {
   .post-slide-item {
@@ -2336,11 +2352,12 @@ footer {
   max-width: 1024px;
   width: 100%;
   overflow: visible !important;
-  margin-left: 36px !important;
+  margin-left: 30px !important;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1024px) {
   .swiper02 {
-    margin-left: 0;
+    margin-left: 15px !important;
+    overflow: hidden;
   }
 }
 
@@ -2440,7 +2457,7 @@ footer {
 }
 @media screen and (max-width: 768px) {
   .career {
-    padding-bottom: 90px;
+    padding-bottom: 84px;
     padding-top: 0;
   }
 }
@@ -2548,7 +2565,6 @@ footer {
 }
 @media screen and (max-width: 768px) {
   .link-box-button::before {
-    right: 27px;
     width: 14px;
     height: 14px;
   }
@@ -2570,10 +2586,12 @@ footer {
 }
 @media screen and (max-width: 768px) {
   .link-box-button {
-    padding-top: 28px;
-    padding-bottom: 28px;
     margin-top: 18px;
   }
+}
+
+.link-box-button1::before {
+  right: 30px;
 }
 
 .link-box-button1 a {
@@ -2584,7 +2602,6 @@ footer {
 .link-box-button2 a {
   display: block;
   width: 100%;
-  margin-top: 21px;
 }
 
 .link-box-button2 {
@@ -2592,7 +2609,6 @@ footer {
 }
 @media screen and (max-width: 768px) {
   .link-box-button2 {
-    padding-top: 6px;
     padding-bottom: 26px;
   }
 }
@@ -2604,7 +2620,7 @@ footer {
 }
 @media screen and (max-width: 768px) {
   .benefits {
-    padding-top: 83px;
+    padding-top: 52px;
     padding-bottom: 187px;
   }
 }
@@ -2669,7 +2685,7 @@ footer {
 }
 @media screen and (max-width: 768px) {
   .benefits-img-wrapper {
-    margin-top: 47px;
+    margin-top: 35px;
   }
   .benefits-img-wrapper:nth-child(2) {
     margin-top: 145px;
@@ -2695,7 +2711,8 @@ footer {
 }
 
 .benefits-img-box-pic2 {
-  margin-top: 104px;
+  margin-top: 96px;
+  width: 82%;
 }
 @media screen and (max-width: 1024px) {
   .benefits-img-box-pic2 {
@@ -2711,6 +2728,7 @@ footer {
 
 .benefits-img-box-pic {
   margin-top: 80px;
+  width: 79%;
 }
 @media screen and (max-width: 1024px) {
   .benefits-img-box-pic {
@@ -2720,7 +2738,7 @@ footer {
 }
 @media screen and (max-width: 768px) {
   .benefits-img-box-pic {
-    margin-top: 38px;
+    margin-top: 33px;
   }
 }
 
@@ -2739,7 +2757,7 @@ footer {
     font-size: 14px;
     top: 56px;
     right: -53px;
-    letter-spacing: 1px;
+    letter-spacing: 1.8px;
   }
 }
 
@@ -2791,8 +2809,8 @@ footer {
   .benefits-button-wrapper a {
     width: 42px;
     height: 42px;
-    bottom: 135px;
-    right: 61px;
+    bottom: 142px;
+    right: 57px;
     background-size: 20px 20px;
   }
 }
@@ -2843,8 +2861,8 @@ footer {
 }
 @media screen and (max-width: 768px) {
   .top-blog {
-    padding-top: 65px;
-    padding-bottom: 75px;
+    padding-top: 57px;
+    padding-bottom: 95px;
   }
 }
 
@@ -2858,7 +2876,7 @@ footer {
 }
 @media screen and (max-width: 768px) {
   .blog-sec {
-    padding-inline: 17px;
+    padding-inline: 20px;
   }
 }
 
@@ -2902,7 +2920,7 @@ footer {
 }
 @media screen and (max-width: 768px) {
   .blog-wrapper {
-    margin-top: 42px;
+    margin-top: 45px;
   }
 }
 
@@ -2924,6 +2942,11 @@ footer {
 .blog-box-main {
   display: flex;
 }
+@media screen and (max-width: 1024px) {
+  .blog-box-main {
+    height: 120px;
+  }
+}
 
 .thumbnail {
   max-width: 156px;
@@ -2938,28 +2961,29 @@ footer {
 }
 
 .blog-box-main img {
-  height: 100%;
+  width: 100%;
   height: 100%;
   object-fit: cover;
   border-radius: 10px 0 0 10px;
 }
 
 .blog-box-right {
-  margin-inline: 5%;
-  margin-top: 16px;
-  max-width: 251px;
+  margin-top: 18px;
   display: flex;
   flex-direction: column;
   height: auto;
   margin-bottom: 20px;
+  padding-left: 20px;
+  padding-right: 28px;
+  width: 100%;
 }
 @media screen and (max-width: 1024px) {
   .blog-box-right {
     max-width: 560px;
     width: 100%;
-    margin-top: 9px;
+    margin-top: 5px;
     margin-bottom: 5px;
-    margin-inline: 18px;
+    margin-inline: -5px;
   }
 }
 @media screen and (max-width: 768px) {
@@ -3000,7 +3024,7 @@ footer {
 @media screen and (max-width: 768px) {
   .topics {
     font-size: 0.875rem;
-    margin-top: -17px;
+    margin-top: -10px;
   }
 }
 
@@ -3042,14 +3066,15 @@ footer {
 }
 @media screen and (max-width: 768px) {
   .blog-top-link {
-    margin-left: 60px;
+    margin-left: 70px;
+    margin-top: 10px;
   }
 }
 
 .blog-top-page {
   position: relative;
-  margin-right: 16px;
-  margin-top: 19px;
+  margin-right: 24px;
+  margin-top: 33px;
 }
 @media screen and (max-width: 768px) {
   .blog-top-page {
@@ -3834,6 +3859,10 @@ footer {
   transform: translateY(-50%);
   background: #FAF7F1;
 }
+.wpcf7-list-item-label::before:nth-child(5) {
+  width: 16px;
+  height: 16px;
+}
 
 /* チェック時に塗りつぶし */
 .wpcf7-list-item input[type=checkbox]:checked + .wpcf7-list-item-label::before {
@@ -4112,21 +4141,25 @@ footer {
   margin-top: -2px;
 }
 
-/* 個人情報保護方針のチェックボックスだけ四角を16pxに */
-.privacy-check .wpcf7-list-item-label::before {
-  width: 16px;
-  height: 16px;
-}
-
 /* チェック時の内側マークの大きさ */
-.privacy-check input[type=checkbox]:checked + .wpcf7-list-item-label::after {
-  width: 12px;
-  height: 12px;
+.form-check .wpcf7-list-item-label::after {
+  width: 10px !important;
+  height: 10px !important;
+  position: absolute;
+  top: 50%;
+  left: 3px !important;
+  transform: translateY(-50%);
 }
 
 /* ラベル文字サイズ */
-.privacy-check .wpcf7-list-item-label {
-  font-size: 14px;
+.form-check .wpcf7-list-item-label {
+  font-size: 14px !important;
+  margin-left: -14px;
+}
+
+.form-check .wpcf7-list-item-label::before {
+  width: 16px !important;
+  height: 16px !important;
 }
 
 .details-main {
@@ -4891,10 +4924,6 @@ section.show {
   }
 }
 
-.blog-wrapper {
-  padding-inline: 20px;
-}
-
 .sub-inner-blog {
   padding-top: 60px;
 }
@@ -5035,7 +5064,8 @@ section.show {
   transition: 0.4s;
   background-position: center center;
   background-size: 16px 16px;
-  transform-origin: center; /* 中央を基準に拡大縮小 */
+  transform-origin: center;
+  /* 中央を基準に拡大縮小 */
 }
 .page-numbers li::after {
   content: "";
@@ -5043,7 +5073,8 @@ section.show {
   top: 0;
 }
 .page-numbers li:hover {
-  transform: scale(1.2); /* 1.2倍に拡大 */
+  transform: scale(1.2);
+  /* 1.2倍に拡大 */
 }
 .page-numbers li:nth-child(2) {
   border: 1px solid #222;
@@ -5057,7 +5088,8 @@ section.show {
   top: 0;
 }
 .page-numbers li:nth-child(2):hover {
-  transform: scale(1.2); /* 1.2倍に拡大 */
+  transform: scale(1.2);
+  /* 1.2倍に拡大 */
 }
 .page-numbers a {
   padding-top: 15px;

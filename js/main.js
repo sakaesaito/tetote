@@ -120,8 +120,8 @@ document.addEventListener('DOMContentLoaded', function () {
                 prevEl: '.swiper-button-prev',
             },
             breakpoints: {
-                375: { slidesPerView: 1.3, spaceBetween: 24 },
-                768: { slidesPerView: 2, spaceBetween: 24 },
+                375: { slidesPerView: 1.4, spaceBetween: 24 },
+                768: { slidesPerView: 2, spaceBetween: 30 },
                 1200: { slidesPerView: 2.5, spaceBetween: 35 },
                 1400: { slidesPerView: 3.1, spaceBetween: 43 },
             },

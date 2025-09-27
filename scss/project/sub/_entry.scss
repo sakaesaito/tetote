@@ -227,6 +227,11 @@
     top: 50%;
     transform: translateY(-50%);
     background: #FAF7F1;
+
+    &:nth-child(5) {
+        width: 16px;
+        height: 16px;
+    }
 }
 
 /* チェック時に塗りつぶし */
@@ -509,19 +514,25 @@
 }
 
 // 個人情報チェックボックス
-/* 個人情報保護方針のチェックボックスだけ四角を16pxに */
-.privacy-check .wpcf7-list-item-label::before {
-    width: 16px;
-    height: 16px;
-}
 
 /* チェック時の内側マークの大きさ */
-.privacy-check input[type="checkbox"]:checked+.wpcf7-list-item-label::after {
-    width: 12px;
-    height: 12px;
+.form-check .wpcf7-list-item-label::after {
+    width: 10px !important;
+    height: 10px !important;
+    position: absolute;
+    top: 50%;
+    left: 3px !important;
+    transform: translateY(-50%);
 }
 
 /* ラベル文字サイズ */
-.privacy-check .wpcf7-list-item-label {
-    font-size: 14px;
+.form-check .wpcf7-list-item-label {
+    font-size: 14px !important;
+    margin-left: -14px;
+}
+
+// チェックボックスの枠を表示
+.form-check .wpcf7-list-item-label::before {
+    width: 16px !important;
+    height: 16px !important;
 }
