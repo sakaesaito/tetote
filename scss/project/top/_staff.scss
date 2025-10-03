@@ -44,6 +44,10 @@
         display: block;
     }
 }
+.staff-box:hover {
+    opacity: .8;
+    transition: 0.4s;
+}
 
 .staff-card {
     overflow: visible;
@@ -132,8 +136,6 @@
     position: relative;
     width: 100%;
     top: -56px;
-    left: 10px;
-
 
     @media screen and (max-width: 1024px) {
         margin-left: 0;

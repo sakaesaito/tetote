@@ -52,10 +52,39 @@
     }
 }
 
+.benefits-button {
+    width: 56px;
+    height: 55px;
+    background-color: #222;
+    position: absolute;
+    bottom: 145px;
+    right: 61px;
+    color: #fff;
+    border-radius: 50%;
+    transition: .2s;
+    line-height: 55px;
+    background-image: url(./img/arrow-left-wh.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 16px 16px;
+    transition: transform 0.3s ease;
+    top: 30px;
+    left: 30px;
+    /* アニメーションの追加 */
+    transform-origin: center;
+
+    /* 中央を基準に拡大縮小 */
+    &::after {
+        content: "";
+        position: absolute;
+        top: 0;
+    }
+}
+
 .benefits-img-wrapper {
     margin-top: 108px;
     position: relative;
-
+    transition: .4s;
     @media screen and (max-width: 1024px) {
         margin-top: 36px;
 
@@ -71,7 +100,22 @@
             margin-top: 145px;
         }
     }
+    a:hover .benefits-button {
+        transform: scale(1.2);
+        /* 1.2倍に拡大 */
+    }
+
+    @media screen and (max-width: 1024px) {
+        width: 42px;
+        height: 42px;
+        bottom: 142px;
+        right: 57px;
+        background-size: 20px 20px;
+    }
 }
+
+
+
 
 .benefits-img-box {
     background-color: #FAF7F1;
@@ -136,63 +180,6 @@
     }
 }
 
-.benefits-button-wrapper {
-    position: absolute;
-    margin-top: -44px;
-    padding-right: 43px;
-    line-height: 1.5;
-
-    @media screen and (max-width: 1280px) {
-        margin-top: -30px;
-        padding-right: 0;
-    }
-
-    @media screen and (max-width: 768px) {
-        margin-top: -35px;
-        padding-right: 0;
-    }
-
-    a {
-        width: 56px;
-        height: 55px;
-        background-color: #222;
-        position: absolute;
-        bottom: 145px;
-        right: 61px;
-        color: #fff;
-        border-radius: 50%;
-        transition: .2s;
-        line-height: 55px;
-        background-image: url(./img/arrow-left-wh.png);
-        background-repeat: no-repeat;
-        background-position: center center;
-        background-size: 16px 16px;
-        transition: transform 0.3s ease;
-        /* アニメーションの追加 */
-        transform-origin: center;
-
-        /* 中央を基準に拡大縮小 */
-        &::after {
-            content: "";
-            position: absolute;
-            top: 0;
-        }
-
-        &:hover {
-            transform: scale(1.2);
-            /* 1.2倍に拡大 */
-        }
-
-        @media screen and (max-width: 1024px) {
-            width: 42px;
-            height: 42px;
-            bottom: 142px;
-            right: 57px;
-            background-size: 20px 20px;
-        }
-    }
-}
-
 .benefits-img-title {
     font-size: 2rem;
     line-height: 1.2;
@@ -201,6 +188,7 @@
     display: inline-block;
     text-align: center;
     padding-inline: 7px;
+    margin-top: 17px;
 
     @media screen and (max-width: 1024px) {
         font-size: 1.5rem;
@@ -211,7 +199,6 @@
         line-height: 1;
     }
 }
-
 
 .benefits-img-item {
     margin-top: 31px;
@@ -228,4 +215,14 @@
 .benefits-button {
     font-size: 1.25rem;
     transition: .4s;
+    position: absolute;
+    top: 312px;
+    left: 360px;
+}
+
+.wp-post-img {
+    transition: .6s;
+    &:hover {
+        opacity: .8;
+    }
 }

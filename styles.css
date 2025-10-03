@@ -598,7 +598,8 @@ html {
   background-position: center center;
   background-size: 16px 16px;
   transition: transform 0.3s ease;
-  transform-origin: center; /* 中央を基準に拡大縮小 */
+  transform-origin: center;
+  /* 中央を基準に拡大縮小 */
 }
 .button-white-right::after {
   content: "";
@@ -606,7 +607,8 @@ html {
   top: 0;
 }
 .button-white-right:hover {
-  transform: scale(1.2); /* 1.2倍に拡大 */
+  transform: scale(1.2);
+  /* 1.2倍に拡大 */
 }
 @media screen and (max-width: 1024px) {
   .button-white-right {
@@ -1796,6 +1798,7 @@ footer {
   max-width: 86.25rem;
   width: 87.6%;
   z-index: 2;
+  transition: 0.4s;
 }
 .mv-news-box::after {
   content: "";
@@ -1816,6 +1819,9 @@ footer {
     width: 93%;
     bottom: 14px;
   }
+}
+.mv-news-box:hover {
+  opacity: 0.8;
 }
 
 .mv-news-wrap {
@@ -1888,10 +1894,14 @@ footer {
   padding-right: 34px;
   border-bottom: 1px #222 solid;
   border-top: 1px #222 solid;
+  transition: 0.4s;
 }
 .mv-news-link a {
   display: inline-block;
   padding: 20px 27px 19px 0px;
+}
+.mv-news-link a:hover {
+  opacity: 0.6;
 }
 @media screen and (max-width: 1024px) {
   .mv-news-link {
@@ -2160,6 +2170,11 @@ footer {
   }
 }
 
+.staff-box:hover {
+  opacity: 0.8;
+  transition: 0.4s;
+}
+
 .staff-card {
   overflow: visible;
 }
@@ -2251,7 +2266,6 @@ footer {
   position: relative;
   width: 100%;
   top: -56px;
-  left: 10px;
 }
 @media screen and (max-width: 1024px) {
   .post-slide-item {
@@ -2671,9 +2685,38 @@ footer {
   }
 }
 
+.benefits-button {
+  width: 56px;
+  height: 55px;
+  background-color: #222;
+  position: absolute;
+  bottom: 145px;
+  right: 61px;
+  color: #fff;
+  border-radius: 50%;
+  transition: 0.2s;
+  line-height: 55px;
+  background-image: url(./img/arrow-left-wh.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 16px 16px;
+  transition: transform 0.3s ease;
+  top: 30px;
+  left: 30px;
+  /* アニメーションの追加 */
+  transform-origin: center;
+  /* 中央を基準に拡大縮小 */
+}
+.benefits-button::after {
+  content: "";
+  position: absolute;
+  top: 0;
+}
+
 .benefits-img-wrapper {
   margin-top: 108px;
   position: relative;
+  transition: 0.4s;
 }
 @media screen and (max-width: 1024px) {
   .benefits-img-wrapper {
@@ -2689,6 +2732,19 @@ footer {
   }
   .benefits-img-wrapper:nth-child(2) {
     margin-top: 145px;
+  }
+}
+.benefits-img-wrapper a:hover .benefits-button {
+  transform: scale(1.2);
+  /* 1.2倍に拡大 */
+}
+@media screen and (max-width: 1024px) {
+  .benefits-img-wrapper {
+    width: 42px;
+    height: 42px;
+    bottom: 142px;
+    right: 57px;
+    background-size: 20px 20px;
   }
 }
 
@@ -2761,60 +2817,6 @@ footer {
   }
 }
 
-.benefits-button-wrapper {
-  position: absolute;
-  margin-top: -44px;
-  padding-right: 43px;
-  line-height: 1.5;
-}
-@media screen and (max-width: 1280px) {
-  .benefits-button-wrapper {
-    margin-top: -30px;
-    padding-right: 0;
-  }
-}
-@media screen and (max-width: 768px) {
-  .benefits-button-wrapper {
-    margin-top: -35px;
-    padding-right: 0;
-  }
-}
-.benefits-button-wrapper a {
-  width: 56px;
-  height: 55px;
-  background-color: #222;
-  position: absolute;
-  bottom: 145px;
-  right: 61px;
-  color: #fff;
-  border-radius: 50%;
-  transition: 0.2s;
-  line-height: 55px;
-  background-image: url(./img/arrow-left-wh.png);
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: 16px 16px;
-  transition: transform 0.3s ease; /* アニメーションの追加 */
-  transform-origin: center; /* 中央を基準に拡大縮小 */
-}
-.benefits-button-wrapper a::after {
-  content: "";
-  position: absolute;
-  top: 0;
-}
-.benefits-button-wrapper a:hover {
-  transform: scale(1.2); /* 1.2倍に拡大 */
-}
-@media screen and (max-width: 1024px) {
-  .benefits-button-wrapper a {
-    width: 42px;
-    height: 42px;
-    bottom: 142px;
-    right: 57px;
-    background-size: 20px 20px;
-  }
-}
-
 .benefits-img-title {
   font-size: 2rem;
   line-height: 1.2;
@@ -2823,6 +2825,7 @@ footer {
   display: inline-block;
   text-align: center;
   padding-inline: 7px;
+  margin-top: 17px;
 }
 @media screen and (max-width: 1024px) {
   .benefits-img-title {
@@ -2852,6 +2855,16 @@ footer {
 .benefits-button {
   font-size: 1.25rem;
   transition: 0.4s;
+  position: absolute;
+  top: 312px;
+  left: 360px;
+}
+
+.wp-post-img {
+  transition: 0.6s;
+}
+.wp-post-img:hover {
+  opacity: 0.8;
 }
 
 .top-blog {
@@ -3457,11 +3470,13 @@ footer {
   }
 }
 
-.solution-read, .system-read {
+.solution-read,
+.system-read {
   padding-top: 42px;
 }
 @media screen and (max-width: 1024px) {
-  .solution-read, .system-read {
+  .solution-read,
+  .system-read {
     padding-top: 0;
   }
 }
@@ -4044,8 +4059,13 @@ footer {
   border: 1px solid #AFA86F;
   display: flex;
   border-radius: 10px;
-  font-size: 12px;
+  font-size: 16px;
   width: 168px;
+}
+
+#day select option:nth-child(1) {
+  font-size: 12px;
+  color: #000;
 }
 
 .form-tsuki,
@@ -4601,16 +4621,16 @@ section.show {
 
 .sub-staff-box-wrapper {
   display: grid;
-  grid-template-columns: repeat(3, 1fr); /* 2列 */
-  grid-template-rows: repeat(2, 1fr); /* 3行 */
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
   column-gap: 43px;
   row-gap: 136px;
 }
 @media screen and (max-width: 1024px) {
   .sub-staff-box-wrapper {
     display: grid;
-    grid-template-columns: repeat(2, 1fr); /* 2列 */
-    grid-template-rows: repeat(3, 1fr); /* 3行 */
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
     column-gap: 20px;
     row-gap: 100px;
   }
@@ -4618,8 +4638,8 @@ section.show {
 @media screen and (max-width: 768px) {
   .sub-staff-box-wrapper {
     display: grid;
-    grid-template-columns: repeat(1, 1fr); /* 2列 */
-    grid-template-rows: repeat(6, 1fr); /* 3行 */
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(6, 1fr);
     column-gap: 10px;
   }
 }
@@ -4650,7 +4670,8 @@ section.show {
   }
 }
 
-.sub-staff-box-message1, .sub-staff-box-message2 {
+.sub-staff-box-message1,
+.sub-staff-box-message2 {
   inline-size: fit-content;
   margin-top: 6px;
   font-size: 1.25rem;
@@ -4710,7 +4731,8 @@ section.show {
   width: 100%;
 }
 
-.blog-detail-tag, .time {
+.blog-detail-tag,
+.time {
   font-size: 14px;
   font-weight: 400;
   line-height: 1;
@@ -5372,7 +5394,8 @@ aside {
   content: "";
   position: absolute;
   border-bottom: #222 solid 0.5px;
-  transform-origin: left center; /* 縮小の基準点 */
+  transform-origin: left center;
+  /* 縮小の基準点 */
   transform: scale(1);
   width: calc(50vw - 50%);
   left: calc(50% - 50vw - 0.2rem);

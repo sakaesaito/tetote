@@ -114,6 +114,7 @@
     max-width: 86.25rem;
     width: 87.6%;
     z-index: 2;
+    transition: .4s;
 
     &::after {
         content: '';
@@ -133,6 +134,9 @@
         left: 0.75rem;
         width: 93%;
         bottom: 14px;
+    }
+    &:hover {
+        opacity: .8;
     }
 }
 
@@ -203,15 +207,20 @@
     padding-right: 34px;
     border-bottom: 1px #222 solid;
     border-top: 1px #222 solid;
-
+    transition: .4s;
     a {
         display: inline-block;
         padding: 20px 27px 19px 0px;
+        &:hover {
+            opacity: .6;
+            
+        }
     }
 
     @media screen and (max-width: 1024px) {
         display: none;
     }
+    
 }
 
 

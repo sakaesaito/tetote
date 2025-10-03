@@ -278,7 +278,7 @@ jQuery(function ($) {
 
         // 必須項目を全部調べる
         $form.find(
-            'input[required], input[aria-required="true"], textarea[required], textarea[aria-required="true"], select[required], select[aria-required="true"]'
+            'input[required], input[aria-required="true"], textarea[required], textarea[aria-required="true"], select[required], select[aria-required="true"]' 
         ).each(function () {
             const $field = $(this);
 
@@ -304,7 +304,7 @@ jQuery(function ($) {
     }
 
     // 入力・変更があったら都度チェック
-    $form.on('input change', 'input, textarea, select', checkForm);
+    $form.on('input change', 'input, textarea, select','privacy-check');
 
     // 初期表示時も一度チェックしておく
     checkForm();

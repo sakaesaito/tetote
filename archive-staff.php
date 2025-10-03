@@ -38,7 +38,7 @@
                     if ($query->have_posts()) : while ($query->have_posts()) : $query->the_post(); ?>
 
                             <div class="sub-staff-box">
-                                <a href="<?php the_permalink(); ?>">
+                                <a class="staff-box" href="<?php the_permalink(); ?>">
                                     <?php the_post_thumbnail('full', array('class' => 'custom-thumbnail')); ?>
                                     <div class="sub-staff-box-img">
                                         <p class="sub-staff-box-message1"><?php the_field('message1'); ?></p>
