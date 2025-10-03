@@ -186,18 +186,20 @@
     @media screen and (max-width: 768px) {
         display: block;
     }
+    a:hover .button-white-right.button-white-right-blog {
+        transform: scale(1.2);
+        /* 1.2倍に拡大 */
+    }
+    a:hover .blog-top-link  {
+        color: #9a9894;
+    }
 }
 
 .blog-top-link {
     margin-left: 13px;
-    transition: .4s;
     font-weight: 700;
     border-bottom: solid #222;
     transition: .4s;
-
-    &:hover {
-        opacity: .7;
-    }
 
     @media screen and (max-width: 768px) {
         margin-left: 70px;
@@ -209,6 +211,7 @@
     position: relative;
     margin-right: 24px;
     margin-top: 33px;
+    transform: .4s;
 
     @media screen and (max-width: 768px) {
         display: none;

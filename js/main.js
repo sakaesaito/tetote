@@ -24,7 +24,6 @@ document.addEventListener('DOMContentLoaded', function () {
             if (scrollY >= 100) {
                 header.classList.add('header--sticky');
                 header.style.backgroundColor = '#fff';
-                document.body.style.marginTop = headerHeight + 'px';
                 if (whiteLogo) whiteLogo.classList.add('hidden');
                 if (blackLogo) blackLogo.classList.remove('hidden');
                 hamburgerSpans.forEach(span => span.style.backgroundColor = '#222');
@@ -32,7 +31,6 @@ document.addEventListener('DOMContentLoaded', function () {
             } else {
                 header.classList.remove('header--sticky');
                 header.style.backgroundColor = 'transparent';
-                document.body.style.marginTop = '0';
                 if (!drawer.classList.contains('active')) {
                     if (whiteLogo) whiteLogo.classList.remove('hidden');
                     if (blackLogo) blackLogo.classList.add('hidden');
@@ -298,14 +296,18 @@ jQuery(function ($) {
                 isValid = false;
             }
         });
+        // 「同意する」checkboxをチェック
+    if (!$form.find('.privacy-check input[type="checkbox"]').prop('checked')) {
+        isValid = false;
+    }
 
         // 結果によってボタン切り替え
         $submitBtn.prop('disabled', !isValid);
     }
 
     // 入力・変更があったら都度チェック
-    $form.on('input change', 'input, textarea, select','privacy-check');
+    $form.on('input change', 'input, textarea, select', checkForm);
 
-    // 初期表示時も一度チェックしておく
+    // 初期表示時も一度チェック
     checkForm();
 });

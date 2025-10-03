@@ -3066,16 +3066,19 @@ footer {
     display: block;
   }
 }
+.blog-top a:hover .button-white-right.button-white-right-blog {
+  transform: scale(1.2);
+  /* 1.2倍に拡大 */
+}
+.blog-top a:hover .blog-top-link {
+  color: #9a9894;
+}
 
 .blog-top-link {
   margin-left: 13px;
-  transition: 0.4s;
   font-weight: 700;
   border-bottom: solid #222;
   transition: 0.4s;
-}
-.blog-top-link:hover {
-  opacity: 0.7;
 }
 @media screen and (max-width: 768px) {
   .blog-top-link {
@@ -3088,6 +3091,7 @@ footer {
   position: relative;
   margin-right: 24px;
   margin-top: 33px;
+  transform: 0.4s;
 }
 @media screen and (max-width: 768px) {
   .blog-top-page {
@@ -4063,7 +4067,12 @@ footer {
   width: 168px;
 }
 
-#day select option:nth-child(1) {
+.wpcf7-select option:nth-child(1) {
+  font-size: 12px;
+  color: #000;
+}
+
+.form-tsuki:first-child {
   font-size: 12px;
   color: #000;
 }
