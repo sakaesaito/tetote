@@ -2137,6 +2137,7 @@ footer {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
+  overflow: visible;
   height: 100%;
 }
 
@@ -2168,15 +2169,6 @@ footer {
   .staff-box-wrapper {
     display: block;
   }
-}
-
-.staff-box:hover {
-  opacity: 0.8;
-  transition: 0.4s;
-}
-
-.staff-card {
-  overflow: visible;
 }
 
 .staff-content-title {
@@ -2277,9 +2269,19 @@ footer {
   width: 100%;
   height: auto;
   object-fit: contain;
+  transform: 0.6s;
+}
+.staff-box:hover img {
+  transform: scale(1.02);
+}
+.staff-box:hover {
+  opacity: 0.9;
 }
 .staff-box img {
+  width: 100%;
   border-radius: 30px;
+  transform: 0.6s;
+  transition: transform 1s cubic-bezier(0.6, 0, 0, 1);
 }
 
 .staff-slide {
