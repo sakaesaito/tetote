@@ -2637,7 +2637,7 @@ footer {
 @media screen and (max-width: 768px) {
   .benefits {
     padding-top: 52px;
-    padding-bottom: 187px;
+    padding-bottom: 116px;
   }
 }
 
@@ -2665,7 +2665,7 @@ footer {
   .benefits-content-item {
     margin-left: 0;
     margin-top: 30px;
-    margin-inline: 20px;
+    margin-inline: 19px;
   }
 }
 
@@ -2674,7 +2674,7 @@ footer {
   grid-template-columns: repeat(2, 1fr);
   grid-gap: 50px;
   text-align: center;
-  margin-left: 28px;
+  margin-left: 33px;
 }
 @media screen and (max-width: 1024px) {
   .benefits-main-box {
@@ -2696,18 +2696,27 @@ footer {
   right: 61px;
   color: #fff;
   border-radius: 50%;
-  transition: 0.2s;
   line-height: 55px;
   background-image: url(./img/arrow-left-wh.png);
   background-repeat: no-repeat;
   background-position: center center;
   background-size: 16px 16px;
   transition: transform 0.3s ease;
-  top: 30px;
-  left: 30px;
+  font-size: 1.25rem;
+  transition: 0.4s;
+  top: 312px;
+  left: 360px;
   /* アニメーションの追加 */
   transform-origin: center;
   /* 中央を基準に拡大縮小 */
+}
+@media screen and (max-width: 1024px) {
+  .benefits-button {
+    top: 162px;
+    left: 238px;
+    width: 42px;
+    height: 42px;
+  }
 }
 .benefits-button::after {
   content: "";
@@ -2733,21 +2742,12 @@ footer {
     margin-top: 35px;
   }
   .benefits-img-wrapper:nth-child(2) {
-    margin-top: 145px;
+    margin-top: 75px;
   }
 }
 .benefits-img-wrapper a:hover .benefits-button {
   transform: scale(1.2);
   /* 1.2倍に拡大 */
-}
-@media screen and (max-width: 1024px) {
-  .benefits-img-wrapper {
-    width: 42px;
-    height: 42px;
-    bottom: 142px;
-    right: 57px;
-    background-size: 20px 20px;
-  }
 }
 
 .benefits-img-box {
@@ -2769,8 +2769,9 @@ footer {
 }
 
 .benefits-img-box-pic2 {
-  margin-top: 96px;
+  margin-top: 106px;
   width: 82%;
+  margin-bottom: 40px;
 }
 @media screen and (max-width: 1024px) {
   .benefits-img-box-pic2 {
@@ -2828,6 +2829,9 @@ footer {
   text-align: center;
   padding-inline: 7px;
   margin-top: 17px;
+  position: relative;
+  top: -60px;
+  left: -15px;
 }
 @media screen and (max-width: 1024px) {
   .benefits-img-title {
@@ -2838,12 +2842,18 @@ footer {
   .benefits-img-title {
     padding: 8px 7px;
     line-height: 1;
+    margin-top: 29px;
+    margin-left: 20px;
   }
 }
 
 .benefits-img-item {
   margin-top: 31px;
   text-align: start;
+  position: absolute;
+  bottom: -29px;
+  left: 10px;
+  max-width: 430px;
 }
 @media screen and (max-width: 1024px) {
   .benefits-img-item {
@@ -2851,15 +2861,8 @@ footer {
     font-size: 1rem;
     line-height: 1.5;
     margin-top: 21px;
+    left: 0;
   }
-}
-
-.benefits-button {
-  font-size: 1.25rem;
-  transition: 0.4s;
-  position: absolute;
-  top: 312px;
-  left: 360px;
 }
 
 .wp-post-img {
@@ -2871,7 +2874,7 @@ footer {
 
 .top-blog {
   background-color: #FAF7F1;
-  padding-top: 70px;
+  padding-top: 76px;
   padding-bottom: 80px;
 }
 @media screen and (max-width: 768px) {
