@@ -265,49 +265,50 @@ document.addEventListener('DOMContentLoaded', function () {
 // ________送信フォーム全入力で送信ボタン反映＿＿＿＿＿＿
 
 jQuery(function ($) {
-    const $form = $('.wpcf7-form');        // CF7 のフォーム本体
-    const $submitBtn = $('#js-submit');    // 送信ボタン
+    const $form = $('.wpcf7-form');
+    const $submitBtn = $('#js-submit');
 
-    // 初期状態で送信ボタンを無効化
+    // 初期状態はボタン無効
     $submitBtn.prop('disabled', true);
 
     function checkForm() {
         let isValid = true;
 
-        // 必須項目を全部調べる
-        $form.find(
-            'input[required], input[aria-required="true"], textarea[required], textarea[aria-required="true"], select[required], select[aria-required="true"]' 
-        ).each(function () {
+        // 必須項目のチェック（CF7はaria-required="true"が付く）
+        $form.find('[aria-required="true"]').each(function () {
             const $field = $(this);
 
             if ($field.is(':radio')) {
-                // ラジオボタンは同じnameの中で1つ選ばれているかチェック
+                // ラジオ
                 const name = $field.attr('name');
                 if ($form.find(`input[name="${name}"]:checked`).length === 0) {
                     isValid = false;
                 }
             } else if ($field.is(':checkbox')) {
-                // チェックボックスはONかどうか
+                // チェックボックス単体
                 if (!$field.prop('checked')) {
                     isValid = false;
                 }
             } else if (($field.val() || '').trim() === '') {
-                // テキスト/メール/セレクトなど空文字か
+                // テキスト・メールなど
                 isValid = false;
             }
         });
-        // 「同意する」checkboxをチェック
-    if (!$form.find('.privacy-check input[type="checkbox"]').prop('checked')) {
-        isValid = false;
-    }
 
-        // 結果によってボタン切り替え
+        // 「同意する」チェックボックス (acceptanceタグ) の確認
+        if ($form.find('input[name^="acceptance"]').length > 0) {
+            if (!$form.find('input[name^="acceptance"]').prop('checked')) {
+                isValid = false;
+            }
+        }
+
+        // ボタンON/OFF切り替え
         $submitBtn.prop('disabled', !isValid);
     }
 
-    // 入力・変更があったら都度チェック
+    // 入力変更ごとにチェック
     $form.on('input change', 'input, textarea, select', checkForm);
 
-    // 初期表示時も一度チェック
+    // 初期表示でも一度チェック
     checkForm();
 });
